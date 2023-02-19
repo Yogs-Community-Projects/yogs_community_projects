@@ -1,5 +1,5 @@
-import { Component } from 'solid-js'
-import { A } from '@solidjs/router'
+import {Component} from 'solid-js'
+import {A} from '@solidjs/router'
 
 const NavBar: Component = () => {
   return (
@@ -18,13 +18,13 @@ const NavBar: Component = () => {
           <p>Charity</p>
         </button>
       </A>
-      <A href={'/channel'}>
+      <A href={'/streamer'}>
         <button
           class={
             'hover:bg-primary-300 h-full h-full w-full w-full border-2 border-2 border-white border-white transition-all hover:text-black'
           }
         >
-          <p>Channel</p>
+          <p>Streamer</p>
         </button>
       </A>
     </div>
