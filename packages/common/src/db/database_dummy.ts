@@ -1,6 +1,6 @@
-import { createEffect, createResource } from 'solid-js'
-import { RemoteData } from './local_store'
-import { ConfigDB, YcDBImpl, YcNewsDB, YcScheduleDB } from './database'
+import {createEffect, createResource} from 'solid-js'
+import {RemoteData} from './local_store'
+import {ConfigDB, YcDBImpl, YcNewsDB, YcScheduleDB} from './database'
 import {
   CreatorData,
   JJExtensionConfig,
@@ -10,7 +10,7 @@ import {
   TwitchChannelData,
   YoutubeChannelData
 } from '@ycapp/model'
-import { createStore } from 'solid-js/store'
+import {createStore} from 'solid-js/store'
 
 abstract class DummyDB<T> extends YcDBImpl<T> {
   read(id: string) {
@@ -127,6 +127,10 @@ export class PodcastDummyDB extends DummyDB<Podcast> {
 
 export class ScheduleDummyDB implements YcScheduleDB {
   read(id: string) {
+    console.log(this.name, id);
+    if (id.includes('jinglejam') || id.includes('jj')) {
+      return this.readJJ();
+    }
     return this.readYogs()
   }
 
@@ -145,6 +149,27 @@ export class ScheduleDummyDB implements YcScheduleDB {
           error: null,
           data: resource()
         })
+      }
+    })
+    return state
+  }
+
+  readJJ(): RemoteData<ScheduleData | null> {
+    const fetch = () => import('./dummy_data/test_schedule_data').then(a => a.fetchDummyJJSchedule())
+    const [resource] = createResource(fetch)
+    const [state, setState] = createStore<RemoteData<ScheduleData | null>>({
+      loading: true,
+      data: null,
+      error: null
+    })
+    createEffect(() => {
+      if (resource()) {
+        setState({
+          loading: false,
+          error: null,
+          data: resource()
+        })
+        console.log(resource());
       }
     })
     return state
@@ -172,7 +197,7 @@ export class NewsDummyDB implements YcNewsDB {
 export class ConfigDummyDB implements ConfigDB {
   private readonly jjExtensionConfig: JJExtensionConfig
 
-  constructor(jjExtensionConfig: JJExtensionConfig = { scheduleId: 'jinglejam2022_2', visible: true }) {
+  constructor(jjExtensionConfig: JJExtensionConfig = {scheduleId: 'jinglejam2022_2', visible: true}) {
     this.jjExtensionConfig = jjExtensionConfig
   }
 
