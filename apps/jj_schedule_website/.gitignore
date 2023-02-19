@@ -7,8 +7,6 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
-dist/
-
 # Firebase cache
 .firebase/
 
@@ -71,8 +69,3 @@ node_modules/
 .firebaserc
 .firebase
 firebase.json
-
-
-.idea
-.log*
-.DS_STORE

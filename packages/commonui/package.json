@@ -1,0 +1,32 @@
+{
+  "name": "@ycapp/commonui",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3",
+    "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "dependencies": {
+    "@ycapp/common": "1.0.0",
+    "@ycapp/model": "1.0.0",
+    "solid-js": "^1.6.6",
+    "solid-icons": "^1.0.4",
+    "solid-markdown": "^1.2.0",
+    "@kobalte/core": "^0.4.0",
+    "@kobalte/tailwindcss": "^0.2.0",
+    "@solidjs/router": "^0.7.0",
+    "@stitches/core": "^1.2.8"
+  }
+}

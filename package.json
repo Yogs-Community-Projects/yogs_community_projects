@@ -1,0 +1,24 @@
+{
+  "name": "ycapp_solid_websites",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "deploy-yogs-schedule": "cd apps/yogs_schedule_website && npm run deploy"
+  },
+  "installConfig": {
+    "hoistingLimits": "dependencies"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "solid-devtools": "^0.25.0",
+    "typescript": "^4.9.4"
+  }
+}
