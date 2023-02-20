@@ -1,11 +1,11 @@
-import { Component, Match, Switch } from 'solid-js'
-import { ScheduleData } from '@ycapp/model'
-import { ScheduleMobileProviderContainer, ScheduleProviderContainer } from './providers/ScheduleProviderContainer'
-import { ScheduleFrame } from './desktop/ScheduleFrame'
-import { MobileSchedule } from './mobile/MobileSchedule'
-import { useScheduleData } from './providers/ScheduleDataProvider'
-import { DateTime } from 'luxon'
-import { useDivDimension } from '@ycapp/common'
+import {Component, Match, Switch} from 'solid-js'
+import {ScheduleData} from '@ycapp/model'
+import {ScheduleMobileProviderContainer, ScheduleProviderContainer} from './providers/ScheduleProviderContainer'
+import {ScheduleFrame} from './desktop/ScheduleFrame'
+import {MobileSchedule} from './mobile/MobileSchedule'
+import {useScheduleData} from './providers/ScheduleDataProvider'
+import {DateTime} from 'luxon'
+import {useDivDimension} from '@ycapp/common'
 
 export const ScheduleComponent: Component<{ schedule: ScheduleData }> = props => {
   const [size, setRef] = useDivDimension()
@@ -17,14 +17,14 @@ export const ScheduleComponent: Component<{ schedule: ScheduleData }> = props =>
         <Switch>
           <Match when={!mobile()} keyed>
             <ScheduleProviderContainer size={size} scheduleData={props.schedule}>
-              <ScheduleFrame />
-              <ScheduleDisclaimer />
+              <ScheduleFrame/>
+              <ScheduleDisclaimer/>
             </ScheduleProviderContainer>
           </Match>
           <Match when={mobile()}>
             <ScheduleMobileProviderContainer size={size} scheduleData={props.schedule}>
-              <MobileSchedule />
-              <ScheduleDisclaimer />
+              <MobileSchedule/>
+              <ScheduleDisclaimer/>
             </ScheduleMobileProviderContainer>
           </Match>
         </Switch>
