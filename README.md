@@ -36,12 +36,12 @@ Contains the data models used by all apps
 
 ### Apps
 
-#### Yogs Schedule Website
+#### Yogs Schedule Website ([schedule.yogs.app](https://schedule.yogs.app))
 
 Site to show currently reoccurring streams from the [Yogscast Stream Team](https://www.twitch.tv/team/yogscast)
 It also shows a list of yogs members and their channels.
 
-#### JJ Schedule Website
+#### JJ Schedule Website ([jj.yogs.app](https://jj.yogs.app))
 
 Site to display the current and past JJ Schedules
 
