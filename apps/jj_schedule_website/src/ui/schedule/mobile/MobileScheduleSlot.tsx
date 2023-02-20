@@ -1,9 +1,9 @@
-import { Component, JSX } from 'solid-js'
-import { Slot } from '@ycapp/model'
-import { Duration } from 'luxon'
-import { useScheduleMobileDimensions } from '../providers/ScheduleMobileDimensionsProvider'
-import { createModalSignal, getTextColor } from '@ycapp/common'
-import { SlotDialog } from '../../components/schedule/SlotDialog'
+import {Component, JSX} from 'solid-js'
+import {Slot} from '@ycapp/model'
+import {Duration} from 'luxon'
+import {useScheduleMobileDimensions} from '../providers/ScheduleMobileDimensionsProvider'
+import {createModalSignal, getTextColor} from '@ycapp/common'
+import {SlotDialog} from '../../components/schedule/SlotDialog'
 
 interface MobileScheduleSlotProps {
   slot: Slot
@@ -11,7 +11,7 @@ interface MobileScheduleSlotProps {
 
 export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const slot = props.slot
-  const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
+  const durationHour = () => Duration.fromDurationLike({second: slot.duration}).as('hours')
 
   const style = (): JSX.CSSProperties => {
     return {
@@ -66,12 +66,12 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             }}
             onclick={modalSignal.open}
           >
-            <p class={'slot-title'}>{props.slot.title}</p>
-            <p class={'slot-subtitle'}>{props.slot.subtitle}</p>
+            <p class={'text-[calc(var(--slot-height)_/_4)] font-bold'}>{props.slot.title}</p>
+            <p class={'text-[calc(var(--slot-height)_/_6)]'}>{props.slot.subtitle}</p>
           </div>
         </div>
       </div>
-      <SlotDialog slot={slot} modalSignal={modalSignal} />
+      <SlotDialog slot={slot} modalSignal={modalSignal}/>
     </>
   )
 }
