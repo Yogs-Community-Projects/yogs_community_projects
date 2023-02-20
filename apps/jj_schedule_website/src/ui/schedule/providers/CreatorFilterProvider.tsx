@@ -11,12 +11,10 @@ interface CreatorFilterContextProps {
   isEmpty: () => boolean
 }
 
-interface CreatorFilterProps {
-}
 
 const CreatorFilterContext = createContext<CreatorFilterContextProps>();
 
-export const CreatorFilterProvider: ParentComponent<CreatorFilterProps> = (props) => {
+export const CreatorFilterProvider: ParentComponent = (props) => {
   const [filter, setFilter] = createSignal<string[]>([]);
 
   const add = (id: string) => {
