@@ -119,7 +119,7 @@ const Stack: Component = () => {
     <div
       style={{
         // height: totalHeight() + 'px',
-        width: totalWidth() + 'px'
+        width: totalWidth() + 'px',
       }}
       class={'flex flex-col'}
     >
@@ -128,7 +128,7 @@ const Stack: Component = () => {
       <div
         class={'relative h-full'}
         style={{
-          height: scheduleHeight() + 'px'
+          height: scheduleHeight() + 'px',
         }}
       >
         <div class={'absolute left-0 top-0 z-0 h-full w-full'}>
@@ -141,7 +141,7 @@ const Stack: Component = () => {
                 style={{
                   height: laneHeight() + 'px',
                   width: '100%',
-                  position: 'relative'
+                  position: 'relative',
                 }}
                 class={'bg-gray-400'}
               >
@@ -183,7 +183,7 @@ const EventComponent: Component<EventProps> = props => {
         position: 'absolute',
         left: x() + 'px',
         width: width() + 'px',
-        height: '100%'
+        height: '100%',
       }}
     >
       <div class={'h-full w-full'}>
@@ -205,7 +205,7 @@ const TimesComponent: Component = () => {
     <div
       style={{
         height: dataSize() + 'px',
-        width: width() + 'px'
+        width: width() + 'px',
       }}
       class={'flex flex-row'}
     >
@@ -217,7 +217,7 @@ const TimesComponent: Component = () => {
             <div
               style={{
                 height: dataSize() + 'px',
-                width: timeWidth() + 'px'
+                width: timeWidth() + 'px',
               }}
               class={'p-1'}
             >
@@ -250,7 +250,7 @@ const Background: Component = () => {
               <div
                 style={{
                   width: width() + 'px',
-                  height: '100%'
+                  height: '100%',
                 }}
                 class={'py-1'}
               >
@@ -274,14 +274,14 @@ const ScheduleHeader: Component = () => {
       <div style={{}} class={'flex w-full flex-col lg:hidden'}>
         <div
           style={{
-            height: dataSize() * 2 + 'px'
+            height: dataSize() * 2 + 'px',
           }}
         >
           <Title />
         </div>
         <div
           style={{
-            height: dataSize() + 'px'
+            height: dataSize() + 'px',
           }}
           class={'p-schedule'}
         >
@@ -290,7 +290,7 @@ const ScheduleHeader: Component = () => {
       </div>
       <div
         style={{
-          height: dataSize() + 'px'
+          height: dataSize() + 'px',
         }}
         class={'hidden w-full flex-row lg:flex'}
       >
@@ -298,7 +298,7 @@ const ScheduleHeader: Component = () => {
         <div
           style={{
             width: width() * 3 + 'px',
-            height: dataSize() + 'px'
+            height: dataSize() + 'px',
           }}
           class={'p-schedule'}
         >
@@ -313,7 +313,7 @@ const ScheduleHeader: Component = () => {
 const Title: Component = () => {
   const date = () =>
     DateTime.fromObject({
-      weekday: currentDay().dayOfWeek
+      weekday: currentDay().dayOfWeek,
     })
 
   return (
@@ -322,7 +322,7 @@ const Title: Component = () => {
         <h3 class={'text-center text-2xl'}>
           {useScheduleData().name} -{' '}
           {date().toLocaleString({
-            weekday: 'long'
+            weekday: 'long',
           })}
         </h3>
       </div>
@@ -370,7 +370,7 @@ const ViewModeButton: Component = () => {
   return (
     <div
       style={{
-        width: width() + 'px'
+        width: width() + 'px',
       }}
       class={'p-schedule'}
     >

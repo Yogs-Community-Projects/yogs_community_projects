@@ -10,7 +10,7 @@ const root = document.getElementById('root')
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   throw new Error(
-    'Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got mispelled?'
+    'Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got mispelled?',
   )
 }
 
@@ -24,7 +24,7 @@ const Main: Component = () => {
     storageBucket: 'ycapp-f20c0.appspot.com',
     messagingSenderId: '624703369691',
     appId: '1:624703369691:web:453cb1f036a82cd01eb7fe',
-    measurementId: 'G-NWF4CC8VK5'
+    measurementId: 'G-NWF4CC8VK5',
   }
   console.log(JSON.stringify(firebaseConfig))
   return (

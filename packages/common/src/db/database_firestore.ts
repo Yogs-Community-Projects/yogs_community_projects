@@ -6,7 +6,7 @@ import {
   Firestore,
   Query,
   query,
-  where
+  where,
 } from 'firebase/firestore'
 import { YcFirebaseConverter } from './YcFirebaseConverter'
 import { loadLocalAndRemote } from './local_store'
@@ -18,7 +18,7 @@ import {
   Podcast,
   ScheduleData,
   TwitchChannelData,
-  YoutubeChannelData
+  YoutubeChannelData,
 } from '@ycapp/model'
 
 export class CreatorFirestoreDB extends YcFirestoreDB<CreatorData> {
@@ -29,7 +29,7 @@ export class CreatorFirestoreDB extends YcFirestoreDB<CreatorData> {
   read(id: string) {
     return loadLocalAndRemote<CreatorData>('creator_' + id, this.getDocRef(id), {
       forceRemote: false,
-      ageInHours: 48
+      ageInHours: 48,
     })
   }
 
@@ -37,7 +37,7 @@ export class CreatorFirestoreDB extends YcFirestoreDB<CreatorData> {
     const q = query<CreatorData>(this.getCollectionRef(), where('creator.type', '==', 'Yogs'))
     return loadLocalAndRemote<CreatorData>('all_creator_data', q, {
       forceRemote: false,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
@@ -54,17 +54,17 @@ export class TwitchFirestoreDB extends YcFirestoreDB<TwitchChannelData> {
   read(id: string) {
     return loadLocalAndRemote<TwitchChannelData>('twitch_' + id, this.getDocRef(id), {
       forceRemote: true,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
   readAll() {
     const q = query<TwitchChannelData>(this.getCollectionRef(), where('type', '==', 'Yogs')).withConverter(
-      new YcFirebaseConverter<TwitchChannelData>()
+      new YcFirebaseConverter<TwitchChannelData>(),
     ) as Query<TwitchChannelData>
     return loadLocalAndRemote<TwitchChannelData>('twitch_channels', q, {
       forceRemote: true,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
@@ -81,14 +81,14 @@ export class YoutubeFirestoreDB extends YcFirestoreDB<YoutubeChannelData> {
   read(id: string) {
     return loadLocalAndRemote<YoutubeChannelData>('youtube_' + id, this.getDocRef(id), {
       forceRemote: true,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
   readAll() {
     return loadLocalAndRemote<YoutubeChannelData>('youtubeChannels', this.getCollectionRef(), {
       forceRemote: true,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
@@ -105,7 +105,7 @@ export class PodcastFirestoreDB extends YcFirestoreDB<Podcast> {
   read(id: string) {
     return loadLocalAndRemote<Podcast>('podcast_' + id, this.getDocRef(id), {
       forceRemote: true,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
@@ -113,7 +113,7 @@ export class PodcastFirestoreDB extends YcFirestoreDB<Podcast> {
     const q = this.getCollectionRef()
     return loadLocalAndRemote<Podcast>('podcasts', q, {
       forceRemote: true,
-      ageInHours: 24
+      ageInHours: 24,
     })
   }
 
@@ -165,11 +165,11 @@ export class NewsFirestoreDB implements YcNewsDB {
     const q = query(
       collection(this.db, 'News'),
       where('show', '==', true),
-      where('display', 'array-contains-any', display)
+      where('display', 'array-contains-any', display),
     ).withConverter(new YcFirebaseConverter<News>()) as Query<News>
     return loadLocalAndRemote<News>('news', q, {
       forceRemote: true,
-      ageInHours: 6
+      ageInHours: 6,
     })
   }
 }
@@ -190,7 +190,7 @@ export class ConfigFirestoreDB implements ConfigDB {
     const ref = doc<JJExtensionConfig>(coll, 'TwitchExtensionConfig')
     return loadLocalAndRemote<JJExtensionConfig>('jj_extension_config', ref, {
       forceRemote: false,
-      ageInHours: 3
+      ageInHours: 3,
     })
   }
 }

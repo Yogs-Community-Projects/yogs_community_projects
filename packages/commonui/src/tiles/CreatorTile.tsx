@@ -28,7 +28,7 @@ export const CreatorTile: Component<CreatorTileProps> = props => {
       }
       style={{
         background: primaryColor(),
-        color: getTextColor(primaryColor())
+        color: getTextColor(primaryColor()),
       }}
     >
       <div class={'grow object-contain'}>

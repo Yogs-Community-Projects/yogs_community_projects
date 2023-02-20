@@ -28,12 +28,12 @@ const ScheduleTime: Component<ScheduleTimeProps> = props => {
       <div class={'schedule-card-white flex h-full flex-col place-content-around items-center'}>
         <p>
           {start.toLocaleString({
-            timeStyle: 'short'
+            timeStyle: 'short',
           })}
         </p>
         <p>
           {end.toLocaleString({
-            timeStyle: 'short'
+            timeStyle: 'short',
           })}
         </p>
       </div>

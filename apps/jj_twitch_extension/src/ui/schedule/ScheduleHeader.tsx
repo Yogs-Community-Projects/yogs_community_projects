@@ -30,7 +30,7 @@ const Title: Component = () => {
   const [creator, setCreator] = createSignal<RemoteData<CreatorData | null>>({
     data: null,
     loading: true,
-    error: null
+    error: null,
   })
 
   createEffect(() => {
@@ -49,7 +49,7 @@ const Title: Component = () => {
               {date().toLocaleString({
                 weekday: 'short',
                 day: '2-digit',
-                month: 'short'
+                month: 'short',
               })}
             </h3>
           </Match>

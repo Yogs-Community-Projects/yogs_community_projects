@@ -20,7 +20,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const enable = () => isEmpty() || slot.relations.creators.some(id => includes(id))
   const style = (): JSX.CSSProperties => {
     return {
-      height: (useScheduleDimensions().slotSize / 3) * (slot.gridTileSize * 3) + 'px'
+      height: (useScheduleDimensions().slotSize / 3) * (slot.gridTileSize * 3) + 'px',
     }
   }
 
@@ -40,7 +40,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
         gradientStyle = {
           background: `linear-gradient(180deg, ${linearGradient.colors.map(_parseColor).join(', ')})`,
           color: textColor(_parseColor(slot.style.background ?? linearGradient.colors[0] ?? 'ffff0000')),
-          height: '100%'
+          height: '100%',
         }
       } else {
         if (slot.style.background) {
@@ -48,7 +48,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
             background: `${_parseColor(slot.style.background ?? 'ffff0000')}`,
             // background: _parseColor(slot.style.background)
             color: textColor(_parseColor(slot.style.background ?? 'ffff0000')),
-            height: '100%'
+            height: '100%',
           }
         }
       }
@@ -57,7 +57,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
         background: `grey`,
         // background: _parseColor(slot.style.background)
         color: 'white',
-        height: '100%'
+        height: '100%',
       }
     }
     return gradientStyle
@@ -68,7 +68,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
       <div
         class={'w-slot'}
         style={{
-          ...style()
+          ...style(),
         }}
       >
         <div class={'p-schedule h-full transition-all'}>
@@ -77,7 +77,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               'hover:scale-102 schedule-card flex flex-col justify-center p-1 text-center transition-all hover:shadow-2xl hover:brightness-105 disabled:scale-100 disabled:shadow-xl disabled:brightness-100'
             }
             style={{
-              ...background()
+              ...background(),
             }}
             disabled={!enable()}
             onclick={modalSignal.toggle}

@@ -152,13 +152,13 @@ export class SlotUtils {
           month: targetDay1.month,
           day: targetDay1.day,
           hour: start.hour,
-          minute: start.minute
+          minute: start.minute,
         })
         if (now > nextWeek1.plus(duration)) {
           nextWeek1 = nextWeek1.plus(
             Duration.fromDurationLike({
-              day: 7
-            })
+              day: 7,
+            }),
           )
         }
         return nextWeek1
@@ -169,21 +169,21 @@ export class SlotUtils {
           month: targetDay2.month,
           day: targetDay2.day,
           hour: start.hour,
-          minute: start.minute
+          minute: start.minute,
         })
         const mod = nextWeek2.diff(start).as('days') % 14
         if (mod != 0) {
           nextWeek2 = nextWeek2.plus(
             Duration.fromDurationLike({
-              day: 7
-            })
+              day: 7,
+            }),
           )
         }
         if (now > nextWeek2.plus(duration)) {
           nextWeek2 = nextWeek2.plus(
             Duration.fromDurationLike({
-              day: 14
-            })
+              day: 14,
+            }),
           )
         }
         return nextWeek2

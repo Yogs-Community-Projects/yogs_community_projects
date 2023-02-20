@@ -7,7 +7,7 @@ import {
   PodcastDummyDB,
   ScheduleDummyDB,
   TwitchDummyDB,
-  YoutubeDummyDB
+  YoutubeDummyDB,
 } from './database_dummy'
 
 const YcDBDummyProvider: ParentComponent = props => {

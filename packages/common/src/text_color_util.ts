@@ -15,7 +15,7 @@ function computeLuminance(color: string): number {
 
 enum Brightness {
   light,
-  dark
+  dark,
 }
 
 function estimateBrightnessForColor(color: string) {

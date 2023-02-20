@@ -5,7 +5,7 @@ const channels = [
     relations: {
       youtubeChannels: [],
       creators: ['G2xAxM8JBwtNIojLq1cE'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     lastStream: {
       createdAt: '2023-01-31T17:09:18.179Z',
@@ -26,14 +26,14 @@ const channels = [
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_bouphe-{width}x{height}.jpg',
         game_name: 'The Elder Scrolls IV: Oblivion',
         type: 'live',
-        game_id: '18526'
-      }
+        game_id: '18526',
+      },
     },
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       display_name: 'bouphe',
@@ -46,8 +46,8 @@ const channels = [
       type: '',
       id: '113954840',
       description: "I'm Sophie! A retro variety streamer from England ~ lover of PC, DOS, AMIGA, PSX, SEGA ✨",
-      login: 'bouphe'
-    }
+      login: 'bouphe',
+    },
   },
   {
     channel: {
@@ -63,7 +63,7 @@ const channels = [
       broadcaster_type: 'partner',
       login: 'inthelittlewood',
       profile_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/5c2bddb9-11e6-4ee4-8025-abc565891340-profile_image-300x300.png'
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/5c2bddb9-11e6-4ee4-8025-abc565891340-profile_image-300x300.png',
     },
     lastStream: {
       createdAt: '2023-02-03T16:12:52.149Z',
@@ -84,20 +84,20 @@ const channels = [
         id: '46579690140',
         title: "Something something it's Friday 🥳 ~ !Sneak !Razer",
         user_id: '12131870',
-        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_inthelittlewood-{width}x{height}.jpg'
-      }
+        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_inthelittlewood-{width}x{height}.jpg',
+      },
     },
     type: 'Yogs',
     relations: {
       creators: ['IOdPOlLaB7zFHvsuvVwu'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     channel: {
@@ -111,19 +111,19 @@ const channels = [
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/0567ca56bb77e8ff-channel_offline_image-1920x1080.jpeg',
       display_name: 'thespiffingbrit',
-      type: ''
+      type: '',
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       youtubeChannels: [],
       creators: ['MYZPOwKsujCZbtPEJtBG'],
-      twitchChannels: []
+      twitchChannels: [],
     },
-    type: 'Yogs'
+    type: 'Yogs',
   },
   {
     channel: {
@@ -138,12 +138,12 @@ const channels = [
       created_at: '2017-01-25T21:06:12.000Z',
       type: '',
       broadcaster_type: 'partner',
-      login: 'bekkiboom'
+      login: 'bekkiboom',
     },
     relations: {
       youtubeChannels: [],
       creators: ['7tl19sOXgMq8ONpa0Wwc'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     lastStream: {
       createdAt: '2023-01-31T20:46:51.334Z',
@@ -164,22 +164,22 @@ const channels = [
         is_mature: true,
         title: "i don't get this game // !social !pronouns !sub",
         type: 'live',
-        user_id: '145983935'
-      }
+        user_id: '145983935',
+      },
     },
     type: 'Yogs',
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       created_at: '2017-03-10T17:19:40.000Z',
@@ -192,12 +192,12 @@ const channels = [
       offline_image_url: '',
       description:
         'Chilled out strategy games and occasional miniature painting. Come hang. VODs are archived on Youtube - Lewis and Ben Save the World.',
-      broadcaster_type: 'partner'
+      broadcaster_type: 'partner',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['Dvsw8FJa8v3LjEXSXr9e']
+      creators: ['Dvsw8FJa8v3LjEXSXr9e'],
     },
     lastStream: {
       stream: {
@@ -215,12 +215,12 @@ const channels = [
         game_id: '509658',
         id: '46576829100',
         user_login: 'bedgars',
-        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039']
+        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
       },
       updatedAt: '2023-02-02T18:21:01.440Z',
       endedAt: '2023-02-02T20:46:11.574Z',
-      createdAt: '2023-02-02T18:21:01.440Z'
-    }
+      createdAt: '2023-02-02T18:21:01.440Z',
+    },
   },
   {
     channel: {
@@ -234,18 +234,18 @@ const channels = [
         'Hello everyone, I am a Welsh man who likes playing games and singing Lion King songs at Karaoke. I am the resident Daf at the Yogscast office. I am a noob at this streaming malarkey, so please be patient with any technical difficulties that will inevitably arise :)',
       display_name: 'DafnotDaff',
       login: 'dafnotdaff',
-      id: '172932486'
+      id: '172932486',
     },
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       twitchChannels: [],
       creators: ['ShFoVukMUs1HAf2YryPl'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     lastStream: {
       createdAt: '2022-11-23T19:02:20.595Z',
@@ -266,15 +266,15 @@ const channels = [
         is_mature: false,
         started_at: '2022-11-23T18:59:55Z',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
-        user_login: 'dafnotdaff'
-      }
-    }
+        user_login: 'dafnotdaff',
+      },
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['o1gdP5407amAmS5vEXvP']
+      creators: ['o1gdP5407amAmS5vEXvP'],
     },
     channel: {
       display_name: 'Pyrionflax',
@@ -288,7 +288,7 @@ const channels = [
       broadcaster_type: 'partner',
       login: 'pyrionflax',
       offline_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/9be5d2c5-1ecf-48aa-a57f-b3feb4529bb1-channel_offline_image-1920x1080.png'
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/9be5d2c5-1ecf-48aa-a57f-b3feb4529bb1-channel_offline_image-1920x1080.png',
     },
     lastStream: {
       updatedAt: '2023-02-03T11:52:06.857Z',
@@ -307,17 +307,17 @@ const channels = [
         tags: ['English'],
         user_name: 'Pyrionflax',
         started_at: '2023-02-03T11:50:06Z',
-        game_id: '491931'
+        game_id: '491931',
       },
       createdAt: '2023-02-03T11:52:06.857Z',
-      endedAt: '2023-02-03T15:19:00.050Z'
+      endedAt: '2023-02-03T15:19:00.050Z',
     },
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     channel: {
@@ -332,7 +332,7 @@ const channels = [
       created_at: '2018-02-21T13:52:04.000Z',
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/9005fcb8-2b5a-4c86-a625-e865a816f5cd-profile_image-300x300.png',
-      login: 'highrollersdnd'
+      login: 'highrollersdnd',
     },
     lastStream: {
       createdAt: '2023-01-29T16:59:59.034Z',
@@ -349,7 +349,7 @@ const channels = [
           'Campaign',
           'NoBackseating',
           'SafeSpace',
-          'English'
+          'English',
         ],
         game_name: 'Dungeons & Dragons',
         started_at: '2023-01-29T16:57:57Z',
@@ -361,22 +361,22 @@ const channels = [
         language: 'en',
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_highrollersdnd-{width}x{height}.jpg',
         type: 'live',
-        user_id: '197603698'
+        user_id: '197603698',
       },
       updatedAt: '2023-01-29T16:59:59.034Z',
-      endedAt: '2023-01-29T20:06:38.289Z'
+      endedAt: '2023-01-29T20:06:38.289Z',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['c9raygCH9eGa09OLB12t']
+      creators: ['c9raygCH9eGa09OLB12t'],
     },
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     lastStream: {
@@ -395,11 +395,11 @@ const channels = [
         started_at: '2023-02-03T00:28:07Z',
         type: 'live',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
-        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_yogscast-{width}x{height}.jpg'
+        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_yogscast-{width}x{height}.jpg',
       },
       updatedAt: '2023-02-03T10:37:19.888Z',
       createdAt: '2023-02-03T00:30:13.735Z',
-      endedAt: '2023-02-03T10:54:03.174Z'
+      endedAt: '2023-02-03T10:54:03.174Z',
     },
     channel: {
       created_at: '2011-02-27T20:19:01.000Z',
@@ -412,7 +412,7 @@ const channels = [
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/87479a87-dd4a-4600-bb5e-3c9675d13af3-channel_offline_image-1920x1080.jpeg',
       profile_image_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/db623728431d29c3-profile_image-300x300.png',
-      id: '20786541'
+      id: '20786541',
     },
     type: 'Yogs',
     stream: {
@@ -431,21 +431,21 @@ const channels = [
         game_id: '509658',
         title: 'YOGSCAST GAMES SHOW! w/ Alex, Daf & Isaac!',
         game_name: 'Just Chatting',
-        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039']
+        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
       },
       createdAt: '2023-02-03T10:58:48.458Z',
-      updatedAt: '2023-02-03T10:58:48.458Z'
+      updatedAt: '2023-02-03T10:58:48.458Z',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['e0mWrK72feY69gH0HwAA', 'Gq7a6r1Pq0loxIUiNk8v']
-    }
+      creators: ['e0mWrK72feY69gH0HwAA', 'Gq7a6r1Pq0loxIUiNk8v'],
+    },
   },
   {
     type: 'Yogs',
@@ -468,13 +468,13 @@ const channels = [
         title: 'Feliz Jueves! Geeless Stream tonight ( ._.) she been dentist for tooth | !brimeboy',
         started_at: '2023-02-02T18:58:54Z',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
-        language: 'en'
-      }
+        language: 'en',
+      },
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       description:
@@ -488,13 +488,13 @@ const channels = [
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/87636eaa-0ec3-4d53-9564-d3d1e350de84-profile_image-300x300.png',
       login: 'simonhoneydew',
-      type: ''
+      type: '',
     },
     relations: {
       youtubeChannels: [],
       creators: ['QLpFsapfyzIU4TYdVmjM'],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     stream: {
@@ -514,9 +514,9 @@ const channels = [
         user_name: 'Daltos',
         tags: ['English'],
         started_at: '2023-02-03T18:07:06Z',
-        is_mature: true
+        is_mature: true,
       },
-      updatedAt: '2023-02-03T18:53:01.795Z'
+      updatedAt: '2023-02-03T18:53:01.795Z',
     },
     lastStream: {
       updatedAt: '2023-02-02T17:34:43.940Z',
@@ -535,20 +535,20 @@ const channels = [
         user_id: '21285936',
         game_id: '66082',
         is_mature: true,
-        tags: ['English']
+        tags: ['English'],
       },
       endedAt: '2023-02-02T21:09:29.481Z',
-      createdAt: '2023-02-02T17:24:25.608Z'
+      createdAt: '2023-02-02T17:24:25.608Z',
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['AZGGyF9uschXdM8gGB1v']
+      creators: ['AZGGyF9uschXdM8gGB1v'],
     },
     channel: {
       created_at: '2011-03-21T22:56:48.000Z',
@@ -561,9 +561,9 @@ const channels = [
         'https://static-cdn.jtvnw.net/jtv_user_pictures/1185ffce-8b44-4356-a23a-a920ff4849d3-profile_image-300x300.png',
       description:
         "Hello I am Daltos.  I'm part of the Yogscast and you can catch me every Monday on their channel for Armchair Admirals.I stream every day around 1 pm EST.  Just Chatting, Rimworld, Crusader Kings 3, Starcraft 2, and other strategy games.",
-      login: 'daltos'
+      login: 'daltos',
     },
-    type: 'Yogs'
+    type: 'Yogs',
   },
   {
     stream: {
@@ -584,7 +584,7 @@ const channels = [
           'stressfree',
           'English',
           'SUBNAUTICA',
-          'Blind'
+          'Blind',
         ],
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_nilesy-{width}x{height}.jpg',
         language: 'en',
@@ -593,10 +593,10 @@ const channels = [
         viewer_count: 13,
         game_name: 'Subnautica: Below Zero',
         is_mature: true,
-        started_at: '2023-02-03T16:03:04Z'
+        started_at: '2023-02-03T16:03:04Z',
       },
       createdAt: '2023-02-03T16:05:09.692Z',
-      updatedAt: '2023-02-03T16:05:09.692Z'
+      updatedAt: '2023-02-03T16:05:09.692Z',
     },
     lastStream: {
       stream: {
@@ -620,27 +620,27 @@ const channels = [
           'stressfree',
           'English',
           'SUBNAUTICA',
-          'Blind'
+          'Blind',
         ],
         game_id: '511212',
         user_login: 'nilesy',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
-        started_at: '2023-02-01T16:06:57Z'
+        started_at: '2023-02-01T16:06:57Z',
       },
       endedAt: '2023-02-01T21:13:09.804Z',
       createdAt: '2023-02-01T16:08:57.449Z',
-      updatedAt: '2023-02-01T16:08:57.449Z'
+      updatedAt: '2023-02-01T16:08:57.449Z',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['uuZ2P6KPhmLVGc7ZjWXR']
+      creators: ['uuZ2P6KPhmLVGc7ZjWXR'],
     },
     type: 'Yogs',
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       profile_image_url:
@@ -655,19 +655,19 @@ const channels = [
       description:
         'Hello! This is the Twitch channel of Nilesy, aka Liam J. MacKay, a Scottish fella who plays a lot of games! ',
       created_at: '2011-04-09T17:41:16Z',
-      login: 'nilesy'
-    }
+      login: 'nilesy',
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       youtubeChannels: [],
       creators: ['Hn8e1EgqFKg2RbJglY2x'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     type: 'Yogs',
     lastStream: {
@@ -685,11 +685,11 @@ const channels = [
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_angorytom-{width}x{height}.jpg',
         is_mature: false,
         user_id: '219068259',
-        game_name: 'Marvel Snap'
+        game_name: 'Marvel Snap',
       },
       createdAt: '2022-11-06T15:04:00.493Z',
       endedAt: '2022-11-06T19:06:46.650Z',
-      updatedAt: '2022-11-06T15:04:00.493Z'
+      updatedAt: '2022-11-06T15:04:00.493Z',
     },
     channel: {
       display_name: 'AngoryTom',
@@ -702,19 +702,19 @@ const channels = [
       id: '219068259',
       broadcaster_type: 'partner',
       description: '',
-      login: 'angorytom'
-    }
+      login: 'angorytom',
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['Hz3L8GFTsM0EFg0caGoG']
+      creators: ['Hz3L8GFTsM0EFg0caGoG'],
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     type: 'Yogs',
     channel: {
@@ -728,7 +728,7 @@ const channels = [
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/5b59ee15-7459-4923-bdd4-49b1aa484769-channel_offline_image-1920x1080.jpeg',
       id: '21945983',
-      type: ''
+      type: '',
     },
     lastStream: {
       endedAt: '2023-02-03T16:40:07.043Z',
@@ -748,10 +748,10 @@ const channels = [
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_hatfilms-{width}x{height}.jpg',
         user_login: 'hatfilms',
         title: '[18+] getting flirty in VAULT HUNTERS',
-        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039']
+        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
       },
-      updatedAt: '2023-02-03T12:46:08.956Z'
-    }
+      updatedAt: '2023-02-03T12:46:08.956Z',
+    },
   },
   {
     channel: {
@@ -766,7 +766,7 @@ const channels = [
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/317490cd-924d-4c10-8dbb-ffa33b4dddf6-channel_offline_image-1920x1080.jpeg',
       display_name: 'Rythian',
-      created_at: '2011-05-03T11:21:54.000Z'
+      created_at: '2011-05-03T11:21:54.000Z',
     },
     type: 'Yogs',
     lastStream: {
@@ -787,31 +787,31 @@ const channels = [
         game_name: 'The Great Ace Attorney Chronicles',
         user_login: 'rythian',
         language: 'en',
-        title: 'Legendary Lawyer Duo Returns! | The Great Ace Attorney Chronicles Case 2-5 with Briony!'
+        title: 'Legendary Lawyer Duo Returns! | The Great Ace Attorney Chronicles Case 2-5 with Briony!',
       },
-      endedAt: '2023-02-02T17:45:41.411Z'
+      endedAt: '2023-02-02T17:45:41.411Z',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['deBUVdSqWrH6FwlXPe2m']
-    }
+      creators: ['deBUVdSqWrH6FwlXPe2m'],
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['0w4JSboJK6RdTDmDKoYL']
+      creators: ['0w4JSboJK6RdTDmDKoYL'],
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     type: 'Yogs',
     channel: {
@@ -825,7 +825,7 @@ const channels = [
       created_at: '2011-08-14T05:12:50.000Z',
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/00e4a08c-8511-4bb1-82fa-e8dd7766bf22-channel_offline_image-1920x1080.png',
-      display_name: 'Pedguin'
+      display_name: 'Pedguin',
     },
     lastStream: {
       updatedAt: '2023-02-03T14:03:26.054Z',
@@ -845,10 +845,10 @@ const channels = [
         viewer_count: 309,
         id: '46579221820',
         type: 'live',
-        started_at: '2023-02-03T12:47:00Z'
+        started_at: '2023-02-03T12:47:00Z',
       },
-      endedAt: '2023-02-03T18:06:54.304Z'
-    }
+      endedAt: '2023-02-03T18:06:54.304Z',
+    },
   },
   {
     channel: {
@@ -862,17 +862,17 @@ const channels = [
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/46d1aba3-9341-4ead-ae27-81621feba921-profile_image-300x300.png',
       created_at: '2011-12-03T19:45:20.000Z',
-      description: 'i am the guy. the real guy. the best guy.'
+      description: 'i am the guy. the real guy. the best guy.',
     },
     relations: {
       creators: ['4ty8OfAA0hoXSV6trUY9'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     stream: {
       createdAt: '2023-02-03T12:15:10.081Z',
@@ -891,9 +891,9 @@ const channels = [
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_sips_-{width}x{height}.jpg',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         user_name: 'sips_',
-        viewer_count: 1117
+        viewer_count: 1117,
       },
-      updatedAt: '2023-02-03T14:46:45.038Z'
+      updatedAt: '2023-02-03T14:46:45.038Z',
     },
     type: 'Yogs',
     lastStream: {
@@ -913,22 +913,22 @@ const channels = [
         id: '46575567980',
         game_name: 'HITMAN World of Assassination',
         viewer_count: 125,
-        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_sips_-{width}x{height}.jpg'
+        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_sips_-{width}x{height}.jpg',
       },
       endedAt: '2023-02-02T18:18:41.934Z',
-      updatedAt: '2023-02-02T11:57:47.254Z'
-    }
+      updatedAt: '2023-02-02T11:57:47.254Z',
+    },
   },
   {
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       creators: ['8K6EIOpBvb6ROSHWHx9Q'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     type: 'Yogs',
     channel: {
@@ -941,7 +941,7 @@ const channels = [
       offline_image_url: '',
       created_at: '2011-12-04T19:50:29.000Z',
       id: '26574506',
-      display_name: 'Lalna'
+      display_name: 'Lalna',
     },
     lastStream: {
       createdAt: '2023-02-02T15:01:09.682Z',
@@ -962,15 +962,15 @@ const channels = [
         id: '46575936668',
         title: "Winchin' with Ose | SNOWRUNNER",
         is_mature: false,
-        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039']
-      }
-    }
+        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
+      },
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       created_at: '2011-12-27T21:47:00.000Z',
@@ -984,13 +984,13 @@ const channels = [
       login: 'hrry',
       broadcaster_type: 'partner',
       display_name: 'Hrry',
-      type: ''
+      type: '',
     },
     type: 'Yogs',
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['6oSnPSBKF79EBwS1G5DF']
+      creators: ['6oSnPSBKF79EBwS1G5DF'],
     },
     lastStream: {
       endedAt: '2023-02-02T01:11:54.259Z',
@@ -1011,9 +1011,9 @@ const channels = [
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         tags: ['pogstreamer', 'stupidchat', 'badttts', 'goodmemes', 'English'],
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_hrry-{width}x{height}.jpg',
-        game_id: '27471'
-      }
-    }
+        game_id: '27471',
+      },
+    },
   },
   {
     lastStream: {
@@ -1035,19 +1035,19 @@ const channels = [
         id: '40425940296',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         user_login: 'zylush',
-        viewer_count: 3
-      }
+        viewer_count: 3,
+      },
     },
     type: 'Yogs',
     relations: {
       creators: ['5h6PnMWEghJSDaS5ZNbc'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       broadcaster_type: 'partner',
@@ -1060,8 +1060,8 @@ const channels = [
       display_name: 'Zylush',
       created_at: '2012-07-05T11:43:58.000Z',
       profile_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/2073e965-21f6-4378-aae3-c96ad8df2570-profile_image-300x300.png'
-    }
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/2073e965-21f6-4378-aae3-c96ad8df2570-profile_image-300x300.png',
+    },
   },
   {
     channel: {
@@ -1077,7 +1077,7 @@ const channels = [
       view_count: 300366,
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/4d5016c5-f3c9-4bac-b5d0-3ce831098b97-profile_image-300x300.png',
-      type: ''
+      type: '',
     },
     lastStream: {
       updatedAt: '2023-02-02T19:02:13.227Z',
@@ -1097,27 +1097,27 @@ const channels = [
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_lolipopgi-{width}x{height}.jpg',
         game_id: '259714694',
         type: 'live',
-        id: '46577112972'
+        id: '46577112972',
       },
-      createdAt: '2023-02-02T19:02:13.227Z'
+      createdAt: '2023-02-02T19:02:13.227Z',
     },
     type: 'Yogs',
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       youtubeChannels: [],
       creators: ['TGDsE9jQPa9WXOOgcmFm'],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       profile_image_url:
@@ -1130,12 +1130,12 @@ const channels = [
         'https://static-cdn.jtvnw.net/jtv_user_pictures/cf568cc95d784bf3-channel_offline_image-1920x1080.jpeg',
       display_name: 'Rimmy',
       login: 'rimmy',
-      broadcaster_type: 'partner'
+      broadcaster_type: 'partner',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['0mlX8km0PvBiY2nF1Vo3']
+      creators: ['0mlX8km0PvBiY2nF1Vo3'],
     },
     type: 'Yogs',
     lastStream: {
@@ -1157,21 +1157,21 @@ const channels = [
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_rimmy-{width}x{height}.jpg',
         language: 'en',
         user_login: 'rimmy',
-        type: 'live'
-      }
-    }
+        type: 'live',
+      },
+    },
   },
   {
     relations: {
       youtubeChannels: [],
       creators: ['HkZh9sasvBrpZ4r22Sb3'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       display_name: 'zoey',
@@ -1186,7 +1186,7 @@ const channels = [
       view_count: 1900560,
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/d9756118-3566-4136-a961-40d8cec09820-profile_image-300x300.png',
-      created_at: '2012-11-29T01:33:56Z'
+      created_at: '2012-11-29T01:33:56Z',
     },
     lastStream: {
       createdAt: '2023-01-28T17:06:14.119Z',
@@ -1206,7 +1206,7 @@ const channels = [
           'vtuber',
           'lgbtq',
           'envtuber',
-          'chill'
+          'chill',
         ],
         game_name: 'Final Fantasy XIV Online',
         viewer_count: 38,
@@ -1218,8 +1218,8 @@ const channels = [
         is_mature: true,
         type: 'live',
         title: "yamyam's fishy feats and tribal trials! - sprout stories part 59",
-        id: '46557867052'
-      }
+        id: '46557867052',
+      },
     },
     stream: {
       createdAt: '2023-02-03T18:03:37.264Z',
@@ -1246,20 +1246,20 @@ const channels = [
           'vtuber',
           'lgbtq',
           'envtuber',
-          'chill'
+          'chill',
         ],
         game_name: 'PHOGS!',
-        title: 'phriday phizone co-op with phogs'
+        title: 'phriday phizone co-op with phogs',
       },
-      updatedAt: '2023-02-03T18:03:37.264Z'
-    }
+      updatedAt: '2023-02-03T18:03:37.264Z',
+    },
   },
   {
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       broadcaster_type: 'partner',
@@ -1273,12 +1273,12 @@ const channels = [
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/25ac5f35-34ce-451a-a688-fe0fc9e630eb-profile_image-300x300.png',
       offline_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/7ae0a54a-3e10-4844-9790-d2d6b9f318e4-channel_offline_image-1920x1080.jpeg'
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/7ae0a54a-3e10-4844-9790-d2d6b9f318e4-channel_offline_image-1920x1080.jpeg',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['vz0XWPLfxV9gFyChCgMO']
+      creators: ['vz0XWPLfxV9gFyChCgMO'],
     },
     lastStream: {
       createdAt: '2023-02-03T14:08:02.455Z',
@@ -1297,17 +1297,17 @@ const channels = [
         tags: ['English'],
         game_id: '27471',
         id: '46579371260',
-        is_mature: true
+        is_mature: true,
       },
       endedAt: '2023-02-03T18:46:03.682Z',
-      updatedAt: '2023-02-03T14:08:02.455Z'
-    }
+      updatedAt: '2023-02-03T14:08:02.455Z',
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       type: '',
@@ -1321,12 +1321,12 @@ const channels = [
         'https://static-cdn.jtvnw.net/jtv_user_pictures/adbaea01-0e75-4c5f-9cbe-65c8006152d2-channel_offline_image-1920x1080.png',
       description: 'D&D Person.',
       display_name: 'sherlockhulmes_',
-      id: '38180017'
+      id: '38180017',
     },
     relations: {
       creators: ['RuJTT0r57IGKXWtlHNVX'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     type: 'Yogs',
     lastStream: {
@@ -1348,21 +1348,21 @@ const channels = [
         tags: ['LARP', 'advice', 'writer', 'dnd', 'ttrpg', 'adhd', 'english', 'chill', 'English'],
         started_at: '2023-02-03T13:53:45Z',
         title: 'Vault Hunters Minecraft / Hat Films SMP / Building Chill.',
-        language: 'en'
-      }
-    }
+        language: 'en',
+      },
+    },
   },
   {
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['Zf19FbodO1Alu5gfLykf']
+      creators: ['Zf19FbodO1Alu5gfLykf'],
     },
     type: 'Yogs',
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     lastStream: {
       endedAt: '2023-02-02T00:47:21.597Z',
@@ -1383,8 +1383,8 @@ const channels = [
         started_at: '2023-02-01T19:57:56Z',
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_joehickson-{width}x{height}.jpg',
         title: 'New game, going in blind (:  will be taking pun suggestions for new stream title.',
-        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039']
-      }
+        tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
+      },
     },
     channel: {
       id: '40639871',
@@ -1398,8 +1398,8 @@ const channels = [
       created_at: '2013-02-23T11:46:53Z',
       view_count: 78810,
       profile_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/fe57d4c8-1620-4b08-a987-a4c1c795ad8d-profile_image-300x300.png'
-    }
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/fe57d4c8-1620-4b08-a987-a4c1c795ad8d-profile_image-300x300.png',
+    },
   },
   {
     channel: {
@@ -1414,7 +1414,7 @@ const channels = [
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/a8c2ecc5-9841-4721-9e0f-c9b7265d13ef-profile_image-300x300.jpeg',
       id: '414774667',
-      created_at: '2019-02-06T14:59:29.000Z'
+      created_at: '2019-02-06T14:59:29.000Z',
     },
     lastStream: {
       updatedAt: '2023-02-01T17:02:29.944Z',
@@ -1434,21 +1434,21 @@ const channels = [
         game_name: 'Tinykin',
         title: 'SHOW ME THE DUDES- Tinykin | TripleJump Live!',
         user_id: '414774667',
-        id: '46572667868'
+        id: '46572667868',
       },
-      endedAt: '2023-02-01T18:59:22.346Z'
+      endedAt: '2023-02-01T18:59:22.346Z',
     },
     relations: {
       creators: ['xd6wmw8tYeDhb7tqRBo6'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     lastStream: {
@@ -1468,10 +1468,10 @@ const channels = [
         type: 'live',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         viewer_count: 2,
-        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_therambler146-{width}x{height}.jpg'
+        thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_therambler146-{width}x{height}.jpg',
       },
       endedAt: '2023-01-22T19:26:45.573Z',
-      createdAt: '2023-01-22T18:07:50.854Z'
+      createdAt: '2023-01-22T18:07:50.854Z',
     },
     type: 'Yogs',
     channel: {
@@ -1486,18 +1486,18 @@ const channels = [
       created_at: '2013-04-10T19:09:23.000Z',
       login: 'therambler146',
       description:
-        "Well hello there! I'm Alex otherwise known as the Rambler. I usually create videos on youtube but am branching out now more onto Twitch! =)"
+        "Well hello there! I'm Alex otherwise known as the Rambler. I usually create videos on youtube but am branching out now more onto Twitch! =)",
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['3fNrixu9cDhggDXyLTwG']
-    }
+      creators: ['3fNrixu9cDhggDXyLTwG'],
+    },
   },
   {
     lastStream: {
@@ -1518,9 +1518,9 @@ const channels = [
         type: 'live',
         language: 'en',
         game_id: '24241',
-        user_name: 'NanoKim'
+        user_name: 'NanoKim',
       },
-      createdAt: '2023-01-27T10:54:02.156Z'
+      createdAt: '2023-01-27T10:54:02.156Z',
     },
     channel: {
       display_name: 'NanoKim',
@@ -1534,19 +1534,19 @@ const channels = [
       id: '43903804',
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/51c2071a-5fdc-44b1-9c7b-c017ea13064e-profile_image-300x300.png',
-      type: ''
+      type: '',
     },
     type: 'Yogs',
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['OxMCBocsLB1lXH5tQV6u']
-    }
+      creators: ['OxMCBocsLB1lXH5tQV6u'],
+    },
   },
   {
     lastStream: {
@@ -1568,7 +1568,7 @@ const channels = [
           'Vtuber',
           'Driving',
           'trucking',
-          'English'
+          'English',
         ],
         user_login: 'fionn',
         game_id: '516086',
@@ -1579,8 +1579,8 @@ const channels = [
         id: '46572665756',
         game_name: 'Grounded',
         title: 'Wild Wednesday w/ ShMiFiZone! @ 5PM GMT',
-        viewer_count: 27
-      }
+        viewer_count: 27,
+      },
     },
     stream: {
       createdAt: '2023-02-03T18:02:57.371Z',
@@ -1596,7 +1596,7 @@ const channels = [
           'Vtuber',
           'Driving',
           'trucking',
-          'English'
+          'English',
         ],
         user_id: '44135610',
         id: '46580246428',
@@ -1611,13 +1611,13 @@ const channels = [
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         game_id: '508529',
         type: 'live',
-        user_login: 'fionn'
-      }
+        user_login: 'fionn',
+      },
     },
     relations: {
       creators: ['sMGdgzZrZP8c68C0pFfU'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       display_name: 'Fionn',
@@ -1630,14 +1630,14 @@ const channels = [
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/42097432-8e99-44fd-82fb-5627d66fc043-channel_offline_image-1920x1080.png',
       type: '',
-      created_at: '2013-05-30T16:43:39.000Z'
+      created_at: '2013-05-30T16:43:39.000Z',
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
-    type: 'Yogs'
+    type: 'Yogs',
   },
   {
     type: 'Yogs',
@@ -1656,11 +1656,11 @@ const channels = [
         id: '46276710508',
         viewer_count: 46,
         user_id: '465613748',
-        game_name: 'The Elder Scrolls V: Skyrim - Special Edition'
+        game_name: 'The Elder Scrolls V: Skyrim - Special Edition',
       },
       endedAt: '2022-11-08T22:54:28.670Z',
       updatedAt: '2022-11-08T19:48:11.456Z',
-      createdAt: '2022-11-08T19:03:55.689Z'
+      createdAt: '2022-11-08T19:03:55.689Z',
     },
     channel: {
       profile_image_url:
@@ -1673,18 +1673,18 @@ const channels = [
       display_name: 'M4NG0',
       login: 'm4ng0',
       id: '465613748',
-      type: ''
+      type: '',
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     relations: {
       twitchChannels: [],
       creators: ['zMMAq6kg87R8WsHUS3s0'],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     channel: {
@@ -1700,7 +1700,7 @@ const channels = [
       id: '46969360',
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/0fd78669-7b5e-405a-932e-44ec9f6a4c92-channel_offline_image-1920x1080.png',
-      login: 'mousie'
+      login: 'mousie',
     },
     type: 'Yogs',
     lastStream: {
@@ -1719,11 +1719,11 @@ const channels = [
         id: '40422289928',
         game_id: '24241',
         user_name: 'Mousie',
-        tags: ['adhd', 'bi', 'dyslexia', 'English']
+        tags: ['adhd', 'bi', 'dyslexia', 'English'],
       },
       endedAt: '2023-02-01T20:01:55.190Z',
       createdAt: '2023-02-01T16:44:21.329Z',
-      updatedAt: '2023-02-01T16:49:16.568Z'
+      updatedAt: '2023-02-01T16:49:16.568Z',
     },
     stream: {
       stream: {
@@ -1741,21 +1741,21 @@ const channels = [
         id: '46580013244',
         is_mature: false,
         viewer_count: 7,
-        title: 'learning the PF way  (308)✨// !d !subs !ff !merch'
+        title: 'learning the PF way  (308)✨// !d !subs !ff !merch',
       },
       createdAt: '2023-02-03T17:28:55.039Z',
-      updatedAt: '2023-02-03T17:28:55.039Z'
+      updatedAt: '2023-02-03T17:28:55.039Z',
     },
     relations: {
       creators: ['dvynb4nu7GmqelY4HW3f'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     lastStream: {
@@ -1777,13 +1777,13 @@ const channels = [
         title: 'cosy with osie: SNOW RUNNIN',
         user_id: '48950229',
         user_login: 'osie',
-        tags: ['English']
-      }
+        tags: ['English'],
+      },
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       description: 'Jovial Grub and YogsCast member :) ',
@@ -1796,14 +1796,14 @@ const channels = [
       login: 'osie',
       display_name: 'osie',
       broadcaster_type: 'partner',
-      type: ''
+      type: '',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['MsNyFTyL0zikJ4zKOZm2']
+      creators: ['MsNyFTyL0zikJ4zKOZm2'],
     },
-    type: 'Yogs'
+    type: 'Yogs',
   },
   {
     lastStream: {
@@ -1823,10 +1823,10 @@ const channels = [
         type: 'live',
         game_name: 'Call to Arms: Gates of Hell - Ostfront',
         is_mature: true,
-        user_login: 'bokoen'
+        user_login: 'bokoen',
       },
       updatedAt: '2023-02-02T21:53:19.956Z',
-      createdAt: '2023-02-02T21:53:19.956Z'
+      createdAt: '2023-02-02T21:53:19.956Z',
     },
     channel: {
       offline_image_url:
@@ -1840,25 +1840,25 @@ const channels = [
       login: 'bokoen',
       profile_image_url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/fc4d28da8e8d8a0a-profile_image-300x300.png',
       view_count: 5933188,
-      type: ''
+      type: '',
     },
     type: 'Yogs',
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['t811tuTpZHK0Uzh6LqD9']
+      creators: ['t811tuTpZHK0Uzh6LqD9'],
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     type: 'Yogs',
     channel: {
@@ -1872,12 +1872,12 @@ const channels = [
       created_at: '2014-02-23T22:25:05.000Z',
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/e4bc3d5f-8873-4745-b0bf-a42483f08bae-channel_offline_image-1920x1080.png',
-      description: 'My name is Kirsty and I am a streamer apparently?? Come hang out with me!'
+      description: 'My name is Kirsty and I am a streamer apparently?? Come hang out with me!',
     },
     relations: {
       twitchChannels: [],
       creators: ['zwBpk82qRo4y2Sf5Nvlf'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     lastStream: {
       createdAt: '2023-02-02T16:45:11.850Z',
@@ -1898,15 +1898,15 @@ const channels = [
         user_name: 'Kirsty',
         is_mature: true,
         started_at: '2023-02-02T16:43:11Z',
-        viewer_count: 56
-      }
-    }
+        viewer_count: 56,
+      },
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['eE4FNKcFiBhoc3jFb9Fo']
+      creators: ['eE4FNKcFiBhoc3jFb9Fo'],
     },
     type: 'Yogs',
     channel: {
@@ -1921,12 +1921,12 @@ const channels = [
         'https://static-cdn.jtvnw.net/jtv_user_pictures/0bfd22c6-e7fe-4ba0-bcfc-cc2029e6451e-channel_offline_image-1920x1080.png',
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/4ea0cc44-4361-442f-93b6-12e8990da871-profile_image-300x300.png',
-      type: ''
+      type: '',
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     lastStream: {
       updatedAt: '2023-01-31T21:59:18.648Z',
@@ -1945,22 +1945,22 @@ const channels = [
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         viewer_count: 285,
         is_mature: true,
-        started_at: '2023-01-31T20:43:36Z'
+        started_at: '2023-01-31T20:43:36Z',
       },
       endedAt: '2023-01-31T23:40:45.343Z',
-      createdAt: '2023-01-31T20:45:38.275Z'
-    }
+      createdAt: '2023-01-31T20:45:38.275Z',
+    },
   },
   {
     relations: {
       creators: ['tmtlRvxSmccEmZlHc4nH'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     lastStream: {
       stream: {
@@ -1977,11 +1977,11 @@ const channels = [
         is_mature: false,
         user_name: 'MiniMuka',
         language: 'en',
-        title: 'Minecraft OG'
+        title: 'Minecraft OG',
       },
       updatedAt: '2022-09-26T16:53:00.017Z',
       endedAt: '2022-09-26T19:15:25.634Z',
-      createdAt: '2022-09-26T16:53:00.017Z'
+      createdAt: '2022-09-26T16:53:00.017Z',
     },
     type: 'Yogs',
     channel: {
@@ -1996,8 +1996,8 @@ const channels = [
       description: 'EPIC GAMER MINIMUKA ',
       created_at: '2014-05-20T20:44:11Z',
       offline_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/1409418e-594a-4596-ab8e-413092bfd3fe-channel_offline_image-1920x1080.png'
-    }
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/1409418e-594a-4596-ab8e-413092bfd3fe-channel_offline_image-1920x1080.png',
+    },
   },
   {
     channel: {
@@ -2012,12 +2012,12 @@ const channels = [
       type: '',
       login: 'breeh',
       offline_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/fb74b6e9-5b5b-45d4-a2be-ab10abc3803e-channel_offline_image-1920x1080.jpeg'
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/fb74b6e9-5b5b-45d4-a2be-ab10abc3803e-channel_offline_image-1920x1080.jpeg',
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     type: 'Yogs',
     lastStream: {
@@ -2036,24 +2036,24 @@ const channels = [
         started_at: '2023-01-13T20:01:21Z',
         tags: ['English'],
         thumbnail_url: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_breeh-{width}x{height}.jpg',
-        game_id: '491487'
+        game_id: '491487',
       },
       updatedAt: '2023-01-13T20:03:23.899Z',
       createdAt: '2023-01-13T20:03:23.899Z',
-      endedAt: '2023-01-14T00:02:43.706Z'
+      endedAt: '2023-01-14T00:02:43.706Z',
     },
     relations: {
       creators: ['WvavBOeHzCXZPBzahkRX'],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     type: 'Yogs',
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     lastStream: {
       createdAt: '2023-02-02T21:02:34.612Z',
@@ -2073,9 +2073,9 @@ const channels = [
         game_id: '1050003477',
         title: 'when I was ur age I climbed high hrothgar uphill BOTH ways',
         user_id: '68525019',
-        game_name: 'The Elder Scrolls V: Skyrim - Special Edition'
+        game_name: 'The Elder Scrolls V: Skyrim - Special Edition',
       },
-      endedAt: '2023-02-03T03:12:38.541Z'
+      endedAt: '2023-02-03T03:12:38.541Z',
     },
     channel: {
       created_at: '2014-08-09T02:02:05Z',
@@ -2089,19 +2089,19 @@ const channels = [
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/b9d817a9-03a8-4643-a2d4-578330f174f7-channel_offline_image-1920x1080.png',
       id: '68525019',
-      display_name: 'shadowatnoon'
+      display_name: 'shadowatnoon',
     },
     relations: {
       creators: ['f2tAtl8eBRTtKsqzQQoC'],
       twitchChannels: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     lastStream: {
       stream: {
@@ -2119,11 +2119,11 @@ const channels = [
         user_login: 'brionykay',
         user_id: '79911474',
         is_mature: false,
-        language: 'en'
+        language: 'en',
       },
       createdAt: '2023-02-03T10:04:34.929Z',
       endedAt: '2023-02-03T11:03:23.569Z',
-      updatedAt: '2023-02-03T10:15:55.142Z'
+      updatedAt: '2023-02-03T10:15:55.142Z',
     },
     channel: {
       description:
@@ -2137,20 +2137,20 @@ const channels = [
       login: 'brionykay',
       offline_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/c408dc7b-45df-43de-b8bf-1399466c3911-channel_offline_image-1920x1080.png',
-      type: ''
+      type: '',
     },
     type: 'Yogs',
     relations: {
       youtubeChannels: [],
       creators: ['Gz3S1VJlA6iPISXuIl7p'],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       twitchChannels: [],
       creators: ['zFdYfSFj4efXLheSHG5Z'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     lastStream: {
       stream: {
@@ -2168,16 +2168,16 @@ const channels = [
         game_name: 'Just Chatting',
         tag_ids: ['6ea6bca4-4712-4ab9-a906-e3336a9d8039'],
         user_login: 'geestargames',
-        is_mature: false
+        is_mature: false,
       },
       createdAt: '2023-01-31T10:10:06.946Z',
       endedAt: '2023-01-31T16:38:14.782Z',
-      updatedAt: '2023-01-31T16:20:35.350Z'
+      updatedAt: '2023-01-31T16:20:35.350Z',
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       type: '',
@@ -2191,9 +2191,9 @@ const channels = [
       profile_image_url:
         'https://static-cdn.jtvnw.net/jtv_user_pictures/d0c66997-ed03-491a-80e7-52b97a60a474-profile_image-300x300.png',
       offline_image_url:
-        'https://static-cdn.jtvnw.net/jtv_user_pictures/40e9026c-f7bb-4c70-9546-81bceadd8357-channel_offline_image-1920x1080.jpeg'
+        'https://static-cdn.jtvnw.net/jtv_user_pictures/40e9026c-f7bb-4c70-9546-81bceadd8357-channel_offline_image-1920x1080.jpeg',
     },
-    type: 'Yogs'
+    type: 'Yogs',
   },
   {
     channel: {
@@ -2209,7 +2209,7 @@ const channels = [
         'https://static-cdn.jtvnw.net/jtv_user_pictures/6836a635-5031-4029-88fa-ef0796b5fb40-channel_offline_image-1920x1080.png',
       login: 'boba',
       type: '',
-      view_count: 670001
+      view_count: 670001,
     },
     lastStream: {
       endedAt: '2023-02-02T15:37:40.747Z',
@@ -2224,7 +2224,7 @@ const channels = [
           'Tiramisu',
           'CallTorb',
           'adhd',
-          'English'
+          'English',
         ],
         game_name: 'Cuphead',
         language: 'en',
@@ -2237,22 +2237,22 @@ const channels = [
         viewer_count: 217,
         user_name: 'boba',
         game_id: '459064',
-        id: '46575929772'
+        id: '46575929772',
       },
       updatedAt: '2023-02-02T15:36:58.455Z',
-      createdAt: '2023-02-02T14:58:17.647Z'
+      createdAt: '2023-02-02T14:58:17.647Z',
     },
     type: 'Yogs',
     relations: {
       creators: ['yAmEX9kxAZTdKzwQcIsy'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     channel: {
@@ -2265,18 +2265,18 @@ const channels = [
       offline_image_url: '',
       created_at: '2015-05-26T17:33:56.000Z',
       type: '',
-      display_name: 'ispuuuv'
+      display_name: 'ispuuuv',
     },
     type: 'Yogs',
     relations: {
       creators: ['v1aFWA8DXs58iyW2ZFA6'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     lastStream: {
       endedAt: '2022-08-23T22:07:08.687Z',
@@ -2295,11 +2295,11 @@ const channels = [
         user_name: 'ispuuuv',
         started_at: '2022-08-23T19:42:14Z',
         viewer_count: 7,
-        is_mature: true
+        is_mature: true,
       },
-      createdAt: '2022-08-23T19:46:22.278Z'
-    }
-  }
+      createdAt: '2022-08-23T19:46:22.278Z',
+    },
+  },
 ]
 
 export const fetchDummyTwitchChannels = () => {

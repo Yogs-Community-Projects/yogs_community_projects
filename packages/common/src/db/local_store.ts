@@ -11,7 +11,7 @@ export interface CacheOptions {
 
 const DefaultCacheOptions: CacheOptions = {
   forceRemote: false,
-  ageInHours: 24
+  ageInHours: 24,
 }
 
 interface StoreItem<T> {
@@ -80,7 +80,7 @@ export function isDataOld<T>(data?: StoreItem<T>, maxAge = 24): boolean {
 export function loadLocalAndRemote<T>(
   key: string,
   query: DocumentReference<T>,
-  cacheOptions?: CacheOptions
+  cacheOptions?: CacheOptions,
 ): RemoteData<T>
 
 export function loadLocalAndRemote<T>(key: string, query: Query<T>, cacheOptions?: CacheOptions): RemoteData<T[]>
@@ -88,7 +88,7 @@ export function loadLocalAndRemote<T>(key: string, query: Query<T>, cacheOptions
 export function loadLocalAndRemote<T extends DocumentData>(
   key: string,
   query: DocumentReference<T> | Query<T>,
-  cacheOptions: CacheOptions = DefaultCacheOptions
+  cacheOptions: CacheOptions = DefaultCacheOptions,
 ): RemoteData<T | null> | RemoteData<T[] | null> {
   if (isDocumentReference(query)) {
     let localData: StoreItem<T> | undefined = undefined
@@ -99,7 +99,7 @@ export function loadLocalAndRemote<T extends DocumentData>(
     const [state, setState] = createStore<RemoteData<T | null>>({
       data: null,
       loading: true,
-      error: null
+      error: null,
     })
     if (b) {
       const fsState = useFirestore<T>(query)
@@ -108,20 +108,20 @@ export function loadLocalAndRemote<T extends DocumentData>(
           setState({
             loading: true,
             data: null,
-            error: null
+            error: null,
           })
         } else if (fsState.error) {
           console.error('loadLocalAndRemote', key, 'error', fsState.error)
           setState({
             loading: false,
             data: null,
-            error: fsState.error
+            error: fsState.error,
           })
         } else if (fsState.data) {
           setState({
             loading: false,
             data: fsState.data,
-            error: null
+            error: null,
           })
         }
       })
@@ -131,8 +131,8 @@ export function loadLocalAndRemote<T extends DocumentData>(
           reconcile({
             data: localData.data,
             loading: false,
-            error: undefined
-          })
+            error: undefined,
+          }),
         )
       }
     }
@@ -154,7 +154,7 @@ export function loadLocalAndRemote<T extends DocumentData>(
     const [state, setState] = createStore<RemoteData<T[] | null>>({
       data: null,
       loading: true,
-      error: null
+      error: null,
     })
     createEffect(() => {
       if (state.error) {
@@ -168,20 +168,20 @@ export function loadLocalAndRemote<T extends DocumentData>(
           setState({
             loading: true,
             data: null,
-            error: null
+            error: null,
           })
         } else if (fsState.error) {
           console.error('loadLocalAndRemote', key, 'error', fsState.error)
           setState({
             loading: false,
             data: null,
-            error: fsState.error
+            error: fsState.error,
           })
         } else if (fsState.data) {
           setState({
             loading: false,
             data: fsState.data,
-            error: null
+            error: null,
           })
         }
       })
@@ -191,8 +191,8 @@ export function loadLocalAndRemote<T extends DocumentData>(
           reconcile({
             data: localData.data,
             loading: false,
-            error: undefined
-          })
+            error: undefined,
+          }),
         )
       }
     }

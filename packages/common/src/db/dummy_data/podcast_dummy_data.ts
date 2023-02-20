@@ -8,11 +8,11 @@ const podcasts = [
         icon: {
           codePoint: 62388,
           fontFamily: 'FontAwesomeBrands',
-          fontPackage: 'font_awesome_flutter'
+          fontPackage: 'font_awesome_flutter',
         },
         color: 'ff9e9e9e',
         url: 'https://podcasts.apple.com/podcast/id1624673080?app=podcast&at=1000lHKX&ct=linktree_http&itscg=30200&itsct=lt_p&ls=1&mt=2',
-        name: 'iTunes'
+        name: 'iTunes',
       },
       {
         name: 'Spotify',
@@ -20,29 +20,29 @@ const podcasts = [
         icon: {
           fontFamily: 'FontAwesomeBrands',
           fontPackage: 'font_awesome_flutter',
-          codePoint: 61884
+          codePoint: 61884,
         },
-        url: 'https://open.spotify.com/show/4jJ7v0sgTumHh7bpj5cNn3'
-      }
+        url: 'https://open.spotify.com/show/4jJ7v0sgTumHh7bpj5cNn3',
+      },
     ],
     episode: {
       title: 'The Bean Episode',
       url: 'https://traffic.megaphone.fm/NSR4900706177.mp3?updated=1675775657',
       pubDate: 'Tue, 07 Feb 2023 15:00:00 -0000',
       duration: 3571,
-      id: 'edb28ade-a6e7-11ed-82d5-03d417cb0f2a'
+      id: 'edb28ade-a6e7-11ed-82d5-03d417cb0f2a',
     },
     url: 'https://cms.megaphone.fm/channel/NSR5480017509',
     relations: {
       podcasts: [],
       creators: ['eE4FNKcFiBhoc3jFb9Fo', 'vz0XWPLfxV9gFyChCgMO', '6oSnPSBKF79EBwS1G5DF'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     imageUrl:
       'https://megaphone.imgix.net/podcasts/7f79a22e-cfaf-11ec-809d-0fb8454ff4fa/image/Zero_Degrees_main.png?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress',
     id: '16adV0PdksqhMRH6xCPy',
-    xmlUrl: 'https://feeds.megaphone.fm/NSR5480017509'
+    xmlUrl: 'https://feeds.megaphone.fm/NSR5480017509',
   },
   {
     imageUrl:
@@ -54,15 +54,15 @@ const podcasts = [
       pubDate: 'Tue, 07 Feb 2023 18:23:49 -0000',
       id: 'ce1b9cd8-a714-11ed-8d05-fb8216a693c4',
       title: 'High Rollers: Aerois #173 | Wolflions in the Night (Part 1)',
-      duration: 5110
+      duration: 5110,
     },
     xmlUrl: 'http://feeds.megaphone.fm/NSR8625352094',
     relations: {
       youtubeChannels: [],
       creators: ['c9raygCH9eGa09OLB12t'],
-      twitchChannels: []
+      twitchChannels: [],
     },
-    name: 'High Rollers DnD'
+    name: 'High Rollers DnD',
   },
   {
     name: 'Triforce!',
@@ -70,7 +70,7 @@ const podcasts = [
       creators: ['o1gdP5407amAmS5vEXvP', 'Gq7a6r1Pq0loxIUiNk8v', '4ty8OfAA0hoXSV6trUY9'],
       podcasts: [],
       twitchChannels: [],
-      youtubeChannels: ['UCgXiTWrFg05fTPfw1YLb5Ug']
+      youtubeChannels: ['UCgXiTWrFg05fTPfw1YLb5Ug'],
     },
     id: '5F7GOIwN9KlUqR8V7fjj',
     links: [
@@ -79,11 +79,11 @@ const podcasts = [
         icon: {
           fontFamily: 'FontAwesomeBrands',
           codePoint: 61884,
-          fontPackage: 'font_awesome_flutter'
+          fontPackage: 'font_awesome_flutter',
         },
         name: 'Spotify',
-        url: 'https://open.spotify.com/show/4LNMdMhRsPmJhGGw6b1vTZ?si=d2e495d904f34539'
-      }
+        url: 'https://open.spotify.com/show/4LNMdMhRsPmJhGGw6b1vTZ?si=d2e495d904f34539',
+      },
     ],
     xmlUrl: 'https://feeds.megaphone.fm/NSR9016694791',
     url: 'http://yogpod.libsyn.com',
@@ -92,10 +92,10 @@ const podcasts = [
       pubDate: 'Wed, 01 Feb 2023 16:30:00 -0000',
       url: 'https://traffic.megaphone.fm/NSR2154610326.mp3?updated=1675184292',
       id: 'bf2ff404-a187-11ed-9433-538fbb24eb05',
-      title: 'Triforce! #245: The Saddest Kazoo in the World'
+      title: 'Triforce! #245: The Saddest Kazoo in the World',
     },
     imageUrl:
-      'https://megaphone.imgix.net/podcasts/7899c86e-ca95-11eb-a133-d7b38afd7bc7/image/Triforce_PickaxeUpdated.png?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress'
+      'https://megaphone.imgix.net/podcasts/7899c86e-ca95-11eb-a133-d7b38afd7bc7/image/Triforce_PickaxeUpdated.png?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress',
   },
   {
     name: 'Feels on Meals',
@@ -105,7 +105,7 @@ const podcasts = [
       title: '113 KTV feat. Pedguin',
       duration: 3848,
       pubDate: 'Mon, 28 Nov 2022 13:00:00 -0000',
-      id: '3338097c-6e98-11ed-9ef9-cf9a113b26ad'
+      id: '3338097c-6e98-11ed-9ef9-cf9a113b26ad',
     },
     links: [
       {
@@ -114,9 +114,9 @@ const podcasts = [
         icon: {
           fontFamily: 'FontAwesomeBrands',
           codePoint: 61884,
-          fontPackage: 'font_awesome_flutter'
+          fontPackage: 'font_awesome_flutter',
         },
-        color: 'ff1db954'
+        color: 'ff1db954',
       },
       {
         color: 'ff9e9e9e',
@@ -124,10 +124,10 @@ const podcasts = [
         icon: {
           codePoint: 62388,
           fontFamily: 'FontAwesomeBrands',
-          fontPackage: 'font_awesome_flutter'
+          fontPackage: 'font_awesome_flutter',
         },
-        name: 'iTunes'
-      }
+        name: 'iTunes',
+      },
     ],
     url: 'https://cms.megaphone.fm/channel/feels',
     xmlUrl: 'https://feeds.megaphone.fm/feels',
@@ -135,17 +135,17 @@ const podcasts = [
       youtubeChannels: [],
       podcasts: [],
       creators: ['yAmEX9kxAZTdKzwQcIsy', 'MsNyFTyL0zikJ4zKOZm2'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     imageUrl:
-      'https://megaphone.imgix.net/podcasts/0eb9c6aa-b1db-11ec-851e-43596e154367/image/Feels_on_Meals_Icon_Artwork.jpg?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress'
+      'https://megaphone.imgix.net/podcasts/0eb9c6aa-b1db-11ec-851e-43596e154367/image/Feels_on_Meals_Icon_Artwork.jpg?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress',
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: ['UCUCj1zyUUPefT18RytQxu3g'],
       creators: ['Hz3L8GFTsM0EFg0caGoG'],
-      podcasts: []
+      podcasts: [],
     },
     imageUrl:
       'https://megaphone.imgix.net/podcasts/3a491830-da6c-11eb-a663-378eac6ebb3a/image/HatChat_PickaxeUpdated.png?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress',
@@ -158,7 +158,7 @@ const podcasts = [
       duration: 3401,
       title: 'Would you pay for a memory?',
       id: 'df80ffc4-a31b-11ed-85a8-674ff3992315',
-      url: 'https://traffic.megaphone.fm/NSR5653764360.mp3?updated=1675358142'
+      url: 'https://traffic.megaphone.fm/NSR5653764360.mp3?updated=1675358142',
     },
     links: [
       {
@@ -168,10 +168,10 @@ const podcasts = [
         icon: {
           fontPackage: 'font_awesome_flutter',
           fontFamily: 'FontAwesomeBrands',
-          codePoint: 61884
-        }
-      }
-    ]
+          codePoint: 61884,
+        },
+      },
+    ],
   },
   {
     xmlUrl: 'https://feeds.megaphone.fm/chance',
@@ -180,7 +180,7 @@ const podcasts = [
       youtubeChannels: ['UClhmd2Xe3zrYfuarqV-shKA'],
       twitchChannels: [],
       podcasts: [],
-      creators: ['Dvsw8FJa8v3LjEXSXr9e']
+      creators: ['Dvsw8FJa8v3LjEXSXr9e'],
     },
     url: 'https://cms.megaphone.fm/channel/chance',
     episode: {
@@ -188,7 +188,7 @@ const podcasts = [
       duration: 3499,
       title: 'Season Two Roundtable',
       url: 'https://chrt.fm/track/C35921/traffic.megaphone.fm/NSR6607489042.mp3?updated=1665671632',
-      id: '2071dffe-496b-11ed-8219-e7e2d6dd95f5'
+      id: '2071dffe-496b-11ed-8219-e7e2d6dd95f5',
     },
     links: [
       {
@@ -197,9 +197,9 @@ const podcasts = [
         icon: {
           fontPackage: 'font_awesome_flutter',
           fontFamily: 'FontAwesomeBrands',
-          codePoint: 61884
+          codePoint: 61884,
         },
-        color: 'ff1db954'
+        color: 'ff1db954',
       },
       {
         color: 'ff9e9e9e',
@@ -207,15 +207,15 @@ const podcasts = [
         icon: {
           fontPackage: 'font_awesome_flutter',
           codePoint: 62388,
-          fontFamily: 'FontAwesomeBrands'
+          fontFamily: 'FontAwesomeBrands',
         },
-        name: 'iTunes'
-      }
+        name: 'iTunes',
+      },
     ],
     id: 'ZbvgXhoXmqwQ6cqqmmn6',
     name: 'Chance & Counters',
     imageUrl:
-      'https://megaphone.imgix.net/podcasts/8d8c7c1a-b1e1-11ec-ad85-a7134aa5f124/image/CnC_Main_Art.jpg?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress'
+      'https://megaphone.imgix.net/podcasts/8d8c7c1a-b1e1-11ec-ad85-a7134aa5f124/image/CnC_Main_Art.jpg?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress',
   },
   {
     imageUrl:
@@ -230,14 +230,14 @@ const podcasts = [
       pubDate: 'Sat, 04 Feb 2023 10:00:00 -0000',
       url: 'https://chrt.fm/track/C35921/traffic.megaphone.fm/NSR8730803664.mp3?updated=1674749974',
       title: 'Dreams of Parcels',
-      duration: 3962
+      duration: 3962,
     },
     relations: {
       youtubeChannels: [],
       podcasts: [],
       twitchChannels: [],
-      creators: ['Gz3S1VJlA6iPISXuIl7p', 'zwBpk82qRo4y2Sf5Nvlf']
-    }
+      creators: ['Gz3S1VJlA6iPISXuIl7p', 'zwBpk82qRo4y2Sf5Nvlf'],
+    },
   },
   {
     episode: {
@@ -245,14 +245,14 @@ const podcasts = [
       title: 'Pitch, Please - Pitch of the Year 2022 (with Matthew Castle)',
       duration: 8497,
       id: 'db3e35a4-7c5a-11ed-9063-8329b2a40b8d',
-      pubDate: 'Sun, 25 Dec 2022 06:00:00 -0000'
+      pubDate: 'Sun, 25 Dec 2022 06:00:00 -0000',
     },
     url: 'http://pitch-please.libsyn.com/',
     relations: {
       creators: ['kmVGNmGPDoQW8OWMLkmW'],
       podcasts: [],
       youtubeChannels: ['UCEXTAoHBfQpGC-iuEReSRPQ'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     links: [
       {
@@ -260,27 +260,27 @@ const podcasts = [
         icon: {
           codePoint: 61884,
           fontFamily: 'FontAwesomeBrands',
-          fontPackage: 'font_awesome_flutter'
+          fontPackage: 'font_awesome_flutter',
         },
         color: 'ff1db954',
-        url: 'https://open.spotify.com/show/2iO0B1QsPVm4K87vP31FHy?si=68958824d5704e87'
+        url: 'https://open.spotify.com/show/2iO0B1QsPVm4K87vP31FHy?si=68958824d5704e87',
       },
       {
         color: 'ff9e9e9e',
         icon: {
           codePoint: 62388,
           fontPackage: 'font_awesome_flutter',
-          fontFamily: 'FontAwesomeBrands'
+          fontFamily: 'FontAwesomeBrands',
         },
         name: 'iTunes',
-        url: 'https://podcasts.apple.com/gb/podcast/pitch-please/id1498392864'
-      }
+        url: 'https://podcasts.apple.com/gb/podcast/pitch-please/id1498392864',
+      },
     ],
     xmlUrl: 'https://feeds.megaphone.fm/NSR8204841163',
     id: 'kZVpteHZ80TK0BfuvZgO',
     imageUrl:
       'https://megaphone.imgix.net/podcasts/1e950b24-d019-11eb-9c74-13e38718bdcd/image/PitchPlease_PickaxeUpdated.png?ixlib=rails-2.1.2&max-w=3000&max-h=3000&fit=crop&auto=format,compress',
-    name: 'Pitch, Please'
+    name: 'Pitch, Please',
   },
   {
     id: 'wbo7oG05vqQxGW3u1oEW',
@@ -293,24 +293,24 @@ const podcasts = [
       id: '19e54a68-6a63-11ed-bd3f-27364bb2193c',
       title: "Simon's Christmas Portions 2022 - KFC-scented firewood",
       pubDate: 'Thu, 22 Dec 2022 16:00:00 -0000',
-      url: 'https://traffic.megaphone.fm/NSR7114080466.mp3?updated=1669121572'
+      url: 'https://traffic.megaphone.fm/NSR7114080466.mp3?updated=1669121572',
     },
     relations: {
       youtubeChannels: ['UCH-_hzb2ILSCo9ftVSnrCIQ', 'UCpKNM44gSRZ3U_hMd2JV9Kw'],
       twitchChannels: [],
       creators: ['QLpFsapfyzIU4TYdVmjM', 'Gq7a6r1Pq0loxIUiNk8v'],
-      podcasts: []
+      podcasts: [],
     },
     links: [
       {
         icon: {
           codePoint: 61884,
           fontPackage: 'font_awesome_flutter',
-          fontFamily: 'FontAwesomeBrands'
+          fontFamily: 'FontAwesomeBrands',
         },
         url: 'https://open.spotify.com/show/5KdK2yveOSMpEVQpJzSTOc?si=063c7e05e0184d59',
         color: 'ff1db954',
-        name: 'Spotify'
+        name: 'Spotify',
       },
       {
         name: 'iTunes',
@@ -319,12 +319,12 @@ const podcasts = [
         icon: {
           fontFamily: 'FontAwesomeBrands',
           fontPackage: 'font_awesome_flutter',
-          codePoint: 62388
-        }
-      }
+          codePoint: 62388,
+        },
+      },
     ],
-    xmlUrl: 'https://feeds.megaphone.fm/NSR6944084567'
-  }
+    xmlUrl: 'https://feeds.megaphone.fm/NSR6944084567',
+  },
 ]
 export const fetchDummyData = () => {
   return podcasts as unknown as Podcast[]

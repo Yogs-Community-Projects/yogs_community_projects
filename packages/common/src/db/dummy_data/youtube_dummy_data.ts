@@ -5,12 +5,12 @@ const channels = [
     relations: {
       creators: ['G2xAxM8JBwtNIojLq1cE'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     video: {
       id: 'ZordIL8XbgQ',
@@ -26,23 +26,23 @@ const channels = [
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/ZordIL8XbgQ/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/ZordIL8XbgQ/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/ZordIL8XbgQ/hqdefault.jpg',
-            width: 480
-          }
+            width: 480,
+          },
         },
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       kind: 'youtube#searchResult',
-      etag: 'bCUeB35l_yhFI-FxdlqseBR6UcU'
+      etag: 'bCUeB35l_yhFI-FxdlqseBR6UcU',
     },
     channel: {
       snippet: {
@@ -51,40 +51,40 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLS_FeoYQ_sv3PbmczDIgttNXEns_xkcz4BOcUrM7w=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           maxres: null,
           standard: null,
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS_FeoYQ_sv3PbmczDIgttNXEns_xkcz4BOcUrM7w=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS_FeoYQ_sv3PbmczDIgttNXEns_xkcz4BOcUrM7w=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
-          }
+            height: null,
+          },
         },
         description: 'Twitch Partnered retro variety streamer!',
         title: 'Bouphe',
         customUrl: null,
         publishedAt: '2010-08-20T15:17:13.000Z',
         localized: null,
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       etag: 'wSrg0EcD0RspnJj76DOybyPC0b0',
       id: 'UC0K88i2HolAeHRE57l-Pb5w',
       contentDetails: null,
       statistics: null,
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     relations: {
       creators: ['161sDL9M6qRj7tNGgpnp'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       etag: '9tpbzl8zCf-cEVNKyPy44gxb8-k',
@@ -96,23 +96,23 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/pVBiIJp4Nxk/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/pVBiIJp4Nxk/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/pVBiIJp4Nxk/hqdefault.jpg',
           },
           default: {
             url: 'https://i.ytimg.com/vi/pVBiIJp4Nxk/default.jpg',
             width: 120,
-            height: 90
-          }
+            height: 90,
+          },
         },
         liveBroadcastContent: 'none',
         publishedAt: '2022-12-05T18:55:58Z',
         title: 'don&#39;t let your memes be dreams',
-        publishTime: '2022-12-05T18:55:58Z'
+        publishTime: '2022-12-05T18:55:58Z',
       },
       kind: 'youtube#searchResult',
       id: 'pVBiIJp4Nxk',
@@ -125,10 +125,10 @@ const channels = [
             domain: 'youtube.quota',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            reason: 'quotaExceeded'
-          }
-        ]
-      }
+            reason: 'quotaExceeded',
+          },
+        ],
+      },
     },
     channel: {
       snippet: {
@@ -140,47 +140,47 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/dNBvziMTuovCCp8a0vKCpcI8yDAsaV9GmE3Mnb1N9YiwO3dI-5R5w2zANyNZLCay3v-hYJfnzY0=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           standard: null,
           high: {
             url: 'https://yt3.ggpht.com/dNBvziMTuovCCp8a0vKCpcI8yDAsaV9GmE3Mnb1N9YiwO3dI-5R5w2zANyNZLCay3v-hYJfnzY0=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/dNBvziMTuovCCp8a0vKCpcI8yDAsaV9GmE3Mnb1N9YiwO3dI-5R5w2zANyNZLCay3v-hYJfnzY0=s88-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/dNBvziMTuovCCp8a0vKCpcI8yDAsaV9GmE3Mnb1N9YiwO3dI-5R5w2zANyNZLCay3v-hYJfnzY0=s88-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         defaultLanguage: null,
         publishedAt: '2015-05-09T06:39:29.000Z',
-        customUrl: null
+        customUrl: null,
       },
       statistics: null,
       etag: '5jQTizIDBuksmAAqJnIqWsMxIg0',
       kind: 'youtube#searchResult',
       id: 'UC0WJULmXyNAvyLJCBi7r_TQ',
-      contentDetails: null
+      contentDetails: null,
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       creators: ['3fNrixu9cDhggDXyLTwG'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       snippet: {
@@ -195,28 +195,28 @@ const channels = [
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLR2k3UXdgsc0sti3qmIZaxeDHY849Eu0EHgixLC=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLR2k3UXdgsc0sti3qmIZaxeDHY849Eu0EHgixLC=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLR2k3UXdgsc0sti3qmIZaxeDHY849Eu0EHgixLC=s88-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           medium: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLR2k3UXdgsc0sti3qmIZaxeDHY849Eu0EHgixLC=s240-c-k-c0xffffffff-no-rj-mo',
-            width: null
-          }
+            width: null,
+          },
         },
         country: null,
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       id: 'UC1CRYVDEMX4OWXf3zbn5zyw',
       etag: 'iWAs-7Ibtvzr8TbwD7H9Lqt00Yg',
       contentDetails: null,
       kind: 'youtube#searchResult',
-      statistics: null
+      statistics: null,
     },
     video: {
       etag: 'TFnUUcoce4VeHoKkFoEe4sLFlec',
@@ -231,31 +231,31 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/JCJBEpLnOz0/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           default: {
             url: 'https://i.ytimg.com/vi/JCJBEpLnOz0/default.jpg',
             width: 120,
-            height: 90
+            height: 90,
           },
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/JCJBEpLnOz0/hqdefault.jpg',
-            height: 360
-          }
+            height: 360,
+          },
         },
         liveBroadcastContent: 'none',
-        channelTitle: 'Atomic Nerd'
+        channelTitle: 'Atomic Nerd',
       },
       id: 'JCJBEpLnOz0',
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     video: {
       snippet: {
@@ -268,22 +268,22 @@ const channels = [
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/Ky11EGeimeM/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/Ky11EGeimeM/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/Ky11EGeimeM/hqdefault.jpg',
           },
           default: {
             url: 'https://i.ytimg.com/vi/Ky11EGeimeM/default.jpg',
             width: 120,
-            height: 90
-          }
+            height: 90,
+          },
         },
         publishTime: '2023-01-23T23:28:46Z',
         channelTitle: 'Yogs Clips',
-        publishedAt: '2023-01-23T23:28:46Z'
+        publishedAt: '2023-01-23T23:28:46Z',
       },
       kind: 'youtube#searchResult',
       id: 'Ky11EGeimeM',
@@ -294,18 +294,18 @@ const channels = [
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
             domain: 'youtube.quota',
-            reason: 'quotaExceeded'
-          }
+            reason: 'quotaExceeded',
+          },
         ],
         code: 403,
         message:
-          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-      }
+          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+      },
     },
     relations: {
       creators: ['SgmMaNHurJaXBxsTalDM'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       statistics: null,
@@ -324,35 +324,35 @@ const channels = [
         localized: {
           description:
             'Welcome to YOGSCAST Clips! Here, I will upload highlights and montages taken from the videos and streams of the last week, all come from a few members of the Yogscast!\n\nThis is a FAN channel. I hold no official affiliation with the Yogscast company or its subsidiaries. If any member of the Yogscast wants a video removed please just leave a comment and it will be done.\n\nHope you enjoy!\n\nKeep up to date on The Yogscast here:\nTwitter: https://twitter.com/yogscast\nReddit: https://www.reddit.com/r/Yogscast/\nInstagram: https://www.instagram.com/yogscast\nFacebook: https://www.facebook.com/yogscast/\nWatch Yogs live on Twitch.tv every day!  http://www.twitch.tv/yogscast/ \n\nIf you want to look at my personal channel, very inconsistent mediocre content then press the link! \nhttps://www.youtube.com/user/bobster707 check it out!',
-          title: 'Yogs Clips'
+          title: 'Yogs Clips',
         },
         thumbnails: {
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSLD--a1b5Fz9FuuYDxBWTIfxtGG5s4hrz9olj5=s88-c-k-c0x00ffffff-no-rj',
             width: 88,
-            height: 88
+            height: 88,
           },
           standard: null,
           maxres: null,
           medium: {
             height: 240,
             width: 240,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSLD--a1b5Fz9FuuYDxBWTIfxtGG5s4hrz9olj5=s240-c-k-c0x00ffffff-no-rj'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSLD--a1b5Fz9FuuYDxBWTIfxtGG5s4hrz9olj5=s240-c-k-c0x00ffffff-no-rj',
           },
           high: {
             height: 800,
             url: 'https://yt3.ggpht.com/ytc/AKedOLSLD--a1b5Fz9FuuYDxBWTIfxtGG5s4hrz9olj5=s800-c-k-c0x00ffffff-no-rj',
-            width: 800
-          }
-        }
-      }
-    }
+            width: 800,
+          },
+        },
+      },
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     video: {
       snippet: {
@@ -365,31 +365,31 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/UrEaSaFHYDg/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/UrEaSaFHYDg/hqdefault.jpg',
-            width: 480
+            width: 480,
           },
           default: {
             url: 'https://i.ytimg.com/vi/UrEaSaFHYDg/default.jpg',
             height: 90,
-            width: 120
-          }
+            width: 120,
+          },
         },
         publishedAt: '2023-02-07T19:00:10Z',
         channelId: 'UC3qtZRMtWNaD2Q96STxgOrA',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       etag: '3TOba4D2oJvO8TSvK0YRufDhIYY',
       id: 'UrEaSaFHYDg',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['c9raygCH9eGa09OLB12t']
+      creators: ['c9raygCH9eGa09OLB12t'],
     },
     channel: {
       contentDetails: null,
@@ -408,25 +408,25 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQjIrG5UUAwBK_EV0bqxBPhlQjx5iqkCvlfouBj=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           standard: null,
           medium: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQjIrG5UUAwBK_EV0bqxBPhlQjx5iqkCvlfouBj=s240-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQjIrG5UUAwBK_EV0bqxBPhlQjx5iqkCvlfouBj=s800-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQjIrG5UUAwBK_EV0bqxBPhlQjx5iqkCvlfouBj=s800-c-k-c0xffffffff-no-rj-mo',
+          },
         },
-        title: 'High Rollers DnD'
+        title: 'High Rollers DnD',
       },
       statistics: null,
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     video: {
@@ -441,22 +441,22 @@ const channels = [
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/Eev7lUiVG9s/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/Eev7lUiVG9s/mqdefault.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/Eev7lUiVG9s/hqdefault.jpg',
             height: 360,
-            width: 480
+            width: 480,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/Eev7lUiVG9s/default.jpg',
-            height: 90
-          }
+            height: 90,
+          },
         },
         publishTime: '2022-12-13T04:30:34Z',
         channelId: 'UC5gsrZTtWG_AqDFmuq81Q-w',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       etag: '2SzgOlu4nCo9Ezb8h4hy1ap5HGU',
       id: 'Eev7lUiVG9s',
@@ -469,20 +469,20 @@ const channels = [
             reason: 'quotaExceeded',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            domain: 'youtube.quota'
-          }
-        ]
-      }
+            domain: 'youtube.quota',
+          },
+        ],
+      },
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['0mlX8km0PvBiY2nF1Vo3']
+      creators: ['0mlX8km0PvBiY2nF1Vo3'],
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       statistics: null,
@@ -501,25 +501,25 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/IiQBKQSIEb0qQrI8CAiIm_BVVtgm4S6GDN_vjFZNO7z_ZOVtI6H5DRfLN6vC_xYbZllOrLzyYtk=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           medium: {
             url: 'https://yt3.ggpht.com/IiQBKQSIEb0qQrI8CAiIm_BVVtgm4S6GDN_vjFZNO7z_ZOVtI6H5DRfLN6vC_xYbZllOrLzyYtk=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             url: 'https://yt3.ggpht.com/IiQBKQSIEb0qQrI8CAiIm_BVVtgm4S6GDN_vjFZNO7z_ZOVtI6H5DRfLN6vC_xYbZllOrLzyYtk=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
-        }
+            height: null,
+          },
+        },
       },
       contentDetails: null,
       etag: 'vdmxMxbjffUGI65jMLcz7gKvuJY',
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     video: {
@@ -534,25 +534,25 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/FkJAR2RCqUU/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/FkJAR2RCqUU/hqdefault.jpg',
           },
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/FkJAR2RCqUU/default.jpg',
-            width: 120
+            width: 120,
           },
           medium: {
             url: 'https://i.ytimg.com/vi/FkJAR2RCqUU/mqdefault.jpg',
             height: 180,
-            width: 320
-          }
+            width: 320,
+          },
         },
         publishTime: '2023-02-07T18:00:04Z',
         title: 'SUBNAUTICA IN THE CLOUDS! - FOREVER SKIES',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       etag: 'Cxs-_xzhG2YWdKi-b4FuncjEFRI',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     channel: {
       snippet: {
@@ -561,19 +561,19 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLR9oh7-tMEGOx96ty0OVyLEy3KvmMaIx7GL6Eat=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           standard: null,
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLR9oh7-tMEGOx96ty0OVyLEy3KvmMaIx7GL6Eat=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLR9oh7-tMEGOx96ty0OVyLEy3KvmMaIx7GL6Eat=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
+            height: null,
+          },
         },
         title: 'Angory Tom',
         defaultLanguage: null,
@@ -581,24 +581,24 @@ const channels = [
         customUrl: null,
         publishedAt: '2016-02-04T23:23:27.000Z',
         country: null,
-        description: ''
+        description: '',
       },
       kind: 'youtube#searchResult',
       etag: '75Y6zUNlPAlLVd_AvqNEQlYdBok',
       statistics: null,
       contentDetails: null,
-      id: 'UC5rUMdCFWPXYs9e8PBLzq5g'
+      id: 'UC5rUMdCFWPXYs9e8PBLzq5g',
     },
     relations: {
       youtubeChannels: [],
       creators: ['Hn8e1EgqFKg2RbJglY2x'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     channel: {
@@ -616,31 +616,31 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/DibJhBKjtECiMl236yZs24UnozxpkObFyvGDqMoLu0VpEM9e1-npmDn34dmaQU2JlD9uZssv=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/DibJhBKjtECiMl236yZs24UnozxpkObFyvGDqMoLu0VpEM9e1-npmDn34dmaQU2JlD9uZssv=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/DibJhBKjtECiMl236yZs24UnozxpkObFyvGDqMoLu0VpEM9e1-npmDn34dmaQU2JlD9uZssv=s800-c-k-c0xffffffff-no-rj-mo',
           },
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/DibJhBKjtECiMl236yZs24UnozxpkObFyvGDqMoLu0VpEM9e1-npmDn34dmaQU2JlD9uZssv=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
-          }
+            height: null,
+          },
         },
         country: null,
-        publishedAt: '2009-11-19T15:07:56.000Z'
+        publishedAt: '2009-11-19T15:07:56.000Z',
       },
       etag: '99ucu28WlgX4K2mIFJX2Sh0bRjQ',
       statistics: null,
       kind: 'youtube#searchResult',
-      contentDetails: null
+      contentDetails: null,
     },
     relations: {
       youtubeChannels: [],
       creators: ['Hz3L8GFTsM0EFg0caGoG'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       snippet: {
@@ -652,33 +652,33 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/H1Zpv_5hyys/default.jpg'
+            url: 'https://i.ytimg.com/vi/H1Zpv_5hyys/default.jpg',
           },
           medium: {
             url: 'https://i.ytimg.com/vi/H1Zpv_5hyys/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/H1Zpv_5hyys/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/H1Zpv_5hyys/hqdefault.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         channelId: 'UC7A_dLnSAjl7uROCdoNyjzg',
         description:
-          'Become a Member! https://www.youtube.com/c/hatfilms/join Support via Patreon! http://patreon.com/hatfilms Subscribe & hit that ...'
+          'Become a Member! https://www.youtube.com/c/hatfilms/join Support via Patreon! http://patreon.com/hatfilms Subscribe & hit that ...',
       },
       id: 'H1Zpv_5hyys',
       kind: 'youtube#searchResult',
-      etag: 'hsj3LgUumcqgaDDUkTR90gb1af4'
+      etag: 'hsj3LgUumcqgaDDUkTR90gb1af4',
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     video: {
@@ -691,9 +691,9 @@ const channels = [
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
             reason: 'quotaExceeded',
-            domain: 'youtube.quota'
-          }
-        ]
+            domain: 'youtube.quota',
+          },
+        ],
       },
       etag: 'Aj9XIPJ-f4dxlh1fLzhFqy741s8',
       kind: 'youtube#searchResult',
@@ -707,28 +707,28 @@ const channels = [
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/H2Hz_2Nfw20/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/H2Hz_2Nfw20/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             url: 'https://i.ytimg.com/vi/H2Hz_2Nfw20/hqdefault.jpg',
             height: 360,
-            width: 480
-          }
+            width: 480,
+          },
         },
         description: 'Broadcasted live on Twitch -- Watch live at https://www.twitch.tv/bouphe.',
-        channelId: 'UC7wcsom3Hst65MVvL51gIAg'
+        channelId: 'UC7wcsom3Hst65MVvL51gIAg',
       },
-      id: 'H2Hz_2Nfw20'
+      id: 'H2Hz_2Nfw20',
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -748,39 +748,39 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQ1vLMDOhydTyjF1mRFDfixBaVKSIPuVmCPqUP7=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQ1vLMDOhydTyjF1mRFDfixBaVKSIPuVmCPqUP7=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           maxres: null,
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQ1vLMDOhydTyjF1mRFDfixBaVKSIPuVmCPqUP7=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
-          }
-        }
+            width: null,
+          },
+        },
       },
-      contentDetails: null
+      contentDetails: null,
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['G2xAxM8JBwtNIojLq1cE']
-    }
+      creators: ['G2xAxM8JBwtNIojLq1cE'],
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['dvynb4nu7GmqelY4HW3f']
+      creators: ['dvynb4nu7GmqelY4HW3f'],
     },
     channel: {
       id: 'UC9sjOOmRyRS97aRRlyZw5Lw',
@@ -797,26 +797,26 @@ const channels = [
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTOOi07_FZBkbChIt_dqO4qv0eKIA_5-0jlxxTAPg=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTOOi07_FZBkbChIt_dqO4qv0eKIA_5-0jlxxTAPg=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTOOi07_FZBkbChIt_dqO4qv0eKIA_5-0jlxxTAPg=s240-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTOOi07_FZBkbChIt_dqO4qv0eKIA_5-0jlxxTAPg=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTOOi07_FZBkbChIt_dqO4qv0eKIA_5-0jlxxTAPg=s800-c-k-c0xffffffff-no-rj-mo',
           },
-          maxres: null
+          maxres: null,
         },
         defaultLanguage: null,
         description:
-          "Hey I'm Mousie! Welcome to my channel! Our Discord: https://discord.gg/0ypbHPvnRsCnCjgO Be sure to check out my ..."
+          "Hey I'm Mousie! Welcome to my channel! Our Discord: https://discord.gg/0ypbHPvnRsCnCjgO Be sure to check out my ...",
       },
       statistics: null,
-      etag: 'CgvRIQJNxDiLVOUulwgajHl4rgc'
+      etag: 'CgvRIQJNxDiLVOUulwgajHl4rgc',
     },
     video: {
       etag: 'ngL6Hqtzk_2mSW6dXqTbXuO8x8g',
@@ -832,24 +832,24 @@ const channels = [
           default: {
             url: 'https://i.ytimg.com/vi/bBKHOOfFFIg/default.jpg',
             height: 90,
-            width: 120
+            width: 120,
           },
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/bBKHOOfFFIg/hqdefault.jpg',
-            height: 360
+            height: 360,
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/bBKHOOfFFIg/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/bBKHOOfFFIg/mqdefault.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         description:
-          'Come over and hang out some time! https://www.twitch.tv/mousie Thank you so much to everyone who clipped! It helps a lot!'
-      }
-    }
+          'Come over and hang out some time! https://www.twitch.tv/mousie Thank you so much to everyone who clipped! It helps a lot!',
+      },
+    },
   },
   {
     channel: {
@@ -862,20 +862,20 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/MWAKxXCRp6shTe7zi6NQwPFNXT4sHTTNcV-jAiwa7ayrRaxigE5GRfio5pn2NkzWW3E_kZUoCw=s800-c-k-c0x00ffffff-no-rj',
             height: 800,
-            width: 800
+            width: 800,
           },
           medium: {
             width: 240,
             url: 'https://yt3.ggpht.com/MWAKxXCRp6shTe7zi6NQwPFNXT4sHTTNcV-jAiwa7ayrRaxigE5GRfio5pn2NkzWW3E_kZUoCw=s240-c-k-c0x00ffffff-no-rj',
-            height: 240
+            height: 240,
           },
           default: {
             height: 88,
             url: 'https://yt3.ggpht.com/MWAKxXCRp6shTe7zi6NQwPFNXT4sHTTNcV-jAiwa7ayrRaxigE5GRfio5pn2NkzWW3E_kZUoCw=s88-c-k-c0x00ffffff-no-rj',
-            width: 88
+            width: 88,
           },
           standard: null,
-          maxres: null
+          maxres: null,
         },
         description:
           "What's up everyone, welcome to my channel! My name is Kirsty and I'm a partnered streamer on twitch.tv. This will likely be home to my livestream archives, as well as highlight reels and compilations created by the community, all in one handy place for your viewing pleasure! \n\nIf you want to come and see where it all happens live, come and join me at twitch.tv/Kirsty! See you soon pals!\n\n\n\n",
@@ -885,22 +885,22 @@ const channels = [
         localized: {
           description:
             "What's up everyone, welcome to my channel! My name is Kirsty and I'm a partnered streamer on twitch.tv. This will likely be home to my livestream archives, as well as highlight reels and compilations created by the community, all in one handy place for your viewing pleasure! \n\nIf you want to come and see where it all happens live, come and join me at twitch.tv/Kirsty! See you soon pals!\n\n\n\n",
-          title: 'Kirsty'
-        }
+          title: 'Kirsty',
+        },
       },
       id: 'UC9uA9ms0_-LVsMyOJGfZE7A',
       statistics: null,
-      kind: 'youtube#channel'
+      kind: 'youtube#channel',
     },
     relations: {
       creators: ['zwBpk82qRo4y2Sf5Nvlf'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       snippet: {
@@ -910,30 +910,30 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/IZUnmb8Uy9E/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/IZUnmb8Uy9E/hqdefault.jpg',
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/IZUnmb8Uy9E/default.jpg'
+            url: 'https://i.ytimg.com/vi/IZUnmb8Uy9E/default.jpg',
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/IZUnmb8Uy9E/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/IZUnmb8Uy9E/mqdefault.jpg',
+          },
         },
         channelTitle: 'Kirsty',
         title: 'Best Bits of 2022!',
         publishedAt: '2023-01-27T19:51:08Z',
         channelId: 'UC9uA9ms0_-LVsMyOJGfZE7A',
         liveBroadcastContent: 'none',
-        publishTime: '2023-01-27T19:51:08Z'
+        publishTime: '2023-01-27T19:51:08Z',
       },
       kind: 'youtube#searchResult',
       id: 'IZUnmb8Uy9E',
-      etag: 'RvUpFCd3dfMEk1HevAXH00KTvbU'
-    }
+      etag: 'RvUpFCd3dfMEk1HevAXH00KTvbU',
+    },
   },
   {
     video: {
@@ -952,31 +952,31 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/0O7lgqehxWY/mqdefault.jpg',
             width: 320,
-            height: 180
+            height: 180,
           },
           high: {
             url: 'https://i.ytimg.com/vi/0O7lgqehxWY/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           default: {
             url: 'https://i.ytimg.com/vi/0O7lgqehxWY/default.jpg',
             height: 90,
-            width: 120
-          }
-        }
+            width: 120,
+          },
+        },
       },
-      id: '0O7lgqehxWY'
+      id: '0O7lgqehxWY',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['AcCWZMmDMrc7G9CnRchz']
+      creators: ['AcCWZMmDMrc7G9CnRchz'],
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       etag: '4HoJVo7GMeekdJoGf5a9e7XZK0s',
@@ -991,36 +991,36 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/ytc/AMLnZu8C5w5MyCkH2NklW-ylko9JUdl1gl0tuS56Cyz4=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AMLnZu8C5w5MyCkH2NklW-ylko9JUdl1gl0tuS56Cyz4=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AMLnZu8C5w5MyCkH2NklW-ylko9JUdl1gl0tuS56Cyz4=s800-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AMLnZu8C5w5MyCkH2NklW-ylko9JUdl1gl0tuS56Cyz4=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AMLnZu8C5w5MyCkH2NklW-ylko9JUdl1gl0tuS56Cyz4=s240-c-k-c0xffffffff-no-rj-mo',
           },
-          standard: null
+          standard: null,
         },
         defaultLanguage: null,
         customUrl: null,
         description:
           'If you are inquiring about a sponsored video please remember to include a [Sponsorship] tag or word in the e-mail headline.',
         country: null,
-        localized: null
+        localized: null,
       },
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       contentDetails: null,
@@ -1033,35 +1033,35 @@ const channels = [
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLRsAcRrgHjSytdx9_I-1atxtIc7E7Y9YFg0j_ZD=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           maxres: null,
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRsAcRrgHjSytdx9_I-1atxtIc7E7Y9YFg0j_ZD=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRsAcRrgHjSytdx9_I-1atxtIc7E7Y9YFg0j_ZD=s800-c-k-c0xffffffff-no-rj-mo',
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRsAcRrgHjSytdx9_I-1atxtIc7E7Y9YFg0j_ZD=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
-          standard: null
+          standard: null,
         },
         description:
           "The home of TripleJump's livestream VODs! Watch all of TripleJump's streams right here. Main channel here: ...",
         defaultLanguage: null,
         title: 'TripleJump VODs',
         customUrl: null,
-        publishedAt: '2017-08-01T10:40:26.000Z'
+        publishedAt: '2017-08-01T10:40:26.000Z',
       },
       id: 'UCCvbdpJKOOxpR9uM-Zie76w',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['xd6wmw8tYeDhb7tqRBo6']
+      creators: ['xd6wmw8tYeDhb7tqRBo6'],
     },
     video: {
       snippet: {
@@ -1073,34 +1073,34 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/h-4B6jfnhqc/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/h-4B6jfnhqc/hqdefault.jpg',
           },
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/h-4B6jfnhqc/default.jpg'
+            url: 'https://i.ytimg.com/vi/h-4B6jfnhqc/default.jpg',
           },
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/h-4B6jfnhqc/mqdefault.jpg',
-            height: 180
-          }
+            height: 180,
+          },
         },
         publishTime: '2023-02-07T20:00:11Z',
         liveBroadcastContent: 'none',
         channelId: 'UCCvbdpJKOOxpR9uM-Zie76w',
-        channelTitle: 'TripleJump VODs'
+        channelTitle: 'TripleJump VODs',
       },
       etag: 'tzRCPBFcoplQrsUvVzaoEls-0cQ',
       kind: 'youtube#searchResult',
-      id: 'h-4B6jfnhqc'
-    }
+      id: 'h-4B6jfnhqc',
+    },
   },
   {
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       snippet: {
@@ -1115,23 +1115,23 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/lsRikMOXbQE/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/lsRikMOXbQE/hqdefault.jpg',
           },
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/lsRikMOXbQE/default.jpg',
-            width: 120
+            width: 120,
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/lsRikMOXbQE/mqdefault.jpg',
-            width: 320
-          }
-        }
+            width: 320,
+          },
+        },
       },
       etag: 'Lj_En55qS57huouG45c0_NqZdL8',
       id: 'lsRikMOXbQE',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     channel: {
       statistics: null,
@@ -1147,44 +1147,44 @@ const channels = [
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTri0LR8aj3vpYgeSfp6hatOaPToX0_OHSA8TALJg=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTri0LR8aj3vpYgeSfp6hatOaPToX0_OHSA8TALJg=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTri0LR8aj3vpYgeSfp6hatOaPToX0_OHSA8TALJg=s240-c-k-c0xffffffff-no-rj-mo',
           },
           standard: null,
           maxres: null,
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTri0LR8aj3vpYgeSfp6hatOaPToX0_OHSA8TALJg=s88-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTri0LR8aj3vpYgeSfp6hatOaPToX0_OHSA8TALJg=s88-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         defaultLanguage: null,
         title: 'Sips',
         country: null,
-        publishedAt: '2011-12-04T00:59:47.000Z'
+        publishedAt: '2011-12-04T00:59:47.000Z',
       },
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       creators: ['4ty8OfAA0hoXSV6trUY9'],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       creators: ['tmtlRvxSmccEmZlHc4nH'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -1197,26 +1197,26 @@ const channels = [
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/_AQR3dzFeOI/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/_AQR3dzFeOI/mqdefault.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/_AQR3dzFeOI/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/_AQR3dzFeOI/default.jpg',
-            height: 90
-          }
+            height: 90,
+          },
         },
         liveBroadcastContent: 'none',
         description:
           'Little bit of a late Christmas special here. Hope you all had a nice one! enjoy the play button for now Jack ...',
-        title: 'I Give Jack MY Play Button'
+        title: 'I Give Jack MY Play Button',
       },
       etag: 'DmYaWZdX3uwRnOvvxSQ64LcQBDI',
-      id: '_AQR3dzFeOI'
+      id: '_AQR3dzFeOI',
     },
     channel: {
       etag: 'DFo8_8TTNS_rv6gIR0ctH57Zx6o',
@@ -1232,35 +1232,35 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRgzp-puBC10Vz6mBh5mLtnp-QBoAvLOCQBsGbA1A=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRgzp-puBC10Vz6mBh5mLtnp-QBoAvLOCQBsGbA1A=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRgzp-puBC10Vz6mBh5mLtnp-QBoAvLOCQBsGbA1A=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
-          standard: null
+          standard: null,
         },
-        title: 'Mini Muka'
+        title: 'Mini Muka',
       },
       statistics: null,
       brandingSettings: null,
       id: 'UCD99PNa9ZTw7jK35vs80HFw',
       kind: 'youtube#searchResult',
-      contentDetails: null
-    }
+      contentDetails: null,
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['vz0XWPLfxV9gFyChCgMO']
+      creators: ['vz0XWPLfxV9gFyChCgMO'],
     },
     video: {
       id: 'k6EJ2LWLCeY',
@@ -1276,28 +1276,28 @@ const channels = [
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/k6EJ2LWLCeY/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/k6EJ2LWLCeY/mqdefault.jpg',
           },
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/k6EJ2LWLCeY/default.jpg'
+            url: 'https://i.ytimg.com/vi/k6EJ2LWLCeY/default.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/k6EJ2LWLCeY/hqdefault.jpg',
             width: 480,
-            height: 360
-          }
+            height: 360,
+          },
         },
-        publishTime: '2023-02-07T17:00:28Z'
+        publishTime: '2023-02-07T17:00:28Z',
       },
       etag: 'FspcnakgJ-KsXXb9uS-xs2socJQ',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       id: 'UCDDbYd5KpfmWZaoyFBz4yxg',
@@ -1313,18 +1313,18 @@ const channels = [
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/enAIC38cs7w-XlO6DAIfcRRUGIF20LZ0U-r0_c_-QUlB9r4QUPCMDwHQ2qRI3_ZnKRRlujpq7w=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/enAIC38cs7w-XlO6DAIfcRRUGIF20LZ0U-r0_c_-QUlB9r4QUPCMDwHQ2qRI3_ZnKRRlujpq7w=s240-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/enAIC38cs7w-XlO6DAIfcRRUGIF20LZ0U-r0_c_-QUlB9r4QUPCMDwHQ2qRI3_ZnKRRlujpq7w=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/enAIC38cs7w-XlO6DAIfcRRUGIF20LZ0U-r0_c_-QUlB9r4QUPCMDwHQ2qRI3_ZnKRRlujpq7w=s88-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/enAIC38cs7w-XlO6DAIfcRRUGIF20LZ0U-r0_c_-QUlB9r4QUPCMDwHQ2qRI3_ZnKRRlujpq7w=s88-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         customUrl: null,
         localized: null,
@@ -1332,9 +1332,9 @@ const channels = [
         defaultLanguage: null,
         country: null,
         description:
-          'TWITCH: https://www.twitch.tv/ravs_ VODS: https://www.youtube.com/channel/UCm_wB6MGZxAHHg6cZ1IKKvg DISCORD: ...'
-      }
-    }
+          'TWITCH: https://www.twitch.tv/ravs_ VODS: https://www.youtube.com/channel/UCm_wB6MGZxAHHg6cZ1IKKvg DISCORD: ...',
+      },
+    },
   },
   {
     channel: {
@@ -1354,23 +1354,23 @@ const channels = [
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           standard: null,
           maxres: null,
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s88-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s88-c-k-c0xffffffff-no-rj-mo',
+          },
         },
-        localized: null
-      }
+        localized: null,
+      },
     },
     video: {
       snippet: {
@@ -1380,41 +1380,41 @@ const channels = [
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/dv0pSUakKwA/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           high: {
             url: 'https://i.ytimg.com/vi/dv0pSUakKwA/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           default: {
             url: 'https://i.ytimg.com/vi/dv0pSUakKwA/default.jpg',
             height: 90,
-            width: 120
-          }
+            width: 120,
+          },
         },
         description:
           "IT'S POTY TIME! Thank you everyone for listening and for your wonderful ideas. Merry Christmas! Ever had a great idea for a ...",
         publishTime: '2022-12-25T12:00:30Z',
         liveBroadcastContent: 'none',
         title: 'Pitch, Please - Pitch of the Year 2022 with Matthew Castle',
-        publishedAt: '2022-12-25T12:00:30Z'
+        publishedAt: '2022-12-25T12:00:30Z',
       },
       etag: 'Y5_5MJXesOWfWrlBaTCum4heiN0',
       kind: 'youtube#searchResult',
-      id: 'dv0pSUakKwA'
+      id: 'dv0pSUakKwA',
     },
     relations: {
       podcasts: ['kZVpteHZ80TK0BfuvZgO'],
       creators: ['kmVGNmGPDoQW8OWMLkmW', 'e0mWrK72feY69gH0HwAA'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     channel: {
@@ -1430,33 +1430,33 @@ const channels = [
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQ_1Mf1rXTJAn1zQ6TKEOHGfwVw1M2SZh5dGrkedg=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           standard: null,
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQ_1Mf1rXTJAn1zQ6TKEOHGfwVw1M2SZh5dGrkedg=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQ_1Mf1rXTJAn1zQ6TKEOHGfwVw1M2SZh5dGrkedg=s240-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQ_1Mf1rXTJAn1zQ6TKEOHGfwVw1M2SZh5dGrkedg=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQ_1Mf1rXTJAn1zQ6TKEOHGfwVw1M2SZh5dGrkedg=s800-c-k-c0xffffffff-no-rj-mo',
           },
-          maxres: null
+          maxres: null,
         },
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       etag: 'B9OYJdwZb-5VQM-VIgRlBuehod8',
       kind: 'youtube#searchResult',
       contentDetails: null,
       statistics: null,
-      id: 'UCEiPsF9ryoys_UmrZv3l9iQ'
+      id: 'UCEiPsF9ryoys_UmrZv3l9iQ',
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     video: {
       id: '6vCVs3WoJys',
@@ -1473,28 +1473,28 @@ const channels = [
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/6vCVs3WoJys/hqdefault.jpg',
-            width: 480
+            width: 480,
           },
           medium: {
             url: 'https://i.ytimg.com/vi/6vCVs3WoJys/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           default: {
             url: 'https://i.ytimg.com/vi/6vCVs3WoJys/default.jpg',
             width: 120,
-            height: 90
-          }
-        }
+            height: 90,
+          },
+        },
       },
       etag: 'rf0ED3qG64By5RotaZEWVGT24m8',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       youtubeChannels: [],
       creators: ['KHBtC8Uxt3qoPJK0fie2'],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     video: {
@@ -1507,18 +1507,18 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/vtpNzMa8dgo/default.jpg'
+            url: 'https://i.ytimg.com/vi/vtpNzMa8dgo/default.jpg',
           },
           medium: {
             url: 'https://i.ytimg.com/vi/vtpNzMa8dgo/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/vtpNzMa8dgo/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/vtpNzMa8dgo/hqdefault.jpg',
+          },
         },
         description:
           "It's time for an action packed EXTRA LONG episode of TTT and Osie uses that time to tell us some more insane stories from her ...",
@@ -1526,19 +1526,19 @@ const channels = [
         publishTime: '2023-02-07T18:00:32Z',
         title: 'Osie&#39;s Insane Life Stories | Gmod TTT XL',
         channelTitle: 'YOGSCAST Lewis & Simon',
-        publishedAt: '2023-02-07T18:00:32Z'
-      }
+        publishedAt: '2023-02-07T18:00:32Z',
+      },
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       creators: ['e0mWrK72feY69gH0HwAA', 'Gq7a6r1Pq0loxIUiNk8v'],
       twitchChannels: [],
       podcasts: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       etag: '8vWYf8gfCq-cZLT-PpADfW-KyDI',
@@ -1555,33 +1555,33 @@ const channels = [
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLS2VKxMFIALqtErYHi-uxH8OjLQNrtNWBZw6TMcrA=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLS2VKxMFIALqtErYHi-uxH8OjLQNrtNWBZw6TMcrA=s240-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS2VKxMFIALqtErYHi-uxH8OjLQNrtNWBZw6TMcrA=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS2VKxMFIALqtErYHi-uxH8OjLQNrtNWBZw6TMcrA=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
-          }
+            width: null,
+          },
         },
         title: 'YOGSCAST Lewis & Simon',
         country: null,
-        localized: null
+        localized: null,
       },
       statistics: null,
-      contentDetails: null
-    }
+      contentDetails: null,
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['4ty8OfAA0hoXSV6trUY9']
+      creators: ['4ty8OfAA0hoXSV6trUY9'],
     },
     video: {
       id: 'bEJFEQZW4Sw',
@@ -1595,9 +1595,9 @@ const channels = [
             reason: 'quotaExceeded',
             domain: 'youtube.quota',
             message:
-              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-          }
-        ]
+              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+          },
+        ],
       },
       snippet: {
         channelTitle: 'Sips - Live!',
@@ -1605,18 +1605,18 @@ const channels = [
           default: {
             url: 'https://i.ytimg.com/vi/bEJFEQZW4Sw/default.jpg',
             width: 120,
-            height: 90
+            height: 90,
           },
           high: {
             url: 'https://i.ytimg.com/vi/bEJFEQZW4Sw/hqdefault.jpg',
             height: 360,
-            width: 480
+            width: 480,
           },
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/bEJFEQZW4Sw/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/bEJFEQZW4Sw/mqdefault.jpg',
+          },
         },
         description:
           "Welcome to Don't Starve Together! Here it is in its entire, (mostly) uncut format in case you want to see it all happen from start to ...",
@@ -1624,14 +1624,14 @@ const channels = [
         publishedAt: '2022-04-27T23:38:01Z',
         title: 'Sips Plays Don&#39;t Starve Together! - (21/4/22)',
         publishTime: '2022-04-27T23:38:01Z',
-        channelId: 'UCJW9YScngZyevv40qOS5QYQ'
+        channelId: 'UCJW9YScngZyevv40qOS5QYQ',
       },
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       etag: 'MvQ1qWJlXqS9-BOUuXB_MqZr8Mg',
@@ -1651,24 +1651,24 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLS0TVDqEV0NLSfJoy0UpsZ6C8BJBRlaGfw3Agzm=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS0TVDqEV0NLSfJoy0UpsZ6C8BJBRlaGfw3Agzm=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS0TVDqEV0NLSfJoy0UpsZ6C8BJBRlaGfw3Agzm=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
-          standard: null
+          standard: null,
         },
         title: 'Sips - Live!',
-        publishedAt: '2015-05-06T20:38:14.000Z'
-      }
-    }
+        publishedAt: '2015-05-06T20:38:14.000Z',
+      },
+    },
   },
   {
     channel: {
@@ -1683,29 +1683,29 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLTVtvifekaWSOYV7Q1sXAFoYAknuPJt9b3aSCEWTA=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           standard: null,
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTVtvifekaWSOYV7Q1sXAFoYAknuPJt9b3aSCEWTA=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTVtvifekaWSOYV7Q1sXAFoYAknuPJt9b3aSCEWTA=s88-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTVtvifekaWSOYV7Q1sXAFoYAknuPJt9b3aSCEWTA=s88-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         country: null,
         defaultLanguage: null,
-        title: 'Hat Gaming'
+        title: 'Hat Gaming',
       },
       id: 'UCJYvnogbZIQQvX9exn5aDPw',
       etag: 'TIwEtJad5vxOolWLr1MRLFp4huA',
       kind: 'youtube#searchResult',
       statistics: null,
-      contentDetails: null
+      contentDetails: null,
     },
     video: {
       kind: 'youtube#searchResult',
@@ -1720,40 +1720,40 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/hc3ZtcKnVN0/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/hc3ZtcKnVN0/hqdefault.jpg',
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/hc3ZtcKnVN0/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/hc3ZtcKnVN0/default.jpg',
-            height: 90
-          }
+            height: 90,
+          },
         },
         channelId: 'UCJYvnogbZIQQvX9exn5aDPw',
-        channelTitle: 'Hat Gaming'
+        channelTitle: 'Hat Gaming',
       },
-      etag: 'RKoOoSWoV8RYF2xRUYms9skLddw'
+      etag: 'RKoOoSWoV8RYF2xRUYms9skLddw',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['Hz3L8GFTsM0EFg0caGoG']
+      creators: ['Hz3L8GFTsM0EFg0caGoG'],
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       creators: ['v1aFWA8DXs58iyW2ZFA6'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       snippet: {
@@ -1763,34 +1763,34 @@ const channels = [
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/LegaR_7n580/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/LegaR_7n580/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/LegaR_7n580/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/LegaR_7n580/hqdefault.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         publishedAt: '2023-02-05T18:00:09Z',
         channelId: 'UCKEHKGXN9i0djB3tGHbfCZg',
         description:
           'Today I took on the fun task of tying out a user suggested mod and that mod was traffic manager which allows you to have some ...',
-        title: 'Cities Skylines But The City Slowly Kills You'
+        title: 'Cities Skylines But The City Slowly Kills You',
       },
       etag: 'wPIBgmdJ1iDDb_RQ420UY4SKei4',
       id: 'LegaR_7n580',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       snippet: {
@@ -1803,37 +1803,37 @@ const channels = [
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLT5LJzomfjzvFcOb9UoWmEn5KY9OnbAqa4auCjt=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLT5LJzomfjzvFcOb9UoWmEn5KY9OnbAqa4auCjt=s240-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           standard: null,
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLT5LJzomfjzvFcOb9UoWmEn5KY9OnbAqa4auCjt=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLT5LJzomfjzvFcOb9UoWmEn5KY9OnbAqa4auCjt=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
-          }
+            width: null,
+          },
         },
         title: 'ISP',
         description:
-          'Welcome to my channel where I upload my random adventures in video games. From Minecraft to the world of Black and white the ...'
+          'Welcome to my channel where I upload my random adventures in video games. From Minecraft to the world of Black and white the ...',
       },
       contentDetails: null,
       etag: '8EKwyB84EHGTfF9LOvG3dTWEdrU',
       id: 'UCKEHKGXN9i0djB3tGHbfCZg',
       kind: 'youtube#searchResult',
-      statistics: null
-    }
+      statistics: null,
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       statistics: null,
@@ -1854,26 +1854,26 @@ const channels = [
           medium: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s240-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
-          }
-        }
+            width: null,
+          },
+        },
       },
-      contentDetails: null
+      contentDetails: null,
     },
     relations: {
       youtubeChannels: [],
       creators: ['7tl19sOXgMq8ONpa0Wwc'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -1885,28 +1885,28 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/eMqse7Jk5Lo/default.jpg'
+            url: 'https://i.ytimg.com/vi/eMqse7Jk5Lo/default.jpg',
           },
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/eMqse7Jk5Lo/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/eMqse7Jk5Lo/mqdefault.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/eMqse7Jk5Lo/hqdefault.jpg',
             height: 360,
-            width: 480
-          }
+            width: 480,
+          },
         },
         publishTime: '2023-01-16T18:00:16Z',
         liveBroadcastContent: 'none',
         publishedAt: '2023-01-16T18:00:16Z',
         channelTitle: 'Bekki Boom',
-        title: 'WE MOVED | VLOG #1 OF 2023'
+        title: 'WE MOVED | VLOG #1 OF 2023',
       },
       id: 'eMqse7Jk5Lo',
-      etag: '_7iZqDTsSXF9BIEPnlPhvGGE9W4'
-    }
+      etag: '_7iZqDTsSXF9BIEPnlPhvGGE9W4',
+    },
   },
   {
     video: {
@@ -1924,27 +1924,27 @@ const channels = [
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/hzXnENa5HFo/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/hzXnENa5HFo/default.jpg'
+            url: 'https://i.ytimg.com/vi/hzXnENa5HFo/default.jpg',
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/hzXnENa5HFo/hqdefault.jpg',
-            width: 480
-          }
-        }
+            width: 480,
+          },
+        },
       },
       kind: 'youtube#searchResult',
-      etag: 'bdouaLdwXUqumkqaYO5IXNc5Kgg'
+      etag: 'bdouaLdwXUqumkqaYO5IXNc5Kgg',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['e0mWrK72feY69gH0HwAA']
+      creators: ['e0mWrK72feY69gH0HwAA'],
     },
     channel: {
       statistics: null,
@@ -1956,19 +1956,19 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLTCe0m6IpDmQkrYu2evRqs5h2kOaDEFXR3ijTg=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           standard: null,
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTCe0m6IpDmQkrYu2evRqs5h2kOaDEFXR3ijTg=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTCe0m6IpDmQkrYu2evRqs5h2kOaDEFXR3ijTg=s88-c-k-c0xffffffff-no-rj-mo',
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLTCe0m6IpDmQkrYu2evRqs5h2kOaDEFXR3ijTg=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
-          }
+            width: null,
+          },
         },
         localized: null,
         defaultLanguage: null,
@@ -1977,16 +1977,16 @@ const channels = [
         country: null,
         description:
           "Civilization! Welcome to the Yogscast's Civilization channel. We thought we'd bring together all of our Civilization 5 series into one ...",
-        title: 'Civilization'
+        title: 'Civilization',
       },
       kind: 'youtube#searchResult',
-      etag: 'J6D5M8pRYEClG7AJDXVLjlGsM5g'
+      etag: 'J6D5M8pRYEClG7AJDXVLjlGsM5g',
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     video: {
@@ -2003,19 +2003,19 @@ const channels = [
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/vsG5Cn0KYlI/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           default: {
             url: 'https://i.ytimg.com/vi/vsG5Cn0KYlI/default.jpg',
             width: 120,
-            height: 90
+            height: 90,
           },
           high: {
             url: 'https://i.ytimg.com/vi/vsG5Cn0KYlI/hqdefault.jpg',
             width: 480,
-            height: 360
-          }
-        }
+            height: 360,
+          },
+        },
       },
       etag: 'wlHLUWoB_RRFkUlwTM5ApNsdIHc',
       id: 'vsG5Cn0KYlI',
@@ -2028,11 +2028,11 @@ const channels = [
             domain: 'youtube.quota',
             reason: 'quotaExceeded',
             message:
-              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-          }
-        ]
+              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+          },
+        ],
       },
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     channel: {
       id: 'UCQBs359lwzyVFtc22LzLjuw',
@@ -2043,43 +2043,43 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRFxifT9BWXLoO7kFFZ4Me3xg5RINUkEpTC-LqffQ=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           standard: null,
           maxres: null,
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRFxifT9BWXLoO7kFFZ4Me3xg5RINUkEpTC-LqffQ=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRFxifT9BWXLoO7kFFZ4Me3xg5RINUkEpTC-LqffQ=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRFxifT9BWXLoO7kFFZ4Me3xg5RINUkEpTC-LqffQ=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
-          }
+            width: null,
+          },
         },
         publishedAt: '2014-10-16T15:57:08.000Z',
         country: null,
         localized: null,
         description:
           "We're the Yogscast! This is our Live Channel where we upload all of our Livestreams! Catch us live over at twitch.tv/yogscast New ...",
-        title: 'Yogscast Live'
+        title: 'Yogscast Live',
       },
       kind: 'youtube#searchResult',
       statistics: null,
       etag: 'P_ZE1Wf2VC68np8s10KJWnII3Tw',
-      contentDetails: null
+      contentDetails: null,
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     relations: {
       creators: ['e0mWrK72feY69gH0HwAA'],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     video: {
@@ -2093,30 +2093,30 @@ const channels = [
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/lkLjgqRNnaQ/hqdefault.jpg',
-            width: 480
+            width: 480,
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/lkLjgqRNnaQ/default.jpg'
+            url: 'https://i.ytimg.com/vi/lkLjgqRNnaQ/default.jpg',
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/lkLjgqRNnaQ/mqdefault.jpg',
-            width: 320
-          }
+            width: 320,
+          },
         },
         description: 'Broadcasted live on Twitch -- Watch live at https://www.twitch.tv/shadowatnoon.',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       id: 'lkLjgqRNnaQ',
       kind: 'youtube#searchResult',
-      etag: 'MTuSiHfMMuAgb6jPcPPQAVT2dMM'
+      etag: 'MTuSiHfMMuAgb6jPcPPQAVT2dMM',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['f2tAtl8eBRTtKsqzQQoC']
+      creators: ['f2tAtl8eBRTtKsqzQQoC'],
     },
     channel: {
       snippet: {
@@ -2125,45 +2125,45 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSM7zEZ1twChROKrTwhWmp9jqTmiW0cFybUiRGp=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           standard: null,
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSM7zEZ1twChROKrTwhWmp9jqTmiW0cFybUiRGp=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSM7zEZ1twChROKrTwhWmp9jqTmiW0cFybUiRGp=s240-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSM7zEZ1twChROKrTwhWmp9jqTmiW0cFybUiRGp=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
-          }
+            width: null,
+          },
         },
         description: '',
         defaultLanguage: null,
         customUrl: null,
         localized: null,
         country: null,
-        publishedAt: '2021-02-05T03:57:26.000Z'
+        publishedAt: '2021-02-05T03:57:26.000Z',
       },
       contentDetails: null,
       kind: 'youtube#searchResult',
       id: 'UCQMV0FM8UjFUT_jglxmp6nQ',
       statistics: null,
-      etag: 'AZfXxBoalVGUuFvvp-vnKgpW8j0'
+      etag: 'AZfXxBoalVGUuFvvp-vnKgpW8j0',
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       snippet: {
@@ -2173,33 +2173,33 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRnWAcV6uOiWYmSJQOkxnndOMuFd9P7331Ril9gIQ=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           maxres: null,
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLRnWAcV6uOiWYmSJQOkxnndOMuFd9P7331Ril9gIQ=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           standard: null,
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRnWAcV6uOiWYmSJQOkxnndOMuFd9P7331Ril9gIQ=s88-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRnWAcV6uOiWYmSJQOkxnndOMuFd9P7331Ril9gIQ=s88-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         defaultLanguage: null,
         localized: null,
         customUrl: null,
         description:
           "Hello, I am Rythian, and this is my YouTube channel. I've played many many games over the years, so hopefully you'll find ...",
-        title: 'Rythian'
+        title: 'Rythian',
       },
       id: 'UCQd82ZrlW8b8_MujwDO9ajw',
       etag: '7I7LS73DMjykfvx7EBSoq5KF7YE',
       contentDetails: null,
       kind: 'youtube#searchResult',
-      statistics: null
+      statistics: null,
     },
     video: {
       id: 'Qi-TZgEDfLk',
@@ -2217,33 +2217,33 @@ const channels = [
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/Qi-TZgEDfLk/default_live.jpg',
-            width: 120
+            width: 120,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/Qi-TZgEDfLk/hqdefault_live.jpg'
+            url: 'https://i.ytimg.com/vi/Qi-TZgEDfLk/hqdefault_live.jpg',
           },
           medium: {
             url: 'https://i.ytimg.com/vi/Qi-TZgEDfLk/mqdefault_live.jpg',
             width: 320,
-            height: 180
-          }
-        }
+            height: 180,
+          },
+        },
       },
-      etag: 'LqRbHXQYxLV3GC62jI9XnZDmN3c'
+      etag: 'LqRbHXQYxLV3GC62jI9XnZDmN3c',
     },
     relations: {
       twitchChannels: [],
       creators: ['deBUVdSqWrH6FwlXPe2m'],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       etag: 'dqwOX6gphHnZfeX5rzZMJhbTF-E',
@@ -2257,19 +2257,19 @@ const channels = [
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/lkuVbQ5BgmoWWQvZMS7wv_-ZZ-mIadKZDIEj5PdtAseERS6xPzmUSk9aFR66iTBs1r7gghLpzA=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/lkuVbQ5BgmoWWQvZMS7wv_-ZZ-mIadKZDIEj5PdtAseERS6xPzmUSk9aFR66iTBs1r7gghLpzA=s240-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/lkuVbQ5BgmoWWQvZMS7wv_-ZZ-mIadKZDIEj5PdtAseERS6xPzmUSk9aFR66iTBs1r7gghLpzA=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/lkuVbQ5BgmoWWQvZMS7wv_-ZZ-mIadKZDIEj5PdtAseERS6xPzmUSk9aFR66iTBs1r7gghLpzA=s88-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             url: 'https://yt3.ggpht.com/lkuVbQ5BgmoWWQvZMS7wv_-ZZ-mIadKZDIEj5PdtAseERS6xPzmUSk9aFR66iTBs1r7gghLpzA=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
-          standard: null
+          standard: null,
         },
         localized: null,
         publishedAt: '2011-08-13T18:42:18.000Z',
@@ -2278,14 +2278,14 @@ const channels = [
         customUrl: null,
         title: 'RTGame',
         description:
-          "Hi I'm an Irish Guy that plays games. Enjoy my content, or else. All of my videos are edited livestream highlights taken from my ..."
+          "Hi I'm an Irish Guy that plays games. Enjoy my content, or else. All of my videos are edited livestream highlights taken from my ...",
       },
-      id: 'UCRC6cNamj9tYAO6h_RXd5xA'
+      id: 'UCRC6cNamj9tYAO6h_RXd5xA',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['Tm2dvIIhVA3xb7nH19jJ']
+      creators: ['Tm2dvIIhVA3xb7nH19jJ'],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -2303,22 +2303,22 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/MEw9GUF4_HQ/mqdefault.jpg',
             width: 320,
-            height: 180
+            height: 180,
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/MEw9GUF4_HQ/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/MEw9GUF4_HQ/hqdefault.jpg',
           },
           default: {
             url: 'https://i.ytimg.com/vi/MEw9GUF4_HQ/default.jpg',
             width: 120,
-            height: 90
-          }
-        }
+            height: 90,
+          },
+        },
       },
-      id: 'MEw9GUF4_HQ'
-    }
+      id: 'MEw9GUF4_HQ',
+    },
   },
   {
     video: {
@@ -2330,28 +2330,28 @@ const channels = [
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/pzatXqt-rz4/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/pzatXqt-rz4/hqdefault.jpg',
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/pzatXqt-rz4/default.jpg'
+            url: 'https://i.ytimg.com/vi/pzatXqt-rz4/default.jpg',
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/pzatXqt-rz4/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/pzatXqt-rz4/mqdefault.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         description:
           'Youtube is pay to win! Why bother learning how to get more views by making better content, getting likes and comments when ...',
         channelId: 'UCRHXUZ0BxbkU2MYZgsuFgkQ',
-        publishTime: '2023-01-31T17:13:57Z'
+        publishTime: '2023-01-31T17:13:57Z',
       },
       id: 'pzatXqt-rz4',
       etag: 'ro1dh42nvrWq2yOK1ol485DQqkM',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -2365,51 +2365,51 @@ const channels = [
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s240-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
+            height: null,
+          },
         },
         defaultLanguage: null,
         description:
           'Hey all welcome to the channel Content is mostly strategy games or classical games with many exploits Name: Tom *Will accept ...',
-        country: null
+        country: null,
       },
       contentDetails: null,
       id: 'UCRHXUZ0BxbkU2MYZgsuFgkQ',
       statistics: null,
-      etag: 'K4j1ipAeDhv2Davnk1oQPHBWO94'
+      etag: 'K4j1ipAeDhv2Davnk1oQPHBWO94',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['MYZPOwKsujCZbtPEJtBG']
+      creators: ['MYZPOwKsujCZbtPEJtBG'],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       creators: ['jP4KqZEefrAj53jHZ8HO'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       brandingSettings: null,
@@ -2426,27 +2426,27 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AMLnZu8zCqn1RnoovEFQUEpMiIM-ClgON32iF2Y76NXpyw=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           standard: null,
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AMLnZu8zCqn1RnoovEFQUEpMiIM-ClgON32iF2Y76NXpyw=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AMLnZu8zCqn1RnoovEFQUEpMiIM-ClgON32iF2Y76NXpyw=s88-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AMLnZu8zCqn1RnoovEFQUEpMiIM-ClgON32iF2Y76NXpyw=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
-          maxres: null
+          maxres: null,
         },
         customUrl: null,
         title: 'Simon Clark',
-        country: null
+        country: null,
       },
       kind: 'youtube#searchResult',
-      contentDetails: null
+      contentDetails: null,
     },
     video: {
       kind: 'youtube#searchResult',
@@ -2459,38 +2459,38 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/vOYnl-geOhc/default.jpg'
+            url: 'https://i.ytimg.com/vi/vOYnl-geOhc/default.jpg',
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/vOYnl-geOhc/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/vOYnl-geOhc/mqdefault.jpg',
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/vOYnl-geOhc/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/vOYnl-geOhc/hqdefault.jpg',
+          },
         },
         publishedAt: '2023-01-31T10:01:08Z',
         liveBroadcastContent: 'none',
         channelTitle: 'Simon Clark',
-        title: 'A surprising trick to improve rainfall forecasts'
+        title: 'A surprising trick to improve rainfall forecasts',
       },
       id: 'vOYnl-geOhc',
-      etag: 'bg7WkQYbCB_4mAUYgq04m3czuMs'
-    }
+      etag: 'bg7WkQYbCB_4mAUYgq04m3czuMs',
+    },
   },
   {
     relations: {
       creators: ['1KtlqxPBAMp1XeD5RXed'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -2500,19 +2500,19 @@ const channels = [
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/43orMSP07fXqX7JzDjLcEwkdqedXRnh5Xyx7IKoYxhhuU7LeOKOWofQmbBrA-GPxz8hESz4j=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/43orMSP07fXqX7JzDjLcEwkdqedXRnh5Xyx7IKoYxhhuU7LeOKOWofQmbBrA-GPxz8hESz4j=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/43orMSP07fXqX7JzDjLcEwkdqedXRnh5Xyx7IKoYxhhuU7LeOKOWofQmbBrA-GPxz8hESz4j=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           maxres: null,
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/43orMSP07fXqX7JzDjLcEwkdqedXRnh5Xyx7IKoYxhhuU7LeOKOWofQmbBrA-GPxz8hESz4j=s240-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/43orMSP07fXqX7JzDjLcEwkdqedXRnh5Xyx7IKoYxhhuU7LeOKOWofQmbBrA-GPxz8hESz4j=s240-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         title: 'SidhShorts',
         country: null,
@@ -2521,12 +2521,12 @@ const channels = [
         description:
           'This is a fan account with Yogscast shorts. My main Yogscast highlights channel: https://www.youtube.com/sidh1.',
         localized: null,
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       etag: '-tswGhp7jPwt0nMN910-Mgd-3v4',
       contentDetails: null,
       id: 'UCRWM2LXymrqOFUU3N379CSQ',
-      statistics: null
+      statistics: null,
     },
     video: {
       id: 'nG4gk0xu7go',
@@ -2536,18 +2536,18 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/nG4gk0xu7go/mqdefault.jpg',
             width: 320,
-            height: 180
+            height: 180,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/nG4gk0xu7go/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/nG4gk0xu7go/hqdefault.jpg',
           },
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/nG4gk0xu7go/default.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/nG4gk0xu7go/default.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         publishedAt: '2022-04-22T18:00:23Z',
@@ -2555,10 +2555,10 @@ const channels = [
         channelTitle: 'SidhShorts',
         channelId: 'UCRWM2LXymrqOFUU3N379CSQ',
         publishTime: '2022-04-22T18:00:23Z',
-        description: 'Gee streams at https://twitch.tv/geestargames #shorts.'
+        description: 'Gee streams at https://twitch.tv/geestargames #shorts.',
       },
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     video: {
@@ -2572,9 +2572,9 @@ const channels = [
             reason: 'quotaExceeded',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            domain: 'youtube.quota'
-          }
-        ]
+            domain: 'youtube.quota',
+          },
+        ],
       },
       snippet: {
         publishTime: '2022-07-27T14:02:18Z',
@@ -2589,27 +2589,27 @@ const channels = [
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/ge-Hn9EQOPQ/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/ge-Hn9EQOPQ/hqdefault.jpg',
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/ge-Hn9EQOPQ/default.jpg',
-            height: 90
+            height: 90,
           },
           medium: {
             url: 'https://i.ytimg.com/vi/ge-Hn9EQOPQ/mqdefault.jpg',
             width: 320,
-            height: 180
-          }
-        }
+            height: 180,
+          },
+        },
       },
       etag: 'y5j1t0mgYDPs1QqJt8wSwz54Bj4',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['AZGGyF9uschXdM8gGB1v']
+      creators: ['AZGGyF9uschXdM8gGB1v'],
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -2622,18 +2622,18 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQS1vIy6S3RePgKNUOqmhQF9J0enUptC5mettk7=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQS1vIy6S3RePgKNUOqmhQF9J0enUptC5mettk7=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQS1vIy6S3RePgKNUOqmhQF9J0enUptC5mettk7=s800-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQS1vIy6S3RePgKNUOqmhQF9J0enUptC5mettk7=s800-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         publishedAt: '2010-11-09T03:32:13.000Z',
         description:
@@ -2641,23 +2641,23 @@ const channels = [
         customUrl: null,
         title: 'Daltos',
         country: null,
-        localized: null
+        localized: null,
       },
       etag: 'Ix-qvKuSv4YwIuSV_deTlGQBj7Y',
       id: 'UCSrfn5mj3XQg3KDqjiiKGuQ',
-      contentDetails: null
+      contentDetails: null,
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['RuJTT0r57IGKXWtlHNVX']
+      creators: ['RuJTT0r57IGKXWtlHNVX'],
     },
     video: {
       snippet: {
@@ -2673,19 +2673,19 @@ const channels = [
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/GaJe-xfNZxA/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           high: {
             url: 'https://i.ytimg.com/vi/GaJe-xfNZxA/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           default: {
             url: 'https://i.ytimg.com/vi/GaJe-xfNZxA/default.jpg',
             width: 120,
-            height: 90
-          }
-        }
+            height: 90,
+          },
+        },
       },
       error: {
         code: 403,
@@ -2696,18 +2696,18 @@ const channels = [
             domain: 'youtube.quota',
             reason: 'quotaExceeded',
             message:
-              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-          }
-        ]
+              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+          },
+        ],
       },
       id: 'GaJe-xfNZxA',
       kind: 'youtube#searchResult',
-      etag: 'H2mFsJaZxMjr071wAssKYULBfS0'
+      etag: 'H2mFsJaZxMjr071wAssKYULBfS0',
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       statistics: null,
@@ -2719,20 +2719,20 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQoRMVqTdKvyR5WMVPYolUNrETN7fuIcNVGmz3u=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQoRMVqTdKvyR5WMVPYolUNrETN7fuIcNVGmz3u=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           standard: null,
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQoRMVqTdKvyR5WMVPYolUNrETN7fuIcNVGmz3u=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
-          maxres: null
+          maxres: null,
         },
         publishedAt: '2020-07-10T14:16:14.000Z',
         defaultLanguage: null,
@@ -2741,21 +2741,21 @@ const channels = [
           'The new home for Sherlock Hulmes! Dungeon Master for HighRollersDnD & Nights of Eveningstar, Calianna on Critical Role, and ...',
         title: 'Sherlock Hulmes',
         localized: null,
-        country: null
+        country: null,
       },
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     relations: {
       youtubeChannels: [],
       creators: ['IOdPOlLaB7zFHvsuvVwu'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       etag: 'aNig08yhTXCfzmr6BfRDct7QNHo',
@@ -2765,12 +2765,12 @@ const channels = [
             reason: 'quotaExceeded',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            domain: 'youtube.quota'
-          }
+            domain: 'youtube.quota',
+          },
         ],
         code: 403,
         message:
-          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
+          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
       },
       kind: 'youtube#searchResult',
       id: 'H7BuPk_0Lcg',
@@ -2781,26 +2781,26 @@ const channels = [
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/H7BuPk_0Lcg/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/H7BuPk_0Lcg/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/H7BuPk_0Lcg/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/H7BuPk_0Lcg/hqdefault.jpg',
+          },
         },
         publishedAt: '2023-02-03T19:53:49Z',
         liveBroadcastContent: 'none',
         description:
           'Lots of people saw the last clip from 30 Days Hardcore SMP and suggested a resource pack would help Solidarity.... So I made ...',
         channelId: 'UCTSu4x8ahsJ16T9fWiwlKdg',
-        channelTitle: 'InTheLittleWood aka Martyn'
-      }
+        channelTitle: 'InTheLittleWood aka Martyn',
+      },
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -2813,31 +2813,31 @@ const channels = [
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQt9zzXPm4C4IvzDJapp29qLeG--GUMSlkNTWl23g=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           maxres: null,
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQt9zzXPm4C4IvzDJapp29qLeG--GUMSlkNTWl23g=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQt9zzXPm4C4IvzDJapp29qLeG--GUMSlkNTWl23g=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
+            height: null,
+          },
         },
         localized: null,
         publishedAt: '2008-04-08T13:06:00.000Z',
         customUrl: null,
         country: null,
         description:
-          "Hello everybody! I'm InTheLittleWood also known as Martyn. Welcome to my second channel where I upload everything that isn't ..."
+          "Hello everybody! I'm InTheLittleWood also known as Martyn. Welcome to my second channel where I upload everything that isn't ...",
       },
       etag: 'TJIb5Mgf3p0WbiYlBdwbylz1tqg',
       statistics: null,
-      contentDetails: null
-    }
+      contentDetails: null,
+    },
   },
   {
     video: {
@@ -2852,36 +2852,36 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/OmCVK8H3liI/default.jpg'
+            url: 'https://i.ytimg.com/vi/OmCVK8H3liI/default.jpg',
           },
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/OmCVK8H3liI/hqdefault.jpg',
-            height: 360
+            height: 360,
           },
           medium: {
             url: 'https://i.ytimg.com/vi/OmCVK8H3liI/mqdefault.jpg',
             width: 320,
-            height: 180
-          }
+            height: 180,
+          },
         },
         channelTitle: 'The Hat Chat Podcast',
         publishTime: '2023-02-04T16:00:10Z',
-        publishedAt: '2023-02-04T16:00:10Z'
+        publishedAt: '2023-02-04T16:00:10Z',
       },
       id: 'OmCVK8H3liI',
-      etag: 'mwJA-f-HcIY9I0qccL1IxuGn7yM'
+      etag: 'mwJA-f-HcIY9I0qccL1IxuGn7yM',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
       creators: [],
-      podcasts: ['9PQzKYvsiKn6QR3cr7b6']
+      podcasts: ['9PQzKYvsiKn6QR3cr7b6'],
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       statistics: null,
@@ -2900,25 +2900,25 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQ8Nm089cQcnX5XE-HvGXda6HAKUxN4d1Y-wXMg=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQ8Nm089cQcnX5XE-HvGXda6HAKUxN4d1Y-wXMg=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQ8Nm089cQcnX5XE-HvGXda6HAKUxN4d1Y-wXMg=s240-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQ8Nm089cQcnX5XE-HvGXda6HAKUxN4d1Y-wXMg=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
-          standard: null
-        }
+          standard: null,
+        },
       },
       kind: 'youtube#searchResult',
-      contentDetails: null
-    }
+      contentDetails: null,
+    },
   },
   {
     video: {
@@ -2938,30 +2938,30 @@ const channels = [
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/d9NdAkAgAsE/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/d9NdAkAgAsE/hqdefault.jpg',
           },
           medium: {
             url: 'https://i.ytimg.com/vi/d9NdAkAgAsE/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/d9NdAkAgAsE/default.jpg'
-          }
-        }
-      }
+            url: 'https://i.ytimg.com/vi/d9NdAkAgAsE/default.jpg',
+          },
+        },
+      },
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       creators: ['OxMCBocsLB1lXH5tQV6u'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       id: 'UCUxoapwoGN9cKN5SPKGVh7A',
@@ -2981,30 +2981,30 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRT3PLLbl66Ll8tl1xuRQ9TeuDLqWRAHwzxxCA8vg=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRT3PLLbl66Ll8tl1xuRQ9TeuDLqWRAHwzxxCA8vg=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRT3PLLbl66Ll8tl1xuRQ9TeuDLqWRAHwzxxCA8vg=s88-c-k-c0xffffffff-no-rj-mo'
-          }
-        }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRT3PLLbl66Ll8tl1xuRQ9TeuDLqWRAHwzxxCA8vg=s88-c-k-c0xffffffff-no-rj-mo',
+          },
+        },
       },
       statistics: null,
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       error: {
@@ -3016,9 +3016,9 @@ const channels = [
             domain: 'youtube.quota',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            reason: 'quotaExceeded'
-          }
-        ]
+            reason: 'quotaExceeded',
+          },
+        ],
       },
       kind: 'youtube#searchResult',
       id: 'zri_tmz7v-I',
@@ -3033,27 +3033,27 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/zri_tmz7v-I/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/zri_tmz7v-I/default.jpg',
-            width: 120
+            width: 120,
           },
           high: {
             url: 'https://i.ytimg.com/vi/zri_tmz7v-I/hqdefault.jpg',
             height: 360,
-            width: 480
-          }
+            width: 480,
+          },
         },
         publishTime: '2022-10-23T11:00:38Z',
-        publishedAt: '2022-10-23T11:00:38Z'
-      }
+        publishedAt: '2022-10-23T11:00:38Z',
+      },
     },
     relations: {
       creators: ['IOdPOlLaB7zFHvsuvVwu'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       id: 'UCVfSWFY5dgU4V77r66Zk1Vg',
@@ -3069,34 +3069,34 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQwAJrAq_L-WIrw_pMqRD5n84WeSNx40Gvc2V2vdA=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQwAJrAq_L-WIrw_pMqRD5n84WeSNx40Gvc2V2vdA=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQwAJrAq_L-WIrw_pMqRD5n84WeSNx40Gvc2V2vdA=s240-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQwAJrAq_L-WIrw_pMqRD5n84WeSNx40Gvc2V2vdA=s240-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         localized: null,
         customUrl: null,
         description:
-          "Hello everybody! I'm InTheLittleWood also known as Martyn. I stream live on Twitch every Monday, Wednesday and Friday at ..."
+          "Hello everybody! I'm InTheLittleWood also known as Martyn. I stream live on Twitch every Monday, Wednesday and Friday at ...",
       },
       kind: 'youtube#searchResult',
       contentDetails: null,
-      statistics: null
-    }
+      statistics: null,
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -3119,20 +3119,20 @@ const channels = [
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQIP3PBCdFC5ZW6791bYbGkXI2J9fcYttK12Hpv-g=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQIP3PBCdFC5ZW6791bYbGkXI2J9fcYttK12Hpv-g=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLQIP3PBCdFC5ZW6791bYbGkXI2J9fcYttK12Hpv-g=s88-c-k-c0xffffffff-no-rj-mo'
-          }
-        }
-      }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLQIP3PBCdFC5ZW6791bYbGkXI2J9fcYttK12Hpv-g=s88-c-k-c0xffffffff-no-rj-mo',
+          },
+        },
+      },
     },
     video: {
       id: 'SKSG-UqgQLA',
@@ -3145,10 +3145,10 @@ const channels = [
             domain: 'youtube.quota',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            reason: 'quotaExceeded'
-          }
+            reason: 'quotaExceeded',
+          },
         ],
-        code: 403
+        code: 403,
       },
       snippet: {
         liveBroadcastContent: 'none',
@@ -3156,18 +3156,18 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/SKSG-UqgQLA/default.jpg'
+            url: 'https://i.ytimg.com/vi/SKSG-UqgQLA/default.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/SKSG-UqgQLA/hqdefault.jpg',
             height: 360,
-            width: 480
+            width: 480,
           },
           medium: {
             url: 'https://i.ytimg.com/vi/SKSG-UqgQLA/mqdefault.jpg',
             width: 320,
-            height: 180
-          }
+            height: 180,
+          },
         },
         title: 'Align the Star Sensors by damaging them in the Correct Order Location - Fortnite',
         publishedAt: '2023-01-18T15:19:21Z',
@@ -3175,21 +3175,21 @@ const channels = [
         channelId: 'UCWiPkogV65gqqNkwqci4yZA',
         description:
           'Support A Creator code - inthelittlewood #EpicPartner Twitch Channel: http://www.twitch.tv/inthelittlewood Twitter: ...',
-        channelTitle: 'InTheLittleWood'
+        channelTitle: 'InTheLittleWood',
       },
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       youtubeChannels: [],
       creators: ['IOdPOlLaB7zFHvsuvVwu'],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       twitchChannels: [],
       creators: ['xd6wmw8tYeDhb7tqRBo6'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       contentDetails: null,
@@ -3210,27 +3210,27 @@ const channels = [
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s88-c-k-c0xffffffff-no-rj-mo',
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s800-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s800-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         publishedAt: '2017-08-01T10:21:54.000Z',
-        title: 'TripleJump'
-      }
+        title: 'TripleJump',
+      },
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -3240,18 +3240,18 @@ const channels = [
           high: {
             url: 'https://i.ytimg.com/vi/IOcws3zens0/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           medium: {
             url: 'https://i.ytimg.com/vi/IOcws3zens0/mqdefault.jpg',
             width: 320,
-            height: 180
+            height: 180,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/IOcws3zens0/default.jpg',
-            height: 90
-          }
+            height: 90,
+          },
         },
         title: '10 Best Games Of 1994',
         publishTime: '2023-02-07T18:00:14Z',
@@ -3260,7 +3260,7 @@ const channels = [
         liveBroadcastContent: 'none',
         publishedAt: '2023-02-07T18:00:14Z',
         channelTitle: 'TripleJump',
-        channelId: 'UCY5xhpH29hcQudilieKD63Q'
+        channelId: 'UCY5xhpH29hcQudilieKD63Q',
       },
       error: {
         code: 403,
@@ -3271,18 +3271,18 @@ const channels = [
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
             domain: 'youtube.quota',
-            reason: 'quotaExceeded'
-          }
-        ]
+            reason: 'quotaExceeded',
+          },
+        ],
       },
-      etag: 'Zj2COqcAYZr2lh4j6JNbRHzSHbk'
-    }
+      etag: 'Zj2COqcAYZr2lh4j6JNbRHzSHbk',
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -3298,28 +3298,28 @@ const channels = [
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/AMAGAWgd3z8/hqdefault_live.jpg'
+            url: 'https://i.ytimg.com/vi/AMAGAWgd3z8/hqdefault_live.jpg',
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/AMAGAWgd3z8/default_live.jpg'
+            url: 'https://i.ytimg.com/vi/AMAGAWgd3z8/default_live.jpg',
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/AMAGAWgd3z8/mqdefault_live.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/AMAGAWgd3z8/mqdefault_live.jpg',
+          },
         },
         publishTime: '2022-10-31T17:48:09Z',
         description:
-          'Happy 10 years! What a ride! But that ghost never got me, I still exist! I have raccoon superpowers now! Check out twitch.tv/zoey ...'
-      }
+          'Happy 10 years! What a ride! But that ghost never got me, I still exist! I have raccoon superpowers now! Check out twitch.tv/zoey ...',
+      },
     },
     relations: {
       twitchChannels: [],
       creators: ['HkZh9sasvBrpZ4r22Sb3'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       etag: 'byHSPz-yB-NcHN3qo4qFFBAL88g',
@@ -3335,28 +3335,28 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRzHjA9tRk-DHuZS2RFCp6MKpF-yfgRhN4awd1M=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRzHjA9tRk-DHuZS2RFCp6MKpF-yfgRhN4awd1M=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRzHjA9tRk-DHuZS2RFCp6MKpF-yfgRhN4awd1M=s88-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRzHjA9tRk-DHuZS2RFCp6MKpF-yfgRhN4awd1M=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
-          maxres: null
+          maxres: null,
         },
         localized: null,
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       kind: 'youtube#searchResult',
       statistics: null,
       contentDetails: null,
-      id: 'UCYzUOg9p-Z_1o_e-Ua4-VHQ'
-    }
+      id: 'UCYzUOg9p-Z_1o_e-Ua4-VHQ',
+    },
   },
   {
     video: {
@@ -3367,18 +3367,18 @@ const channels = [
           high: {
             url: 'https://i.ytimg.com/vi/VTm_s5Y0QAo/hqdefault.jpg',
             height: 360,
-            width: 480
+            width: 480,
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/VTm_s5Y0QAo/default.jpg'
+            url: 'https://i.ytimg.com/vi/VTm_s5Y0QAo/default.jpg',
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/VTm_s5Y0QAo/mqdefault.jpg',
-            width: 320
-          }
+            width: 320,
+          },
         },
         title: 'A Ridiculous Defence',
         publishTime: '2022-11-28T17:00:20Z',
@@ -3386,19 +3386,19 @@ const channels = [
         description: 'Send us your Scrub Games to Cast: https://discord.gg/eE8awApz3c ▻ Playlist for this series: ...',
         liveBroadcastContent: 'none',
         publishedAt: '2022-11-28T17:00:20Z',
-        channelTitle: 'Team Double Dragon'
+        channelTitle: 'Team Double Dragon',
       },
-      id: 'VTm_s5Y0QAo'
+      id: 'VTm_s5Y0QAo',
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       creators: ['o1gdP5407amAmS5vEXvP'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -3416,37 +3416,37 @@ const channels = [
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/rl8AAKNwbZlytsdKOIwn0enxKUGaGcPwcZgQKmG3786v430_nZh2ZAL4ypY6a-rwnK3ZlMSZ1g=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/rl8AAKNwbZlytsdKOIwn0enxKUGaGcPwcZgQKmG3786v430_nZh2ZAL4ypY6a-rwnK3ZlMSZ1g=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             url: 'https://yt3.ggpht.com/rl8AAKNwbZlytsdKOIwn0enxKUGaGcPwcZgQKmG3786v430_nZh2ZAL4ypY6a-rwnK3ZlMSZ1g=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           medium: {
             url: 'https://yt3.ggpht.com/rl8AAKNwbZlytsdKOIwn0enxKUGaGcPwcZgQKmG3786v430_nZh2ZAL4ypY6a-rwnK3ZlMSZ1g=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
-          standard: null
-        }
+          standard: null,
+        },
       },
       etag: 'wJYtrsR6NTP2dC9PFnNi96Ry8x4',
       statistics: null,
       id: 'UCZ3edpZNi_qmuBG2FIHW5tQ',
-      contentDetails: null
-    }
+      contentDetails: null,
+    },
   },
   {
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['EoUzF0nQQGdpY9NlZfeU']
+      creators: ['EoUzF0nQQGdpY9NlZfeU'],
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     video: {
       id: '914PmwF8G6s',
@@ -3463,22 +3463,22 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/914PmwF8G6s/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/914PmwF8G6s/default.jpg'
+            url: 'https://i.ytimg.com/vi/914PmwF8G6s/default.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/914PmwF8G6s/hqdefault.jpg',
             width: 480,
-            height: 360
-          }
+            height: 360,
+          },
         },
-        title: 'BOUNTY HUNTERS COME FOR OUR LEADER! - Rimworld #15'
+        title: 'BOUNTY HUNTERS COME FOR OUR LEADER! - Rimworld #15',
       },
-      etag: 'KUZvWvzxDM9LO7VlKbEgWXrcYuw'
+      etag: 'KUZvWvzxDM9LO7VlKbEgWXrcYuw',
     },
     channel: {
       id: 'UC_mkyL75cuKExSTaMbpWrEg',
@@ -3495,27 +3495,27 @@ const channels = [
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AMLnZu-qD3zo91wl0KfY2oqUNM-AwUWpYJIDZQz61Ea_9Q=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             url: 'https://yt3.ggpht.com/ytc/AMLnZu-qD3zo91wl0KfY2oqUNM-AwUWpYJIDZQz61Ea_9Q=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AMLnZu-qD3zo91wl0KfY2oqUNM-AwUWpYJIDZQz61Ea_9Q=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
-          }
+            width: null,
+          },
         },
         title: 'Wilsonator',
         defaultLanguage: null,
         customUrl: null,
         description: 'just a guy playing video games member of the Yogscast.',
-        localized: null
+        localized: null,
       },
-      contentDetails: null
-    }
+      contentDetails: null,
+    },
   },
   {
     channel: {
@@ -3527,19 +3527,19 @@ const channels = [
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSyBQjh44CVgQ5cuVoiI7WhsGQOU0cMDjUn8Lu5=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSyBQjh44CVgQ5cuVoiI7WhsGQOU0cMDjUn8Lu5=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLSyBQjh44CVgQ5cuVoiI7WhsGQOU0cMDjUn8Lu5=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLSyBQjh44CVgQ5cuVoiI7WhsGQOU0cMDjUn8Lu5=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
-          maxres: null
+          maxres: null,
         },
         publishedAt: '2006-10-03T13:28:17.000Z',
         title: 'Pyrion Flax',
@@ -3548,21 +3548,21 @@ const channels = [
           'Email me at pyrion.flax@gmail.com with anything you want to say. By Request - You can now get my dumb, terrible drawings ...',
         localized: null,
         country: null,
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       id: 'UCaGWSIZnljlgNTSMzYnxTEg',
       contentDetails: null,
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       creators: ['o1gdP5407amAmS5vEXvP'],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -3575,37 +3575,37 @@ const channels = [
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/uDMvHyhrdcw/hqdefault.jpg',
-            width: 480
+            width: 480,
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/uDMvHyhrdcw/default.jpg'
+            url: 'https://i.ytimg.com/vi/uDMvHyhrdcw/default.jpg',
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/uDMvHyhrdcw/mqdefault.jpg',
-            width: 320
-          }
+            width: 320,
+          },
         },
         title: 'PFlax In The Morning ep 3',
         liveBroadcastContent: 'none',
         description: "Hello. Live from Singapore, it's the pre-recorded PFITM.",
         channelId: 'UCaGWSIZnljlgNTSMzYnxTEg',
-        publishTime: '2022-10-21T00:34:06Z'
-      }
-    }
+        publishTime: '2022-10-21T00:34:06Z',
+      },
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       youtubeChannels: [],
       creators: ['1KtlqxPBAMp1XeD5RXed'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       statistics: null,
@@ -3619,19 +3619,19 @@ const channels = [
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTryPxHh748fKhZwbBbu3cWMcmY6jlvhYktFxst=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTryPxHh748fKhZwbBbu3cWMcmY6jlvhYktFxst=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           medium: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTryPxHh748fKhZwbBbu3cWMcmY6jlvhYktFxst=s240-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
-          standard: null
+          standard: null,
         },
         country: null,
         defaultLanguage: null,
@@ -3640,8 +3640,8 @@ const channels = [
         customUrl: null,
         localized: null,
         description:
-          "Yogscast highlights, clips, edits and compilations. Uploads should be every day at 3pm UK time. This is a FAN channel! If there's ..."
-      }
+          "Yogscast highlights, clips, edits and compilations. Uploads should be every day at 3pm UK time. This is a FAN channel! If there's ...",
+      },
     },
     video: {
       kind: 'youtube#searchResult',
@@ -3656,24 +3656,24 @@ const channels = [
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/paguHSmCahw/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           default: {
             url: 'https://i.ytimg.com/vi/paguHSmCahw/default.jpg',
             width: 120,
-            height: 90
+            height: 90,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/paguHSmCahw/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/paguHSmCahw/hqdefault.jpg',
+          },
         },
         channelId: 'UCajDwfHdxD_NTBaJlc4YrmQ',
         publishedAt: '2023-02-06T15:00:25Z',
-        publishTime: '2023-02-06T15:00:25Z'
-      }
-    }
+        publishTime: '2023-02-06T15:00:25Z',
+      },
+    },
   },
   {
     channel: {
@@ -3688,29 +3688,29 @@ const channels = [
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AMLnZu9v3GU1pZxCepK78ZpYV4lKPxSm8MV9arYDeEk8-g=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AMLnZu9v3GU1pZxCepK78ZpYV4lKPxSm8MV9arYDeEk8-g=s240-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AMLnZu9v3GU1pZxCepK78ZpYV4lKPxSm8MV9arYDeEk8-g=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AMLnZu9v3GU1pZxCepK78ZpYV4lKPxSm8MV9arYDeEk8-g=s800-c-k-c0xffffffff-no-rj-mo',
           },
           standard: null,
           maxres: null,
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AMLnZu9v3GU1pZxCepK78ZpYV4lKPxSm8MV9arYDeEk8-g=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
-          }
+            width: null,
+          },
         },
         title: 'ChippyGaming',
         country: null,
-        publishedAt: '2011-03-19T00:27:17.000Z'
+        publishedAt: '2011-03-19T00:27:17.000Z',
       },
       id: 'UCdImtrRS4UewEbPdnF8R4qw',
       brandingSettings: null,
       etag: 'iE1vkJhzb6j7rJfKI_nCvJw4POc',
-      contentDetails: null
+      contentDetails: null,
     },
     video: {
       kind: 'youtube#searchResult',
@@ -3726,40 +3726,40 @@ const channels = [
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/ZfoXeGXPOAc/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/ZfoXeGXPOAc/mqdefault.jpg',
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/ZfoXeGXPOAc/default.jpg'
+            url: 'https://i.ytimg.com/vi/ZfoXeGXPOAc/default.jpg',
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/ZfoXeGXPOAc/hqdefault.jpg',
-            width: 480
-          }
+            width: 480,
+          },
         },
         description:
-          '(ad) For 21 FREE meals with HelloFresh plus free shipping, use code CHIPPY21 at https://bit.ly/3ZSElNv! Check out Habbo!'
+          '(ad) For 21 FREE meals with HelloFresh plus free shipping, use code CHIPPY21 at https://bit.ly/3ZSElNv! Check out Habbo!',
       },
-      id: 'ZfoXeGXPOAc'
+      id: 'ZfoXeGXPOAc',
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     relations: {
       twitchChannels: [],
       creators: ['Ot78GPFYxZbxjK6On2CW'],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     video: {
       id: 'CjZRe_t-wpU',
@@ -3770,18 +3770,18 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/CjZRe_t-wpU/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/CjZRe_t-wpU/hqdefault.jpg',
           },
           medium: {
             url: 'https://i.ytimg.com/vi/CjZRe_t-wpU/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           default: {
             url: 'https://i.ytimg.com/vi/CjZRe_t-wpU/default.jpg',
             height: 90,
-            width: 120
-          }
+            width: 120,
+          },
         },
         publishedAt: '2017-09-15T16:55:03Z',
         description:
@@ -3790,13 +3790,13 @@ const channels = [
         liveBroadcastContent: 'none',
         publishTime: '2017-09-15T16:55:03Z',
         channelId: 'UCee7sFqGWiJM5DaHzX5nFVA',
-        title: 'Yogscast Heroes of the Storm Showdown at EGX!'
-      }
+        title: 'Yogscast Heroes of the Storm Showdown at EGX!',
+      },
     },
     relations: {
       creators: ['5h6PnMWEghJSDaS5ZNbc'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       id: 'UCee7sFqGWiJM5DaHzX5nFVA',
@@ -3812,27 +3812,27 @@ const channels = [
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLROD9KnExC8rCmUNdAVR3zSHUH32hSAUmOvdgoG=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLROD9KnExC8rCmUNdAVR3zSHUH32hSAUmOvdgoG=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           maxres: null,
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLROD9KnExC8rCmUNdAVR3zSHUH32hSAUmOvdgoG=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
-          standard: null
+          standard: null,
         },
         title: 'YOGSCAST Zylus',
         defaultLanguage: null,
-        description: 'Sup guysh, Zylus here and welcome to my Youtube channel!'
+        description: 'Sup guysh, Zylus here and welcome to my Youtube channel!',
       },
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     video: {
@@ -3846,25 +3846,25 @@ const channels = [
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/TVJnIVV3OK4/default.jpg',
-            width: 120
+            width: 120,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/TVJnIVV3OK4/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/TVJnIVV3OK4/hqdefault.jpg',
           },
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/TVJnIVV3OK4/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/TVJnIVV3OK4/mqdefault.jpg',
+          },
         },
         publishedAt: '2022-08-06T16:00:14Z',
-        description: "If you want to catch the videos live, check out Ben's twitch channel here: twitch.tv/Bedgars."
+        description: "If you want to catch the videos live, check out Ben's twitch channel here: twitch.tv/Bedgars.",
       },
       kind: 'youtube#searchResult',
       id: 'TVJnIVV3OK4',
-      etag: 'O-IsGRpf86DG34W5oiGQH49yBCc'
+      etag: 'O-IsGRpf86DG34W5oiGQH49yBCc',
     },
     channel: {
       id: 'UCeiojUKAAGdwocc5ZjMqryA',
@@ -3877,20 +3877,20 @@ const channels = [
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRo-48-qU6qsBsHGKYIshiTfHlOyL65FXuMkTWN=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRo-48-qU6qsBsHGKYIshiTfHlOyL65FXuMkTWN=s240-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           standard: null,
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRo-48-qU6qsBsHGKYIshiTfHlOyL65FXuMkTWN=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRo-48-qU6qsBsHGKYIshiTfHlOyL65FXuMkTWN=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRo-48-qU6qsBsHGKYIshiTfHlOyL65FXuMkTWN=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
+            height: null,
+          },
         },
         description:
           'Welcome to Lewis and Ben Save The World! We love a good turn-based strategy game where we can whip some alien booty and ...',
@@ -3899,19 +3899,19 @@ const channels = [
         customUrl: null,
         title: 'Lewis and Ben Save the World',
         publishedAt: '2017-07-19T12:53:30.000Z',
-        localized: null
-      }
+        localized: null,
+      },
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['Dvsw8FJa8v3LjEXSXr9e']
+      creators: ['Dvsw8FJa8v3LjEXSXr9e'],
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     video: {
@@ -3923,18 +3923,18 @@ const channels = [
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/SgRdjl6Rx3c/default.jpg',
-            width: 120
+            width: 120,
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/SgRdjl6Rx3c/hqdefault.jpg',
-            width: 480
+            width: 480,
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/SgRdjl6Rx3c/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/SgRdjl6Rx3c/mqdefault.jpg',
+          },
         },
         description:
           'new games, new music, new memories. Art https://twitter.com/Teatimerabbit/status/1365438102966333443 Follow the artist!',
@@ -3943,8 +3943,8 @@ const channels = [
         title: 'new memories || relaxing video game music + rain ambiance',
         channelId: 'UCfm4bBx0sW4NGAFzfGkLCMg',
         liveBroadcastContent: 'none',
-        channelTitle: 'shadowatnoon'
-      }
+        channelTitle: 'shadowatnoon',
+      },
     },
     channel: {
       contentDetails: null,
@@ -3961,43 +3961,43 @@ const channels = [
           default: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/RpkxgDucHrHic51WlGs9l13IumyZwE44wal-QvQxjqU7AYNY6wWbL2ReQKOikXmwcsHgef59hsA=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/RpkxgDucHrHic51WlGs9l13IumyZwE44wal-QvQxjqU7AYNY6wWbL2ReQKOikXmwcsHgef59hsA=s88-c-k-c0xffffffff-no-rj-mo',
           },
           high: {
             url: 'https://yt3.ggpht.com/RpkxgDucHrHic51WlGs9l13IumyZwE44wal-QvQxjqU7AYNY6wWbL2ReQKOikXmwcsHgef59hsA=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/RpkxgDucHrHic51WlGs9l13IumyZwE44wal-QvQxjqU7AYNY6wWbL2ReQKOikXmwcsHgef59hsA=s240-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/RpkxgDucHrHic51WlGs9l13IumyZwE44wal-QvQxjqU7AYNY6wWbL2ReQKOikXmwcsHgef59hsA=s240-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         country: null,
         publishedAt: '2018-07-09T05:55:02.000Z',
         customUrl: null,
         defaultLanguage: null,
-        title: 'shadowatnoon'
-      }
+        title: 'shadowatnoon',
+      },
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     relations: {
       twitchChannels: [],
       creators: ['f2tAtl8eBRTtKsqzQQoC'],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       kind: 'youtube#searchResult',
@@ -4014,28 +4014,28 @@ const channels = [
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/joN0Xydbeuo/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/joN0Xydbeuo/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             url: 'https://i.ytimg.com/vi/joN0Xydbeuo/hqdefault.jpg',
             height: 360,
-            width: 480
-          }
+            width: 480,
+          },
         },
         publishedAt: '2023-02-07T18:00:16Z',
-        channelId: 'UCgXiTWrFg05fTPfw1YLb5Ug'
-      }
+        channelId: 'UCgXiTWrFg05fTPfw1YLb5Ug',
+      },
     },
     relations: {
       podcasts: ['5F7GOIwN9KlUqR8V7fjj'],
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       contentDetails: null,
@@ -4049,20 +4049,20 @@ const channels = [
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLT-x9wSuI4VRNSwR-9bP4k6SDYTLCGIn-LURaby=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLT-x9wSuI4VRNSwR-9bP4k6SDYTLCGIn-LURaby=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLT-x9wSuI4VRNSwR-9bP4k6SDYTLCGIn-LURaby=s240-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLT-x9wSuI4VRNSwR-9bP4k6SDYTLCGIn-LURaby=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLT-x9wSuI4VRNSwR-9bP4k6SDYTLCGIn-LURaby=s88-c-k-c0xffffffff-no-rj-mo',
           },
           standard: null,
-          maxres: null
+          maxres: null,
         },
         description:
           'Two Dads and a Lewis join together to form the Triforce! A podcast filled to the brim with dad chat, gaming rambles, life stories and ...',
@@ -4070,15 +4070,15 @@ const channels = [
         publishedAt: '2014-10-16T15:28:23.000Z',
         localized: null,
         defaultLanguage: null,
-        title: 'Triforce!'
-      }
-    }
+        title: 'Triforce!',
+      },
+    },
   },
   {
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['QLpFsapfyzIU4TYdVmjM']
+      creators: ['QLpFsapfyzIU4TYdVmjM'],
     },
     channel: {
       contentDetails: null,
@@ -4096,30 +4096,30 @@ const channels = [
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTOinfHMSWBNa3zFOduOAvQ0IlnMHZaCLLkNmU2=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTOinfHMSWBNa3zFOduOAvQ0IlnMHZaCLLkNmU2=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTOinfHMSWBNa3zFOduOAvQ0IlnMHZaCLLkNmU2=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           standard: null,
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTOinfHMSWBNa3zFOduOAvQ0IlnMHZaCLLkNmU2=s240-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTOinfHMSWBNa3zFOduOAvQ0IlnMHZaCLLkNmU2=s240-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         country: null,
         customUrl: null,
-        defaultLanguage: null
+        defaultLanguage: null,
       },
-      etag: 'A1yJdKl3VebNziSIcgS4sSc-xuM'
+      etag: 'A1yJdKl3VebNziSIcgS4sSc-xuM',
     },
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       snippet: {
@@ -4128,18 +4128,18 @@ const channels = [
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/jqWMxYNsggc/default.jpg'
+            url: 'https://i.ytimg.com/vi/jqWMxYNsggc/default.jpg',
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/jqWMxYNsggc/hqdefault.jpg',
-            width: 480
+            width: 480,
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/jqWMxYNsggc/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/jqWMxYNsggc/mqdefault.jpg',
+          },
         },
         publishedAt: '2022-12-18T17:00:23Z',
         description:
@@ -4147,12 +4147,12 @@ const channels = [
         publishTime: '2022-12-18T17:00:23Z',
         title: 'Simon&#39;s Important Videos Preparation Stream! [25/11]',
         channelId: 'UCj9yJMgOhCkl--aMfelaVIg',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       id: 'jqWMxYNsggc',
       etag: 'L-7ZWI3cRJDb-rUHysAnmtXOz38',
-      kind: 'youtube#searchResult'
-    }
+      kind: 'youtube#searchResult',
+    },
   },
   {
     channel: {
@@ -4168,28 +4168,28 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/-YyW1PjinOf0mF4-xFi3ObGlXJj-7FiGnjQwyzQIAg-41VbIYyKDM-al6a8Q8wW4Z7nk4r8UhA=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/-YyW1PjinOf0mF4-xFi3ObGlXJj-7FiGnjQwyzQIAg-41VbIYyKDM-al6a8Q8wW4Z7nk4r8UhA=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           standard: null,
           default: {
             url: 'https://yt3.ggpht.com/-YyW1PjinOf0mF4-xFi3ObGlXJj-7FiGnjQwyzQIAg-41VbIYyKDM-al6a8Q8wW4Z7nk4r8UhA=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
+            height: null,
+          },
         },
         title: 'brionykay',
         country: null,
         customUrl: null,
-        localized: null
+        localized: null,
       },
       kind: 'youtube#searchResult',
       statistics: null,
-      contentDetails: null
+      contentDetails: null,
     },
     video: {
       kind: 'youtube#searchResult',
@@ -4199,12 +4199,12 @@ const channels = [
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
             reason: 'quotaExceeded',
-            domain: 'youtube.quota'
-          }
+            domain: 'youtube.quota',
+          },
         ],
         message:
           'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-        code: 403
+        code: 403,
       },
       snippet: {
         channelId: 'UCkPhi5zU2EAPkuWhjFqYmiA',
@@ -4213,39 +4213,39 @@ const channels = [
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/fUUFVyniaGs/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/fUUFVyniaGs/mqdefault.jpg',
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/fUUFVyniaGs/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/fUUFVyniaGs/hqdefault.jpg',
-            width: 480
-          }
+            width: 480,
+          },
         },
         description:
           'This week features adventuring in Hades, beekeeping in Horticular, suspicions in Wylde Flowers, giggles in Minecraft and serious ...',
         channelTitle: 'brionykay',
         title: 'Briony Clips || Dave Grifficulties',
         publishedAt: '2023-02-06T22:07:22Z',
-        publishTime: '2023-02-06T22:07:22Z'
+        publishTime: '2023-02-06T22:07:22Z',
       },
       id: 'fUUFVyniaGs',
-      etag: 'a-5WYifnF7Z6ceNCREjHCU71_go'
+      etag: 'a-5WYifnF7Z6ceNCREjHCU71_go',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['Gz3S1VJlA6iPISXuIl7p']
-    }
+      creators: ['Gz3S1VJlA6iPISXuIl7p'],
+    },
   },
   {
     channel: {
@@ -4255,20 +4255,20 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSz_RC6Kl24uuljOmollBrtTApOeIvZwOA435O8=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSz_RC6Kl24uuljOmollBrtTApOeIvZwOA435O8=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSz_RC6Kl24uuljOmollBrtTApOeIvZwOA435O8=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSz_RC6Kl24uuljOmollBrtTApOeIvZwOA435O8=s800-c-k-c0xffffffff-no-rj-mo',
           },
-          standard: null
+          standard: null,
         },
         country: null,
         publishedAt: '2016-11-25T13:58:55.000Z',
@@ -4276,19 +4276,19 @@ const channels = [
           'The Yogscast play tabletop games! We love board games, role playing games, card games and everything in between. If you like ...',
         defaultLanguage: null,
         title: 'Games Night',
-        localized: null
+        localized: null,
       },
       statistics: null,
       id: 'UClhmd2Xe3zrYfuarqV-shKA',
       etag: '51S8Hvenutfx2eo2fx0pVgjzV-k',
       kind: 'youtube#searchResult',
-      contentDetails: null
+      contentDetails: null,
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
       creators: ['e0mWrK72feY69gH0HwAA'],
-      podcasts: ['ZbvgXhoXmqwQ6cqqmmn6']
+      podcasts: ['ZbvgXhoXmqwQ6cqqmmn6'],
     },
     video: {
       id: 'B6Kjdaz31j0',
@@ -4300,39 +4300,39 @@ const channels = [
           medium: {
             url: 'https://i.ytimg.com/vi/B6Kjdaz31j0/mqdefault.jpg',
             width: 320,
-            height: 180
+            height: 180,
           },
           default: {
             url: 'https://i.ytimg.com/vi/B6Kjdaz31j0/default.jpg',
             height: 90,
-            width: 120
+            width: 120,
           },
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/B6Kjdaz31j0/hqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/B6Kjdaz31j0/hqdefault.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         description:
           "We're playing Bolt Action and this time we have a custom scenario based on the movie The Eagle Has Landed which sees The ...",
         channelTitle: 'Games Night',
         publishTime: '2022-12-17T16:00:04Z',
-        channelId: 'UClhmd2Xe3zrYfuarqV-shKA'
+        channelId: 'UClhmd2Xe3zrYfuarqV-shKA',
       },
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['zFdYfSFj4efXLheSHG5Z']
+      creators: ['zFdYfSFj4efXLheSHG5Z'],
     },
     channel: {
       id: 'UCm8qziTZUmer4-we3GZQsWQ',
@@ -4349,25 +4349,25 @@ const channels = [
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ofPWgbwZtGBFmfZ6hC-CMSlOEiv05JK7ZsSzo5wNDdPvgk46e5ZwLmxhHXiZ5X3iCvjxNHeQ2Q=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ofPWgbwZtGBFmfZ6hC-CMSlOEiv05JK7ZsSzo5wNDdPvgk46e5ZwLmxhHXiZ5X3iCvjxNHeQ2Q=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           default: {
             url: 'https://yt3.ggpht.com/ofPWgbwZtGBFmfZ6hC-CMSlOEiv05JK7ZsSzo5wNDdPvgk46e5ZwLmxhHXiZ5X3iCvjxNHeQ2Q=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
-          standard: null
-        }
+          standard: null,
+        },
       },
       kind: 'youtube#searchResult',
       statistics: null,
-      contentDetails: null
+      contentDetails: null,
     },
     video: {
       snippet: {
@@ -4382,30 +4382,30 @@ const channels = [
           high: {
             url: 'https://i.ytimg.com/vi/X2MtxKM8Vnk/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/X2MtxKM8Vnk/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/X2MtxKM8Vnk/default.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/X2MtxKM8Vnk/default.jpg',
+          },
         },
-        channelId: 'UCm8qziTZUmer4-we3GZQsWQ'
+        channelId: 'UCm8qziTZUmer4-we3GZQsWQ',
       },
       kind: 'youtube#searchResult',
       etag: 'od9Ebudnx2ar_BfpnWFYV6MBLF8',
-      id: 'X2MtxKM8Vnk'
+      id: 'X2MtxKM8Vnk',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     channel: {
@@ -4418,20 +4418,20 @@ const channels = [
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           maxres: null,
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s88-c-k-c0xffffffff-no-rj-mo',
           },
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s240-c-k-c0xffffffff-no-rj-mo',
           },
-          standard: null
+          standard: null,
         },
         country: null,
         customUrl: null,
@@ -4440,9 +4440,9 @@ const channels = [
         defaultLanguage: null,
         localized: null,
         publishedAt: '2008-09-06T14:08:18.000Z',
-        title: 'iSorrowproductions'
+        title: 'iSorrowproductions',
       },
-      statistics: null
+      statistics: null,
     },
     video: {
       snippet: {
@@ -4457,46 +4457,46 @@ const channels = [
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/GnmV2zdam0k/default.jpg'
+            url: 'https://i.ytimg.com/vi/GnmV2zdam0k/default.jpg',
           },
           medium: {
             url: 'https://i.ytimg.com/vi/GnmV2zdam0k/mqdefault.jpg',
             height: 180,
-            width: 320
+            width: 320,
           },
           high: {
             url: 'https://i.ytimg.com/vi/GnmV2zdam0k/hqdefault.jpg',
             height: 360,
-            width: 480
-          }
+            width: 480,
+          },
         },
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       id: 'GnmV2zdam0k',
       etag: 'pSwDGMHdsIQ4iGMwofFVD1hkAfk',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['v1aFWA8DXs58iyW2ZFA6']
+      creators: ['v1aFWA8DXs58iyW2ZFA6'],
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
-    }
+      creators: [],
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['vz0XWPLfxV9gFyChCgMO']
+      creators: ['vz0XWPLfxV9gFyChCgMO'],
     },
     video: {
       etag: '1ecrCeJ0lIC1OX5RZZEpMFVgiWA',
@@ -4514,20 +4514,20 @@ const channels = [
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/GgUVTPGkDOU/default.jpg',
-            height: 90
+            height: 90,
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/GgUVTPGkDOU/mqdefault.jpg',
-            width: 320
+            width: 320,
           },
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/GgUVTPGkDOU/hqdefault.jpg'
-          }
-        }
-      }
+            url: 'https://i.ytimg.com/vi/GgUVTPGkDOU/hqdefault.jpg',
+          },
+        },
+      },
     },
     channel: {
       id: 'UCm_wB6MGZxAHHg6cZ1IKKvg',
@@ -4536,20 +4536,20 @@ const channels = [
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/0SPT70yx4Aj8UPApvvB419D5Rfe9upf503ctdsf5J_V7PpNtyhNiJOySSQarYHrZrGKph1kqUdI=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/0SPT70yx4Aj8UPApvvB419D5Rfe9upf503ctdsf5J_V7PpNtyhNiJOySSQarYHrZrGKph1kqUdI=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           maxres: null,
           medium: {
             url: 'https://yt3.ggpht.com/0SPT70yx4Aj8UPApvvB419D5Rfe9upf503ctdsf5J_V7PpNtyhNiJOySSQarYHrZrGKph1kqUdI=s240-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
-          standard: null
+          standard: null,
         },
         title: 'Ravs_ Live',
         customUrl: null,
@@ -4558,13 +4558,13 @@ const channels = [
           'TWITCH: https://www.twitch.tv/ravs_ CLIPS: https://www.youtube.com/c/Ravsy_ DISCORD: https://discord.gg/e4HcKUt TWITTER: ...',
         localized: null,
         defaultLanguage: null,
-        country: null
+        country: null,
       },
       etag: 'JmsXiGD6ttLBRuJ10z9z7IyQaMc',
       kind: 'youtube#searchResult',
       contentDetails: null,
-      statistics: null
-    }
+      statistics: null,
+    },
   },
   {
     channel: {
@@ -4577,31 +4577,31 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           maxres: null,
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
-          standard: null
+          standard: null,
         },
         localized: null,
         description:
           'Gaming channel: I play all sorts of games and once in a while something great happens which I then upload. I play with a bunch of ...',
         country: null,
         title: 'Bokoen1',
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       id: 'UCnQC_XGCCI__qrxwgZS27-A',
       contentDetails: null,
-      statistics: null
+      statistics: null,
     },
     video: {
       kind: 'youtube#searchResult',
@@ -4615,36 +4615,36 @@ const channels = [
           high: {
             url: 'https://i.ytimg.com/vi/7f6fX_Z9QoE/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           medium: {
             height: 180,
             width: 320,
-            url: 'https://i.ytimg.com/vi/7f6fX_Z9QoE/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/7f6fX_Z9QoE/mqdefault.jpg',
           },
           default: {
             height: 90,
             url: 'https://i.ytimg.com/vi/7f6fX_Z9QoE/default.jpg',
-            width: 120
-          }
+            width: 120,
+          },
         },
         channelId: 'UCnQC_XGCCI__qrxwgZS27-A',
         liveBroadcastContent: 'none',
-        channelTitle: 'Bokoen1'
+        channelTitle: 'Bokoen1',
       },
       id: '7f6fX_Z9QoE',
-      etag: 'yIoheBEFbrfXqsh_GHdWDYPRz_Q'
+      etag: 'yIoheBEFbrfXqsh_GHdWDYPRz_Q',
     },
     relations: {
       creators: ['t811tuTpZHK0Uzh6LqD9'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     video: {
@@ -4655,25 +4655,25 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/mU2VZ4s83TM/default.jpg'
+            url: 'https://i.ytimg.com/vi/mU2VZ4s83TM/default.jpg',
           },
           high: {
             url: 'https://i.ytimg.com/vi/mU2VZ4s83TM/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/mU2VZ4s83TM/mqdefault.jpg',
-            height: 180
-          }
+            height: 180,
+          },
         },
         channelTitle: 'boba',
         publishedAt: '2022-11-17T00:00:16Z',
         description:
           'Intellectual art degree Boba is gone, now there is only fan fiction Boba. Socials Watch live at: https://www.twitch.tv/boba Twitter: ...',
         title: 'Does Gandalf eat the cat from the back? - Splatoon 3',
-        channelId: 'UCoMU9fM7ebtMlsS-ZbxSNoA'
+        channelId: 'UCoMU9fM7ebtMlsS-ZbxSNoA',
       },
       etag: 'KiuSMSA3dDEgA0NtC5BtHxEw9ag',
       id: 'mU2VZ4s83TM',
@@ -4685,12 +4685,12 @@ const channels = [
             reason: 'quotaExceeded',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            domain: 'youtube.quota'
-          }
+            domain: 'youtube.quota',
+          },
         ],
         message:
-          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-      }
+          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+      },
     },
     channel: {
       contentDetails: null,
@@ -4709,34 +4709,34 @@ const channels = [
           medium: {
             height: null,
             url: 'https://yt3.ggpht.com/T3jETZykw_-SMKAQ_qZAgtHbPKzNP3qpOJE5Oq332F_WTtLFOZ4Qt7V3z51khO03XKUVrZ_FfQ=s240-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           high: {
             height: null,
             url: 'https://yt3.ggpht.com/T3jETZykw_-SMKAQ_qZAgtHbPKzNP3qpOJE5Oq332F_WTtLFOZ4Qt7V3z51khO03XKUVrZ_FfQ=s800-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/T3jETZykw_-SMKAQ_qZAgtHbPKzNP3qpOJE5Oq332F_WTtLFOZ4Qt7V3z51khO03XKUVrZ_FfQ=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
-          maxres: null
+          maxres: null,
         },
-        customUrl: null
+        customUrl: null,
       },
-      etag: 'oGbeXFbZNMgJ7V0KW-XIe1IW4sA'
+      etag: 'oGbeXFbZNMgJ7V0KW-XIe1IW4sA',
     },
     relations: {
       twitchChannels: [],
       creators: ['yAmEX9kxAZTdKzwQcIsy'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       creators: [],
       twitchChannels: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     video: {
@@ -4750,32 +4750,32 @@ const channels = [
           high: {
             height: 360,
             width: 480,
-            url: 'https://i.ytimg.com/vi/t4HJLaIE4i4/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/t4HJLaIE4i4/hqdefault.jpg',
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/t4HJLaIE4i4/default.jpg'
+            url: 'https://i.ytimg.com/vi/t4HJLaIE4i4/default.jpg',
           },
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/t4HJLaIE4i4/mqdefault.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/t4HJLaIE4i4/mqdefault.jpg',
+          },
         },
         publishedAt: '2022-11-25T16:00:28Z',
         description:
           'Check out more of the Yogscast here: https://www.youtube.com/c/yogscast/featured #shorts #yogscast #gaming #callofcthulhu ...',
         channelId: 'UCpKNM44gSRZ3U_hMd2JV9Kw',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
-      id: 't4HJLaIE4i4'
+      id: 't4HJLaIE4i4',
     },
     relations: {
       youtubeChannels: [],
       podcasts: ['wbo7oG05vqQxGW3u1oEW'],
       creators: ['Gq7a6r1Pq0loxIUiNk8v'],
-      twitchChannels: []
+      twitchChannels: [],
     },
     channel: {
       snippet: {
@@ -4790,34 +4790,34 @@ const channels = [
           default: {
             url: 'https://yt3.ggpht.com/dLO5JCTpEWuCSzWZ_bmz44uHI0jf-5l4twcOgCnh2IeMYmtrjxg34p84vwlA0IjFBUMpwaRmuw=s88-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           maxres: null,
           standard: null,
           high: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/dLO5JCTpEWuCSzWZ_bmz44uHI0jf-5l4twcOgCnh2IeMYmtrjxg34p84vwlA0IjFBUMpwaRmuw=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/dLO5JCTpEWuCSzWZ_bmz44uHI0jf-5l4twcOgCnh2IeMYmtrjxg34p84vwlA0IjFBUMpwaRmuw=s800-c-k-c0xffffffff-no-rj-mo',
           },
           medium: {
             url: 'https://yt3.ggpht.com/dLO5JCTpEWuCSzWZ_bmz44uHI0jf-5l4twcOgCnh2IeMYmtrjxg34p84vwlA0IjFBUMpwaRmuw=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
-          }
+            height: null,
+          },
         },
-        title: 'Yogscast Shorts - Tiny Peculiar Portions'
+        title: 'Yogscast Shorts - Tiny Peculiar Portions',
       },
       kind: 'youtube#searchResult',
       contentDetails: null,
       etag: 'vTmAL0H7wIlzFnnVLBPpgfBFHbI',
       id: 'UCpKNM44gSRZ3U_hMd2JV9Kw',
-      statistics: null
+      statistics: null,
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     video: {
@@ -4832,30 +4832,30 @@ const channels = [
           high: {
             width: 480,
             height: 360,
-            url: 'https://i.ytimg.com/vi/aODcr3DCmhs/hqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/aODcr3DCmhs/hqdefault.jpg',
           },
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/aODcr3DCmhs/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/aODcr3DCmhs/default.jpg',
-            height: 90
-          }
+            height: 90,
+          },
         },
         publishTime: '2023-02-07T18:30:02Z',
         publishedAt: '2023-02-07T18:30:02Z',
-        title: 'Six Person Vault - MINECRAFT VAULT HUNTERS 2 SMP #8'
+        title: 'Six Person Vault - MINECRAFT VAULT HUNTERS 2 SMP #8',
       },
       etag: 'wmiXz_MJR7sZlwOthSw9TO7gtGE',
-      id: 'aODcr3DCmhs'
+      id: 'aODcr3DCmhs',
     },
     subRelations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       statistics: null,
@@ -4867,43 +4867,43 @@ const channels = [
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s800-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           standard: null,
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s88-c-k-c0xffffffff-no-rj-mo',
           },
-          maxres: null
+          maxres: null,
         },
         customUrl: null,
         defaultLanguage: null,
         country: null,
         publishedAt: '2011-12-04T00:28:19.000Z',
-        localized: null
+        localized: null,
       },
       contentDetails: null,
       kind: 'youtube#searchResult',
       id: 'UCs4br3aZLU0sOEM-3n0-6xQ',
-      etag: 'MA5nwLmRqXdpayGfcz46x6bwX5g'
+      etag: 'MA5nwLmRqXdpayGfcz46x6bwX5g',
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['8K6EIOpBvb6ROSHWHx9Q']
-    }
+      creators: ['8K6EIOpBvb6ROSHWHx9Q'],
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     video: {
       snippet: {
@@ -4918,28 +4918,28 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/0hDGD2p3mAY/default.jpg'
+            url: 'https://i.ytimg.com/vi/0hDGD2p3mAY/default.jpg',
           },
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/0hDGD2p3mAY/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/0hDGD2p3mAY/mqdefault.jpg',
           },
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/0hDGD2p3mAY/hqdefault.jpg',
-            height: 360
-          }
-        }
+            height: 360,
+          },
+        },
       },
       etag: '5KlXGteQxc7VKe6mGbJr2ixtwtI',
       id: '0hDGD2p3mAY',
-      kind: 'youtube#searchResult'
+      kind: 'youtube#searchResult',
     },
     relations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       contentDetails: null,
@@ -4958,31 +4958,31 @@ const channels = [
           medium: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLR4EEvkDrljTP1_Mv1uA_rarE945oOGcZ1dLZ6mkA=s240-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           maxres: null,
           standard: null,
           high: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLR4EEvkDrljTP1_Mv1uA_rarE945oOGcZ1dLZ6mkA=s800-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLR4EEvkDrljTP1_Mv1uA_rarE945oOGcZ1dLZ6mkA=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
-          }
+            height: null,
+          },
         },
         title: 'YOGSCAST Nilesy',
-        defaultLanguage: null
-      }
-    }
+        defaultLanguage: null,
+      },
+    },
   },
   {
     relations: {
       twitchChannels: [],
       creators: ['Zf19FbodO1Alu5gfLykf'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       snippet: {
@@ -4993,31 +4993,31 @@ const channels = [
           default: {
             height: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTIuwiPmfnDOrjMrR4ZnhDBdCuiqG0xky4uCkV8eQ=s88-c-k-c0xffffffff-no-rj-mo',
-            width: null
+            width: null,
           },
           maxres: null,
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLTIuwiPmfnDOrjMrR4ZnhDBdCuiqG0xky4uCkV8eQ=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           standard: null,
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLTIuwiPmfnDOrjMrR4ZnhDBdCuiqG0xky4uCkV8eQ=s800-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLTIuwiPmfnDOrjMrR4ZnhDBdCuiqG0xky4uCkV8eQ=s800-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         localized: null,
         description: "I'll write something here at some point. Maybe.",
         customUrl: null,
-        title: 'Joe Hickson'
+        title: 'Joe Hickson',
       },
       id: 'UCtqIhSzQEokE_oaQRsLRxQw',
       statistics: null,
       etag: 'THPC6qB7R8m1qauPArqhdLG84Uk',
       kind: 'youtube#searchResult',
-      contentDetails: null
+      contentDetails: null,
     },
     video: {
       etag: '_ja3w2DOIYVQFEasfGu04eagUhw',
@@ -5032,21 +5032,21 @@ const channels = [
           medium: {
             width: 320,
             height: 180,
-            url: 'https://i.ytimg.com/vi/2N6zO6dSzjk/mqdefault.jpg'
+            url: 'https://i.ytimg.com/vi/2N6zO6dSzjk/mqdefault.jpg',
           },
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/2N6zO6dSzjk/default.jpg'
+            url: 'https://i.ytimg.com/vi/2N6zO6dSzjk/default.jpg',
           },
           high: {
             height: 360,
             url: 'https://i.ytimg.com/vi/2N6zO6dSzjk/hqdefault.jpg',
-            width: 480
-          }
+            width: 480,
+          },
         },
         description: 'Fully customize your own Now Playing Overlay in OBS with this free plugin. Download: ...',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       kind: 'youtube#searchResult',
       error: {
@@ -5055,19 +5055,19 @@ const channels = [
             domain: 'youtube.quota',
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-            reason: 'quotaExceeded'
-          }
+            reason: 'quotaExceeded',
+          },
         ],
         code: 403,
         message:
-          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-      }
+          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+      },
     },
     subRelations: {
       twitchChannels: [],
       creators: [],
-      youtubeChannels: []
-    }
+      youtubeChannels: [],
+    },
   },
   {
     video: {
@@ -5080,37 +5080,37 @@ const channels = [
           default: {
             width: 120,
             height: 90,
-            url: 'https://i.ytimg.com/vi/iB6qITNAhLM/default.jpg'
+            url: 'https://i.ytimg.com/vi/iB6qITNAhLM/default.jpg',
           },
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/iB6qITNAhLM/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/iB6qITNAhLM/hqdefault.jpg',
-            height: 360
-          }
+            height: 360,
+          },
         },
         publishTime: '2023-02-05T18:30:44Z',
         channelId: 'UCubqpKp3okBcmhFCqkllA4w',
         description:
           'Vault Hunters! We have big plans for a mega tunnel when Duncan and Ben come for a visit and we head into another vault!',
         title: 'The Mega Tunnel - MINECRAFT VAULT HUNTERS #5',
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
-      etag: 'DlVDmvBL54YCqCNwqNsVjvcZNtc'
+      etag: 'DlVDmvBL54YCqCNwqNsVjvcZNtc',
     },
     relations: {
       twitchChannels: [],
       creators: ['0w4JSboJK6RdTDmDKoYL'],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       statistics: null,
@@ -5128,37 +5128,37 @@ const channels = [
           medium: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRuha0x6susFJfoAVYc67y0M00MGwloSALbmlx_ZA=s240-c-k-c0xffffffff-no-rj-mo',
             width: null,
-            height: null
+            height: null,
           },
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRuha0x6susFJfoAVYc67y0M00MGwloSALbmlx_ZA=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRuha0x6susFJfoAVYc67y0M00MGwloSALbmlx_ZA=s800-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRuha0x6susFJfoAVYc67y0M00MGwloSALbmlx_ZA=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
-          standard: null
+          standard: null,
         },
         country: null,
         title: 'Pedguin',
-        customUrl: null
+        customUrl: null,
       },
-      id: 'UCubqpKp3okBcmhFCqkllA4w'
-    }
+      id: 'UCubqpKp3okBcmhFCqkllA4w',
+    },
   },
   {
     subRelations: {
       youtubeChannels: [],
       creators: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['3fNrixu9cDhggDXyLTwG']
+      creators: ['3fNrixu9cDhggDXyLTwG'],
     },
     channel: {
       contentDetails: null,
@@ -5170,31 +5170,31 @@ const channels = [
           medium: {
             width: null,
             height: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s240-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             url: 'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s88-c-k-c0xffffffff-no-rj-mo',
             height: null,
-            width: null
+            width: null,
           },
           high: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s800-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           standard: null,
-          maxres: null
+          maxres: null,
         },
         title: 'Alex The Rambler!',
         publishedAt: '2013-03-02T10:51:28.000Z',
         description:
           "I'm Alex the Rambler! I basically make my living from being incompetent at strategy games, if you want to join me on my quest to ...",
-        defaultLanguage: null
+        defaultLanguage: null,
       },
       id: 'UCvB0kD6-i5wmZWmj0p3KWCw',
       etag: 'RAuy5qRb9kxzqRn6BWnvCCArwwc',
       kind: 'youtube#searchResult',
-      statistics: null
+      statistics: null,
     },
     video: {
       kind: 'youtube#searchResult',
@@ -5211,19 +5211,19 @@ const channels = [
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/5BvzHBmPyCY/default.jpg'
+            url: 'https://i.ytimg.com/vi/5BvzHBmPyCY/default.jpg',
           },
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/5BvzHBmPyCY/hqdefault.jpg',
-            height: 360
+            height: 360,
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/5BvzHBmPyCY/mqdefault.jpg',
-            width: 320
-          }
-        }
+            width: 320,
+          },
+        },
       },
       error: {
         errors: [
@@ -5231,16 +5231,16 @@ const channels = [
             message:
               'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
             reason: 'quotaExceeded',
-            domain: 'youtube.quota'
-          }
+            domain: 'youtube.quota',
+          },
         ],
         code: 403,
         message:
-          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
+          'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
       },
       etag: 'Q32jWeATK3NML1Hr7IkjA287igA',
-      id: '5BvzHBmPyCY'
-    }
+      id: '5BvzHBmPyCY',
+    },
   },
   {
     video: {
@@ -5257,33 +5257,33 @@ const channels = [
           default: {
             width: 120,
             url: 'https://i.ytimg.com/vi/6iMP8_ZTINI/default.jpg',
-            height: 90
+            height: 90,
           },
           high: {
             url: 'https://i.ytimg.com/vi/6iMP8_ZTINI/hqdefault.jpg',
             width: 480,
-            height: 360
+            height: 360,
           },
           medium: {
             height: 180,
             url: 'https://i.ytimg.com/vi/6iMP8_ZTINI/mqdefault.jpg',
-            width: 320
-          }
+            width: 320,
+          },
         },
-        liveBroadcastContent: 'none'
+        liveBroadcastContent: 'none',
       },
       id: '6iMP8_ZTINI',
-      etag: 'c09HWmLkyogojLghDf2OUpvX1kk'
+      etag: 'c09HWmLkyogojLghDf2OUpvX1kk',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
+      twitchChannels: [],
     },
     relations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: ['33FrF4Sp8jJ3y7Q4Bykl']
+      creators: ['33FrF4Sp8jJ3y7Q4Bykl'],
     },
     channel: {
       kind: 'youtube#searchResult',
@@ -5298,35 +5298,35 @@ const channels = [
           medium: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSMwOZvgL_dLvy5nbyEOc6qGMBLt2uDD2xSmJO3AA=s240-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSMwOZvgL_dLvy5nbyEOc6qGMBLt2uDD2xSmJO3AA=s240-c-k-c0xffffffff-no-rj-mo',
           },
           default: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSMwOZvgL_dLvy5nbyEOc6qGMBLt2uDD2xSmJO3AA=s88-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSMwOZvgL_dLvy5nbyEOc6qGMBLt2uDD2xSmJO3AA=s88-c-k-c0xffffffff-no-rj-mo',
           },
           maxres: null,
           standard: null,
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLSMwOZvgL_dLvy5nbyEOc6qGMBLt2uDD2xSmJO3AA=s800-c-k-c0xffffffff-no-rj-mo'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLSMwOZvgL_dLvy5nbyEOc6qGMBLt2uDD2xSmJO3AA=s800-c-k-c0xffffffff-no-rj-mo',
+          },
         },
         country: null,
         customUrl: null,
         description:
-          'Hello! I make Yogscast compilations and Ms Paint "animations", sometimes they turn out alright. New montages anywhere ...'
+          'Hello! I make Yogscast compilations and Ms Paint "animations", sometimes they turn out alright. New montages anywhere ...',
       },
       contentDetails: null,
-      statistics: null
-    }
+      statistics: null,
+    },
   },
   {
     relations: {
       creators: ['511HMHkq8GdwbCbe0yVw'],
       twitchChannels: [],
-      youtubeChannels: []
+      youtubeChannels: [],
     },
     channel: {
       statistics: null,
@@ -5337,7 +5337,7 @@ const channels = [
         defaultLanguage: null,
         localized: {
           title: 'Xhenix',
-          description: "Yet ANOTHER Yogscast fan channel. I know, I'm sorry.\n"
+          description: "Yet ANOTHER Yogscast fan channel. I know, I'm sorry.\n",
         },
         country: 'GB',
         publishedAt: '2018-05-11T16:58:31.000Z',
@@ -5345,26 +5345,26 @@ const channels = [
           default: {
             width: 88,
             url: 'https://yt3.ggpht.com/ytc/AKedOLRIKWSe1bHTAxXfHJSuha7rGbGEuiHU44LyH6wZHA=s88-c-k-c0x00ffffff-no-rj',
-            height: 88
+            height: 88,
           },
           medium: {
             height: 240,
             width: 240,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRIKWSe1bHTAxXfHJSuha7rGbGEuiHU44LyH6wZHA=s240-c-k-c0x00ffffff-no-rj'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRIKWSe1bHTAxXfHJSuha7rGbGEuiHU44LyH6wZHA=s240-c-k-c0x00ffffff-no-rj',
           },
           standard: null,
           maxres: null,
           high: {
             width: 800,
             height: 800,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRIKWSe1bHTAxXfHJSuha7rGbGEuiHU44LyH6wZHA=s800-c-k-c0x00ffffff-no-rj'
-          }
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRIKWSe1bHTAxXfHJSuha7rGbGEuiHU44LyH6wZHA=s800-c-k-c0x00ffffff-no-rj',
+          },
         },
         customUrl: 'xhenix',
         title: 'Xhenix',
-        description: "Yet ANOTHER Yogscast fan channel. I know, I'm sorry.\n"
+        description: "Yet ANOTHER Yogscast fan channel. I know, I'm sorry.\n",
       },
-      etag: 'GUyMl2bEVjmfoiOK6mPxud-pYXQ'
+      etag: 'GUyMl2bEVjmfoiOK6mPxud-pYXQ',
     },
     video: {
       snippet: {
@@ -5373,18 +5373,18 @@ const channels = [
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/I2ycsq25o8Y/mqdefault.jpg',
-            height: 180
+            height: 180,
           },
           high: {
             url: 'https://i.ytimg.com/vi/I2ycsq25o8Y/hqdefault.jpg',
             height: 360,
-            width: 480
+            width: 480,
           },
           default: {
             height: 90,
             width: 120,
-            url: 'https://i.ytimg.com/vi/I2ycsq25o8Y/default.jpg'
-          }
+            url: 'https://i.ytimg.com/vi/I2ycsq25o8Y/default.jpg',
+          },
         },
         liveBroadcastContent: 'none',
         description:
@@ -5392,7 +5392,7 @@ const channels = [
         publishedAt: '2022-12-02T12:26:01Z',
         publishTime: '2022-12-02T12:26:01Z',
         channelId: 'UCySDmKyc4iV_3sjGzNoGigA',
-        channelTitle: 'Xhenix'
+        channelTitle: 'Xhenix',
       },
       etag: '7e5Fl6w_J-1G8SqlHhDboOFFQto',
       kind: 'youtube#searchResult',
@@ -5402,26 +5402,26 @@ const channels = [
             reason: 'quotaExceeded',
             domain: 'youtube.quota',
             message:
-              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.'
-          }
+              'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
+          },
         ],
         message:
           'The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.',
-        code: 403
+        code: 403,
       },
-      id: 'I2ycsq25o8Y'
+      id: 'I2ycsq25o8Y',
     },
     subRelations: {
       creators: [],
       youtubeChannels: [],
-      twitchChannels: []
-    }
+      twitchChannels: [],
+    },
   },
   {
     relations: {
       youtubeChannels: [],
       twitchChannels: [],
-      creators: ['eE4FNKcFiBhoc3jFb9Fo']
+      creators: ['eE4FNKcFiBhoc3jFb9Fo'],
     },
     video: {
       etag: 'M6PZcTgWbYorLF4bSAbLo8KjMzg',
@@ -5435,30 +5435,30 @@ const channels = [
           high: {
             width: 480,
             url: 'https://i.ytimg.com/vi/uEiBip0Aoeo/hqdefault.jpg',
-            height: 360
+            height: 360,
           },
           default: {
             url: 'https://i.ytimg.com/vi/uEiBip0Aoeo/default.jpg',
             height: 90,
-            width: 120
+            width: 120,
           },
           medium: {
             width: 320,
             url: 'https://i.ytimg.com/vi/uEiBip0Aoeo/mqdefault.jpg',
-            height: 180
-          }
+            height: 180,
+          },
         },
         title: 'WHAT A YEAR! TWITCH HIGHLIGHTS 2019!',
         publishTime: '2020-01-03T19:00:10Z',
-        publishedAt: '2020-01-03T19:00:10Z'
+        publishedAt: '2020-01-03T19:00:10Z',
       },
       kind: 'youtube#searchResult',
-      id: 'uEiBip0Aoeo'
+      id: 'uEiBip0Aoeo',
     },
     subRelations: {
       twitchChannels: [],
       youtubeChannels: [],
-      creators: []
+      creators: [],
     },
     channel: {
       snippet: {
@@ -5473,30 +5473,30 @@ const channels = [
           default: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLRzRGdPB453Orz0DprfeuccIVdZT-yPcPhH0ZG2WQ=s88-c-k-c0xffffffff-no-rj-mo',
-            height: null
+            height: null,
           },
           maxres: null,
           high: {
             height: null,
             width: null,
-            url: 'https://yt3.ggpht.com/ytc/AKedOLRzRGdPB453Orz0DprfeuccIVdZT-yPcPhH0ZG2WQ=s800-c-k-c0xffffffff-no-rj-mo'
+            url: 'https://yt3.ggpht.com/ytc/AKedOLRzRGdPB453Orz0DprfeuccIVdZT-yPcPhH0ZG2WQ=s800-c-k-c0xffffffff-no-rj-mo',
           },
           standard: null,
           medium: {
             width: null,
             url: 'https://yt3.ggpht.com/ytc/AKedOLRzRGdPB453Orz0DprfeuccIVdZT-yPcPhH0ZG2WQ=s240-c-k-c0xffffffff-no-rj-mo',
-            height: null
-          }
+            height: null,
+          },
         },
-        country: null
+        country: null,
       },
       id: 'UCzwUf6paImIBVK6fEVeHNRQ',
       kind: 'youtube#searchResult',
       etag: 'WfFOAYhKbi3hzYYL0j2_dKbX8NQ',
       statistics: null,
-      contentDetails: null
-    }
-  }
+      contentDetails: null,
+    },
+  },
 ]
 export const fetchDummyData = () => {
   return channels as unknown as YoutubeChannelData[]

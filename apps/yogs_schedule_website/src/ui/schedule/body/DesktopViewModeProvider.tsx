@@ -3,7 +3,7 @@ import { Accessor } from 'solid-js/types/reactive/signal'
 
 export enum DesktopViewMode {
   stack,
-  wrap
+  wrap,
 }
 
 interface DesktopViewModeProps {
@@ -26,7 +26,7 @@ export const DesktopViewModeProvider: ParentComponent = props => {
     <DesktopViewModeContext.Provider
       value={{
         useMode,
-        switchMode
+        switchMode,
       }}
     >
       {props.children}

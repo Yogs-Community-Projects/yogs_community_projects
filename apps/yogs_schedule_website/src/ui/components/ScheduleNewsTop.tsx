@@ -21,7 +21,7 @@ export const ScheduleNewsTop: Component = () => {
     return useScheduleNewsTop().data.map(news => {
       return {
         news,
-        signal: createModalSignal()
+        signal: createModalSignal(),
       }
     })
   }
@@ -100,7 +100,7 @@ const NewsTile: Component<NewsTileProps> = props => {
       style={{
         background: background(),
         'border-color': border(),
-        color: textColor()
+        color: textColor(),
       }}
       class={
         'hover:scale-102 hover:brightness-102 flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 transition-all hover:cursor-pointer md:aspect-[6]'

@@ -38,7 +38,7 @@ export const useCreatorIds = () => {
     ...new Set(
       useSlots()
         .map(slot => slot.relations.creators)
-        .reduce((a, b) => a.concat(b))
-    )
+        .reduce((a, b) => a.concat(b)),
+    ),
   ]
 }

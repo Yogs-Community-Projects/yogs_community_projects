@@ -10,14 +10,14 @@ import {
   FaBrandsSquareSteam,
   FaBrandsTiktok,
   FaBrandsTwitter,
-  FaSolidBagShopping
+  FaSolidBagShopping,
 } from 'solid-icons/fa'
 import { CgWebsite } from 'solid-icons/cg'
 import { getTextColor } from '@ycapp/common'
 
 enum CreatorLinkButtonMode {
   brand,
-  creator
+  creator,
 }
 
 interface CreatorLinkButtonProps {
@@ -94,7 +94,7 @@ export const CreatorLinkButton: Component<CreatorLinkButtonProps> = props => {
       href={link.url}
       style={{
         background: backgroundColor,
-        color: getTextColor(backgroundColor)
+        color: getTextColor(backgroundColor),
       }}
       class={
         'hover:scale-101 inline-flex w-full items-center justify-between rounded-full py-2 px-4 font-bold text-gray-800 transition-all hover:brightness-105'

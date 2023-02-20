@@ -2,7 +2,7 @@ import { useWindowSize } from './window_size_signal'
 
 export enum Orientation {
   Portrait,
-  Landscape
+  Landscape,
 }
 
 export const useOrientation = (): Orientation => {

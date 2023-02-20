@@ -132,9 +132,9 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
         alarms: [
           {
             type: ICalAlarmType.display,
-            triggerBefore: start.minus(Duration.fromObject({ minutes: 15 }))
-          }
-        ]
+            triggerBefore: start.minus(Duration.fromObject({ minutes: 15 })),
+          },
+        ],
       })
     }
     return calendar.toString()
@@ -162,7 +162,10 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
           placeholder="Search"
           value={search()}
           onInput={e => {
-            return setSearch(e.target.value)
+            const target = e.target as HTMLInputElement
+            if (target) {
+              setSearch(target.value)
+            }
           }}
         />
       </div>
@@ -180,7 +183,7 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
                       {start.toLocaleString({
                         day: '2-digit',
                         month: 'short',
-                        weekday: 'short'
+                        weekday: 'short',
                       })}
                     </p>
                     <For each={day.slots}>

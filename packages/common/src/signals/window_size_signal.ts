@@ -8,14 +8,14 @@ export const useWindowSize = (): Accessor<{ width: number; height: number }> => 
   function onResize() {
     setSize({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     })
   }
 
   onMount(() => {
     setSize({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     })
     window.addEventListener('resize', onResize)
   })
@@ -58,7 +58,7 @@ export const useDivDimension = (): [Accessor<Dimension>, Setter<HTMLDivElement |
   function update(ref: HTMLDivElement) {
     const size = {
       width: ref.clientWidth,
-      height: ref.clientHeight
+      height: ref.clientHeight,
     }
     setSize(size)
   }

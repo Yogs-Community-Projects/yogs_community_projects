@@ -27,14 +27,14 @@ export const CreatorTile: Component<CreatorTileProps> = props => {
       }
       style={{
         background: primaryColor(),
-        color: getTextColor(primaryColor())
+        color: getTextColor(primaryColor()),
       }}
     >
       <div class={'h-[75%] object-contain'}>
         <img
           class={'aspect-square h-full rounded-full border-2 object-fill'}
           style={{
-            'border-color': accentColor()
+            'border-color': accentColor(),
           }}
           src={imageUrl}
           alt={'alt'}
@@ -104,7 +104,7 @@ export const CreatorImage: Component<CreatorImageProps> = props => {
             class={'mx-auto my-auto aspect-square rounded-full object-cover'}
             style={{
               width: imageSize(),
-              height: imageSize()
+              height: imageSize(),
             }}
             src={imageUrl}
             alt={alt}

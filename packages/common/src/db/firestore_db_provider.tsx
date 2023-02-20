@@ -8,7 +8,7 @@ import {
   PodcastFirestoreDB,
   ScheduleFirestoreDB,
   TwitchFirestoreDB,
-  YoutubeFirestoreDB
+  YoutubeFirestoreDB,
 } from './database_firestore'
 import { initializeApp } from 'firebase/app'
 

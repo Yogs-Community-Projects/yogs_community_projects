@@ -71,59 +71,59 @@ class ColorPallet {
     const c = () =>
       new Color(
         color.toString({
-          format: 'hex'
-        })
+          format: 'hex',
+        }),
       )
     const lighten = 0.08
     const darken = 0.11
     return new ColorPallet({
       Default: c().toString({
-        format: 'hex'
+        format: 'hex',
       }),
       '50': c()
         .lighten(5 * lighten)
         .toString({
-          format: 'hex'
+          format: 'hex',
         }),
       '100': c()
         .lighten(4 * lighten)
         .toString({
-          format: 'hex'
+          format: 'hex',
         }),
       '200': c()
         .lighten(3 * lighten)
         .toString({
-          format: 'hex'
+          format: 'hex',
         }),
       '300': c()
         .lighten(2 * lighten)
         .toString({
-          format: 'hex'
+          format: 'hex',
         }),
       '400': c().lighten(lighten).toString({
-        format: 'hex'
+        format: 'hex',
       }),
       '500': c().toString({
-        format: 'hex'
+        format: 'hex',
       }),
       '600': c().darken(darken).toString({
-        format: 'hex'
+        format: 'hex',
       }),
       '700': c()
         .darken(2 * darken)
         .toString({
-          format: 'hex'
+          format: 'hex',
         }),
       '800': c()
         .darken(3 * darken)
         .toString({
-          format: 'hex'
+          format: 'hex',
         }),
       '900': c()
         .darken(4 * darken)
         .toString({
-          format: 'hex'
-        })
+          format: 'hex',
+        }),
     })
   }
 

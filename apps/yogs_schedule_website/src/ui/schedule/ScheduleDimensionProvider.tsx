@@ -34,7 +34,7 @@ export const ScheduleDimensionProvider: ParentComponent<ScheduleDimensionProps> 
       availableWidth: availableWidth(),
       scheduleHeight: scheduleHeight(),
       scheduleWidth: scheduleWidth(),
-      dataSize: dataSize()
+      dataSize: dataSize(),
     }
   }
 

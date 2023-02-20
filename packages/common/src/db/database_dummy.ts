@@ -8,7 +8,7 @@ import {
   Podcast,
   ScheduleData,
   TwitchChannelData,
-  YoutubeChannelData
+  YoutubeChannelData,
 } from '@ycapp/model'
 import { createStore } from 'solid-js/store'
 
@@ -18,26 +18,26 @@ abstract class DummyDB<T> extends YcDBImpl<T> {
     const [state, setState] = createStore<RemoteData<T | null>>({
       loading: true,
       data: null,
-      error: null
+      error: null,
     })
     createEffect(() => {
       if (all.error) {
         setState({
           loading: false,
           error: all.error,
-          data: null
+          data: null,
         })
       } else if (all.loading) {
         setState({
           loading: true,
           error: null,
-          data: null
+          data: null,
         })
       } else if (all.data) {
         setState({
           loading: false,
           error: null,
-          data: this.find(all.data, id)
+          data: this.find(all.data, id),
         })
       }
     })
@@ -50,14 +50,14 @@ abstract class DummyDB<T> extends YcDBImpl<T> {
     const [state, setState] = createStore<RemoteData<T[] | null>>({
       loading: true,
       data: null,
-      error: null
+      error: null,
     })
     createEffect(() => {
       if (resource()) {
         setState({
           loading: false,
           error: null,
-          data: resource()
+          data: resource(),
         })
       }
     })
@@ -140,14 +140,14 @@ export class ScheduleDummyDB implements YcScheduleDB {
     const [state, setState] = createStore<RemoteData<ScheduleData | null>>({
       loading: true,
       data: null,
-      error: null
+      error: null,
     })
     createEffect(() => {
       if (resource()) {
         setState({
           loading: false,
           error: null,
-          data: resource()
+          data: resource(),
         })
       }
     })
@@ -160,14 +160,14 @@ export class ScheduleDummyDB implements YcScheduleDB {
     const [state, setState] = createStore<RemoteData<ScheduleData | null>>({
       loading: true,
       data: null,
-      error: null
+      error: null,
     })
     createEffect(() => {
       if (resource()) {
         setState({
           loading: false,
           error: null,
-          data: resource()
+          data: resource(),
         })
         console.log(resource())
       }
@@ -189,7 +189,7 @@ export class NewsDummyDB implements YcNewsDB {
     return {
       loading: true,
       data: null,
-      error: null
+      error: null,
     }
   }
 }
@@ -209,7 +209,7 @@ export class ConfigDummyDB implements ConfigDB {
     return {
       data: this.jjExtensionConfig,
       loading: false,
-      error: null
+      error: null,
     }
   }
 }

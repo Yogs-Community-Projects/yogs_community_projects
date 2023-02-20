@@ -21,7 +21,7 @@ const Title: Component = () => {
   const day = () => useCurrentDay()
   const date = () =>
     DateTime.fromObject({
-      weekday: day().dayOfWeek
+      weekday: day().dayOfWeek,
     })
 
   return (
@@ -30,7 +30,7 @@ const Title: Component = () => {
         <h3 class={'text-center text-2xl'}>{useScheduleData().name}</h3>
         <h3 class={'text-center text-2xl'}>
           {date().toLocaleString({
-            weekday: 'long'
+            weekday: 'long',
           })}
         </h3>
       </div>

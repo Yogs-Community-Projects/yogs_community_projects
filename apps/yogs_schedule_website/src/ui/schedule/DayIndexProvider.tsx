@@ -50,5 +50,5 @@ export const useIsCurrentDaySelected: Accessor<boolean> = () => useDayIndexConte
 export const useDayIndexSetter = () => [
   useDayIndexContext().prev,
   useDayIndexContext().next,
-  useDayIndexContext().today
+  useDayIndexContext().today,
 ]

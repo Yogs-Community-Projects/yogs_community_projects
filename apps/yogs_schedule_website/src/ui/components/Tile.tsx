@@ -22,7 +22,7 @@ export const Tile: Component<TileProps> = props => {
         class={`h-full w-full cursor-pointer overflow-hidden rounded-3xl shadow-xl transition-all hover:scale-105 hover:brightness-105`}
         style={{
           background: primaryColor(),
-          color: getTextColor(primaryColor())
+          color: getTextColor(primaryColor()),
         }}
       >
         <div class={'flex h-full w-full flex-col p-2'}>
@@ -56,7 +56,7 @@ const Image: Component<ImageProps> = props => {
         class={'mx-auto my-auto aspect-square rounded-full object-cover'}
         style={{
           width: imageSize(),
-          height: imageSize()
+          height: imageSize(),
         }}
         src={props.imageUrl}
         alt={props.alt}

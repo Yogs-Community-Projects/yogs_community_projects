@@ -42,7 +42,7 @@ export const ScheduleDimensionsProvider: ParentComponent = props => {
       slotSize: useSlotSize(),
       slotWidth: useSlotWidth(),
       slotHeight: useSlotHeight(),
-      width: useScheduleWidth()
+      width: useScheduleWidth(),
     }
   }
 

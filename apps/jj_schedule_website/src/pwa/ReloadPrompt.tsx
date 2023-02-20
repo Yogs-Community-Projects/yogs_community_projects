@@ -14,7 +14,7 @@ const ReloadPrompt: Component = () => {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     offlineReady: [offlineReady, setOfflineReady],
-    updateServiceWorker
+    updateServiceWorker,
   } = useRegisterSW({
     immediate: true,
     onRegisteredSW(swUrl, r) {
@@ -35,7 +35,7 @@ const ReloadPrompt: Component = () => {
     },
     onRegisterError(error) {
       console.error('SW registration error', error)
-    }
+    },
   })
 
   const close = () => {

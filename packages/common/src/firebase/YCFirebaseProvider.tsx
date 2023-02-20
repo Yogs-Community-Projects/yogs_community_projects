@@ -15,7 +15,7 @@ export const YcFirebaseProvider: ParentComponent = props => {
   const value: YcFirebaseProps = {
     app,
     firestore,
-    config
+    config,
   }
   return <YcFirebaseContext.Provider value={value}>{props.children}</YcFirebaseContext.Provider>
 }

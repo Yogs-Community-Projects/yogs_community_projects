@@ -10,7 +10,7 @@ import {
   RemoteData,
   useCreatorDB,
   useNow,
-  useTwitchDB
+  useTwitchDB,
 } from '@ycapp/common'
 import { DateTime } from 'luxon'
 import { TwitchTile } from '../components/tiles/TwitchTile'
@@ -42,7 +42,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
       gradientStyle = {
         background: `linear-gradient(180deg, ${linearGradient.colors.map(_parseColor).join(', ')})`,
         color: textColor(_parseColor(slot.style.background ?? linearGradient.colors[0] ?? 'ffff0000')),
-        height: '100%'
+        height: '100%',
       }
     } else {
       if (slot.style.background) {
@@ -50,7 +50,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
           background: `${_parseColor(slot.style.background ?? 'ffff0000')}`,
           // background: _parseColor(slot.style.background)
           color: textColor(_parseColor(slot.style.background ?? 'ffff0000')),
-          height: '100%'
+          height: '100%',
         }
       }
     }
@@ -84,7 +84,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
             'hover:scale-102 schedule-card flex cursor-pointer flex-col justify-center rounded-2xl p-1 text-center transition-all hover:brightness-105'
           }
           style={{
-            ...background()
+            ...background(),
           }}
           onclick={modalSignal.toggle}
         >
@@ -190,7 +190,7 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
     <div class={`flex h-full w-full flex-col rounded-3xl bg-white`}>
       <div
         style={{
-          background: background()
+          background: background(),
         }}
         class={`${textColor()} flex h-[72px] items-center justify-center rounded-t-3xl p-2 shadow-xl`}
       >

@@ -29,7 +29,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
       gradientStyle = {
         background: `linear-gradient(180deg, ${linearGradient.colors.map(_parseColor).join(', ')})`,
         color: textColor(_parseColor(slot.style.background ?? linearGradient.colors[0] ?? 'ffff0000')),
-        height: '100%'
+        height: '100%',
       }
     } else {
       if (slot.style.background) {
@@ -37,7 +37,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
           background: `${_parseColor(slot.style.background ?? 'ffff0000')}`,
           // background: _parseColor(slot.style.background)
           color: textColor(_parseColor(slot.style.background ?? 'ffff0000')),
-          height: '100%'
+          height: '100%',
           // 'border-color': defaultBorder()
         }
       }
@@ -87,7 +87,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
       <div class={'p-schedule h-full w-full transition-all'}>
         <div
           style={{
-            ...background()
+            ...background(),
           }}
           class={
             'hover:scale-102 schedule-card flex cursor-pointer flex-col justify-center rounded-2xl border-2 border-transparent p-1 text-center transition-all hover:brightness-105 ' +

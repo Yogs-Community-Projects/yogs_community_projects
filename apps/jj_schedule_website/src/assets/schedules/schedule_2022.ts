@@ -23,27 +23,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00bbe0', 'ff009fd4'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -59,27 +59,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff009fd4', 'ff0081c7'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -95,27 +95,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff0081c7', 'ff0069ba'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -135,34 +135,34 @@ const schedule = {
                       'AcCWZMmDMrc7G9CnRchz',
                       'MYZPOwKsujCZbtPEJtBG',
                       'AZGGyF9uschXdM8gGB1v',
-                      '3fNrixu9cDhggDXyLTwG'
+                      '3fNrixu9cDhggDXyLTwG',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff0069ba', 'ff0054ad'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 2,
@@ -181,32 +181,32 @@ const schedule = {
                       'Gq7a6r1Pq0loxIUiNk8v',
                       'Tm2dvIIhVA3xb7nH19jJ',
                       'MYZPOwKsujCZbtPEJtBG',
-                      'yAmEX9kxAZTdKzwQcIsy'
+                      'yAmEX9kxAZTdKzwQcIsy',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffd900', 'ffffcc00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -233,32 +233,32 @@ const schedule = {
                       '4ty8OfAA0hoXSV6trUY9',
                       'WvavBOeHzCXZPBzahkRX',
                       'MsNyFTyL0zikJ4zKOZm2',
-                      'deBUVdSqWrH6FwlXPe2m'
+                      'deBUVdSqWrH6FwlXPe2m',
                     ],
                     twitchChannels: ['20786541', '26538483'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffcc00', 'ffffbf00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -277,32 +277,32 @@ const schedule = {
                       'Tm2dvIIhVA3xb7nH19jJ',
                       'WvavBOeHzCXZPBzahkRX',
                       '8K6EIOpBvb6ROSHWHx9Q',
-                      '5h6PnMWEghJSDaS5ZNbc'
+                      '5h6PnMWEghJSDaS5ZNbc',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffbf00', 'ffffb300'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -317,34 +317,34 @@ const schedule = {
                       '5h6PnMWEghJSDaS5ZNbc',
                       'uuZ2P6KPhmLVGc7ZjWXR',
                       'deBUVdSqWrH6FwlXPe2m',
-                      'WvavBOeHzCXZPBzahkRX'
+                      'WvavBOeHzCXZPBzahkRX',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffb300', 'ffffa600'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 3,
@@ -363,27 +363,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffa7cc00', 'ff81bd00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -398,27 +398,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff81bd00', 'ff62ad00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -433,32 +433,32 @@ const schedule = {
                       'zFdYfSFj4efXLheSHG5Z',
                       '6oSnPSBKF79EBwS1G5DF',
                       'QLpFsapfyzIU4TYdVmjM',
-                      'Hn8e1EgqFKg2RbJglY2x'
+                      'Hn8e1EgqFKg2RbJglY2x',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff62ad00', 'ff479e00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -482,32 +482,32 @@ const schedule = {
                       'zMMAq6kg87R8WsHUS3s0',
                       'zFdYfSFj4efXLheSHG5Z',
                       'zwBpk82qRo4y2Sf5Nvlf',
-                      'Gq7a6r1Pq0loxIUiNk8v'
+                      'Gq7a6r1Pq0loxIUiNk8v',
                     ],
                     twitchChannels: ['68525019', '38167015', '21069037', '150004439', '26574506', '20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff479e00', 'ff308f00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: false,
                   showTwitchIcon: false,
-                  showHighlightIcon: true
+                  showHighlightIcon: true,
                 },
                 {
                   id: '',
@@ -522,34 +522,34 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff308f00', 'ff1c8000'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
+                        y: 1,
+                      },
                     },
                     background: 'ff188500',
                     border: 'fff67932',
                     elevation: 4,
                     borderRadius: 12,
-                    spacing: 2
+                    spacing: 2,
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 4,
@@ -568,27 +568,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fffc7600', 'fff76300'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -603,27 +603,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff76300', 'fff25100'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -654,32 +654,32 @@ const schedule = {
                       'Tm2dvIIhVA3xb7nH19jJ',
                       'MYZPOwKsujCZbtPEJtBG',
                       'TGDsE9jQPa9WXOOgcmFm',
-                      'zMMAq6kg87R8WsHUS3s0'
+                      'zMMAq6kg87R8WsHUS3s0',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff25100', 'ffed3b00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -694,29 +694,29 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffed3b00', 'ffe82b00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 5,
@@ -735,27 +735,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00e8c5', 'ff00dbac'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -771,32 +771,32 @@ const schedule = {
                       'zFdYfSFj4efXLheSHG5Z',
                       'zwBpk82qRo4y2Sf5Nvlf',
                       'TGDsE9jQPa9WXOOgcmFm',
-                      'zMMAq6kg87R8WsHUS3s0'
+                      'zMMAq6kg87R8WsHUS3s0',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00dbac', 'ff00cf94'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -816,34 +816,34 @@ const schedule = {
                       'MYZPOwKsujCZbtPEJtBG',
                       '3fNrixu9cDhggDXyLTwG',
                       'AcCWZMmDMrc7G9CnRchz',
-                      'o1gdP5407amAmS5vEXvP'
+                      'o1gdP5407amAmS5vEXvP',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00cf94', 'ff00c27e'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 2,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 6,
@@ -862,27 +862,27 @@ const schedule = {
                     twitchChannels: ['20786541', '26538483'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff74acc', 'ffeb36b1'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -898,32 +898,32 @@ const schedule = {
                       'Hn8e1EgqFKg2RbJglY2x',
                       'zFdYfSFj4efXLheSHG5Z',
                       'eE4FNKcFiBhoc3jFb9Fo',
-                      'dvynb4nu7GmqelY4HW3f'
+                      'dvynb4nu7GmqelY4HW3f',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffeb36b1', 'ffde2396'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: false,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -938,29 +938,29 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffde2396', 'ffd1137b'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 2,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 7,
@@ -990,32 +990,32 @@ const schedule = {
                       '8K6EIOpBvb6ROSHWHx9Q',
                       '6oSnPSBKF79EBwS1G5DF',
                       'dvynb4nu7GmqelY4HW3f',
-                      'vz0XWPLfxV9gFyChCgMO'
+                      'vz0XWPLfxV9gFyChCgMO',
                     ],
                     twitchChannels: ['20786541', '26538483'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffa600', 'ffff8400'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1030,27 +1030,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffff8400', 'ffff6600'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1064,32 +1064,32 @@ const schedule = {
                       '8K6EIOpBvb6ROSHWHx9Q',
                       'Gq7a6r1Pq0loxIUiNk8v',
                       'vz0XWPLfxV9gFyChCgMO',
-                      'MsNyFTyL0zikJ4zKOZm2'
+                      'MsNyFTyL0zikJ4zKOZm2',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffff6600', 'ffff4400'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: false,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1104,50 +1104,50 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffb1b0', 'ffffdfbe', 'ffffffbf', 'ffb4f0a7', 'ffa9d1f7', 'ffcc99ff'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
+                        y: 1,
+                      },
                     },
-                    background: 'ffffffff'
+                    background: 'ffffffff',
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
-            }
+                  showHighlightIcon: false,
+                },
+              ],
+            },
           ],
           times: [
             {
               start: '2022-01-01T11:00:00.000+0000',
-              duration: 10800000000
+              duration: 10800000000,
             },
             {
               start: '2022-01-01T14:00:00.000+0000',
-              duration: 10800000000
+              duration: 10800000000,
             },
             {
               start: '2022-01-01T17:00:00.000+0000',
-              duration: 10800000000
+              duration: 10800000000,
             },
             {
               start: '2022-01-01T20:00:00.000+0000',
-              duration: 10800000000
-            }
-          ]
+              duration: 10800000000,
+            },
+          ],
         },
         {
           days: [
@@ -1168,27 +1168,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00bbe0', 'ff0096d1'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1203,27 +1203,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff0096d1', 'ff0078c2'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1253,34 +1253,34 @@ const schedule = {
                       'yAmEX9kxAZTdKzwQcIsy',
                       'TGDsE9jQPa9WXOOgcmFm',
                       'uuZ2P6KPhmLVGc7ZjWXR',
-                      'deBUVdSqWrH6FwlXPe2m'
+                      'deBUVdSqWrH6FwlXPe2m',
                     ],
                     twitchChannels: ['20786541', '416016021'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff0078c2', 'ff0059b3'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 2,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 2,
@@ -1299,27 +1299,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffd900', 'ffffcc00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1334,27 +1334,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffcc00', 'ffffbf00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1368,27 +1368,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffbf00', 'ffffb300'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: false,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1416,34 +1416,34 @@ const schedule = {
                       'Gq7a6r1Pq0loxIUiNk8v',
                       'Gz3S1VJlA6iPISXuIl7p',
                       'deBUVdSqWrH6FwlXPe2m',
-                      'IOdPOlLaB7zFHvsuvVwu'
+                      'IOdPOlLaB7zFHvsuvVwu',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffb300', 'ffffa600'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 3,
@@ -1462,27 +1462,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffa7cc00', 'ff81bd00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1497,27 +1497,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff81bd00', 'ff62ad00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1534,32 +1534,32 @@ const schedule = {
                       'Gq7a6r1Pq0loxIUiNk8v',
                       'QLpFsapfyzIU4TYdVmjM',
                       'eE4FNKcFiBhoc3jFb9Fo',
-                      'vz0XWPLfxV9gFyChCgMO'
+                      'vz0XWPLfxV9gFyChCgMO',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff62ad00', 'ff479e00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1574,27 +1574,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff479e00', 'ff308f00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1609,34 +1609,34 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff308f00', 'ff1c8000'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
+                        y: 1,
+                      },
                     },
                     background: 'ff1e95ef',
                     border: 'fff67932',
                     elevation: 4,
                     borderRadius: 12,
-                    spacing: 2
+                    spacing: 2,
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 4,
@@ -1655,27 +1655,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fffc7600', 'fff76300'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1690,27 +1690,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff76300', 'fff25500'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1726,32 +1726,32 @@ const schedule = {
                       'OxMCBocsLB1lXH5tQV6u',
                       'RuJTT0r57IGKXWtlHNVX',
                       'c9raygCH9eGa09OLB12t',
-                      'vz0XWPLfxV9gFyChCgMO'
+                      'vz0XWPLfxV9gFyChCgMO',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff25500', 'ffed4300'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1766,32 +1766,32 @@ const schedule = {
                       'TGDsE9jQPa9WXOOgcmFm',
                       'vz0XWPLfxV9gFyChCgMO',
                       'f2tAtl8eBRTtKsqzQQoC',
-                      'AZGGyF9uschXdM8gGB1v'
+                      'AZGGyF9uschXdM8gGB1v',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffed4300', 'ffe83600'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1807,36 +1807,36 @@ const schedule = {
                       '8K6EIOpBvb6ROSHWHx9Q',
                       'vz0XWPLfxV9gFyChCgMO',
                       'MsNyFTyL0zikJ4zKOZm2',
-                      '0w4JSboJK6RdTDmDKoYL'
+                      '0w4JSboJK6RdTDmDKoYL',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffe83600', 'ffe32a00'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
+                        y: 1,
+                      },
                     },
                     background: 'ffff1500',
-                    border: 'ffff1500'
+                    border: 'ffff1500',
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 5,
@@ -1855,27 +1855,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00e8c5', 'ff00e0b4'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1890,27 +1890,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00e0b4', 'ff00d9a3'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1928,32 +1928,32 @@ const schedule = {
                       'ShFoVukMUs1HAf2YryPl',
                       'TGDsE9jQPa9WXOOgcmFm',
                       'eE4FNKcFiBhoc3jFb9Fo',
-                      '0w4JSboJK6RdTDmDKoYL'
+                      '0w4JSboJK6RdTDmDKoYL',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00d9a3', 'ff00d196'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -1968,27 +1968,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00d196', 'ff00c986'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2003,34 +2003,34 @@ const schedule = {
                     twitchChannels: ['20786541', '68525019'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ff00c986', 'ff00c278'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
+                        y: 1,
+                      },
                     },
                     background: 'ff00c479',
                     border: 'ff00c479',
                     elevation: 4,
                     borderRadius: 12,
-                    spacing: 2
+                    spacing: 2,
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: true,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 6,
@@ -2049,27 +2049,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff74acc', 'fff03cba'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2084,32 +2084,32 @@ const schedule = {
                       '0w4JSboJK6RdTDmDKoYL',
                       'sMGdgzZrZP8c68C0pFfU',
                       'TGDsE9jQPa9WXOOgcmFm',
-                      'dvynb4nu7GmqelY4HW3f'
+                      'dvynb4nu7GmqelY4HW3f',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['fff03cba', 'ffe82eaa'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2124,32 +2124,32 @@ const schedule = {
                       'Hz3L8GFTsM0EFg0caGoG',
                       'Gq7a6r1Pq0loxIUiNk8v',
                       'eE4FNKcFiBhoc3jFb9Fo',
-                      'vz0XWPLfxV9gFyChCgMO'
+                      'vz0XWPLfxV9gFyChCgMO',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffe82eaa', 'ffe02297'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2165,32 +2165,32 @@ const schedule = {
                       'Ot78GPFYxZbxjK6On2CW',
                       'yAmEX9kxAZTdKzwQcIsy',
                       'Dvsw8FJa8v3LjEXSXr9e',
-                      'ShFoVukMUs1HAf2YryPl'
+                      'ShFoVukMUs1HAf2YryPl',
                     ],
                     twitchChannels: ['20786541', '150004439'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffe02297', 'ffd91684'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2205,34 +2205,34 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffd91684', 'ffd10a71'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
+                        y: 1,
+                      },
                     },
                     background: 'ffd4046f',
                     border: 'ffd4046f',
                     elevation: 4,
                     borderRadius: 12,
-                    spacing: 2
+                    spacing: 2,
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
-                }
-              ]
+                  showHighlightIcon: false,
+                },
+              ],
             },
             {
               dayOfWeek: 7,
@@ -2251,27 +2251,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffffa600', 'ffff8400'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2287,27 +2287,27 @@ const schedule = {
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffff8400', 'ffff6600'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2322,32 +2322,32 @@ const schedule = {
                       'IOdPOlLaB7zFHvsuvVwu',
                       'yAmEX9kxAZTdKzwQcIsy',
                       'vz0XWPLfxV9gFyChCgMO',
-                      'zMMAq6kg87R8WsHUS3s0'
+                      'zMMAq6kg87R8WsHUS3s0',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffff6600', 'ffff4400'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
+                  showHighlightIcon: false,
                 },
                 {
                   id: '',
@@ -2372,74 +2372,74 @@ const schedule = {
                       'dvynb4nu7GmqelY4HW3f',
                       'vz0XWPLfxV9gFyChCgMO',
                       '0w4JSboJK6RdTDmDKoYL',
-                      'HkZh9sasvBrpZ4r22Sb3'
+                      'HkZh9sasvBrpZ4r22Sb3',
                     ],
                     twitchChannels: ['20786541'],
                     youtubeChannels: [],
                     podcasts: [],
-                    schedules: []
+                    schedules: [],
                   },
                   style: {
                     linearGradient: {
                       colors: ['ffff4400', 'ffff2200'],
                       begin: {
                         x: 0,
-                        y: -1
+                        y: -1,
                       },
                       end: {
                         x: 0,
-                        y: 1
-                      }
-                    }
+                        y: 1,
+                      },
+                    },
                   },
                   visible: true,
                   gridTileSize: 1,
                   type: 'special',
                   showYoutubeIcon: true,
                   showTwitchIcon: false,
-                  showHighlightIcon: false
-                }
-              ]
-            }
+                  showHighlightIcon: false,
+                },
+              ],
+            },
           ],
           times: [
             {
               start: '2022-01-01T11:00:00.000+0000',
-              duration: 10800000000
+              duration: 10800000000,
             },
             {
               start: '2022-01-01T14:00:00.000+0000',
-              duration: 10800000000
+              duration: 10800000000,
             },
             {
               start: '2022-01-01T17:00:00.000+0000',
-              duration: 10800000000
+              duration: 10800000000,
             },
             {
               start: '2022-01-01T20:00:00.000+0000',
-              duration: 10800000000
-            }
-          ]
-        }
+              duration: 10800000000,
+            },
+          ],
+        },
       ],
       times: [
         {
           start: '2022-01-01T11:00:00.000+0000',
-          duration: 10800000000
+          duration: 10800000000,
         },
         {
           start: '2022-01-01T14:00:00.000+0000',
-          duration: 10800000000
+          duration: 10800000000,
         },
         {
           start: '2022-01-01T17:00:00.000+0000',
-          duration: 10800000000
+          duration: 10800000000,
         },
         {
           start: '2022-01-01T20:00:00.000+0000',
-          duration: 10800000000
-        }
-      ]
+          duration: 10800000000,
+        },
+      ],
     },
     style: {
       slotStyle: {
@@ -2447,18 +2447,18 @@ const schedule = {
         border: 'fff67932',
         elevation: 4,
         borderRadius: 12,
-        spacing: 2
+        spacing: 2,
       },
       timeStyle: {
         size: 60,
         borderWidth: 4,
         spacing: 4,
         elevation: 4,
-        borderRadius: 12
+        borderRadius: 12,
       },
       gridStyle: {
-        dataSize: 60
-      }
+        dataSize: 60,
+      },
     },
     settings: {
       type: 'Special',
@@ -2466,21 +2466,21 @@ const schedule = {
       firstDayOfTheWeek: 1,
       showSlotTimes: true,
       showEmptyDays: true,
-      startDate: '2022-12-01T11:00:00.000+0000'
+      startDate: '2022-12-01T11:00:00.000+0000',
     },
     relations: {
       creators: [],
       twitchChannels: [],
       youtubeChannels: [],
       podcasts: [],
-      schedules: []
+      schedules: [],
     },
     name: 'Yogscast Jingla Jam 2022',
     urlName: 'jj2022reacttest',
     visible: false,
-    updatedAt: '2023-01-16T19:55:53.510469+0000'
+    updatedAt: '2023-01-16T19:55:53.510469+0000',
   },
-  loading: false
+  loading: false,
 }
 
 export default schedule

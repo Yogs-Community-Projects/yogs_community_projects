@@ -31,11 +31,11 @@ export function newsToSlot(news: News): Slot | undefined {
     subtitle: news.subtitle,
     style: {
       background: news.style.background,
-      border: news.style.border
+      border: news.style.border,
     },
     relations: {
       creators: news.creators,
-      twitchChannels: news.twitchChannel
-    }
+      twitchChannels: news.twitchChannel,
+    },
   }
 }

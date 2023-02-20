@@ -4,18 +4,18 @@ import { lazy } from 'solid-js'
 export const routes: RouteDefinition[] = [
   {
     path: '/',
-    component: lazy(() => import('./ui/twitch/TwitchPage'))
+    component: lazy(() => import('./ui/twitch/TwitchPage')),
   },
   {
     path: '',
-    component: lazy(() => import('./ui/twitch/TwitchPage'))
+    component: lazy(() => import('./ui/twitch/TwitchPage')),
   },
   {
     path: '*',
-    component: lazy(() => import('./ui/twitch/TwitchPage'))
+    component: lazy(() => import('./ui/twitch/TwitchPage')),
   },
   {
     path: '/schedule',
-    component: lazy(() => import('./ui/schedule/SchedulePage'))
-  }
+    component: lazy(() => import('./ui/schedule/SchedulePage')),
+  },
 ]

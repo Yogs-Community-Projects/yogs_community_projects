@@ -4,7 +4,7 @@ import { Accessor } from 'solid-js/types/reactive/signal'
 export const createVWSignal = (): [
   Accessor<number>,
   Accessor<HTMLDivElement | undefined>,
-  Setter<HTMLDivElement | undefined>
+  Setter<HTMLDivElement | undefined>,
 ] => {
   const [ref, setRef] = createSignal<HTMLDivElement | undefined>()
   const [windowSize, setWindowSize] = createSignal({ width: 0, height: 0 })
@@ -15,7 +15,7 @@ export const createVWSignal = (): [
   function _setSize() {
     setWindowSize({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     })
   }
 

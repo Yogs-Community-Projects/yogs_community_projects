@@ -23,11 +23,11 @@ export const useNextJJStartDate: Accessor<DateTime> = () => {
         year: useDatetimeLondonNow().year,
         month: 12,
         day: 1,
-        hour: 17
+        hour: 17,
       },
       {
-        zone: london
-      }
+        zone: london,
+      },
     )
   }
   return DateTime.fromObject(
@@ -35,11 +35,11 @@ export const useNextJJStartDate: Accessor<DateTime> = () => {
       year: useDatetimeLondonNow().year + 1,
       month: 12,
       day: 1,
-      hour: 17
+      hour: 17,
     },
     {
-      zone: london
-    }
+      zone: london,
+    },
   )
 }
 export const useIsAfterJJEnd: Accessor<boolean> = () => {
@@ -50,11 +50,11 @@ export const useIsAfterJJEnd: Accessor<boolean> = () => {
       day: 14,
       hour: 23,
       minute: 59,
-      second: 59
+      second: 59,
     },
     {
-      zone: london
-    }
+      zone: london,
+    },
   )
   return end < useDatetimeLondonNow()
 }

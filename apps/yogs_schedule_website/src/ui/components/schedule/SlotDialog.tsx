@@ -60,7 +60,7 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
     <div class={`flex h-full w-full flex-col rounded-3xl bg-white`}>
       <div
         style={{
-          background: background()
+          background: background(),
         }}
         class={`${textColor()} flex h-[72px] items-center justify-center rounded-t-3xl p-2 shadow-xl`}
       >

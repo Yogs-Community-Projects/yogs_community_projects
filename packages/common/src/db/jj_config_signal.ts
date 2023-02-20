@@ -12,15 +12,15 @@ export const jjConfigConverter = (): FirestoreDataConverter<JJConfig> => {
     fromFirestore: (snapshot: QueryDocumentSnapshot<DocumentData>, options: SnapshotOptions): JJConfig => {
       return {
         scheduleId: snapshot.data()['scheduleId'],
-        visible: snapshot.data()[':']
+        visible: snapshot.data()[':'],
       }
     },
     toFirestore: (modelObject: WithFieldValue<JJConfig>): DocumentData => {
       return {
         visible: modelObject.visible,
-        scheduleId: modelObject.scheduleId
+        scheduleId: modelObject.scheduleId,
       }
-    }
+    },
   }
 }
 

@@ -16,7 +16,7 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const style = (): JSX.CSSProperties => {
     return {
       height: useScheduleMobileDimensions().slotHeight + 'px',
-      width: useScheduleMobileDimensions().slotWidth + 'px'
+      width: useScheduleMobileDimensions().slotWidth + 'px',
     }
   }
 
@@ -35,7 +35,7 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
       gradientStyle = {
         background: `linear-gradient(180deg, ${linearGradient.colors.map(_parseColor).join(', ')})`,
         color: textColor(_parseColor(slot.style.background ?? linearGradient.colors[0] ?? 'ffff0000')),
-        height: '100%'
+        height: '100%',
       }
     } else {
       if (slot.style.background) {
@@ -43,7 +43,7 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
           background: `${_parseColor(slot.style.background ?? 'ffff0000')}`,
           // background: _parseColor(slot.style.background)
           color: textColor(_parseColor(slot.style.background ?? 'ffff0000')),
-          height: '100%'
+          height: '100%',
         }
       }
     }
@@ -55,14 +55,14 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
       <div
         class={'w-slot-size'}
         style={{
-          ...style()
+          ...style(),
         }}
       >
         <div class={'p-schedule h-full transition-all'}>
           <div
             class={'schedule-card flex flex-col justify-center p-1 text-center transition-all'}
             style={{
-              ...background()
+              ...background(),
             }}
             onclick={modalSignal.open}
           >

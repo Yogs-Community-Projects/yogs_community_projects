@@ -12,7 +12,7 @@ export const CreatorDetailProvider: ParentComponent<CreatorDataContextProps> = p
   return (
     <CreatorDataContext.Provider
       value={{
-        creator: props.creator
+        creator: props.creator,
       }}
     >
       {props.children}

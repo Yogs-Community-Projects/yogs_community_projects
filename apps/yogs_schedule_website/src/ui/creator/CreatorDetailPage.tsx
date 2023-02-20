@@ -10,7 +10,7 @@ import {
   useCreatorRelations,
   useLinks,
   usePrimaryPallet,
-  useStyle
+  useStyle,
 } from './CreatorDetailPageProvider'
 import { CreatorLinkButton } from '../components/tiles/CreatorLinkButton'
 import { CreatorData } from '@ycapp/model'
@@ -25,7 +25,7 @@ const CreatorDetailPage: Component = () => {
   const [creator, setCreator] = createSignal<RemoteData<CreatorData | null>>({
     data: null,
     error: null,
-    loading: true
+    loading: true,
   })
 
   createEffect(() => {
@@ -76,14 +76,14 @@ const Header: Component = () => {
     <div
       class={'mb-4 flex w-full flex-col items-center rounded-2xl p-2 shadow-xl hover:motion-safe:animate-pulse'}
       style={{
-        background: `linear-gradient(105deg, ${usePrimaryPallet().shade300}, ${usePrimaryPallet().shade700})`
+        background: `linear-gradient(105deg, ${usePrimaryPallet().shade300}, ${usePrimaryPallet().shade700})`,
       }}
     >
       <div class={'aspect-square h-[64px] lg:h-[94px]'}>
         <img
           class={'rounded-full border-2 hover:motion-safe:animate-pulse'}
           style={{
-            'border-color': useAccent().toString({ format: 'hex' })
+            'border-color': useAccent().toString({ format: 'hex' }),
           }}
           src={useStyle().images.large.profileUrl}
           alt={useCreator().creator.name + ' profile image'}
@@ -93,7 +93,7 @@ const Header: Component = () => {
         <p
           class={'text-2xl'}
           style={{
-            color: getTextColor(usePrimaryPallet().shade500)
+            color: getTextColor(usePrimaryPallet().shade500),
           }}
         >
           {useCreator().creator.name}

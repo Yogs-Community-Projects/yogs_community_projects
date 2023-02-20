@@ -30,31 +30,31 @@ export abstract class YcDBImpl<T> implements YcDB<T> {
     const [state, setState] = createStore<RemoteData<T[] | null>>({
       data: [],
       loading: true,
-      error: null
+      error: null,
     })
     createEffect(() => {
       if (signals.some(s => s.error)) {
         console.error(
           'readSome',
           'error',
-          signals.map(s => s.error)
+          signals.map(s => s.error),
         )
         setState({
           error: signals.find(s => s.error)?.error,
           loading: false,
-          data: null
+          data: null,
         })
       } else if (signals.some(s => s.loading)) {
         setState({
           error: null,
           loading: true,
-          data: null
+          data: null,
         })
       } else if (signals.every(s => s.data)) {
         setState({
           data: signals.filter(s => s.data).map(s => s.data) as T[],
           error: null,
-          loading: false
+          loading: false,
         })
       }
     })

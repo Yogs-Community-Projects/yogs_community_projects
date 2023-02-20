@@ -33,7 +33,7 @@ export const InternalYcDBProvider: ParentComponent<YcDBProps> = props => {
         podcast: props.podcast,
         schedule: props.schedule,
         news: props.news,
-        config: props.config
+        config: props.config,
       }}
     >
       {props.children}

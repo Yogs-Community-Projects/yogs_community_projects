@@ -6,17 +6,17 @@ const creators = [
         creators: ['t811tuTpZHK0Uzh6LqD9', '3fNrixu9cDhggDXyLTwG'],
         podcasts: [],
         youtubeChannels: ['UC5gsrZTtWG_AqDFmuq81Q-w'],
-        twitchChannels: ['37569443']
+        twitchChannels: ['37569443'],
       },
       type: 'Yogs',
       subRelations: {
         podcasts: [],
         twitchChannels: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       name: 'Rimmy',
-      visible: true
+      visible: true,
     },
     links: {
       creatorId: '0mlX8km0PvBiY2nF1Vo3',
@@ -25,23 +25,23 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           url: 'https://twitter.com/Rimmy_Downunder',
           name: 'Twitter',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           color: 'ff1e95ef',
           icon: {
             codePoint: 62096,
             fontFamily: 'FontAwesomeSolid',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Merch',
-          url: 'https://store.yogscast.com/collections/rimmy'
-        }
-      ]
+          url: 'https://store.yogscast.com/collections/rimmy',
+        },
+      ],
     },
     style: {
       primaryColor: 'ff373e45',
@@ -73,7 +73,7 @@ const creators = [
         'ff938b98',
         'ff9890a0',
         'ffa096a6',
-        'ffa79fb1'
+        'ffa79fb1',
       ],
       blendLevel: 0,
       creatorId: '0mlX8km0PvBiY2nF1Vo3',
@@ -82,17 +82,17 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/7b7c1b87-7eee-4ec5-bb44-4e7e40312196-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/cf568cc95d784bf3-channel_offline_image-1920x1080.jpeg'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/cf568cc95d784bf3-channel_offline_image-1920x1080.jpeg',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/cf568cc95d784bf3-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/7b7c1b87-7eee-4ec5-bb44-4e7e40312196-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/7b7c1b87-7eee-4ec5-bb44-4e7e40312196-profile_image-70x70.png',
+        },
       },
-      appBarStyle: {}
-    }
+      appBarStyle: {},
+    },
   },
   {
     style: {
@@ -126,24 +126,24 @@ const creators = [
         'ffe4e6da',
         'ff363328',
         'ff53585d',
-        'ff807d70'
+        'ff807d70',
       ],
       images: {
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/00e4a08c-8511-4bb1-82fa-e8dd7766bf22-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4098d6f6-18c0-42fe-ac65-d231a5ffaaa6-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4098d6f6-18c0-42fe-ac65-d231a5ffaaa6-profile_image-70x70.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/00e4a08c-8511-4bb1-82fa-e8dd7766bf22-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4098d6f6-18c0-42fe-ac65-d231a5ffaaa6-profile_image-300x300.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4098d6f6-18c0-42fe-ac65-d231a5ffaaa6-profile_image-300x300.png',
+        },
       },
       appBarStyle: {},
-      accentColor: 'fff8581a'
+      accentColor: 'fff8581a',
     },
     creator: {
       visible: true,
@@ -158,10 +158,10 @@ const creators = [
           'LAvCOMwLGvmVka0OaR0p',
           'e0mWrK72feY69gH0HwAA',
           'TGDsE9jQPa9WXOOgcmFm',
-          'Ot78GPFYxZbxjK6On2CW'
+          'Ot78GPFYxZbxjK6On2CW',
         ],
         youtubeChannels: ['UCubqpKp3okBcmhFCqkllA4w'],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: '0w4JSboJK6RdTDmDKoYL',
       type: 'Yogs',
@@ -169,8 +169,8 @@ const creators = [
         podcasts: [],
         twitchChannels: [],
         youtubeChannels: [],
-        creators: []
-      }
+        creators: [],
+      },
     },
     links: {
       creatorId: '0w4JSboJK6RdTDmDKoYL',
@@ -180,20 +180,20 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
+            codePoint: 61593,
           },
           url: 'https://twitter.com/Pedguin',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           icon: {
             codePoint: 57467,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           color: 'ff69c9d0',
           url: 'https://www.tiktok.com/@pedguinn',
-          name: 'Tiktok'
+          name: 'Tiktok',
         },
         {
           name: 'Instagram',
@@ -201,19 +201,19 @@ const creators = [
           icon: {
             codePoint: 61805,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          color: 'ff405de6'
+          color: 'ff405de6',
         },
         {
           name: 'Discord',
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 62354
+            codePoint: 62354,
           },
           color: 'ff7289da',
-          url: 'https://discord.com/invite/yVwkM8JJ'
+          url: 'https://discord.com/invite/yVwkM8JJ',
         },
         {
           url: 'https://store.steampowered.com/curator/41485101',
@@ -222,8 +222,8 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61878
-          }
+            codePoint: 61878,
+          },
         },
         {
           url: 'https://store.yogscast.com/collections/pedguin',
@@ -231,12 +231,12 @@ const creators = [
           icon: {
             codePoint: 62096,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeSolid'
+            fontFamily: 'FontAwesomeSolid',
           },
-          name: 'Merch'
-        }
-      ]
-    }
+          name: 'Merch',
+        },
+      ],
+    },
   },
   {
     links: {
@@ -248,8 +248,8 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           color: 'ff405de6',
@@ -257,9 +257,9 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61805,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          url: 'https://www.instagram.com/therambler146/'
+          url: 'https://www.instagram.com/therambler146/',
         },
         {
           color: 'fff96854',
@@ -268,11 +268,11 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62425
-          }
-        }
+            codePoint: 62425,
+          },
+        },
       ],
-      creatorId: '3fNrixu9cDhggDXyLTwG'
+      creatorId: '3fNrixu9cDhggDXyLTwG',
     },
     creator: {
       subRelations: {
@@ -280,7 +280,7 @@ const creators = [
         youtubeChannels: [],
         podcasts: [],
         twitchChannels: [],
-        creators: []
+        creators: [],
       },
       relations: {
         podcasts: [],
@@ -296,13 +296,13 @@ const creators = [
           'Gq7a6r1Pq0loxIUiNk8v',
           '0mlX8km0PvBiY2nF1Vo3',
           'MYZPOwKsujCZbtPEJtBG',
-          'AcCWZMmDMrc7G9CnRchz'
-        ]
+          'AcCWZMmDMrc7G9CnRchz',
+        ],
       },
       visible: true,
       name: 'Alex the Rambler',
       type: 'Yogs',
-      creatorId: '3fNrixu9cDhggDXyLTwG'
+      creatorId: '3fNrixu9cDhggDXyLTwG',
     },
     style: {
       creatorId: '3fNrixu9cDhggDXyLTwG',
@@ -337,23 +337,23 @@ const creators = [
         'ffe0d8c0',
         'ff373234',
         'ffe3dfd0',
-        'ff76706f'
+        'ff76706f',
       ],
       blendLevel: 0,
       primaryColor: 'ff70a760',
       images: {
         large: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLRprHMxlAKNPs_0cTydVu6ArAroTeohuImsQ-BmZg=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       accentColor: 'ff91a7c4',
-      appBarStyle: {}
-    }
+      appBarStyle: {},
+    },
   },
   {
     creator: {
@@ -362,7 +362,7 @@ const creators = [
         creators: [],
         youtubeChannels: [],
         twitchChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       name: 'Sips',
       type: 'Yogs',
@@ -371,8 +371,8 @@ const creators = [
         creators: ['o1gdP5407amAmS5vEXvP', 'Hz3L8GFTsM0EFg0caGoG', 'vz0XWPLfxV9gFyChCgMO', 'Gq7a6r1Pq0loxIUiNk8v'],
         twitchChannels: ['26538483'],
         podcasts: ['5F7GOIwN9KlUqR8V7fjj'],
-        youtubeChannels: ['UCD4INvKvy83OXwAkRjaQKtw', 'UCJW9YScngZyevv40qOS5QYQ']
-      }
+        youtubeChannels: ['UCD4INvKvy83OXwAkRjaQKtw', 'UCJW9YScngZyevv40qOS5QYQ'],
+      },
     },
     links: {
       links: [
@@ -381,20 +381,20 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           url: 'https://twitter.com/Sips_',
-          name: 'Twitter'
+          name: 'Twitter',
         },
         {
           url: 'https://www.reddit.com/r/sips',
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61857,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Reddit',
-          color: 'ffff4500'
+          color: 'ffff4500',
         },
         {
           color: 'ff1e95ef',
@@ -402,12 +402,12 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62096
+            codePoint: 62096,
           },
-          name: 'Merch'
-        }
+          name: 'Merch',
+        },
       ],
-      creatorId: '4ty8OfAA0hoXSV6trUY9'
+      creatorId: '4ty8OfAA0hoXSV6trUY9',
     },
     style: {
       blendLevel: 0,
@@ -418,14 +418,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/46d1aba3-9341-4ead-ae27-81621feba921-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/sips_-channel_offline_image-b22beb77aab494e4-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/sips_-channel_offline_image-b22beb77aab494e4-1920x1080.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/sips_-channel_offline_image-b22beb77aab494e4-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/46d1aba3-9341-4ead-ae27-81621feba921-profile_image-300x300.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/46d1aba3-9341-4ead-ae27-81621feba921-profile_image-300x300.png',
+        },
       },
       creatorId: '4ty8OfAA0hoXSV6trUY9',
       colors: [
@@ -445,22 +445,22 @@ const creators = [
         'ff874552',
         'ff3d2222',
         'ffe7bab8',
-        'ff3e3e3d'
+        'ff3e3e3d',
       ],
       appBarStyle: {
         linearGradient: {
           colors: ['ffef4d9d', 'ff99adf1'],
           begin: {
             x: -1,
-            y: -1
+            y: -1,
           },
           end: {
             y: 1,
-            x: 1
-          }
-        }
-      }
-    }
+            x: 1,
+          },
+        },
+      },
+    },
   },
   {
     style: {
@@ -473,14 +473,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/8e9f3bcf-274d-4899-bf53-cd64bd512d24-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/2073e965-21f6-4378-aae3-c96ad8df2570-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/2073e965-21f6-4378-aae3-c96ad8df2570-profile_image-300x300.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/2073e965-21f6-4378-aae3-c96ad8df2570-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/8e9f3bcf-274d-4899-bf53-cd64bd512d24-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/8e9f3bcf-274d-4899-bf53-cd64bd512d24-channel_offline_image-1920x1080.png',
+        },
       },
       blendLevel: 0,
       colors: [
@@ -511,8 +511,8 @@ const creators = [
         'ff8e9897',
         'ffacada4',
         'ffb0bdc0',
-        'ff7a766a'
-      ]
+        'ff7a766a',
+      ],
     },
     creator: {
       relations: {
@@ -528,21 +528,21 @@ const creators = [
           'uuZ2P6KPhmLVGc7ZjWXR',
           'IOdPOlLaB7zFHvsuvVwu',
           'AZGGyF9uschXdM8gGB1v',
-          'yAmEX9kxAZTdKzwQcIsy'
+          'yAmEX9kxAZTdKzwQcIsy',
         ],
         twitchChannels: ['31883069'],
-        podcasts: []
+        podcasts: [],
       },
       subRelations: {
         twitchChannels: [],
         podcasts: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       visible: true,
       name: 'Zylus',
       creatorId: '5h6PnMWEghJSDaS5ZNbc',
-      type: 'Yogs'
+      type: 'Yogs',
     },
     links: {
       creatorId: '5h6PnMWEghJSDaS5ZNbc',
@@ -551,11 +551,11 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61593
+            codePoint: 61593,
           },
           name: 'Twitter',
           url: 'https://twitter.com/IAmZylus',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           color: 'ff1e95ef',
@@ -564,11 +564,11 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62096
-          }
-        }
-      ]
-    }
+            codePoint: 62096,
+          },
+        },
+      ],
+    },
   },
   {
     links: {
@@ -581,8 +581,8 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           url: 'https://store.yogscast.com/collections/barry',
@@ -591,17 +591,17 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 62096,
-            fontFamily: 'FontAwesomeSolid'
-          }
-        }
-      ]
+            fontFamily: 'FontAwesomeSolid',
+          },
+        },
+      ],
     },
     creator: {
       subRelations: {
         youtubeChannels: [],
         twitchChannels: [],
         podcasts: [],
-        creators: []
+        creators: [],
       },
       creatorId: '6oSnPSBKF79EBwS1G5DF',
       type: 'Yogs',
@@ -623,9 +623,9 @@ const creators = [
           'zMMAq6kg87R8WsHUS3s0',
           '6YWocd4YeDNP9ROpUGrk',
           'QLpFsapfyzIU4TYdVmjM',
-          'tmtlRvxSmccEmZlHc4nH'
-        ]
-      }
+          'tmtlRvxSmccEmZlHc4nH',
+        ],
+      },
     },
     style: {
       accentColor: 'ffe882a9',
@@ -641,7 +641,7 @@ const creators = [
         'ffe882a9',
         'ffd39ab5',
         'fff8f862',
-        'fff0f848'
+        'fff0f848',
       ],
       appBarStyle: {},
       creatorId: '6oSnPSBKF79EBwS1G5DF',
@@ -650,17 +650,17 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/8d76f44c-7a10-4551-8878-5653ca862ecc-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/c3e0e225-bbcd-4664-a892-d073070aa6f0-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/c3e0e225-bbcd-4664-a892-d073070aa6f0-channel_offline_image-1920x1080.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/c3e0e225-bbcd-4664-a892-d073070aa6f0-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/8d76f44c-7a10-4551-8878-5653ca862ecc-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/8d76f44c-7a10-4551-8878-5653ca862ecc-profile_image-70x70.png',
+        },
       },
-      blendLevel: 0
-    }
+      blendLevel: 0,
+    },
   },
   {
     style: {
@@ -674,14 +674,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/80c28d3d-968b-49ed-9de9-d419bd24a1c4-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/80c28d3d-968b-49ed-9de9-d419bd24a1c4-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLQmSeZljfEWQl-C8DCakJ4riuK5chm7tOIGcVKocA=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       colors: [
         'ff32060f',
@@ -710,8 +710,8 @@ const creators = [
         'ff511f22',
         'ffbb275c',
         'ff582437',
-        'ff733044'
-      ]
+        'ff733044',
+      ],
     },
     creator: {
       name: 'Bekkiboom',
@@ -720,7 +720,7 @@ const creators = [
         twitchChannels: ['145983935'],
         schedules: [],
         youtubeChannels: ['UCMqPZPgJ9HF9UQ_C42BfM9A'],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: '7tl19sOXgMq8ONpa0Wwc',
       subRelations: {
@@ -728,10 +728,10 @@ const creators = [
         creators: [],
         podcasts: [],
         twitchChannels: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       type: 'Yogs',
-      visible: true
+      visible: true,
     },
     links: {
       links: [
@@ -739,11 +739,11 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           url: 'https://twitter.com/Bekkiboom',
           color: 'ff1da1f2',
-          name: 'Twitter'
+          name: 'Twitter',
         },
         {
           name: 'Instagram',
@@ -752,8 +752,8 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61805
-          }
+            codePoint: 61805,
+          },
         },
         {
           name: 'Discord',
@@ -762,8 +762,8 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 62354
-          }
+            codePoint: 62354,
+          },
         },
         {
           color: 'ff1e95ef',
@@ -772,12 +772,12 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62096
-          }
-        }
+            codePoint: 62096,
+          },
+        },
       ],
-      creatorId: '7tl19sOXgMq8ONpa0Wwc'
-    }
+      creatorId: '7tl19sOXgMq8ONpa0Wwc',
+    },
   },
   {
     links: {
@@ -789,8 +789,8 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61593
-          }
+            codePoint: 61593,
+          },
         },
         {
           color: 'ff1e95ef',
@@ -799,11 +799,11 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62096
-          }
-        }
+            codePoint: 62096,
+          },
+        },
       ],
-      creatorId: '8K6EIOpBvb6ROSHWHx9Q'
+      creatorId: '8K6EIOpBvb6ROSHWHx9Q',
     },
     style: {
       blendLevel: 0,
@@ -812,12 +812,12 @@ const creators = [
       images: {
         large: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLSSkihLxQXMkVZwLqvr_lyOVT05Q9hmozRCgvCDHA=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       colors: [
         'ff60b8e8',
@@ -829,17 +829,17 @@ const creators = [
         'ffabc8d0',
         'fff7cb5d',
         'ff58bfea',
-        'ffa7dbf7'
+        'ffa7dbf7',
       ],
       primaryColor: 'ff60b8e8',
-      accentColor: 'ffecbe53'
+      accentColor: 'ffecbe53',
     },
     creator: {
       subRelations: {
         youtubeChannels: [],
         creators: [],
         twitchChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       name: 'Duncan',
       relations: {
@@ -858,13 +858,13 @@ const creators = [
           'e0mWrK72feY69gH0HwAA',
           'TGDsE9jQPa9WXOOgcmFm',
           '3fNrixu9cDhggDXyLTwG',
-          'AcCWZMmDMrc7G9CnRchz'
-        ]
+          'AcCWZMmDMrc7G9CnRchz',
+        ],
       },
       visible: true,
       type: 'Yogs',
-      creatorId: '8K6EIOpBvb6ROSHWHx9Q'
-    }
+      creatorId: '8K6EIOpBvb6ROSHWHx9Q',
+    },
   },
   {
     links: {
@@ -873,14 +873,14 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
+            codePoint: 61593,
           },
           color: 'ff1da1f2',
           url: 'https://twitter.com/iamdaltos',
-          name: 'Twitter'
-        }
+          name: 'Twitter',
+        },
       ],
-      creatorId: 'AZGGyF9uschXdM8gGB1v'
+      creatorId: 'AZGGyF9uschXdM8gGB1v',
     },
     style: {
       appBarStyle: {},
@@ -889,13 +889,13 @@ const creators = [
         large: {
           bannerUrl: '',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/1185ffce-8b44-4356-a23a-a920ff4849d3-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/1185ffce-8b44-4356-a23a-a920ff4849d3-profile_image-300x300.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/1185ffce-8b44-4356-a23a-a920ff4849d3-profile_image-70x70.png',
-          bannerUrl: ''
-        }
+          bannerUrl: '',
+        },
       },
       accentColor: 'fff7c35c',
       creatorId: 'AZGGyF9uschXdM8gGB1v',
@@ -918,9 +918,9 @@ const creators = [
         'ffbab091',
         'ffcdc7b5',
         'ff927c4a',
-        'ff3b5882'
+        'ff3b5882',
       ],
-      blendLevel: 0
+      blendLevel: 0,
     },
     creator: {
       relations: {
@@ -933,11 +933,11 @@ const creators = [
           'MYZPOwKsujCZbtPEJtBG',
           'Dvsw8FJa8v3LjEXSXr9e',
           '3fNrixu9cDhggDXyLTwG',
-          'AcCWZMmDMrc7G9CnRchz'
+          'AcCWZMmDMrc7G9CnRchz',
         ],
         youtubeChannels: ['UCSrfn5mj3XQg3KDqjiiKGuQ'],
         twitchChannels: ['21285936'],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: 'AZGGyF9uschXdM8gGB1v',
       visible: true,
@@ -946,10 +946,10 @@ const creators = [
         creators: [],
         twitchChannels: [],
         podcasts: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
-      name: 'Daltos'
-    }
+      name: 'Daltos',
+    },
   },
   {
     style: {
@@ -975,7 +975,7 @@ const creators = [
         'ff5070b0',
         'ff4a6297',
         'ff141c2b',
-        'ff2e3c5c'
+        'ff2e3c5c',
       ],
       accentColor: 'ffdd2a27',
       creatorId: 'Dvsw8FJa8v3LjEXSXr9e',
@@ -983,15 +983,15 @@ const creators = [
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/952928dc-14ba-4ff5-b52a-902ab39f9dff-profile_image-70x70.png',
-          bannerUrl: ''
+          bannerUrl: '',
         },
         large: {
           bannerUrl: '',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/952928dc-14ba-4ff5-b52a-902ab39f9dff-profile_image-300x300.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/952928dc-14ba-4ff5-b52a-902ab39f9dff-profile_image-300x300.png',
+        },
       },
-      primaryColor: 'ff5878b8'
+      primaryColor: 'ff5878b8',
     },
     creator: {
       visible: true,
@@ -1007,22 +1007,22 @@ const creators = [
           'Gq7a6r1Pq0loxIUiNk8v',
           'deBUVdSqWrH6FwlXPe2m',
           '3fNrixu9cDhggDXyLTwG',
-          'L9AyK1KaHcULKJMvAHcF'
+          'L9AyK1KaHcULKJMvAHcF',
         ],
         youtubeChannels: ['UCeiojUKAAGdwocc5ZjMqryA'],
         podcasts: ['ZbvgXhoXmqwQ6cqqmmn6'],
         schedules: [],
-        twitchChannels: ['150004439']
+        twitchChannels: ['150004439'],
       },
       subRelations: {
         creators: [],
         podcasts: [],
         youtubeChannels: [],
         schedules: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       type: 'Yogs',
-      name: 'Ben'
+      name: 'Ben',
     },
     links: {
       creatorId: 'Dvsw8FJa8v3LjEXSXr9e',
@@ -1032,23 +1032,23 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
+            codePoint: 61593,
           },
           name: 'Twitter',
-          url: 'https://twitter.com/Bedgarsan'
+          url: 'https://twitter.com/Bedgarsan',
         },
         {
           icon: {
             fontFamily: 'FontAwesomeSolid',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62096
+            codePoint: 62096,
           },
           color: 'ff1e95ef',
           name: 'Merch',
-          url: 'https://store.yogscast.com/collections/ben'
-        }
-      ]
-    }
+          url: 'https://store.yogscast.com/collections/ben',
+        },
+      ],
+    },
   },
   {
     creator: {
@@ -1058,7 +1058,7 @@ const creators = [
         youtubeChannels: [],
         creators: [],
         podcasts: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       creatorId: 'EoUzF0nQQGdpY9NlZfeU',
       visible: true,
@@ -1067,9 +1067,9 @@ const creators = [
         podcasts: [],
         youtubeChannels: ['UC_mkyL75cuKExSTaMbpWrEg'],
         twitchChannels: ['96502692'],
-        schedules: []
+        schedules: [],
       },
-      name: 'Wilsonator'
+      name: 'Wilsonator',
     },
     links: {
       links: [
@@ -1080,18 +1080,18 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
-          }
-        }
+            fontPackage: 'font_awesome_flutter',
+          },
+        },
       ],
-      creatorId: 'EoUzF0nQQGdpY9NlZfeU'
+      creatorId: 'EoUzF0nQQGdpY9NlZfeU',
     },
     style: {
       accentColor: 'fff8d000',
       primaryColor: 'ff1b5587',
       images: {
         large: {},
-        small: {}
+        small: {},
       },
       colors: [
         'ff1b5587',
@@ -1113,12 +1113,12 @@ const creators = [
         'ff347bb4',
         'ffefc701',
         'ff4f6955',
-        'ff828b43'
+        'ff828b43',
       ],
       appBarStyle: {},
       blendLevel: 0,
-      creatorId: 'EoUzF0nQQGdpY9NlZfeU'
-    }
+      creatorId: 'EoUzF0nQQGdpY9NlZfeU',
+    },
   },
   {
     style: {
@@ -1143,7 +1143,7 @@ const creators = [
         'ff8c6077',
         'ff988497',
         'ff69716b',
-        'ff9c7fc1'
+        'ff9c7fc1',
       ],
       primaryColor: 'ffe8f028',
       blendLevel: 0,
@@ -1154,15 +1154,15 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/2d1308fc-00b1-486e-9170-9084b8ddd12b-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/bouphe-channel_offline_image-550f98cdc70bf7eb-1920x1080.jpeg'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/bouphe-channel_offline_image-550f98cdc70bf7eb-1920x1080.jpeg',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/2d1308fc-00b1-486e-9170-9084b8ddd12b-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/bouphe-channel_offline_image-550f98cdc70bf7eb-1920x1080.jpeg'
-        }
-      }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/bouphe-channel_offline_image-550f98cdc70bf7eb-1920x1080.jpeg',
+        },
+      },
     },
     creator: {
       relations: {
@@ -1175,9 +1175,9 @@ const creators = [
           'rJlQvAiwpuCL4I5qI6Og',
           'zMMAq6kg87R8WsHUS3s0',
           'xd6wmw8tYeDhb7tqRBo6',
-          'e0mWrK72feY69gH0HwAA'
+          'e0mWrK72feY69gH0HwAA',
         ],
-        podcasts: []
+        podcasts: [],
       },
       name: 'Bouphe',
       visible: true,
@@ -1186,9 +1186,9 @@ const creators = [
         podcasts: [],
         twitchChannels: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
-      type: 'Yogs'
+      type: 'Yogs',
     },
     links: {
       creatorId: 'G2xAxM8JBwtNIojLq1cE',
@@ -1200,18 +1200,18 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
-          }
+            fontFamily: 'FontAwesomeBrands',
+          },
         },
         {
           name: 'Instagram',
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61805
+            codePoint: 61805,
           },
           color: 'ff405de6',
-          url: 'https://www.instagram.com/bouphemagic'
+          url: 'https://www.instagram.com/bouphemagic',
         },
         {
           name: 'Playlist',
@@ -1219,9 +1219,9 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61884,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          color: 'ff1db954'
+          color: 'ff1db954',
         },
         {
           name: 'Patreon',
@@ -1229,22 +1229,22 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 62425
+            codePoint: 62425,
           },
-          color: 'fff96854'
+          color: 'fff96854',
         },
         {
           color: 'ff1e95ef',
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Merch',
-          url: 'https://store.yogscast.com/collections/bouphe'
-        }
-      ]
-    }
+          url: 'https://store.yogscast.com/collections/bouphe',
+        },
+      ],
+    },
   },
   {
     links: {
@@ -1253,25 +1253,25 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           name: 'Twitter',
           url: 'https://twitter.com/YogscastLewis',
-          color: 'ff1da1f2'
-        }
+          color: 'ff1da1f2',
+        },
       ],
-      creatorId: 'Gq7a6r1Pq0loxIUiNk8v'
+      creatorId: 'Gq7a6r1Pq0loxIUiNk8v',
     },
     style: {
       blendLevel: 0,
       accentColor: 'fff8b3b5',
       images: {
         small: {
-          profileUrl: 'https://pbs.twimg.com/profile_images/1224691578163343363/mcVMPVoG_80x80.jpg'
+          profileUrl: 'https://pbs.twimg.com/profile_images/1224691578163343363/mcVMPVoG_80x80.jpg',
         },
         large: {
-          profileUrl: 'https://pbs.twimg.com/profile_images/1224691578163343363/mcVMPVoG_400x400.jpg'
-        }
+          profileUrl: 'https://pbs.twimg.com/profile_images/1224691578163343363/mcVMPVoG_400x400.jpg',
+        },
       },
       creatorId: 'Gq7a6r1Pq0loxIUiNk8v',
       appBarStyle: {},
@@ -1314,9 +1314,9 @@ const creators = [
         'ff988685',
         'ffd1a0a9',
         'ff563832',
-        'ff8a4744'
+        'ff8a4744',
       ],
-      primaryColor: 'ff008cf2'
+      primaryColor: 'ff008cf2',
     },
     creator: {
       name: 'Lewis',
@@ -1325,7 +1325,7 @@ const creators = [
         podcasts: [],
         creators: [],
         twitchChannels: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       visible: true,
       type: 'Yogs',
@@ -1339,13 +1339,13 @@ const creators = [
           '3fNrixu9cDhggDXyLTwG',
           'jP4KqZEefrAj53jHZ8HO',
           'AcCWZMmDMrc7G9CnRchz',
-          'L9AyK1KaHcULKJMvAHcF'
+          'L9AyK1KaHcULKJMvAHcF',
         ],
         podcasts: ['5F7GOIwN9KlUqR8V7fjj', 'wbo7oG05vqQxGW3u1oEW'],
         youtubeChannels: ['UCH-_hzb2ILSCo9ftVSnrCIQ', 'UCpKNM44gSRZ3U_hMd2JV9Kw'],
-        twitchChannels: ['20786541']
-      }
-    }
+        twitchChannels: ['20786541'],
+      },
+    },
   },
   {
     links: {
@@ -1357,31 +1357,31 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           url: 'https://discord.com/invite/swYBssA',
           icon: {
             codePoint: 62354,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           color: 'ff7289da',
-          name: 'Discord'
+          name: 'Discord',
         },
         {
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeSolid',
-            codePoint: 62096
+            codePoint: 62096,
           },
           name: 'Merch',
           color: 'ff1e95ef',
-          url: 'https://brionykay-shop.fourthwall.com/'
-        }
+          url: 'https://brionykay-shop.fourthwall.com/',
+        },
       ],
-      creatorId: 'Gz3S1VJlA6iPISXuIl7p'
+      creatorId: 'Gz3S1VJlA6iPISXuIl7p',
     },
     creator: {
       relations: {
@@ -1394,12 +1394,12 @@ const creators = [
           'HkZh9sasvBrpZ4r22Sb3',
           'zwBpk82qRo4y2Sf5Nvlf',
           'e0mWrK72feY69gH0HwAA',
-          '7tl19sOXgMq8ONpa0Wwc'
+          '7tl19sOXgMq8ONpa0Wwc',
         ],
         twitchChannels: ['79911474'],
         podcasts: ['amy9POTYCcaHnuU4ZuNJ'],
         schedules: [],
-        youtubeChannels: ['UCkPhi5zU2EAPkuWhjFqYmiA']
+        youtubeChannels: ['UCkPhi5zU2EAPkuWhjFqYmiA'],
       },
       type: 'Yogs',
       visible: true,
@@ -1408,10 +1408,10 @@ const creators = [
         creators: [],
         youtubeChannels: [],
         schedules: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       creatorId: 'Gz3S1VJlA6iPISXuIl7p',
-      name: 'Briony'
+      name: 'Briony',
     },
     style: {
       primaryColor: 'ffcbe3f4',
@@ -1440,7 +1440,7 @@ const creators = [
         'ffdfa0a5',
         'ff813d36',
         'ffca9e3e',
-        'ff5f5d27'
+        'ff5f5d27',
       ],
       blendLevel: 0,
       appBarStyle: {},
@@ -1449,16 +1449,16 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/857f7224-84b2-4092-98a1-5a82f5dade99-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/c408dc7b-45df-43de-b8bf-1399466c3911-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/c408dc7b-45df-43de-b8bf-1399466c3911-channel_offline_image-1920x1080.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/c408dc7b-45df-43de-b8bf-1399466c3911-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/857f7224-84b2-4092-98a1-5a82f5dade99-profile_image-70x70.png'
-        }
-      }
-    }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/857f7224-84b2-4092-98a1-5a82f5dade99-profile_image-70x70.png',
+        },
+      },
+    },
   },
   {
     creator: {
@@ -1470,12 +1470,12 @@ const creators = [
           'f2tAtl8eBRTtKsqzQQoC',
           'dvynb4nu7GmqelY4HW3f',
           'Gz3S1VJlA6iPISXuIl7p',
-          'e0mWrK72feY69gH0HwAA'
+          'e0mWrK72feY69gH0HwAA',
         ],
         youtubeChannels: ['UCYzUOg9p-Z_1o_e-Ua4-VHQ'],
         schedules: [],
         twitchChannels: ['38051463'],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: 'HkZh9sasvBrpZ4r22Sb3',
       type: 'Yogs',
@@ -1486,8 +1486,8 @@ const creators = [
         twitchChannels: [],
         creators: [],
         youtubeChannels: [],
-        schedules: []
-      }
+        schedules: [],
+      },
     },
     links: {
       links: [
@@ -1498,8 +1498,8 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
-          }
+            codePoint: 61593,
+          },
         },
         {
           color: 'ff1e95ef',
@@ -1508,18 +1508,18 @@ const creators = [
           icon: {
             fontFamily: 'MaterialIcons',
             fontPackage: null,
-            codePoint: 60884
-          }
+            codePoint: 60884,
+          },
         },
         {
           icon: {
             codePoint: 62354,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           url: 'https://discord.gg/Tf5sSwpnwr',
           color: 'ff7289da',
-          name: 'Discord'
+          name: 'Discord',
         },
         {
           color: 'ff1e95ef',
@@ -1527,12 +1527,12 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          name: 'Merch'
-        }
+          name: 'Merch',
+        },
       ],
-      creatorId: 'HkZh9sasvBrpZ4r22Sb3'
+      creatorId: 'HkZh9sasvBrpZ4r22Sb3',
     },
     style: {
       creatorId: 'HkZh9sasvBrpZ4r22Sb3',
@@ -1541,14 +1541,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/d9756118-3566-4136-a961-40d8cec09820-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/3daef44c-dde9-49d0-8648-a1fb2af93b2b-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/3daef44c-dde9-49d0-8648-a1fb2af93b2b-channel_offline_image-1920x1080.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/d9756118-3566-4136-a961-40d8cec09820-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/3daef44c-dde9-49d0-8648-a1fb2af93b2b-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/3daef44c-dde9-49d0-8648-a1fb2af93b2b-channel_offline_image-1920x1080.png',
+        },
       },
       blendLevel: 0,
       appBarStyle: {
@@ -1556,13 +1556,13 @@ const creators = [
           colors: ['ff55cdfc', 'ffffffff', 'fff7a8b8'],
           end: {
             x: -1,
-            y: 0
+            y: 0,
           },
           begin: {
             y: 0,
-            x: 1
-          }
-        }
+            x: 1,
+          },
+        },
       },
       primaryColor: 'fff68d02',
       colors: [
@@ -1587,10 +1587,10 @@ const creators = [
         'ff5d7e51',
         'ff55cdfc',
         'fff7a8b8',
-        'ffffffff'
+        'ffffffff',
       ],
-      accentColor: 'fff7a8b8'
-    }
+      accentColor: 'fff7a8b8',
+    },
   },
   {
     creator: {
@@ -1604,18 +1604,18 @@ const creators = [
           '6oSnPSBKF79EBwS1G5DF',
           'RuJTT0r57IGKXWtlHNVX',
           'QLpFsapfyzIU4TYdVmjM',
-          'eE4FNKcFiBhoc3jFb9Fo'
-        ]
+          'eE4FNKcFiBhoc3jFb9Fo',
+        ],
       },
       name: 'Tom',
       subRelations: {
         creators: [],
         twitchChannels: [],
         youtubeChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       visible: true,
-      creatorId: 'Hn8e1EgqFKg2RbJglY2x'
+      creatorId: 'Hn8e1EgqFKg2RbJglY2x',
     },
     style: {
       primaryColor: 'ff391a54',
@@ -1624,14 +1624,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/a554bebf-a383-4017-8842-fffc15fb2aa5-profile_image-300x300.jpg',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/948ed698-b57a-4667-9fe2-91fdd847f70b-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/948ed698-b57a-4667-9fe2-91fdd847f70b-channel_offline_image-1920x1080.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/948ed698-b57a-4667-9fe2-91fdd847f70b-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/a554bebf-a383-4017-8842-fffc15fb2aa5-profile_image-70x70.jpg'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/a554bebf-a383-4017-8842-fffc15fb2aa5-profile_image-70x70.jpg',
+        },
       },
       creatorId: 'Hn8e1EgqFKg2RbJglY2x',
       blendLevel: 0,
@@ -1664,9 +1664,9 @@ const creators = [
         'ff2298bf',
         'ffae98b2',
         'ffa9dbe6',
-        'ff2ccaf6'
+        'ff2ccaf6',
       ],
-      accentColor: 'fff599d7'
+      accentColor: 'fff599d7',
     },
     links: {
       creatorId: 'Hn8e1EgqFKg2RbJglY2x',
@@ -1676,23 +1676,23 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61593,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           name: 'Twitter',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           url: 'https://store.yogscast.com/collections/angory-tom',
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           color: 'ff1e95ef',
-          name: 'Merch'
-        }
-      ]
-    }
+          name: 'Merch',
+        },
+      ],
+    },
   },
   {
     creator: {
@@ -1701,7 +1701,7 @@ const creators = [
         podcasts: ['9PQzKYvsiKn6QR3cr7b6'],
         twitchChannels: ['21945983'],
         youtubeChannels: ['UC7A_dLnSAjl7uROCdoNyjzg', 'UCJYvnogbZIQQvX9exn5aDPw'],
-        creators: ['4ty8OfAA0hoXSV6trUY9', 'RuJTT0r57IGKXWtlHNVX', 'jP4KqZEefrAj53jHZ8HO']
+        creators: ['4ty8OfAA0hoXSV6trUY9', 'RuJTT0r57IGKXWtlHNVX', 'jP4KqZEefrAj53jHZ8HO'],
       },
       name: 'Hat Films',
       creatorId: 'Hz3L8GFTsM0EFg0caGoG',
@@ -1709,9 +1709,9 @@ const creators = [
         creators: [],
         youtubeChannels: [],
         twitchChannels: [],
-        podcasts: []
+        podcasts: [],
       },
-      type: 'Yogs'
+      type: 'Yogs',
     },
     links: {
       links: [
@@ -1722,18 +1722,18 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61593
-          }
+            codePoint: 61593,
+          },
         },
         {
           icon: {
             codePoint: 57467,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           color: 'ff69c9d0',
           name: 'Tiktok',
-          url: 'https://www.tiktok.com/@hat_films'
+          url: 'https://www.tiktok.com/@hat_films',
         },
         {
           url: 'https://www.instagram.com/hat.films/',
@@ -1741,39 +1741,39 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61805,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          name: 'Instagram'
+          name: 'Instagram',
         },
         {
           icon: {
             codePoint: 61857,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Reddit',
           url: 'https://www.reddit.com/r/hatfilms/',
-          color: 'ffff4500'
+          color: 'ffff4500',
         },
         {
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62165
+            codePoint: 62165,
           },
           name: 'Bandcamp',
           color: 'ff629aa9',
-          url: 'https://hatfilms.bandcamp.com/'
+          url: 'https://hatfilms.bandcamp.com/',
         },
         {
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Merch',
           color: 'ff1e95ef',
-          url: 'https://freshmerch.fm/collections/hat-films'
+          url: 'https://freshmerch.fm/collections/hat-films',
         },
         {
           url: 'https://www.patreon.com/hatfilms',
@@ -1782,11 +1782,11 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 62425
-          }
-        }
+            codePoint: 62425,
+          },
+        },
       ],
-      creatorId: 'Hz3L8GFTsM0EFg0caGoG'
+      creatorId: 'Hz3L8GFTsM0EFg0caGoG',
     },
     style: {
       appBarStyle: {},
@@ -1840,7 +1840,7 @@ const creators = [
         'ff241d09',
         'ff646153',
         'ff353118',
-        'ff423c21'
+        'ff423c21',
       ],
       accentColor: 'fff85098',
       images: {
@@ -1848,18 +1848,18 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/0231f803-0a7e-4bfc-8652-c55b322f98e0-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/5b59ee15-7459-4923-bdd4-49b1aa484769-channel_offline_image-1920x1080.jpeg'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/5b59ee15-7459-4923-bdd4-49b1aa484769-channel_offline_image-1920x1080.jpeg',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/5b59ee15-7459-4923-bdd4-49b1aa484769-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/0231f803-0a7e-4bfc-8652-c55b322f98e0-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/0231f803-0a7e-4bfc-8652-c55b322f98e0-profile_image-70x70.png',
+        },
       },
       primaryColor: 'ff40c8e8',
-      blendLevel: 0
-    }
+      blendLevel: 0,
+    },
   },
   {
     style: {
@@ -1872,14 +1872,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/07aa4a75-52cf-47f6-98f8-b0c414052082-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/5c2bddb9-11e6-4ee4-8025-abc565891340-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/5c2bddb9-11e6-4ee4-8025-abc565891340-profile_image-70x70.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/07aa4a75-52cf-47f6-98f8-b0c414052082-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/5c2bddb9-11e6-4ee4-8025-abc565891340-profile_image-300x300.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/5c2bddb9-11e6-4ee4-8025-abc565891340-profile_image-300x300.png',
+        },
       },
       creatorId: 'IOdPOlLaB7zFHvsuvVwu',
       colors: [
@@ -1930,8 +1930,8 @@ const creators = [
         'ffac85e8',
         'ff8451d9',
         'ff8f62d6',
-        'ffbb98ed'
-      ]
+        'ffbb98ed',
+      ],
     },
     links: {
       links: [
@@ -1942,8 +1942,8 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           name: 'Tiktok',
@@ -1951,9 +1951,9 @@ const creators = [
           icon: {
             codePoint: 57467,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          url: 'https://www.tiktok.com/@inthelittlewood'
+          url: 'https://www.tiktok.com/@inthelittlewood',
         },
         {
           name: 'Instagram',
@@ -1961,9 +1961,9 @@ const creators = [
           icon: {
             codePoint: 61805,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          url: 'https://www.instagram.com/inthelittlewoods/'
+          url: 'https://www.instagram.com/inthelittlewoods/',
         },
         {
           url: 'https://discord.gg/53BsHXGXc8',
@@ -1972,28 +1972,28 @@ const creators = [
           icon: {
             codePoint: 62354,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
-          }
+            fontFamily: 'FontAwesomeBrands',
+          },
         },
         {
           name: 'Merch',
           icon: {
             codePoint: 62096,
             fontFamily: 'FontAwesomeSolid',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           color: 'ff1e95ef',
-          url: 'https://store.yogscast.com/collections/martyn'
-        }
+          url: 'https://store.yogscast.com/collections/martyn',
+        },
       ],
-      creatorId: 'IOdPOlLaB7zFHvsuvVwu'
+      creatorId: 'IOdPOlLaB7zFHvsuvVwu',
     },
     creator: {
       subRelations: {
         podcasts: [],
         twitchChannels: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       type: 'Yogs',
       name: 'Martyn',
@@ -2005,13 +2005,13 @@ const creators = [
           '6oSnPSBKF79EBwS1G5DF',
           '0w4JSboJK6RdTDmDKoYL',
           '5h6PnMWEghJSDaS5ZNbc',
-          'tmtlRvxSmccEmZlHc4nH'
+          'tmtlRvxSmccEmZlHc4nH',
         ],
         twitchChannels: ['12131870'],
         youtubeChannels: ['UCWiPkogV65gqqNkwqci4yZA', 'UCTSu4x8ahsJ16T9fWiwlKdg', 'UCVfSWFY5dgU4V77r66Zk1Vg'],
-        podcasts: []
-      }
-    }
+        podcasts: [],
+      },
+    },
   },
   {
     links: {
@@ -2024,10 +2024,10 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
-          }
-        }
-      ]
+            fontFamily: 'FontAwesomeBrands',
+          },
+        },
+      ],
     },
     creator: {
       visible: true,
@@ -2045,16 +2045,16 @@ const creators = [
           '8K6EIOpBvb6ROSHWHx9Q',
           '3fNrixu9cDhggDXyLTwG',
           'AcCWZMmDMrc7G9CnRchz',
-          'EoUzF0nQQGdpY9NlZfeU'
+          'EoUzF0nQQGdpY9NlZfeU',
         ],
-        youtubeChannels: ['UCRHXUZ0BxbkU2MYZgsuFgkQ']
+        youtubeChannels: ['UCRHXUZ0BxbkU2MYZgsuFgkQ'],
       },
       subRelations: {
         youtubeChannels: [],
         twitchChannels: [],
         podcasts: [],
-        creators: []
-      }
+        creators: [],
+      },
     },
     style: {
       colors: [
@@ -2087,24 +2087,24 @@ const creators = [
         'ff304c81',
         'ff3b6290',
         'ff0e2346',
-        'ff203a5b'
+        'ff203a5b',
       ],
       primaryColor: 'ff3880c8',
       blendLevel: 0,
       images: {
         large: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLS-PJbp21V12na1A3ll5DdE0vSpW7t2lyQ8WVytDQ=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       accentColor: 'ff3050c8',
       appBarStyle: {},
-      creatorId: 'MYZPOwKsujCZbtPEJtBG'
-    }
+      creatorId: 'MYZPOwKsujCZbtPEJtBG',
+    },
   },
   {
     creator: {
@@ -2116,20 +2116,20 @@ const creators = [
           'G2xAxM8JBwtNIojLq1cE',
           '6YWocd4YeDNP9ROpUGrk',
           'zFdYfSFj4efXLheSHG5Z',
-          'e0mWrK72feY69gH0HwAA'
+          'e0mWrK72feY69gH0HwAA',
         ],
         podcasts: ['5Fq82gWp7mrLdkxDaHT7'],
         youtubeChannels: [],
-        twitchChannels: ['48950229']
+        twitchChannels: ['48950229'],
       },
       subRelations: {
         creators: [],
         twitchChannels: [],
         youtubeChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       visible: true,
-      creatorId: 'MsNyFTyL0zikJ4zKOZm2'
+      creatorId: 'MsNyFTyL0zikJ4zKOZm2',
     },
     style: {
       images: {
@@ -2137,14 +2137,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/c12801cc-7c8a-4749-99e2-0756914f70e6-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/aaca99b4-feb3-4ad3-a488-2fcf1f4c3983-channel_offline_image-1920x1080.jpeg'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/aaca99b4-feb3-4ad3-a488-2fcf1f4c3983-channel_offline_image-1920x1080.jpeg',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/aaca99b4-feb3-4ad3-a488-2fcf1f4c3983-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/c12801cc-7c8a-4749-99e2-0756914f70e6-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/c12801cc-7c8a-4749-99e2-0756914f70e6-profile_image-70x70.png',
+        },
       },
       appBarStyle: {},
       colors: [
@@ -2166,12 +2166,12 @@ const creators = [
         'ffdcc1d4',
         'ff8fc6d8',
         'ff5aecea',
-        'ff77dadf'
+        'ff77dadf',
       ],
       primaryColor: 'ffc1b2da',
       creatorId: 'MsNyFTyL0zikJ4zKOZm2',
       blendLevel: 0,
-      accentColor: 'ff5aecea'
+      accentColor: 'ff5aecea',
     },
     links: {
       links: [
@@ -2179,11 +2179,11 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           url: 'https://twitter.com/osiefish',
           color: 'ff1da1f2',
-          name: 'Twitter'
+          name: 'Twitter',
         },
         {
           url: 'https://www.instagram.com/osiefish/',
@@ -2192,8 +2192,8 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61805
-          }
+            codePoint: 61805,
+          },
         },
         {
           name: 'Discord',
@@ -2202,22 +2202,22 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 62354,
-            fontFamily: 'FontAwesomeBrands'
-          }
+            fontFamily: 'FontAwesomeBrands',
+          },
         },
         {
           color: 'ff1e95ef',
           icon: {
             codePoint: 62096,
             fontFamily: 'FontAwesomeSolid',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Merch',
-          url: 'https://store.yogscast.com/collections/osiefish'
-        }
+          url: 'https://store.yogscast.com/collections/osiefish',
+        },
       ],
-      creatorId: 'MsNyFTyL0zikJ4zKOZm2'
-    }
+      creatorId: 'MsNyFTyL0zikJ4zKOZm2',
+    },
   },
   {
     links: {
@@ -2229,11 +2229,11 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          name: 'Twitter'
-        }
-      ]
+          name: 'Twitter',
+        },
+      ],
     },
     creator: {
       visible: true,
@@ -2241,17 +2241,17 @@ const creators = [
         twitchChannels: ['43903804'],
         podcasts: [],
         youtubeChannels: ['UCUxoapwoGN9cKN5SPKGVh7A'],
-        creators: ['8K6EIOpBvb6ROSHWHx9Q', 'Gz3S1VJlA6iPISXuIl7p', 'c9raygCH9eGa09OLB12t', 'RuJTT0r57IGKXWtlHNVX']
+        creators: ['8K6EIOpBvb6ROSHWHx9Q', 'Gz3S1VJlA6iPISXuIl7p', 'c9raygCH9eGa09OLB12t', 'RuJTT0r57IGKXWtlHNVX'],
       },
       name: 'Kim',
       subRelations: {
         twitchChannels: [],
         podcasts: [],
         youtubeChannels: [],
-        creators: []
+        creators: [],
       },
       creatorId: 'OxMCBocsLB1lXH5tQV6u',
-      type: 'Yogs'
+      type: 'Yogs',
     },
     style: {
       appBarStyle: {},
@@ -2260,14 +2260,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/51c2071a-5fdc-44b1-9c7b-c017ea13064e-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/nanokim-channel_offline_image-4afba80bd0d3945f-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/nanokim-channel_offline_image-4afba80bd0d3945f-1920x1080.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/51c2071a-5fdc-44b1-9c7b-c017ea13064e-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/nanokim-channel_offline_image-4afba80bd0d3945f-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/nanokim-channel_offline_image-4afba80bd0d3945f-1920x1080.png',
+        },
       },
       creatorId: 'OxMCBocsLB1lXH5tQV6u',
       accentColor: 'ffe1756f',
@@ -2293,9 +2293,9 @@ const creators = [
         'ff654b4a',
         'ffcd4541',
         'ffcd716d',
-        'ffd29896'
-      ]
-    }
+        'ffd29896',
+      ],
+    },
   },
   {
     creator: {
@@ -2305,7 +2305,7 @@ const creators = [
         podcasts: [],
         youtubeChannels: [],
         creators: [],
-        schedules: []
+        schedules: [],
       },
       relations: {
         schedules: [],
@@ -2315,14 +2315,14 @@ const creators = [
           'Gq7a6r1Pq0loxIUiNk8v',
           '6oSnPSBKF79EBwS1G5DF',
           'Hn8e1EgqFKg2RbJglY2x',
-          'e0mWrK72feY69gH0HwAA'
+          'e0mWrK72feY69gH0HwAA',
         ],
         youtubeChannels: ['UCj9yJMgOhCkl--aMfelaVIg'],
-        twitchChannels: ['21069037']
+        twitchChannels: ['21069037'],
       },
       type: 'Yogs',
       name: 'Simon',
-      visible: true
+      visible: true,
     },
     style: {
       primaryColor: 'fff38c3c',
@@ -2331,14 +2331,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/87636eaa-0ec3-4d53-9564-d3d1e350de84-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/10f6855a-9a91-45e2-b029-bca4bb30462c-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/10f6855a-9a91-45e2-b029-bca4bb30462c-channel_offline_image-1920x1080.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/10f6855a-9a91-45e2-b029-bca4bb30462c-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/87636eaa-0ec3-4d53-9564-d3d1e350de84-profile_image-300x300.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/87636eaa-0ec3-4d53-9564-d3d1e350de84-profile_image-300x300.png',
+        },
       },
       colors: [
         'ff454457',
@@ -2364,12 +2364,12 @@ const creators = [
         'fff7d8ae',
         'fff38c3c',
         'fff8c986',
-        'ffa36258'
+        'ffa36258',
       ],
       accentColor: 'ffd1edee',
       creatorId: 'QLpFsapfyzIU4TYdVmjM',
       appBarStyle: {},
-      blendLevel: 0
+      blendLevel: 0,
     },
     links: {
       creatorId: 'QLpFsapfyzIU4TYdVmjM',
@@ -2381,21 +2381,21 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
-          }
+            codePoint: 61593,
+          },
         },
         {
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeSolid',
-            codePoint: 62096
+            codePoint: 62096,
           },
           name: 'Merch',
           url: 'https://store.yogscast.com/collections/lewis-and-simon',
-          color: 'ff1e95ef'
-        }
-      ]
-    }
+          color: 'ff1e95ef',
+        },
+      ],
+    },
   },
   {
     creator: {
@@ -2405,7 +2405,7 @@ const creators = [
         youtubeChannels: [],
         podcasts: [],
         creators: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       relations: {
         twitchChannels: ['38180017'],
@@ -2414,13 +2414,13 @@ const creators = [
           'OxMCBocsLB1lXH5tQV6u',
           'Hz3L8GFTsM0EFg0caGoG',
           'vz0XWPLfxV9gFyChCgMO',
-          'Hn8e1EgqFKg2RbJglY2x'
+          'Hn8e1EgqFKg2RbJglY2x',
         ],
         youtubeChannels: ['UCTISUtpRFMMkqth9O9nU40w'],
-        podcasts: []
+        podcasts: [],
       },
       type: 'Yogs',
-      name: 'Sherlock Hulmes'
+      name: 'Sherlock Hulmes',
     },
     style: {
       primaryColor: 'ffab2607',
@@ -2428,13 +2428,13 @@ const creators = [
         large: {
           bannerUrl: '',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/fb8559aa-7647-4ef3-9e17-13f84df71935-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/fb8559aa-7647-4ef3-9e17-13f84df71935-profile_image-300x300.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/fb8559aa-7647-4ef3-9e17-13f84df71935-profile_image-70x70.png',
-          bannerUrl: ''
-        }
+          bannerUrl: '',
+        },
       },
       blendLevel: 0,
       accentColor: 'ffd383c7',
@@ -2457,8 +2457,8 @@ const creators = [
         'ff577057',
         'ff739681',
         'ffa48588',
-        'ffb75240'
-      ]
+        'ffb75240',
+      ],
     },
     links: {
       links: [
@@ -2468,13 +2468,13 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          name: 'Twitter'
-        }
+          name: 'Twitter',
+        },
       ],
-      creatorId: 'RuJTT0r57IGKXWtlHNVX'
-    }
+      creatorId: 'RuJTT0r57IGKXWtlHNVX',
+    },
   },
   {
     style: {
@@ -2488,25 +2488,25 @@ const creators = [
         'ff12a4e0',
         'ff8d6164',
         'ff0e567b',
-        'ff6d6167'
+        'ff6d6167',
       ],
       images: {
         large: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/9418c67f-1988-401c-8855-4a232e307bdc-profile_image-300x300.png',
-          bannerUrl: ''
+          bannerUrl: '',
         },
         small: {
           bannerUrl: '',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/9418c67f-1988-401c-8855-4a232e307bdc-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/9418c67f-1988-401c-8855-4a232e307bdc-profile_image-70x70.png',
+        },
       },
       primaryColor: 'ff12a4e0',
       appBarStyle: {},
       creatorId: 'ShFoVukMUs1HAf2YryPl',
       blendLevel: 0,
-      accentColor: 'ff0e567b'
+      accentColor: 'ff0e567b',
     },
     creator: {
       name: 'Daf',
@@ -2514,17 +2514,17 @@ const creators = [
         creators: ['Zf19FbodO1Alu5gfLykf', '6oSnPSBKF79EBwS1G5DF', 'o1gdP5407amAmS5vEXvP'],
         youtubeChannels: [],
         twitchChannels: ['172932486'],
-        podcasts: []
+        podcasts: [],
       },
       subRelations: {
         youtubeChannels: [],
         creators: [],
         podcasts: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       visible: true,
       creatorId: 'ShFoVukMUs1HAf2YryPl',
-      type: 'Yogs'
+      type: 'Yogs',
     },
     links: {
       links: [
@@ -2533,14 +2533,14 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61593,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           color: 'ff1da1f2',
-          name: 'Twitter'
-        }
+          name: 'Twitter',
+        },
       ],
-      creatorId: 'ShFoVukMUs1HAf2YryPl'
-    }
+      creatorId: 'ShFoVukMUs1HAf2YryPl',
+    },
   },
   {
     links: {
@@ -2553,8 +2553,8 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           name: 'Instagram',
@@ -2562,9 +2562,9 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61805,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          color: 'ff405de6'
+          color: 'ff405de6',
         },
         {
           name: 'Discord',
@@ -2573,10 +2573,10 @@ const creators = [
           icon: {
             codePoint: 62354,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
-          }
-        }
-      ]
+            fontFamily: 'FontAwesomeBrands',
+          },
+        },
+      ],
     },
     creator: {
       name: 'Lolipopgi',
@@ -2586,7 +2586,7 @@ const creators = [
         creators: [],
         schedules: [],
         twitchChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: 'TGDsE9jQPa9WXOOgcmFm',
       relations: {
@@ -2594,9 +2594,9 @@ const creators = [
         schedules: [],
         creators: ['yAmEX9kxAZTdKzwQcIsy', '0w4JSboJK6RdTDmDKoYL', '8K6EIOpBvb6ROSHWHx9Q'],
         podcasts: [],
-        twitchChannels: ['32155062']
+        twitchChannels: ['32155062'],
       },
-      type: 'Yogs'
+      type: 'Yogs',
     },
     style: {
       creatorId: 'TGDsE9jQPa9WXOOgcmFm',
@@ -2618,23 +2618,23 @@ const creators = [
         'ff33aa84',
         'ff6cb38d',
         'ff7cb693',
-        'ff94b691'
+        'ff94b691',
       ],
       images: {
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/04de5d48-08eb-4469-85c2-3f2a94ff7635-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4d5016c5-f3c9-4bac-b5d0-3ce831098b97-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4d5016c5-f3c9-4bac-b5d0-3ce831098b97-profile_image-70x70.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/04de5d48-08eb-4469-85c2-3f2a94ff7635-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4d5016c5-f3c9-4bac-b5d0-3ce831098b97-profile_image-300x300.png'
-        }
-      }
-    }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4d5016c5-f3c9-4bac-b5d0-3ce831098b97-profile_image-300x300.png',
+        },
+      },
+    },
   },
   {
     links: {
@@ -2646,11 +2646,11 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          name: 'Twitter'
-        }
-      ]
+          name: 'Twitter',
+        },
+      ],
     },
     style: {
       accentColor: 'ff307828',
@@ -2660,14 +2660,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/32e623ba-5231-433a-95b8-77df8afea65a-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/fb74b6e9-5b5b-45d4-a2be-ab10abc3803e-channel_offline_image-1920x1080.jpeg'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/fb74b6e9-5b5b-45d4-a2be-ab10abc3803e-channel_offline_image-1920x1080.jpeg',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/fb74b6e9-5b5b-45d4-a2be-ab10abc3803e-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/32e623ba-5231-433a-95b8-77df8afea65a-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/32e623ba-5231-433a-95b8-77df8afea65a-profile_image-70x70.png',
+        },
       },
       creatorId: 'WvavBOeHzCXZPBzahkRX',
       appBarStyle: {},
@@ -2689,9 +2689,9 @@ const creators = [
         'ff526968',
         'ff6d6981',
         'ffd8d87d',
-        'fff7f37f'
+        'fff7f37f',
       ],
-      primaryColor: 'ff91043a'
+      primaryColor: 'ff91043a',
     },
     creator: {
       creatorId: 'WvavBOeHzCXZPBzahkRX',
@@ -2702,11 +2702,11 @@ const creators = [
           'f2tAtl8eBRTtKsqzQQoC',
           'uuZ2P6KPhmLVGc7ZjWXR',
           'AZGGyF9uschXdM8gGB1v',
-          'e0mWrK72feY69gH0HwAA'
+          'e0mWrK72feY69gH0HwAA',
         ],
         youtubeChannels: [],
         podcasts: [],
-        twitchChannels: ['64758947']
+        twitchChannels: ['64758947'],
       },
       visible: true,
       name: 'Breeh',
@@ -2715,9 +2715,9 @@ const creators = [
         twitchChannels: [],
         creators: [],
         podcasts: [],
-        youtubeChannels: []
-      }
-    }
+        youtubeChannels: [],
+      },
+    },
   },
   {
     creator: {
@@ -2726,19 +2726,19 @@ const creators = [
         youtubeChannels: [],
         creators: [],
         schedules: [],
-        podcasts: []
+        podcasts: [],
       },
       relations: {
         creators: ['ShFoVukMUs1HAf2YryPl', '6oSnPSBKF79EBwS1G5DF', 'o1gdP5407amAmS5vEXvP'],
         schedules: [],
         youtubeChannels: ['UCtqIhSzQEokE_oaQRsLRxQw'],
         twitchChannels: ['40639871'],
-        podcasts: []
+        podcasts: [],
       },
       type: 'Yogs',
       creatorId: 'Zf19FbodO1Alu5gfLykf',
       visible: true,
-      name: 'Joe'
+      name: 'Joe',
     },
     links: {
       creatorId: 'Zf19FbodO1Alu5gfLykf',
@@ -2748,12 +2748,12 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           color: 'ff1da1f2',
-          name: 'Twitter'
-        }
-      ]
+          name: 'Twitter',
+        },
+      ],
     },
     style: {
       appBarStyle: {},
@@ -2784,24 +2784,24 @@ const creators = [
         'ffad6a5d',
         'ff272628',
         'ff333945',
-        'ff715051'
+        'ff715051',
       ],
       images: {
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/796e821e-a673-4395-af36-cf687f7cbd94-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/fe57d4c8-1620-4b08-a987-a4c1c795ad8d-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/fe57d4c8-1620-4b08-a987-a4c1c795ad8d-profile_image-300x300.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/fe57d4c8-1620-4b08-a987-a4c1c795ad8d-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/796e821e-a673-4395-af36-cf687f7cbd94-channel_offline_image-1920x1080.jpeg'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/796e821e-a673-4395-af36-cf687f7cbd94-channel_offline_image-1920x1080.jpeg',
+        },
       },
-      accentColor: 'ff615f5f'
-    }
+      accentColor: 'ff615f5f',
+    },
   },
   {
     style: {
@@ -2811,14 +2811,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/9005fcb8-2b5a-4c86-a625-e865a816f5cd-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/14edaf43-656c-443c-8b60-1bea7c5a5e9b-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/14edaf43-656c-443c-8b60-1bea7c5a5e9b-channel_offline_image-1920x1080.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/9005fcb8-2b5a-4c86-a625-e865a816f5cd-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/14edaf43-656c-443c-8b60-1bea7c5a5e9b-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/14edaf43-656c-443c-8b60-1bea7c5a5e9b-channel_offline_image-1920x1080.png',
+        },
       },
       blendLevel: 0,
       colors: [
@@ -2846,11 +2846,11 @@ const creators = [
         'ffcbcbc8',
         'ff373636',
         'ff72716e',
-        'ff858484'
+        'ff858484',
       ],
       creatorId: 'c9raygCH9eGa09OLB12t',
       primaryColor: 'ff282828',
-      accentColor: 'ff9f1916'
+      accentColor: 'ff9f1916',
     },
     creator: {
       name: 'High Rollers',
@@ -2858,17 +2858,17 @@ const creators = [
         youtubeChannels: ['UC3qtZRMtWNaD2Q96STxgOrA'],
         creators: ['OxMCBocsLB1lXH5tQV6u', 'RuJTT0r57IGKXWtlHNVX'],
         twitchChannels: ['197603698'],
-        podcasts: ['3rGszcuV7ngpymcIxBrt']
+        podcasts: ['3rGszcuV7ngpymcIxBrt'],
       },
       visible: true,
       subRelations: {
         podcasts: [],
         twitchChannels: [],
         youtubeChannels: [],
-        creators: []
+        creators: [],
       },
       type: 'Yogs',
-      creatorId: 'c9raygCH9eGa09OLB12t'
+      creatorId: 'c9raygCH9eGa09OLB12t',
     },
     links: {
       creatorId: 'c9raygCH9eGa09OLB12t',
@@ -2878,13 +2878,13 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61593,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           name: 'Twitter',
-          color: 'ff1da1f2'
-        }
-      ]
-    }
+          color: 'ff1da1f2',
+        },
+      ],
+    },
   },
   {
     creator: {
@@ -2895,7 +2895,7 @@ const creators = [
         podcasts: [],
         twitchChannels: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       visible: true,
       relations: {
@@ -2912,12 +2912,12 @@ const creators = [
           'MYZPOwKsujCZbtPEJtBG',
           'Dvsw8FJa8v3LjEXSXr9e',
           'e0mWrK72feY69gH0HwAA',
-          'AcCWZMmDMrc7G9CnRchz'
+          'AcCWZMmDMrc7G9CnRchz',
         ],
         podcasts: [],
         youtubeChannels: ['UCQd82ZrlW8b8_MujwDO9ajw'],
-        twitchChannels: ['22168131']
-      }
+        twitchChannels: ['22168131'],
+      },
     },
     links: {
       links: [
@@ -2927,9 +2927,9 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          url: 'https://twitter.com/IAmRythian'
+          url: 'https://twitter.com/IAmRythian',
         },
         {
           name: 'Merch',
@@ -2938,11 +2938,11 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
-          }
-        }
+            fontPackage: 'font_awesome_flutter',
+          },
+        },
       ],
-      creatorId: 'deBUVdSqWrH6FwlXPe2m'
+      creatorId: 'deBUVdSqWrH6FwlXPe2m',
     },
     style: {
       images: {
@@ -2950,14 +2950,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/317490cd-924d-4c10-8dbb-ffa33b4dddf6-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/7e025bee-0e0c-47dc-bb6e-ca65e11c725a-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/7e025bee-0e0c-47dc-bb6e-ca65e11c725a-profile_image-70x70.png',
         },
         large: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/7e025bee-0e0c-47dc-bb6e-ca65e11c725a-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/317490cd-924d-4c10-8dbb-ffa33b4dddf6-channel_offline_image-1920x1080.jpeg'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/317490cd-924d-4c10-8dbb-ffa33b4dddf6-channel_offline_image-1920x1080.jpeg',
+        },
       },
       accentColor: 'ff300956',
       blendLevel: 0,
@@ -2983,10 +2983,10 @@ const creators = [
         'ff712ba7',
         'ffe5d3ec',
         'ff75419c',
-        'ff965ebf'
+        'ff965ebf',
       ],
-      primaryColor: 'ff6e22a7'
-    }
+      primaryColor: 'ff6e22a7',
+    },
   },
   {
     links: {
@@ -2995,31 +2995,31 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61593
+            codePoint: 61593,
           },
           name: 'Twitter',
           color: 'ff1da1f2',
-          url: 'https://twitter.com/MissMousieMouse'
+          url: 'https://twitter.com/MissMousieMouse',
         },
         {
           icon: {
             codePoint: 61805,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           color: 'ff405de6',
           name: 'Instagram',
-          url: 'http://instagram.com/_mousie_mouse'
+          url: 'http://instagram.com/_mousie_mouse',
         },
         {
           icon: {
             codePoint: 62354,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           url: 'https://discord.gg/mousie',
           color: 'ff7289da',
-          name: 'Discord'
+          name: 'Discord',
         },
         {
           color: 'ff1e95ef',
@@ -3027,12 +3027,12 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          name: 'Merch'
-        }
+          name: 'Merch',
+        },
       ],
-      creatorId: 'dvynb4nu7GmqelY4HW3f'
+      creatorId: 'dvynb4nu7GmqelY4HW3f',
     },
     creator: {
       type: 'Yogs',
@@ -3042,7 +3042,7 @@ const creators = [
         schedules: [],
         creators: [],
         youtubeChannels: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       visible: true,
       relations: {
@@ -3050,9 +3050,9 @@ const creators = [
         schedules: [],
         podcasts: [],
         twitchChannels: ['46969360'],
-        creators: ['5h6PnMWEghJSDaS5ZNbc', 'HkZh9sasvBrpZ4r22Sb3', 'sMGdgzZrZP8c68C0pFfU', 'zMMAq6kg87R8WsHUS3s0']
+        creators: ['5h6PnMWEghJSDaS5ZNbc', 'HkZh9sasvBrpZ4r22Sb3', 'sMGdgzZrZP8c68C0pFfU', 'zMMAq6kg87R8WsHUS3s0'],
       },
-      name: 'Mousie'
+      name: 'Mousie',
     },
     style: {
       creatorId: 'dvynb4nu7GmqelY4HW3f',
@@ -3081,7 +3081,7 @@ const creators = [
         'ffdeb6b8',
         'ffac7c78',
         'ff1b1b17',
-        'ff645d45'
+        'ff645d45',
       ],
       blendLevel: 0,
       accentColor: 'ff599d3d',
@@ -3091,16 +3091,16 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/2c3ead1b-d850-4d1d-a274-dcadbaabe17f-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/0fd78669-7b5e-405a-932e-44ec9f6a4c92-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/0fd78669-7b5e-405a-932e-44ec9f6a4c92-channel_offline_image-1920x1080.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/0fd78669-7b5e-405a-932e-44ec9f6a4c92-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/2c3ead1b-d850-4d1d-a274-dcadbaabe17f-profile_image-70x70.png'
-        }
-      }
-    }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/2c3ead1b-d850-4d1d-a274-dcadbaabe17f-profile_image-70x70.png',
+        },
+      },
+    },
   },
   {
     style: {
@@ -3110,13 +3110,13 @@ const creators = [
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/87479a87-dd4a-4600-bb5e-3c9675d13af3-channel_offline_image-1920x1080.jpeg',
-          profileUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/db623728431d29c3-profile_image-300x300.png'
+          profileUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/db623728431d29c3-profile_image-300x300.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/87479a87-dd4a-4600-bb5e-3c9675d13af3-channel_offline_image-1920x1080.jpeg',
-          profileUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/db623728431d29c3-profile_image-70x70.png'
-        }
+          profileUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/db623728431d29c3-profile_image-70x70.png',
+        },
       },
       creatorId: 'e0mWrK72feY69gH0HwAA',
       colors: [
@@ -3148,10 +3148,10 @@ const creators = [
         'ff302424',
         'ff184d7d',
         'ffd1c9bb',
-        'ffbb993b'
+        'ffbb993b',
       ],
       accentColor: 'fff67932',
-      primaryColor: 'ff008cf2'
+      primaryColor: 'ff008cf2',
     },
     links: {
       creatorId: 'e0mWrK72feY69gH0HwAA',
@@ -3160,41 +3160,41 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           name: 'Twitter',
           url: 'https://twitter.com/yogscast',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           name: 'Tiktok',
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 57467,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           color: 'ff69c9d0',
-          url: 'https://www.tiktok.com/@yogscastofficial?'
+          url: 'https://www.tiktok.com/@yogscastofficial?',
         },
         {
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61805,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           color: 'ff405de6',
           name: 'Instagram',
-          url: 'https://www.instagram.com/officialyogscast/'
+          url: 'https://www.instagram.com/officialyogscast/',
         },
         {
           color: 'ffff4500',
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61857,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           url: 'https://www.reddit.com/r/Yogscast/',
-          name: 'Reddit'
+          name: 'Reddit',
         },
         {
           color: 'ff1e95ef',
@@ -3203,8 +3203,8 @@ const creators = [
           icon: {
             codePoint: 60884,
             fontPackage: null,
-            fontFamily: 'MaterialIcons'
-          }
+            fontFamily: 'MaterialIcons',
+          },
         },
         {
           url: 'https://store.yogscast.com/',
@@ -3212,11 +3212,11 @@ const creators = [
           icon: {
             codePoint: 62096,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeSolid'
+            fontFamily: 'FontAwesomeSolid',
           },
-          name: 'Merch'
-        }
-      ]
+          name: 'Merch',
+        },
+      ],
     },
     creator: {
       visible: true,
@@ -3225,7 +3225,7 @@ const creators = [
         schedules: [],
         youtubeChannels: [],
         creators: [],
-        podcasts: []
+        podcasts: [],
       },
       type: 'Yogs',
       creatorId: 'e0mWrK72feY69gH0HwAA',
@@ -3246,19 +3246,19 @@ const creators = [
           'deBUVdSqWrH6FwlXPe2m',
           'f2tAtl8eBRTtKsqzQQoC',
           'QLpFsapfyzIU4TYdVmjM',
-          'HkZh9sasvBrpZ4r22Sb3'
+          'HkZh9sasvBrpZ4r22Sb3',
         ],
         youtubeChannels: [
           'UCH-_hzb2ILSCo9ftVSnrCIQ',
           'UCQBs359lwzyVFtc22LzLjuw',
           'UCNBwxPqzdZeLGv8SPoosjNg',
           'UClhmd2Xe3zrYfuarqV-shKA',
-          'UCEXTAoHBfQpGC-iuEReSRPQ'
+          'UCEXTAoHBfQpGC-iuEReSRPQ',
         ],
         podcasts: [],
-        schedules: []
-      }
-    }
+        schedules: [],
+      },
+    },
   },
   {
     links: {
@@ -3269,32 +3269,32 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          name: 'Twitter'
+          name: 'Twitter',
         },
         {
           color: 'ff405de6',
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61805
+            codePoint: 61805,
           },
           url: 'https://www.instagram.com/squidgame/',
-          name: 'Instagram'
+          name: 'Instagram',
         },
         {
           color: 'ff7289da',
           icon: {
             codePoint: 62354,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Discord',
-          url: 'https://discord.com/invite/SquidGaming'
-        }
+          url: 'https://discord.com/invite/SquidGaming',
+        },
       ],
-      creatorId: 'eE4FNKcFiBhoc3jFb9Fo'
+      creatorId: 'eE4FNKcFiBhoc3jFb9Fo',
     },
     style: {
       accentColor: 'ff5c3e99',
@@ -3303,14 +3303,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/0bfd22c6-e7fe-4ba0-bcfc-cc2029e6451e-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4ea0cc44-4361-442f-93b6-12e8990da871-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4ea0cc44-4361-442f-93b6-12e8990da871-profile_image-300x300.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/0bfd22c6-e7fe-4ba0-bcfc-cc2029e6451e-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4ea0cc44-4361-442f-93b6-12e8990da871-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4ea0cc44-4361-442f-93b6-12e8990da871-profile_image-70x70.png',
+        },
       },
       blendLevel: 0,
       creatorId: 'eE4FNKcFiBhoc3jFb9Fo',
@@ -3329,10 +3329,10 @@ const creators = [
         'ff7d7b80',
         'ff5c3e99',
         'ff6f6b77',
-        'ff947cc1'
+        'ff947cc1',
       ],
       appBarStyle: {},
-      primaryColor: 'ff262626'
+      primaryColor: 'ff262626',
     },
     creator: {
       relations: {
@@ -3350,20 +3350,20 @@ const creators = [
           'yAmEX9kxAZTdKzwQcIsy',
           'zMMAq6kg87R8WsHUS3s0',
           'xd6wmw8tYeDhb7tqRBo6',
-          'Hn8e1EgqFKg2RbJglY2x'
-        ]
+          'Hn8e1EgqFKg2RbJglY2x',
+        ],
       },
       subRelations: {
         twitchChannels: [],
         podcasts: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       type: 'Yogs',
       name: 'Lydia',
       creatorId: 'eE4FNKcFiBhoc3jFb9Fo',
-      visible: true
-    }
+      visible: true,
+    },
   },
   {
     links: {
@@ -3375,8 +3375,8 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           color: 'ff69c9d0',
@@ -3385,8 +3385,8 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 57467
-          }
+            codePoint: 57467,
+          },
         },
         {
           url: 'https://discord.com/invite/tPffguJfxK',
@@ -3395,11 +3395,11 @@ const creators = [
           icon: {
             codePoint: 62354,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
-          }
-        }
+            fontFamily: 'FontAwesomeBrands',
+          },
+        },
       ],
-      creatorId: 'f2tAtl8eBRTtKsqzQQoC'
+      creatorId: 'f2tAtl8eBRTtKsqzQQoC',
     },
     creator: {
       subRelations: {
@@ -3407,7 +3407,7 @@ const creators = [
         twitchChannels: [],
         youtubeChannels: [],
         podcasts: [],
-        schedules: []
+        schedules: [],
       },
       type: 'Yogs',
       relations: {
@@ -3424,12 +3424,12 @@ const creators = [
           'WvavBOeHzCXZPBzahkRX',
           'sMGdgzZrZP8c68C0pFfU',
           '6YWocd4YeDNP9ROpUGrk',
-          'e0mWrK72feY69gH0HwAA'
-        ]
+          'e0mWrK72feY69gH0HwAA',
+        ],
       },
       name: 'Shadowatnoon',
       creatorId: 'f2tAtl8eBRTtKsqzQQoC',
-      visible: true
+      visible: true,
     },
     style: {
       accentColor: 'ffa792f7',
@@ -3439,14 +3439,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/b9d817a9-03a8-4643-a2d4-578330f174f7-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/60daf22e-15e9-47ee-a3c5-f406b9907008-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/60daf22e-15e9-47ee-a3c5-f406b9907008-profile_image-70x70.png',
         },
         large: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/60daf22e-15e9-47ee-a3c5-f406b9907008-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/b9d817a9-03a8-4643-a2d4-578330f174f7-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/b9d817a9-03a8-4643-a2d4-578330f174f7-channel_offline_image-1920x1080.png',
+        },
       },
       primaryColor: 'fff091b3',
       creatorId: 'f2tAtl8eBRTtKsqzQQoC',
@@ -3479,21 +3479,21 @@ const creators = [
         'ff3cd1b1',
         'ffd0c0c9',
         'ff004341',
-        'ff366554'
-      ]
-    }
+        'ff366554',
+      ],
+    },
   },
   {
     style: {
       images: {
         small: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s88-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s88-c-k-c0xffffffff-no-rj-mo',
         },
         large: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s800-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLQImneOnL5Xx41CuT2QtgGWHk7hlOBTFSP9T-ic=s800-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       creatorId: 'kmVGNmGPDoQW8OWMLkmW',
       primaryColor: 'ffe11559',
@@ -3507,7 +3507,7 @@ const creators = [
         'ffe95351',
         'fff7dde1',
         'ffea6675',
-        'ffef8e93'
+        'ffef8e93',
       ],
       blendLevel: 0,
       accentColor: 'ffe84835',
@@ -3516,14 +3516,14 @@ const creators = [
           colors: ['ffe84835', 'ffe11559'],
           begin: {
             y: 0,
-            x: -1
+            x: -1,
           },
           end: {
             x: 1,
-            y: 0
-          }
-        }
-      }
+            y: 0,
+          },
+        },
+      },
     },
     links: {
       creatorId: 'kmVGNmGPDoQW8OWMLkmW',
@@ -3535,27 +3535,27 @@ const creators = [
           icon: {
             fontPackage: null,
             fontFamily: 'MaterialIcons',
-            codePoint: 60884
-          }
+            codePoint: 60884,
+          },
         },
         {
           color: 'ff405de6',
           icon: {
             codePoint: 61805,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           url: 'https://www.instagram.com/yogscastgames/',
-          name: 'Instagram'
-        }
-      ]
+          name: 'Instagram',
+        },
+      ],
     },
     creator: {
       relations: {
         youtubeChannels: ['UCEXTAoHBfQpGC-iuEReSRPQ'],
         podcasts: ['kZVpteHZ80TK0BfuvZgO'],
         twitchChannels: [],
-        creators: []
+        creators: [],
       },
       visible: true,
       type: 'Yogs',
@@ -3565,9 +3565,9 @@ const creators = [
         youtubeChannels: [],
         twitchChannels: [],
         podcasts: [],
-        creators: []
-      }
-    }
+        creators: [],
+      },
+    },
   },
   {
     style: {
@@ -3609,26 +3609,26 @@ const creators = [
         'ff0dc38a',
         'ff50c5a2',
         'ff7d6a70',
-        'ffc56b86'
+        'ffc56b86',
       ],
       images: {
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/9be5d2c5-1ecf-48aa-a57f-b3feb4529bb1-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/043c719f-542c-4504-bb7c-93d05feb4391-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/043c719f-542c-4504-bb7c-93d05feb4391-profile_image-300x300.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/043c719f-542c-4504-bb7c-93d05feb4391-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/9be5d2c5-1ecf-48aa-a57f-b3feb4529bb1-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/9be5d2c5-1ecf-48aa-a57f-b3feb4529bb1-channel_offline_image-1920x1080.png',
+        },
       },
       creatorId: 'o1gdP5407amAmS5vEXvP',
       appBarStyle: {},
       accentColor: 'fff18237',
-      blendLevel: 0
+      blendLevel: 0,
     },
     creator: {
       subRelations: {
@@ -3636,7 +3636,7 @@ const creators = [
         schedules: [],
         creators: [],
         youtubeChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: 'o1gdP5407amAmS5vEXvP',
       type: 'Yogs',
@@ -3647,14 +3647,14 @@ const creators = [
           '4ty8OfAA0hoXSV6trUY9',
           'ShFoVukMUs1HAf2YryPl',
           'Zf19FbodO1Alu5gfLykf',
-          'EoUzF0nQQGdpY9NlZfeU'
+          'EoUzF0nQQGdpY9NlZfeU',
         ],
         youtubeChannels: ['UCaGWSIZnljlgNTSMzYnxTEg', 'UCZ3edpZNi_qmuBG2FIHW5tQ'],
         twitchChannels: ['19309473'],
-        schedules: []
+        schedules: [],
       },
       name: 'Pyrion',
-      visible: true
+      visible: true,
     },
     links: {
       links: [
@@ -3662,11 +3662,11 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Twitter',
           color: 'ff1da1f2',
-          url: 'https://twitter.com/PyrionFlax'
+          url: 'https://twitter.com/PyrionFlax',
         },
         {
           color: 'ff69c9d0',
@@ -3674,13 +3674,13 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 57467
+            codePoint: 57467,
           },
-          name: 'Tiktok'
-        }
+          name: 'Tiktok',
+        },
       ],
-      creatorId: 'o1gdP5407amAmS5vEXvP'
-    }
+      creatorId: 'o1gdP5407amAmS5vEXvP',
+    },
   },
   {
     links: {
@@ -3693,8 +3693,8 @@ const creators = [
           icon: {
             codePoint: 61593,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           name: 'Merch',
@@ -3703,10 +3703,10 @@ const creators = [
           icon: {
             codePoint: 62096,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeSolid'
-          }
-        }
-      ]
+            fontFamily: 'FontAwesomeSolid',
+          },
+        },
+      ],
     },
     creator: {
       relations: {
@@ -3716,11 +3716,11 @@ const creators = [
           'Gz3S1VJlA6iPISXuIl7p',
           'deBUVdSqWrH6FwlXPe2m',
           'dvynb4nu7GmqelY4HW3f',
-          'f2tAtl8eBRTtKsqzQQoC'
+          'f2tAtl8eBRTtKsqzQQoC',
         ],
         youtubeChannels: [],
         twitchChannels: ['44135610'],
-        podcasts: []
+        podcasts: [],
       },
       creatorId: 'sMGdgzZrZP8c68C0pFfU',
       visible: true,
@@ -3730,8 +3730,8 @@ const creators = [
         twitchChannels: [],
         podcasts: [],
         creators: [],
-        youtubeChannels: []
-      }
+        youtubeChannels: [],
+      },
     },
     style: {
       images: {
@@ -3739,14 +3739,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/42097432-8e99-44fd-82fb-5627d66fc043-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/cedf53f6-c00d-4cbf-9d42-b23cb9b6135c-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/cedf53f6-c00d-4cbf-9d42-b23cb9b6135c-profile_image-300x300.png',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/42097432-8e99-44fd-82fb-5627d66fc043-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/cedf53f6-c00d-4cbf-9d42-b23cb9b6135c-profile_image-70x70.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/cedf53f6-c00d-4cbf-9d42-b23cb9b6135c-profile_image-70x70.png',
+        },
       },
       colors: [
         'ffe0dbe8',
@@ -3767,14 +3767,14 @@ const creators = [
         'fff0d830',
         'ff514c38',
         'ffa68c19',
-        'ffe0dddd'
+        'ffe0dddd',
       ],
       blendLevel: 0,
       accentColor: 'ffaba3e2',
       creatorId: 'sMGdgzZrZP8c68C0pFfU',
       appBarStyle: {},
-      primaryColor: 'ff328094'
-    }
+      primaryColor: 'ff328094',
+    },
   },
   {
     style: {
@@ -3782,12 +3782,12 @@ const creators = [
       images: {
         large: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLQicqS1pyj53mSWsf8XLaKLaiqvrHjbbNSgklu1=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       creatorId: 't811tuTpZHK0Uzh6LqD9',
       primaryColor: 'ffa00002',
@@ -3823,8 +3823,8 @@ const creators = [
         'ffcec5c5',
         'ff970617',
         'ff4c4545',
-        'ff984e57'
-      ]
+        'ff984e57',
+      ],
     },
     links: {
       creatorId: 't811tuTpZHK0Uzh6LqD9',
@@ -3834,12 +3834,12 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             codePoint: 61593,
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
           url: 'https://twitter.com/bokoen1',
-          name: 'Twitter'
-        }
-      ]
+          name: 'Twitter',
+        },
+      ],
     },
     creator: {
       name: 'Bo',
@@ -3850,15 +3850,15 @@ const creators = [
         youtubeChannels: ['UCnQC_XGCCI__qrxwgZS27-A'],
         podcasts: [],
         twitchChannels: ['52172280'],
-        creators: ['v1aFWA8DXs58iyW2ZFA6', '0mlX8km0PvBiY2nF1Vo3', '3fNrixu9cDhggDXyLTwG']
+        creators: ['v1aFWA8DXs58iyW2ZFA6', '0mlX8km0PvBiY2nF1Vo3', '3fNrixu9cDhggDXyLTwG'],
       },
       subRelations: {
         twitchChannels: [],
         podcasts: [],
         creators: [],
-        youtubeChannels: []
-      }
-    }
+        youtubeChannels: [],
+      },
+    },
   },
   {
     style: {
@@ -3884,7 +3884,7 @@ const creators = [
         'ff787878',
         'ff808080',
         'ff8f8f8f',
-        'ffdddddd'
+        'ffdddddd',
       ],
       primaryColor: 'ff5d10f8',
       accentColor: 'ffb2636f',
@@ -3894,15 +3894,15 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/a827d102-9ce8-4ef5-9cec-759a97e0161a-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/1409418e-594a-4596-ab8e-413092bfd3fe-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/1409418e-594a-4596-ab8e-413092bfd3fe-channel_offline_image-1920x1080.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/1409418e-594a-4596-ab8e-413092bfd3fe-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/a827d102-9ce8-4ef5-9cec-759a97e0161a-profile_image-300x300.png'
-        }
-      }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/a827d102-9ce8-4ef5-9cec-759a97e0161a-profile_image-300x300.png',
+        },
+      },
     },
     links: {
       links: [
@@ -3912,9 +3912,9 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          url: 'https://twitter.com/MiniMukaYT'
+          url: 'https://twitter.com/MiniMukaYT',
         },
         {
           color: 'ff405de6',
@@ -3923,11 +3923,11 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61805,
-            fontPackage: 'font_awesome_flutter'
-          }
-        }
+            fontPackage: 'font_awesome_flutter',
+          },
+        },
       ],
-      creatorId: 'tmtlRvxSmccEmZlHc4nH'
+      creatorId: 'tmtlRvxSmccEmZlHc4nH',
     },
     creator: {
       creatorId: 'tmtlRvxSmccEmZlHc4nH',
@@ -3937,7 +3937,7 @@ const creators = [
         twitchChannels: ['62904151'],
         youtubeChannels: ['UCD99PNa9ZTw7jK35vs80HFw'],
         schedules: [],
-        podcasts: []
+        podcasts: [],
       },
       visible: true,
       type: 'Yogs',
@@ -3946,9 +3946,9 @@ const creators = [
         schedules: [],
         youtubeChannels: [],
         podcasts: [],
-        creators: []
-      }
-    }
+        creators: [],
+      },
+    },
   },
   {
     style: {
@@ -3958,13 +3958,14 @@ const creators = [
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/4d7ac09e-2e8b-4bc7-ba37-526d76cb4769-channel_offline_image-1920x1080.png',
-          profileUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/nilesy-profile_image-9c8a8e943fcbf317-300x300.png'
+          profileUrl:
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/nilesy-profile_image-9c8a8e943fcbf317-300x300.png',
         },
         small: {
           profileUrl: 'https://static-cdn.jtvnw.net/jtv_user_pictures/nilesy-profile_image-9c8a8e943fcbf317-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/4d7ac09e-2e8b-4bc7-ba37-526d76cb4769-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/4d7ac09e-2e8b-4bc7-ba37-526d76cb4769-channel_offline_image-1920x1080.png',
+        },
       },
       colors: [
         'ff171e2e',
@@ -3983,11 +3984,11 @@ const creators = [
         'fff7802a',
         'ffa8a8a8',
         'ffa853a6',
-        'ffaf73b2'
+        'ffaf73b2',
       ],
       primaryColor: 'ff264061',
       creatorId: 'uuZ2P6KPhmLVGc7ZjWXR',
-      accentColor: 'ffa853a6'
+      accentColor: 'ffa853a6',
     },
     links: {
       links: [
@@ -3996,20 +3997,20 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Twitter',
-          url: 'https://twitter.com/twirlyswirly'
-        }
+          url: 'https://twitter.com/twirlyswirly',
+        },
       ],
-      creatorId: 'uuZ2P6KPhmLVGc7ZjWXR'
+      creatorId: 'uuZ2P6KPhmLVGc7ZjWXR',
     },
     creator: {
       subRelations: {
         podcasts: [],
         twitchChannels: [],
         youtubeChannels: [],
-        creators: []
+        creators: [],
       },
       creatorId: 'uuZ2P6KPhmLVGc7ZjWXR',
       relations: {
@@ -4019,15 +4020,15 @@ const creators = [
           'vz0XWPLfxV9gFyChCgMO',
           'deBUVdSqWrH6FwlXPe2m',
           '5h6PnMWEghJSDaS5ZNbc',
-          'zwBpk82qRo4y2Sf5Nvlf'
+          'zwBpk82qRo4y2Sf5Nvlf',
         ],
         youtubeChannels: [],
-        podcasts: []
+        podcasts: [],
       },
       visible: true,
       type: 'Yogs',
-      name: 'Nilesy'
-    }
+      name: 'Nilesy',
+    },
   },
   {
     links: {
@@ -4038,12 +4039,12 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61593
+            codePoint: 61593,
           },
           url: 'https://twitter.com/ISPuuuv',
-          color: 'ff1da1f2'
-        }
-      ]
+          color: 'ff1da1f2',
+        },
+      ],
     },
     style: {
       accentColor: 'ffdcac19',
@@ -4075,28 +4076,28 @@ const creators = [
         'ff392223',
         'ff897c7d',
         'ffeb7ebe',
-        'fff0a8f8'
+        'fff0a8f8',
       ],
       creatorId: 'v1aFWA8DXs58iyW2ZFA6',
       images: {
         large: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLSmwcPo79cjnuVVOtzGdyEkYWZp4ZOnQvpV01jkzQ=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       primaryColor: 'ffc50000',
-      appBarStyle: {}
+      appBarStyle: {},
     },
     creator: {
       subRelations: {
         podcasts: [],
         youtubeChannels: [],
         twitchChannels: [],
-        creators: []
+        creators: [],
       },
       type: 'Yogs',
       creatorId: 'v1aFWA8DXs58iyW2ZFA6',
@@ -4105,10 +4106,10 @@ const creators = [
         twitchChannels: ['91990032'],
         podcasts: [],
         youtubeChannels: ['UCmKdqsvmV6e7Pwy7N2PMnnA', 'UCKEHKGXN9i0djB3tGHbfCZg'],
-        creators: ['t811tuTpZHK0Uzh6LqD9', '3fNrixu9cDhggDXyLTwG']
+        creators: ['t811tuTpZHK0Uzh6LqD9', '3fNrixu9cDhggDXyLTwG'],
       },
-      name: 'ISP'
-    }
+      name: 'ISP',
+    },
   },
   {
     links: {
@@ -4119,9 +4120,9 @@ const creators = [
           icon: {
             codePoint: 57467,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          name: 'Tiktok'
+          name: 'Tiktok',
         },
         {
           color: 'ff1da1f2',
@@ -4130,8 +4131,8 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61593
-          }
+            codePoint: 61593,
+          },
         },
         {
           url: 'https://www.instagram.com/ravsy1/',
@@ -4139,29 +4140,29 @@ const creators = [
           icon: {
             codePoint: 61805,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeBrands'
+            fontFamily: 'FontAwesomeBrands',
           },
-          name: 'Instagram'
+          name: 'Instagram',
         },
         {
           color: 'ff1e95ef',
           icon: {
             fontFamily: 'FontAwesomeSolid',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62096
+            codePoint: 62096,
           },
           name: 'Merch',
-          url: 'https://store.yogscast.com/collections/ravs'
-        }
+          url: 'https://store.yogscast.com/collections/ravs',
+        },
       ],
-      creatorId: 'vz0XWPLfxV9gFyChCgMO'
+      creatorId: 'vz0XWPLfxV9gFyChCgMO',
     },
     creator: {
       subRelations: {
         twitchChannels: [],
         podcasts: [],
         youtubeChannels: [],
-        creators: []
+        creators: [],
       },
       relations: {
         podcasts: ['16adV0PdksqhMRH6xCPy'],
@@ -4182,13 +4183,13 @@ const creators = [
           'AZGGyF9uschXdM8gGB1v',
           'zwBpk82qRo4y2Sf5Nvlf',
           'RuJTT0r57IGKXWtlHNVX',
-          'e0mWrK72feY69gH0HwAA'
-        ]
+          'e0mWrK72feY69gH0HwAA',
+        ],
       },
       visible: true,
       creatorId: 'vz0XWPLfxV9gFyChCgMO',
       name: 'Ravs',
-      type: 'Yogs'
+      type: 'Yogs',
     },
     style: {
       creatorId: 'vz0XWPLfxV9gFyChCgMO',
@@ -4215,24 +4216,24 @@ const creators = [
         'ffa8afae',
         'ffe0e1da',
         'ffe8e015',
-        'ffe0db3f'
+        'ffe0db3f',
       ],
       images: {
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/7ae0a54a-3e10-4844-9790-d2d6b9f318e4-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/25ac5f35-34ce-451a-a688-fe0fc9e630eb-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/25ac5f35-34ce-451a-a688-fe0fc9e630eb-profile_image-70x70.png',
         },
         large: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/25ac5f35-34ce-451a-a688-fe0fc9e630eb-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/7ae0a54a-3e10-4844-9790-d2d6b9f318e4-channel_offline_image-1920x1080.jpeg'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/7ae0a54a-3e10-4844-9790-d2d6b9f318e4-channel_offline_image-1920x1080.jpeg',
+        },
       },
-      primaryColor: 'ffefe700'
-    }
+      primaryColor: 'ffefe700',
+    },
   },
   {
     creator: {
@@ -4240,18 +4241,18 @@ const creators = [
         creators: [],
         podcasts: [],
         youtubeChannels: [],
-        twitchChannels: []
+        twitchChannels: [],
       },
       name: 'TripleJump',
       relations: {
         twitchChannels: ['414774667'],
         creators: ['G2xAxM8JBwtNIojLq1cE', 'eE4FNKcFiBhoc3jFb9Fo'],
         podcasts: [],
-        youtubeChannels: ['UCY5xhpH29hcQudilieKD63Q', 'UCCvbdpJKOOxpR9uM-Zie76w']
+        youtubeChannels: ['UCY5xhpH29hcQudilieKD63Q', 'UCCvbdpJKOOxpR9uM-Zie76w'],
       },
       visible: true,
       creatorId: 'xd6wmw8tYeDhb7tqRBo6',
-      type: 'Yogs'
+      type: 'Yogs',
     },
     links: {
       links: [
@@ -4262,8 +4263,8 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
-          }
+            codePoint: 61593,
+          },
         },
         {
           name: 'Playlist',
@@ -4272,21 +4273,21 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61884
-          }
+            codePoint: 61884,
+          },
         },
         {
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62425
+            codePoint: 62425,
           },
           color: 'fff96854',
           url: 'https://www.patreon.com/TeamTripleJump',
-          name: 'Patreon'
-        }
+          name: 'Patreon',
+        },
       ],
-      creatorId: 'xd6wmw8tYeDhb7tqRBo6'
+      creatorId: 'xd6wmw8tYeDhb7tqRBo6',
     },
     style: {
       appBarStyle: {},
@@ -4295,14 +4296,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/0143dc68-ad93-46e4-82ad-fe5f37591829-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s800-c-k-c0xffffffff-no-rj-mo'
+            'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s800-c-k-c0xffffffff-no-rj-mo',
         },
         small: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/0143dc68-ad93-46e4-82ad-fe5f37591829-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s88-c-k-c0xffffffff-no-rj-mo'
-        }
+            'https://yt3.ggpht.com/ytc/AKedOLRpze5UP5wBTnb-b3cUfnUiEH8i08S0JNoCWzRC=s88-c-k-c0xffffffff-no-rj-mo',
+        },
       },
       blendLevel: 0,
       accentColor: 'ffe77603',
@@ -4337,11 +4338,11 @@ const creators = [
         'ff142334',
         'ffe86801',
         'ff2b3039',
-        'ffbd3e26'
+        'ffbd3e26',
       ],
       creatorId: 'xd6wmw8tYeDhb7tqRBo6',
-      primaryColor: 'fff85905'
-    }
+      primaryColor: 'fff85905',
+    },
   },
   {
     creator: {
@@ -4352,7 +4353,7 @@ const creators = [
         podcasts: [],
         creators: [],
         schedules: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       visible: true,
       name: 'Boba',
@@ -4372,12 +4373,12 @@ const creators = [
           '5h6PnMWEghJSDaS5ZNbc',
           'zMMAq6kg87R8WsHUS3s0',
           'e0mWrK72feY69gH0HwAA',
-          'TGDsE9jQPa9WXOOgcmFm'
+          'TGDsE9jQPa9WXOOgcmFm',
         ],
         podcasts: ['5Fq82gWp7mrLdkxDaHT7'],
         youtubeChannels: ['UCoMU9fM7ebtMlsS-ZbxSNoA'],
-        schedules: []
-      }
+        schedules: [],
+      },
     },
     links: {
       creatorId: 'yAmEX9kxAZTdKzwQcIsy',
@@ -4387,10 +4388,10 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Twitter',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           name: 'Tiktok',
@@ -4398,9 +4399,9 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 57467,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          color: 'ff69c9d0'
+          color: 'ff69c9d0',
         },
         {
           url: 'https://www.instagram.com/boba.wtch/',
@@ -4409,8 +4410,8 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61805
-          }
+            codePoint: 61805,
+          },
         },
         {
           name: 'Discord',
@@ -4419,20 +4420,20 @@ const creators = [
           icon: {
             codePoint: 62354,
             fontFamily: 'FontAwesomeBrands',
-            fontPackage: 'font_awesome_flutter'
-          }
+            fontPackage: 'font_awesome_flutter',
+          },
         },
         {
           icon: {
             fontFamily: 'FontAwesomeSolid',
             codePoint: 62096,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Merch',
           color: 'ff1e95ef',
-          url: 'https://my-store-7720046.creator-spring.com/'
-        }
-      ]
+          url: 'https://my-store-7720046.creator-spring.com/',
+        },
+      ],
     },
     style: {
       creatorId: 'yAmEX9kxAZTdKzwQcIsy',
@@ -4467,7 +4468,7 @@ const creators = [
         'ff924941',
         'ffa16963',
         'ff86392d',
-        'ff8d463c'
+        'ff8d463c',
       ],
       appBarStyle: {},
       images: {
@@ -4475,16 +4476,16 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/95e4da72-2b90-461f-aeeb-cb31f93082c6-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/6836a635-5031-4029-88fa-ef0796b5fb40-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/6836a635-5031-4029-88fa-ef0796b5fb40-channel_offline_image-1920x1080.png',
         },
         large: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/95e4da72-2b90-461f-aeeb-cb31f93082c6-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/6836a635-5031-4029-88fa-ef0796b5fb40-channel_offline_image-1920x1080.png'
-        }
-      }
-    }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/6836a635-5031-4029-88fa-ef0796b5fb40-channel_offline_image-1920x1080.png',
+        },
+      },
+    },
   },
   {
     creator: {
@@ -4493,7 +4494,7 @@ const creators = [
         podcasts: [],
         schedules: [],
         creators: [],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       visible: true,
       creatorId: 'zFdYfSFj4efXLheSHG5Z',
@@ -4504,8 +4505,8 @@ const creators = [
         schedules: [],
         twitchChannels: ['87245015'],
         creators: ['HkZh9sasvBrpZ4r22Sb3', 'QLpFsapfyzIU4TYdVmjM', 'sMGdgzZrZP8c68C0pFfU', 'MsNyFTyL0zikJ4zKOZm2'],
-        podcasts: []
-      }
+        podcasts: [],
+      },
     },
     links: {
       links: [
@@ -4514,40 +4515,40 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           name: 'Twitter',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           url: 'https://www.tiktok.com/@geestargames',
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 57467,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           color: 'ff69c9d0',
-          name: 'Tiktok'
+          name: 'Tiktok',
         },
         {
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61805,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
           url: 'https://www.instagram.com/geestargames/',
           color: 'ff405de6',
-          name: 'Instagram'
+          name: 'Instagram',
         },
         {
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 62354
+            codePoint: 62354,
           },
           color: 'ff7289da',
           url: 'https://discord.com/invite/geestargames',
-          name: 'Discord'
+          name: 'Discord',
         },
         {
           name: 'Patreon',
@@ -4555,9 +4556,9 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 62425
+            codePoint: 62425,
           },
-          color: 'fff96854'
+          color: 'fff96854',
         },
         {
           name: 'Merch',
@@ -4565,12 +4566,12 @@ const creators = [
           icon: {
             codePoint: 62096,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeSolid'
+            fontFamily: 'FontAwesomeSolid',
           },
-          url: 'https://store.yogscast.com/collections/geestar'
-        }
+          url: 'https://store.yogscast.com/collections/geestar',
+        },
       ],
-      creatorId: 'zFdYfSFj4efXLheSHG5Z'
+      creatorId: 'zFdYfSFj4efXLheSHG5Z',
     },
     style: {
       blendLevel: 0,
@@ -4600,7 +4601,7 @@ const creators = [
         'ffb4b3af',
         'ff292b27',
         'ff3b3933',
-        'ff817472'
+        'ff817472',
       ],
       primaryColor: 'ffc858c6',
       images: {
@@ -4608,16 +4609,16 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/1677773e-71e5-4eeb-80db-b8345326223c-channel_offline_image-1920x1080.jpeg',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/d0c66997-ed03-491a-80e7-52b97a60a474-profile_image-300x300.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/d0c66997-ed03-491a-80e7-52b97a60a474-profile_image-300x300.png',
         },
         small: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/d0c66997-ed03-491a-80e7-52b97a60a474-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/1677773e-71e5-4eeb-80db-b8345326223c-channel_offline_image-1920x1080.jpeg'
-        }
-      }
-    }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/1677773e-71e5-4eeb-80db-b8345326223c-channel_offline_image-1920x1080.jpeg',
+        },
+      },
+    },
   },
   {
     links: {
@@ -4628,12 +4629,12 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             codePoint: 61593,
-            fontPackage: 'font_awesome_flutter'
+            fontPackage: 'font_awesome_flutter',
           },
-          color: 'ff1da1f2'
-        }
+          color: 'ff1da1f2',
+        },
       ],
-      creatorId: 'zMMAq6kg87R8WsHUS3s0'
+      creatorId: 'zMMAq6kg87R8WsHUS3s0',
     },
     creator: {
       name: 'Mango',
@@ -4647,9 +4648,9 @@ const creators = [
           'eE4FNKcFiBhoc3jFb9Fo',
           'dvynb4nu7GmqelY4HW3f',
           'MYZPOwKsujCZbtPEJtBG',
-          '6oSnPSBKF79EBwS1G5DF'
+          '6oSnPSBKF79EBwS1G5DF',
         ],
-        youtubeChannels: []
+        youtubeChannels: [],
       },
       visible: true,
       creatorId: 'zMMAq6kg87R8WsHUS3s0',
@@ -4658,8 +4659,8 @@ const creators = [
         twitchChannels: [],
         youtubeChannels: [],
         podcasts: [],
-        creators: []
-      }
+        creators: [],
+      },
     },
     style: {
       images: {
@@ -4667,14 +4668,14 @@ const creators = [
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/5c5e0ecd-418b-401a-ab80-4131f6622a43-profile_image-70x70.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/08a91cf1-51f4-4203-a985-1b51104b98c2-channel_offline_image-1920x1080.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/08a91cf1-51f4-4203-a985-1b51104b98c2-channel_offline_image-1920x1080.png',
         },
         large: {
           profileUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/5c5e0ecd-418b-401a-ab80-4131f6622a43-profile_image-300x300.png',
           bannerUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/08a91cf1-51f4-4203-a985-1b51104b98c2-channel_offline_image-1920x1080.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/08a91cf1-51f4-4203-a985-1b51104b98c2-channel_offline_image-1920x1080.png',
+        },
       },
       primaryColor: 'ffeb6197',
       appBarStyle: {},
@@ -4701,9 +4702,9 @@ const creators = [
         'ff4e4e4e',
         'ff4f5654',
         'ff44736e',
-        'ff47a69a'
-      ]
-    }
+        'ff47a69a',
+      ],
+    },
   },
   {
     creator: {
@@ -4716,7 +4717,7 @@ const creators = [
         youtubeChannels: [],
         twitchChannels: [],
         creators: [],
-        schedules: []
+        schedules: [],
       },
       relations: {
         podcasts: ['amy9POTYCcaHnuU4ZuNJ'],
@@ -4725,12 +4726,12 @@ const creators = [
           'eE4FNKcFiBhoc3jFb9Fo',
           'uuZ2P6KPhmLVGc7ZjWXR',
           'vz0XWPLfxV9gFyChCgMO',
-          'deBUVdSqWrH6FwlXPe2m'
+          'deBUVdSqWrH6FwlXPe2m',
         ],
         twitchChannels: ['57595823'],
         schedules: [],
-        youtubeChannels: ['UC9uA9ms0_-LVsMyOJGfZE7A']
-      }
+        youtubeChannels: ['UC9uA9ms0_-LVsMyOJGfZE7A'],
+      },
     },
     style: {
       primaryColor: 'fffee4ff',
@@ -4740,14 +4741,14 @@ const creators = [
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/e4bc3d5f-8873-4745-b0bf-a42483f08bae-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/cf380da9-8a5b-4b2c-bedf-9bc2e19f59ed-profile_image-70x70.png'
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/cf380da9-8a5b-4b2c-bedf-9bc2e19f59ed-profile_image-70x70.png',
         },
         large: {
           bannerUrl:
             'https://static-cdn.jtvnw.net/jtv_user_pictures/e4bc3d5f-8873-4745-b0bf-a42483f08bae-channel_offline_image-1920x1080.png',
           profileUrl:
-            'https://static-cdn.jtvnw.net/jtv_user_pictures/cf380da9-8a5b-4b2c-bedf-9bc2e19f59ed-profile_image-300x300.png'
-        }
+            'https://static-cdn.jtvnw.net/jtv_user_pictures/cf380da9-8a5b-4b2c-bedf-9bc2e19f59ed-profile_image-300x300.png',
+        },
       },
       creatorId: 'zwBpk82qRo4y2Sf5Nvlf',
       appBarStyle: {},
@@ -4781,8 +4782,8 @@ const creators = [
         'ff393435',
         'ff4a4042',
         'ff6c3c46',
-        'fffee4ff'
-      ]
+        'fffee4ff',
+      ],
     },
     links: {
       links: [
@@ -4790,21 +4791,21 @@ const creators = [
           icon: {
             fontFamily: 'FontAwesomeBrands',
             fontPackage: 'font_awesome_flutter',
-            codePoint: 61593
+            codePoint: 61593,
           },
           name: 'Twitter',
           url: 'https://twitter.com/Korsty_',
-          color: 'ff1da1f2'
+          color: 'ff1da1f2',
         },
         {
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 61805
+            codePoint: 61805,
           },
           color: 'ff405de6',
           url: 'https://www.instagram.com/korsty_/',
-          name: 'Instagram'
+          name: 'Instagram',
         },
         {
           color: 'ff7289da',
@@ -4813,23 +4814,23 @@ const creators = [
           icon: {
             fontPackage: 'font_awesome_flutter',
             fontFamily: 'FontAwesomeBrands',
-            codePoint: 62354
-          }
+            codePoint: 62354,
+          },
         },
         {
           icon: {
             codePoint: 62096,
             fontPackage: 'font_awesome_flutter',
-            fontFamily: 'FontAwesomeSolid'
+            fontFamily: 'FontAwesomeSolid',
           },
           name: 'Merch',
           url: 'https://kirsty-shop.fourthwall.com/',
-          color: 'ff1e95ef'
-        }
+          color: 'ff1e95ef',
+        },
       ],
-      creatorId: 'zwBpk82qRo4y2Sf5Nvlf'
-    }
-  }
+      creatorId: 'zwBpk82qRo4y2Sf5Nvlf',
+    },
+  },
 ]
 
 export default creators

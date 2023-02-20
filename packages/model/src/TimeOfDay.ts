@@ -45,7 +45,7 @@ export class TimeOfDay {
 
   difference(other: TimeOfDay) {
     return Duration.fromDurationLike({
-      minute: this.minOfDay - other.minOfDay
+      minute: this.minOfDay - other.minOfDay,
     })
   }
 

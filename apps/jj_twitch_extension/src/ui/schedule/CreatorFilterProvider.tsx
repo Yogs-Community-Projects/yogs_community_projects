@@ -46,7 +46,7 @@ export const CreatorFilterProvider: ParentComponent = props => {
         toggle,
         reset,
         includes,
-        isEmpty
+        isEmpty,
       }}
     >
       {props.children}
