@@ -6,7 +6,7 @@ import {ScheduleHeader} from "./ScheduleHeader";
 
 export const ScheduleFrame: Component = () => {
   return (
-    <div class={'schedule flex flex-col'}>
+    <div class={'schedule flex flex-col font-babas tracking-wider'}>
       <ScheduleHeader/>
       <ScheduleContent/>
     </div>

@@ -3,13 +3,15 @@ import {useWeekIndexSetter} from "../providers/WeekIndexProvider";
 import {useScheduleData} from "../providers/ScheduleDataProvider";
 import {FaSolidChevronLeft, FaSolidChevronRight} from "solid-icons/fa";
 import {FilterButton} from "../ScheduleCreatorFilterButton";
+import {CalendarExportButton} from "../ScheduleCalendarExportButton";
 
 export const ScheduleHeader: Component = () => {
   return (
-    <div class={'w-schedule h-data flex flex-row'}>
+    <div class={'w-schedule flex flex-row'}>
       <div class={'h-data w-data p-schedule'}/>
       <Title/>
       <div class={'flex-1'}/>
+      <CalendarExportButton/>
       <FilterButton/>
       <WeekButtons/>
     </div>
@@ -19,7 +21,8 @@ const Title: Component = () => {
   return (
     <div class={'p-schedule h-data w-[calc(var(--slot-size)_*_3)]'}>
       <div class={'schedule-card-white flex items-center justify-center'}>
-        <h3 class={'text-center text-[calc(var(--slot-size)_/_8)]'}>{useScheduleData().name}</h3>
+        <h3
+          class={'text-center text-[calc(var(--slot-size)_/_6)]'}>{useScheduleData().name}</h3>
       </div>
     </div>
   );

@@ -1,24 +1,24 @@
-import { Component, createMemo, For, Match, Show, Switch } from 'solid-js'
-import { ScheduleDimensionProvider, useYogsScheduleDimension } from '../ScheduleDimensionProvider'
-import { useDays, useScheduleData } from '../YogsScheduleProvider'
-import { DateTime, Duration } from 'luxon'
-import { Event, PlacementAlgo } from '../ScheduleSlotPlacementAlgo'
-import { SlotCard, TwitchSlotCard } from '../SlotCard'
-import { useDayIndex, useDayIndexSetter, useIsCurrentDaySelected } from '../DayIndexProvider'
-import { FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidList } from 'solid-icons/fa'
-import { useDivDimension, useNow, useTwitchDB } from '@ycapp/common'
-import { SlotUtils, Time, TimeOfDay } from '@ycapp/model'
-import { DesktopViewMode, useDesktopViewMode } from './DesktopViewModeProvider'
+import {Component, createMemo, For, Match, Show, Switch} from 'solid-js'
+import {ScheduleDimensionProvider, useYogsScheduleDimension} from '../ScheduleDimensionProvider'
+import {useDays, useScheduleData} from '../YogsScheduleProvider'
+import {DateTime, Duration} from 'luxon'
+import {Event, PlacementAlgo} from '../ScheduleSlotPlacementAlgo'
+import {SlotCard, TwitchSlotCard} from '../SlotCard'
+import {useDayIndex, useDayIndexSetter, useIsCurrentDaySelected} from '../DayIndexProvider'
+import {FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidList} from 'solid-icons/fa'
+import {useDivDimension, useNow, useTwitchDB} from '@ycapp/common'
+import {SlotUtils, Time, TimeOfDay} from '@ycapp/model'
+import {DesktopViewMode, useDesktopViewMode} from './DesktopViewModeProvider'
 import GridIcon from '../../../assets/grid.svg'
-import { TwitchOfflineCard } from '@ycapp/commonui'
-import { FeedbackButtons } from '../../components/FeedbackButtons'
+import {TwitchOfflineCard} from '@ycapp/commonui'
+import {FeedbackButtons} from '../../components/FeedbackButtons'
 // import { TwitchOfflineCard } from '../../components/cards/TwitchCard'
 
 const currentDay = () => useDays()[useDayIndex()]
 const isTimeNow = (time: Time) => {
   const start = DateTime.fromISO(time.start)
   start.weekday
-  const end = start.plus(Duration.fromDurationLike({ millisecond: time.duration / 1000 }))
+  const end = start.plus(Duration.fromDurationLike({millisecond: time.duration / 1000}))
   const startTimeOfDay = TimeOfDay.fromDateTime(start)
   const endTimeOfDay = TimeOfDay.fromDateTime(end)
   const nowTimeOfDay = () => TimeOfDay.fromDateTime(useNow())
@@ -26,7 +26,7 @@ const isTimeNow = (time: Time) => {
 }
 export const ScheduleBody: Component = () => {
   const [size, setRef] = useDivDimension()
-  const { useMode } = useDesktopViewMode()
+  const {useMode} = useDesktopViewMode()
 
   return (
     <div class={'flex w-full flex-col items-stretch'}>
@@ -35,22 +35,22 @@ export const ScheduleBody: Component = () => {
           <Match when={useMode() == DesktopViewMode.stack} keyed>
             <div class={'min-h-[70vh] w-full lg:max-h-[110vh]'} ref={setRef}>
               <ScheduleDimensionProvider dimension={size()}>
-                <Body />
+                <Body/>
               </ScheduleDimensionProvider>
             </div>
           </Match>
           <Match when={useMode() == DesktopViewMode.wrap} keyed>
             <div class={'w-full lg:max-h-[110vh]'} ref={setRef}>
               <ScheduleDimensionProvider dimension={size()}>
-                <Body />
+                <Body/>
               </ScheduleDimensionProvider>
             </div>
           </Match>
         </Switch>
         <Show when={useMode() == DesktopViewMode.stack}>
-          <LastUpdate />
+          <LastUpdate/>
         </Show>
-        <TwitchOfflineCards />
+        <TwitchOfflineCards/>
       </div>
     </div>
   )
@@ -78,21 +78,21 @@ export const ScheduleBody: Component = () => {
  */
 
 const Body: Component = () => {
-  const { useMode } = useDesktopViewMode()
+  const {useMode} = useDesktopViewMode()
   return (
     <Switch>
       <Match when={useMode() == DesktopViewMode.stack}>
         <>
           <div class={'hidden lg:block'}>
-            <Stack />
+            <Stack/>
           </div>
           <div class={'block lg:hidden'}>
-            <Wrap />
+            <Wrap/>
           </div>
         </>
       </Match>
       <Match when={useMode() == DesktopViewMode.wrap}>
-        <Wrap />
+        <Wrap/>
       </Match>
     </Switch>
   )
@@ -123,8 +123,8 @@ const Stack: Component = () => {
       }}
       class={'flex flex-col'}
     >
-      <ScheduleHeader />
-      <TimesComponent />
+      <ScheduleHeader/>
+      <TimesComponent/>
       <div
         class={'relative h-full'}
         style={{
@@ -132,7 +132,7 @@ const Stack: Component = () => {
         }}
       >
         <div class={'absolute left-0 top-0 z-0 h-full w-full'}>
-          <Background />
+          <Background/>
         </div>
         <div class={'absolute left-0 top-0 z-10 bg-pink-500'}>
           <For each={lanes()}>
@@ -145,7 +145,7 @@ const Stack: Component = () => {
                 }}
                 class={'bg-gray-400'}
               >
-                <For each={lane.events}>{event => <EventComponent event={event} />}</For>
+                <For each={lane.events}>{event => <EventComponent event={event}/>}</For>
               </div>
             )}
           </For>
@@ -175,7 +175,7 @@ const EventComponent: Component<EventProps> = props => {
     return ((props.event.start - firstTime().minOfDay) / dayLength()) * totalWidth()
   }
 
-  const width = () => minuteWidth() * Duration.fromDurationLike({ second: props.event.slot.duration }).as('minutes')
+  const width = () => minuteWidth() * Duration.fromDurationLike({second: props.event.slot.duration}).as('minutes')
 
   return (
     <div
@@ -187,7 +187,7 @@ const EventComponent: Component<EventProps> = props => {
       }}
     >
       <div class={'h-full w-full'}>
-        <SlotCard slot={props.event.slot} />
+        <SlotCard slot={props.event.slot}/>
       </div>
     </div>
   )
@@ -277,7 +277,7 @@ const ScheduleHeader: Component = () => {
             height: dataSize() * 2 + 'px'
           }}
         >
-          <Title />
+          <Title/>
         </div>
         <div
           style={{
@@ -285,7 +285,7 @@ const ScheduleHeader: Component = () => {
           }}
           class={'p-schedule'}
         >
-          <WeekButtons />
+          <WeekButtons/>
         </div>
       </div>
       <div
@@ -294,7 +294,7 @@ const ScheduleHeader: Component = () => {
         }}
         class={'hidden w-full flex-row lg:flex'}
       >
-        <Title />
+        <Title/>
         <div
           style={{
             width: width() * 3 + 'px',
@@ -302,9 +302,9 @@ const ScheduleHeader: Component = () => {
           }}
           class={'p-schedule'}
         >
-          <WeekButtons />
+          <WeekButtons/>
         </div>
-        <ViewModeButton />
+        <ViewModeButton/>
       </div>
     </>
   )
@@ -340,13 +340,13 @@ const WeekButtons: Component = () => {
         }
         onclick={prev}
       >
-        <FaSolidChevronLeft />
+        <FaSolidChevronLeft/>
       </button>
       <button
         class={'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center hover:scale-105'}
         onclick={today}
       >
-        <FaSolidCalendarDay />
+        <FaSolidCalendarDay/>
       </button>
       <button
         class={
@@ -354,13 +354,13 @@ const WeekButtons: Component = () => {
         }
         onclick={next}
       >
-        <FaSolidChevronRight />
+        <FaSolidChevronRight/>
       </button>
     </div>
   )
 }
 const ViewModeButton: Component = () => {
-  const { useMode, switchMode } = useDesktopViewMode()
+  const {useMode, switchMode} = useDesktopViewMode()
 
   const yogsSchedule = useScheduleData()
   const times = () => yogsSchedule.schedule.times
@@ -381,7 +381,7 @@ const ViewModeButton: Component = () => {
           }
           onclick={switchMode}
         >
-          {useMode() == DesktopViewMode.stack ? <FaSolidList /> : <GridIcon />}
+          {useMode() == DesktopViewMode.stack ? <FaSolidList/> : <GridIcon/>}
         </button>
       </div>
     </div>
@@ -391,9 +391,9 @@ const ViewModeButton: Component = () => {
 const Wrap: Component = () => {
   return (
     <div class={'flex flex-col justify-center'}>
-      <ScheduleHeader />
-      <TwitchLiveScheduleGrid />
-      <LastUpdate />
+      <ScheduleHeader/>
+      <TwitchLiveScheduleGrid/>
+      <LastUpdate/>
     </div>
   )
 }
@@ -444,7 +444,7 @@ const TwitchLiveScheduleGrid: Component = () => {
                 return (
                   <div class={'h-20 w-36 md:h-32 md:w-52'}>
                     <div class={'p-schedule h-full w-full'}>
-                      <TwitchSlotCard channel={channel} />
+                      <TwitchSlotCard channel={channel}/>
                     </div>
                   </div>
                 )
@@ -457,7 +457,7 @@ const TwitchLiveScheduleGrid: Component = () => {
         {(slot, i) => {
           return (
             <div class={'h-20 w-36 md:h-32 md:w-52'}>
-              <SlotCard slot={slot} showCountdown={true} showTime={true} />
+              <SlotCard slot={slot} showCountdown={true} showTime={true}/>
             </div>
           )
         }}
@@ -505,7 +505,7 @@ export const TwitchOfflineCards: Component = () => {
           <div class={'grid w-full grid-cols-[repeat(auto-fit,_18rem)] justify-center gap-1 p-1'}>
             <For each={channels()}>
               {(channel, i) => {
-                return <TwitchOfflineCard data={channel} />
+                return <TwitchOfflineCard data={channel}/>
               }}
             </For>
           </div>
@@ -532,7 +532,7 @@ const LastUpdate: Component = () => {
           <strong>This schedule is a fan Project and not associated with the Yogscast or their partners.</strong>
         </p>
       </div>
-      <FeedbackButtons />
+      <FeedbackButtons/>
     </div>
   )
 }

@@ -37,6 +37,7 @@
     "clsx": "^1.2.1",
     "daisyui": "^2.47.0",
     "firebase": "^9.16.0",
+    "ical-generator": "^3.6.1",
     "luxon": "^3.2.1",
     "pako": "^2.1.0",
     "solid-firebase": "^0.1.7",
