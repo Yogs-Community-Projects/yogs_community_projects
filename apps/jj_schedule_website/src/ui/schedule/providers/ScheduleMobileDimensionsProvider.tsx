@@ -14,7 +14,7 @@ export const ScheduleMobileDimensionsProvider: ParentComponent = (props) => {
   const useAvailableWidth: Accessor<number> = () => availableScheduleDimensions().width;
   const useAvailableHeight: Accessor<number> = (): number => availableScheduleDimensions().height;
   const useDataSize: Accessor<number> = (): number => {
-    return Math.max(32, useAvailableHeight() / 20);
+    return Math.max(48, useAvailableHeight() / 20);
   };
   const useSlotSize: Accessor<number> = (): number => {
     return (useAvailableWidth() - useDataSize()) / useMaxDayCount();
@@ -23,7 +23,7 @@ export const ScheduleMobileDimensionsProvider: ParentComponent = (props) => {
     return useAvailableWidth()
   };
   const useSlotHeight: Accessor<number> = (): number => {
-    return Math.max(64, (useAvailableHeight() - (2 * useDataSize())) / 10);
+    return Math.max(96, (useAvailableHeight() - (2 * useDataSize())) / 10);
   };
   const useBodyHeight: Accessor<number> = (): number => useSlotSize() * useMaxSlotCount();
 
