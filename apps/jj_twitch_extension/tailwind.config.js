@@ -199,7 +199,7 @@ module.exports = {
         'day-header': ['calc(var(--data-size) / 3)']
       },
       backgroundImage: {
-        yogs: "url('/assets/yogs.svg')"
+        yogs: 'url(\'/assets/yogs.svg\')'
       },
       scale: {
         101: '1.01',

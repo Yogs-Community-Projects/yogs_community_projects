@@ -1,12 +1,12 @@
-import {Component, JSX, Show} from 'solid-js'
-import {Slot} from '@ycapp/model'
-import {Duration} from 'luxon'
-import {useScheduleDimensions} from '../providers/ScheduleDimensionsProvider'
-import {createModalSignal, getTextColor} from '@ycapp/common'
-import {BiLogosTwitch, BiLogosYoutube} from 'solid-icons/bi'
-import {BsHeart} from 'solid-icons/bs'
-import {useCreatorFilter} from '../providers/CreatorFilterProvider'
-import {SlotDialog} from '../../components/schedule/SlotDialog'
+import { Component, JSX, Show } from 'solid-js'
+import { Slot } from '@ycapp/model'
+import { Duration } from 'luxon'
+import { useScheduleDimensions } from '../providers/ScheduleDimensionsProvider'
+import { createModalSignal, getTextColor } from '@ycapp/common'
+import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
+import { BsHeart } from 'solid-icons/bs'
+import { useCreatorFilter } from '../providers/CreatorFilterProvider'
+import { SlotDialog } from '../../components/schedule/SlotDialog'
 
 interface ScheduleSlotProps {
   slot: Slot
@@ -14,9 +14,9 @@ interface ScheduleSlotProps {
 
 export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const slot = props.slot
-  const durationHour = () => Duration.fromDurationLike({second: slot.duration}).as('hours')
+  const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
 
-  const {includes, isEmpty} = useCreatorFilter()
+  const { includes, isEmpty } = useCreatorFilter()
   const enable = () => isEmpty() || slot.relations.creators.some(id => includes(id))
   const style = (): JSX.CSSProperties => {
     return {
@@ -74,7 +74,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
         <div class={'p-schedule h-full transition-all'}>
           <button
             class={
-              'hover:shadow-2xl disabled:shadow-xl disabled:scale-100 disabled:brightness-100 hover:scale-102 schedule-card flex flex-col justify-center p-1 text-center transition-all hover:brightness-105'
+              'hover:scale-102 schedule-card flex flex-col justify-center p-1 text-center transition-all hover:shadow-2xl hover:brightness-105 disabled:scale-100 disabled:shadow-xl disabled:brightness-100'
             }
             style={{
               ...background()
@@ -87,20 +87,20 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
             </div>
             <div class={'flex w-full flex-row justify-around'}>
-              <Show when={slot.showTwitchIcon} fallback={<div/>}>
-                <BiLogosTwitch size={18}/>
+              <Show when={slot.showTwitchIcon} fallback={<div />}>
+                <BiLogosTwitch size={18} />
               </Show>
-              <Show when={slot.showHighlightIcon} fallback={<div/>}>
-                <BsHeart size={18}/>
+              <Show when={slot.showHighlightIcon} fallback={<div />}>
+                <BsHeart size={18} />
               </Show>
-              <Show when={slot.showYoutubeIcon} fallback={<div/>}>
-                <BiLogosYoutube size={18}/>
+              <Show when={slot.showYoutubeIcon} fallback={<div />}>
+                <BiLogosYoutube size={18} />
               </Show>
             </div>
           </button>
         </div>
       </div>
-      <SlotDialog slot={slot} modalSignal={modalSignal}/>
+      <SlotDialog slot={slot} modalSignal={modalSignal} />
     </>
   )
 }

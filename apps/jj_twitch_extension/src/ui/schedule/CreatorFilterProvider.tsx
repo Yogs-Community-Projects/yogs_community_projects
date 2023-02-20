@@ -1,9 +1,9 @@
-import {createContext, createSignal, ParentComponent, useContext} from "solid-js";
-import {Accessor} from "solid-js/types/reactive/signal";
+import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
+import { Accessor } from 'solid-js/types/reactive/signal'
 
 interface CreatorFilterContextProps {
   filter: Accessor<string[]>
-  add: (id: string) => void;
+  add: (id: string) => void
   remove: (id: string) => void
   toggle: (id: string) => void
   reset: () => void
@@ -11,22 +11,22 @@ interface CreatorFilterContextProps {
   isEmpty: () => boolean
 }
 
-const CreatorFilterContext = createContext<CreatorFilterContextProps>();
-export const CreatorFilterProvider: ParentComponent = (props) => {
-  const [filter, setFilter] = createSignal<string[]>([]);
+const CreatorFilterContext = createContext<CreatorFilterContextProps>()
+export const CreatorFilterProvider: ParentComponent = props => {
+  const [filter, setFilter] = createSignal<string[]>([])
 
   const add = (id: string) => {
-    setFilter([...filter(), id]);
+    setFilter([...filter(), id])
   }
   const remove = (id: string) => {
-    setFilter(filter().filter((i) => i != id));
+    setFilter(filter().filter(i => i != id))
   }
 
   const reset = () => {
-    setFilter([]);
+    setFilter([])
   }
 
-  const includes = (id: string) => filter().includes(id);
+  const includes = (id: string) => filter().includes(id)
 
   const toggle = (id: string) => {
     if (includes(id)) {
@@ -35,20 +35,22 @@ export const CreatorFilterProvider: ParentComponent = (props) => {
       add(id)
     }
   }
-  const isEmpty = () => filter().length == 0;
+  const isEmpty = () => filter().length == 0
 
   return (
-    <CreatorFilterContext.Provider value={{
-      filter,
-      add,
-      remove,
-      toggle,
-      reset,
-      includes,
-      isEmpty,
-    }}>
+    <CreatorFilterContext.Provider
+      value={{
+        filter,
+        add,
+        remove,
+        toggle,
+        reset,
+        includes,
+        isEmpty
+      }}
+    >
       {props.children}
     </CreatorFilterContext.Provider>
-  );
+  )
 }
-export const useCreatorFilter = () => useContext(CreatorFilterContext)!;
+export const useCreatorFilter = () => useContext(CreatorFilterContext)!

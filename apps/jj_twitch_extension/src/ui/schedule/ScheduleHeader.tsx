@@ -1,22 +1,22 @@
-import {Component, createEffect, createSignal, Match, Switch} from 'solid-js'
-import {useCurrentDay, useScheduleData} from './JJScheduleProvider'
-import {DateTime} from 'luxon'
-import {useDayIndexSetter} from './DayIndexProvider'
-import {FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidFilter} from 'solid-icons/fa'
-import {FilterDialog} from "./ScheduleCreatorFilterButton";
-import {useCreatorFilter} from "./CreatorFilterProvider";
-import {createModalSignal, RemoteData, useCreatorDB} from '@ycapp/common'
-import {BiRegularReset} from 'solid-icons/bi'
-import {CreatorData} from '@ycapp/model'
+import { Component, createEffect, createSignal, Match, Switch } from 'solid-js'
+import { useCurrentDay, useScheduleData } from './JJScheduleProvider'
+import { DateTime } from 'luxon'
+import { useDayIndexSetter } from './DayIndexProvider'
+import { FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidFilter } from 'solid-icons/fa'
+import { FilterDialog } from './ScheduleCreatorFilterButton'
+import { useCreatorFilter } from './CreatorFilterProvider'
+import { createModalSignal, RemoteData, useCreatorDB } from '@ycapp/common'
+import { BiRegularReset } from 'solid-icons/bi'
+import { CreatorData } from '@ycapp/model'
 
 export const ScheduleHeader: Component = () => {
   return (
     <div style={{}} class={'flex w-full flex-col'}>
       <div class={'h-30'}>
-        <Title/>
+        <Title />
       </div>
       <div class={'p-schedule h-10'}>
-        <WeekButtons/>
+        <WeekButtons />
       </div>
     </div>
   )
@@ -25,7 +25,7 @@ export const ScheduleHeader: Component = () => {
 const Title: Component = () => {
   const day = () => useCurrentDay()
   const date = () => DateTime.fromISO(day().start)
-  const {isEmpty, filter} = useCreatorFilter()
+  const { isEmpty, filter } = useCreatorFilter()
 
   const [creator, setCreator] = createSignal<RemoteData<CreatorData | null>>({
     data: null,
@@ -56,9 +56,7 @@ const Title: Component = () => {
           <Match when={!isEmpty()}>
             <Switch>
               <Match when={filter().length == 1 && creator().data}>
-                <h3 class={'text-center text-2xl'}>
-                  Streams with {creator().data.creator.name}
-                </h3>
+                <h3 class={'text-center text-2xl'}>Streams with {creator().data.creator.name}</h3>
               </Match>
               <Match when={filter().length > 1 && creator().data}>
                 <h2 class={'text-center text-xl'}>
@@ -75,7 +73,7 @@ const Title: Component = () => {
 const WeekButtons: Component = () => {
   const [prev, next, today] = useDayIndexSetter()
   const modalSignal = createModalSignal()
-  const {reset, isEmpty} = useCreatorFilter()
+  const { reset, isEmpty } = useCreatorFilter()
 
   return (
     <>
@@ -88,19 +86,19 @@ const WeekButtons: Component = () => {
               }
               onclick={prev}
             >
-              <FaSolidChevronLeft/>
+              <FaSolidChevronLeft />
             </button>
             <button
               class={'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center hover:scale-105'}
               onClick={modalSignal.open}
             >
-              <FaSolidFilter/>
+              <FaSolidFilter />
             </button>
             <button
               class={'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center hover:scale-105'}
               onclick={today}
             >
-              <FaSolidCalendarDay/>
+              <FaSolidCalendarDay />
             </button>
             <button
               class={
@@ -108,7 +106,7 @@ const WeekButtons: Component = () => {
               }
               onclick={next}
             >
-              <FaSolidChevronRight/>
+              <FaSolidChevronRight />
             </button>
           </div>
         </Match>
@@ -117,9 +115,10 @@ const WeekButtons: Component = () => {
             <button
               class={
                 'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl hover:scale-105'
-              } onClick={modalSignal.open}
+              }
+              onClick={modalSignal.open}
             >
-              <FaSolidFilter/>
+              <FaSolidFilter />
             </button>
             <button
               class={
@@ -129,12 +128,12 @@ const WeekButtons: Component = () => {
                 reset()
               }}
             >
-              <BiRegularReset/>
+              <BiRegularReset />
             </button>
           </div>
         </Match>
       </Switch>
-      <FilterDialog modalSignal={modalSignal}/>
+      <FilterDialog modalSignal={modalSignal} />
     </>
   )
 }

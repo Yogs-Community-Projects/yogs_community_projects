@@ -5,6 +5,7 @@ nav {
 .activeLink {
   text-decoration: underline;
 }
+
 .inactiveLink {
   text-decoration: none;
 }

@@ -1,9 +1,9 @@
-import type {Component} from 'solid-js'
-import {Show} from 'solid-js'
+import type { Component } from 'solid-js'
+import { Show } from 'solid-js'
 // @ts-ignore
-import {useRegisterSW} from 'virtual:pwa-register/solid'
+import { useRegisterSW } from 'virtual:pwa-register/solid'
 // @ts-ignore
-import {pwaInfo} from 'virtual:pwa-info'
+import { pwaInfo } from 'virtual:pwa-info'
 
 // eslint-disable-next-line no-console
 console.log(pwaInfo)
@@ -14,7 +14,7 @@ const ReloadPrompt: Component = () => {
   const {
     needRefresh: [needRefresh, setNeedRefresh],
     offlineReady: [offlineReady, setOfflineReady],
-    updateServiceWorker,
+    updateServiceWorker
   } = useRegisterSW({
     immediate: true,
     onRegisteredSW(swUrl, r) {
@@ -22,11 +22,12 @@ const ReloadPrompt: Component = () => {
       console.log(`Service Worker at: ${swUrl}`)
       // @ts-expect-error just ignore
       if (reloadSW === 'true') {
-        r && setInterval(() => {
-          // eslint-disable-next-line no-console
-          console.log('Checking for sw update')
-          r.update()
-        }, 20000 /* 20s for testing purposes */)
+        r &&
+          setInterval(() => {
+            // eslint-disable-next-line no-console
+            console.log('Checking for sw update')
+            r.update()
+          }, 20000 /* 20s for testing purposes */)
       } else {
         // eslint-disable-next-line no-console
         console.log(`SW Registered: ${r}`)
@@ -34,7 +35,7 @@ const ReloadPrompt: Component = () => {
     },
     onRegisterError(error) {
       console.error('SW registration error', error)
-    },
+    }
   })
 
   const close = () => {
@@ -55,9 +56,13 @@ const ReloadPrompt: Component = () => {
             </Show>
           </div>
           <Show when={needRefresh()}>
-            <button class={''} onClick={() => updateServiceWorker(true)}>Reload</button>
+            <button class={''} onClick={() => updateServiceWorker(true)}>
+              Reload
+            </button>
           </Show>
-          <button class={''} onClick={() => close()}>Close</button>
+          <button class={''} onClick={() => close()}>
+            Close
+          </button>
         </div>
       </Show>
     </div>

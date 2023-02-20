@@ -1,4 +1,4 @@
-import {ScheduleData} from '@ycapp/model'
+import { ScheduleData } from '@ycapp/model'
 
 const test_schedule_data = {
   urlName: 'yogscaststreamteam',
@@ -3236,1004 +3236,877 @@ const test_schedule_data = {
 }
 
 const jj_schedule = {
-  "id": "jinglejam2022_2",
-  "urlName": "jinglejam2022_2",
-  "name": "Yogscast Jingle Jam 2022",
-  "visible": false,
-  "relations": {
-    "youtubeChannels": [],
-    "twitchChannels": [],
-    "schedules": [],
-    "creators": [],
-    "podcasts": []
+  id: 'jinglejam2022_2',
+  urlName: 'jinglejam2022_2',
+  name: 'Yogscast Jingle Jam 2022',
+  visible: false,
+  relations: {
+    youtubeChannels: [],
+    twitchChannels: [],
+    schedules: [],
+    creators: [],
+    podcasts: []
   },
-  "schedule": {
-    "times": [
+  schedule: {
+    times: [
       {
-        "duration": 10800000000,
-        "start": "2022-01-01T11:00:00.000+0000"
+        duration: 10800000000,
+        start: '2022-01-01T11:00:00.000+0000'
       },
       {
-        "start": "2022-01-01T14:00:00.000+0000",
-        "duration": 10800000000
+        start: '2022-01-01T14:00:00.000+0000',
+        duration: 10800000000
       },
       {
-        "start": "2022-01-01T17:00:00.000+0000",
-        "duration": 10800000000
+        start: '2022-01-01T17:00:00.000+0000',
+        duration: 10800000000
       },
       {
-        "duration": 10800000000,
-        "start": "2022-01-01T20:00:00.000+0000"
+        duration: 10800000000,
+        start: '2022-01-01T20:00:00.000+0000'
       }
     ],
-    "weeks": [
+    weeks: [
       {
-        "times": [
+        times: [
           {
-            "duration": 10800000000,
-            "start": "2022-01-01T11:00:00.000+0000"
+            duration: 10800000000,
+            start: '2022-01-01T11:00:00.000+0000'
           },
           {
-            "duration": 10800000000,
-            "start": "2022-01-01T14:00:00.000+0000"
+            duration: 10800000000,
+            start: '2022-01-01T14:00:00.000+0000'
           },
           {
-            "start": "2022-01-01T17:00:00.000+0000",
-            "duration": 10800000000
+            start: '2022-01-01T17:00:00.000+0000',
+            duration: 10800000000
           },
           {
-            "start": "2022-01-01T20:00:00.000+0000",
-            "duration": 10800000000
+            start: '2022-01-01T20:00:00.000+0000',
+            duration: 10800000000
           }
         ],
-        "days": [
+        days: [
           {
-            "dayOfWeek": 1,
-            "slots": [
+            dayOfWeek: 1,
+            slots: [
               {
-                "desc": "",
-                "showTwitchIcon": false,
-                "gridTileSize": 1,
-                "markdownDesc": "[Twitch Vod](https://www.twitch.tv/videos/1667327674)",
-                "id": "",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff00bbe0",
-                      "ff00aad9"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                desc: '',
+                showTwitchIcon: false,
+                gridTileSize: 1,
+                markdownDesc: '[Twitch Vod](https://www.twitch.tv/videos/1667327674)',
+                id: '',
+                style: {
+                  linearGradient: {
+                    colors: ['ff00bbe0', 'ff00aad9'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "type": "special",
-                "start": "2022-12-01T11:00:00.000+0000",
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "duration": 10800,
-                "relations": {
-                  "creators": [],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                type: 'special',
+                start: '2022-12-01T11:00:00.000+0000',
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                duration: 10800,
+                relations: {
+                  creators: [],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  schedules: [],
+                  twitchChannels: ['20786541']
                 },
-                "visible": true,
-                "title": "Office cam",
-                "subtitle": "Putting up the christmas tree"
+                visible: true,
+                title: 'Office cam',
+                subtitle: 'Putting up the christmas tree'
               },
               {
-                "duration": 10800,
-                "showHighlightIcon": true,
-                "gridTileSize": 1,
-                "markdownDesc": "[Twitch Vod](https://www.twitch.tv/videos/1667327674?t=02h55m40s)",
-                "type": "special",
-                "id": "",
-                "subtitle": "Tom & Ben",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff0096d1",
-                      "ff0086c9"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                duration: 10800,
+                showHighlightIcon: true,
+                gridTileSize: 1,
+                markdownDesc: '[Twitch Vod](https://www.twitch.tv/videos/1667327674?t=02h55m40s)',
+                type: 'special',
+                id: '',
+                subtitle: 'Tom & Ben',
+                style: {
+                  linearGradient: {
+                    colors: ['ff0096d1', 'ff0086c9'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "visible": true,
-                "relations": {
-                  "schedules": [],
-                  "creators": [
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "Hn8e1EgqFKg2RbJglY2x"
-                  ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "youtubeChannels": []
+                visible: true,
+                relations: {
+                  schedules: [],
+                  creators: ['Dvsw8FJa8v3LjEXSXr9e', 'Hn8e1EgqFKg2RbJglY2x'],
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  youtubeChannels: []
                 },
-                "showTwitchIcon": false,
-                "desc": "",
-                "title": "Jingle Jam Hype Stream",
-                "showYoutubeIcon": false,
-                "start": "2022-12-01T14:00:00.000+0000"
+                showTwitchIcon: false,
+                desc: '',
+                title: 'Jingle Jam Hype Stream',
+                showYoutubeIcon: false,
+                start: '2022-12-01T14:00:00.000+0000'
               },
               {
-                "gridTileSize": 1,
-                "subtitle": "Lewis & Simon",
-                "id": "",
-                "duration": 10800,
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff0078c2",
-                      "ff0066ba"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                gridTileSize: 1,
+                subtitle: 'Lewis & Simon',
+                id: '',
+                duration: 10800,
+                style: {
+                  linearGradient: {
+                    colors: ['ff0078c2', 'ff0066ba'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "start": "2022-12-01T17:00:00.000+0000",
-                "type": "special",
-                "desc": "",
-                "title": "Jingle Cats",
-                "showHighlightIcon": true,
-                "showTwitchIcon": false,
-                "relations": {
-                  "podcasts": [],
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "QLpFsapfyzIU4TYdVmjM"
-                  ],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                start: '2022-12-01T17:00:00.000+0000',
+                type: 'special',
+                desc: '',
+                title: 'Jingle Cats',
+                showHighlightIcon: true,
+                showTwitchIcon: false,
+                relations: {
+                  podcasts: [],
+                  creators: ['Gq7a6r1Pq0loxIUiNk8v', 'QLpFsapfyzIU4TYdVmjM'],
+                  youtubeChannels: [],
+                  schedules: [],
+                  twitchChannels: ['20786541']
                 },
-                "showYoutubeIcon": false,
-                "visible": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1667327674?t=05h56m44s)\n\nLewis & Simon start the Jingle Jam with the traditional Jingle Cats stream where they watch fan made Jingle Cats videos. ![yogOOOO](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8facc7f6fe8e4b7499a96d9b7878f3c9/animated/light/1.0)"
+                showYoutubeIcon: false,
+                visible: true,
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1667327674?t=05h56m44s)\n\nLewis & Simon start the Jingle Jam with the traditional Jingle Cats stream where they watch fan made Jingle Cats videos. ![yogOOOO](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8facc7f6fe8e4b7499a96d9b7878f3c9/animated/light/1.0)'
               },
               {
-                "type": "special",
-                "gridTileSize": 1,
-                "title": "Christmas Trains",
-                "showTwitchIcon": false,
-                "start": "2022-12-01T20:00:00.000+0000",
-                "relations": {
-                  "youtubeChannels": [],
-                  "creators": [
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "AcCWZMmDMrc7G9CnRchz",
-                    "MYZPOwKsujCZbtPEJtBG",
-                    "AZGGyF9uschXdM8gGB1v",
-                    "3fNrixu9cDhggDXyLTwG"
+                type: 'special',
+                gridTileSize: 1,
+                title: 'Christmas Trains',
+                showTwitchIcon: false,
+                start: '2022-12-01T20:00:00.000+0000',
+                relations: {
+                  youtubeChannels: [],
+                  creators: [
+                    'Dvsw8FJa8v3LjEXSXr9e',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'deBUVdSqWrH6FwlXPe2m',
+                    'AcCWZMmDMrc7G9CnRchz',
+                    'MYZPOwKsujCZbtPEJtBG',
+                    'AZGGyF9uschXdM8gGB1v',
+                    '3fNrixu9cDhggDXyLTwG'
                   ],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": []
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  podcasts: []
                 },
-                "visible": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1667327674?t=09h08m08s)",
-                "subtitle": "Lewis, Duncan & Friends",
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff0059b3",
-                      "ff004dab"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                visible: true,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1667327674?t=09h08m08s)',
+                subtitle: 'Lewis, Duncan & Friends',
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                style: {
+                  linearGradient: {
+                    colors: ['ff0059b3', 'ff004dab'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "id": "",
-                "desc": "",
-                "duration": 10800
+                id: '',
+                desc: '',
+                duration: 10800
               }
             ],
-            "start": "2022-12-01T11:00:00.000+0000"
+            start: '2022-12-01T11:00:00.000+0000'
           },
           {
-            "start": "2022-12-02T11:00:00.000+0000",
-            "slots": [
+            start: '2022-12-02T11:00:00.000+0000',
+            slots: [
               {
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ffffd900",
-                      "ffffd000"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    colors: ['ffffd900', 'ffffd000'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     }
                   }
                 },
-                "visible": true,
-                "type": "special",
-                "showTwitchIcon": false,
-                "showHighlightIcon": true,
-                "gridTileSize": 1,
-                "id": "",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1668134096?t=00h34m55s)",
-                "relations": {
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "Tm2dvIIhVA3xb7nH19jJ",
-                    "MYZPOwKsujCZbtPEJtBG",
-                    "yAmEX9kxAZTdKzwQcIsy"
+                visible: true,
+                type: 'special',
+                showTwitchIcon: false,
+                showHighlightIcon: true,
+                gridTileSize: 1,
+                id: '',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1668134096?t=00h34m55s)',
+                relations: {
+                  creators: [
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'Tm2dvIIhVA3xb7nH19jJ',
+                    'MYZPOwKsujCZbtPEJtBG',
+                    'yAmEX9kxAZTdKzwQcIsy'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "schedules": [],
-                  "youtubeChannels": []
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  schedules: [],
+                  youtubeChannels: []
                 },
-                "showYoutubeIcon": false,
-                "start": "2022-12-02T11:00:00.000+0000",
-                "duration": 10800,
-                "subtitle": "RTGame Lewis Spiff Boba",
-                "title": "Switch Sports"
+                showYoutubeIcon: false,
+                start: '2022-12-02T11:00:00.000+0000',
+                duration: 10800,
+                subtitle: 'RTGame Lewis Spiff Boba',
+                title: 'Switch Sports'
               },
               {
-                "showTwitchIcon": false,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1668134096?t=03h38m54s)",
-                "showYoutubeIcon": false,
-                "visible": true,
-                "id": "",
-                "start": "2022-12-02T14:00:00.000+0000",
-                "gridTileSize": 1,
-                "desc": "",
-                "showHighlightIcon": true,
-                "duration": 10800,
-                "relations": {
-                  "twitchChannels": [
-                    "20786541",
-                    "26538483"
-                  ],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "creators": [
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "0w4JSboJK6RdTDmDKoYL",
-                    "sMGdgzZrZP8c68C0pFfU",
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "f2tAtl8eBRTtKsqzQQoC",
-                    "dvynb4nu7GmqelY4HW3f",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "4ty8OfAA0hoXSV6trUY9",
-                    "WvavBOeHzCXZPBzahkRX",
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "deBUVdSqWrH6FwlXPe2m"
+                showTwitchIcon: false,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1668134096?t=03h38m54s)',
+                showYoutubeIcon: false,
+                visible: true,
+                id: '',
+                start: '2022-12-02T14:00:00.000+0000',
+                gridTileSize: 1,
+                desc: '',
+                showHighlightIcon: true,
+                duration: 10800,
+                relations: {
+                  twitchChannels: ['20786541', '26538483'],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  schedules: [],
+                  creators: [
+                    'vz0XWPLfxV9gFyChCgMO',
+                    '0w4JSboJK6RdTDmDKoYL',
+                    'sMGdgzZrZP8c68C0pFfU',
+                    'Gz3S1VJlA6iPISXuIl7p',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    'f2tAtl8eBRTtKsqzQQoC',
+                    'dvynb4nu7GmqelY4HW3f',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    '6oSnPSBKF79EBwS1G5DF',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    '4ty8OfAA0hoXSV6trUY9',
+                    'WvavBOeHzCXZPBzahkRX',
+                    'MsNyFTyL0zikJ4zKOZm2',
+                    'deBUVdSqWrH6FwlXPe2m'
                   ]
                 },
-                "title": "Plate Up",
-                "type": "special",
-                "subtitle": "Massive Multiplayer",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ffffc800",
-                      "ffffbf00"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                title: 'Plate Up',
+                type: 'special',
+                subtitle: 'Massive Multiplayer',
+                style: {
+                  linearGradient: {
+                    colors: ['ffffc800', 'ffffbf00'],
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 }
               },
               {
-                "gridTileSize": 1,
-                "title": "Mario Kart Tournament",
-                "relations": {
-                  "creators": [
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "f2tAtl8eBRTtKsqzQQoC",
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "Tm2dvIIhVA3xb7nH19jJ",
-                    "WvavBOeHzCXZPBzahkRX",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "5h6PnMWEghJSDaS5ZNbc"
+                gridTileSize: 1,
+                title: 'Mario Kart Tournament',
+                relations: {
+                  creators: [
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'MsNyFTyL0zikJ4zKOZm2',
+                    'f2tAtl8eBRTtKsqzQQoC',
+                    'eE4FNKcFiBhoc3jFb9Fo',
+                    'Tm2dvIIhVA3xb7nH19jJ',
+                    'WvavBOeHzCXZPBzahkRX',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    '5h6PnMWEghJSDaS5ZNbc'
                   ],
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                  youtubeChannels: [],
+                  podcasts: [],
+                  schedules: [],
+                  twitchChannels: ['20786541']
                 },
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                style: {
+                  linearGradient: {
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffffb700",
-                      "ffffae00"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    colors: ['ffffb700', 'ffffae00'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 },
-                "duration": 10800,
-                "subtitle": "Hosted By Ravs",
-                "showYoutubeIcon": false,
-                "visible": true,
-                "showHighlightIcon": true,
-                "id": "",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1668134096?t=06h42m27s)",
-                "showTwitchIcon": false,
-                "type": "special",
-                "start": "2022-12-02T17:00:00.000+0000"
+                duration: 10800,
+                subtitle: 'Hosted By Ravs',
+                showYoutubeIcon: false,
+                visible: true,
+                showHighlightIcon: true,
+                id: '',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1668134096?t=06h42m27s)',
+                showTwitchIcon: false,
+                type: 'special',
+                start: '2022-12-02T17:00:00.000+0000'
               },
               {
-                "title": "Protessional Strem",
-                "visible": true,
-                "showTwitchIcon": false,
-                "subtitle": "Nilesy Zylus Rythian",
-                "relations": {
-                  "creators": [
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "uuZ2P6KPhmLVGc7ZjWXR",
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "WvavBOeHzCXZPBzahkRX"
+                title: 'Protessional Strem',
+                visible: true,
+                showTwitchIcon: false,
+                subtitle: 'Nilesy Zylus Rythian',
+                relations: {
+                  creators: [
+                    '5h6PnMWEghJSDaS5ZNbc',
+                    'uuZ2P6KPhmLVGc7ZjWXR',
+                    'deBUVdSqWrH6FwlXPe2m',
+                    'WvavBOeHzCXZPBzahkRX'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "schedules": []
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: [],
+                  podcasts: [],
+                  schedules: []
                 },
-                "start": "2022-12-02T20:00:00.000+0000",
-                "id": "",
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false,
-                "duration": 10800,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                start: '2022-12-02T20:00:00.000+0000',
+                id: '',
+                showHighlightIcon: true,
+                showYoutubeIcon: false,
+                duration: 10800,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffffa600",
-                      "ffff9d00"
-                    ],
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    colors: ['ffffa600', 'ffff9d00'],
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "markdownDesc": "[Twitch VOD 1](https://www.twitch.tv/videos/1668469279)\n\n[Twitch VOD 1](https://www.twitch.tv/videos/1668524281)",
-                "type": "special",
-                "gridTileSize": 1
+                markdownDesc:
+                  '[Twitch VOD 1](https://www.twitch.tv/videos/1668469279)\n\n[Twitch VOD 1](https://www.twitch.tv/videos/1668524281)',
+                type: 'special',
+                gridTileSize: 1
               }
             ],
-            "dayOfWeek": 2
+            dayOfWeek: 2
           },
           {
-            "slots": [
+            slots: [
               {
-                "visible": true,
-                "subtitle": "Bouphe & Osie",
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "G2xAxM8JBwtNIojLq1cE",
-                    "MsNyFTyL0zikJ4zKOZm2"
-                  ],
-                  "schedules": []
+                visible: true,
+                subtitle: 'Bouphe & Osie',
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['G2xAxM8JBwtNIojLq1cE', 'MsNyFTyL0zikJ4zKOZm2'],
+                  schedules: []
                 },
-                "showTwitchIcon": false,
-                "type": "special",
-                "start": "2022-12-03T11:00:00.000+0000",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ffa7cc00",
-                      "ff8bc200"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                showTwitchIcon: false,
+                type: 'special',
+                start: '2022-12-03T11:00:00.000+0000',
+                style: {
+                  linearGradient: {
+                    colors: ['ffa7cc00', 'ff8bc200'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "showHighlightIcon": true,
-                "id": "",
-                "duration": 10800,
-                "title": "Puzzle Sisters",
-                "gridTileSize": 1,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1669027004?t=00h39m38s)",
-                "showYoutubeIcon": false
+                showHighlightIcon: true,
+                id: '',
+                duration: 10800,
+                title: 'Puzzle Sisters',
+                gridTileSize: 1,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1669027004?t=00h39m38s)',
+                showYoutubeIcon: false
               },
               {
-                "showYoutubeIcon": false,
-                "title": "Cute Corner",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1669027004?t=03h38m00s)\n\nCute games with Kirsty & Briony\n\n![brionyKirsty](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_63a898e8f71a4992a833b0ea5dddd854/static/light/2.0)![kirstBriony](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_593306176ab34b45984d185549b1a278/static/light/2.0)",
-                "start": "2022-12-03T14:00:00.000+0000",
-                "showHighlightIcon": true,
-                "visible": true,
-                "duration": 10800,
-                "showTwitchIcon": false,
-                "id": "",
-                "gridTileSize": 1,
-                "subtitle": "Briony & Kirsty",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                showYoutubeIcon: false,
+                title: 'Cute Corner',
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1669027004?t=03h38m00s)\n\nCute games with Kirsty & Briony\n\n![brionyKirsty](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_63a898e8f71a4992a833b0ea5dddd854/static/light/2.0)![kirstBriony](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_593306176ab34b45984d185549b1a278/static/light/2.0)',
+                start: '2022-12-03T14:00:00.000+0000',
+                showHighlightIcon: true,
+                visible: true,
+                duration: 10800,
+                showTwitchIcon: false,
+                id: '',
+                gridTileSize: 1,
+                subtitle: 'Briony & Kirsty',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ff74b800",
-                      "ff5fad00"
-                    ]
+                    colors: ['ff74b800', 'ff5fad00']
                   }
                 },
-                "type": "special",
-                "relations": {
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "zwBpk82qRo4y2Sf5Nvlf"
-                  ],
-                  "podcasts": [],
-                  "youtubeChannels": []
+                type: 'special',
+                relations: {
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['Gz3S1VJlA6iPISXuIl7p', 'zwBpk82qRo4y2Sf5Nvlf'],
+                  podcasts: [],
+                  youtubeChannels: []
                 }
               },
               {
-                "gridTileSize": 1,
-                "id": "",
-                "showTwitchIcon": false,
-                "type": "special",
-                "showHighlightIcon": true,
-                "duration": 10800,
-                "visible": true,
-                "subtitle": "Simon Tom Harry Gee",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1669027004?t=06h37m19s)",
-                "title": "Simon's Important Videos",
-                "relations": {
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
+                gridTileSize: 1,
+                id: '',
+                showTwitchIcon: false,
+                type: 'special',
+                showHighlightIcon: true,
+                duration: 10800,
+                visible: true,
+                subtitle: 'Simon Tom Harry Gee',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1669027004?t=06h37m19s)',
+                title: "Simon's Important Videos",
+                relations: {
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: [],
+                  creators: [
+                    'zFdYfSFj4efXLheSHG5Z',
+                    '6oSnPSBKF79EBwS1G5DF',
+                    'QLpFsapfyzIU4TYdVmjM',
+                    'Hn8e1EgqFKg2RbJglY2x'
                   ],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "zFdYfSFj4efXLheSHG5Z",
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "QLpFsapfyzIU4TYdVmjM",
-                    "Hn8e1EgqFKg2RbJglY2x"
-                  ],
-                  "podcasts": []
+                  podcasts: []
                 },
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ff49a300",
-                      "ff389900"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    colors: ['ff49a300', 'ff389900'],
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "start": "2022-12-03T17:00:00.000+0000",
-                "showYoutubeIcon": false
+                start: '2022-12-03T17:00:00.000+0000',
+                showYoutubeIcon: false
               },
               {
-                "gridTileSize": 1,
-                "title": "Minecraft Bingo",
-                "subtitle": "Hosted by Harry & Shadow",
-                "visible": true,
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "schedules": [],
-                  "creators": [
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "f2tAtl8eBRTtKsqzQQoC",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "QLpFsapfyzIU4TYdVmjM",
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "zMMAq6kg87R8WsHUS3s0",
-                    "zFdYfSFj4efXLheSHG5Z",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "Gq7a6r1Pq0loxIUiNk8v"
+                gridTileSize: 1,
+                title: 'Minecraft Bingo',
+                subtitle: 'Hosted by Harry & Shadow',
+                visible: true,
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  schedules: [],
+                  creators: [
+                    '6oSnPSBKF79EBwS1G5DF',
+                    'f2tAtl8eBRTtKsqzQQoC',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'QLpFsapfyzIU4TYdVmjM',
+                    'MsNyFTyL0zikJ4zKOZm2',
+                    'Gz3S1VJlA6iPISXuIl7p',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'Dvsw8FJa8v3LjEXSXr9e',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'zMMAq6kg87R8WsHUS3s0',
+                    'zFdYfSFj4efXLheSHG5Z',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    'Gq7a6r1Pq0loxIUiNk8v'
                   ],
-                  "twitchChannels": [
-                    "68525019",
-                    "38167015",
-                    "21069037",
-                    "150004439",
-                    "26574506",
-                    "20786541"
-                  ]
+                  twitchChannels: ['68525019', '38167015', '21069037', '150004439', '26574506', '20786541']
                 },
-                "type": "special",
-                "showTwitchIcon": false,
-                "start": "2022-12-03T20:00:00.000+0000",
-                "id": "",
-                "duration": 10800,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1669423253)\n\n## Teams\n\n- Team Yellow: [Ravs](), Kirsty, Briony\n- Team Blue: [Ben](), Duncan, Osie\n- Team Red: [Simon](), Lewis, Gee\n- Team Green: Mango, Lolip, Sarah\n",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff288f00",
-                      "ff188500"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                type: 'special',
+                showTwitchIcon: false,
+                start: '2022-12-03T20:00:00.000+0000',
+                id: '',
+                duration: 10800,
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1669423253)\n\n## Teams\n\n- Team Yellow: [Ravs](), Kirsty, Briony\n- Team Blue: [Ben](), Duncan, Osie\n- Team Red: [Simon](), Lewis, Gee\n- Team Green: Mango, Lolip, Sarah\n',
+                style: {
+                  linearGradient: {
+                    colors: ['ff288f00', 'ff188500'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false
+                showHighlightIcon: true,
+                showYoutubeIcon: false
               },
               {
-                "visible": true,
-                "start": "2022-12-03T23:00:00.000+0000",
-                "relations": {
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "0w4JSboJK6RdTDmDKoYL"
-                  ],
-                  "schedules": []
+                visible: true,
+                start: '2022-12-03T23:00:00.000+0000',
+                relations: {
+                  podcasts: [],
+                  youtubeChannels: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['vz0XWPLfxV9gFyChCgMO', '0w4JSboJK6RdTDmDKoYL'],
+                  schedules: []
                 },
-                "gridTileSize": 1,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1669608016)",
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "duration": 10800,
-                "type": "special",
-                "id": "",
-                "showTwitchIcon": false,
-                "style": {
-                  "borderRadius": 12,
-                  "elevation": 4,
-                  "spacing": 2,
-                  "border": "fff67932",
-                  "background": "ff188500",
-                  "linearGradient": {
-                    "colors": [
-                      "ff188500",
-                      "ff188500"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                gridTileSize: 1,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1669608016)',
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                duration: 10800,
+                type: 'special',
+                id: '',
+                showTwitchIcon: false,
+                style: {
+                  borderRadius: 12,
+                  elevation: 4,
+                  spacing: 2,
+                  border: 'fff67932',
+                  background: 'ff188500',
+                  linearGradient: {
+                    colors: ['ff188500', 'ff188500'],
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 },
-                "title": "Jingleathon",
-                "subtitle": "Pedguin & Ravs"
+                title: 'Jingleathon',
+                subtitle: 'Pedguin & Ravs'
               }
             ],
-            "start": "2022-12-03T11:00:00.000+0000",
-            "dayOfWeek": 3
+            start: '2022-12-03T11:00:00.000+0000',
+            dayOfWeek: 3
           },
           {
-            "dayOfWeek": 4,
-            "slots": [
+            dayOfWeek: 4,
+            slots: [
               {
-                "id": "",
-                "subtitle": "Mango & Daltos",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                id: '',
+                subtitle: 'Mango & Daltos',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "fffc7600",
-                      "fffa6800"
-                    ]
+                    colors: ['fffc7600', 'fffa6800']
                   }
                 },
-                "showTwitchIcon": false,
-                "duration": 10800,
-                "type": "special",
-                "start": "2022-12-04T11:00:00.000+0000",
-                "relations": {
-                  "creators": [
-                    "AZGGyF9uschXdM8gGB1v",
-                    "zMMAq6kg87R8WsHUS3s0"
-                  ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": [],
-                  "youtubeChannels": [],
-                  "podcasts": []
+                showTwitchIcon: false,
+                duration: 10800,
+                type: 'special',
+                start: '2022-12-04T11:00:00.000+0000',
+                relations: {
+                  creators: ['AZGGyF9uschXdM8gGB1v', 'zMMAq6kg87R8WsHUS3s0'],
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  youtubeChannels: [],
+                  podcasts: []
                 },
-                "visible": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670020081?t=00h41m53s)",
-                "title": "Game Hard",
-                "gridTileSize": 1,
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false
+                visible: true,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1670020081?t=00h41m53s)',
+                title: 'Game Hard',
+                gridTileSize: 1,
+                showHighlightIcon: true,
+                showYoutubeIcon: false
               },
               {
-                "subtitle": "Potato & Spiff",
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "creators": [
-                    "MYZPOwKsujCZbtPEJtBG",
-                    "AcCWZMmDMrc7G9CnRchz"
-                  ],
-                  "youtubeChannels": [],
-                  "schedules": []
+                subtitle: 'Potato & Spiff',
+                relations: {
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  creators: ['MYZPOwKsujCZbtPEJtBG', 'AcCWZMmDMrc7G9CnRchz'],
+                  youtubeChannels: [],
+                  schedules: []
                 },
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "fff75f00",
-                      "fff55200"
-                    ]
+                    colors: ['fff75f00', 'fff55200']
                   }
                 },
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false,
-                "visible": true,
-                "gridTileSize": 1,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670020081?t=03h37m50s)",
-                "title": "Map Master",
-                "id": "",
-                "duration": 10800,
-                "start": "2022-12-04T14:00:00.000+0000",
-                "type": "special",
-                "showTwitchIcon": false
+                showHighlightIcon: true,
+                showYoutubeIcon: false,
+                visible: true,
+                gridTileSize: 1,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1670020081?t=03h37m50s)',
+                title: 'Map Master',
+                id: '',
+                duration: 10800,
+                start: '2022-12-04T14:00:00.000+0000',
+                type: 'special',
+                showTwitchIcon: false
               },
               {
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
+                relations: {
+                  twitchChannels: ['20786541'],
+                  creators: [
+                    'jP4KqZEefrAj53jHZ8HO',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'MsNyFTyL0zikJ4zKOZm2',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    '0w4JSboJK6RdTDmDKoYL',
+                    'Dvsw8FJa8v3LjEXSXr9e',
+                    'Hn8e1EgqFKg2RbJglY2x',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'o1gdP5407amAmS5vEXvP',
+                    '6oSnPSBKF79EBwS1G5DF',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'Gz3S1VJlA6iPISXuIl7p',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    '5h6PnMWEghJSDaS5ZNbc',
+                    'dvynb4nu7GmqelY4HW3f',
+                    'Tm2dvIIhVA3xb7nH19jJ',
+                    'MYZPOwKsujCZbtPEJtBG',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'zMMAq6kg87R8WsHUS3s0'
                   ],
-                  "creators": [
-                    "jP4KqZEefrAj53jHZ8HO",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "0w4JSboJK6RdTDmDKoYL",
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "Hn8e1EgqFKg2RbJglY2x",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "o1gdP5407amAmS5vEXvP",
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "dvynb4nu7GmqelY4HW3f",
-                    "Tm2dvIIhVA3xb7nH19jJ",
-                    "MYZPOwKsujCZbtPEJtBG",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "zMMAq6kg87R8WsHUS3s0"
-                  ],
-                  "schedules": [],
-                  "youtubeChannels": [],
-                  "podcasts": []
+                  schedules: [],
+                  youtubeChannels: [],
+                  podcasts: []
                 },
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                style: {
+                  linearGradient: {
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "fff24900",
-                      "fff03c00"
-                    ]
+                    colors: ['fff24900', 'fff03c00']
                   }
                 },
-                "start": "2022-12-04T17:00:00.000+0000",
-                "subtitle": "University Challenge Parody",
-                "showTwitchIcon": false,
-                "showYoutubeIcon": false,
-                "title": "Simon Clark's Yogs Challenges",
-                "id": "",
-                "showHighlightIcon": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670293623)\n\n## Teams\n\n- Duncan, Osie, Boba, Pedguin\n\n- Ben, Tom, Lewis, Pyrion\n\n- Tom B, Craig, Mat, Josh\n\n- Harry, \"Lydia\", Ravs, Sarah\n\n- Briony, Kirsty, Zylus, Mousie\n\n- RT, Spiff, Lolip, Mango\n",
-                "type": "special",
-                "gridTileSize": 1,
-                "duration": 10800,
-                "visible": true,
-                "desc": ""
+                start: '2022-12-04T17:00:00.000+0000',
+                subtitle: 'University Challenge Parody',
+                showTwitchIcon: false,
+                showYoutubeIcon: false,
+                title: "Simon Clark's Yogs Challenges",
+                id: '',
+                showHighlightIcon: true,
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1670293623)\n\n## Teams\n\n- Duncan, Osie, Boba, Pedguin\n\n- Ben, Tom, Lewis, Pyrion\n\n- Tom B, Craig, Mat, Josh\n\n- Harry, "Lydia", Ravs, Sarah\n\n- Briony, Kirsty, Zylus, Mousie\n\n- RT, Spiff, Lolip, Mango\n',
+                type: 'special',
+                gridTileSize: 1,
+                duration: 10800,
+                visible: true,
+                desc: ''
               },
               {
-                "showYoutubeIcon": false,
-                "title": "Canadian Evening",
-                "gridTileSize": 1,
-                "showHighlightIcon": true,
-                "duration": 10800,
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "schedules": [],
-                  "creators": [
-                    "3fNrixu9cDhggDXyLTwG",
-                    "f2tAtl8eBRTtKsqzQQoC"
-                  ]
+                showYoutubeIcon: false,
+                title: 'Canadian Evening',
+                gridTileSize: 1,
+                showHighlightIcon: true,
+                duration: 10800,
+                relations: {
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: [],
+                  podcasts: [],
+                  schedules: [],
+                  creators: ['3fNrixu9cDhggDXyLTwG', 'f2tAtl8eBRTtKsqzQQoC']
                 },
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670507089)",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1670507089)',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffed2f00",
-                      "ffeb2700"
-                    ],
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    colors: ['ffed2f00', 'ffeb2700'],
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "type": "special",
-                "start": "2022-12-04T20:00:00.000+0000",
-                "visible": true,
-                "id": "",
-                "showTwitchIcon": false,
-                "subtitle": "Shadow & Alex"
+                type: 'special',
+                start: '2022-12-04T20:00:00.000+0000',
+                visible: true,
+                id: '',
+                showTwitchIcon: false,
+                subtitle: 'Shadow & Alex'
               }
             ],
-            "start": "2022-12-04T11:00:00.000+0000"
+            start: '2022-12-04T11:00:00.000+0000'
           },
           {
-            "dayOfWeek": 5,
-            "start": "2022-12-05T11:00:00.000+0000",
-            "slots": [
+            dayOfWeek: 5,
+            start: '2022-12-05T11:00:00.000+0000',
+            slots: [
               {
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ff00e8c5",
-                      "ff00e3b9"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    colors: ['ff00e8c5', 'ff00e3b9'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 },
-                "showYoutubeIcon": false,
-                "showTwitchIcon": false,
-                "title": "Co-op Mayham",
-                "start": "2022-12-05T11:00:00.000+0000",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670906792?t=00h36m46s)",
-                "showHighlightIcon": true,
-                "visible": true,
-                "gridTileSize": 1,
-                "type": "special",
-                "id": "",
-                "subtitle": "Zylus & Mousie",
-                "duration": 10800,
-                "relations": {
-                  "creators": [
-                    "dvynb4nu7GmqelY4HW3f",
-                    "5h6PnMWEghJSDaS5ZNbc"
-                  ],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                showYoutubeIcon: false,
+                showTwitchIcon: false,
+                title: 'Co-op Mayham',
+                start: '2022-12-05T11:00:00.000+0000',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1670906792?t=00h36m46s)',
+                showHighlightIcon: true,
+                visible: true,
+                gridTileSize: 1,
+                type: 'special',
+                id: '',
+                subtitle: 'Zylus & Mousie',
+                duration: 10800,
+                relations: {
+                  creators: ['dvynb4nu7GmqelY4HW3f', '5h6PnMWEghJSDaS5ZNbc'],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  schedules: [],
+                  twitchChannels: ['20786541']
                 }
               },
               {
-                "start": "2022-12-05T14:00:00.000+0000",
-                "showYoutubeIcon": false,
-                "subtitle": "Gee Lolip Alex Lolies & more",
-                "id": "",
-                "visible": true,
-                "relations": {
-                  "youtubeChannels": [],
-                  "creators": [
-                    "L9AyK1KaHcULKJMvAHcF",
-                    "zFdYfSFj4efXLheSHG5Z",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "zMMAq6kg87R8WsHUS3s0"
+                start: '2022-12-05T14:00:00.000+0000',
+                showYoutubeIcon: false,
+                subtitle: 'Gee Lolip Alex Lolies & more',
+                id: '',
+                visible: true,
+                relations: {
+                  youtubeChannels: [],
+                  creators: [
+                    'L9AyK1KaHcULKJMvAHcF',
+                    'zFdYfSFj4efXLheSHG5Z',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'zMMAq6kg87R8WsHUS3s0'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": [],
-                  "podcasts": []
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  podcasts: []
                 },
-                "title": "Cozy Boardgames",
-                "showTwitchIcon": false,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670906792?t=03h47m02s)",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff00deae",
-                      "ff00d9a3"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                title: 'Cozy Boardgames',
+                showTwitchIcon: false,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1670906792?t=03h47m02s)',
+                style: {
+                  linearGradient: {
+                    colors: ['ff00deae', 'ff00d9a3'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "gridTileSize": 1,
-                "duration": 10800,
-                "type": "special",
-                "showHighlightIcon": true
+                gridTileSize: 1,
+                duration: 10800,
+                type: 'special',
+                showHighlightIcon: true
               },
               {
-                "gridTileSize": 2,
-                "duration": 21600,
-                "id": "",
-                "showTwitchIcon": false,
-                "visible": true,
-                "desc": "",
-                "type": "special",
-                "title": "Civ: Salt & Strategy",
-                "subtitle": "Lewis Duncan Spiff Ben Rythian, Pyrion Alex & Potato ",
-                "showHighlightIcon": true,
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
+                gridTileSize: 2,
+                duration: 21600,
+                id: '',
+                showTwitchIcon: false,
+                visible: true,
+                desc: '',
+                type: 'special',
+                title: 'Civ: Salt & Strategy',
+                subtitle: 'Lewis Duncan Spiff Ben Rythian, Pyrion Alex & Potato ',
+                showHighlightIcon: true,
+                relations: {
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  creators: [
+                    'Dvsw8FJa8v3LjEXSXr9e',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'deBUVdSqWrH6FwlXPe2m',
+                    'MYZPOwKsujCZbtPEJtBG',
+                    '3fNrixu9cDhggDXyLTwG',
+                    'AcCWZMmDMrc7G9CnRchz',
+                    'o1gdP5407amAmS5vEXvP'
                   ],
-                  "podcasts": [],
-                  "creators": [
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "MYZPOwKsujCZbtPEJtBG",
-                    "3fNrixu9cDhggDXyLTwG",
-                    "AcCWZMmDMrc7G9CnRchz",
-                    "o1gdP5407amAmS5vEXvP"
-                  ],
-                  "youtubeChannels": [],
-                  "schedules": []
+                  youtubeChannels: [],
+                  schedules: []
                 },
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1670906792?t=06h37m42s)\n\n30% tech difficulties + 30% Gin + 30% Salt + 10% Civ = Yogs JJ Civ Stream\n\n\n## Teams\n\n- Lewis, Rythian, Spiff, Pyrion\n- Potato, Duncan, Alex, Ben\n",
-                "showYoutubeIcon": false,
-                "start": "2022-12-05T17:00:00.000+0000",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff00d498",
-                      "ff00cf8d"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1670906792?t=06h37m42s)\n\n30% tech difficulties + 30% Gin + 30% Salt + 10% Civ = Yogs JJ Civ Stream\n\n\n## Teams\n\n- Lewis, Rythian, Spiff, Pyrion\n- Potato, Duncan, Alex, Ben\n',
+                showYoutubeIcon: false,
+                start: '2022-12-05T17:00:00.000+0000',
+                style: {
+                  linearGradient: {
+                    colors: ['ff00d498', 'ff00cf8d'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 }
@@ -4241,1739 +4114,1482 @@ const jj_schedule = {
             ]
           },
           {
-            "start": "2022-12-06T11:00:00.000+0000",
-            "dayOfWeek": 6,
-            "slots": [
+            start: '2022-12-06T11:00:00.000+0000',
+            dayOfWeek: 6,
+            slots: [
               {
-                "showYoutubeIcon": false,
-                "id": "",
-                "title": "Dark Mysteries",
-                "gridTileSize": 1,
-                "visible": true,
-                "start": "2022-12-06T11:00:00.000+0000",
-                "showHighlightIcon": true,
-                "subtitle": "Sips & Lydia",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                showYoutubeIcon: false,
+                id: '',
+                title: 'Dark Mysteries',
+                gridTileSize: 1,
+                visible: true,
+                start: '2022-12-06T11:00:00.000+0000',
+                showHighlightIcon: true,
+                subtitle: 'Sips & Lydia',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "colors": [
-                      "fff74acc",
-                      "fff23fbf"
-                    ]
+                    colors: ['fff74acc', 'fff23fbf']
                   }
                 },
-                "showTwitchIcon": false,
-                "duration": 10800,
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "creators": [
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "4ty8OfAA0hoXSV6trUY9"
-                  ],
-                  "twitchChannels": [
-                    "20786541",
-                    "26538483"
-                  ],
-                  "schedules": []
+                showTwitchIcon: false,
+                duration: 10800,
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  creators: ['eE4FNKcFiBhoc3jFb9Fo', '4ty8OfAA0hoXSV6trUY9'],
+                  twitchChannels: ['20786541', '26538483'],
+                  schedules: []
                 },
-                "type": "special"
+                type: 'special'
               },
               {
-                "gridTileSize": 1,
-                "duration": 10800,
-                "showYoutubeIcon": false,
-                "start": "2022-12-06T14:00:00.000+0000",
-                "visible": true,
-                "id": "",
-                "type": "special",
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                gridTileSize: 1,
+                duration: 10800,
+                showYoutubeIcon: false,
+                start: '2022-12-06T14:00:00.000+0000',
+                visible: true,
+                id: '',
+                type: 'special',
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffed34b3",
-                      "ffe82aa5"
-                    ]
+                    colors: ['ffed34b3', 'ffe82aa5']
                   }
                 },
-                "subtitle": "The Boy Returns",
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
+                subtitle: 'The Boy Returns',
+                relations: {
+                  twitchChannels: ['20786541'],
+                  creators: [
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'Hn8e1EgqFKg2RbJglY2x',
+                    'zFdYfSFj4efXLheSHG5Z',
+                    'eE4FNKcFiBhoc3jFb9Fo',
+                    'dvynb4nu7GmqelY4HW3f'
                   ],
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "Hn8e1EgqFKg2RbJglY2x",
-                    "zFdYfSFj4efXLheSHG5Z",
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "dvynb4nu7GmqelY4HW3f"
-                  ],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "podcasts": []
+                  youtubeChannels: [],
+                  schedules: [],
+                  podcasts: []
                 },
-                "showTwitchIcon": false,
-                "showHighlightIcon": true,
-                "title": "Tom & Wheelboy"
+                showTwitchIcon: false,
+                showHighlightIcon: true,
+                title: 'Tom & Wheelboy'
               },
               {
-                "start": "2022-12-06T17:00:00.000+0000",
-                "subtitle": "The boys spend six hours making 'music' for an 'album'",
-                "markdownDesc": "Hat Films try to make music for charity.\nMaybe the continue last years story or maybe start something new.\n\n---\n\nLet's be honest.\n\nThere might be tech problems ![hatTech](https://static-cdn.jtvnw.net/emoticons/v2/306309899/static/light/1.0)\n\nThey'll be a bit ![Late](https://static-cdn.jtvnw.net/emoticons/v2/306309588/static/light/1.0) and go until past midnight. \nPoor Sam...\n",
-                "gridTileSize": 2,
-                "type": "special",
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                start: '2022-12-06T17:00:00.000+0000',
+                subtitle: "The boys spend six hours making 'music' for an 'album'",
+                markdownDesc:
+                  "Hat Films try to make music for charity.\nMaybe the continue last years story or maybe start something new.\n\n---\n\nLet's be honest.\n\nThere might be tech problems ![hatTech](https://static-cdn.jtvnw.net/emoticons/v2/306309899/static/light/1.0)\n\nThey'll be a bit ![Late](https://static-cdn.jtvnw.net/emoticons/v2/306309588/static/light/1.0) and go until past midnight. \nPoor Sam...\n",
+                gridTileSize: 2,
+                type: 'special',
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ffe32098",
-                      "ffde168b"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    colors: ['ffe32098', 'ffde168b'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     }
                   }
                 },
-                "duration": 21600,
-                "title": "Hat Films Christmas Album",
-                "showTwitchIcon": false,
-                "visible": true,
-                "id": "",
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false,
-                "relations": {
-                  "schedules": [],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "Hz3L8GFTsM0EFg0caGoG"
-                  ],
-                  "youtubeChannels": []
+                duration: 21600,
+                title: 'Hat Films Christmas Album',
+                showTwitchIcon: false,
+                visible: true,
+                id: '',
+                showHighlightIcon: true,
+                showYoutubeIcon: false,
+                relations: {
+                  schedules: [],
+                  podcasts: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['Hz3L8GFTsM0EFg0caGoG'],
+                  youtubeChannels: []
                 }
               }
             ]
           },
           {
-            "slots": [
+            slots: [
               {
-                "subtitle": "Lewis Sips Joe Daf & Pyrion",
-                "visible": true,
-                "duration": 10800,
-                "start": "2022-12-07T11:00:00.000+0000",
-                "id": "",
-                "desc": "",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                subtitle: 'Lewis Sips Joe Daf & Pyrion',
+                visible: true,
+                duration: 10800,
+                start: '2022-12-07T11:00:00.000+0000',
+                id: '',
+                desc: '',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffffa600",
-                      "ffff9100"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    colors: ['ffffa600', 'ffff9100'],
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "relations": {
-                  "youtubeChannels": [],
-                  "creators": [
-                    "ShFoVukMUs1HAf2YryPl",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "Zf19FbodO1Alu5gfLykf",
-                    "o1gdP5407amAmS5vEXvP",
-                    "4ty8OfAA0hoXSV6trUY9",
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "WvavBOeHzCXZPBzahkRX",
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "dvynb4nu7GmqelY4HW3f",
-                    "vz0XWPLfxV9gFyChCgMO"
+                relations: {
+                  youtubeChannels: [],
+                  creators: [
+                    'ShFoVukMUs1HAf2YryPl',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'Zf19FbodO1Alu5gfLykf',
+                    'o1gdP5407amAmS5vEXvP',
+                    '4ty8OfAA0hoXSV6trUY9',
+                    'Gz3S1VJlA6iPISXuIl7p',
+                    'deBUVdSqWrH6FwlXPe2m',
+                    'WvavBOeHzCXZPBzahkRX',
+                    '5h6PnMWEghJSDaS5ZNbc',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    '6oSnPSBKF79EBwS1G5DF',
+                    'dvynb4nu7GmqelY4HW3f',
+                    'vz0XWPLfxV9gFyChCgMO'
                   ],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541",
-                    "26538483"
-                  ],
-                  "schedules": []
+                  podcasts: [],
+                  twitchChannels: ['20786541', '26538483'],
+                  schedules: []
                 },
-                "showHighlightIcon": true,
-                "markdownDesc": "[Twitch Vod](https://www.twitch.tv/videos/1672594289?t=00h35m28s)\n\nPyrion shouts at Daf for 3 hours.  \n\n![flaxRage](https://static-cdn.jtvnw.net/emoticons/v2/943854/static/light/2.0)\n\n\n### Game 2\n\n- Rythian, Alister, Briony, Zylus, Breeh\n- Josh, Mike, Daf, Ali, Mamopato\n\n### Game 2\n- Joe & Friends\n- Sips, Ravs, Harry, Duncan Rythin+Zylus\n\n### Game 3\n- Daf & Bots\n- Mousie, Boba, Osie, Jack, Sarah",
-                "gridTileSize": 1,
-                "type": "special",
-                "showYoutubeIcon": false,
-                "title": "Scrub Dota inhouse",
-                "showTwitchIcon": false
+                showHighlightIcon: true,
+                markdownDesc:
+                  '[Twitch Vod](https://www.twitch.tv/videos/1672594289?t=00h35m28s)\n\nPyrion shouts at Daf for 3 hours.  \n\n![flaxRage](https://static-cdn.jtvnw.net/emoticons/v2/943854/static/light/2.0)\n\n\n### Game 2\n\n- Rythian, Alister, Briony, Zylus, Breeh\n- Josh, Mike, Daf, Ali, Mamopato\n\n### Game 2\n- Joe & Friends\n- Sips, Ravs, Harry, Duncan Rythin+Zylus\n\n### Game 3\n- Daf & Bots\n- Mousie, Boba, Osie, Jack, Sarah',
+                gridTileSize: 1,
+                type: 'special',
+                showYoutubeIcon: false,
+                title: 'Scrub Dota inhouse',
+                showTwitchIcon: false
               },
               {
-                "showHighlightIcon": true,
-                "subtitle": "Simon & Gee",
-                "title": "Cursedcraft",
-                "type": "special",
-                "id": "",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1672594289?t=03h42m21s)",
-                "start": "2022-12-07T14:00:00.000+0000",
-                "relations": {
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "zFdYfSFj4efXLheSHG5Z",
-                    "QLpFsapfyzIU4TYdVmjM"
-                  ],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                showHighlightIcon: true,
+                subtitle: 'Simon & Gee',
+                title: 'Cursedcraft',
+                type: 'special',
+                id: '',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1672594289?t=03h42m21s)',
+                start: '2022-12-07T14:00:00.000+0000',
+                relations: {
+                  podcasts: [],
+                  youtubeChannels: [],
+                  creators: ['zFdYfSFj4efXLheSHG5Z', 'QLpFsapfyzIU4TYdVmjM'],
+                  schedules: [],
+                  twitchChannels: ['20786541']
                 },
-                "showYoutubeIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                showYoutubeIcon: false,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffff7b00",
-                      "ffff6a00"
-                    ],
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    colors: ['ffff7b00', 'ffff6a00'],
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "duration": 10800,
-                "visible": true,
-                "showTwitchIcon": false,
-                "gridTileSize": 1
+                duration: 10800,
+                visible: true,
+                showTwitchIcon: false,
+                gridTileSize: 1
               },
               {
-                "type": "special",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1672594289?t=06h42m01s)",
-                "subtitle": "Farming sim",
-                "showHighlightIcon": true,
-                "id": "",
-                "gridTileSize": 1,
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ffff5500",
-                      "ffff4000"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                type: 'special',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1672594289?t=06h42m01s)',
+                subtitle: 'Farming sim',
+                showHighlightIcon: true,
+                id: '',
+                gridTileSize: 1,
+                style: {
+                  linearGradient: {
+                    colors: ['ffff5500', 'ffff4000'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "visible": true,
-                "showTwitchIcon": false,
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
+                visible: true,
+                showTwitchIcon: false,
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  twitchChannels: ['20786541'],
+                  creators: [
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'MsNyFTyL0zikJ4zKOZm2'
                   ],
-                  "creators": [
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "MsNyFTyL0zikJ4zKOZm2"
-                  ],
-                  "schedules": []
+                  schedules: []
                 },
-                "title": "Feed a cow for christmas",
-                "showYoutubeIcon": false,
-                "start": "2022-12-07T17:00:00.000+0000",
-                "duration": 10800
+                title: 'Feed a cow for christmas',
+                showYoutubeIcon: false,
+                start: '2022-12-07T17:00:00.000+0000',
+                duration: 10800
               },
               {
-                "id": "",
-                "duration": 10800,
-                "type": "special",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1672938764)\n\n*In the dark, but not without rainbows bright! The gays are gathering for a jingle drive into the night* \n\nFionn & Shasskor (Fizone discord) Nov 30th 2022\n\n\n<center>\n\n![zoeyFZ1](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8eb09b9213ec40b18638c3ba12ff9636/static/light/2.0)![zoeyFZ2](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_f817ddeb7edf457b8c1149580db93123/static/light/2.0)\n\n</center>\n",
-                "showTwitchIcon": false,
-                "visible": true,
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false,
-                "gridTileSize": 1,
-                "subtitle": "",
-                "style": {
-                  "background": "ffffffff",
-                  "linearGradient": {
-                    "end": {
-                      "x": 1,
-                      "y": 1
+                id: '',
+                duration: 10800,
+                type: 'special',
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1672938764)\n\n*In the dark, but not without rainbows bright! The gays are gathering for a jingle drive into the night* \n\nFionn & Shasskor (Fizone discord) Nov 30th 2022\n\n\n<center>\n\n![zoeyFZ1](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8eb09b9213ec40b18638c3ba12ff9636/static/light/2.0)![zoeyFZ2](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_f817ddeb7edf457b8c1149580db93123/static/light/2.0)\n\n</center>\n',
+                showTwitchIcon: false,
+                visible: true,
+                showHighlightIcon: true,
+                showYoutubeIcon: false,
+                gridTileSize: 1,
+                subtitle: '',
+                style: {
+                  background: 'ffffffff',
+                  linearGradient: {
+                    end: {
+                      x: 1,
+                      y: 1
                     },
-                    "colors": [
-                      "ffffb1b0",
-                      "ffffdfbe",
-                      "ffffffbf",
-                      "ffb4f0a7",
-                      "ffa9d1f7",
-                      "ffcc99ff"
-                    ],
-                    "begin": {
-                      "x": -1,
-                      "y": -1
+                    colors: ['ffffb1b0', 'ffffdfbe', 'ffffffbf', 'ffb4f0a7', 'ffa9d1f7', 'ffcc99ff'],
+                    begin: {
+                      x: -1,
+                      y: -1
                     }
                   }
                 },
-                "start": "2022-12-07T20:00:00.000+0000",
-                "relations": {
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "sMGdgzZrZP8c68C0pFfU",
-                    "HkZh9sasvBrpZ4r22Sb3"
-                  ]
+                start: '2022-12-07T20:00:00.000+0000',
+                relations: {
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  creators: ['sMGdgzZrZP8c68C0pFfU', 'HkZh9sasvBrpZ4r22Sb3']
                 },
-                "title": "Fizone After Dark"
+                title: 'Fizone After Dark'
               }
             ],
-            "start": "2022-12-07T11:00:00.000+0000",
-            "dayOfWeek": 7
+            start: '2022-12-07T11:00:00.000+0000',
+            dayOfWeek: 7
           }
         ]
       },
       {
-        "times": [
+        times: [
           {
-            "duration": 10800000000,
-            "start": "2022-01-01T11:00:00.000+0000"
+            duration: 10800000000,
+            start: '2022-01-01T11:00:00.000+0000'
           },
           {
-            "duration": 10800000000,
-            "start": "2022-01-01T14:00:00.000+0000"
+            duration: 10800000000,
+            start: '2022-01-01T14:00:00.000+0000'
           },
           {
-            "duration": 10800000000,
-            "start": "2022-01-01T17:00:00.000+0000"
+            duration: 10800000000,
+            start: '2022-01-01T17:00:00.000+0000'
           },
           {
-            "duration": 10800000000,
-            "start": "2022-01-01T20:00:00.000+0000"
+            duration: 10800000000,
+            start: '2022-01-01T20:00:00.000+0000'
           }
         ],
-        "days": [
+        days: [
           {
-            "start": "2022-12-08T11:00:00.000+0000",
-            "slots": [
+            start: '2022-12-08T11:00:00.000+0000',
+            slots: [
               {
-                "showTwitchIcon": false,
-                "id": "",
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1673471320?t=00h40m41s)",
-                "type": "special",
-                "start": "2022-12-08T11:00:00.000+0000",
-                "subtitle": "Duncan & Osie",
-                "duration": 10800,
-                "title": "Hangover Hangout",
-                "gridTileSize": 1,
-                "relations": {
-                  "youtubeChannels": [],
-                  "creators": [
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "MsNyFTyL0zikJ4zKOZm2"
-                  ],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": []
+                showTwitchIcon: false,
+                id: '',
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1673471320?t=00h40m41s)',
+                type: 'special',
+                start: '2022-12-08T11:00:00.000+0000',
+                subtitle: 'Duncan & Osie',
+                duration: 10800,
+                title: 'Hangover Hangout',
+                gridTileSize: 1,
+                relations: {
+                  youtubeChannels: [],
+                  creators: ['8K6EIOpBvb6ROSHWHx9Q', 'MsNyFTyL0zikJ4zKOZm2'],
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  podcasts: []
                 },
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff00bbe0",
-                      "ff00aad9"
-                    ],
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                style: {
+                  linearGradient: {
+                    colors: ['ff00bbe0', 'ff00aad9'],
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     }
                   }
                 },
-                "visible": true
+                visible: true
               },
               {
-                "showTwitchIcon": false,
-                "subtitle": "Pedguin Plus Pals",
-                "title": "Pedguin's Pre Poker Party",
-                "id": "",
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "creators": [
-                    "0w4JSboJK6RdTDmDKoYL",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "zFdYfSFj4efXLheSHG5Z"
-                  ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": []
+                showTwitchIcon: false,
+                subtitle: 'Pedguin Plus Pals',
+                title: "Pedguin's Pre Poker Party",
+                id: '',
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  creators: ['0w4JSboJK6RdTDmDKoYL', 'yAmEX9kxAZTdKzwQcIsy', 'zFdYfSFj4efXLheSHG5Z'],
+                  twitchChannels: ['20786541'],
+                  schedules: []
                 },
-                "duration": 10800,
-                "visible": true,
-                "gridTileSize": 1,
-                "start": "2022-12-08T14:00:00.000+0000",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1673471320?t=03h41m54s)",
-                "type": "special",
-                "showYoutubeIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                duration: 10800,
+                visible: true,
+                gridTileSize: 1,
+                start: '2022-12-08T14:00:00.000+0000',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1673471320?t=03h41m54s)',
+                type: 'special',
+                showYoutubeIcon: false,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "ff0096d1",
-                      "ff0086c9"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    colors: ['ff0096d1', 'ff0086c9'],
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "showHighlightIcon": true
+                showHighlightIcon: true
               },
               {
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff0078c2",
-                      "ff0066ba"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                style: {
+                  linearGradient: {
+                    colors: ['ff0078c2', 'ff0066ba'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "visible": true,
-                "title": "Poker Night",
-                "subtitle": "Pyrion Tom & many more Prize Pool by Displate",
-                "start": "2022-12-08T17:30:00.000+0000",
-                "relations": {
-                  "schedules": [],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "o1gdP5407amAmS5vEXvP",
-                    "Hn8e1EgqFKg2RbJglY2x",
-                    "ShFoVukMUs1HAf2YryPl",
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "WvavBOeHzCXZPBzahkRX",
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "Zf19FbodO1Alu5gfLykf",
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "L9AyK1KaHcULKJMvAHcF",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "dvynb4nu7GmqelY4HW3f",
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "uuZ2P6KPhmLVGc7ZjWXR",
-                    "deBUVdSqWrH6FwlXPe2m"
+                visible: true,
+                title: 'Poker Night',
+                subtitle: 'Pyrion Tom & many more Prize Pool by Displate',
+                start: '2022-12-08T17:30:00.000+0000',
+                relations: {
+                  schedules: [],
+                  youtubeChannels: [],
+                  creators: [
+                    'o1gdP5407amAmS5vEXvP',
+                    'Hn8e1EgqFKg2RbJglY2x',
+                    'ShFoVukMUs1HAf2YryPl',
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'WvavBOeHzCXZPBzahkRX',
+                    'MsNyFTyL0zikJ4zKOZm2',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    '5h6PnMWEghJSDaS5ZNbc',
+                    'Zf19FbodO1Alu5gfLykf',
+                    '6oSnPSBKF79EBwS1G5DF',
+                    'L9AyK1KaHcULKJMvAHcF',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    'dvynb4nu7GmqelY4HW3f',
+                    'eE4FNKcFiBhoc3jFb9Fo',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'uuZ2P6KPhmLVGc7ZjWXR',
+                    'deBUVdSqWrH6FwlXPe2m'
                   ],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541",
-                    "416016021"
-                  ]
+                  podcasts: [],
+                  twitchChannels: ['20786541', '416016021']
                 },
-                "showTwitchIcon": false,
-                "showYoutubeIcon": false,
-                "duration": 21600,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1673471320?t=07h23m40s)\n\n## Tables\n### Table 1\n- Daf, Duncan, Breeh, Osie, Lewis, Zylus\n\n### Table 2\n- Joe, Harry, Alex, Ravs, Kirsty, Mousie\n\n### Table 3\n- Lydia, Rythian, Boba, Sarah, Lolip, Nilesy\n\n## Final\n- Lydia (The Grand Appeal)\n- Zylus (Dogs for Autism)\n- Kirsty (Huntingtons Disease Association)\n- Ravs (Special Olympics GB)\n- Osie (Movember)\n- Nilesy (WDC)\n",
-                "type": "special",
-                "showHighlightIcon": true,
-                "gridTileSize": 2,
-                "id": ""
+                showTwitchIcon: false,
+                showYoutubeIcon: false,
+                duration: 21600,
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1673471320?t=07h23m40s)\n\n## Tables\n### Table 1\n- Daf, Duncan, Breeh, Osie, Lewis, Zylus\n\n### Table 2\n- Joe, Harry, Alex, Ravs, Kirsty, Mousie\n\n### Table 3\n- Lydia, Rythian, Boba, Sarah, Lolip, Nilesy\n\n## Final\n- Lydia (The Grand Appeal)\n- Zylus (Dogs for Autism)\n- Kirsty (Huntingtons Disease Association)\n- Ravs (Special Olympics GB)\n- Osie (Movember)\n- Nilesy (WDC)\n',
+                type: 'special',
+                showHighlightIcon: true,
+                gridTileSize: 2,
+                id: ''
               }
             ],
-            "dayOfWeek": 1
+            dayOfWeek: 1
           },
           {
-            "dayOfWeek": 2,
-            "start": "2022-12-09T11:00:00.000+0000",
-            "slots": [
+            dayOfWeek: 2,
+            start: '2022-12-09T11:00:00.000+0000',
+            slots: [
               {
-                "showHighlightIcon": true,
-                "start": "2022-12-09T11:00:00.000+0000",
-                "relations": {
-                  "schedules": [],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "5h6PnMWEghJSDaS5ZNbc"
-                  ]
+                showHighlightIcon: true,
+                start: '2022-12-09T11:00:00.000+0000',
+                relations: {
+                  schedules: [],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['Gz3S1VJlA6iPISXuIl7p', '5h6PnMWEghJSDaS5ZNbc']
                 },
-                "showTwitchIcon": false,
-                "title": "Other Worlds",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=00h37m37s)",
-                "showYoutubeIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                showTwitchIcon: false,
+                title: 'Other Worlds',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=00h37m37s)',
+                showYoutubeIcon: false,
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffffd900",
-                      "ffffd000"
-                    ]
+                    colors: ['ffffd900', 'ffffd000']
                   }
                 },
-                "visible": true,
-                "id": "",
-                "type": "special",
-                "subtitle": "Briony & Zylus",
-                "duration": 10800,
-                "gridTileSize": 1
+                visible: true,
+                id: '',
+                type: 'special',
+                subtitle: 'Briony & Zylus',
+                duration: 10800,
+                gridTileSize: 1
               },
               {
-                "showHighlightIcon": true,
-                "showTwitchIcon": false,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=03h46m32s)",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ffffc800",
-                      "ffffbf00"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                showHighlightIcon: true,
+                showTwitchIcon: false,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=03h46m32s)',
+                style: {
+                  linearGradient: {
+                    colors: ['ffffc800', 'ffffbf00'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "subtitle": "Lewis Simon Nina & Jack",
-                "visible": true,
-                "relations": {
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "QLpFsapfyzIU4TYdVmjM"
-                  ],
-                  "schedules": [],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": []
+                subtitle: 'Lewis Simon Nina & Jack',
+                visible: true,
+                relations: {
+                  creators: ['Gq7a6r1Pq0loxIUiNk8v', 'QLpFsapfyzIU4TYdVmjM'],
+                  schedules: [],
+                  podcasts: [],
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: []
                 },
-                "type": "special",
-                "start": "2022-12-09T14:00:00.000+0000",
-                "title": "Fighting Fantasy",
-                "id": "",
-                "showYoutubeIcon": false,
-                "gridTileSize": 1,
-                "duration": 10800
+                type: 'special',
+                start: '2022-12-09T14:00:00.000+0000',
+                title: 'Fighting Fantasy',
+                id: '',
+                showYoutubeIcon: false,
+                gridTileSize: 1,
+                duration: 10800
               },
               {
-                "start": "2022-12-09T17:00:00.000+0000",
-                "showHighlightIcon": true,
-                "duration": 10800,
-                "visible": true,
-                "showYoutubeIcon": false,
-                "subtitle": "With AARDMAN",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=06h50m32s)",
-                "id": "",
-                "showTwitchIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                start: '2022-12-09T17:00:00.000+0000',
+                showHighlightIcon: true,
+                duration: 10800,
+                visible: true,
+                showYoutubeIcon: false,
+                subtitle: 'With AARDMAN',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=06h50m32s)',
+                id: '',
+                showTwitchIcon: false,
+                style: {
+                  linearGradient: {
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffffb700",
-                      "ffffae00"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    colors: ['ffffb700', 'ffffae00'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 },
-                "type": "special",
-                "relations": {
-                  "schedules": [],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "MsNyFTyL0zikJ4zKOZm2"
-                  ],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                type: 'special',
+                relations: {
+                  schedules: [],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  creators: ['yAmEX9kxAZTdKzwQcIsy', 'Gz3S1VJlA6iPISXuIl7p', 'MsNyFTyL0zikJ4zKOZm2'],
+                  twitchChannels: ['20786541']
                 },
-                "gridTileSize": 1,
-                "title": "Scultping the Yogscast"
+                gridTileSize: 1,
+                title: 'Scultping the Yogscast'
               },
               {
-                "showTwitchIcon": false,
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "relations": {
-                  "schedules": [],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "AZGGyF9uschXdM8gGB1v",
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "dvynb4nu7GmqelY4HW3f",
-                    "zMMAq6kg87R8WsHUS3s0",
-                    "WvavBOeHzCXZPBzahkRX",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "AcCWZMmDMrc7G9CnRchz",
-                    "EoUzF0nQQGdpY9NlZfeU",
-                    "Zf19FbodO1Alu5gfLykf",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "Gz3S1VJlA6iPISXuIl7p",
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "IOdPOlLaB7zFHvsuvVwu"
+                showTwitchIcon: false,
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                relations: {
+                  schedules: [],
+                  youtubeChannels: [],
+                  creators: [
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'AZGGyF9uschXdM8gGB1v',
+                    '5h6PnMWEghJSDaS5ZNbc',
+                    'dvynb4nu7GmqelY4HW3f',
+                    'zMMAq6kg87R8WsHUS3s0',
+                    'WvavBOeHzCXZPBzahkRX',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    'AcCWZMmDMrc7G9CnRchz',
+                    'EoUzF0nQQGdpY9NlZfeU',
+                    'Zf19FbodO1Alu5gfLykf',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'Gz3S1VJlA6iPISXuIl7p',
+                    'deBUVdSqWrH6FwlXPe2m',
+                    'IOdPOlLaB7zFHvsuvVwu'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": []
+                  twitchChannels: ['20786541'],
+                  podcasts: []
                 },
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=09h43m33s)\n\n## Teams\n\n### Game 1:\n- Duncan, Boba, Ravs, Sarah, Daltos\n- Zylus, Mousie, Mango, Breeh, Kirsty\n\n### Game 2:\n- Potato, Digby, Martyn, Lewis, Briony\n- Joe, Wilson, Jack, Rythian, Lolip",
-                "gridTileSize": 1,
-                "start": "2022-12-09T20:00:00.000+0000",
-                "type": "special",
-                "id": "",
-                "duration": 10800,
-                "subtitle": "Hosted by Spiff & Pyrion",
-                "visible": true,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                markdownDesc:
+                  '[Twitch VOD](https://www.twitch.tv/videos/1674336277?t=09h43m33s)\n\n## Teams\n\n### Game 1:\n- Duncan, Boba, Ravs, Sarah, Daltos\n- Zylus, Mousie, Mango, Breeh, Kirsty\n\n### Game 2:\n- Potato, Digby, Martyn, Lewis, Briony\n- Joe, Wilson, Jack, Rythian, Lolip',
+                gridTileSize: 1,
+                start: '2022-12-09T20:00:00.000+0000',
+                type: 'special',
+                id: '',
+                duration: 10800,
+                subtitle: 'Hosted by Spiff & Pyrion',
+                visible: true,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffffa600",
-                      "ffff9d00"
-                    ]
+                    colors: ['ffffa600', 'ffff9d00']
                   }
                 },
-                "title": "CSGO Scrub Major"
+                title: 'CSGO Scrub Major'
               }
             ]
           },
           {
-            "dayOfWeek": 3,
-            "slots": [
+            dayOfWeek: 3,
+            slots: [
               {
-                "gridTileSize": 1,
-                "showYoutubeIcon": false,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1675235787?t=00h36m24s)",
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "schedules": [],
-                  "creators": [
-                    "WvavBOeHzCXZPBzahkRX",
-                    "dvynb4nu7GmqelY4HW3f"
-                  ],
-                  "youtubeChannels": []
+                gridTileSize: 1,
+                showYoutubeIcon: false,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1675235787?t=00h36m24s)',
+                relations: {
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  schedules: [],
+                  creators: ['WvavBOeHzCXZPBzahkRX', 'dvynb4nu7GmqelY4HW3f'],
+                  youtubeChannels: []
                 },
-                "visible": true,
-                "id": "",
-                "showTwitchIcon": false,
-                "duration": 10800,
-                "showHighlightIcon": true,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                visible: true,
+                id: '',
+                showTwitchIcon: false,
+                duration: 10800,
+                showHighlightIcon: true,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ffa7cc00",
-                      "ff8bc200"
-                    ]
+                    colors: ['ffa7cc00', 'ff8bc200']
                   }
                 },
-                "type": "special",
-                "start": "2022-12-10T11:00:00.000+0000",
-                "title": "Breakfest Mixup",
-                "subtitle": "Mousie & Breeh"
+                type: 'special',
+                start: '2022-12-10T11:00:00.000+0000',
+                title: 'Breakfest Mixup',
+                subtitle: 'Mousie & Breeh'
               },
               {
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "schedules": [],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "zwBpk82qRo4y2Sf5Nvlf"
-                  ]
+                relations: {
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  schedules: [],
+                  youtubeChannels: [],
+                  creators: ['deBUVdSqWrH6FwlXPe2m', '5h6PnMWEghJSDaS5ZNbc', 'zwBpk82qRo4y2Sf5Nvlf']
                 },
-                "duration": 10800,
-                "title": "Tactic games",
-                "type": "special",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1675235787?t=03h40m24s)",
-                "gridTileSize": 1,
-                "showHighlightIcon": true,
-                "visible": true,
-                "showYoutubeIcon": false,
-                "id": "",
-                "start": "2022-12-10T14:00:00.000+0000",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff74b800",
-                      "ff5fad00"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                duration: 10800,
+                title: 'Tactic games',
+                type: 'special',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1675235787?t=03h40m24s)',
+                gridTileSize: 1,
+                showHighlightIcon: true,
+                visible: true,
+                showYoutubeIcon: false,
+                id: '',
+                start: '2022-12-10T14:00:00.000+0000',
+                style: {
+                  linearGradient: {
+                    colors: ['ff74b800', 'ff5fad00'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "showTwitchIcon": false,
-                "subtitle": "Rythian Zylus & Kirsty"
+                showTwitchIcon: false,
+                subtitle: 'Rythian Zylus & Kirsty'
               },
               {
-                "start": "2022-12-10T17:00:00.000+0000",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1675235787?t=06h40m22s)",
-                "title": "Everyone is santa",
-                "gridTileSize": 1,
-                "showTwitchIcon": false,
-                "duration": 10800,
-                "id": "",
-                "subtitle": "Tom's Roleplay",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff49a300",
-                      "ff389900"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                start: '2022-12-10T17:00:00.000+0000',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1675235787?t=06h40m22s)',
+                title: 'Everyone is santa',
+                gridTileSize: 1,
+                showTwitchIcon: false,
+                duration: 10800,
+                id: '',
+                subtitle: "Tom's Roleplay",
+                style: {
+                  linearGradient: {
+                    colors: ['ff49a300', 'ff389900'],
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 },
-                "visible": true,
-                "showHighlightIcon": true,
-                "showYoutubeIcon": false,
-                "type": "special",
-                "desc": "",
-                "relations": {
-                  "youtubeChannels": [],
-                  "twitchChannels": [
-                    "20786541"
+                visible: true,
+                showHighlightIcon: true,
+                showYoutubeIcon: false,
+                type: 'special',
+                desc: '',
+                relations: {
+                  youtubeChannels: [],
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  creators: [
+                    'Hn8e1EgqFKg2RbJglY2x',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'QLpFsapfyzIU4TYdVmjM',
+                    'eE4FNKcFiBhoc3jFb9Fo',
+                    'vz0XWPLfxV9gFyChCgMO'
                   ],
-                  "schedules": [],
-                  "creators": [
-                    "Hn8e1EgqFKg2RbJglY2x",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "QLpFsapfyzIU4TYdVmjM",
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "vz0XWPLfxV9gFyChCgMO"
-                  ],
-                  "podcasts": []
+                  podcasts: []
                 }
               },
               {
-                "id": "",
-                "type": "special",
-                "markdownDesc": "[Longest John Twitch VOD](https://www.twitch.tv/videos/1675235787?t=09h47m06s)\n\n[Rust RP Twitch VOD](https://www.twitch.tv/videos/1675235787?t=10h55m46s)",
-                "gridTileSize": 1,
-                "showYoutubeIcon": false,
-                "subtitle": "Followd by Rust RP",
-                "visible": true,
-                "start": "2022-12-10T20:00:00.000+0000",
-                "title": "Longest John Singalong",
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                id: '',
+                type: 'special',
+                markdownDesc:
+                  '[Longest John Twitch VOD](https://www.twitch.tv/videos/1675235787?t=09h47m06s)\n\n[Rust RP Twitch VOD](https://www.twitch.tv/videos/1675235787?t=10h55m46s)',
+                gridTileSize: 1,
+                showYoutubeIcon: false,
+                subtitle: 'Followd by Rust RP',
+                visible: true,
+                start: '2022-12-10T20:00:00.000+0000',
+                title: 'Longest John Singalong',
+                style: {
+                  linearGradient: {
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "ff288f00",
-                      "ff188500"
-                    ]
+                    colors: ['ff288f00', 'ff188500']
                   }
                 },
-                "duration": 14400,
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": [],
-                  "podcasts": [],
-                  "creators": [
-                    "o1gdP5407amAmS5vEXvP",
-                    "MYZPOwKsujCZbtPEJtBG",
-                    "EoUzF0nQQGdpY9NlZfeU"
-                  ],
-                  "youtubeChannels": []
+                duration: 14400,
+                relations: {
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  podcasts: [],
+                  creators: ['o1gdP5407amAmS5vEXvP', 'MYZPOwKsujCZbtPEJtBG', 'EoUzF0nQQGdpY9NlZfeU'],
+                  youtubeChannels: []
                 },
-                "showTwitchIcon": false,
-                "showHighlightIcon": true
+                showTwitchIcon: false,
+                showHighlightIcon: true
               },
               {
-                "start": "2022-12-11T00:00:00.000+0000",
-                "style": {
-                  "background": "ff1e95ef",
-                  "border": "fff67932",
-                  "spacing": 2,
-                  "borderRadius": 12,
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                start: '2022-12-11T00:00:00.000+0000',
+                style: {
+                  background: 'ff1e95ef',
+                  border: 'fff67932',
+                  spacing: 2,
+                  borderRadius: 12,
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ff188500",
-                      "ff188500"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    colors: ['ff188500', 'ff188500'],
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   },
-                  "elevation": 4
+                  elevation: 4
                 },
-                "type": "special",
-                "id": "",
-                "title": "Harry's Vault Hunters Marathon",
-                "showYoutubeIcon": false,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1675858946)",
-                "visible": true,
-                "showHighlightIcon": true,
-                "subtitle": "12 Hour Minecraft Madness",
-                "showTwitchIcon": false,
-                "duration": 43200,
-                "gridTileSize": 1,
-                "relations": {
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": [],
-                  "podcasts": [],
-                  "creators": [
-                    "6oSnPSBKF79EBwS1G5DF"
-                  ],
-                  "youtubeChannels": []
+                type: 'special',
+                id: '',
+                title: "Harry's Vault Hunters Marathon",
+                showYoutubeIcon: false,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1675858946)',
+                visible: true,
+                showHighlightIcon: true,
+                subtitle: '12 Hour Minecraft Madness',
+                showTwitchIcon: false,
+                duration: 43200,
+                gridTileSize: 1,
+                relations: {
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  podcasts: [],
+                  creators: ['6oSnPSBKF79EBwS1G5DF'],
+                  youtubeChannels: []
                 }
               }
             ],
-            "start": "2022-12-10T11:00:00.000+0000"
+            start: '2022-12-10T11:00:00.000+0000'
           },
           {
-            "dayOfWeek": 4,
-            "slots": [
+            dayOfWeek: 4,
+            slots: [
               {
-                "start": "2022-12-11T11:00:00.000+0000",
-                "relations": {
-                  "schedules": [],
-                  "creators": [
-                    "ShFoVukMUs1HAf2YryPl",
-                    "0w4JSboJK6RdTDmDKoYL"
-                  ],
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                start: '2022-12-11T11:00:00.000+0000',
+                relations: {
+                  schedules: [],
+                  creators: ['ShFoVukMUs1HAf2YryPl', '0w4JSboJK6RdTDmDKoYL'],
+                  youtubeChannels: [],
+                  podcasts: [],
+                  twitchChannels: ['20786541']
                 },
-                "showTwitchIcon": false,
-                "gridTileSize": 1,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                showTwitchIcon: false,
+                gridTileSize: 1,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "colors": [
-                      "fffc7600",
-                      "fffa6800"
-                    ]
+                    colors: ['fffc7600', 'fffa6800']
                   }
                 },
-                "showHighlightIcon": true,
-                "subtitle": "Pedguin & Daf",
-                "id": "",
-                "duration": 10800,
-                "visible": true,
-                "title": "Cutesy Chums",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1676166943?t=00h14m08s)",
-                "type": "special",
-                "showYoutubeIcon": false
+                showHighlightIcon: true,
+                subtitle: 'Pedguin & Daf',
+                id: '',
+                duration: 10800,
+                visible: true,
+                title: 'Cutesy Chums',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1676166943?t=00h14m08s)',
+                type: 'special',
+                showYoutubeIcon: false
               },
               {
-                "start": "2022-12-11T14:00:00.000+0000",
-                "showHighlightIcon": true,
-                "id": "",
-                "subtitle": "Bekki & Ped",
-                "showYoutubeIcon": false,
-                "type": "special",
-                "visible": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1676166943?t=03h09m07s)",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                start: '2022-12-11T14:00:00.000+0000',
+                showHighlightIcon: true,
+                id: '',
+                subtitle: 'Bekki & Ped',
+                showYoutubeIcon: false,
+                type: 'special',
+                visible: true,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1676166943?t=03h09m07s)',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "fff75f00",
-                      "fff55200"
-                    ]
+                    colors: ['fff75f00', 'fff55200']
                   }
                 },
-                "title": "Friend Time",
-                "relations": {
-                  "youtubeChannels": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "7tl19sOXgMq8ONpa0Wwc",
-                    "0w4JSboJK6RdTDmDKoYL"
-                  ],
-                  "schedules": [],
-                  "podcasts": []
+                title: 'Friend Time',
+                relations: {
+                  youtubeChannels: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['7tl19sOXgMq8ONpa0Wwc', '0w4JSboJK6RdTDmDKoYL'],
+                  schedules: [],
+                  podcasts: []
                 },
-                "showTwitchIcon": false,
-                "gridTileSize": 1,
-                "duration": 10800
+                showTwitchIcon: false,
+                gridTileSize: 1,
+                duration: 10800
               },
               {
-                "showYoutubeIcon": false,
-                "type": "special",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "fff24900",
-                      "fff03c00"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                showYoutubeIcon: false,
+                type: 'special',
+                style: {
+                  linearGradient: {
+                    colors: ['fff24900', 'fff03c00'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "gridTileSize": 1,
-                "relations": {
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "creators": [
-                    "Hz3L8GFTsM0EFg0caGoG",
-                    "OxMCBocsLB1lXH5tQV6u",
-                    "RuJTT0r57IGKXWtlHNVX",
-                    "c9raygCH9eGa09OLB12t",
-                    "vz0XWPLfxV9gFyChCgMO"
+                gridTileSize: 1,
+                relations: {
+                  podcasts: [],
+                  youtubeChannels: [],
+                  schedules: [],
+                  creators: [
+                    'Hz3L8GFTsM0EFg0caGoG',
+                    'OxMCBocsLB1lXH5tQV6u',
+                    'RuJTT0r57IGKXWtlHNVX',
+                    'c9raygCH9eGa09OLB12t',
+                    'vz0XWPLfxV9gFyChCgMO'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                  twitchChannels: ['20786541']
                 },
-                "duration": 10800,
-                "id": "",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1676394889?t=00h01m24s)",
-                "subtitle": "Christmas special",
-                "title": "High rollers",
-                "start": "2022-12-11T17:00:00.000+0000",
-                "visible": true,
-                "showHighlightIcon": true,
-                "showTwitchIcon": false
+                duration: 10800,
+                id: '',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1676394889?t=00h01m24s)',
+                subtitle: 'Christmas special',
+                title: 'High rollers',
+                start: '2022-12-11T17:00:00.000+0000',
+                visible: true,
+                showHighlightIcon: true,
+                showTwitchIcon: false
               },
               {
-                "id": "",
-                "showHighlightIcon": true,
-                "visible": true,
-                "duration": 10800,
-                "showTwitchIcon": false,
-                "gridTileSize": 1,
-                "start": "2022-12-11T20:00:00.000+0000",
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                id: '',
+                showHighlightIcon: true,
+                visible: true,
+                duration: 10800,
+                showTwitchIcon: false,
+                gridTileSize: 1,
+                start: '2022-12-11T20:00:00.000+0000',
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffed2f00",
-                      "ffeb2700"
-                    ]
+                    colors: ['ffed2f00', 'ffeb2700']
                   }
                 },
-                "showYoutubeIcon": false,
-                "subtitle": "Lolipopg Ravs Shadow & Daltos",
-                "type": "special",
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "creators": [
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "f2tAtl8eBRTtKsqzQQoC",
-                    "AZGGyF9uschXdM8gGB1v"
+                showYoutubeIcon: false,
+                subtitle: 'Lolipopg Ravs Shadow & Daltos',
+                type: 'special',
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  creators: [
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'f2tAtl8eBRTtKsqzQQoC',
+                    'AZGGyF9uschXdM8gGB1v'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": []
+                  twitchChannels: ['20786541'],
+                  schedules: []
                 },
-                "title": "Lolip's Satisfactory",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1676531983?t=00h19m06s)"
+                title: "Lolip's Satisfactory",
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1676531983?t=00h19m06s)'
               },
               {
-                "showYoutubeIcon": false,
-                "start": "2022-12-11T23:00:00.000+0000",
-                "visible": true,
-                "duration": 10800,
-                "showTwitchIcon": false,
-                "subtitle": "Duncan Ravs & Friends",
-                "desc": "",
-                "id": "",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1676531983?t=03h17m08s)",
-                "type": "special",
-                "showHighlightIcon": true,
-                "gridTileSize": 1,
-                "title": "Late Night Ranch Sim",
-                "style": {
-                  "background": "ffff1500",
-                  "border": "ffff1500"
+                showYoutubeIcon: false,
+                start: '2022-12-11T23:00:00.000+0000',
+                visible: true,
+                duration: 10800,
+                showTwitchIcon: false,
+                subtitle: 'Duncan Ravs & Friends',
+                desc: '',
+                id: '',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1676531983?t=03h17m08s)',
+                type: 'special',
+                showHighlightIcon: true,
+                gridTileSize: 1,
+                title: 'Late Night Ranch Sim',
+                style: {
+                  background: 'ffff1500',
+                  border: 'ffff1500'
                 },
-                "relations": {
-                  "schedules": [],
-                  "podcasts": [],
-                  "creators": [
-                    "8K6EIOpBvb6ROSHWHx9Q",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "0w4JSboJK6RdTDmDKoYL"
+                relations: {
+                  schedules: [],
+                  podcasts: [],
+                  creators: [
+                    '8K6EIOpBvb6ROSHWHx9Q',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'MsNyFTyL0zikJ4zKOZm2',
+                    '0w4JSboJK6RdTDmDKoYL'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": []
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: []
                 }
               }
             ],
-            "start": "2022-12-11T11:00:00.000+0000"
+            start: '2022-12-11T11:00:00.000+0000'
           },
           {
-            "slots": [
+            slots: [
               {
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ff00e8c5",
-                      "ff00e3b9"
-                    ],
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    colors: ['ff00e8c5', 'ff00e3b9'],
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "id": "",
-                "showTwitchIcon": false,
-                "duration": 10800,
-                "start": "2022-12-12T11:00:00.000+0000",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1677017533?t=00h27m56s)",
-                "showYoutubeIcon": false,
-                "gridTileSize": 1,
-                "type": "special",
-                "title": "Dad Town",
-                "showHighlightIcon": true,
-                "relations": {
-                  "youtubeChannels": [],
-                  "creators": [
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "4ty8OfAA0hoXSV6trUY9"
-                  ],
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": []
+                id: '',
+                showTwitchIcon: false,
+                duration: 10800,
+                start: '2022-12-12T11:00:00.000+0000',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1677017533?t=00h27m56s)',
+                showYoutubeIcon: false,
+                gridTileSize: 1,
+                type: 'special',
+                title: 'Dad Town',
+                showHighlightIcon: true,
+                relations: {
+                  youtubeChannels: [],
+                  creators: ['Dvsw8FJa8v3LjEXSXr9e', '4ty8OfAA0hoXSV6trUY9'],
+                  podcasts: [],
+                  twitchChannels: ['20786541'],
+                  schedules: []
                 },
-                "subtitle": "Ben & Sips",
-                "visible": true
+                subtitle: 'Ben & Sips',
+                visible: true
               },
               {
-                "start": "2022-12-12T14:00:00.000+0000",
-                "gridTileSize": 1,
-                "subtitle": "Lewis & Zylus",
-                "type": "special",
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                start: '2022-12-12T14:00:00.000+0000',
+                gridTileSize: 1,
+                subtitle: 'Lewis & Zylus',
+                type: 'special',
+                style: {
+                  linearGradient: {
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ff00deae",
-                      "ff00d9a3"
-                    ]
+                    colors: ['ff00deae', 'ff00d9a3']
                   }
                 },
-                "relations": {
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "5h6PnMWEghJSDaS5ZNbc"
-                  ]
+                relations: {
+                  youtubeChannels: [],
+                  podcasts: [],
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  creators: ['Gq7a6r1Pq0loxIUiNk8v', '5h6PnMWEghJSDaS5ZNbc']
                 },
-                "title": "Chillout Clundle",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1677017533?t=03h32m52s)",
-                "showYoutubeIcon": false,
-                "duration": 10800,
-                "id": "",
-                "visible": true,
-                "showHighlightIcon": true,
-                "showTwitchIcon": false
+                title: 'Chillout Clundle',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1677017533?t=03h32m52s)',
+                showYoutubeIcon: false,
+                duration: 10800,
+                id: '',
+                visible: true,
+                showHighlightIcon: true,
+                showTwitchIcon: false
               },
               {
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "ff00d498",
-                      "ff00cf8d"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    colors: ['ff00d498', 'ff00cf8d'],
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "gridTileSize": 1,
-                "title": "IRL Plateup challenge",
-                "duration": 10800,
-                "relations": {
-                  "podcasts": [],
-                  "twitchChannels": [
-                    "20786541"
+                gridTileSize: 1,
+                title: 'IRL Plateup challenge',
+                duration: 10800,
+                relations: {
+                  podcasts: [],
+                  twitchChannels: ['20786541'],
+                  creators: [
+                    'Dvsw8FJa8v3LjEXSXr9e',
+                    'sMGdgzZrZP8c68C0pFfU',
+                    'ShFoVukMUs1HAf2YryPl',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'eE4FNKcFiBhoc3jFb9Fo',
+                    '0w4JSboJK6RdTDmDKoYL'
                   ],
-                  "creators": [
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "sMGdgzZrZP8c68C0pFfU",
-                    "ShFoVukMUs1HAf2YryPl",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "0w4JSboJK6RdTDmDKoYL"
-                  ],
-                  "schedules": [],
-                  "youtubeChannels": []
+                  schedules: [],
+                  youtubeChannels: []
                 },
-                "desc": "Daf & Lydia vs Ped & Lolip",
-                "subtitle": "Hosted by Ben & Fionn",
-                "type": "special",
-                "start": "2022-12-12T17:00:00.000+0000",
-                "visible": true,
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1677200946?t=00h11m28s)",
-                "id": "",
-                "showTwitchIcon": false
+                desc: 'Daf & Lydia vs Ped & Lolip',
+                subtitle: 'Hosted by Ben & Fionn',
+                type: 'special',
+                start: '2022-12-12T17:00:00.000+0000',
+                visible: true,
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1677200946?t=00h11m28s)',
+                id: '',
+                showTwitchIcon: false
               },
               {
-                "start": "2022-12-12T20:00:00.000+0000",
-                "showTwitchIcon": false,
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1677340260)",
-                "duration": 12600,
-                "showYoutubeIcon": false,
-                "showHighlightIcon": true,
-                "relations": {
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": [],
-                  "creators": [
-                    "uuZ2P6KPhmLVGc7ZjWXR",
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "WvavBOeHzCXZPBzahkRX"
-                  ],
-                  "podcasts": []
+                start: '2022-12-12T20:00:00.000+0000',
+                showTwitchIcon: false,
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1677340260)',
+                duration: 12600,
+                showYoutubeIcon: false,
+                showHighlightIcon: true,
+                relations: {
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: [],
+                  creators: ['uuZ2P6KPhmLVGc7ZjWXR', 'deBUVdSqWrH6FwlXPe2m', 'WvavBOeHzCXZPBzahkRX'],
+                  podcasts: []
                 },
-                "title": "MSPaint Fighting Fantasy",
-                "id": "",
-                "subtitle": "Nilesy Rythian Breeh",
-                "gridTileSize": 1,
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ff00c983",
-                      "ff00c479"
-                    ],
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                title: 'MSPaint Fighting Fantasy',
+                id: '',
+                subtitle: 'Nilesy Rythian Breeh',
+                gridTileSize: 1,
+                style: {
+                  linearGradient: {
+                    colors: ['ff00c983', 'ff00c479'],
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "type": "special",
-                "visible": true
+                type: 'special',
+                visible: true
               },
               {
-                "subtitle": "Shadow & Daltos",
-                "id": "",
-                "markdownDesc": "[Twitch VOD](https://www.twitch.tv/videos/1677496900)",
-                "showHighlightIcon": true,
-                "relations": {
-                  "podcasts": [],
-                  "creators": [
-                    "AZGGyF9uschXdM8gGB1v",
-                    "f2tAtl8eBRTtKsqzQQoC"
-                  ],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541",
-                    "68525019"
-                  ],
-                  "youtubeChannels": []
+                subtitle: 'Shadow & Daltos',
+                id: '',
+                markdownDesc: '[Twitch VOD](https://www.twitch.tv/videos/1677496900)',
+                showHighlightIcon: true,
+                relations: {
+                  podcasts: [],
+                  creators: ['AZGGyF9uschXdM8gGB1v', 'f2tAtl8eBRTtKsqzQQoC'],
+                  schedules: [],
+                  twitchChannels: ['20786541', '68525019'],
+                  youtubeChannels: []
                 },
-                "gridTileSize": 1,
-                "showTwitchIcon": false,
-                "start": "2022-12-12T23:30:00.000+0000",
-                "duration": 10800,
-                "visible": true,
-                "title": "Co-op Games",
-                "style": {
-                  "border": "ff00c479",
-                  "elevation": 4,
-                  "borderRadius": 12,
-                  "background": "ff00c479",
-                  "spacing": 2
+                gridTileSize: 1,
+                showTwitchIcon: false,
+                start: '2022-12-12T23:30:00.000+0000',
+                duration: 10800,
+                visible: true,
+                title: 'Co-op Games',
+                style: {
+                  border: 'ff00c479',
+                  elevation: 4,
+                  borderRadius: 12,
+                  background: 'ff00c479',
+                  spacing: 2
                 },
-                "type": "special",
-                "showYoutubeIcon": false
+                type: 'special',
+                showYoutubeIcon: false
               }
             ],
-            "dayOfWeek": 5,
-            "start": "2022-12-12T11:00:00.000+0000"
+            dayOfWeek: 5,
+            start: '2022-12-12T11:00:00.000+0000'
           },
           {
-            "dayOfWeek": 6,
-            "slots": [
+            dayOfWeek: 6,
+            slots: [
               {
-                "start": "2022-12-13T11:00:00.000+0000",
-                "visible": true,
-                "relations": {
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "Dvsw8FJa8v3LjEXSXr9e"
-                  ],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": [],
-                  "podcasts": []
+                start: '2022-12-13T11:00:00.000+0000',
+                visible: true,
+                relations: {
+                  creators: ['Gq7a6r1Pq0loxIUiNk8v', 'Dvsw8FJa8v3LjEXSXr9e'],
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: [],
+                  podcasts: []
                 },
-                "showYoutubeIcon": false,
-                "duration": 10800,
-                "id": "",
-                "type": "special",
-                "showTwitchIcon": false,
-                "showHighlightIcon": false,
-                "title": "Save the world",
-                "gridTileSize": 1,
-                "subtitle": "Lewis & Ben",
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "fff74acc",
-                      "fff23fbf"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                showYoutubeIcon: false,
+                duration: 10800,
+                id: '',
+                type: 'special',
+                showTwitchIcon: false,
+                showHighlightIcon: false,
+                title: 'Save the world',
+                gridTileSize: 1,
+                subtitle: 'Lewis & Ben',
+                style: {
+                  linearGradient: {
+                    colors: ['fff74acc', 'fff23fbf'],
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     }
                   }
                 }
               },
               {
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ffed34b3",
-                      "ffe82aa5"
-                    ],
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                    colors: ['ffed34b3', 'ffe82aa5'],
+                    begin: {
+                      y: -1,
+                      x: 0
                     }
                   }
                 },
-                "showTwitchIcon": false,
-                "visible": true,
-                "duration": 10800,
-                "relations": {
-                  "schedules": [],
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "creators": [
-                    "0w4JSboJK6RdTDmDKoYL",
-                    "sMGdgzZrZP8c68C0pFfU",
-                    "TGDsE9jQPa9WXOOgcmFm",
-                    "dvynb4nu7GmqelY4HW3f"
+                showTwitchIcon: false,
+                visible: true,
+                duration: 10800,
+                relations: {
+                  schedules: [],
+                  podcasts: [],
+                  youtubeChannels: [],
+                  twitchChannels: ['20786541'],
+                  creators: [
+                    '0w4JSboJK6RdTDmDKoYL',
+                    'sMGdgzZrZP8c68C0pFfU',
+                    'TGDsE9jQPa9WXOOgcmFm',
+                    'dvynb4nu7GmqelY4HW3f'
                   ]
                 },
-                "subtitle": "Pedguin & Friends",
-                "id": "",
-                "showHighlightIcon": false,
-                "type": "special",
-                "gridTileSize": 1,
-                "title": "4 Player co-op games",
-                "start": "2022-12-13T14:00:00.000+0000",
-                "showYoutubeIcon": false
+                subtitle: 'Pedguin & Friends',
+                id: '',
+                showHighlightIcon: false,
+                type: 'special',
+                gridTileSize: 1,
+                title: '4 Player co-op games',
+                start: '2022-12-13T14:00:00.000+0000',
+                showYoutubeIcon: false
               },
               {
-                "duration": 10800,
-                "type": "special",
-                "start": "2022-12-13T17:00:00.000+0000",
-                "subtitle": "Hatfilms vs Lewis Lydia.& Ravs",
-                "relations": {
-                  "creators": [
-                    "Hz3L8GFTsM0EFg0caGoG",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "eE4FNKcFiBhoc3jFb9Fo",
-                    "vz0XWPLfxV9gFyChCgMO"
+                duration: 10800,
+                type: 'special',
+                start: '2022-12-13T17:00:00.000+0000',
+                subtitle: 'Hatfilms vs Lewis Lydia.& Ravs',
+                relations: {
+                  creators: [
+                    'Hz3L8GFTsM0EFg0caGoG',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'eE4FNKcFiBhoc3jFb9Fo',
+                    'vz0XWPLfxV9gFyChCgMO'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "youtubeChannels": [],
-                  "podcasts": [],
-                  "schedules": []
+                  twitchChannels: ['20786541'],
+                  youtubeChannels: [],
+                  podcasts: [],
+                  schedules: []
                 },
-                "visible": true,
-                "showTwitchIcon": false,
-                "gridTileSize": 1,
-                "showHighlightIcon": false,
-                "id": "",
-                "title": "Hatfilms gameshow",
-                "showYoutubeIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "colors": [
-                      "ffe32098",
-                      "ffde168b"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                visible: true,
+                showTwitchIcon: false,
+                gridTileSize: 1,
+                showHighlightIcon: false,
+                id: '',
+                title: 'Hatfilms gameshow',
+                showYoutubeIcon: false,
+                style: {
+                  linearGradient: {
+                    colors: ['ffe32098', 'ffde168b'],
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     }
                   }
                 }
               },
               {
-                "title": "Terraria Hangout",
-                "id": "",
-                "showHighlightIcon": false,
-                "duration": 10800,
-                "showYoutubeIcon": false,
-                "type": "special",
-                "relations": {
-                  "creators": [
-                    "0w4JSboJK6RdTDmDKoYL",
-                    "Ot78GPFYxZbxjK6On2CW",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "ShFoVukMUs1HAf2YryPl"
+                title: 'Terraria Hangout',
+                id: '',
+                showHighlightIcon: false,
+                duration: 10800,
+                showYoutubeIcon: false,
+                type: 'special',
+                relations: {
+                  creators: [
+                    '0w4JSboJK6RdTDmDKoYL',
+                    'Ot78GPFYxZbxjK6On2CW',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    'Dvsw8FJa8v3LjEXSXr9e',
+                    'ShFoVukMUs1HAf2YryPl'
                   ],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541",
-                    "150004439"
-                  ],
-                  "podcasts": []
+                  youtubeChannels: [],
+                  schedules: [],
+                  twitchChannels: ['20786541', '150004439'],
+                  podcasts: []
                 },
-                "subtitle": "Pedguin & Friends",
-                "start": "2022-12-13T20:00:00.000+0000",
-                "visible": true,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                subtitle: 'Pedguin & Friends',
+                start: '2022-12-13T20:00:00.000+0000',
+                visible: true,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffd90d7d",
-                      "ffd4046f"
-                    ],
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    colors: ['ffd90d7d', 'ffd4046f'],
+                    end: {
+                      y: 1,
+                      x: 0
                     }
                   }
                 },
-                "gridTileSize": 1,
-                "showTwitchIcon": false
+                gridTileSize: 1,
+                showTwitchIcon: false
               },
               {
-                "start": "2022-12-13T23:00:00.000+0000",
-                "type": "special",
-                "title": "Elden Ring Co-op",
-                "showTwitchIcon": false,
-                "showHighlightIcon": false,
-                "subtitle": "Shadow & Osie",
-                "id": "",
-                "gridTileSize": 1,
-                "style": {
-                  "borderRadius": 12,
-                  "spacing": 2,
-                  "border": "ffd4046f",
-                  "background": "ffd4046f",
-                  "elevation": 4
+                start: '2022-12-13T23:00:00.000+0000',
+                type: 'special',
+                title: 'Elden Ring Co-op',
+                showTwitchIcon: false,
+                showHighlightIcon: false,
+                subtitle: 'Shadow & Osie',
+                id: '',
+                gridTileSize: 1,
+                style: {
+                  borderRadius: 12,
+                  spacing: 2,
+                  border: 'ffd4046f',
+                  background: 'ffd4046f',
+                  elevation: 4
                 },
-                "showYoutubeIcon": false,
-                "visible": true,
-                "duration": 10800,
-                "relations": {
-                  "schedules": [],
-                  "creators": [
-                    "MsNyFTyL0zikJ4zKOZm2",
-                    "f2tAtl8eBRTtKsqzQQoC"
-                  ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "youtubeChannels": []
+                showYoutubeIcon: false,
+                visible: true,
+                duration: 10800,
+                relations: {
+                  schedules: [],
+                  creators: ['MsNyFTyL0zikJ4zKOZm2', 'f2tAtl8eBRTtKsqzQQoC'],
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  youtubeChannels: []
                 }
               }
             ],
-            "start": "2022-12-13T11:00:00.000+0000"
+            start: '2022-12-13T11:00:00.000+0000'
           },
           {
-            "dayOfWeek": 7,
-            "start": "2022-12-14T11:00:00.000+0000",
-            "slots": [
+            dayOfWeek: 7,
+            start: '2022-12-14T11:00:00.000+0000',
+            slots: [
               {
-                "subtitle": "Lewis & Ben",
-                "gridTileSize": 1,
-                "title": "Space wars",
-                "type": "special",
-                "showHighlightIcon": false,
-                "showTwitchIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                subtitle: 'Lewis & Ben',
+                gridTileSize: 1,
+                title: 'Space wars',
+                type: 'special',
+                showHighlightIcon: false,
+                showTwitchIcon: false,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffffa600",
-                      "ffff9100"
-                    ],
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    colors: ['ffffa600', 'ffff9100'],
+                    end: {
+                      x: 0,
+                      y: 1
                     }
                   }
                 },
-                "visible": true,
-                "duration": 10800,
-                "relations": {
-                  "creators": [
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "Dvsw8FJa8v3LjEXSXr9e"
-                  ],
-                  "youtubeChannels": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": [],
-                  "podcasts": []
+                visible: true,
+                duration: 10800,
+                relations: {
+                  creators: ['Gq7a6r1Pq0loxIUiNk8v', 'Dvsw8FJa8v3LjEXSXr9e'],
+                  youtubeChannels: [],
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  podcasts: []
                 },
-                "start": "2022-12-14T11:00:00.000+0000",
-                "id": "",
-                "showYoutubeIcon": false
+                start: '2022-12-14T11:00:00.000+0000',
+                id: '',
+                showYoutubeIcon: false
               },
               {
-                "relations": {
-                  "youtubeChannels": [],
-                  "creators": [
-                    "Dvsw8FJa8v3LjEXSXr9e",
-                    "6oSnPSBKF79EBwS1G5DF",
-                    "Gq7a6r1Pq0loxIUiNk8v"
-                  ],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "schedules": [],
-                  "podcasts": []
+                relations: {
+                  youtubeChannels: [],
+                  creators: ['Dvsw8FJa8v3LjEXSXr9e', '6oSnPSBKF79EBwS1G5DF', 'Gq7a6r1Pq0loxIUiNk8v'],
+                  twitchChannels: ['20786541'],
+                  schedules: [],
+                  podcasts: []
                 },
-                "subtitle": "Ben Harry & later Lewis",
-                "start": "2022-12-14T14:00:00.000+0000",
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                subtitle: 'Ben Harry & later Lewis',
+                start: '2022-12-14T14:00:00.000+0000',
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "colors": [
-                      "ffff7b00",
-                      "ffff6a00"
-                    ]
+                    colors: ['ffff7b00', 'ffff6a00']
                   }
                 },
-                "duration": 10800,
-                "showHighlightIcon": false,
-                "showYoutubeIcon": false,
-                "gridTileSize": 1,
-                "id": "",
-                "type": "special",
-                "showTwitchIcon": false,
-                "visible": true,
-                "title": "Tech 'em up"
+                duration: 10800,
+                showHighlightIcon: false,
+                showYoutubeIcon: false,
+                gridTileSize: 1,
+                id: '',
+                type: 'special',
+                showTwitchIcon: false,
+                visible: true,
+                title: "Tech 'em up"
               },
               {
-                "duration": 10800,
-                "showYoutubeIcon": false,
-                "style": {
-                  "linearGradient": {
-                    "begin": {
-                      "y": -1,
-                      "x": 0
+                duration: 10800,
+                showYoutubeIcon: false,
+                style: {
+                  linearGradient: {
+                    begin: {
+                      y: -1,
+                      x: 0
                     },
-                    "end": {
-                      "y": 1,
-                      "x": 0
+                    end: {
+                      y: 1,
+                      x: 0
                     },
-                    "colors": [
-                      "ffff5500",
-                      "ffff4000"
-                    ]
+                    colors: ['ffff5500', 'ffff4000']
                   }
                 },
-                "showHighlightIcon": false,
-                "id": "",
-                "start": "2022-12-14T17:00:00.000+0000",
-                "subtitle": "Martyn Boba Ravs & Mango",
-                "title": "Martyn's Minecraft",
-                "relations": {
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "twitchChannels": [
-                    "20786541"
-                  ],
-                  "podcasts": [],
-                  "creators": [
-                    "IOdPOlLaB7zFHvsuvVwu",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "zMMAq6kg87R8WsHUS3s0"
+                showHighlightIcon: false,
+                id: '',
+                start: '2022-12-14T17:00:00.000+0000',
+                subtitle: 'Martyn Boba Ravs & Mango',
+                title: "Martyn's Minecraft",
+                relations: {
+                  youtubeChannels: [],
+                  schedules: [],
+                  twitchChannels: ['20786541'],
+                  podcasts: [],
+                  creators: [
+                    'IOdPOlLaB7zFHvsuvVwu',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'zMMAq6kg87R8WsHUS3s0'
                   ]
                 },
-                "visible": true,
-                "gridTileSize": 1,
-                "type": "special",
-                "showTwitchIcon": false
+                visible: true,
+                gridTileSize: 1,
+                type: 'special',
+                showTwitchIcon: false
               },
               {
-                "showHighlightIcon": false,
-                "title": "Late Late Show",
-                "gridTileSize": 1,
-                "showYoutubeIcon": false,
-                "showTwitchIcon": false,
-                "duration": 10800,
-                "relations": {
-                  "podcasts": [],
-                  "youtubeChannels": [],
-                  "schedules": [],
-                  "creators": [
-                    "deBUVdSqWrH6FwlXPe2m",
-                    "uuZ2P6KPhmLVGc7ZjWXR",
-                    "5h6PnMWEghJSDaS5ZNbc",
-                    "yAmEX9kxAZTdKzwQcIsy",
-                    "WvavBOeHzCXZPBzahkRX",
-                    "AZGGyF9uschXdM8gGB1v",
-                    "zwBpk82qRo4y2Sf5Nvlf",
-                    "Gq7a6r1Pq0loxIUiNk8v",
-                    "zMMAq6kg87R8WsHUS3s0",
-                    "dvynb4nu7GmqelY4HW3f",
-                    "0w4JSboJK6RdTDmDKoYL",
-                    "vz0XWPLfxV9gFyChCgMO",
-                    "HkZh9sasvBrpZ4r22Sb3"
+                showHighlightIcon: false,
+                title: 'Late Late Show',
+                gridTileSize: 1,
+                showYoutubeIcon: false,
+                showTwitchIcon: false,
+                duration: 10800,
+                relations: {
+                  podcasts: [],
+                  youtubeChannels: [],
+                  schedules: [],
+                  creators: [
+                    'deBUVdSqWrH6FwlXPe2m',
+                    'uuZ2P6KPhmLVGc7ZjWXR',
+                    '5h6PnMWEghJSDaS5ZNbc',
+                    'yAmEX9kxAZTdKzwQcIsy',
+                    'WvavBOeHzCXZPBzahkRX',
+                    'AZGGyF9uschXdM8gGB1v',
+                    'zwBpk82qRo4y2Sf5Nvlf',
+                    'Gq7a6r1Pq0loxIUiNk8v',
+                    'zMMAq6kg87R8WsHUS3s0',
+                    'dvynb4nu7GmqelY4HW3f',
+                    '0w4JSboJK6RdTDmDKoYL',
+                    'vz0XWPLfxV9gFyChCgMO',
+                    'HkZh9sasvBrpZ4r22Sb3'
                   ],
-                  "twitchChannels": [
-                    "20786541"
-                  ]
+                  twitchChannels: ['20786541']
                 },
-                "start": "2022-12-14T20:00:00.000+0000",
-                "subtitle": "Rythian Nilesy Zylus & more",
-                "style": {
-                  "linearGradient": {
-                    "end": {
-                      "x": 0,
-                      "y": 1
+                start: '2022-12-14T20:00:00.000+0000',
+                subtitle: 'Rythian Nilesy Zylus & more',
+                style: {
+                  linearGradient: {
+                    end: {
+                      x: 0,
+                      y: 1
                     },
-                    "begin": {
-                      "x": 0,
-                      "y": -1
+                    begin: {
+                      x: 0,
+                      y: -1
                     },
-                    "colors": [
-                      "ffff2a00",
-                      "ffff1500"
-                    ]
+                    colors: ['ffff2a00', 'ffff1500']
                   }
                 },
-                "type": "special",
-                "visible": true,
-                "id": ""
+                type: 'special',
+                visible: true,
+                id: ''
               }
             ]
           }
@@ -5981,33 +5597,33 @@ const jj_schedule = {
       }
     ]
   },
-  "style": {
-    "timeStyle": {
-      "borderWidth": 4,
-      "borderRadius": 12,
-      "spacing": 4,
-      "elevation": 4,
-      "size": 60
+  style: {
+    timeStyle: {
+      borderWidth: 4,
+      borderRadius: 12,
+      spacing: 4,
+      elevation: 4,
+      size: 60
     },
-    "slotStyle": {
-      "elevation": 4,
-      "background": "ff1e95ef",
-      "spacing": 2,
-      "border": "fff67932",
-      "borderRadius": 12
+    slotStyle: {
+      elevation: 4,
+      background: 'ff1e95ef',
+      spacing: 2,
+      border: 'fff67932',
+      borderRadius: 12
     },
-    "gridStyle": {
-      "dataSize": 60
+    gridStyle: {
+      dataSize: 60
     }
   },
-  "updatedAt": "2022-12-26T14:16:26.348677+0000",
-  "settings": {
-    "startDate": "2022-12-01T11:00:00.000+0000",
-    "type": "Special",
-    "showEmptyDays": true,
-    "appearance": "WeekGrid",
-    "showSlotTimes": true,
-    "firstDayOfTheWeek": 1
+  updatedAt: '2022-12-26T14:16:26.348677+0000',
+  settings: {
+    startDate: '2022-12-01T11:00:00.000+0000',
+    type: 'Special',
+    showEmptyDays: true,
+    appearance: 'WeekGrid',
+    showSlotTimes: true,
+    firstDayOfTheWeek: 1
   }
 }
 

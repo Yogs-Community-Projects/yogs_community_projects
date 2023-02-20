@@ -7,7 +7,18 @@
     "apps/*"
   ],
   "scripts": {
-    "deploy-yogs-schedule": "cd apps/yogs_schedule_website && npm run deploy"
+    "deploy-yogs-schedule": "cd apps/yogs_schedule_website && npm run deploy",
+    "deploy-jj-schedule": "cd apps/jj_schedule_website && npm run deploy",
+    "prettier_check_jj_schedule": "prettier --check --config .prettierrc.json ./apps/jj_schedule_website/src",
+    "prettier_check_yogs_schedule": "prettier --check --config .prettierrc.json ./apps/yogs_schedule_website/src",
+    "prettier_check_jj_schedule_extension": "prettier --check --config .prettierrc.json ./apps/jj_twitch_extension/src",
+    "prettier_check_yogs_schedule_extension": "prettier --check --config .prettierrc.json ./apps/yogs_twitch_extension/src",
+    "prettier_write_jj_schedule": "prettier --write --config .prettierrc.json ./apps/jj_schedule_website/src",
+    "prettier_write_yogs_schedule": "prettier --write --config .prettierrc.json ./apps/yogs_schedule_website/src",
+    "prettier_write_jj_schedule_extension": "prettier --write --config .prettierrc.json ./apps/jj_twitch_extension/src",
+    "prettier_write_yogs_schedule_extension": "prettier --write --config .prettierrc.json ./apps/yogs_twitch_extension/src",
+    "prettier_write": "npm run prettier_write_jj_schedule && npm run prettier_write_yogs_schedule && npm run prettier_write_jj_schedule_extension && npm run prettier_write_yogs_schedule_extension",
+    "prettier_write_packagees": "prettier --write --config .prettierrc.json ./packages/"
   },
   "installConfig": {
     "hoistingLimits": "dependencies"

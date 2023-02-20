@@ -1,5 +1,5 @@
-import {Component} from 'solid-js'
-import {A} from '@solidjs/router'
+import { Component } from 'solid-js'
+import { A } from '@solidjs/router'
 
 const NavBar: Component = () => {
   return (

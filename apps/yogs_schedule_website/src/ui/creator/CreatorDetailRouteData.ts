@@ -1,10 +1,10 @@
-import {RouteDataFunc, useRouteData} from '@solidjs/router'
-import {RemoteData, useCreatorDB} from '@ycapp/common'
-import {CreatorData} from '@ycapp/model'
+import { RouteDataFunc, useRouteData } from '@solidjs/router'
+import { RemoteData, useCreatorDB } from '@ycapp/common'
+import { CreatorData } from '@ycapp/model'
 
 export type CreatorRouteDataType = RouteDataFunc<unknown, RemoteData<CreatorData>>
 
-export const creatorRouteDataFunction: CreatorRouteDataType = ({params, location, navigate, data}) => {
+export const creatorRouteDataFunction: CreatorRouteDataType = ({ params, location, navigate, data }) => {
   return useCreatorDB().read(params.id)
 }
 

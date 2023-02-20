@@ -1,10 +1,10 @@
-import {Component, createSignal, For, Match, Show, Switch} from 'solid-js'
-import {useCreatorIds, useSlots} from './providers/ScheduleDataProvider'
-import {useCreatorFilter} from './providers/CreatorFilterProvider'
-import {Dialog} from '@kobalte/core'
-import {CgClose} from 'solid-icons/cg'
-import {FaRegularSquare, FaSolidSquareCheck} from 'solid-icons/fa'
-import {createModalSignal, ModalSignal, useCreatorDB} from '@ycapp/common'
+import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
+import { useCreatorIds, useSlots } from './providers/ScheduleDataProvider'
+import { useCreatorFilter } from './providers/CreatorFilterProvider'
+import { Dialog } from '@kobalte/core'
+import { CgClose } from 'solid-icons/cg'
+import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
+import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -21,7 +21,7 @@ export const FilterButton: Component = () => {
           </button>
         </div>
       </div>
-      <FilterDialog modalSignal={modalSignal}/>
+      <FilterDialog modalSignal={modalSignal} />
     </>
   )
 }
@@ -31,15 +31,15 @@ interface FilterDialogProps {
 }
 
 const FilterDialog: Component<FilterDialogProps> = props => {
-  const {modalSignal} = props
+  const { modalSignal } = props
 
   return (
     <Dialog.Root isOpen={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
       <Dialog.Portal>
-        <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'}/>
+        <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
         <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
           <Dialog.Content class={'h-full w-full max-w-[500px] p-2 lg:w-[min(calc(100vw_-_16px),_500px)] lg:p-16'}>
-            <FilterDialogBody onClose={modalSignal.close}/>
+            <FilterDialogBody onClose={modalSignal.close} />
           </Dialog.Content>
         </div>
       </Dialog.Portal>
@@ -52,10 +52,10 @@ interface FilterDialogBodyProps {
 }
 
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
-  const {onClose} = props
+  const { onClose } = props
   const slots = useSlots()
   const creators = useCreatorDB().readSome(useCreatorIds())
-  const {includes, toggle, reset} = useCreatorFilter()
+  const { includes, toggle, reset } = useCreatorFilter()
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
   }
@@ -87,25 +87,25 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
     <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
       <div class={`bg-primary flex h-[72px] items-center justify-center rounded-t-3xl p-2 text-white shadow-xl`}>
         <button onClick={onClose}>
-          <CgClose size={24} class={''}/>
+          <CgClose size={24} class={''} />
         </button>
         <div class={'flex-1'}></div>
         <h3 class={'text-2xl'}>Creator Filter</h3>
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
-      <div class={'flex w-full flex-1 gap-2 flex-col overflow-auto p-4'}>
+      <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-4'}>
         <Switch>
           <Match when={creators.data}>
             <div class={'grid grid-cols-2 gap-2'}>
               <button
-                class={'hover:bg-accent-50 border-2 border-accent-50 rounded-full'}
+                class={'hover:bg-accent-50 border-accent-50 rounded-full border-2'}
                 onclick={() => setSortByName(true)}
               >
                 Sort by name
               </button>
               <button
-                class={'hover:bg-accent-50 border-2 border-accent-50 rounded-full'}
+                class={'hover:bg-accent-50 border-accent-50 rounded-full border-2'}
                 onclick={() => setSortByName(false)}
               >
                 Sort by appearance
@@ -115,18 +115,19 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
               {creator => (
                 <>
                   <button
-                    class={'hover:bg-accent-50 border-2 border-accent-50 rounded-xl p-4 hover:brightness-105'}
+                    class={'hover:bg-accent-50 border-accent-50 rounded-xl border-2 p-4 hover:brightness-105'}
                     onClick={() => toggle(creator.creator.creatorId)}
                   >
                     <div class={'flex flex-row items-center'}>
-                      <p
-                        class={'flex-1 text-left'}>{creator.creator.name} ({appearanceCount(creator.creator.creatorId)})</p>
+                      <p class={'flex-1 text-left'}>
+                        {creator.creator.name} ({appearanceCount(creator.creator.creatorId)})
+                      </p>
                       <div class={'text-accent-500'}>
                         <Show when={includes(creator.creator.creatorId)}>
-                          <FaSolidSquareCheck size={24}/>
+                          <FaSolidSquareCheck size={24} />
                         </Show>
                         <Show when={!includes(creator.creator.creatorId)}>
-                          <FaRegularSquare size={24}/>
+                          <FaRegularSquare size={24} />
                         </Show>
                       </div>
                     </div>

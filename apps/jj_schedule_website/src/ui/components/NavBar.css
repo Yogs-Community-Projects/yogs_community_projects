@@ -1,10 +1,11 @@
 nav {
-    color: white;
+  color: white;
 }
 
 .activeLink {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
 .inactiveLink {
-    text-decoration: none;
+  text-decoration: none;
 }

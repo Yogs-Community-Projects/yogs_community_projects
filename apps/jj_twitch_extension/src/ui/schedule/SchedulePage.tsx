@@ -1,10 +1,10 @@
-import {Component, Match, Switch} from 'solid-js'
-import {ScheduleDataProvider} from './JJScheduleProvider'
-import {DayIndexProvider} from './DayIndexProvider'
-import {ScheduleBody} from './ScheduleBody'
-import {useScheduleDB} from '@ycapp/common'
-import {useJJConfig} from '../../config/JJConfigProvider'
-import {CreatorFilterProvider} from "./CreatorFilterProvider";
+import { Component, Match, Switch } from 'solid-js'
+import { ScheduleDataProvider } from './JJScheduleProvider'
+import { DayIndexProvider } from './DayIndexProvider'
+import { ScheduleBody } from './ScheduleBody'
+import { useScheduleDB } from '@ycapp/common'
+import { useJJConfig } from '../../config/JJConfigProvider'
+import { CreatorFilterProvider } from './CreatorFilterProvider'
 
 const SchedulePage: Component = () => {
   const schedule = useScheduleDB().read(useJJConfig().scheduleId)
@@ -14,7 +14,7 @@ const SchedulePage: Component = () => {
         <ScheduleDataProvider scheduleData={schedule.data}>
           <DayIndexProvider>
             <CreatorFilterProvider>
-              <ScheduleBody/>
+              <ScheduleBody />
             </CreatorFilterProvider>
           </DayIndexProvider>
         </ScheduleDataProvider>

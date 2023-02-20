@@ -1,6 +1,6 @@
-import {RouteDataFunc, useRouteData} from '@solidjs/router'
-import {ScheduleData} from '@ycapp/model'
-import {RemoteData, useScheduleDB} from '@ycapp/common'
+import { RouteDataFunc, useRouteData } from '@solidjs/router'
+import { ScheduleData } from '@ycapp/model'
+import { RemoteData, useScheduleDB } from '@ycapp/common'
 
 export type ScheduleRouteDataType = RouteDataFunc<unknown, RemoteData<ScheduleData | null>>
 
