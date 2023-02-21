@@ -25,6 +25,7 @@ export const AnalyticsConsent: Component = () => {
   const acceptAnalytics = (localStorage?.getItem('acceptAnalytics') ?? null) == 'true'
   const showDisclaimerAnalytics = showDisclaimerAnalyticsLocalStorage == null
   const modalSignal = createModalSignal(showDisclaimerAnalytics)
+  install(import.meta.env.VITE_GTAG, { anonymize_ip: true })
   gtag('consent', 'default', {
     ad_storage: 'denied',
     analytics_storage: 'denied',
@@ -32,7 +33,6 @@ export const AnalyticsConsent: Component = () => {
     personalization_storage: 'denied',
     security_storage: 'denied',
   })
-  install(import.meta.env.VITE_GTAG, { anonymize_ip: true })
   if (acceptAnalytics) {
     grantConsent()
   } else {
