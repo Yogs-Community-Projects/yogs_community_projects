@@ -29,6 +29,7 @@ export function newsToSlot(news: News): Slot | undefined {
     type: 'special',
     duration: Duration.fromObject({ hour: 3 }).as('seconds'),
     subtitle: news.subtitle,
+    streamType: 'twitch',
     style: {
       background: news.style.background,
       border: news.style.border,
