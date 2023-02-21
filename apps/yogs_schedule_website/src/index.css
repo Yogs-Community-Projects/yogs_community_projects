@@ -154,5 +154,5 @@ html {
 }
 
 a {
-    @apply text-white hover:text-accent-50 underline transition-all;
+    @apply text-white hover:text-accent-500 underline transition-all;
 }

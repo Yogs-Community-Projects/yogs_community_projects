@@ -52,7 +52,7 @@ const LastStreamCard: Component = () => {
   const { channel, lastStream } = useTwitchChannelData()
   return (
     <a
-      class="bg-twitch hover:scale-101 hover:brightness-102 my-auto flex aspect-[8/1] w-full flex-row items-center rounded-2xl p-2 text-white no-underline transition-all"
+      class="bg-twitch hover:scale-101 hover:brightness-102 my-auto flex aspect-[8/1] w-full flex-row items-center rounded-2xl p-2 text-white no-underline transition-all hover:text-white"
       href={`https://www.twitch.tv/${channel.login}`}
     >
       <img class="mx-auto h-12 w-12 rounded-full" src={channel.profile_image_url.replace('300x300', '70x70')} alt="" />

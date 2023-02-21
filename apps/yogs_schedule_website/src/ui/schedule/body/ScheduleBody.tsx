@@ -319,8 +319,16 @@ const Title: Component = () => {
   return (
     <div class={'p-schedule h-full flex-1'}>
       <div class={'schedule-card-white flex h-full items-center justify-center'}>
-        <h3 class={'text-center text-2xl'}>
-          {useScheduleData().name} -{' '}
+        <h3 class={'hidden text-center text-2xl sm:block'}>
+          {useScheduleData().name}
+          {' | '}
+          {date().toLocaleString({
+            weekday: 'long',
+          })}
+        </h3>
+        <h3 class={'visible text-center text-2xl sm:hidden'}>
+          {useScheduleData().name}
+          {'\n'}
           {date().toLocaleString({
             weekday: 'long',
           })}

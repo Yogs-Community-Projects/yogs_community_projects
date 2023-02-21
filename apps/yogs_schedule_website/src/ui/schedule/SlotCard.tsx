@@ -143,7 +143,7 @@ export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
       <a
         href={`https://twitch.tv/${props.channel.channel.login}`}
         class={
-          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 text-center text-white no-underline transition-all hover:brightness-105 md:flex-col'
+          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 text-center text-white no-underline transition-all hover:text-white hover:brightness-105 md:flex-col'
         }
       >
         <img

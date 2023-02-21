@@ -11,6 +11,12 @@ export const NavBar: Component = () => {
         <Link path="/2022" title="Jingle Jam 2022" />
         <Link path="/2021" title="Jingle Jam 2021" />
         <Link path="/extension" title="Twitch Extension" />
+        <a
+          href={'https://schedule.yogs.app'}
+          class={'hover:text-accent-100 text-lg no-underline transition-all hover:scale-105'}
+        >
+          Regular Schedule
+        </a>
       </div>
       <div class={'w-schedule md:hidden'}>
         <DropdownNavBar />
@@ -43,6 +49,14 @@ const DropdownNavBar: Component = () => {
         <LinkMobile path="/2022" title="Jingle Jam 2022" close={onClose} />
         <LinkMobile path="/2021" title="Jingle Jam 2021" close={onClose} />
         <LinkMobile path="/extension" title="Twitch Extension" close={onClose} />
+        <a
+          href={'https://schedule.yogs.app'}
+          class={
+            'nav hover:text-accent-100 rounded-xl bg-white p-4 text-lg text-black no-underline transition-all hover:scale-105'
+          }
+        >
+          Regular Schedule
+        </a>
       </div>
     </div>
   )
@@ -59,9 +73,9 @@ const Link: Component<LinkProps> = props => {
 
   const useClasses = () => {
     if (useIsActive()) {
-      return 'nav text-lg activeLink'
+      return 'nav text-lg activeLink hover:text-accent-100'
     }
-    return 'nav text-lg inactiveLink hover:scale-105 transition-all'
+    return 'nav text-lg inactiveLink hover:scale-105 transition-all hover:text-accent-100'
   }
   return (
     <A class={useClasses()} href={props.path}>
@@ -81,7 +95,8 @@ const LinkMobile: Component<LinkMobileProps> = props => {
   const useIsActive = () => useCurrentPath() == props.path
 
   const useClasses = () => {
-    const classes = 'nav text-lg hover:scale-105 transition-all bg-white text-black rounded-xl p-4'
+    const classes =
+      'nav text-lg hover:text-accent-100 hover:scale-105 transition-all bg-white text-black rounded-xl p-4'
     if (useIsActive()) {
       return classes + ' activeLink'
     }

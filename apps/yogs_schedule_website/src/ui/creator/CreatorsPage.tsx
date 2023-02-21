@@ -46,7 +46,7 @@ const Body: Component<BodyProps> = props => {
   return (
     <For each={creators()}>
       {data => (
-        <A href={'/creators/' + data.creator.creatorId}>
+        <A href={'/creators/' + data.creator.creatorId} class={'no-underline'}>
           <CreatorTile creator={data.creator} style={data.style} />
         </A>
       )}
