@@ -10,6 +10,7 @@ export const NavBar: Component = () => {
       <div class={'hidden flex-row justify-center gap-4 p-4 align-middle text-2xl text-white md:flex'}>
         <Link path="/" title="Schedule" />
         <Link path="/creators" title="Creators" />
+        <Link path="/extension" title="Extension" />
       </div>
       <div class={'w-schedule md:hidden'}>
         <DropdownNavBar />
@@ -40,6 +41,7 @@ const DropdownNavBar: Component = props => {
       <div class={'mt-1 flex hidden flex-col space-y-1 md:hidden'} ref={setRef}>
         <LinkMobile path="/" title="Home" close={onClose} />
         <LinkMobile path="/creators" title="Creators" close={onClose} />
+        <LinkMobile path="/extension" title="Extension" close={onClose} />
       </div>
     </div>
   )
