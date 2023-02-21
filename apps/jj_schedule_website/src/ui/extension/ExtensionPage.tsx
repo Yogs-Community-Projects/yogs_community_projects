@@ -1,11 +1,15 @@
 import { Component } from 'solid-js'
 import extensionStats from '../../assets/ext_stats.png'
 import extensionImg from '../../assets/ext_img.png'
+import { FeedbackButtons } from '../components/FeedbackButtons'
 
 const ExtensionPage: Component = () => {
   return (
     <div class={'mx-auto flex flex-col items-center p-1 text-center text-base text-white md:w-[75%] md:text-2xl'}>
       <p class={'p-2 text-2xl font-bold md:text-4xl'}>Unofficial Jingle Jam Schedule Twitch Extension</p>
+      <p>A new version is in Development</p>
+      <p class={''}>If you want to help and test the extension use these links</p>
+      <FeedbackButtons />
 
       <img class={'md:w-[50%]'} src={extensionImg} alt={'Images of the extension'} />
 
