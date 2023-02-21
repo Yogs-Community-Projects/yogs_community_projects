@@ -3,7 +3,7 @@ import { ScheduleDimensionProvider, useYogsScheduleDimension } from '../Schedule
 import { useDays, useScheduleData } from '../YogsScheduleProvider'
 import { DateTime, Duration } from 'luxon'
 import { Event, PlacementAlgo } from '../ScheduleSlotPlacementAlgo'
-import { SlotCard, TwitchSlotCard } from '../SlotCard'
+import { SlotCard, TwitchSlotCard, TwitchSlotCard2 } from '../SlotCard'
 import { useDayIndex, useDayIndexSetter, useIsCurrentDaySelected } from '../DayIndexProvider'
 import { FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidList } from 'solid-icons/fa'
 import { useDivDimension, useNow, useTwitchDB } from '@ycapp/common'
@@ -448,13 +448,18 @@ const TwitchLiveScheduleGrid: Component = () => {
         <Match when={state.data}>
           <Show when={useIsCurrentDaySelected()}>
             <For each={channels()}>
-              {(channel, i) => {
+              {channel => {
                 return (
-                  <div class={'h-20 w-full sm:h-32 sm:w-52'}>
-                    <div class={'h-full w-full'}>
-                      <TwitchSlotCard channel={channel} />
+                  <>
+                    <div class={'hidden h-20 w-full sm:block sm:h-32 sm:w-52'}>
+                      <div class={'h-full w-full'}>
+                        <TwitchSlotCard channel={channel} />
+                      </div>
                     </div>
-                  </div>
+                    <div class={'block sm:hidden'}>
+                      <TwitchSlotCard2 channel={channel} />
+                    </div>
+                  </>
                 )
               }}
             </For>

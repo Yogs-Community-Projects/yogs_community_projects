@@ -143,7 +143,7 @@ export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
       <a
         href={`https://twitch.tv/${props.channel.channel.login}`}
         class={
-          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 text-center text-white no-underline transition-all hover:text-white hover:brightness-105 md:flex-col'
+          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 p-1 text-center text-white no-underline transition-all hover:text-white hover:brightness-105 md:flex-col'
         }
       >
         <img
@@ -161,5 +161,36 @@ export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
         </div>
       </a>
     </div>
+  )
+}
+
+export const TwitchSlotCard2: Component<TwitchSlotCardProps> = props => {
+  const { channel } = props
+  const liveSince = () => {
+    const started_at = props.channel?.stream?.stream.started_at
+    if (!started_at) {
+      return undefined
+    }
+    return useNow().diff(DateTime.fromISO(started_at))
+  }
+  return (
+    <a
+      class="bg-twitch hover:scale-101 hover:brightness-102 my-auto block flex aspect-[8/1] w-full flex-row items-center rounded-2xl p-2 text-white no-underline transition-all hover:text-white"
+      href={`https://www.twitch.tv/${channel.channel.login}`}
+    >
+      <img
+        class="mx-auto h-12 w-12 rounded-full"
+        src={channel.channel.profile_image_url.replace('300x300', '70x70')}
+        alt=""
+      />
+      <div class="my-auto ml-2 flex-1">
+        <div class="text-lg font-medium">{channel.channel.display_name}</div>
+        <Show when={liveSince()}>
+          <p class={'text-xs md:text-sm'}>
+            Live for <span class={'font-mono'}>{liveSince().toFormat('hh:mm:ss')}</span>
+          </p>
+        </Show>
+      </div>
+    </a>
   )
 }
