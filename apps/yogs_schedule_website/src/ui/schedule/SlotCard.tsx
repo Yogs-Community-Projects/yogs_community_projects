@@ -84,7 +84,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
 
   return (
     <>
-      <div class={'p-schedule h-full w-full transition-all'}>
+      <div class={'h-full w-full transition-all'}>
         <div
           style={{
             ...background(),
@@ -130,6 +130,7 @@ interface TwitchSlotCardProps {
 }
 
 export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
+  const { channel } = props
   const liveSince = () => {
     const started_at = props.channel?.stream?.stream.started_at
     if (!started_at) {
@@ -137,13 +138,12 @@ export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
     }
     return useNow().diff(DateTime.fromISO(started_at))
   }
-
   return (
     <div class={'h-full w-full transition-all'}>
       <a
         href={`https://twitch.tv/${props.channel.channel.login}`}
         class={
-          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 text-center text-white transition-all hover:brightness-105 md:flex-col'
+          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 text-center text-white no-underline transition-all hover:brightness-105 md:flex-col'
         }
       >
         <img

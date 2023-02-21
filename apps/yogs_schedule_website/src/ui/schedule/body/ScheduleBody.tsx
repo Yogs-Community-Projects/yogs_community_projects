@@ -429,7 +429,7 @@ const TwitchLiveScheduleGrid: Component = () => {
       })
 
   return (
-    <div class={'flex flex-wrap justify-center'}>
+    <div class={'flex flex-col justify-center gap-2 p-1 sm:flex-row sm:flex-wrap sm:gap-y-4'}>
       <Switch>
         <Match when={state.error}>
           <p>{JSON.stringify(state.error)}</p>
@@ -442,8 +442,8 @@ const TwitchLiveScheduleGrid: Component = () => {
             <For each={channels()}>
               {(channel, i) => {
                 return (
-                  <div class={'h-20 w-36 md:h-32 md:w-52'}>
-                    <div class={'p-schedule h-full w-full'}>
+                  <div class={'h-20 w-full sm:h-32 sm:w-52'}>
+                    <div class={'h-full w-full'}>
                       <TwitchSlotCard channel={channel} />
                     </div>
                   </div>
@@ -456,7 +456,7 @@ const TwitchLiveScheduleGrid: Component = () => {
       <For each={slots()}>
         {(slot, i) => {
           return (
-            <div class={'h-20 w-36 md:h-32 md:w-52'}>
+            <div class={'h-24 w-full sm:h-32 sm:w-52'}>
               <SlotCard slot={slot} showCountdown={true} showTime={true} />
             </div>
           )
@@ -502,7 +502,7 @@ export const TwitchOfflineCards: Component = () => {
           <p>Loading...</p>
         </Match>
         <Match when={state.data}>
-          <div class={'grid w-full grid-cols-[repeat(auto-fit,_18rem)] justify-center gap-1 p-1'}>
+          <div class={'grid w-full grid-cols-1 justify-center gap-2 p-1 sm:grid-cols-[repeat(auto-fit,_18rem)]'}>
             <For each={channels()}>
               {(channel, i) => {
                 return <TwitchOfflineCard data={channel} />
@@ -531,6 +531,7 @@ const LastUpdate: Component = () => {
           the respective Streamer.
           <strong>This schedule is a fan Project and not associated with the Yogscast or their partners.</strong>
         </p>
+        <p>If you want to help keep the schedule up to date, use the links below.</p>
       </div>
       <FeedbackButtons />
     </div>
