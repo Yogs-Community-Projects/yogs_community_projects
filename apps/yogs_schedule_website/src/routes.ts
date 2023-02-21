@@ -7,6 +7,10 @@ export const routes: RouteDefinition[] = [
     component: lazy(() => import('./ui/schedule/YogsSchedulePage')),
   },
   {
+    path: '/extension',
+    component: lazy(() => import('./ui/extension/ExtensionPage')),
+  },
+  {
     path: '/creators',
     children: [
       {
