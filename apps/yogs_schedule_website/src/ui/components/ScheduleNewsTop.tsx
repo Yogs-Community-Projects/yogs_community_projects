@@ -1,6 +1,6 @@
 import { createModalSignal, getTextColor, ModalSignal, useNewsDB, useNow } from '@ycapp/common'
 import { News, newsToSlot } from '@ycapp/model'
-import { Accessor, Component, createSignal, For, Match, onCleanup, Show, Switch } from 'solid-js'
+import { Accessor, Component, createEffect, createSignal, For, Match, onCleanup, Show, Switch } from 'solid-js'
 import { DateTime } from 'luxon'
 import { SlotDialog } from './schedule/SlotDialog'
 
@@ -10,15 +10,19 @@ interface NewsWrapper {
 }
 
 export const ScheduleNewsTop: Component = () => {
-  const useScheduleNewsTop = () => useNewsDB().read(['ScheduleWebTop'])
+  const useScheduleNewsTop = useNewsDB().read(['ScheduleWebTop'])
 
   const [currentNews, setCurrentNews] = createSignal(0)
+
+  createEffect(() => {
+    console.log(useScheduleNewsTop.data)
+  })
   const newsList = (): NewsWrapper[] => {
-    if (!useScheduleNewsTop().data) {
+    if (!useScheduleNewsTop.data) {
       return []
     }
 
-    return useScheduleNewsTop().data.map(news => {
+    return useScheduleNewsTop.data.map(news => {
       return {
         news,
         signal: createModalSignal(),
@@ -35,7 +39,7 @@ export const ScheduleNewsTop: Component = () => {
 
   return (
     <Switch>
-      <Match when={useScheduleNewsTop().data}>
+      <Match when={useScheduleNewsTop.data}>
         <For each={newsList()}>
           {(news, i) => {
             const slot = () => newsToSlot(news.news)
@@ -84,8 +88,8 @@ const NewsTile: Component<NewsTileProps> = props => {
     return getTextColor(background())
   }
 
-  const background = () => '#' + news().news.style.background.substring(2)
-  const border = () => '#' + news().news.style.border.substring(2)
+  const background = () => '#' + news().news.style?.background?.substring(2) ?? 'ff0000'
+  const border = () => '#' + news().news.style?.border?.substring(2) ?? 'ff0000'
   const showCountDown = () => {
     if (news().news.countdown != undefined) {
       return countdown().as('seconds') > 0
