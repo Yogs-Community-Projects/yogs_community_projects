@@ -35,6 +35,7 @@
     "clsx": "^1.2.1",
     "daisyui": "^2.50.1",
     "firebase": "^9.17.1",
+    "ga-gtag": "^1.1.7",
     "luxon": "^3.2.1",
     "pako": "^2.1.0",
     "solid-firebase": "^0.1.7",
