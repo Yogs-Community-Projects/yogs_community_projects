@@ -5,6 +5,7 @@ import { ScheduleBody } from './body/ScheduleBody'
 import { DesktopViewModeProvider } from './body/DesktopViewModeProvider'
 import { useScheduleDB } from '@ycapp/common'
 import { ScheduleData } from '@ycapp/model'
+import { ScheduleNewsTop } from '../components/ScheduleNewsTop'
 /*
 
           <ScheduleDataProvider scheduleData={schedule.data}>
@@ -24,6 +25,7 @@ const YogsSchedulePage: Component = () => {
   })
   return (
     <div class={'flex flex-col items-center'}>
+      <ScheduleNewsTop />
       <Switch>
         <Match when={state.loading}>
           <p>Loading..</p>
