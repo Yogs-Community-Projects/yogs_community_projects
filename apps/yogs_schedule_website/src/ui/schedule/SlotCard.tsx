@@ -1,5 +1,5 @@
 import { Slot, SlotUtils, TwitchChannelData } from '@ycapp/model'
-import { Component, JSX, Match, Show, Switch } from 'solid-js'
+import { Component, JSX, Show } from 'solid-js'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { createModalSignal, getTextColor, isColorLight, useNow } from '@ycapp/common'
 import { DateTime } from 'luxon'
@@ -109,14 +109,12 @@ export const SlotCard: Component<SlotCardProps> = props => {
             </Show>
           </div>
           <div class={'flex w-full flex-row justify-around'}>
-            <Switch>
-              <Match when={slot.streamType == 'twitch'}>
-                <BiLogosTwitch size={18} />
-              </Match>
-              <Match when={slot.streamType == 'youtube'}>
-                <BiLogosYoutube size={18} />
-              </Match>
-            </Switch>
+            <Show when={slot.relations.twitchChannels.length > 0}>
+              <BiLogosTwitch size={18} />
+            </Show>
+            <Show when={slot.relations.youtubeChannels.length > 0}>
+              <BiLogosYoutube size={18} />
+            </Show>
           </div>
         </div>
       </div>

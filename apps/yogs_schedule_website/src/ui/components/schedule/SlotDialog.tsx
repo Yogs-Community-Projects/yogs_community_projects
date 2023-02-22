@@ -78,14 +78,8 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
         <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}</p>
         <SolidMarkdown children={slot.markdownDesc} />
         <hr class={'border-solid border-black'} />
-        <Switch>
-          <Match when={slot.streamType == 'twitch'}>
-            <TwitchSection slot={slot} />
-          </Match>
-          <Match when={slot.streamType == 'youtube'}>
-            <YoutubeSection slot={slot} />
-          </Match>
-        </Switch>
+        <TwitchSection slot={slot} />
+        <YoutubeSection slot={slot} />
         <CreatorSection slot={slot} />
       </div>
     </div>
@@ -107,7 +101,7 @@ const CreatorSection: Component<CreatorSectionProps> = props => {
           <div class={'grid grid-cols-3 gap-2'}>
             <For each={creators.data}>
               {result => (
-                <A href={'/creators/' + result.creator.creatorId}>
+                <A href={'/creators/' + result.creator.creatorId} class={'no-underline hover:text-white'}>
                   <CreatorTile creator={result.creator} style={result.style} />
                 </A>
               )}
