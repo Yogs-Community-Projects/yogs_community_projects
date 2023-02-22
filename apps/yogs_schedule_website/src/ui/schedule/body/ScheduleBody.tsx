@@ -186,7 +186,7 @@ const EventComponent: Component<EventProps> = props => {
         height: '100%',
       }}
     >
-      <div class={'h-full w-full'}>
+      <div class={'h-full w-full p-0.5'}>
         <SlotCard slot={props.event.slot} />
       </div>
     </div>
