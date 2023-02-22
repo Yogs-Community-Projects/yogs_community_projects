@@ -16,26 +16,12 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 const DBWrapper = lazy(() => import('./db_wrapper'))
 const Main: Component = () => {
-  const firebaseConfig = {
-    apiKey: 'AIzaSyC5bxBlM2qtYLu9kLy9D5Zpaw0I4hWvR0c',
-    authDomain: 'ycapp-f20c0.firebaseapp.com',
-    databaseURL: 'https://ycapp-f20c0-default-rtdb.europe-west1.firebasedatabase.app',
-    projectId: 'ycapp-f20c0',
-    storageBucket: 'ycapp-f20c0.appspot.com',
-    messagingSenderId: '624703369691',
-    appId: '1:624703369691:web:453cb1f036a82cd01eb7fe',
-    measurementId: 'G-NWF4CC8VK5',
-  }
-  console.log(JSON.stringify(firebaseConfig))
   return (
-    // overflow-y-scroll
-    <div class={''}>
-      <DBWrapper>
-        <Router>
-          <App />
-        </Router>
-      </DBWrapper>
-    </div>
+    <DBWrapper>
+      <Router>
+        <App />
+      </Router>
+    </DBWrapper>
   )
 }
 
