@@ -218,7 +218,7 @@ const RelatedCreatorsSection: Component = () => {
                   })}
               >
                 {creator => (
-                  <A href={'/creators/' + creator.creator.creatorId}>
+                  <A href={'/creators/' + creator.creator.creatorId} class={'no-underline hover:text-white'}>
                     <CreatorTile creator={creator.creator} style={creator.style} />
                   </A>
                 )}
