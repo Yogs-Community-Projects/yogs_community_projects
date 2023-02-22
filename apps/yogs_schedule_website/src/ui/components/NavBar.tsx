@@ -10,7 +10,7 @@ export const NavBar: Component = () => {
       <div class={'hidden flex-row justify-center gap-6 p-4 align-middle text-2xl text-white md:flex'}>
         <Link path="/" title="Schedule" />
         <Link path="/creators" title="Creators" />
-        <Link path="/extension" title="Extension" />
+        <Link path="/extension" title="Twitch Extension" />
         <a href={'https://jj.yogs.app'} class={'nav inactiveLink transition-al text-lg hover:scale-105'}>
           Jingle Jam
         </a>
@@ -44,7 +44,7 @@ const DropdownNavBar: Component = props => {
       <div class={'mt-1 flex hidden flex-col space-y-1 md:hidden'} ref={setRef}>
         <LinkMobile path="/" title="Home" close={onClose} />
         <LinkMobile path="/creators" title="Creators" close={onClose} />
-        <LinkMobile path="/extension" title="Extension" close={onClose} />
+        <LinkMobile path="/extension" title="Twitch Extension" close={onClose} />
         <a
           href={'https://jj.yogs.app'}
           class={'nav rounded-xl bg-white p-4 text-lg text-black transition-all hover:scale-105'}
