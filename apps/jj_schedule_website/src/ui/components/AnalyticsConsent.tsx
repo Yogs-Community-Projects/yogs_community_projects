@@ -80,7 +80,7 @@ const AnalyticsConsentBody: Component<AnalyticsConsentBodyProps> = props => {
       </div>
       <div class={'flex w-full flex-1 flex-col overflow-auto p-4'}>
         <p class={'text-xl'}>
-          jinglejam.yogs.app is a fan project an not associated or endorsed by the Yogscast or their partners.
+          jinglejam.yogs.app is a fan project and not associated or endorsed by the Yogscast or their partners.
         </p>
         <p class={'text-xl'}>
           jinglejam.yogs.app uses Google Analytics 4 which collects Anonymous data about the usage of this site, the

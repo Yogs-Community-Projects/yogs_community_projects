@@ -541,7 +541,7 @@ const LastUpdate: Component = () => {
           This schedule is maintained <strong>by the community</strong>. If you find errors or see that a stream is
           missing use the contact info below. Streams that appear here are not guaranteed to happen or might be delayed.
           For more information visit the Twitter page of the <a href={'https://twitter.com/yogscast'}>Yogscast</a> or
-          the respective Streamer.
+          the respective Streamer.{' '}
           <strong>This schedule is a fan Project and not associated with the Yogscast or their partners.</strong>
         </p>
         <p>If you want to help keep the schedule up to date, use the links below.</p>
