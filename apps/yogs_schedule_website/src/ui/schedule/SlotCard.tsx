@@ -130,27 +130,30 @@ interface TwitchSlotCardProps {
 export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
   const { channel } = props
   const liveSince = () => {
-    const started_at = props.channel?.stream?.stream.started_at
+    const started_at = channel?.stream?.stream.started_at
     if (!started_at) {
       return undefined
     }
     return useNow().diff(DateTime.fromISO(started_at))
   }
   return (
-    <div class={'h-full w-full transition-all'}>
+    <div class={'h-full w-full'}>
       <a
-        href={`https://twitch.tv/${props.channel.channel.login}`}
+        href={`https://twitch.tv/${channel.channel.login}`}
         class={
-          'bg-twitch-500 hover:scale-102 schedule-card flex cursor-pointer flex-row items-center justify-center rounded-2xl p-1 p-1 text-center text-white no-underline transition-all hover:text-white hover:brightness-105 md:flex-col'
+          'bg-twitch-500 hover:scale-102 schedule-card group flex h-full cursor-pointer flex-row items-center justify-center rounded-2xl p-1 p-1 text-center text-white no-underline transition-all hover:text-white hover:brightness-105 md:flex-col'
         }
       >
         <img
           class="border-twitch-300 mx-auto h-10 w-10 rounded-full border-2 md:h-12 md:w-12"
-          src={props.channel.channel.profile_image_url.replace('300x300', '70x70')}
+          src={channel.channel.profile_image_url.replace('300x300', '70x70')}
           alt=""
         />
-        <div class={'flex grow flex-col'}>
-          <p class={'text-base md:text-lg'}>{props.channel.channel.display_name}</p>
+        <div class={'flex grow flex-col md:grow-0'}>
+          <p class={'text-sm font-bold md:text-base'}>{channel.channel.display_name}</p>
+          <div class={'hidden transition-all group-hover:block'}>
+            <p class={'line-clamp-1 text-xs'}>{channel.stream.stream.game_name}</p>
+          </div>
           <Show when={liveSince()}>
             <p class={'text-xs md:text-sm'}>
               Live for <span class={'font-mono'}>{liveSince().toFormat('hh:mm:ss')}</span>
