@@ -9,6 +9,7 @@
   "scripts": {
     "deploy-yogs-schedule": "cd apps/yogs_schedule_website && npm run deploy",
     "deploy-jj-schedule": "cd apps/jj_schedule_website && npm run deploy",
+    "deploy-websites": "(npm run deploy-yogs-schedule) && (npm run deploy-jj-schedule)",
     "prettier_check_jj_schedule": "prettier --check --config .prettierrc.json ./apps/jj_schedule_website/src",
     "prettier_check_yogs_schedule": "prettier --check --config .prettierrc.json ./apps/yogs_schedule_website/src",
     "prettier_check_jj_schedule_extension": "prettier --check --config .prettierrc.json ./apps/jj_twitch_extension/src",
@@ -18,7 +19,8 @@
     "prettier_write_jj_schedule_extension": "prettier --write --config .prettierrc.json ./apps/jj_twitch_extension/src",
     "prettier_write_yogs_schedule_extension": "prettier --write --config .prettierrc.json ./apps/yogs_twitch_extension/src",
     "prettier_write": "npm run prettier_write_jj_schedule && npm run prettier_write_yogs_schedule && npm run prettier_write_jj_schedule_extension && npm run prettier_write_yogs_schedule_extension",
-    "prettier_write_packagees": "prettier --write --config .prettierrc.json ./packages/"
+    "prettier_write_packagees": "prettier --write --config .prettierrc.json ./packages/",
+    "prepare": "husky install"
   },
   "installConfig": {
     "hoistingLimits": "dependencies"
@@ -27,9 +29,15 @@
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "solid-devtools": "^0.25.0",
     "typescript": "^4.9.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsxcss,md}": "prettier --write"
   }
 }
