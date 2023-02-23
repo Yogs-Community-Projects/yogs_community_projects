@@ -78,9 +78,15 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
         <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}</p>
         <SolidMarkdown children={slot.markdownDesc} />
         <hr class={'border-solid border-black'} />
-        <TwitchSection slot={slot} />
-        <YoutubeSection slot={slot} />
-        <CreatorSection slot={slot} />
+        <Show when={slot.relations.twitchChannels}>
+          <TwitchSection slot={slot} />
+        </Show>
+        <Show when={slot.relations.youtubeChannels}>
+          <YoutubeSection slot={slot} />
+        </Show>
+        <Show when={slot.relations.creators}>
+          <CreatorSection slot={slot} />
+        </Show>
       </div>
     </div>
   )
