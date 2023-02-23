@@ -7,17 +7,18 @@ export default defineConfig({
   plugins: [
     devtools({
       /* additional options */
-      autoname: true // e.g. enable autoname
+      autoname: true, // e.g. enable autoname
     }),
     solidPlugin(),
     solidSvg({
-      defaultAsComponent: true
-    })
+      defaultAsComponent: true,
+    }),
+    // viteObfuscateFile({}),
   ],
   server: {
-    port: 3000
+    port: 3000,
   },
   build: {
-    target: 'esnext'
-  }
+    target: 'esnext',
+  },
 })
