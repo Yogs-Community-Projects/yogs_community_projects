@@ -451,7 +451,7 @@ const TwitchLiveScheduleGrid: Component = () => {
               {channel => {
                 return (
                   <>
-                    <div class={'hidden h-20 w-full sm:block sm:h-32 sm:w-52'}>
+                    <div class={'hidden h-20 w-full sm:block sm:h-36 sm:w-52'}>
                       <div class={'h-full w-full'}>
                         <TwitchSlotCard channel={channel} />
                       </div>
@@ -469,7 +469,7 @@ const TwitchLiveScheduleGrid: Component = () => {
       <For each={slots()}>
         {(slot, i) => {
           return (
-            <div class={'h-24 w-full sm:h-32 sm:w-52'}>
+            <div class={'h-26 w-full sm:h-36 sm:w-52'}>
               <SlotCard slot={slot} showCountdown={true} showTime={true} />
             </div>
           )
