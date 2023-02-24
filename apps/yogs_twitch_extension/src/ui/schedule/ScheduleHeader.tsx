@@ -18,21 +18,34 @@ export const ScheduleHeader: Component = () => {
 }
 
 const Title: Component = () => {
+  const schedule = useScheduleData()
+
+  const isSpecial = () => schedule.settings.type == 'Special'
   const day = () => useCurrentDay()
   const date = () =>
-    DateTime.fromObject({
-      weekday: day().dayOfWeek,
-    })
+    isSpecial()
+      ? DateTime.fromISO(day().start)
+      : DateTime.fromObject({
+          weekday: day().dayOfWeek,
+        })
+
+  const dateString = () =>
+    isSpecial()
+      ? date().toLocaleString({
+          weekday: 'short',
+          day: 'numeric',
+          month: 'short',
+          year: 'numeric',
+        })
+      : date().toLocaleString({
+          weekday: 'long',
+        })
 
   return (
     <div class={'p-schedule h-full flex-1'}>
       <div class={'schedule-card-white flex h-full flex-col items-center justify-center'}>
         <h3 class={'text-center text-2xl'}>{useScheduleData().name}</h3>
-        <h3 class={'text-center text-2xl'}>
-          {date().toLocaleString({
-            weekday: 'long',
-          })}
-        </h3>
+        <h3 class={'text-center text-2xl'}>{dateString()}</h3>
       </div>
     </div>
   )
