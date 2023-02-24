@@ -5,6 +5,7 @@ import { useCreatorDB } from '@ycapp/common'
 
 import { Loading } from '../components/loading/Loading'
 import { CreatorData } from '@ycapp/model'
+import { Title } from '@solidjs/meta'
 
 const CreatorsPage: Component = () => {
   const state = useCreatorDB().readAll()
@@ -15,6 +16,7 @@ const CreatorsPage: Component = () => {
   })
   return (
     <div class={'flex flex-col gap-2'}>
+      <Title>Yogscast Creators</Title>
       <div class={'grid h-full w-full grid-cols-[repeat(auto-fit,_minmax(120px,_1fr))] gap-1 px-2 md:gap-2'}>
         <Switch>
           <Match when={state.loading}>

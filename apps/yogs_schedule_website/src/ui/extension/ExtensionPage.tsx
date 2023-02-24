@@ -3,10 +3,12 @@ import img1 from '../../assets/extension/img1.png'
 import img2 from '../../assets/extension/img2.png'
 import img3 from '../../assets/extension/img3.png'
 import { FeedbackButtons } from '../components/FeedbackButtons'
+import { Title } from '@solidjs/meta'
 
 const ExtensionPage: Component = () => {
   return (
     <div class={'mx-auto flex flex-col items-center p-1 text-center text-base text-white md:w-[75%] md:text-2xl'}>
+      <Title>Yog Twitch Extension</Title>
       <p class={'p-2 text-2xl font-bold md:text-4xl'}>Unofficial Yogscast Stream Team Twitch Extension</p>
       <p class={'font-bold'}>This extension is still in development</p>
       <p class={'text-xl'}>If you want to help and test the extension use these links.</p>
