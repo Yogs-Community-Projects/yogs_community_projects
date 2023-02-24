@@ -1,7 +1,7 @@
 import { Slot, SlotUtils, TwitchChannelData } from '@ycapp/model'
-import { Component, JSX, Show } from 'solid-js'
+import { Component, createMemo, For, JSX, Match, Show, Switch } from 'solid-js'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
-import { createModalSignal, getTextColor, isColorLight, useNow } from '@ycapp/common'
+import { createModalSignal, getTextColor, isColorLight, useCreatorDB, useNow, useWindowSize } from '@ycapp/common'
 import { DateTime } from 'luxon'
 import { SlotDialog } from '../components/schedule/SlotDialog'
 
@@ -82,6 +82,8 @@ export const SlotCard: Component<SlotCardProps> = props => {
 
   const modalSignal = createModalSignal()
 
+  const size = useWindowSize()
+
   return (
     <>
       <div class={'h-full w-full transition-all'}>
@@ -90,15 +92,35 @@ export const SlotCard: Component<SlotCardProps> = props => {
             ...background(),
           }}
           class={
-            'hover:scale-102 schedule-card flex cursor-pointer flex-col justify-center rounded-2xl border-2 border-transparent p-1 text-center transition-all hover:brightness-105 ' +
+            'hover:scale-102 schedule-card group flex cursor-pointer flex-col justify-center rounded-2xl border-2 border-transparent p-1 text-center transition-all hover:brightness-105 ' +
             border()
           }
           onclick={modalSignal.toggle}
         >
           <div class={'flex h-full w-full flex-col justify-center text-center'}>
             <p class={'text-sm font-bold md:text-base ' + underline()}>{props.slot.title}</p>
-            <Show when={props.showTime && !SlotUtils.isLive(props.slot, useNow())}>
-              <p class={'font-mono text-xs md:text-sm'}>
+            <div class={'hidden transition-all group-hover:block'}>
+              <p class={'line-clamp-1 text-xs md:text-sm'}>{props.slot.subtitle}</p>
+            </div>
+            <Show
+              when={
+                !(props.slot.subtitle == '' || !props.slot.subtitle) &&
+                props.showTime &&
+                !SlotUtils.isLive(props.slot, useNow())
+              }
+            >
+              <p class={'block font-mono text-xs transition-all group-hover:hidden md:text-sm'}>
+                {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
+              </p>
+            </Show>
+            <Show
+              when={
+                (props.slot.subtitle == '' || !props.slot.subtitle) &&
+                props.showTime &&
+                !SlotUtils.isLive(props.slot, useNow())
+              }
+            >
+              <p class={'font-mono text-xs transition-all md:text-sm'}>
                 {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
               </p>
             </Show>
@@ -108,12 +130,15 @@ export const SlotCard: Component<SlotCardProps> = props => {
               </p>
             </Show>
           </div>
-          <div class={'flex w-full flex-row justify-around'}>
+          <Show when={size().width >= 768 && slot.relations.creators.length > 1}>
+            <CreatorIcons slot={slot} />
+          </Show>
+          <div class={'flex w-full flex-row justify-around p-1'}>
             <Show when={slot.relations.twitchChannels.length > 0}>
-              <BiLogosTwitch size={18} />
+              <BiLogosTwitch size={16} />
             </Show>
             <Show when={slot.relations.youtubeChannels.length > 0}>
-              <BiLogosYoutube size={18} />
+              <BiLogosYoutube size={16} />
             </Show>
           </div>
         </div>
@@ -145,7 +170,7 @@ export const TwitchSlotCard: Component<TwitchSlotCardProps> = props => {
         }
       >
         <img
-          class="border-twitch-300 mx-auto h-10 w-10 rounded-full border-2 md:h-12 md:w-12"
+          class="border-twitch-300 mx-auto h-10 w-10 rounded-full border-2 md:h-14 md:w-14"
           src={channel.channel.profile_image_url.replace('300x300', '70x70')}
           alt=""
         />
@@ -193,5 +218,35 @@ export const TwitchSlotCard2: Component<TwitchSlotCardProps> = props => {
         </Show>
       </div>
     </a>
+  )
+}
+
+interface CreatorIconsProps {
+  slot: Slot
+}
+
+const CreatorIcons: Component<CreatorIconsProps> = props => {
+  const { slot } = props
+  const creators = createMemo(() => useCreatorDB().readSome(slot.relations.creators))
+  return (
+    <Switch>
+      <Match when={creators().data}>
+        <div class={'row flex flex items-center justify-center -space-x-3 p-1 transition-all group-hover:space-x-1'}>
+          <For
+            each={[...creators().data].sort((a, b) =>
+              a.creator.name.toLowerCase().localeCompare(b.creator.name.toLowerCase()),
+            )}
+          >
+            {creator => (
+              <img
+                alt={creator.creator.name}
+                class={'h-8 w-8 rounded-full border-[1px]'}
+                src={creator.style.images.small.profileUrl}
+              />
+            )}
+          </For>
+        </div>
+      </Match>
+    </Switch>
   )
 }
