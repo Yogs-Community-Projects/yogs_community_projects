@@ -9,7 +9,7 @@ function setEnvValue(key, value) {
   const target = ENV_VARS.indexOf(
     ENV_VARS.find(line => {
       return line.match(new RegExp(key))
-    })
+    }),
   )
 
   // replace the key/value with the new value

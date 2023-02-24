@@ -1,11 +1,11 @@
 nav {
-    color: white;
+  color: white;
 }
 
 .activeLink {
-    @apply bg-primary-600 font-bold
+  @apply bg-primary-600 font-bold;
 }
 
 .inactiveLink {
-    text-decoration: none;
+  text-decoration: none;
 }
