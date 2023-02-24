@@ -11,7 +11,7 @@ export const PodcastCard: Component<PodcastCardProps> = props => {
 
   return (
     <a
-      class="bg-pickaxe-grey-primary hover:scale-101 my-auto flex aspect-[8/1] w-full rounded-2xl p-2 text-white transition-all hover:brightness-105"
+      class="bg-pickaxe-grey-primary hover:scale-101 my-auto flex aspect-[8/1] w-full rounded-2xl p-2 text-white no-underline transition-all hover:text-white hover:brightness-105"
       href={url}
     >
       <img class="mx-auto h-full rounded-full" src={imageUrl} alt="" />
