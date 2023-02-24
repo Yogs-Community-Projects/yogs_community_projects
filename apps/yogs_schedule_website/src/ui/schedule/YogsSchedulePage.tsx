@@ -6,6 +6,7 @@ import { DesktopViewModeProvider } from './body/DesktopViewModeProvider'
 import { useScheduleDB } from '@ycapp/common'
 import { ScheduleData } from '@ycapp/model'
 import { ScheduleNewsTop } from '../components/ScheduleNewsTop'
+import { Title } from '@solidjs/meta'
 /*
 
           <ScheduleDataProvider scheduleData={schedule.data}>
@@ -25,6 +26,7 @@ const YogsSchedulePage: Component = () => {
   })
   return (
     <div class={'flex flex-col items-center'}>
+      <Title>Yogscast Stream Schedules</Title>
       <ScheduleNewsTop />
       <Switch>
         <Match when={state.loading}>
