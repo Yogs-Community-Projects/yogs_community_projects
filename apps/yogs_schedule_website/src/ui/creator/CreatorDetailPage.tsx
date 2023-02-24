@@ -1,4 +1,4 @@
-import { Component, createEffect, createSignal, ErrorBoundary, For, JSX, Match, Show, Switch } from 'solid-js'
+import { Component, createMemo, ErrorBoundary, For, JSX, Match, Show, Switch } from 'solid-js'
 import { getTextColor, RemoteData, useCreatorDB, usePodcastDB, useTwitchDB, useYoutubeDB } from '@ycapp/common'
 import { Loading } from '../components/loading/Loading'
 import { FaBrandsTwitch, FaBrandsYoutube, FaSolidPeopleGroup, FaSolidPodcast } from 'solid-icons/fa'
@@ -16,21 +16,14 @@ import { CreatorLinkButton } from '../components/tiles/CreatorLinkButton'
 import { CreatorData } from '@ycapp/model'
 import { CreatorTile } from '../components/tiles/CreatorTile'
 import { PodcastCard, TwitchOfflineCard, YoutubeChannelCard } from '@ycapp/commonui'
+import { Title } from '@solidjs/meta'
 
 const CreatorDetailPage: Component = () => {
   // const tiles = useCreatorRouteData();
   const params = useParams()
   const id = () => params.id
 
-  const [creator, setCreator] = createSignal<RemoteData<CreatorData | null>>({
-    data: null,
-    error: null,
-    loading: true,
-  })
-
-  createEffect(() => {
-    setCreator(useCreatorDB().read(id()))
-  })
+  const creator = createMemo(() => useCreatorDB().read(id()))
 
   return <CreatorDetailPageBody data={creator()} />
 }
@@ -45,6 +38,7 @@ const CreatorDetailPageBody: Component<CreatorDetailPageBodyProps> = props => {
       <Match when={props.data.data}>
         <CreatorDetailProvider creator={props.data.data}>
           <div class={'w-full p-2 md:p-0'}>
+            <Title>{props.data.data.creator.name}</Title>
             <div class={'mx-auto flex flex-col items-center md:max-w-[500px]'}>
               <Header />
               <div class={'h-4'} />
