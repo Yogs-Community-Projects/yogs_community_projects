@@ -8,7 +8,9 @@
     "build": "vite build",
     "serve": "vite preview",
     "local-test": "vite build && vite preview",
-    "deploy": "node before.js && vite build && firebase deploy --only hosting"
+    "deploy": "npm run run-prettier-write && node before.js && vite build && firebase deploy --only hosting",
+    "run-prettier-write": "prettier --write --config ../../.prettierrc.json ./",
+    "run-prettier-check": "prettier --check --config ../../.prettierrc.json ./"
   },
   "license": "MIT",
   "devDependencies": {

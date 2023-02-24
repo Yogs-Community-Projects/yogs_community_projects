@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "vite --open --host",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "npm run run-prettier-write && vite build",
+    "serve": "vite preview",
+    "run-prettier-write": "prettier --write --config ../../.prettierrc.json ./",
+    "run-prettier-check": "prettier --check --config ../../.prettierrc.json ./"
   },
   "license": "MIT",
   "devDependencies": {
