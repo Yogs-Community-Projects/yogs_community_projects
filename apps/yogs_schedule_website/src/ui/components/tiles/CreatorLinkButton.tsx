@@ -97,7 +97,7 @@ export const CreatorLinkButton: Component<CreatorLinkButtonProps> = props => {
         color: getTextColor(backgroundColor),
       }}
       class={
-        'hover:scale-101 inline-flex w-full items-center justify-between rounded-full py-2 px-4 font-bold text-gray-800 transition-all hover:brightness-105'
+        'hover:scale-101 inline-flex w-full items-center justify-between rounded-full py-2 px-4 font-bold text-gray-800 no-underline transition-all hover:brightness-105'
       }
     >
       <p>{link.name}</p>
