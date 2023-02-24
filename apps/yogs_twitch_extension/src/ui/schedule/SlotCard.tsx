@@ -75,6 +75,10 @@ export const SlotCard: Component<SlotCardProps> = props => {
     return nextStream().diff(useNow())
   }
 
+  const isOver = () => {
+    return SlotUtils.isOver(props.slot)
+  }
+
   const modalSignal = createModalSignal()
   return (
     <>
@@ -95,7 +99,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
                 {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
               </p>
             </Show>
-            <Show when={props.showCountdown && !SlotUtils.isLive(props.slot, useNow())}>
+            <Show when={props.showCountdown && !SlotUtils.isLive(props.slot, useNow()) && !isOver()}>
               <p class={'text-xs md:text-sm'}>
                 Starts in <span class={'font-mono'}>{countdown().toFormat('hh:mm:ss')}</span>
               </p>
