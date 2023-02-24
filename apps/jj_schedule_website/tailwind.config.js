@@ -5,19 +5,19 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
-        babas: ['Bebas']
+        babas: ['Bebas'],
       },
       width: {
         data: 'var(--data-size)',
         slot: 'var(--slot-width)',
         schedule: 'var(--schedule-width)',
-        'schedule-body': 'var(--schedule-body-width)'
+        'schedule-body': 'var(--schedule-body-width)',
       },
       height: {
         data: 'var(--data-size)',
         slot: 'var(--slot-height)',
         schedule: 'var(--schedule-height)',
-        'schedule-body': 'var(--schedule-body-height)'
+        'schedule-body': 'var(--schedule-body-height)',
       },
       colors: {
         overlay: '#ffffff05',
@@ -32,7 +32,7 @@ module.exports = {
           600: '#AE0F3E',
           700: '#7B0A2B',
           800: '#470619',
-          900: '#130207'
+          900: '#130207',
         },
         accent: {
           DEFAULT: '#3484BF',
@@ -45,7 +45,7 @@ module.exports = {
           600: '#286693',
           700: '#1C4767',
           800: '#10293B',
-          900: '#040A0F'
+          900: '#040A0F',
         },
         twitch: {
           DEFAULT: '#9146FF',
@@ -58,7 +58,7 @@ module.exports = {
           600: '#700EFF',
           700: '#5600D5',
           800: '#40009D',
-          900: '#290065'
+          900: '#290065',
         },
         youtube: '#ff0000',
         'tinyteams-primary': {
@@ -72,7 +72,7 @@ module.exports = {
           600: '#D31F0D',
           700: '#9E1709',
           800: '#691006',
-          900: '#340803'
+          900: '#340803',
         },
         'tinyteams-accent': {
           DEFAULT: '#F00653',
@@ -85,7 +85,7 @@ module.exports = {
           600: '#B90540',
           700: '#83032D',
           800: '#4C021A',
-          900: '#150107'
+          900: '#150107',
         },
         'pickaxe-grey-primary': {
           DEFAULT: '#5D6C84',
@@ -98,7 +98,7 @@ module.exports = {
           600: '#465163',
           700: '#2F3642',
           800: '#171B21',
-          900: '#000000'
+          900: '#000000',
         },
         'pickaxe-grey-accent': {
           DEFAULT: '#999D7F',
@@ -111,7 +111,7 @@ module.exports = {
           600: '#7D8163',
           700: '#5E614A',
           800: '#3F4232',
-          900: '#21221A'
+          900: '#21221A',
         },
         'pickaxe-orange-primary': {
           DEFAULT: '#FF8B41',
@@ -124,7 +124,7 @@ module.exports = {
           600: '#FF6909',
           700: '#D05100',
           800: '#983B00',
-          900: '#602500'
+          900: '#602500',
         },
         'pickaxe-orange-accent': {
           DEFAULT: '#DD4067',
@@ -137,7 +137,7 @@ module.exports = {
           600: '#C2234A',
           700: '#931A38',
           800: '#631226',
-          900: '#330914'
+          900: '#330914',
         },
 
         reddit: {
@@ -151,7 +151,7 @@ module.exports = {
           600: '#C73600',
           700: '#8F2700',
           800: '#571700',
-          900: '#1F0800'
+          900: '#1F0800',
         },
         discord: {
           DEFAULT: '#5865F2',
@@ -164,7 +164,7 @@ module.exports = {
           600: '#2435EE',
           700: '#101FCA',
           800: '#0C1796',
-          900: '#080F62'
+          900: '#080F62',
         },
         github: {
           DEFAULT: '#4078C0',
@@ -177,56 +177,56 @@ module.exports = {
           600: '#325E96',
           700: '#24436C',
           800: '#162942',
-          900: '#080F18'
-        }
+          900: '#080F18',
+        },
       },
       screens: {
         screen700: {
-          max: '700px'
+          max: '700px',
         },
         screen800: '800px',
         screen900: '900px',
         screen1000: '1000px',
         screen1100: '1100px',
-        screen1200: '1200px'
+        screen1200: '1200px',
       },
       fontSize: {
         xxs: [
           '0.625rem;',
           {
-            lineHeight: '0.75rem'
-          }
+            lineHeight: '0.75rem',
+          },
         ],
         'slot-title': ['calc(var(--slot-height) / 8)'],
         'slot-subtitle': ['calc(var(--slot-height) / 10)'],
-        'day-header': ['calc(var(--data-size) / 2)']
+        'day-header': ['calc(var(--data-size) / 2)'],
       },
       backgroundImage: {
-        yogs: 'url(\'/assets/yogs.svg\')'
+        yogs: "url('/assets/yogs.svg')",
       },
       scale: {
         101: '1.01',
-        102: '1.02'
+        102: '1.02',
       },
       brightness: {
         101: '1.01',
-        102: '1.02'
+        102: '1.02',
       },
       keyframes: {
         ripple: {
           '0%': { width: '0px', height: '0px', opacity: 0.5 },
-          '100%': { width: '500px', height: '500px', opacity: 0 }
-        }
+          '100%': { width: '500px', height: '500px', opacity: 0 },
+        },
       },
       animation: {
-        ripple: 'ripple 1s linear infinite'
-      }
+        ripple: 'ripple 1s linear infinite',
+      },
     },
     ripple: theme => ({
       colors: theme('colors'),
       // modifierTransition: 'background 0.2s',
-      activeTransition: 'background 0.3s'
-    })
+      activeTransition: 'background 0.3s',
+    }),
   },
   plugins: [require('@kobalte/tailwindcss')({ prefix: 'kb' }), require('daisyui')],
   daisyui: {
@@ -236,6 +236,6 @@ module.exports = {
     utils: true,
     logs: true,
     rtl: false,
-    prefix: ''
-  }
+    prefix: '',
+  },
 }
