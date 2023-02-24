@@ -8,6 +8,7 @@ import {
   Podcast,
   ScheduleData,
   TwitchChannelData,
+  YogsExtensionConfig,
   YoutubeChannelData,
 } from '@ycapp/model'
 import { createStore } from 'solid-js/store'
@@ -196,9 +197,14 @@ export class NewsDummyDB implements YcNewsDB {
 
 export class ConfigDummyDB implements ConfigDB {
   private readonly jjExtensionConfig: JJExtensionConfig
+  private readonly yogsExtensionConfig: YogsExtensionConfig
 
-  constructor(jjExtensionConfig: JJExtensionConfig = { scheduleId: 'jinglejam2022_2', visible: true }) {
+  constructor(
+    jjExtensionConfig: JJExtensionConfig = { scheduleId: 'jinglejam2022_2', visible: true },
+    yogsExtensionConfig?: YogsExtensionConfig,
+  ) {
     this.jjExtensionConfig = jjExtensionConfig
+    this.yogsExtensionConfig = yogsExtensionConfig
   }
 
   get name(): string {
@@ -208,6 +214,14 @@ export class ConfigDummyDB implements ConfigDB {
   readJJExtensionConfig() {
     return {
       data: this.jjExtensionConfig,
+      loading: false,
+      error: null,
+    }
+  }
+
+  readYogsExtensionConfig() {
+    return {
+      data: this.yogsExtensionConfig,
       loading: false,
       error: null,
     }

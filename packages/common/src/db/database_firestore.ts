@@ -18,6 +18,7 @@ import {
   Podcast,
   ScheduleData,
   TwitchChannelData,
+  YogsExtensionConfig,
   YoutubeChannelData,
 } from '@ycapp/model'
 
@@ -189,6 +190,15 @@ export class ConfigFirestoreDB implements ConfigDB {
     const coll = collection(this.db, 'Config') as CollectionReference<JJExtensionConfig>
     const ref = doc<JJExtensionConfig>(coll, 'TwitchExtensionConfig')
     return loadLocalAndRemote<JJExtensionConfig>('jj_extension_config', ref, {
+      forceRemote: false,
+      ageInHours: 3,
+    })
+  }
+
+  readYogsExtensionConfig() {
+    const coll = collection(this.db, 'Config') as CollectionReference<YogsExtensionConfig>
+    const ref = doc<YogsExtensionConfig>(coll, 'YogsTwitchExtension')
+    return loadLocalAndRemote<YogsExtensionConfig>('yogs_extension_config', ref, {
       forceRemote: false,
       ageInHours: 3,
     })

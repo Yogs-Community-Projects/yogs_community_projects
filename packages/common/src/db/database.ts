@@ -1,4 +1,4 @@
-import { JJExtensionConfig, News, ScheduleData } from '@ycapp/model'
+import { JJExtensionConfig, News, ScheduleData, YogsExtensionConfig } from '@ycapp/model'
 import { collection, CollectionReference, doc, DocumentReference, Firestore } from 'firebase/firestore'
 import { RemoteData } from './local_store'
 import { createEffect } from 'solid-js'
@@ -16,6 +16,7 @@ interface YcDB<T> extends DBName {
 
 export interface ConfigDB extends DBName {
   readJJExtensionConfig: () => RemoteData<JJExtensionConfig | null>
+  readYogsExtensionConfig: () => RemoteData<YogsExtensionConfig | null>
 }
 
 export abstract class YcDBImpl<T> implements YcDB<T> {
