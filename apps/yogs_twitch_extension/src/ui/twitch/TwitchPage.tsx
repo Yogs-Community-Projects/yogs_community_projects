@@ -3,6 +3,7 @@ import { DateTime } from 'luxon'
 import { TwitchTile } from '../components/tiles/TwitchTile'
 import { TwitchChannelData } from '@ycapp/model'
 import { useTwitchDB } from '@ycapp/common'
+import { NewsComponent } from '../components/NewsComponent'
 
 const TwitchPage: Component = () => {
   const result = useTwitchDB().readAll()
@@ -59,6 +60,7 @@ const Body: Component<BodyProps> = props => {
 
   return (
     <div class={'flex flex-col pb-4'}>
+      <NewsComponent />
       <p class={'text-center text-xl text-white'}>Live</p>
       <div class={'grid grid-cols-3 gap-1 p-1'}>
         <For each={live()}>

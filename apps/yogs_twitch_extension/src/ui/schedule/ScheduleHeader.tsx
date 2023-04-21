@@ -10,7 +10,7 @@ export const ScheduleHeader: Component = () => {
       <div class={'h-30'}>
         <Title />
       </div>
-      <div class={'p-schedule h-10'}>
+      <div class={'h-10 px-2 pb-2'}>
         <WeekButtons />
       </div>
     </div>
@@ -42,7 +42,7 @@ const Title: Component = () => {
         })
 
   return (
-    <div class={'p-schedule h-full flex-1'}>
+    <div class={'h-full flex-1 p-2'}>
       <div class={'schedule-card-white flex h-full flex-col items-center justify-center'}>
         <h3 class={'text-center text-2xl'}>{useScheduleData().name}</h3>
         <h3 class={'text-center text-2xl'}>{dateString()}</h3>

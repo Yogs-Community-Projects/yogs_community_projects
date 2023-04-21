@@ -33,3 +33,22 @@ Your app is ready to be deployed!
 ## Deployment
 
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+
+## Twitch description
+
+This a community project which shows the members of the Yogscast Stream Team.
+Specificly it shows who is currently live and possible future streams.
+
+There are two tabs:
+
+Yogs Tab:
+
+- Shows the Twitch channel that are part of the Yogscast Stream Team
+- Shows the current live streamers at the top
+
+Streams Tab
+
+- Shows "all" planned/regular streams from the stream team
+- At the top you can switch between week days or jump back to the current day
+- Below you can see a list of streams for the currently selected day
+- Clicking on a stream will open a popup which shows more information about the stream and a link to the stream and related channel

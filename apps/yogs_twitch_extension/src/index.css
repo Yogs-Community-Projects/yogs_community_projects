@@ -21,6 +21,15 @@ html {
   overflow-scrolling: touch;
 }
 
+div.md > p > a {
+  text-decoration-line: underline;
+  color: #07385e;
+}
+
+div.md > p > a:hover {
+  color: #b04508;
+}
+
 /*
 body {
     @apply overflow-y-scroll scrollbar-thumb-rounded-full scrollbar scrollbar-thumb-primary-300 hover:scrollbar-thumb-primary-400 scrollbar-track-primary-700 scrollbar-corner-accent-500
