@@ -25,7 +25,7 @@ interface SlotCardProps {
 }
 
 export const SlotCard: Component<SlotCardProps> = props => {
-  const slot = props.slot
+  const { slot } = props
 
   function textColor(background: string) {
     return getTextColor(background)
@@ -85,7 +85,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
       <div class={'p-schedule h-full w-full transition-all'}>
         <div
           class={
-            'hover:scale-102 schedule-card flex cursor-pointer flex-col justify-center rounded-2xl p-1 text-center transition-all hover:brightness-105'
+            'hover:scale-102 schedule-card flex min-h-[64px] cursor-pointer flex-col justify-center rounded-2xl p-1 text-center transition-all hover:brightness-105'
           }
           style={{
             ...background(),

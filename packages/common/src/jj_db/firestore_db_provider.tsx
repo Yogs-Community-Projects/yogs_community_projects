@@ -1,5 +1,5 @@
-import YcDBFirebaseProvider from '@ycapp/common/src/db/firestore_db_provider'
 import { ParentComponent } from 'solid-js'
+import YcDBFirebaseProvider from '../db/firestore_db_provider'
 
 interface ExtensionDBFirebaseProviderProps {
   config: any

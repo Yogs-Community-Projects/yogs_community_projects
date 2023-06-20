@@ -14,9 +14,29 @@
   .p-schedule {
     @apply p-1.5;
   }
+
+  .schedule-header-link-left {
+    @apply hover:border-accent-200 hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-l-2xl transition-all hover:scale-105 hover:border-2;
+  }
+
+  .schedule-header-link-center {
+    @apply hover:border-accent-200 hover:bg-accent-50 flex flex-1 flex-col items-center justify-center transition-all hover:scale-105 hover:border-2;
+  }
+
+  .schedule-header-link-right {
+    @apply hover:border-accent-200 hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-r-2xl transition-all hover:scale-105 hover:scale-105 hover:border-2;
+  }
 }
 
 html {
   background: linear-gradient(#f15683, #e21350);
   overflow-scrolling: touch;
+}
+
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
 }

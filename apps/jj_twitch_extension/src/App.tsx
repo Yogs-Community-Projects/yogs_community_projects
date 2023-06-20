@@ -3,14 +3,13 @@ import { Match, Switch } from 'solid-js'
 import NavBar from './ui/components/NavBar'
 import { routes } from './routes'
 import { useRoutes } from '@solidjs/router'
-import { useConfigDB } from '@ycapp/common'
-import { JJConfigProvider } from './config/JJConfigProvider'
+import { JJConfigProvider, useConfigDB } from '@ycapp/common'
 
 const App: Component = () => {
   const Routes = useRoutes(routes)
   const config = useConfigDB().readJJExtensionConfig()
   return (
-    <div class={'flex min-h-screen flex-col items-center'}>
+    <div class={'flex h-screen flex-col overflow-hidden overscroll-none'}>
       <Switch>
         <Match when={config.error}>
           <p>Error: {JSON.parse(config.error)}</p>
@@ -22,7 +21,7 @@ const App: Component = () => {
           <JJConfigProvider config={config.data}>
             <>
               <NavBar />
-              <div class={'container mx-auto'}>
+              <div class={'mx-auto w-full flex-1 overflow-hidden overscroll-none'}>
                 <Routes />
               </div>
             </>

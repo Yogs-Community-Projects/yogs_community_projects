@@ -2,7 +2,14 @@ import { Component, createEffect, createSignal, Match, Switch } from 'solid-js'
 import { useCurrentDay, useScheduleData } from './JJScheduleProvider'
 import { DateTime } from 'luxon'
 import { useDayIndexSetter } from './DayIndexProvider'
-import { FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidFilter } from 'solid-icons/fa'
+import {
+  FaSolidCalendarDay,
+  FaSolidChevronLeft,
+  FaSolidChevronRight,
+  FaSolidFilter,
+  FaSolidLink,
+  FaSolidLinkSlash,
+} from 'solid-icons/fa'
 import { FilterDialog } from './ScheduleCreatorFilterButton'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { createModalSignal, RemoteData, useCreatorDB } from '@ycapp/common'
@@ -15,14 +22,13 @@ export const ScheduleHeader: Component = () => {
       <div class={'h-30'}>
         <Title />
       </div>
-      <div class={'p-schedule h-10'}>
+      <div class={'p-schedule h-4'}>
         <WeekButtons />
       </div>
     </div>
   )
 }
-
-const Title: Component = () => {
+export const Title: Component = () => {
   const day = () => useCurrentDay()
   const date = () => DateTime.fromISO(day().start)
   const { isEmpty, filter } = useCreatorFilter()
@@ -42,10 +48,10 @@ const Title: Component = () => {
   return (
     <div class={'p-schedule h-full flex-1'}>
       <div class={'schedule-card-white flex h-full flex-col items-center justify-center'}>
-        <h3 class={'text-center text-2xl'}>{useScheduleData().name}</h3>
+        <h3 class={'text-center text-xl'}>{useScheduleData().name}</h3>
         <Switch>
           <Match when={isEmpty()}>
-            <h3 class={'text-center text-2xl'}>
+            <h3 class={'text-center text-xl'}>
               {date().toLocaleString({
                 weekday: 'short',
                 day: '2-digit',
@@ -70,7 +76,7 @@ const Title: Component = () => {
     </div>
   )
 }
-const WeekButtons: Component = () => {
+export const WeekButtons: Component = () => {
   const [prev, next, today] = useDayIndexSetter()
   const modalSignal = createModalSignal()
   const { reset, isEmpty } = useCreatorFilter()
@@ -80,50 +86,37 @@ const WeekButtons: Component = () => {
       <Switch>
         <Match when={isEmpty()}>
           <div style={{}} class={`schedule-card-white flex h-full flex-row`}>
-            <button
-              class={
-                'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl hover:scale-105'
-              }
-              onclick={prev}
-            >
+            <button class={'schedule-header-link-left has-tooltip'} onclick={prev}>
+              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Previous Day</span>
               <FaSolidChevronLeft />
             </button>
-            <button
-              class={'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center hover:scale-105'}
-              onClick={modalSignal.open}
-            >
+            <button class={'schedule-header-link-center has-tooltip'} onClick={modalSignal.open}>
+              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Filter</span>
               <FaSolidFilter />
             </button>
-            <button
-              class={'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center hover:scale-105'}
-              onclick={today}
-            >
+            <button class={'schedule-header-link-center has-tooltip'} onclick={today}>
+              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Today</span>
               <FaSolidCalendarDay />
             </button>
-            <button
-              class={
-                'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-r-2xl hover:scale-105'
-              }
-              onclick={next}
-            >
+            <a class={'schedule-header-link-center has-tooltip'} href={'https://jj.yogs.app'} target={'_blank'}>
+              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>
+                https://jj.yogs.app
+              </span>
+              <FaSolidLinkSlash />
+            </a>
+            <button class={'schedule-header-link-right has-tooltip'} onclick={next}>
+              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Next day</span>
               <FaSolidChevronRight />
             </button>
           </div>
         </Match>
         <Match when={!isEmpty()}>
           <div style={{}} class={`schedule-card-white flex h-full flex-row`}>
-            <button
-              class={
-                'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl hover:scale-105'
-              }
-              onClick={modalSignal.open}
-            >
+            <button class={'schedule-header-link-left'} onClick={modalSignal.open}>
               <FaSolidFilter />
             </button>
             <button
-              class={
-                'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-r-2xl hover:scale-105'
-              }
+              class={'schedule-header-link-right'}
               onclick={() => {
                 reset()
               }}

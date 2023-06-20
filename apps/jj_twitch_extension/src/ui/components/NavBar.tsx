@@ -1,28 +1,47 @@
-import { Component } from 'solid-js'
+import { Component, createSignal } from 'solid-js'
 import { A } from '@solidjs/router'
 
+const [navState, setNavState] = createSignal('/')
 const NavBar: Component = () => {
+  const active = 'bg-accent-500 h-full w-full border-2 border-white transition-all text-white'
+
+  const inActive = 'hover:bg-accent-500 h-full w-full border-2 border-white transition-all hover:text-white'
+
+  const state = link => {
+    if (link == navState()) {
+      return active
+    }
+    return inActive
+  }
+
   return (
     <div class={'grid h-10 w-full grid-cols-3 items-center justify-items-stretch p-1 text-white underline'}>
-      <A href={'/'} activeClass={'underline'}>
-        <button class={'hover:bg-primary-300 h-full w-full border-2 border-white transition-all hover:text-black'}>
+      <A href={'/'}>
+        <button
+          class={state('/') + ' rounded-l-xl'}
+          onclick={() => {
+            setNavState('/')
+          }}
+        >
           <p>Schedule</p>
         </button>
       </A>
       <A href={'/charity'}>
         <button
-          class={
-            'hover:bg-primary-300 h-full h-full w-full w-full border-2 border-2 border-white border-white transition-all hover:text-black'
-          }
+          class={state('/charity')}
+          onclick={() => {
+            setNavState('/charity')
+          }}
         >
           <p>Charity</p>
         </button>
       </A>
       <A href={'/streamer'}>
         <button
-          class={
-            'hover:bg-primary-300 h-full h-full w-full w-full border-2 border-2 border-white border-white transition-all hover:text-black'
-          }
+          class={state('/streamer') + ' rounded-r-xl'}
+          onclick={() => {
+            setNavState('/streamer')
+          }}
         >
           <p>Streamer</p>
         </button>

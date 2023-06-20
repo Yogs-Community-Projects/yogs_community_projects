@@ -1,5 +1,6 @@
 {
   "name": "@ycapp/model",
+  "main": "index.ts",
   "private": true,
   "version": "1.0.0",
   "description": "",

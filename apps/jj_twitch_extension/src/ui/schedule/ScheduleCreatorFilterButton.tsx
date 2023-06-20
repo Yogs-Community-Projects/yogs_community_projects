@@ -85,7 +85,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
 
   return (
     <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
-      <div class={`bg-primary flex h-[72px] items-center justify-center rounded-t-3xl p-2 text-white shadow-xl`}>
+      <div class={`bg-primary flex h-[64px] items-center justify-center rounded-t-3xl p-2 text-white shadow-xl`}>
         <button onClick={onClose}>
           <CgClose size={24} class={''} />
         </button>
@@ -94,23 +94,25 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
-      <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-4'}>
+
+      <div class={'flex flex-row content-center justify-center gap-1 p-2 text-sm'}>
+        <button
+          class={'hover:bg-accent-50 border-accent-50 flex-1 rounded-full border-2'}
+          onclick={() => setSortByName(true)}
+        >
+          Sort by name
+        </button>
+        <button
+          class={'hover:bg-accent-50 border-accent-50 flex-1 rounded-full border-2'}
+          onclick={() => setSortByName(false)}
+        >
+          Sort by appearance
+        </button>
+      </div>
+
+      <div class={'flex w-full flex-1 flex-col gap-1 overflow-auto p-4 pt-0'}>
         <Switch>
           <Match when={creators.data}>
-            <div class={'grid grid-cols-2 gap-2'}>
-              <button
-                class={'hover:bg-accent-50 border-accent-50 rounded-full border-2'}
-                onclick={() => setSortByName(true)}
-              >
-                Sort by name
-              </button>
-              <button
-                class={'hover:bg-accent-50 border-accent-50 rounded-full border-2'}
-                onclick={() => setSortByName(false)}
-              >
-                Sort by appearance
-              </button>
-            </div>
             <For each={creatorList()}>
               {creator => (
                 <>
