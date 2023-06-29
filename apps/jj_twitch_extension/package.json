@@ -24,10 +24,11 @@
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
-    "@kobalte/core": "^0.4.0",
-    "@kobalte/tailwindcss": "^0.2.0",
-    "@solidjs/router": "^0.7.0",
+    "@kobalte/core": "^0.9.7",
+    "@kobalte/tailwindcss": "^0.6.5",
+    "@solidjs/router": "^0.8.2",
     "@stitches/core": "^1.2.8",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@types/luxon": "^3.2.0",
     "@types/pako": "^2.0.0",
     "@ycapp/common": "1.0.0",
@@ -35,6 +36,7 @@
     "@ycapp/model": "1.0.0",
     "firebase": "^9.16.0",
     "luxon": "^3.2.1",
+    "solid-i18n": "^1.0.4",
     "solid-icons": "^1.0.4",
     "solid-js": "^1.6.10",
     "solid-markdown": "^1.2.0"

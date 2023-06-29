@@ -1,7 +1,7 @@
 /* @refresh reload */
-import './index.css'
+import './mobile.css'
 import { render } from 'solid-js/web'
-import { JJExtensionDesktop } from './JJExtensionMain'
+import { JJExtensionMobile } from './JJExtensionMain'
 
 const root = document.getElementById('root')
 
@@ -10,4 +10,5 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
     'Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got mispelled?',
   )
 }
-render(() => <JJExtensionDesktop />, root!)
+
+render(() => <JJExtensionMobile />, root!)

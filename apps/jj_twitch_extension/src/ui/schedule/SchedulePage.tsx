@@ -1,4 +1,4 @@
-import { Component, lazy, Match, Switch } from 'solid-js'
+import { Component, Match, Switch } from 'solid-js'
 import { ScheduleDataProvider } from './JJScheduleProvider'
 import { DayIndexProvider } from './DayIndexProvider'
 import { ScheduleBody } from './ScheduleBody'
@@ -6,7 +6,8 @@ import { useJJConfig, useScheduleDB } from '@ycapp/common'
 import { CreatorFilterProvider } from './CreatorFilterProvider'
 
 const SchedulePage: Component = () => {
-  const schedule = useScheduleDB().read(useJJConfig().scheduleId)
+  const scheduleId = useJJConfig().scheduleId
+  const schedule = useScheduleDB().read(scheduleId)
   return (
     <>
       <Switch>

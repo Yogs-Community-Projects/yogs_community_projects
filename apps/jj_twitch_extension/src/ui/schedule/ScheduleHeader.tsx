@@ -9,12 +9,14 @@ import {
   FaSolidFilter,
   FaSolidLink,
   FaSolidLinkSlash,
+  FaSolidShare,
 } from 'solid-icons/fa'
 import { FilterDialog } from './ScheduleCreatorFilterButton'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { createModalSignal, RemoteData, useCreatorDB } from '@ycapp/common'
 import { BiRegularReset } from 'solid-icons/bi'
 import { CreatorData } from '@ycapp/model'
+import { ScheduleControls } from './ScheduleControls'
 
 export const ScheduleHeader: Component = () => {
   return (
@@ -23,7 +25,7 @@ export const ScheduleHeader: Component = () => {
         <Title />
       </div>
       <div class={'p-schedule h-4'}>
-        <WeekButtons />
+        <ScheduleControls />
       </div>
     </div>
   )
@@ -74,59 +76,5 @@ export const Title: Component = () => {
         </Switch>
       </div>
     </div>
-  )
-}
-export const WeekButtons: Component = () => {
-  const [prev, next, today] = useDayIndexSetter()
-  const modalSignal = createModalSignal()
-  const { reset, isEmpty } = useCreatorFilter()
-
-  return (
-    <>
-      <Switch>
-        <Match when={isEmpty()}>
-          <div style={{}} class={`schedule-card-white flex h-full flex-row`}>
-            <button class={'schedule-header-link-left has-tooltip'} onclick={prev}>
-              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Previous Day</span>
-              <FaSolidChevronLeft />
-            </button>
-            <button class={'schedule-header-link-center has-tooltip'} onClick={modalSignal.open}>
-              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Filter</span>
-              <FaSolidFilter />
-            </button>
-            <button class={'schedule-header-link-center has-tooltip'} onclick={today}>
-              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Today</span>
-              <FaSolidCalendarDay />
-            </button>
-            <a class={'schedule-header-link-center has-tooltip'} href={'https://jj.yogs.app'} target={'_blank'}>
-              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>
-                https://jj.yogs.app
-              </span>
-              <FaSolidLinkSlash />
-            </a>
-            <button class={'schedule-header-link-right has-tooltip'} onclick={next}>
-              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Next day</span>
-              <FaSolidChevronRight />
-            </button>
-          </div>
-        </Match>
-        <Match when={!isEmpty()}>
-          <div style={{}} class={`schedule-card-white flex h-full flex-row`}>
-            <button class={'schedule-header-link-left'} onClick={modalSignal.open}>
-              <FaSolidFilter />
-            </button>
-            <button
-              class={'schedule-header-link-right'}
-              onclick={() => {
-                reset()
-              }}
-            >
-              <BiRegularReset />
-            </button>
-          </div>
-        </Match>
-      </Switch>
-      <FilterDialog modalSignal={modalSignal} />
-    </>
   )
 }

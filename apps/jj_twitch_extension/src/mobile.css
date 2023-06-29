@@ -16,7 +16,7 @@
   }
 
   .schedule-controls-link {
-    @apply hover:border-accent-500 hover:bg-accent-500 flex flex-1 flex-col items-center justify-center transition-all hover:scale-105 hover:border-2 hover:text-white;
+    @apply flex flex-1 flex-col items-center justify-center transition-all;
   }
 }
 
@@ -31,18 +31,4 @@ html {
 
 .has-tooltip:hover .tooltip {
   @apply visible z-50;
-}
-
-.ripple {
-  position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
-  animation: ripple 600ms linear;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
 }

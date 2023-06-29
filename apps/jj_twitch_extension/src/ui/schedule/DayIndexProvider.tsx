@@ -1,7 +1,9 @@
 import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
 import { Accessor } from 'solid-js/types/reactive/signal'
-import { useDaysCount } from './JJScheduleProvider'
+import { useDays, useDaysCount, useSlots } from './JJScheduleProvider'
+import { DayUtils, SlotUtils } from '@ycapp/model'
 import { DateTime } from 'luxon'
+import { useNow } from '@ycapp/common'
 
 type DayIndexProps = {
   useIndex: Accessor<number>
@@ -16,8 +18,50 @@ export const DayIndexContext = createContext<DayIndexProps>()
 
 const useWeekDay = () => DateTime.now().weekday
 
+export const jjStart = () => {
+  const slots = useSlots()
+  const startSlot = slots[0]
+  return SlotUtils.start(startSlot)
+}
+export const jjEnd = () => {
+  const slots = useSlots()
+  const endSlot = slots[slots.length - 1]
+  return SlotUtils.end(endSlot)
+}
+
+export const isJJ = () => {
+  return isAfterJJStart() && isBeforeJJEnd()
+}
+export const isBeforeJJStart = () => {
+  return useNow() < jjStart()
+}
+export const isAfterJJStart = () => {
+  return !isBeforeJJStart()
+}
+export const isAfterJJEnd = () => {
+  return useNow() > jjEnd()
+}
+export const isBeforeJJEnd = () => {
+  return !isAfterJJEnd()
+}
+
+export const useTodayIndex = () => {
+  const days = useDays()
+  let index = 0
+  if (isJJ()) {
+    for (let i = 0; i < days.length; i++) {
+      const day = index[i]
+      if (DayUtils.isToday(day)) {
+        index = i
+        break
+      }
+    }
+  }
+  return index
+}
+
 export const DayIndexProvider: ParentComponent = props => {
-  const [useIndex, setIndex] = createSignal(useWeekDay() - 1)
+  const [useIndex, setIndex] = createSignal(useTodayIndex())
   const numberOfDays = useDaysCount()
 
   const isTodaySelected = () => {
@@ -37,7 +81,7 @@ export const DayIndexProvider: ParentComponent = props => {
     setIndex(next)
   }
   const today = () => {
-    setIndex(DateTime.now().weekday - 1)
+    setIndex(useTodayIndex())
   }
 
   return (

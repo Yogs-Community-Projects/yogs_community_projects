@@ -1,26 +1,28 @@
 import { Component, For, Match, Switch } from 'solid-js'
-import { useCurrentDay, useDays, useSlots } from './JJScheduleProvider'
+import { useCurrentDay, useScheduleData, useSlots } from './JJScheduleProvider'
 import { SlotCard } from './SlotCard'
-import { ScheduleHeader, Title, WeekButtons } from './ScheduleHeader'
+import { Title } from './ScheduleHeader'
 import { useCreatorFilter } from './CreatorFilterProvider'
-import { useDayIndex } from './DayIndexProvider'
+import { ScheduleControls } from './ScheduleControls'
+import { DateTime } from 'luxon'
 
 export const ScheduleBody: Component = () => {
-  const scroll = 'scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100'
-  const scroll2 =
-    'flex-1 overflow-auto scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100'
-  const c = 'flex-1 overflow-auto'
+  const scroll =
+    'flex-1 overflow-auto scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 pt-0'
+  const schedule = useScheduleData()
   return (
     <div class="flex h-full flex-1 flex-col">
       <div class={'h-30'}>
         <Title />
       </div>
-      <div class={scroll2}>
+      <div class={scroll}>
         <ScheduleSlots />
       </div>
-
-      <div class={'p-schedule h-10'}>
-        <WeekButtons />
+      <div class={'p-schedule flex h-14 flex-col justify-center p-1'}>
+        <p class={'text-xxs p-1 text-center font-bold text-white'}>
+          Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
+        </p>
+        <ScheduleControls />
       </div>
     </div>
   )
@@ -52,7 +54,7 @@ const ScheduleSlots: Component = () => {
   return (
     <Switch>
       <Match when={isEmpty()}>
-        <div class={''}>
+        <div>
           <For each={slots()}>
             {slot => {
               return <SlotCard slot={slot} showCountdown={true} showTime={true} />

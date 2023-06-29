@@ -1,5 +1,6 @@
 import { RouteDefinition } from '@solidjs/router'
 import { lazy } from 'solid-js'
+
 export const routes: RouteDefinition[] = [
   {
     path: '/',
@@ -15,11 +16,11 @@ export const routes: RouteDefinition[] = [
     component: lazy(() => import('./ui/schedule/SchedulePage')),
   },
   {
-    path: '/charity',
+    path: '/charities',
     component: lazy(() => import('./ui/charity/CharityPage')),
   },
   {
-    path: '/streamer',
+    path: '/community',
     component: lazy(() => import('./ui/streamer/StreamerPage')),
   },
 ]

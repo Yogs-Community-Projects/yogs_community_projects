@@ -1,6 +1,6 @@
+import ExtensionDBDummyProvider from '@ycapp/common/src/jj_db/dummy_db_provider'
+import ExtensionDBFirebaseProvider from '@ycapp/common/src/jj_db/firestore_db_provider'
 import { ParentComponent } from 'solid-js'
-import ExtensionDBDummyProvider from 'yogs_twitch_extension/src/db/dummy_db_provider'
-import ExtensionDBFirebaseProvider from 'yogs_twitch_extension/src/db/firestore_db_provider'
 
 const DBWrapper: ParentComponent = props => {
   const configString = import.meta.env.VITE_FIREBASE_CONFIG

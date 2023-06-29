@@ -82,7 +82,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
   const modalSignal = createModalSignal()
   return (
     <>
-      <div class={'p-schedule h-full w-full transition-all'}>
+      <div class={'p-schedule h-full w-full uppercase transition-all'}>
         <div
           class={
             'hover:scale-102 schedule-card flex min-h-[64px] cursor-pointer flex-col justify-center rounded-2xl p-1 text-center transition-all hover:brightness-105'
@@ -93,7 +93,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
           onclick={modalSignal.toggle}
         >
           <div class={'flex h-full w-full flex-col justify-center text-center'}>
-            <p class={'text-sm font-bold md:text-base ' + underline()}>{props.slot.title}</p>
+            <p class={'text-sm font-bold md:text-base' + underline()}>{props.slot.title}</p>
             <Show when={props.showTime && !SlotUtils.isLive(props.slot, useNow())}>
               <p class={'font-mono text-xs md:text-sm'}>
                 {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
@@ -132,7 +132,7 @@ export const SlotDialog: Component<SlotDialogProps> = props => {
   // w-[80%] left-[10%] md:w-[60%] md:left-[20%] lg:w-[50%] lg:left-[25%]  lg:w-[30%] lg:left-[35%]
   const { slot, modalSignal } = props
   return (
-    <Dialog.Root isOpen={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
+    <Dialog.Root open={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
       <Dialog.Portal>
         <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
         <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
@@ -206,10 +206,17 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
-      <div class={'flex w-full flex-1 flex-col overflow-auto p-4'}>
-        <p class={'text-xl'}>{slot.subtitle}</p>
-        <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</p>
-        <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}</p>
+      <div class={'flex w-full flex-1 flex-col overflow-auto p-4 text-xs'}>
+        <p class={'text-lg'}>{slot.subtitle}</p>
+        <p class={'text-lg'}>
+          {SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}{' '}
+          {SlotUtils.nextStream(slot).toLocaleString({
+            hour: 'numeric',
+            minute: 'numeric',
+            hourCycle: 'h23',
+            timeZoneName: 'short',
+          })}
+        </p>
         <SolidMarkdown children={slot.markdownDesc} />
         <hr class={'border-solid border-black'} />
         <Show when={slot.relations.twitchChannels.length > 0}>
