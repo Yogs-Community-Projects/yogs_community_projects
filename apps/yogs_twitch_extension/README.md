@@ -37,7 +37,7 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 ## Twitch description
 
 This a community project which shows the members of the Yogscast Stream Team.
-Specificly it shows who is currently live and possible future streams.
+Specifically it shows who is currently live and possible future streams.
 
 There are two tabs:
 
