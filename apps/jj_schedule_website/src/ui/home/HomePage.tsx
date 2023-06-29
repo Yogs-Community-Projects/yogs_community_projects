@@ -13,6 +13,7 @@ const Disclaimer: Component = () => {
 }
 
 const HomePage: Component = () => {
+  // linear-gradient(#f15683, #7b0a2b)
   return (
     <div class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}>
       <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Yogscast Jingle Jam Countdown</p>

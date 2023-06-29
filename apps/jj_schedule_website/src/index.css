@@ -154,7 +154,7 @@ a {
 }
 
 html {
-  background: linear-gradient(#f15683, #7b0a2b);
+  background-color: transparent;
   overflow-scrolling: touch;
 }
 
