@@ -1,9 +1,24 @@
 import { Component } from 'solid-js'
-import { useRoutes } from '@solidjs/router'
-import { routes } from '../Routes'
+import { Outlet } from '@solidjs/router'
+import { AnalyticsConsent } from './components/AnalyticsConsent'
+import { JJLogo } from './components/JJLogo'
+import { NavBar } from './components/NavBar'
+import { Footer } from './components/Footer'
 
-const AppBody: Component = props => {
-  const Routes = useRoutes(routes)
-  return <Routes />
+const AppBody: Component = () => {
+  return (
+    <div
+      class={'font-poppins from-primary-300 to-primary-700 flex min-h-screen flex-col items-center bg-gradient-to-b'}
+    >
+      <AnalyticsConsent />
+      <JJLogo />
+      <NavBar />
+      <div class={'container mx-auto sm:p-1'}>
+        <Outlet />
+      </div>
+      <div class={'grow'} />
+      <Footer />
+    </div>
+  )
 }
 export default AppBody

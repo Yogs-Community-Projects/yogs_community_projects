@@ -1,23 +1,30 @@
 import type { Component } from 'solid-js'
 import { lazy } from 'solid-js'
-import { NavBar } from './ui/components/NavBar'
-import { JJLogo } from './ui/components/JJLogo'
-import { Footer } from './ui/components/Footer'
-import { AnalyticsConsent } from './ui/components/AnalyticsConsent'
+import { Route, Router, Routes } from '@solidjs/router'
+import { schedule2021RouteDataFunc, schedule2022RouteDataFunc } from './ui/schedule/ScheduleRouteData'
+import { ScheduleOverlay } from './remote/schedule_overlay'
 
-const AppBody = lazy(() => import('./ui/AppBody'))
 const App: Component = () => {
   return (
-    <div class={'font-poppins flex min-h-screen flex-col items-center'}>
-      <AnalyticsConsent />
-      <JJLogo />
-      <NavBar />
-      <div class={'container mx-auto sm:p-1'}>
-        <AppBody />
-      </div>
-      <div class={'grow'} />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path={'/'} component={lazy(() => import('./ui/AppBody'))}>
+          <Route path={'/'} component={lazy(() => import('./ui/home/HomePage'))}></Route>
+          <Route path={'/extension'} component={lazy(() => import('./ui/extension/ExtensionPage'))}></Route>
+          <Route
+            path={'/2021'}
+            data={schedule2021RouteDataFunc}
+            component={lazy(() => import('./ui/schedule/SchedulePage'))}
+          ></Route>
+          <Route
+            path={'/2022'}
+            data={schedule2022RouteDataFunc}
+            component={lazy(() => import('./ui/schedule/SchedulePage'))}
+          ></Route>
+        </Route>
+        <Route path={'/overlay'} component={ScheduleOverlay}></Route>
+      </Routes>
+    </Router>
   )
 }
 
