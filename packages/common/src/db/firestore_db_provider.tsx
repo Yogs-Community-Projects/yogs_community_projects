@@ -22,6 +22,7 @@ const YcDBFirebaseProvider: ParentComponent<YcDBFirebaseProps> = props => {
   const db = initializeFirestore(app, {})
   return (
     <InternalYcDBProvider
+      db={db}
       creator={new CreatorFirestoreDB(db)}
       twitch={new TwitchFirestoreDB(db)}
       youtube={new YoutubeFirestoreDB(db)}

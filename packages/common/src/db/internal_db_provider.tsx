@@ -1,8 +1,10 @@
 import { ConfigDB, YcDBImpl, YcNewsDB, YcScheduleDB } from './database'
 import { createContext, ParentComponent, useContext } from 'solid-js'
 import { CreatorData, Podcast, TwitchChannelData, YoutubeChannelData } from '@ycapp/model'
+import { Firestore } from 'firebase/firestore'
 
 interface YcDBContextProps {
+  db?: Firestore
   creator: YcDBImpl<CreatorData>
   twitch: YcDBImpl<TwitchChannelData>
   youtube: YcDBImpl<YoutubeChannelData>
@@ -13,6 +15,7 @@ interface YcDBContextProps {
 }
 
 interface YcDBProps {
+  db?: Firestore
   creator: YcDBImpl<CreatorData>
   twitch: YcDBImpl<TwitchChannelData>
   youtube: YcDBImpl<YoutubeChannelData>
@@ -27,6 +30,7 @@ export const InternalYcDBProvider: ParentComponent<YcDBProps> = props => {
   return (
     <YcDBContext.Provider
       value={{
+        db: props.db,
         creator: props.creator,
         twitch: props.twitch,
         youtube: props.youtube,
@@ -48,3 +52,4 @@ export const usePodcastDB = () => useYcDB().podcast
 export const useScheduleDB = () => useYcDB().schedule
 export const useNewsDB = () => useYcDB().news
 export const useConfigDB = () => useYcDB().config
+export const useFirestoreDB = () => useYcDB().db
