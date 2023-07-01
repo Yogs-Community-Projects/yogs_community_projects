@@ -1,5 +1,6 @@
 import { Relations } from './Relations'
 import { DateTime, Duration } from 'luxon'
+import { useNow } from '@ycapp/common'
 
 export interface ScheduleData {
   id: string
@@ -123,6 +124,10 @@ export class SlotUtils {
     return DateTime.fromISO(slot.start)
   }
 
+  static end(slot: Slot) {
+    return SlotUtils.start(slot).plus(SlotUtils.duration(slot))
+  }
+
   static sortByNextStream(a: Slot, b: Slot, now?: DateTime) {
     if (SlotUtils.isLive(a, now) && !SlotUtils.isLive(b, now)) {
       return -1
@@ -144,53 +149,52 @@ export class SlotUtils {
     const duration = SlotUtils.duration(slot)
 
     const add = start.diff(now).as('day') % 7
-    switch (slot.type) {
-      case 'weekly':
-        const targetDay1 = now.plus(Duration.fromDurationLike({ day: add }))
-        let nextWeek1 = DateTime.fromObject({
-          year: targetDay1.year,
-          month: targetDay1.month,
-          day: targetDay1.day,
-          hour: start.hour,
-          minute: start.minute,
-        })
-        if (now > nextWeek1.plus(duration)) {
-          nextWeek1 = nextWeek1.plus(
-            Duration.fromDurationLike({
-              day: 7,
-            }),
-          )
-        }
-        return nextWeek1
-      case 'biweekly':
-        const targetDay2 = now.plus(Duration.fromDurationLike({ days: add }))
-        let nextWeek2 = DateTime.fromObject({
-          year: targetDay2.year,
-          month: targetDay2.month,
-          day: targetDay2.day,
-          hour: start.hour,
-          minute: start.minute,
-        })
-        const mod = nextWeek2.diff(start).as('days') % 14
-        if (mod != 0) {
-          nextWeek2 = nextWeek2.plus(
-            Duration.fromDurationLike({
-              day: 7,
-            }),
-          )
-        }
-        if (now > nextWeek2.plus(duration)) {
-          nextWeek2 = nextWeek2.plus(
-            Duration.fromDurationLike({
-              day: 14,
-            }),
-          )
-        }
-        return nextWeek2
-      case 'special':
-        return start
-      default:
-        return start
+    if (slot.type === 'weekly') {
+      const targetDay1 = now.plus(Duration.fromDurationLike({ day: add }))
+      let nextWeek1 = DateTime.fromObject({
+        year: targetDay1.year,
+        month: targetDay1.month,
+        day: targetDay1.day,
+        hour: start.hour,
+        minute: start.minute,
+      })
+      if (now > nextWeek1.plus(duration)) {
+        nextWeek1 = nextWeek1.plus(
+          Duration.fromDurationLike({
+            day: 7,
+          }),
+        )
+      }
+      return nextWeek1
+    } else if (slot.type === 'biweekly') {
+      const targetDay2 = now.plus(Duration.fromDurationLike({ days: add }))
+      let nextWeek2 = DateTime.fromObject({
+        year: targetDay2.year,
+        month: targetDay2.month,
+        day: targetDay2.day,
+        hour: start.hour,
+        minute: start.minute,
+      })
+      const mod = nextWeek2.diff(start).as('days') % 14
+      if (mod != 0) {
+        nextWeek2 = nextWeek2.plus(
+          Duration.fromDurationLike({
+            day: 7,
+          }),
+        )
+      }
+      if (now > nextWeek2.plus(duration)) {
+        nextWeek2 = nextWeek2.plus(
+          Duration.fromDurationLike({
+            day: 14,
+          }),
+        )
+      }
+      return nextWeek2
+    } else if (slot.type === 'special') {
+      return start
+    } else {
+      return start
     }
   }
 
@@ -221,5 +225,26 @@ export class SlotUtils {
       return now < SlotUtils.start(slot).plus(SlotUtils.duration(slot))
     }
     return now < SlotUtils.nextStream(slot, now).plus(SlotUtils.duration(slot))
+  }
+}
+
+export class DayUtils {
+  static start(day: Day) {
+    const slots = day.slots
+    if (slots.length == 0) {
+      return DateTime.now()
+    }
+    return SlotUtils.start(slots[0])
+  }
+  static end(day: Day) {
+    const slots = day.slots
+    if (slots.length == 0) {
+      return DateTime.now()
+    }
+    return SlotUtils.end(slots[slots.length - 1])
+  }
+
+  static isToday(day: Day) {
+    return useNow() > DayUtils.start(day) && useNow() < DayUtils.end(day)
   }
 }
