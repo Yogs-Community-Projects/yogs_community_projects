@@ -1,6 +1,6 @@
 import { Slot, SlotUtils, TwitchChannelData } from '@ycapp/model'
 import { Accessor, Component, createEffect, createSignal, For, JSX, Match, Show, Switch } from 'solid-js'
-import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
+import { BiLogosTwitch, BiLogosYoutube, BiRegularVideo, BiSolidVideo } from 'solid-icons/bi'
 import { BsHeart } from 'solid-icons/bs'
 import {
   createModalSignal,
@@ -17,6 +17,7 @@ import { TwitchTile } from '../components/tiles/TwitchTile'
 import { Dialog } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import SolidMarkdown from 'solid-markdown'
+import { FaSolidHeart } from 'solid-icons/fa'
 
 interface SlotCardProps {
   slot: Slot
@@ -106,14 +107,8 @@ export const SlotCard: Component<SlotCardProps> = props => {
             </Show>
           </div>
           <div class={'flex w-full flex-row justify-around'}>
-            <Show when={slot.showTwitchIcon} fallback={<div />}>
-              <BiLogosTwitch size={16} />
-            </Show>
-            <Show when={slot.showHighlightIcon} fallback={<div />}>
-              <BsHeart size={16} />
-            </Show>
-            <Show when={slot.showYoutubeIcon} fallback={<div />}>
-              <BiLogosYoutube size={16} />
+            <Show when={slot.showTwitchIcon || slot.showHighlightIcon} fallback={<div />}>
+              <FaSolidHeart size={16} />
             </Show>
           </div>
         </div>

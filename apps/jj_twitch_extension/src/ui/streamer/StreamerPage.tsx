@@ -1,8 +1,11 @@
 import { Component, For } from 'solid-js'
 import { data } from '../../assets/fundraiser_data.json'
 import { Numeric } from 'solid-i18n'
+import { useJJConfig } from '@ycapp/common'
 
 const StreamerPage: Component = () => {
+  const excludeChannels = () => useJJConfig().excludeChannels ?? []
+
   return (
     <div
       class={
@@ -13,7 +16,7 @@ const StreamerPage: Component = () => {
         <h3 class={'flex-1'}>Community Fundraiser</h3>
       </div>
       <div class={'flex h-full flex-1 flex-col gap-2'}>
-        <For each={data}>
+        <For each={data.filter(d => !excludeChannels().includes(d.login))}>
           {d => {
             return (
               <a

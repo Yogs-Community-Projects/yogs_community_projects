@@ -39,6 +39,7 @@
     "solid-i18n": "^1.0.4",
     "solid-icons": "^1.0.4",
     "solid-js": "^1.6.10",
-    "solid-markdown": "^1.2.0"
+    "solid-markdown": "^1.2.0",
+    "solid-transition-group": "^0.2.2"
   }
 }

@@ -1,11 +1,11 @@
 import { Env, EnvProvider } from './EnvProvider'
-import { Router } from '@solidjs/router'
-import App from './App'
 import { Component, lazy } from 'solid-js'
 import { createI18n, I18nProvider } from 'solid-i18n'
 import { useLocale } from '@kobalte/core'
+import { Router } from '@solidjs/router'
 
 const DBWrapper = lazy(() => import('./db_wrapper'))
+const App = lazy(() => import('./App'))
 
 interface MainProps {
   env: Env
