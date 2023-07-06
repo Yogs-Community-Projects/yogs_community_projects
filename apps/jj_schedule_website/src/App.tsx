@@ -2,7 +2,9 @@ import type { Component } from 'solid-js'
 import { lazy } from 'solid-js'
 import { Route, Router, Routes } from '@solidjs/router'
 import { schedule2021RouteDataFunc, schedule2022RouteDataFunc } from './ui/schedule/ScheduleRouteData'
-import { ScheduleOverlay } from './remote/schedule_overlay'
+import { ScheduleOverlay } from './remote/ScheduleOverlay'
+import { FundraisersOverlay } from './remote/FundraisersOverlay'
+import { OverlayOverview } from './remote/OverlayOverview'
 
 const App: Component = () => {
   return (
@@ -22,7 +24,9 @@ const App: Component = () => {
             component={lazy(() => import('./ui/schedule/SchedulePage'))}
           ></Route>
         </Route>
-        <Route path={'/overlay'} component={ScheduleOverlay}></Route>
+        <Route path={'/overlay'} component={OverlayOverview}></Route>
+        <Route path={'/overlay/schedule'} component={ScheduleOverlay}></Route>
+        <Route path={'/overlay/fundraisers'} component={FundraisersOverlay}></Route>
       </Routes>
     </Router>
   )

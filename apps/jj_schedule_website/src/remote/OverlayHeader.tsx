@@ -1,8 +1,7 @@
 import { Component, createSignal, Match, onCleanup, ParentComponent, Show, Switch } from 'solid-js'
 import { Transition } from 'solid-transition-group'
-import { animatedHeader } from './overlay_signals'
 
-export const OverlayHeader: Component = () => {
+export const OverlayHeader: Component<{ anim: boolean }> = props => {
   const [headerIndex, setHeaderIndex] = createSignal(0)
 
   const timer = setInterval(() => {
@@ -12,7 +11,7 @@ export const OverlayHeader: Component = () => {
 
   return (
     <>
-      <Show when={animatedHeader()}>
+      <Show when={props.anim}>
         <Transition
           mode={'outin'}
           onEnter={(el, done) => {
@@ -59,7 +58,7 @@ export const OverlayHeader: Component = () => {
           </Switch>
         </Transition>
       </Show>
-      <Show when={!animatedHeader()}>
+      <Show when={!props.anim}>
         <HeaderCard>
           <UpNext />
         </HeaderCard>

@@ -14,6 +14,9 @@ export const animatedHeader = () => {
 export const background = () => {
   return '#' + useParam('background') ?? 'ff000000'
 }
+export const excludedChannel = () => {
+  return (useParam('exclude') ?? '').split(',')
+}
 export const useNext = () => {
   const v = parseInt(useParam('next')) ?? 3
   if (v < 2) {

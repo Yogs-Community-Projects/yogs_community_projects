@@ -5,7 +5,7 @@ import { ScheduleDataProvider, useSlots } from '../ui/schedule/providers/Schedul
 import './overlay.css'
 import { ScheduleData, SlotUtils } from '@ycapp/model'
 import { OverlaySlotList } from './OverlaySlotList'
-import { background, showHeader, useNext, useOverlayNow } from './overlay_signals'
+import { animatedHeader, background, showHeader, useNext, useOverlayNow } from './overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
 import schedule from '../assets/schedules/schedule_2022'
 
@@ -14,13 +14,29 @@ const fetch = () => {
 }
 
 export const ScheduleOverlay: Component = () => {
+  return (
+    <ScheduleOverlayComponent
+      header={showHeader()}
+      next={useNext()}
+      background={background()}
+      anim={animatedHeader()}
+    />
+  )
+}
+
+export const ScheduleOverlayComponent: Component<{
+  next: number
+  background: string
+  header: boolean
+  anim: boolean
+}> = props => {
   const schedule = useScheduleDB().read('jinglejam2023')
   const slots = () =>
     useSlots()
       .filter(slot => {
         return SlotUtils.isLive(slot, useOverlayNow()) || SlotUtils.isBefore(slot, useOverlayNow())
       })
-      .slice(0, useNext())
+      .slice(0, props.next)
 
   const nextGrid = () => {
     switch (useNext()) {
@@ -36,7 +52,7 @@ export const ScheduleOverlay: Component = () => {
   return (
     <div
       style={{
-        background: background(),
+        background: props.background,
       }}
       class={`max-w-screen flex h-screen flex-col rounded-2xl uppercase`}
     >
@@ -50,8 +66,8 @@ export const ScheduleOverlay: Component = () => {
         <Match when={schedule.data}>
           <ScheduleDataProvider scheduleData={schedule.data}>
             <div class={'flex h-full flex-col'}>
-              <Show when={showHeader()}>
-                <OverlayHeader />
+              <Show when={props.header}>
+                <OverlayHeader anim={props.anim} />
               </Show>
               <div class={'grid h-full flex-1 ' + nextGrid()}>
                 <Show when={slots().length > 0}>
