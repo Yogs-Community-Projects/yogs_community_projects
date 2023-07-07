@@ -5,6 +5,7 @@ import { schedule2021RouteDataFunc, schedule2022RouteDataFunc } from './ui/sched
 import { ScheduleOverlay } from './remote/ScheduleOverlay'
 import { FundraisersOverlay } from './remote/FundraisersOverlay'
 import { OverlayOverview } from './remote/OverlayOverview'
+import { CharityOverlay } from './remote/CharityOverlay'
 
 const App: Component = () => {
   return (
@@ -27,6 +28,7 @@ const App: Component = () => {
         <Route path={'/overlay'} component={OverlayOverview}></Route>
         <Route path={'/overlay/schedule'} component={ScheduleOverlay}></Route>
         <Route path={'/overlay/fundraisers'} component={FundraisersOverlay}></Route>
+        <Route path={'/overlay/charities'} component={CharityOverlay}></Route>
       </Routes>
     </Router>
   )
