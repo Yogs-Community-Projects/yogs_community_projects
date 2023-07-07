@@ -122,7 +122,14 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   }
 
   const countdown = () => {
-    return SlotUtils.start(slot).diff(useOverlayNow()).toFormat('hh:mm:ss')
+    if (SlotUtils.start(slot).diff(useOverlayNow()).as('day') < 7) {
+      return SlotUtils.start(slot).diff(useOverlayNow()).toFormat('hh:mm:ss')
+    }
+    return SlotUtils.start(slot).diff(useOverlayNow()).toFormat("dd 'days'")
+  }
+
+  const showDate = () => {
+    return SlotUtils.start(slot).diff(useOverlayNow()).as('day') > 1
   }
 
   return (
@@ -167,6 +174,21 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
           <div class={'flex h-full flex-col justify-center p-2'}>
             <p class={'line-clamp-2 text-2xl font-bold'}>{props.slot.title}</p>
             <p class={'text-1xl line-clamp-2'}>{props.slot.subtitle}</p>
+            <Show when={showDate()}>
+              <p class={'text-lg'}>
+                {SlotUtils.start(slot).toLocaleString(
+                  {
+                    weekday: 'short',
+                    day: 'numeric',
+                    month: 'short',
+                    timeZone: 'GMT',
+                  },
+                  {
+                    locale: 'en-EN',
+                  },
+                )}
+              </p>
+            </Show>
           </div>
         </div>
       </div>
