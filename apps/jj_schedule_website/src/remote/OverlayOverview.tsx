@@ -1,6 +1,8 @@
 import { Component, createSignal, Show } from 'solid-js'
 import { ScheduleOverlayComponent } from './ScheduleOverlay'
 import { FundraisersOverlay } from './FundraisersOverlay'
+import { CharityOverview } from 'jj_twitch_extension/src/ui/charity/CharityOverview'
+import { CharityOverlay } from './CharityOverlay'
 
 export const OverlayOverview: Component = () => {
   const [next, setNext] = createSignal(3)
@@ -141,7 +143,8 @@ export const OverlayOverview: Component = () => {
         </div>
         <div>
           <p class={'text-2xl'}>JJ Community Fundraisers</p>
-          <p>Recommended Browser source size in px: 250x70</p>
+          <p>This does use demo data in will currently not update</p>
+          <p>Recommended Browser source height 72px</p>
           <button
             class={'bg-primary-500 rounded-2xl p-2 text-white'}
             onclick={() => {
@@ -154,11 +157,31 @@ export const OverlayOverview: Component = () => {
           </button>
           <div
             style={{
-              width: '250px',
-              height: '70px',
+              width: '100%',
+              height: '72px',
             }}
           >
             <FundraisersOverlay />
+          </div>
+          <p class={'text-2xl'}>JJ Charities</p>
+          <p>Recommended Browser source height 72px</p>
+          <button
+            class={'bg-primary-500 rounded-2xl p-2 text-white'}
+            onclick={() => {
+              console.log('copy')
+              const url = 'https://jinglejam.yogs.app/overlay/charities'
+              copyToClipboard(url)
+            }}
+          >
+            Copy Link
+          </button>
+          <div
+            style={{
+              width: '100%',
+              height: '72px',
+            }}
+          >
+            <CharityOverlay />
           </div>
         </div>
       </div>
