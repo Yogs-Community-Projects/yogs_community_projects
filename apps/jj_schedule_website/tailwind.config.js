@@ -217,9 +217,19 @@ module.exports = {
           '0%': { width: '0px', height: '0px', opacity: 0.5 },
           '100%': { width: '500px', height: '500px', opacity: 0 },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         ripple: 'ripple 1s linear infinite',
+        marquee: 'marquee 120s linear infinite',
+        marquee2: 'marquee2 120s linear infinite',
       },
     },
     ripple: theme => ({
