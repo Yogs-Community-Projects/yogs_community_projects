@@ -1,13 +1,13 @@
 import { Component, Match, Show, Switch } from 'solid-js'
-import { Loading } from '../ui/components/loading/Loading'
+import { Loading } from '../../ui/components/loading/Loading'
 import { useScheduleDB } from '@ycapp/common'
-import { ScheduleDataProvider, useSlots } from '../ui/schedule/providers/ScheduleDataProvider'
-import './overlay.css'
+import { ScheduleDataProvider, useSlots } from '../../ui/schedule/providers/ScheduleDataProvider'
+import '../overlay.css'
 import { ScheduleData, SlotUtils } from '@ycapp/model'
 import { OverlaySlotList } from './OverlaySlotList'
-import { animatedHeader, background, showHeader, useNext, useOverlayNow } from './overlay_signals'
+import { animatedHeader, background, showHeader, useNext, useOverlayNow } from '../overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
-import schedule from '../assets/schedules/schedule_2022'
+import schedule from '../../assets/schedules/schedule_2022'
 
 const fetch = () => {
   return schedule as unknown as ScheduleData

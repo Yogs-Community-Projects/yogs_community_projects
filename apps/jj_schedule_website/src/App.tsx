@@ -2,10 +2,10 @@ import type { Component } from 'solid-js'
 import { lazy } from 'solid-js'
 import { Route, Router, Routes } from '@solidjs/router'
 import { schedule2021RouteDataFunc, schedule2022RouteDataFunc } from './ui/schedule/ScheduleRouteData'
-import { ScheduleOverlay } from './remote/ScheduleOverlay'
-import { FundraisersOverlay } from './remote/FundraisersOverlay'
-import { OverlayOverview } from './remote/OverlayOverview'
-import { CharityOverlay } from './remote/CharityOverlay'
+import { ScheduleOverlay } from './overlay/schedule/ScheduleOverlay'
+import { FundraisersOverlay } from './overlay/FundraisersOverlay'
+import { OverlayOverview } from './overlay/OverlayOverview'
+import { CharityOverlay } from './overlay/CharityOverlay'
 
 const App: Component = () => {
   return (

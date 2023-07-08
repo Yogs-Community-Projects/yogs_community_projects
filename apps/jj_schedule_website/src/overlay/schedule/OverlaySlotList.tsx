@@ -1,7 +1,7 @@
-import { Slot, SlotUtils } from '@ycapp/model'
 import { Component, For, JSX, Show } from 'solid-js'
 import { useSearchParams } from '@solidjs/router'
-import { useOverlayNow } from './overlay_signals'
+import { useOverlayNow } from '../overlay_signals'
+import { Slot, SlotUtils } from '@ycapp/model'
 import { getTextColor } from '@ycapp/common'
 
 const useParam = (key: string) => {
