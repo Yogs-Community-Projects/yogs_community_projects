@@ -17,6 +17,9 @@ export const background = () => {
 export const excludedChannel = () => {
   return (useParam('exclude') ?? '').split(',')
 }
+export const minAmount = () => {
+  return parseInt(useParam('minamount') ?? '0')
+}
 export const useSpeed = () => {
   return parseInt(useParam('speed') ?? '2') ?? 2
 }

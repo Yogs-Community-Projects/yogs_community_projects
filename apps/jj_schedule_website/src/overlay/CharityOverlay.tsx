@@ -1,20 +1,20 @@
 import { Component, For, JSXElement, Match, Switch } from 'solid-js'
-import { data } from '../assets/fundraiser_data.json'
 import { Numeric } from 'solid-i18n'
-import { excludedChannel, useSpeed } from './overlay_signals'
+import { useSpeed } from './overlay_signals'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { JJData } from 'jj_twitch_extension/src/ui/charity/charity_model'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import './marquee.css'
-export const CharityOverlay: Component<{ speed?: number }> = props => {
-  const e = excludedChannel()
-  const useData = () => data.filter(d => !e.includes(d.login))
 
+export const CharityOverlay: Component<{ speed?: number }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
   const desc = () => {
-    if (useData().length % 4 == 0) {
+    if (!charityData.data) {
+      return 3
+    }
+    if (charityData.data.tiltify_campaign_data.length % 4 == 0) {
       return 4
     }
     return 3
@@ -25,13 +25,25 @@ export const CharityOverlay: Component<{ speed?: number }> = props => {
 
     for (let i = 0; i < lst.length; i++) {
       const d = lst[i]
-      if (i % desc() == 0) {
-        result.push(
-          <div class={'flex h-full w-full flex-col items-center justify-center rounded-2xl bg-white p-2 shadow-2xl'}>
-            <p class={'text-accent-500 font-bold'}>Jingle Jam</p>
-            <p class={'text-primary-500 font-bold'}>Charities</p>
-          </div>,
-        )
+      if (i % (desc() * 2) == 0) {
+        if (i % desc() == 0) {
+          result.push(
+            <div class={'flex h-full w-full flex-col items-center justify-center rounded-2xl bg-white p-2 shadow-2xl'}>
+              <p class={'text-accent-500 font-bold'}>Jingle Jam</p>
+              <p class={'text-primary-500 font-bold'}>Charities</p>
+            </div>,
+          )
+        } else {
+          result.push(
+            <div
+              class={
+                'bg-primary-500 flex h-full w-full flex-col items-center justify-center rounded-2xl p-2 shadow-2xl'
+              }
+            >
+              <p class={'text-xl font-bold text-white'}>jinglejam.tiltify.com</p>
+            </div>,
+          )
+        }
       }
       result.push(
         <div class={'h-full w-full rounded-2xl bg-white p-2 shadow-2xl'}>

@@ -1,4 +1,4 @@
-import { Component, For } from 'solid-js'
+import { Component, For, Match, Switch } from 'solid-js'
 import { data } from '../../assets/fundraiser_data.json'
 import { Numeric } from 'solid-i18n'
 import { useJJConfig } from '@ycapp/common'
@@ -19,24 +19,42 @@ const StreamerPage: Component = () => {
         <For each={data.filter(d => !excludeChannels().includes(d.login))}>
           {d => {
             return (
-              <a
-                class={
-                  'min-h-24 hover:bg-accent-100 hover:scale-102 w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl  hover:brightness-105'
-                }
-                href={`https://twitch.tv/${d.login}`}
-                target={'_blank'}
-              >
-                <div class={'flex h-full w-full items-center p-1'}>
-                  <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} />
-                  <div class={'w-full pl-1'}>
-                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
-                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
-                    <p class={'text-primary text-xs font-bold'}>
-                      Raised <Numeric value={d.amount} numberStyle="currency" currency={'GBP'} />
-                    </p>
+              <Switch>
+                <Match when={d.login}>
+                  <a
+                    class={
+                      'min-h-24 hover:scale-102 bg-twitch-200 w-full rounded-2xl shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
+                    }
+                    href={`https://twitch.tv/${d.login}`}
+                    target={'_blank'}
+                  >
+                    <div class={'flex h-full w-full items-center p-1'}>
+                      <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} />
+                      <div class={'w-full pl-1'}>
+                        <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
+                        <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
+                        <p class={'text-primary text-xs font-bold'}>
+                          Raised <Numeric value={d.amount} numberStyle="currency" currency={'GBP'} />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </Match>
+                <Match when={!d.login}>
+                  <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all'}>
+                    <div class={'flex h-full w-full items-center p-1'}>
+                      <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} />
+                      <div class={'w-full pl-1'}>
+                        <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
+                        <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
+                        <p class={'text-primary text-xs font-bold'}>
+                          Raised <Numeric value={d.amount} numberStyle="currency" currency={'GBP'} />
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </Match>
+              </Switch>
             )
           }}
         </For>

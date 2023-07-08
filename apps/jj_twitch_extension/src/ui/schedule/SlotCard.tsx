@@ -108,7 +108,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
           </div>
           <div class={'flex w-full flex-row justify-around'}>
             <Show when={slot.showTwitchIcon || slot.showHighlightIcon} fallback={<div />}>
-              <FaSolidHeart size={16} />
+              <FaSolidHeart size={12} />
             </Show>
           </div>
         </div>
