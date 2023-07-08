@@ -48,10 +48,22 @@ export const copyToClipboard = async (value: string) => {
 const Schedule = () => {
   const [next, setNext] = createSignal(3)
   const [transparent, setTransparent] = createSignal(true)
-  const [header, setHeader] = createSignal(true)
-  const [animHeader, setAnimHeader] = createSignal(false)
+  const [header, setHeader] = createSignal(['upnext'])
   const [background, setBackground] = createSignal('#BDD9ED')
 
+  const upnext = () => header().includes('upnext')
+
+  const donate = () => header().includes('donate')
+  const jjlink = () => header().includes('jjlink')
+  const extension = () => header().includes('extension')
+  const updateHeader = (value: string) => {
+    const lst = header()
+    if (lst.includes(value)) {
+      setHeader(lst.filter(h => h !== value))
+    } else {
+      setHeader([...lst, value])
+    }
+  }
   const color = () => {
     if (transparent()) {
       return ''
@@ -60,14 +72,26 @@ const Schedule = () => {
   }
 
   const height = () => {
-    if (header()) {
+    if (header().length > 0) {
       return 50 + next() * 160
     }
     return next() * 160
   }
 
+  const heightStr = () => `${height()}px`
+
+  const url = () => {
+    let url = 'https://jinglejam.yogs.app/overlay/schedule?'
+    if (!transparent()) {
+      url += `background=${background().substring(1)}&`
+    }
+    url += `header=${header().join(',')}&`
+    url += `next=${next()}`
+    return url
+  }
+
   return (
-    <div>
+    <div class={''}>
       <div class={'flex flex-col'}>
         <p class={'text-2xl'}>Yogs JJ Schedule</p>
         <div>
@@ -115,65 +139,74 @@ const Schedule = () => {
         <div>
           <input
             class={'accent-primary-500'}
-            checked={header()}
+            checked={upnext()}
             onchange={() => {
-              setHeader(!header())
+              updateHeader('upnext')
             }}
             type="checkbox"
-            id="headerCheckbox"
-            name="headerCheckbox"
+            id="headerupnextCheckbox"
+            name="headerupnextCheckbox"
           />
-          <label for="headerCheckbox">Show Header</label>
+          <label for="headerupnextCheckbox">Show Up Next</label>
         </div>
-        <Show when={header()}>
-          <div>
-            <input
-              class={'accent-primary-500'}
-              checked={animHeader()}
-              onchange={() => {
-                setAnimHeader(!animHeader())
-              }}
-              type="checkbox"
-              id="aminheaderCheckbox"
-              name="aminheaderCheckbox"
-            />
-            <label for="aminheaderCheckbox">Animate Header</label>
-          </div>
-        </Show>
+        <div>
+          <input
+            class={'accent-primary-500'}
+            checked={donate()}
+            onchange={() => {
+              updateHeader('donate')
+            }}
+            type="checkbox"
+            id="headerdonateCheckbox"
+            name="headerdonateCheckbox"
+          />
+          <label for="headerdonateCheckbox">Show !donate command</label>
+        </div>
+        <div>
+          <input
+            class={'accent-primary-500'}
+            checked={jjlink()}
+            onchange={() => {
+              updateHeader('jjlink')
+            }}
+            type="checkbox"
+            id="headerjjlinkCheckbox"
+            name="headerjjlinkCheckbox"
+          />
+          <label for="headerjjlinkCheckbox">Show JJ Link</label>
+        </div>
+        <div>
+          <input
+            class={'accent-primary-500'}
+            checked={extension()}
+            onchange={() => {
+              updateHeader('extension')
+            }}
+            type="checkbox"
+            id="headerextensionCheckbox"
+            name="headerextensionCheckbox"
+          />
+          <label for="headerextensionCheckbox">Show JJ Extension banner</label>
+        </div>
       </div>
       <button
         class={'bg-primary-500 rounded-2xl p-2 text-white'}
         onclick={() => {
-          console.log('copy')
-          let url = 'https://jinglejam.yogs.app/overlay/schedule?'
-          if (!transparent()) {
-            url += `background=${background().substring(1)}&`
-          }
-          if (header()) {
-            url += 'header=true&'
-          } else {
-            url += 'header=false&'
-          }
-          if (animHeader()) {
-            url += 'animatedheader=true&'
-          } else {
-            url += 'animatedheader=false&'
-          }
-          url += `next=${next()}`
-          copyToClipboard(url)
+          copyToClipboard(url())
         }}
       >
         Copy Link
       </button>
-      <div>Recommended Browser source size in px: 300x{height()}</div>
+      <div>Recommended Browser source size in px: 280x{height()}</div>
       <p class={'text-xl'}>Preview</p>
       <div
         style={{
-          width: '300px',
-          height: `${height()}px`,
+          width: '280px',
+          height: heightStr(),
+          'max-height': heightStr(),
         }}
       >
-        <ScheduleOverlayComponent next={next()} background={color()} header={header()} anim={animHeader()} />
+        <ScheduleOverlayComponent next={next()} background={color()} header={header()} />
       </div>
     </div>
   )
@@ -185,7 +218,7 @@ const Fundraisers = () => {
   return (
     <div>
       <p class={'text-2xl'}>JJ Community Fundraisers</p>
-      <p>This does use demo data in will currently not update</p>
+      <p class={'font-bold text-red-600'}>This is still work in progress. This is data from 2022.</p>
       <p>Recommended Browser source height 72px</p>
       <div>
         <label for="fspeed">Speed:</label>
@@ -233,6 +266,7 @@ const Charities = () => {
   return (
     <div>
       <p class={'text-2xl'}>JJ Charities</p>
+      <p class={'font-bold text-red-600'}>This is still work in progress. This is data from 2022.</p>
       <p>Recommended Browser source height 72px</p>
       <div>
         <label for="cspeed">Speed:</label>

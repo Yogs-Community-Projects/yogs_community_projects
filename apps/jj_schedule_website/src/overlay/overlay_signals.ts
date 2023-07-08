@@ -1,15 +1,13 @@
-import { useSearchParams } from '@solidjs/router'
+import { useLocation } from '@solidjs/router'
 import { useNow } from '@ycapp/common'
 
 const useParam = (key: string) => {
-  const [params] = useSearchParams()
-  return params[key]
+  //const [params] = useSearchParams()
+  const location = useLocation()
+  return location.query[key]
 }
-export const showHeader = () => {
-  return useParam('header') ? useParam('header') === 'true' : true
-}
-export const animatedHeader = () => {
-  return useParam('animatedheader') ? useParam('animatedheader') === 'true' : false
+export const useHeader = () => {
+  return (useParam('header') ?? 'upnext').split(',')
 }
 export const background = () => {
   return '#' + useParam('background') ?? 'ff000000'

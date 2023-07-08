@@ -76,7 +76,7 @@ export const FundraisersOverlay: Component<{ speed?: number }> = props => {
     <div class="relative flex overflow-x-hidden">
       <div
         style={{
-          animation: `marquee ${(props.speed ?? useSpeed()) * items().length}s linear infinite`,
+          animation: `marquee ${(props.speed ?? useSpeed()) * 120}s linear infinite`,
         }}
         class="flex flex-row whitespace-nowrap"
       >
@@ -88,7 +88,7 @@ export const FundraisersOverlay: Component<{ speed?: number }> = props => {
       </div>
       <div
         style={{
-          animation: `marquee2 ${(props.speed ?? useSpeed()) * items().length}s linear infinite`,
+          animation: `marquee2 ${(props.speed ?? useSpeed()) * 120}s linear infinite`,
         }}
         class="absolute top-0 flex flex-row whitespace-nowrap"
       >

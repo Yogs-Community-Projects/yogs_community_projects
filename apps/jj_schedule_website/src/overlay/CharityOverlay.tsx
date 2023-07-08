@@ -25,8 +25,8 @@ export const CharityOverlay: Component<{ speed?: number }> = props => {
 
     for (let i = 0; i < lst.length; i++) {
       const d = lst[i]
-      if (i % (desc() * 2) == 0) {
-        if (i % desc() == 0) {
+      if (i % desc() == 0) {
+        if (i % (desc() * 2) == 0) {
           result.push(
             <div class={'flex h-full w-full flex-col items-center justify-center rounded-2xl bg-white p-2 shadow-2xl'}>
               <p class={'text-accent-500 font-bold'}>Jingle Jam</p>
@@ -70,7 +70,7 @@ export const CharityOverlay: Component<{ speed?: number }> = props => {
         <div class="relative flex overflow-x-hidden">
           <div
             style={{
-              animation: `marquee ${(props.speed ?? useSpeed()) * items().length}s linear infinite`,
+              animation: `marquee ${(props.speed ?? useSpeed()) * 30}s linear infinite`,
             }}
             class="flex flex-row whitespace-nowrap"
           >
@@ -82,7 +82,7 @@ export const CharityOverlay: Component<{ speed?: number }> = props => {
           </div>
           <div
             style={{
-              animation: `marquee2 ${(props.speed ?? useSpeed()) * items().length}s linear infinite`,
+              animation: `marquee2 ${(props.speed ?? useSpeed()) * 30}s linear infinite`,
             }}
             class="absolute top-0 flex flex-row whitespace-nowrap"
           >

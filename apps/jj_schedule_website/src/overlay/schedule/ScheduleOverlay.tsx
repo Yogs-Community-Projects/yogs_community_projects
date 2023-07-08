@@ -3,32 +3,23 @@ import { Loading } from '../../ui/components/loading/Loading'
 import { useScheduleDB } from '@ycapp/common'
 import { ScheduleDataProvider, useSlots } from '../../ui/schedule/providers/ScheduleDataProvider'
 import '../overlay.css'
-import { ScheduleData, SlotUtils } from '@ycapp/model'
+import { SlotUtils } from '@ycapp/model'
 import { OverlaySlotList } from './OverlaySlotList'
-import { animatedHeader, background, showHeader, useNext, useOverlayNow } from '../overlay_signals'
+import { background, useHeader, useNext, useOverlayNow } from '../overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
-import schedule from '../../assets/schedules/schedule_2022'
-
-const fetch = () => {
-  return schedule as unknown as ScheduleData
-}
 
 export const ScheduleOverlay: Component = () => {
   return (
-    <ScheduleOverlayComponent
-      header={showHeader()}
-      next={useNext()}
-      background={background()}
-      anim={animatedHeader()}
-    />
+    <>
+      <ScheduleOverlayComponent header={useHeader()} next={useNext()} background={background()} />
+    </>
   )
 }
 
 export const ScheduleOverlayComponent: Component<{
   next: number
   background: string
-  header: boolean
-  anim: boolean
+  header: string[]
 }> = props => {
   const schedule = useScheduleDB().read('jinglejam2023')
   const slots = () =>
@@ -39,7 +30,7 @@ export const ScheduleOverlayComponent: Component<{
       .slice(0, props.next)
 
   const nextGrid = () => {
-    switch (useNext()) {
+    switch (props.next) {
       case 2:
         return 'grid-rows-2'
       case 3:
@@ -67,7 +58,7 @@ export const ScheduleOverlayComponent: Component<{
           <ScheduleDataProvider scheduleData={schedule.data}>
             <div class={'flex h-full flex-col'}>
               <Show when={props.header}>
-                <OverlayHeader anim={props.anim} />
+                <OverlayHeader header={props.header} />
               </Show>
               <div class={'grid h-full flex-1 ' + nextGrid()}>
                 <Show when={slots().length > 0}>
