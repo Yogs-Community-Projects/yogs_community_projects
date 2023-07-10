@@ -3,9 +3,10 @@ import { lazy } from 'solid-js'
 import { Route, Router, Routes } from '@solidjs/router'
 import { schedule2021RouteDataFunc, schedule2022RouteDataFunc } from './ui/schedule/ScheduleRouteData'
 import { ScheduleOverlay } from './overlay/schedule/ScheduleOverlay'
-import { FundraisersOverlay } from './overlay/FundraisersOverlay'
-import { OverlayOverview } from './overlay/OverlayOverview'
-import { CharityOverlay } from './overlay/CharityOverlay'
+import { FundraisersOverlay } from './overlay/fundraisers/FundraisersOverlay'
+import { OverlayOverview } from './overlay/overview/OverlayOverview'
+import { CharityOverlay } from './overlay/charity/CharityOverlay'
+import { CharityOverlay2 } from './overlay/charity/CharityOverlay2'
 
 const App: Component = () => {
   return (
@@ -29,6 +30,7 @@ const App: Component = () => {
         <Route path={'/overlay/schedule'} component={ScheduleOverlay}></Route>
         <Route path={'/overlay/fundraisers'} component={FundraisersOverlay}></Route>
         <Route path={'/overlay/charities'} component={CharityOverlay}></Route>
+        <Route path={'/overlay/charities2'} component={CharityOverlay2}></Route>
       </Routes>
     </Router>
   )

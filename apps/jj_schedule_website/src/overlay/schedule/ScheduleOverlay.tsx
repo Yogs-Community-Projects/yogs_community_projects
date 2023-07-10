@@ -7,12 +7,14 @@ import { SlotUtils } from '@ycapp/model'
 import { OverlaySlotList } from './OverlaySlotList'
 import { background, useHeader, useNext, useOverlayNow } from '../overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
+import { DateTime } from 'luxon'
+import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvider'
 
-export const ScheduleOverlay: Component = () => {
+export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
   return (
-    <>
+    <ScheduleOverlayDateProviderProvider debug={false} date={props.date}>
       <ScheduleOverlayComponent header={useHeader()} next={useNext()} background={background()} />
-    </>
+    </ScheduleOverlayDateProviderProvider>
   )
 }
 

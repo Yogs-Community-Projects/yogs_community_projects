@@ -129,7 +129,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   }
 
   const showDate = () => {
-    return SlotUtils.start(slot).diff(useOverlayNow()).as('day') > 1
+    return SlotUtils.start(slot).diff(useOverlayNow()).as('day') > 2
   }
 
   return (

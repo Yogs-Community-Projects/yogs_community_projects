@@ -1,56 +1,26 @@
-import { Component, createSignal, Show } from 'solid-js'
-import { ScheduleOverlayComponent } from './schedule/ScheduleOverlay'
-import { FundraisersOverlay } from './FundraisersOverlay'
-import { CharityOverlay } from './CharityOverlay'
+import { createSignal, Show } from 'solid-js'
+import { DateTime } from 'luxon'
+import { copyToClipboard } from './copyToClipboard'
+import { ScheduleOverlayDateProviderProvider } from '../schedule/ScheduleOverlayDateProvider'
+import { ScheduleOverlayComponent } from '../schedule/ScheduleOverlay'
+import { useNow } from '@ycapp/common'
 
-export const OverlayOverview: Component = () => {
-  return (
-    <div class={'p-4'}>
-      <p class={'text-3xl'}>JJ OBS Overlays</p>
-      <p>
-        These are JJ related overlays meant to be used in OBS Browser sources. Use these links and add them to your obs
-        scenes.
-      </p>
-      <div class={'grid grid-cols-2'}>
-        <Schedule />
-        <div>
-          <Fundraisers />
-          <Charities />
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export const copyToClipboard = async (value: string) => {
-  try {
-    let copyValue = ''
-
-    if (!navigator.clipboard) {
-      throw new Error("Browser don't have support for native clipboard.")
-    }
-
-    if (value) {
-      copyValue = value
-    }
-
-    await navigator.clipboard.writeText(copyValue)
-  } catch (e) {
-    console.log(e.toString())
-  }
-  try {
-    window.alert(`Copied ${value}`)
-  } catch (e) {
-    console.log(e.toString())
-  }
-}
-
-const Schedule = () => {
+export const ScheduleOverviewComponent = () => {
   const [next, setNext] = createSignal(3)
   const [transparent, setTransparent] = createSignal(true)
   const [header, setHeader] = createSignal(['upnext'])
   const [background, setBackground] = createSignal('#BDD9ED')
-
+  const [date, setDate] = createSignal(
+    DateTime.fromObject({
+      year: 2023,
+      month: 11,
+      day: 30,
+      hour: 17,
+      minute: 30,
+    }),
+  )
+  const [testDate, setTestDate] = createSignal(true)
+  const toggleTestDate = () => setTestDate(!testDate())
   const upnext = () => header().includes('upnext')
 
   const donate = () => header().includes('donate')
@@ -199,6 +169,48 @@ const Schedule = () => {
       </button>
       <div>Recommended Browser source size in px: 280x{height()}</div>
       <p class={'text-xl'}>Preview</p>
+      <div>
+        <input
+          class={'accent-primary-500'}
+          checked={testDate()}
+          onchange={toggleTestDate}
+          type="checkbox"
+          id="testDateCheckbox"
+          name="testDateCheckbox"
+        />
+        <label for="testDateCheckbox">Test specific date and time</label>
+      </div>
+      <Show when={testDate()}>
+        <input
+          type={'date'}
+          value={date().toISODate()}
+          onchange={e => {
+            const d = date()
+            const [year, month, day] = e.target.value.split('-')
+            setDate(
+              d.set({
+                year: parseInt(year),
+                month: parseInt(month),
+                day: parseInt(day),
+              }),
+            )
+          }}
+        />
+        <input
+          type={'time'}
+          value={date().toFormat('hh:mm')}
+          onchange={e => {
+            const d = date()
+            const [hour, minute] = e.target.value.split(':')
+            setDate(
+              d.set({
+                hour: parseInt(hour),
+                minute: parseInt(minute),
+              }),
+            )
+          }}
+        />
+      </Show>
       <div
         style={{
           width: '280px',
@@ -206,104 +218,9 @@ const Schedule = () => {
           'max-height': heightStr(),
         }}
       >
-        <ScheduleOverlayComponent next={next()} background={color()} header={header()} />
-      </div>
-    </div>
-  )
-}
-
-const Fundraisers = () => {
-  const [speed, setSpeed] = createSignal(2)
-
-  return (
-    <div>
-      <p class={'text-2xl'}>JJ Community Fundraisers</p>
-      <p class={'font-bold text-red-600'}>This is still work in progress. This is data from 2022.</p>
-      <p>Recommended Browser source height 72px</p>
-      <div>
-        <label for="fspeed">Speed:</label>
-        <select
-          class={'accent-primary-500'}
-          name="fspeed"
-          id="fspeed"
-          value={speed()}
-          onchange={e => {
-            setSpeed(+e.target.value)
-          }}
-        >
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-          <option value={4}>4</option>
-          <option value={5}>5</option>
-        </select>
-      </div>
-      <button
-        class={'bg-primary-500 rounded-2xl p-2 text-white'}
-        onclick={() => {
-          console.log('copy')
-          const url = `https://jinglejam.yogs.app/overlay/fundraisers?speed=${speed()}`
-          copyToClipboard(url)
-        }}
-      >
-        Copy Link
-      </button>
-      <p class={'text-xl'}>Preview</p>
-      <div
-        style={{
-          width: '100%',
-          height: '72px',
-        }}
-      >
-        <FundraisersOverlay speed={speed()} />
-      </div>
-    </div>
-  )
-}
-
-const Charities = () => {
-  const [speed, setSpeed] = createSignal(2)
-  return (
-    <div>
-      <p class={'text-2xl'}>JJ Charities</p>
-      <p class={'font-bold text-red-600'}>This is still work in progress. This is data from 2022.</p>
-      <p>Recommended Browser source height 72px</p>
-      <div>
-        <label for="cspeed">Speed:</label>
-        <select
-          class={'accent-primary-500'}
-          name="cspeed"
-          id="cspeed"
-          value={speed()}
-          onchange={e => {
-            setSpeed(+e.target.value)
-          }}
-        >
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-          <option value={4}>4</option>
-          <option value={5}>5</option>
-        </select>
-      </div>
-      <button
-        class={'bg-primary-500 rounded-2xl p-2 text-white'}
-        onclick={() => {
-          console.log('copy')
-          const url = `https://jinglejam.yogs.app/overlay/charities?speed=${speed()}`
-          copyToClipboard(url)
-        }}
-      >
-        Copy Link
-      </button>
-      <p class={'text-xl'}>Preview</p>
-      <div
-        style={{
-          width: '100%',
-          height: '72px',
-        }}
-      >
-        <CharityOverlay speed={speed()} />
+        <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
+          <ScheduleOverlayComponent next={next()} background={color()} header={header()} />
+        </ScheduleOverlayDateProviderProvider>
       </div>
     </div>
   )

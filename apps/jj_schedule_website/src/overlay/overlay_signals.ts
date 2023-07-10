@@ -1,5 +1,5 @@
 import { useLocation } from '@solidjs/router'
-import { useNow } from '@ycapp/common'
+import { useScheduleOverlayDateProvider } from './schedule/ScheduleOverlayDateProvider'
 
 const useParam = (key: string) => {
   //const [params] = useSearchParams()
@@ -21,6 +21,9 @@ export const minAmount = () => {
 export const useSpeed = () => {
   return parseInt(useParam('speed') ?? '2') ?? 2
 }
+export const useTheme = () => {
+  return useParam('theme') ?? 'default'
+}
 export const useNext = () => {
   const v = parseInt(useParam('next')) ?? 3
   if (v < 2) {
@@ -35,5 +38,8 @@ export const useNext = () => {
 }
 
 export const useOverlayNow = () => {
-  return useNow()
+  // return useNow()
+  const date = useScheduleOverlayDateProvider()
+
+  return date()
 }
