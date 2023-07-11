@@ -5,7 +5,7 @@ import { ScheduleDataProvider, useSlots } from '../../ui/schedule/providers/Sche
 import '../overlay.css'
 import { SlotUtils } from '@ycapp/model'
 import { OverlaySlotList } from './OverlaySlotList'
-import { background, useHeader, useNext, useOverlayNow } from '../overlay_signals'
+import { background, useHeader, useHeaderTheme, useNext, useOverlayNow, useTheme } from '../overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
 import { DateTime } from 'luxon'
 import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvider'
@@ -13,7 +13,13 @@ import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvid
 export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
   return (
     <ScheduleOverlayDateProviderProvider debug={false} date={props.date}>
-      <ScheduleOverlayComponent header={useHeader()} next={useNext()} background={background()} />
+      <ScheduleOverlayComponent
+        header={useHeader()}
+        next={useNext()}
+        background={background()}
+        headerTheme={useHeaderTheme()}
+        theme={useTheme()}
+      />
     </ScheduleOverlayDateProviderProvider>
   )
 }
@@ -22,6 +28,8 @@ export const ScheduleOverlayComponent: Component<{
   next: number
   background: string
   header: string[]
+  theme: string
+  headerTheme: string
 }> = props => {
   const schedule = useScheduleDB().read('jinglejam2023')
   const slots = () =>
@@ -60,11 +68,11 @@ export const ScheduleOverlayComponent: Component<{
           <ScheduleDataProvider scheduleData={schedule.data}>
             <div class={'flex h-full flex-col'}>
               <Show when={props.header}>
-                <OverlayHeader header={props.header} />
+                <OverlayHeader header={props.header} theme={props.headerTheme} />
               </Show>
               <div class={'grid h-full flex-1 ' + nextGrid()}>
                 <Show when={slots().length > 0}>
-                  <OverlaySlotList slots={slots()} />
+                  <OverlaySlotList slots={slots()} theme={props.theme} />
                 </Show>
                 <Show when={slots().length == 0}>
                   <p>No Streams found {useOverlayNow().toFormat('dd.MM.yyyy')}</p>

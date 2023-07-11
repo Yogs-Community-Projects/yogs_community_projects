@@ -24,6 +24,9 @@ export const useSpeed = () => {
 export const useTheme = () => {
   return useParam('theme') ?? 'default'
 }
+export const useHeaderTheme = () => {
+  return useParam('headertheme') ?? 'default'
+}
 export const useNext = () => {
   const v = parseInt(useParam('next')) ?? 3
   if (v < 2) {

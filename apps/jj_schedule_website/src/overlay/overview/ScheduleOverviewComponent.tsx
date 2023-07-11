@@ -6,6 +6,8 @@ import { ScheduleOverlayComponent } from '../schedule/ScheduleOverlay'
 import { useNow } from '@ycapp/common'
 
 export const ScheduleOverviewComponent = () => {
+  const [theme, setTheme] = createSignal('default')
+  const [headerTheme, setHeaderTheme] = createSignal('default')
   const [next, setNext] = createSignal(3)
   const [transparent, setTransparent] = createSignal(true)
   const [header, setHeader] = createSignal(['upnext'])
@@ -56,6 +58,8 @@ export const ScheduleOverviewComponent = () => {
       url += `background=${background().substring(1)}&`
     }
     url += `header=${header().join(',')}&`
+    url += `theme=${theme()}&`
+    url += `headertheme=${headerTheme()}&`
     url += `next=${next()}`
     return url
   }
@@ -78,6 +82,40 @@ export const ScheduleOverviewComponent = () => {
             <option value={2}>2</option>
             <option value={3}>3</option>
             <option value={4}>4</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="scheduleheaderoverviewtheme">Header Theme:</label>
+          <select
+            class={'accent-primary-500'}
+            name="scheduleheaderoverviewtheme"
+            id="scheduleheaderoverviewtheme"
+            value={headerTheme()}
+            onchange={e => {
+              setHeaderTheme(e.target.value)
+            }}
+          >
+            <option value={'default'}>Default</option>
+            <option value={'red'}>Red</option>
+            <option value={'blue'}>Blue</option>
+          </select>
+        </div>
+        <div>
+          <label for="scheduleoverviewtheme">Theme:</label>
+          <select
+            class={'accent-primary-500'}
+            name="scheduleoverviewtheme"
+            id="scheduleoverviewtheme"
+            value={theme()}
+            onchange={e => {
+              setTheme(e.target.value)
+            }}
+          >
+            <option value={'default'}>Default</option>
+            <option value={'timeofday'}>Time of day</option>
+            <option value={'red'}>Red</option>
+            <option value={'blue'}>Blue</option>
           </select>
         </div>
         <div>
@@ -219,7 +257,13 @@ export const ScheduleOverviewComponent = () => {
         }}
       >
         <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
-          <ScheduleOverlayComponent next={next()} background={color()} header={header()} />
+          <ScheduleOverlayComponent
+            next={next()}
+            background={color()}
+            header={header()}
+            theme={theme()}
+            headerTheme={headerTheme()}
+          />
         </ScheduleOverlayDateProviderProvider>
       </div>
     </div>
