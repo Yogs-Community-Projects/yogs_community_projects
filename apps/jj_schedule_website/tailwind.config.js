@@ -202,7 +202,8 @@ module.exports = {
         'day-header': ['calc(var(--data-size) / 2)'],
       },
       backgroundImage: {
-        yogs: "url('/assets/yogs.svg')",
+        yogs: "url('assets/yogs.svg')",
+        jj_background: "url('assets/Jingle_Jam_Background_Greyscale.png')",
       },
       scale: {
         101: '1.01',

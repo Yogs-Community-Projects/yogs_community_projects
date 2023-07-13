@@ -14,6 +14,9 @@ export const OverlayOverview: Component = () => {
       <p class={'text-xl font-bold text-red-600'}>
         These are still work in progress. For demo purposes these overlays use data from 2022
       </p>
+      <a href={'https://obsproject.com/kb/browser-source#:~:text=Description,video%2C%20and%20even%20audio%20tasks.'}>
+        How to add a Browser source
+      </a>
       <div class={'grid grid-cols-2'}>
         <ScheduleOverviewComponent />
         <div>

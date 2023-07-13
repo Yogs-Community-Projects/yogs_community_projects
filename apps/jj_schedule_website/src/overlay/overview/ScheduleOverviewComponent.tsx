@@ -65,7 +65,7 @@ export const ScheduleOverviewComponent = () => {
   }
 
   return (
-    <div class={''}>
+    <div class={'flex flex-col items-start'}>
       <div class={'flex flex-col'}>
         <p class={'text-2xl'}>Yogs JJ Schedule</p>
         <div>
@@ -116,6 +116,10 @@ export const ScheduleOverviewComponent = () => {
             <option value={'timeofday'}>Time of day</option>
             <option value={'red'}>Red</option>
             <option value={'blue'}>Blue</option>
+            <option value={'default_img'}>Default with img</option>
+            <option value={'timeofday_img'}>Time of day with img</option>
+            <option value={'red_img'}>Red with img</option>
+            <option value={'blue_img'}>Blue with img</option>
           </select>
         </div>
         <div>
@@ -249,22 +253,24 @@ export const ScheduleOverviewComponent = () => {
           }}
         />
       </Show>
-      <div
-        style={{
-          width: '280px',
-          height: heightStr(),
-          'max-height': heightStr(),
-        }}
-      >
-        <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
-          <ScheduleOverlayComponent
-            next={next()}
-            background={color()}
-            header={header()}
-            theme={theme()}
-            headerTheme={headerTheme()}
-          />
-        </ScheduleOverlayDateProviderProvider>
+      <div class={'flex-none'}>
+        <div
+          style={{
+            width: '280px',
+            height: heightStr(),
+            'max-height': heightStr(),
+          }}
+        >
+          <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
+            <ScheduleOverlayComponent
+              next={next()}
+              background={color()}
+              header={header()}
+              theme={theme()}
+              headerTheme={headerTheme()}
+            />
+          </ScheduleOverlayDateProviderProvider>
+        </div>
       </div>
     </div>
   )
