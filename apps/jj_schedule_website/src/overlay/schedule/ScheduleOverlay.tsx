@@ -55,7 +55,7 @@ export const ScheduleOverlayComponent: Component<{
       style={{
         background: props.background,
       }}
-      class={`max-w-screen flex h-screen flex-col rounded-2xl uppercase`}
+      class={`max-w-screen flex h-full flex-col rounded-2xl uppercase`}
     >
       <Switch>
         <Match when={schedule.error}>

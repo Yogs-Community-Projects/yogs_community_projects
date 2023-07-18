@@ -294,7 +294,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   }
 
   const countdownBackground = () => {
-    if (props.theme === 'blue') {
+    if (props.theme === 'blue' || props.theme === 'blue_img') {
       return 'bg-accent'
     }
     return 'bg-primary'
@@ -340,7 +340,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
                 </>
               </Show>
             </div>
-            <div class={'bg-jj_background h-full rounded-b-2xl bg-contain'}>
+            <div class={'bg-jj_background_2 h-full rounded-b-2xl bg-contain bg-repeat'}>
               <div
                 class={`flex h-full flex-col justify-center p-2 ${timeOfDay()}${red()}${blue()}${timeOfDayImg()}${redImg()}${blueImg()} rounded-b-2xl`}
                 style={{

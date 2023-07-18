@@ -65,7 +65,7 @@ export const ScheduleOverviewComponent = () => {
   }
 
   return (
-    <div class={'flex flex-col items-start'}>
+    <div class={'flex flex-col items-start justify-start'}>
       <div class={'flex flex-col'}>
         <p class={'text-2xl'}>Yogs JJ Schedule</p>
         <div>
@@ -253,12 +253,11 @@ export const ScheduleOverviewComponent = () => {
           }}
         />
       </Show>
-      <div class={'flex-none'}>
+      <div class={'flex flex-row'}>
         <div
           style={{
             width: '280px',
             height: heightStr(),
-            'max-height': heightStr(),
           }}
         >
           <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
