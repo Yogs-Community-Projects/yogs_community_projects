@@ -214,6 +214,7 @@ module.exports = {
       },
       backgroundImage: {
         yogs: "url('/assets/yogs.svg')",
+        jj_background: "url('/assets/Jingle_Jam_Background_Greyscale.png')",
       },
       scale: {
         101: '1.01',

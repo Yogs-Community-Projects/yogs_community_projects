@@ -34,3 +34,15 @@ export interface JJData {
   jj_api: JJAPIData
   tiltify_campaign_data: CharityData[]
 }
+
+export interface FundraiserData {
+  data: Fundraiser[]
+}
+
+export interface Fundraiser {
+  display_name: string
+  login?: string
+  img: string
+  desc?: string
+  amount: string
+}

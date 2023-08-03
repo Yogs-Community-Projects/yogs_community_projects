@@ -1,7 +1,5 @@
 import { Slot, SlotUtils, TwitchChannelData } from '@ycapp/model'
 import { Accessor, Component, createEffect, createSignal, For, JSX, Match, Show, Switch } from 'solid-js'
-import { BiLogosTwitch, BiLogosYoutube, BiRegularVideo, BiSolidVideo } from 'solid-icons/bi'
-import { BsHeart } from 'solid-icons/bs'
 import {
   createModalSignal,
   getTailwindTextColor,
@@ -35,6 +33,9 @@ export const SlotCard: Component<SlotCardProps> = props => {
   function _parseColor(c: string): string {
     return '#' + c.substring(2) //  + c.substring(0, 2)
   }
+  function _parseColorWithOpacity(c: string): string {
+    return '#' + c.substring(2) + 'BB' //  + c.substring(0, 2)
+  }
 
   const background = () => {
     let gradientStyle: JSX.CSSProperties | undefined
@@ -55,6 +56,26 @@ export const SlotCard: Component<SlotCardProps> = props => {
         }
       }
     }
+    return gradientStyle
+  }
+  const backgroundImg = () => {
+    let gradientStyle: JSX.CSSProperties | undefined
+    if (slot.style.linearGradient) {
+      const linearGradient = slot.style.linearGradient
+      gradientStyle = {
+        background: `linear-gradient(180deg, ${linearGradient.colors.map(_parseColorWithOpacity).join(', ')})`,
+        color: textColor(_parseColor(slot.style.background ?? linearGradient.colors[0] ?? 'ffff0000')),
+      }
+    } else {
+      if (slot.style.background) {
+        gradientStyle = {
+          background: `${_parseColorWithOpacity(slot.style.background ?? 'ffff0000')}`,
+          // background: _parseColor(slot.style.background)
+          color: textColor(_parseColor(slot.style.background ?? 'ffff0000')),
+        }
+      }
+    }
+
     return gradientStyle
   }
 
@@ -80,7 +101,55 @@ export const SlotCard: Component<SlotCardProps> = props => {
     return SlotUtils.isOver(props.slot)
   }
 
+  const countdownFormat = () => {
+    if (SlotUtils.start(slot).diff(useNow()).as('day') < 7) {
+      return SlotUtils.start(slot).diff(useNow()).toFormat('hh:mm:ss')
+    }
+    return SlotUtils.start(slot).diff(useNow()).toFormat("dd 'days,' hh:mm:ss")
+  }
+
   const modalSignal = createModalSignal()
+
+  return (
+    <>
+      <div class={'p-1'}>
+        <div class={'h-full w-full rounded-2xl bg-contain'}>
+          <div class={`flex h-full flex-col rounded-2xl text-center shadow-2xl`}>
+            <div class={'h-full min-h-[64px] rounded-2xl bg-contain bg-center bg-repeat'}>
+              <div
+                class={
+                  'hover:scale-102 flex h-full cursor-pointer flex-col justify-center rounded-2xl p-2 transition-all hover:brightness-105'
+                }
+                style={{
+                  ...backgroundImg(),
+                }}
+                onclick={modalSignal.toggle}
+              >
+                <p class={'text-sm font-bold md:text-base' + underline()}>{props.slot.title}</p>
+                <Show when={props.showTime && !SlotUtils.isLive(props.slot, useNow())}>
+                  <p class={'font-mono text-xs md:text-sm'}>
+                    {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
+                  </p>
+                </Show>
+                <Show when={props.showCountdown && !isOver()}>
+                  <p class={'text-xs md:text-sm'}>
+                    Starts in <span class={'font-mono'}>{countdownFormat()}</span>
+                  </p>
+                </Show>
+                <div class={'flex w-full flex-row justify-around'}>
+                  <Show when={slot.showTwitchIcon || slot.showHighlightIcon} fallback={<div />}>
+                    <FaSolidHeart size={12} />
+                  </Show>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <SlotDialog slot={slot} modalSignal={modalSignal} />
+    </>
+  )
+  /*
   return (
     <>
       <div class={'p-schedule h-full w-full uppercase transition-all'}>
@@ -116,6 +185,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
       <SlotDialog slot={slot} modalSignal={modalSignal} />
     </>
   )
+  */
 }
 
 interface SlotDialogProps {

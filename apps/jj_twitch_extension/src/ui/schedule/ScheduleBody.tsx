@@ -43,7 +43,7 @@ export const ScheduleBody: Component = () => {
  */
 
 const ScheduleSlots: Component = () => {
-  const slots = () => useCurrentDay().slots
+  const slots = () => useCurrentDay().slots.filter(s => s.visible)
   // const slots = () => useDays()[2].slots
   const { isEmpty, includes } = useCreatorFilter()
 
