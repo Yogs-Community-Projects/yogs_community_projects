@@ -28,7 +28,7 @@
     "@kobalte/core": "^0.6.1",
     "@kobalte/tailwindcss": "^0.4.2",
     "@solidjs/meta": "^0.28.2",
-    "@solidjs/router": "^0.7.0",
+    "@solidjs/router": "^0.8.2",
     "@stitches/core": "^1.2.8",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@types/luxon": "^3.2.0",

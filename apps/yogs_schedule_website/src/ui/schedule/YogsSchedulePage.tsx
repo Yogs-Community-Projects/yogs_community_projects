@@ -7,6 +7,7 @@ import { useScheduleDB } from '@ycapp/common'
 import { ScheduleData } from '@ycapp/model'
 import { ScheduleNewsTop } from '../components/ScheduleNewsTop'
 import { Title } from '@solidjs/meta'
+import ScheduleGridComponent from '../components/schedule_grid/ScheduleGridComponent'
 /*
 
           <ScheduleDataProvider scheduleData={schedule.data}>
@@ -26,6 +27,7 @@ const YogsSchedulePage: Component = () => {
   })
   return (
     <div class={'flex flex-col items-center'}>
+      <ScheduleGridComponent scheduleId={'tinyteams2023'} />
       <Title>Yogscast Stream Schedules</Title>
       <ScheduleNewsTop />
       <Switch>

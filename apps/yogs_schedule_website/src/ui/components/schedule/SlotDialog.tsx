@@ -1,6 +1,5 @@
-import { Accessor } from 'solid-js/types/reactive/signal'
 import { Slot, SlotUtils } from '@ycapp/model'
-import { Component, For, Match, Show, Switch } from 'solid-js'
+import { Accessor, Component, For, Match, Show, Switch } from 'solid-js'
 import { CgClose } from 'solid-icons/cg'
 import { DateTime } from 'luxon'
 import SolidMarkdown from 'solid-markdown'
@@ -44,9 +43,6 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
   const background = () => {
     return _parseColor(slot.style.background ?? slot.style.linearGradient?.colors[0] ?? 'ffff0000')
   }
-  const backgroundTailwind = () => {
-    return `bg-[${background()}]`
-  }
 
   function textColor() {
     return getTailwindTextColor(background())
@@ -68,7 +64,7 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
           <CgClose size={24} />
         </button>
         <div class={'flex-1'}></div>
-        <h3 class={'text-2xl'}>{slot.title}</h3>
+        <h3 class={'line-clamp-1 text-2xl'}>{slot.title}</h3>
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>

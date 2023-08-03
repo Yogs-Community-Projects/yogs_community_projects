@@ -187,6 +187,19 @@ module.exports = {
         101: '1.01',
         102: '1.02',
       },
+
+      width: {
+        data: 'var(--data-size)',
+        slot: 'var(--slot-width)',
+        schedule: 'var(--schedule-width)',
+        'schedule-body': 'var(--schedule-body-width)',
+      },
+      height: {
+        data: 'var(--data-size)',
+        slot: 'var(--slot-height)',
+        schedule: 'var(--schedule-height)',
+        'schedule-body': 'var(--schedule-body-height)',
+      },
     },
   },
   corePlugins: {

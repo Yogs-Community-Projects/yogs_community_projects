@@ -1,0 +1,15 @@
+body {
+  --slot-size: inherit;
+  --slot-width: inherit;
+  --slot-height: inherit;
+  --data-size: inherit;
+  --schedule-body-width: inherit;
+  --schedule-body-height: inherit;
+  --schedule-width: inherit;
+  --schedule-height: inherit;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

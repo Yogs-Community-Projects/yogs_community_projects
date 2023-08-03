@@ -1,0 +1,1497 @@
+{
+  "id": "tinyteams2022_2_2",
+  "visible": false,
+  "settings": {
+    "firstDayOfTheWeek": 1,
+    "showEmptyDays": false,
+    "appearance": "WeekGrid",
+    "type": "Special",
+    "showSlotTimes": true
+  },
+  "updatedAt": "2022-08-08T18:38:27.675084+0100",
+  "schedule": {
+    "times": [
+      {
+        "duration": 10800000000,
+        "start": "2022-01-01T11:00:00.000+0000"
+      },
+      {
+        "start": "2022-01-01T14:00:00.000+0000",
+        "duration": 10800000000
+      },
+      {
+        "duration": 10800000000,
+        "start": "2022-01-01T17:00:00.000+0000"
+      },
+      {
+        "duration": 10800000000,
+        "start": "2022-01-01T20:00:00.000+0000"
+      }
+    ],
+    "weeks": [
+      {
+        "times": [
+          {
+            "duration": 10800000000,
+            "start": "2022-01-01T11:00:00.000+0000"
+          },
+          {
+            "duration": 10800000000,
+            "start": "2022-01-01T14:00:00.000+0000"
+          },
+          {
+            "duration": 10800000000,
+            "start": "2022-01-01T17:00:00.000+0000"
+          },
+          {
+            "start": "2022-01-01T20:00:00.000+0000",
+            "duration": 10800000000
+          }
+        ],
+        "days": [
+          {
+            "start": "2022-08-01T11:00:00.000+0100",
+            "slots": [
+              {
+                "start": "2022-08-01T11:00:00.000+0100",
+                "duration": 10800,
+                "title": "Chill Warmup",
+                "relations": {
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "podcasts": [],
+                  "creators": [
+                    "7tl19sOXgMq8ONpa0Wwc"
+                  ],
+                  "schedules": [],
+                  "youtubeChannels": []
+                },
+                "type": "special",
+                "markdownDesc": "[@alexroflol](https://twitter.com/alexroflol)\n\n[Lil Gator Game](https://store.steampowered.com/app/1586800/Lil_Gator_Game/)\n\n\n### Vods:\n\n[Youtube Vod Restless Soul](https://www.youtube.com/watch?v=cRA5nAq5mOU)",
+                "showHighlightIcon": false,
+                "visible": true,
+                "showYoutubeIcon": true,
+                "style": {
+                  "linearGradient": {
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "colors": [
+                      "ff00bbe0",
+                      "ff00aad9"
+                    ]
+                  }
+                },
+                "gridTileSize": 1,
+                "showTwitchIcon": false,
+                "id": "",
+                "subtitle": "Bekki & Alex"
+              },
+              {
+                "gridTileSize": 1,
+                "visible": true,
+                "type": "special",
+                "start": "2022-08-01T14:00:00.000+0100",
+                "showYoutubeIcon": true,
+                "showHighlightIcon": false,
+                "relations": {
+                  "creators": [
+                    "8K6EIOpBvb6ROSHWHx9Q",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "schedules": [],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "duration": 21600,
+                "showTwitchIcon": false,
+                "subtitle": "Lewis & Duncan",
+                "markdownDesc": "[Hexarchy](https://store.steampowered.com/app/1356810/Hexarchy/)\n\n[Ozymandias: Bronze Age Empire Sim](https://store.steampowered.com/app/1768280/Ozymandias_Bronze_Age_Empire_Sim/)\n\n### Vods\n\n[Youtube Vod Hexarchy](https://www.youtube.com/watch?v=yOyVkBLw7DQ)\n\n[Youtube Vod Ozymandias](https://www.youtube.com/watch?v=pKTN-uGuKHw)",
+                "style": {
+                  "linearGradient": {
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "colors": [
+                      "ff0096d1",
+                      "ff0086c9"
+                    ],
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    }
+                  }
+                },
+                "id": "",
+                "title": "Armchair Admirals Lite"
+              },
+              {
+                "markdownDesc": "[TODO add game link](https://www.yogscast.games/tinyteams)\n\n\n### Vods\n\n[Youtube Vod Aces and Adventures](https://www.youtube.com/watch?v=atEPhH_DqNw)",
+                "gridTileSize": 1,
+                "showHighlightIcon": false,
+                "duration": 10800,
+                "visible": true,
+                "type": "special",
+                "showYoutubeIcon": true,
+                "relations": {
+                  "youtubeChannels": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "podcasts": [],
+                  "schedules": [],
+                  "creators": [
+                    "Dvsw8FJa8v3LjEXSXr9e",
+                    "Hn8e1EgqFKg2RbJglY2x"
+                  ]
+                },
+                "start": "2022-08-01T17:00:00.000+0100",
+                "subtitle": "Tom & Ben",
+                "style": {
+                  "linearGradient": {
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "ff0078c2",
+                      "ff0066ba"
+                    ]
+                  }
+                },
+                "title": "Opening Ceremony",
+                "id": "",
+                "showTwitchIcon": false
+              },
+              {
+                "type": "special",
+                "showTwitchIcon": false,
+                "title": "Pusher & Strangler",
+                "markdownDesc": "[Youtube Vod Unknown Number](https://www.youtube.com/watch?v=typ2i7x76CI)\n\n[Youtube Vod Shadows of Doubt](https://www.youtube.com/watch?v=G4c-k9n_EAU)",
+                "duration": 10800,
+                "start": "2022-08-01T20:00:00.000+0100",
+                "id": "",
+                "visible": true,
+                "showHighlightIcon": false,
+                "subtitle": "Lewis & Lydia",
+                "style": {
+                  "linearGradient": {
+                    "colors": [
+                      "ff0059b3",
+                      "ff004dab"
+                    ],
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    }
+                  }
+                },
+                "relations": {
+                  "creators": [
+                    "eE4FNKcFiBhoc3jFb9Fo",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ],
+                  "schedules": [],
+                  "youtubeChannels": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "podcasts": []
+                },
+                "gridTileSize": 1,
+                "showYoutubeIcon": true
+              }
+            ],
+            "dayOfWeek": 1
+          },
+          {
+            "dayOfWeek": 2,
+            "slots": [
+              {
+                "type": "special",
+                "showYoutubeIcon": false,
+                "relations": {
+                  "schedules": [],
+                  "podcasts": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "0w4JSboJK6RdTDmDKoYL",
+                    "vz0XWPLfxV9gFyChCgMO"
+                  ]
+                },
+                "subtitle": "Boba Ravs & Ped",
+                "duration": 10800,
+                "id": "",
+                "start": "2022-08-02T11:00:00.000+0100",
+                "gridTileSize": 1,
+                "style": {
+                  "border": "fff30040",
+                  "background": "ffffffff",
+                  "linearGradient": {
+                    "colors": [
+                      "ffffd900",
+                      "ffffd000"
+                    ],
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    }
+                  }
+                },
+                "title": "Superfun cool games",
+                "visible": true,
+                "showTwitchIcon": false,
+                "showHighlightIcon": false
+              },
+              {
+                "showYoutubeIcon": false,
+                "type": "special",
+                "subtitle": "Duncan & Lewis",
+                "style": {
+                  "linearGradient": {
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "colors": [
+                      "ffffc800",
+                      "ffffbf00"
+                    ]
+                  },
+                  "border": "fff30040",
+                  "background": "ffffffff"
+                },
+                "visible": true,
+                "gridTileSize": 1,
+                "relations": {
+                  "youtubeChannels": [],
+                  "schedules": [],
+                  "podcasts": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "creators": [
+                    "8K6EIOpBvb6ROSHWHx9Q",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ]
+                },
+                "start": "2022-08-02T14:00:00.000+0100",
+                "duration": 10800,
+                "id": "",
+                "showTwitchIcon": false,
+                "title": "Factory Games",
+                "showHighlightIcon": false
+              },
+              {
+                "relations": {
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "creators": [
+                    "Gz3S1VJlA6iPISXuIl7p",
+                    "zwBpk82qRo4y2Sf5Nvlf"
+                  ],
+                  "schedules": [],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "duration": 10800,
+                "showTwitchIcon": false,
+                "id": "",
+                "showHighlightIcon": false,
+                "visible": true,
+                "type": "special",
+                "title": "Puzzler",
+                "showYoutubeIcon": false,
+                "subtitle": "Briony & Kirsty",
+                "desc": "",
+                "gridTileSize": 1,
+                "style": {
+                  "linearGradient": {
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "ffffb700",
+                      "ffffae00"
+                    ],
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    }
+                  },
+                  "border": "fff30040",
+                  "background": "ffffffff"
+                },
+                "start": "2022-08-02T17:00:00.000+0100"
+              },
+              {
+                "showYoutubeIcon": false,
+                "showTwitchIcon": false,
+                "subtitle": "Zoey & Fionn",
+                "relations": {
+                  "schedules": [],
+                  "creators": [
+                    "sMGdgzZrZP8c68C0pFfU",
+                    "HkZh9sasvBrpZ4r22Sb3"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "showHighlightIcon": false,
+                "title": "Base Building",
+                "type": "special",
+                "gridTileSize": 1,
+                "duration": 10800,
+                "id": "",
+                "start": "2022-08-02T20:00:00.000+0100",
+                "style": {
+                  "background": "ffffffff",
+                  "border": "fff30040",
+                  "linearGradient": {
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "ffffa600",
+                      "ffff9d00"
+                    ]
+                  }
+                },
+                "visible": true
+              }
+            ],
+            "start": "2022-08-02T11:00:00.000+0100"
+          },
+          {
+            "slots": [
+              {
+                "type": "special",
+                "title": "Big Brain Stream",
+                "subtitle": "Lewis & Boba",
+                "visible": true,
+                "start": "2022-08-03T11:00:00.000+0100",
+                "gridTileSize": 1,
+                "relations": {
+                  "schedules": [],
+                  "podcasts": [],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ]
+                },
+                "showHighlightIcon": false,
+                "style": {
+                  "linearGradient": {
+                    "colors": [
+                      "ff00e8c5",
+                      "ff00e3b9"
+                    ],
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    }
+                  }
+                },
+                "duration": 10800,
+                "showYoutubeIcon": false,
+                "showTwitchIcon": false,
+                "id": ""
+              },
+              {
+                "showHighlightIcon": false,
+                "id": "",
+                "start": "2022-08-03T14:00:00.000+0100",
+                "type": "special",
+                "visible": true,
+                "style": {
+                  "linearGradient": {
+                    "colors": [
+                      "ff00deae",
+                      "ff00d9a3"
+                    ],
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    }
+                  }
+                },
+                "title": "Point & Click",
+                "duration": 10800,
+                "showYoutubeIcon": false,
+                "showTwitchIcon": false,
+                "gridTileSize": 1,
+                "relations": {
+                  "schedules": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "G2xAxM8JBwtNIojLq1cE",
+                    "MsNyFTyL0zikJ4zKOZm2"
+                  ],
+                  "podcasts": []
+                },
+                "desc": "",
+                "subtitle": "Bouphe & Osie"
+              },
+              {
+                "relations": {
+                  "youtubeChannels": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "schedules": [],
+                  "creators": [
+                    "Dvsw8FJa8v3LjEXSXr9e",
+                    "Hn8e1EgqFKg2RbJglY2x"
+                  ],
+                  "podcasts": []
+                },
+                "id": "",
+                "duration": 10800,
+                "start": "2022-08-03T17:00:00.000+0100",
+                "style": {
+                  "linearGradient": {
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "colors": [
+                      "ff00d498",
+                      "ff00c479"
+                    ]
+                  }
+                },
+                "title": "Rimworlds",
+                "showYoutubeIcon": false,
+                "visible": true,
+                "gridTileSize": 2,
+                "type": "special",
+                "subtitle": "Tom & Ben",
+                "showHighlightIcon": false,
+                "showTwitchIcon": false
+              }
+            ],
+            "start": "2022-08-03T11:00:00.000+0100",
+            "dayOfWeek": 3
+          },
+          {
+            "dayOfWeek": 4,
+            "start": "2022-08-04T11:00:00.000+0100",
+            "slots": [
+              {
+                "gridTileSize": 1,
+                "subtitle": "Lewis & Ben",
+                "relations": {
+                  "podcasts": [],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "Dvsw8FJa8v3LjEXSXr9e",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ],
+                  "schedules": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ]
+                },
+                "showTwitchIcon": false,
+                "showYoutubeIcon": false,
+                "style": {
+                  "background": "fffa630b",
+                  "linearGradient": {
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "fffc7600",
+                      "fffa6800"
+                    ],
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    }
+                  },
+                  "border": "fff30040"
+                },
+                "type": "special",
+                "markdownDesc": "[TODO add game link](https://www.yogscast.games/tinyteams)",
+                "start": "2022-08-04T11:00:00.000+0100",
+                "title": "Save the World",
+                "id": "",
+                "showHighlightIcon": false,
+                "duration": 10800,
+                "visible": true
+              },
+              {
+                "showHighlightIcon": false,
+                "title": "Rougelikes",
+                "markdownDesc": "[TODO add game link](https://www.yogscast.games/tinyteams)",
+                "id": "",
+                "type": "special",
+                "gridTileSize": 1,
+                "visible": true,
+                "start": "2022-08-04T14:00:00.000+0100",
+                "showYoutubeIcon": false,
+                "style": {
+                  "background": "fffa630b",
+                  "linearGradient": {
+                    "colors": [
+                      "fff75f00",
+                      "fff55200"
+                    ],
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    }
+                  },
+                  "border": "fff30040"
+                },
+                "subtitle": "Boba & Ped",
+                "relations": {
+                  "schedules": [],
+                  "creators": [
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "0w4JSboJK6RdTDmDKoYL"
+                  ],
+                  "youtubeChannels": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "podcasts": []
+                },
+                "showTwitchIcon": false,
+                "duration": 10800
+              },
+              {
+                "style": {
+                  "background": "fffa630b",
+                  "linearGradient": {
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "colors": [
+                      "fff24900",
+                      "fff03c00"
+                    ]
+                  },
+                  "border": "fff30040"
+                },
+                "gridTileSize": 1,
+                "showTwitchIcon": false,
+                "showHighlightIcon": false,
+                "duration": 10800,
+                "visible": true,
+                "subtitle": "Lewis, Briony & Kirsty",
+                "start": "2022-08-04T17:00:00.000+0100",
+                "desc": "",
+                "showYoutubeIcon": false,
+                "relations": {
+                  "youtubeChannels": [],
+                  "creators": [
+                    "Gz3S1VJlA6iPISXuIl7p",
+                    "zwBpk82qRo4y2Sf5Nvlf",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "podcasts": [],
+                  "schedules": []
+                },
+                "markdownDesc": "# ![](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_413530f98bbf4e50ad188836db973a21/animated/light/1.0) Plateup!?! ![](https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_413530f98bbf4e50ad188836db973a21/animated/light/1.0)",
+                "title": "Plateup Launch",
+                "id": "",
+                "type": "special"
+              }
+            ]
+          },
+          {
+            "start": "2022-08-05T11:00:00.000+0100",
+            "dayOfWeek": 5,
+            "slots": [
+              {
+                "gridTileSize": 1,
+                "duration": 10800,
+                "visible": true,
+                "relations": {
+                  "podcasts": [],
+                  "creators": [
+                    "7tl19sOXgMq8ONpa0Wwc",
+                    "zwBpk82qRo4y2Sf5Nvlf"
+                  ],
+                  "youtubeChannels": [],
+                  "schedules": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ]
+                },
+                "title": "Spooky Games",
+                "showYoutubeIcon": false,
+                "showTwitchIcon": false,
+                "type": "special",
+                "id": "",
+                "style": {
+                  "linearGradient": {
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "colors": [
+                      "ff00e8c5",
+                      "ff00e3b9"
+                    ],
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    }
+                  }
+                },
+                "start": "2022-08-05T11:00:00.000+0100",
+                "showHighlightIcon": false,
+                "subtitle": "Bekki & Kirsty"
+              },
+              {
+                "showHighlightIcon": false,
+                "id": "",
+                "visible": true,
+                "style": {
+                  "linearGradient": {
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "ff00deae",
+                      "ff00d9a3"
+                    ],
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    }
+                  }
+                },
+                "title": "Stardew Crew",
+                "showYoutubeIcon": false,
+                "relations": {
+                  "creators": [
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "Gz3S1VJlA6iPISXuIl7p",
+                    "deBUVdSqWrH6FwlXPe2m",
+                    "5h6PnMWEghJSDaS5ZNbc"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "schedules": [],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "subtitle": "Boba, Briony, Rythian & Zylus",
+                "duration": 10800,
+                "start": "2022-08-05T14:00:00.000+0100",
+                "showTwitchIcon": false,
+                "type": "special",
+                "gridTileSize": 1
+              },
+              {
+                "style": {
+                  "linearGradient": {
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    },
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "ff00d498",
+                      "ff00cf8d"
+                    ]
+                  }
+                },
+                "duration": 10800,
+                "id": "",
+                "relations": {
+                  "podcasts": [],
+                  "youtubeChannels": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "schedules": [],
+                  "creators": [
+                    "6oSnPSBKF79EBwS1G5DF",
+                    "f2tAtl8eBRTtKsqzQQoC"
+                  ]
+                },
+                "visible": true,
+                "title": "Fighting & Farming",
+                "subtitle": "Harry & Shadow",
+                "showTwitchIcon": false,
+                "start": "2022-08-05T17:00:00.000+0100",
+                "gridTileSize": 1,
+                "type": "special",
+                "showHighlightIcon": false,
+                "showYoutubeIcon": false
+              },
+              {
+                "type": "special",
+                "style": {
+                  "linearGradient": {
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "colors": [
+                      "ff00c983",
+                      "ff00c479"
+                    ]
+                  }
+                },
+                "showYoutubeIcon": false,
+                "showHighlightIcon": false,
+                "duration": 10800,
+                "gridTileSize": 1,
+                "relations": {
+                  "podcasts": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "schedules": [],
+                  "creators": [
+                    "AZGGyF9uschXdM8gGB1v"
+                  ],
+                  "youtubeChannels": []
+                },
+                "showTwitchIcon": false,
+                "start": "2022-08-05T20:00:00.000+0100",
+                "visible": true,
+                "title": "Chess & Cards",
+                "id": "",
+                "subtitle": "Daltos"
+              }
+            ]
+          },
+          {
+            "slots": [
+              {
+                "showYoutubeIcon": false,
+                "id": "",
+                "type": "special",
+                "visible": true,
+                "relations": {
+                  "podcasts": [],
+                  "creators": [
+                    "zMMAq6kg87R8WsHUS3s0"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "schedules": []
+                },
+                "gridTileSize": 1,
+                "subtitle": "Mango",
+                "title": "Shooters & Slashers",
+                "showTwitchIcon": false,
+                "duration": 10800,
+                "showHighlightIcon": false,
+                "start": "2022-08-06T11:00:00.000+0100",
+                "style": {
+                  "background": "fffa630b",
+                  "linearGradient": {
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "fff74acc",
+                      "fff23fbf"
+                    ],
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    }
+                  },
+                  "border": "fff30040"
+                }
+              },
+              {
+                "style": {
+                  "linearGradient": {
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "colors": [
+                      "ffed34b3",
+                      "fff23fbf"
+                    ]
+                  },
+                  "border": "fff30040",
+                  "background": "fffa630b"
+                },
+                "gridTileSize": 1,
+                "title": "Town Building Games",
+                "duration": 10800,
+                "showTwitchIcon": false,
+                "type": "special",
+                "start": "2022-08-06T14:00:00.000+0100",
+                "showYoutubeIcon": false,
+                "visible": true,
+                "showHighlightIcon": false,
+                "relations": {
+                  "schedules": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "creators": [
+                    "6oSnPSBKF79EBwS1G5DF",
+                    "Gq7a6r1Pq0loxIUiNk8v"
+                  ],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "id": "",
+                "subtitle": "Lewis & Harry"
+              },
+              {
+                "duration": 10800,
+                "title": "Martyn's Picks",
+                "subtitle": "Martyn & Ravs",
+                "id": "",
+                "type": "special",
+                "showTwitchIcon": false,
+                "showYoutubeIcon": false,
+                "gridTileSize": 1,
+                "visible": true,
+                "showHighlightIcon": false,
+                "style": {
+                  "linearGradient": {
+                    "colors": [
+                      "ffe32098",
+                      "ffde168b"
+                    ],
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    },
+                    "begin": {
+                      "y": -1,
+                      "x": 0
+                    }
+                  },
+                  "background": "fffa630b",
+                  "border": "fff30040"
+                },
+                "relations": {
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "schedules": [],
+                  "creators": [
+                    "IOdPOlLaB7zFHvsuvVwu",
+                    "vz0XWPLfxV9gFyChCgMO"
+                  ],
+                  "podcasts": []
+                },
+                "start": "2022-08-06T17:00:00.000+0100"
+              },
+              {
+                "showTwitchIcon": false,
+                "style": {
+                  "background": "fffa630b",
+                  "linearGradient": {
+                    "colors": [
+                      "ffd90d7d",
+                      "ffd4046f"
+                    ],
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    },
+                    "end": {
+                      "y": 1,
+                      "x": 0
+                    }
+                  },
+                  "border": "fff30040"
+                },
+                "gridTileSize": 1,
+                "id": "",
+                "duration": 10800,
+                "title": "YogOff",
+                "type": "special",
+                "visible": true,
+                "showHighlightIcon": false,
+                "relations": {
+                  "youtubeChannels": [],
+                  "creators": [],
+                  "podcasts": [],
+                  "schedules": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ]
+                },
+                "showYoutubeIcon": false,
+                "start": "2022-08-06T20:00:00.000+0100",
+                "subtitle": ""
+              }
+            ],
+            "start": "2022-08-06T11:00:00.000+0100",
+            "dayOfWeek": 6
+          },
+          {
+            "dayOfWeek": 2,
+            "slots": [
+              {
+                "showTwitchIcon": false,
+                "subtitle": "",
+                "start": "2022-08-09T11:00:00.000+0100",
+                "markdownDesc": "[War Child UK Charity Fundraiser](https://tiltify.com/+the-yogscast/yogscast-ukraine-fundraiser)",
+                "visible": true,
+                "type": "special",
+                "showYoutubeIcon": false,
+                "duration": 10800,
+                "relations": {
+                  "schedules": [],
+                  "twitchChannels": [
+                    "150004439",
+                    "20786541",
+                    "79911474",
+                    "26574506",
+                    "57595823",
+                    "62568743",
+                    "31883069",
+                    "22168131"
+                  ],
+                  "creators": [
+                    "Dvsw8FJa8v3LjEXSXr9e",
+                    "Gq7a6r1Pq0loxIUiNk8v",
+                    "Gz3S1VJlA6iPISXuIl7p",
+                    "8K6EIOpBvb6ROSHWHx9Q",
+                    "zwBpk82qRo4y2Sf5Nvlf",
+                    "eE4FNKcFiBhoc3jFb9Fo",
+                    "5h6PnMWEghJSDaS5ZNbc",
+                    "deBUVdSqWrH6FwlXPe2m"
+                  ],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "style": {
+                  "background": "ffffffff",
+                  "border": "ff000000"
+                },
+                "gridTileSize": 1,
+                "id": "",
+                "showHighlightIcon": false,
+                "title": "GMOD Pictionary"
+              },
+              {
+                "type": "special",
+                "duration": 10800,
+                "id": "",
+                "showTwitchIcon": false,
+                "visible": true,
+                "relations": {
+                  "twitchChannels": [
+                    "24070690",
+                    "91904368",
+                    "26574506",
+                    "465613748",
+                    "68525019",
+                    "38167015",
+                    "219068259"
+                  ],
+                  "creators": [
+                    "0w4JSboJK6RdTDmDKoYL",
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "8K6EIOpBvb6ROSHWHx9Q",
+                    "zMMAq6kg87R8WsHUS3s0",
+                    "f2tAtl8eBRTtKsqzQQoC",
+                    "vz0XWPLfxV9gFyChCgMO",
+                    "Hn8e1EgqFKg2RbJglY2x"
+                  ],
+                  "youtubeChannels": [],
+                  "podcasts": [],
+                  "schedules": []
+                },
+                "start": "2022-08-09T14:00:00.000+0100",
+                "showHighlightIcon": false,
+                "style": {
+                  "border": "ff000000",
+                  "background": "ffffffff"
+                },
+                "showYoutubeIcon": false,
+                "subtitle": "",
+                "gridTileSize": 1,
+                "title": "Dread Hunger"
+              },
+              {
+                "title": "Capture the Wool",
+                "type": "special",
+                "showYoutubeIcon": false,
+                "relations": {
+                  "twitchChannels": [
+                    "91904368",
+                    "21285936",
+                    "57595823",
+                    "465613748",
+                    "12131870",
+                    "21615575",
+                    "38167015",
+                    "150004439",
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "AZGGyF9uschXdM8gGB1v",
+                    "6oSnPSBKF79EBwS1G5DF",
+                    "zwBpk82qRo4y2Sf5Nvlf",
+                    "zMMAq6kg87R8WsHUS3s0",
+                    "IOdPOlLaB7zFHvsuvVwu",
+                    "uuZ2P6KPhmLVGc7ZjWXR",
+                    "vz0XWPLfxV9gFyChCgMO",
+                    "f2tAtl8eBRTtKsqzQQoC",
+                    "Dvsw8FJa8v3LjEXSXr9e"
+                  ],
+                  "schedules": [],
+                  "podcasts": []
+                },
+                "subtitle": "",
+                "style": {
+                  "background": "ffffffff",
+                  "border": "ff000000"
+                },
+                "markdownDesc": "[War Child UK Charity Fundraiser](https://tiltify.com/+the-yogscast/yogscast-ukraine-fundraiser)",
+                "start": "2022-08-09T17:00:00.000+0100",
+                "gridTileSize": 1,
+                "visible": true,
+                "duration": 10800,
+                "showHighlightIcon": false,
+                "id": "",
+                "showTwitchIcon": false
+              },
+              {
+                "showHighlightIcon": false,
+                "markdownDesc": "[War Child UK Charity Fundraiser](https://tiltify.com/+the-yogscast/yogscast-ukraine-fundraiser)",
+                "gridTileSize": 1,
+                "start": "2022-08-09T20:00:00.000+0100",
+                "subtitle": "Simon & Gee",
+                "relations": {
+                  "podcasts": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "zFdYfSFj4efXLheSHG5Z",
+                    "QLpFsapfyzIU4TYdVmjM"
+                  ],
+                  "schedules": []
+                },
+                "showTwitchIcon": false,
+                "showYoutubeIcon": false,
+                "duration": 10800,
+                "id": "",
+                "style": {
+                  "border": "ff000000",
+                  "background": "ffffffff"
+                },
+                "visible": true,
+                "type": "special",
+                "title": "Cursed Craft"
+              }
+            ],
+            "start": "2022-08-09T11:00:00.000+0100"
+          }
+        ]
+      },
+      {
+        "times": [
+          {
+            "duration": 10800000000,
+            "start": "2022-01-01T11:00:00.000+0000"
+          },
+          {
+            "duration": 10800000000,
+            "start": "2022-01-01T14:00:00.000+0000"
+          },
+          {
+            "duration": 10800000000,
+            "start": "2022-01-01T17:00:00.000+0000"
+          },
+          {
+            "start": "2022-01-01T20:00:00.000+0000",
+            "duration": 10800000000
+          }
+        ],
+        "days": [
+          {
+            "slots": [
+              {
+                "showHighlightIcon": false,
+                "subtitle": "Lewis & Boba",
+                "style": {
+                  "border": "fff30040",
+                  "background": "fffa630b",
+                  "linearGradient": {
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "colors": [
+                      "ffffd900",
+                      "ffffd000"
+                    ],
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    }
+                  }
+                },
+                "showYoutubeIcon": false,
+                "showTwitchIcon": false,
+                "id": "",
+                "type": "special",
+                "visible": true,
+                "title": "Lewis' Picks",
+                "duration": 10800,
+                "gridTileSize": 1,
+                "start": "2022-08-08T11:00:00.000+0100",
+                "relations": {
+                  "youtubeChannels": [],
+                  "podcasts": [],
+                  "schedules": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "creators": [
+                    "Gq7a6r1Pq0loxIUiNk8v",
+                    "yAmEX9kxAZTdKzwQcIsy"
+                  ]
+                }
+              },
+              {
+                "showYoutubeIcon": false,
+                "showTwitchIcon": false,
+                "subtitle": "Tom, Ben & Alex",
+                "title": "Closing Ceremony",
+                "visible": true,
+                "relations": {
+                  "schedules": [],
+                  "podcasts": [],
+                  "creators": [
+                    "Dvsw8FJa8v3LjEXSXr9e",
+                    "Hn8e1EgqFKg2RbJglY2x"
+                  ],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": []
+                },
+                "type": "special",
+                "duration": 10800,
+                "gridTileSize": 1,
+                "showHighlightIcon": false,
+                "style": {
+                  "border": "fff30040",
+                  "linearGradient": {
+                    "end": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "colors": [
+                      "ffffc800",
+                      "ffffbf00"
+                    ],
+                    "begin": {
+                      "x": 0,
+                      "y": -1
+                    }
+                  },
+                  "background": "fffa630b"
+                },
+                "id": "",
+                "start": "2022-08-08T14:00:00.000+0100"
+              }
+            ],
+            "start": "2022-08-08T11:00:00.000+0100",
+            "dayOfWeek": 1
+          },
+          {
+            "dayOfWeek": 2,
+            "slots": [
+              {
+                "showTwitchIcon": false,
+                "subtitle": "",
+                "start": "2022-08-09T11:00:00.000+0100",
+                "markdownDesc": "[War Child UK Charity Fundraiser](https://tiltify.com/+the-yogscast/yogscast-ukraine-fundraiser)",
+                "visible": true,
+                "type": "special",
+                "showYoutubeIcon": false,
+                "duration": 10800,
+                "relations": {
+                  "schedules": [],
+                  "twitchChannels": [
+                    "150004439",
+                    "20786541",
+                    "79911474",
+                    "26574506",
+                    "57595823",
+                    "62568743",
+                    "31883069",
+                    "22168131"
+                  ],
+                  "creators": [
+                    "Dvsw8FJa8v3LjEXSXr9e",
+                    "Gq7a6r1Pq0loxIUiNk8v",
+                    "Gz3S1VJlA6iPISXuIl7p",
+                    "8K6EIOpBvb6ROSHWHx9Q",
+                    "zwBpk82qRo4y2Sf5Nvlf",
+                    "eE4FNKcFiBhoc3jFb9Fo",
+                    "5h6PnMWEghJSDaS5ZNbc",
+                    "deBUVdSqWrH6FwlXPe2m"
+                  ],
+                  "youtubeChannels": [],
+                  "podcasts": []
+                },
+                "style": {
+                  "background": "ffffffff",
+                  "border": "ff000000"
+                },
+                "gridTileSize": 1,
+                "id": "",
+                "showHighlightIcon": false,
+                "title": "GMOD Pictionary"
+              },
+              {
+                "type": "special",
+                "duration": 10800,
+                "id": "",
+                "showTwitchIcon": false,
+                "visible": true,
+                "relations": {
+                  "twitchChannels": [
+                    "24070690",
+                    "91904368",
+                    "26574506",
+                    "465613748",
+                    "68525019",
+                    "38167015",
+                    "219068259"
+                  ],
+                  "creators": [
+                    "0w4JSboJK6RdTDmDKoYL",
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "8K6EIOpBvb6ROSHWHx9Q",
+                    "zMMAq6kg87R8WsHUS3s0",
+                    "f2tAtl8eBRTtKsqzQQoC",
+                    "vz0XWPLfxV9gFyChCgMO",
+                    "Hn8e1EgqFKg2RbJglY2x"
+                  ],
+                  "youtubeChannels": [],
+                  "podcasts": [],
+                  "schedules": []
+                },
+                "start": "2022-08-09T14:00:00.000+0100",
+                "showHighlightIcon": false,
+                "style": {
+                  "border": "ff000000",
+                  "background": "ffffffff"
+                },
+                "showYoutubeIcon": false,
+                "subtitle": "",
+                "gridTileSize": 1,
+                "title": "Dread Hunger"
+              },
+              {
+                "title": "Capture the Wool",
+                "type": "special",
+                "showYoutubeIcon": false,
+                "relations": {
+                  "twitchChannels": [
+                    "91904368",
+                    "21285936",
+                    "57595823",
+                    "465613748",
+                    "12131870",
+                    "21615575",
+                    "38167015",
+                    "150004439",
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "yAmEX9kxAZTdKzwQcIsy",
+                    "AZGGyF9uschXdM8gGB1v",
+                    "6oSnPSBKF79EBwS1G5DF",
+                    "zwBpk82qRo4y2Sf5Nvlf",
+                    "zMMAq6kg87R8WsHUS3s0",
+                    "IOdPOlLaB7zFHvsuvVwu",
+                    "uuZ2P6KPhmLVGc7ZjWXR",
+                    "vz0XWPLfxV9gFyChCgMO",
+                    "f2tAtl8eBRTtKsqzQQoC",
+                    "Dvsw8FJa8v3LjEXSXr9e"
+                  ],
+                  "schedules": [],
+                  "podcasts": []
+                },
+                "subtitle": "",
+                "style": {
+                  "background": "ffffffff",
+                  "border": "ff000000"
+                },
+                "markdownDesc": "[War Child UK Charity Fundraiser](https://tiltify.com/+the-yogscast/yogscast-ukraine-fundraiser)",
+                "start": "2022-08-09T17:00:00.000+0100",
+                "gridTileSize": 1,
+                "visible": true,
+                "duration": 10800,
+                "showHighlightIcon": false,
+                "id": "",
+                "showTwitchIcon": false
+              },
+              {
+                "showHighlightIcon": false,
+                "markdownDesc": "[War Child UK Charity Fundraiser](https://tiltify.com/+the-yogscast/yogscast-ukraine-fundraiser)",
+                "gridTileSize": 1,
+                "start": "2022-08-09T20:00:00.000+0100",
+                "subtitle": "Simon & Gee",
+                "relations": {
+                  "podcasts": [],
+                  "twitchChannels": [
+                    "20786541"
+                  ],
+                  "youtubeChannels": [],
+                  "creators": [
+                    "zFdYfSFj4efXLheSHG5Z",
+                    "QLpFsapfyzIU4TYdVmjM"
+                  ],
+                  "schedules": []
+                },
+                "showTwitchIcon": false,
+                "showYoutubeIcon": false,
+                "duration": 10800,
+                "id": "",
+                "style": {
+                  "border": "ff000000",
+                  "background": "ffffffff"
+                },
+                "visible": true,
+                "type": "special",
+                "title": "Cursed Craft"
+              }
+            ],
+            "start": "2022-08-09T11:00:00.000+0100"
+          }
+        ]
+      }
+    ]
+  },
+  "relations": {
+    "podcasts": [],
+    "schedules": [],
+    "creators": [],
+    "youtubeChannels": [],
+    "twitchChannels": []
+  },
+  "style": {
+    "timeStyle": {
+      "spacing": 4,
+      "size": 50,
+      "borderRadius": 12,
+      "elevation": 4,
+      "borderWidth": 4
+    },
+    "gridStyle": {
+      "dataSize": 60
+    },
+    "slotStyle": {
+      "borderWidth": 0,
+      "elevation": 4,
+      "border": "fffa630b",
+      "background": "fff30040",
+      "spacing": 2,
+      "borderRadius": 12
+    }
+  },
+  "name": "Tiny Teams 2022",
+  "urlName": "tinyteams2022_2_2"
+}
