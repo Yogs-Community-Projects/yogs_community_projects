@@ -1,8 +1,8 @@
-import { Component, JSX } from 'solid-js'
-import { Slot } from '@ycapp/model'
+import { Component, JSX, Show } from 'solid-js'
+import { Slot, SlotUtils } from '@ycapp/model'
 import { Duration } from 'luxon'
 import { useScheduleMobileDimensions } from '../providers/ScheduleMobileDimensionsProvider'
-import { createModalSignal, getTextColor } from '@ycapp/common'
+import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { SlotDialog } from '../../schedule/SlotDialog'
 
 interface MobileScheduleSlotProps {
@@ -50,6 +50,19 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
     return gradientStyle
   }
   const modalSignal = createModalSignal()
+  const countdown = () => {
+    return SlotUtils.start(slot).diff(useNow()).toFormat('hh:mm:ss')
+  }
+
+  const showCountdown = () => {
+    return isBefore() && !isLive()
+  }
+  const isLive = () => {
+    return SlotUtils.isLive(slot)
+  }
+  const isBefore = () => {
+    return SlotUtils.isBefore(slot)
+  }
   return (
     <>
       <div
@@ -66,8 +79,14 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             }}
             onclick={modalSignal.open}
           >
-            <p class={'text-[calc(var(--slot-height)_/_4)] font-bold'}>{props.slot.title}</p>
-            <p class={'text-[calc(var(--slot-height)_/_6)]'}>{props.slot.subtitle}</p>
+            <p class={'text-lg font-bold'}>{props.slot.title}</p>
+            <p class={'text-base'}>{props.slot.subtitle}</p>
+            <Show when={showCountdown()}>
+              <p class={'font-mono text-sm tracking-wide'}>{countdown()}</p>
+            </Show>
+            <Show when={isLive()}>
+              <p class={'font-mono text-sm tracking-wide'}>LIVE</p>
+            </Show>
           </div>
         </div>
       </div>

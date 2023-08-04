@@ -1,8 +1,8 @@
 import { Component, JSX, Show } from 'solid-js'
-import { Slot } from '@ycapp/model'
+import { Slot, SlotUtils } from '@ycapp/model'
 import { Duration } from 'luxon'
 import { useScheduleDimensions } from '../providers/ScheduleDimensionsProvider'
-import { createModalSignal, getTextColor } from '@ycapp/common'
+import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart } from 'solid-icons/bs'
 import { useCreatorFilter } from '../providers/CreatorFilterProvider'
@@ -63,6 +63,20 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
     return gradientStyle
   }
   const modalSignal = createModalSignal()
+
+  const countdown = () => {
+    return SlotUtils.start(slot).diff(useNow()).toFormat('hh:mm:ss')
+  }
+
+  const showCountdown = () => {
+    return isBefore() && !isLive()
+  }
+  const isLive = () => {
+    return SlotUtils.isLive(slot)
+  }
+  const isBefore = () => {
+    return SlotUtils.isBefore(slot)
+  }
   return (
     <>
       <div
@@ -83,8 +97,14 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
             onclick={modalSignal.toggle}
           >
             <div class={'flex h-full w-full flex-col justify-center text-center'}>
-              <p class={'text-slot-title font-bold tracking-widest'}>{props.slot.title}</p>
-              <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
+              <p class={'font-lg font-bold tracking-widest'}>{props.slot.title}</p>
+              <p class={'text-base tracking-wide'}>{props.slot.subtitle}</p>
+              <Show when={showCountdown()}>
+                <p class={'font-mono text-sm tracking-wide'}>{countdown()}</p>
+              </Show>
+              <Show when={isLive()}>
+                <p class={'font-mono text-sm tracking-wide'}>LIVE</p>
+              </Show>
             </div>
             <div class={'flex w-full flex-row justify-around'}>
               <Show when={slot.showTwitchIcon} fallback={<div />}>
