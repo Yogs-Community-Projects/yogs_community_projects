@@ -8,7 +8,7 @@ import { Dialog } from '@kobalte/core'
 import { A } from '@solidjs/router'
 import { CreatorTile } from '../tiles/CreatorTile'
 import { TwitchTile, YoutubeTile } from '../tiles/ChannelTile'
-
+import './slotDialog.css'
 interface SlotDialogProps {
   modalSignal: ModalSignal
   slot: Slot
