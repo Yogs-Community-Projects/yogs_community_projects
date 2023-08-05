@@ -9,6 +9,8 @@ import { A } from '@solidjs/router'
 import { CreatorTile } from '../tiles/CreatorTile'
 import { TwitchTile, YoutubeTile } from '../tiles/ChannelTile'
 import './slotDialog.css'
+import remarkGfm from 'remark-gfm'
+
 interface SlotDialogProps {
   modalSignal: ModalSignal
   slot: Slot
@@ -72,7 +74,7 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
         <p class={'text-xl'}>{slot.subtitle}</p>
         <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</p>
         <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}</p>
-        <SolidMarkdown children={slot.markdownDesc} />
+        <SolidMarkdown children={slot.markdownDesc} remarkPlugins={[remarkGfm]} />
         <hr class={'border-solid border-black'} />
         <Show when={slot.relations.twitchChannels}>
           <TwitchSection slot={slot} />
