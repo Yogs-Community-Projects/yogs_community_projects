@@ -9,53 +9,66 @@ export const CharitiesOverviewComponent = () => {
 
   return (
     <div>
-      <p class={'text-2xl'}>JJ Charities</p>
-      <p>Recommended Browser source height 72px</p>
-      <div>
-        <label for="cspeed">Speed:</label>
-        <select
-          class={'accent-primary-500'}
-          name="cspeed"
-          id="cspeed"
-          value={speed()}
-          onchange={e => {
-            setSpeed(+e.target.value)
+      <div class={'text-white'}>
+        <p>Recommended Browser source height 72px</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label for="charity1overviewtheme">Theme:</label>
+              </td>
+              <td>
+                <select
+                  class={' bg-transparent'}
+                  name="charity1overviewtheme"
+                  id="charity1overviewtheme"
+                  value={theme()}
+                  onchange={e => {
+                    setTheme(e.target.value)
+                  }}
+                >
+                  <option value={'default'}>Default</option>
+                  <option value={'red'}>Red</option>
+                  <option value={'blue'}>Blue</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="cspeed">Speed:</label>
+              </td>
+              <td>
+                <select
+                  class={' bg-transparent'}
+                  name="cspeed"
+                  id="cspeed"
+                  value={speed()}
+                  onchange={e => {
+                    setSpeed(+e.target.value)
+                  }}
+                >
+                  <option value={1}>1</option>
+                  <option value={2}>2</option>
+                  <option value={3}>3</option>
+                  <option value={4}>4</option>
+                  <option value={5}>5</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button
+          class={'bg-accent-500 rounded-2xl p-2 text-white'}
+          onclick={() => {
+            console.log('copy')
+            const url = `https://jinglejam.yogs.app/overlay/charities?speed=${speed()}&theme=${theme()}`
+            copyToClipboard(url)
           }}
         >
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-          <option value={4}>4</option>
-          <option value={5}>5</option>
-        </select>
+          Copy Link
+        </button>
+        <p class={'text-xl'}>Preview</p>
       </div>
-      <div>
-        <label for="charity1overviewtheme">Theme:</label>
-        <select
-          class={'accent-primary-500'}
-          name="charity1overviewtheme"
-          id="charity1overviewtheme"
-          value={theme()}
-          onchange={e => {
-            setTheme(e.target.value)
-          }}
-        >
-          <option value={'default'}>Default</option>
-          <option value={'red'}>Red</option>
-          <option value={'blue'}>Blue</option>
-        </select>
-      </div>
-      <button
-        class={'bg-primary-500 rounded-2xl p-2 text-white'}
-        onclick={() => {
-          console.log('copy')
-          const url = `https://jinglejam.yogs.app/overlay/charities?speed=${speed()}&theme=${theme()}`
-          copyToClipboard(url)
-        }}
-      >
-        Copy Link
-      </button>
-      <p class={'text-xl'}>Preview</p>
       <div
         style={{
           width: '100%',
@@ -99,56 +112,58 @@ export const CharitiesOverviewComponent2 = () => {
   }
   return (
     <div>
-      <p class={'text-2xl'}>JJ Charities 2</p>
-      <p>Recommended Browser source size 300x{height()}</p>
-      <div>
-        <input
-          class={'accent-primary-500'}
-          checked={title()}
-          onchange={() => {
-            updateHeader('title')
+      <div class={'text-white'}>
+        <p class={'text-2xl'}>JJ Charities 2</p>
+        <p>Recommended Browser source size 300x{height()}</p>
+        <div>
+          <input
+            class={''}
+            checked={title()}
+            onchange={() => {
+              updateHeader('title')
+            }}
+            type="checkbox"
+            id="headercharity2titleCheckbox"
+            name="headercharity2titleCheckbox"
+          />
+          <label for="headercharity2titleCheckbox">Title</label>
+        </div>
+        <div>
+          <input
+            class={''}
+            checked={donate()}
+            onchange={() => {
+              updateHeader('donate')
+            }}
+            type="checkbox"
+            id="headercharity2donateCheckbox"
+            name="headerdheadercharity2donateCheckboxonateCheckbox"
+          />
+          <label for="headercharity2donateCheckbox">Show !donate command</label>
+        </div>
+        <div>
+          <input
+            class={''}
+            checked={jjlink()}
+            onchange={() => {
+              updateHeader('jjlink')
+            }}
+            type="checkbox"
+            id="headercharity2jjlinkCheckbox"
+            name="headercharity2jjlinkCheckbox"
+          />
+          <label for="headercharity2jjlinkCheckbox">Show JJ Link</label>
+        </div>
+        <button
+          class={'bg-accent-500 rounded-2xl p-2 text-white'}
+          onclick={() => {
+            copyToClipboard(url())
           }}
-          type="checkbox"
-          id="headercharity2titleCheckbox"
-          name="headercharity2titleCheckbox"
-        />
-        <label for="headercharity2titleCheckbox">Title</label>
+        >
+          Copy Link
+        </button>
+        <p class={'text-xl'}>Preview</p>
       </div>
-      <div>
-        <input
-          class={'accent-primary-500'}
-          checked={donate()}
-          onchange={() => {
-            updateHeader('donate')
-          }}
-          type="checkbox"
-          id="headercharity2donateCheckbox"
-          name="headerdheadercharity2donateCheckboxonateCheckbox"
-        />
-        <label for="headercharity2donateCheckbox">Show !donate command</label>
-      </div>
-      <div>
-        <input
-          class={'accent-primary-500'}
-          checked={jjlink()}
-          onchange={() => {
-            updateHeader('jjlink')
-          }}
-          type="checkbox"
-          id="headercharity2jjlinkCheckbox"
-          name="headercharity2jjlinkCheckbox"
-        />
-        <label for="headercharity2jjlinkCheckbox">Show JJ Link</label>
-      </div>
-      <button
-        class={'bg-primary-500 rounded-2xl p-2 text-white'}
-        onclick={() => {
-          copyToClipboard(url())
-        }}
-      >
-        Copy Link
-      </button>
-      <p class={'text-xl'}>Preview</p>
       <div
         style={{
           width: '350px',

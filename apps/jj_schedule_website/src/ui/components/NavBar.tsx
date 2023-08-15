@@ -11,6 +11,7 @@ export const NavBar: Component = () => {
         <Link path="/2022" title="Jingle Jam 2022" />
         <Link path="/2021" title="Jingle Jam 2021" />
         <Link path="/extension" title="Twitch Extension" />
+        <Link path="/overlay" title="Streaming Overlays" />
         <a
           href={'https://schedule.yogs.app'}
           class={'hover:text-accent-100 text-lg no-underline transition-all hover:scale-105'}
@@ -44,7 +45,7 @@ const DropdownNavBar: Component = () => {
       <button class={'text-text flex flex-row items-center rounded-xl bg-white p-4'} onClick={onClick}>
         Menu {!open() ? <CgMenu class={'ml-2'} /> : <CgClose class={'ml-2'} />}
       </button>
-      <div class={'mt-1 flex hidden flex-col space-y-1 md:hidden'} ref={setRef}>
+      <div class={'mt-1 flex flex-col space-y-1 md:hidden'} ref={setRef}>
         <LinkMobile path="/" title="Home" close={onClose} />
         <LinkMobile path="/2022" title="Jingle Jam 2022" close={onClose} />
         <LinkMobile path="/2021" title="Jingle Jam 2021" close={onClose} />

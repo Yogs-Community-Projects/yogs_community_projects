@@ -65,66 +65,80 @@ export const ScheduleOverviewComponent = () => {
   }
 
   return (
-    <div class={'flex flex-col items-start justify-start'}>
-      <div class={'flex flex-col'}>
-        <p class={'text-2xl'}>Yogs JJ Schedule</p>
-        <div>
-          <label for="next">Number of streams:</label>
-          <select
-            class={'accent-primary-500'}
-            name="next"
-            id="next"
-            value={next()}
-            onchange={e => {
-              setNext(+e.target.value)
-            }}
-          >
-            <option value={2}>2</option>
-            <option value={3}>3</option>
-            <option value={4}>4</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="scheduleheaderoverviewtheme">Header Theme:</label>
-          <select
-            class={'accent-primary-500'}
-            name="scheduleheaderoverviewtheme"
-            id="scheduleheaderoverviewtheme"
-            value={headerTheme()}
-            onchange={e => {
-              setHeaderTheme(e.target.value)
-            }}
-          >
-            <option value={'default'}>Default</option>
-            <option value={'red'}>Red</option>
-            <option value={'blue'}>Blue</option>
-          </select>
-        </div>
-        <div>
-          <label for="scheduleoverviewtheme">Theme:</label>
-          <select
-            class={'accent-primary-500'}
-            name="scheduleoverviewtheme"
-            id="scheduleoverviewtheme"
-            value={theme()}
-            onchange={e => {
-              setTheme(e.target.value)
-            }}
-          >
-            <option value={'default'}>Default</option>
-            <option value={'timeofday'}>Time of day</option>
-            <option value={'red'}>Red</option>
-            <option value={'blue'}>Blue</option>
-            <option value={'default_img'}>Default with img</option>
-            <option value={'timeofday_img'}>Time of day with img</option>
-            <option value={'red_img'}>Red with img</option>
-            <option value={'blue_img'}>Blue with img</option>
-          </select>
-        </div>
+    <div class={'flex flex-row items-start justify-start'}>
+      <div class={'flex-1 text-white'}>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label for="next">Number of streams:</label>
+              </td>
+              <td>
+                <select
+                  class={'accent-accent-500 bg-transparent'}
+                  name="next"
+                  id="next"
+                  value={next()}
+                  onchange={e => {
+                    setNext(+e.target.value)
+                  }}
+                >
+                  <option value={2}>2</option>
+                  <option value={3}>3</option>
+                  <option value={4}>4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="scheduleheaderoverviewtheme">Header Theme:</label>
+              </td>
+              <td>
+                <select
+                  class={'accent-accent-500 bg-transparent'}
+                  name="scheduleheaderoverviewtheme"
+                  id="scheduleheaderoverviewtheme"
+                  value={headerTheme()}
+                  onchange={e => {
+                    setHeaderTheme(e.target.value)
+                  }}
+                >
+                  <option value={'default'}>Default</option>
+                  <option value={'red'}>Red</option>
+                  <option value={'blue'}>Blue</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="scheduleoverviewtheme">Theme:</label>
+              </td>
+              <td>
+                <select
+                  class={'accent-accent-500 bg-transparent'}
+                  name="scheduleoverviewtheme"
+                  id="scheduleoverviewtheme"
+                  value={theme()}
+                  onchange={e => {
+                    setTheme(e.target.value)
+                  }}
+                >
+                  <option value={'default'}>Default</option>
+                  <option value={'timeofday'}>Time of day</option>
+                  <option value={'red'}>Red</option>
+                  <option value={'blue'}>Blue</option>
+                  <option value={'default_img'}>Default with img</option>
+                  <option value={'timeofday_img'}>Time of day with img</option>
+                  <option value={'red_img'}>Red with img</option>
+                  <option value={'blue_img'}>Blue with img</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <div>
           <input
-            class={'accent-primary-500'}
+            class={'accent-accent-500 bg-transparent'}
             checked={transparent()}
             onchange={() => {
               setTransparent(!transparent())
@@ -137,7 +151,7 @@ export const ScheduleOverviewComponent = () => {
         </div>
         <Show when={!transparent()}>
           <input
-            class={'accent-primary-500'}
+            class={'accent-accent-500 bg-transparent'}
             type="color"
             id="head"
             name="head"
@@ -148,112 +162,122 @@ export const ScheduleOverviewComponent = () => {
             }}
           />
         </Show>
-        <div>
-          <input
-            class={'accent-primary-500'}
-            checked={upnext()}
-            onchange={() => {
-              updateHeader('upnext')
-            }}
-            type="checkbox"
-            id="headerupnextCheckbox"
-            name="headerupnextCheckbox"
-          />
-          <label for="headerupnextCheckbox">Show Up Next</label>
+        <div class={'pb-2 pt-2'}>
+          <p class={'text-lg'}>Header</p>
+          <Show when={header().length > 1}>
+            <p>The Header will animate between the chosen once</p>
+          </Show>
+          <div>
+            <input
+              class={'accent-accent-500'}
+              checked={upnext()}
+              onchange={() => {
+                updateHeader('upnext')
+              }}
+              type="checkbox"
+              id="headerupnextCheckbox"
+              name="headerupnextCheckbox"
+            />
+            <label for="headerupnextCheckbox">Show Up Next</label>
+          </div>
+          <div>
+            <input
+              class={'accent-accent-500'}
+              checked={donate()}
+              onchange={() => {
+                updateHeader('donate')
+              }}
+              type="checkbox"
+              id="headerdonateCheckbox"
+              name="headerdonateCheckbox"
+            />
+            <label for="headerdonateCheckbox">Show !donate command</label>
+          </div>
+          <div>
+            <input
+              class={'accent-accent-500'}
+              checked={jjlink()}
+              onchange={() => {
+                updateHeader('jjlink')
+              }}
+              type="checkbox"
+              id="headerjjlinkCheckbox"
+              name="headerjjlinkCheckbox"
+            />
+            <label for="headerjjlinkCheckbox">Show JJ Link</label>
+          </div>
+          <div>
+            <input
+              class={'accent-accent-500'}
+              checked={extension()}
+              onchange={() => {
+                updateHeader('extension')
+              }}
+              type="checkbox"
+              id="headerextensionCheckbox"
+              name="headerextensionCheckbox"
+            />
+            <label for="headerextensionCheckbox">Show JJ Extension banner</label>
+          </div>
         </div>
-        <div>
-          <input
-            class={'accent-primary-500'}
-            checked={donate()}
-            onchange={() => {
-              updateHeader('donate')
-            }}
-            type="checkbox"
-            id="headerdonateCheckbox"
-            name="headerdonateCheckbox"
-          />
-          <label for="headerdonateCheckbox">Show !donate command</label>
-        </div>
-        <div>
-          <input
-            class={'accent-primary-500'}
-            checked={jjlink()}
-            onchange={() => {
-              updateHeader('jjlink')
-            }}
-            type="checkbox"
-            id="headerjjlinkCheckbox"
-            name="headerjjlinkCheckbox"
-          />
-          <label for="headerjjlinkCheckbox">Show JJ Link</label>
-        </div>
-        <div>
-          <input
-            class={'accent-primary-500'}
-            checked={extension()}
-            onchange={() => {
-              updateHeader('extension')
-            }}
-            type="checkbox"
-            id="headerextensionCheckbox"
-            name="headerextensionCheckbox"
-          />
-          <label for="headerextensionCheckbox">Show JJ Extension banner</label>
-        </div>
-      </div>
-      <button
-        class={'bg-primary-500 rounded-2xl p-2 text-white'}
-        onclick={() => {
-          copyToClipboard(url())
-        }}
-      >
-        Copy Link
-      </button>
-      <div>Recommended Browser source size in px: 280x{height()}</div>
-      <p class={'text-xl'}>Preview</p>
-      <div>
-        <input
-          class={'accent-primary-500'}
-          checked={testDate()}
-          onchange={toggleTestDate}
-          type="checkbox"
-          id="testDateCheckbox"
-          name="testDateCheckbox"
-        />
-        <label for="testDateCheckbox">Test specific date and time</label>
-      </div>
-      <Show when={testDate()}>
-        <input
-          type={'date'}
-          value={date().toISODate()}
-          onchange={e => {
-            const d = date()
-            const [year, month, day] = e.target.value.split('-')
-            setDate(
-              d.set({
-                year: parseInt(year),
-                month: parseInt(month),
-                day: parseInt(day),
-              }),
-            )
+        <button
+          class={'bg-accent-500 rounded-2xl p-2 text-white'}
+          onclick={() => {
+            copyToClipboard(url())
           }}
-        />
-        <input
-          type={'time'}
-          value={date().toFormat('hh:mm')}
-          onchange={e => {
-            const d = date()
-            const [hour, minute] = e.target.value.split(':')
-            setDate(
-              d.set({
-                hour: parseInt(hour),
-                minute: parseInt(minute),
-              }),
-            )
-          }}
-        />
-      </Show>
-      <div class={'flex flex-row'}>
+        >
+          Copy Link
+        </button>
+      </div>
+      <div class={'flex flex-1 flex-col'}>
+        <p class={'text-xl text-white'}>Preview</p>
+        <p class={'text-white'}>Recommended Browser source size in px: 280x{height()}</p>
+        <div class={'text-white'}>
+          <input
+            class={'accent-accent-500'}
+            checked={testDate()}
+            onchange={toggleTestDate}
+            type="checkbox"
+            id="testDateCheckbox"
+            name="testDateCheckbox"
+          />
+          <label for="testDateCheckbox">Test specific date and time</label>
+        </div>
+        <Show when={testDate()}>
+          <div class={'flex flex-row gap-2 text-white'}>
+            <input
+              class={'bg-transparent'}
+              type={'date'}
+              value={date().toISODate()}
+              onchange={e => {
+                const d = date()
+                const [year, month, day] = e.target.value.split('-')
+                setDate(
+                  d.set({
+                    year: parseInt(year),
+                    month: parseInt(month),
+                    day: parseInt(day),
+                  }),
+                )
+              }}
+            />
+            <input
+              class={'bg-transparent'}
+              type={'time'}
+              value={date().toFormat('hh:mm')}
+              onchange={e => {
+                const d = date()
+                const [hour, minute] = e.target.value.split(':')
+                setDate(
+                  d.set({
+                    hour: parseInt(hour),
+                    minute: parseInt(minute),
+                  }),
+                )
+              }}
+            />
+          </div>
+        </Show>
         <div
           style={{
             width: '280px',

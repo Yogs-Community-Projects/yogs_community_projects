@@ -25,8 +25,8 @@ const App: Component = () => {
             data={schedule2022RouteDataFunc}
             component={lazy(() => import('./ui/schedule/SchedulePage'))}
           ></Route>
+          <Route path={'/overlay'} component={OverlayOverview}></Route>
         </Route>
-        <Route path={'/overlay'} component={OverlayOverview}></Route>
         <Route path={'/overlay/schedule'} component={ScheduleOverlay}></Route>
         <Route path={'/overlay/fundraisers'} component={FundraisersOverlay}></Route>
         <Route path={'/overlay/charities'} component={CharityOverlay}></Route>
