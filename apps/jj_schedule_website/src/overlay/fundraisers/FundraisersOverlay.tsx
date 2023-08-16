@@ -16,7 +16,7 @@ export const FundraisersOverlayComponent: Component<{ speed: number; theme: stri
     data
       .filter(d => !e.includes(d.login))
       .filter(d => !e.includes(d.display_name))
-      .filter(d => +d.amount >= minAmount())
+      .filter(d => +d.amount.value >= minAmount())
 
   const desc = () => {
     if (useData().length % 4 == 0) {
@@ -138,8 +138,8 @@ const Child: Component<ChildProps> = props => {
               </div>
             </Match>
           </Switch>
-          <p class={`${useRaisedTextColor()} font-bold`}>
-            Raised <Numeric value={+props.d.amount} numberStyle="currency" currency={'GBP'} />
+          <p class={`${useRaisedTextColor()} text-sm font-bold`}>
+            Raised <Numeric value={+props.d.amount.value} numberStyle="currency" currency={props.d.amount.currency} />
           </p>
         </div>
       </div>

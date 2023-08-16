@@ -164,9 +164,7 @@ export const ScheduleOverviewComponent = () => {
         </Show>
         <div class={'pb-2 pt-2'}>
           <p class={'text-lg'}>Header</p>
-          <Show when={header().length > 1}>
-            <p>The Header will animate between the chosen once</p>
-          </Show>
+          <p>If multiple headers are chosen they will animate between them</p>
           <div>
             <input
               class={'accent-accent-500'}

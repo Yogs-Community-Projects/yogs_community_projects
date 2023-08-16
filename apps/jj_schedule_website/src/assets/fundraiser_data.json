@@ -5,700 +5,501 @@
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/124525/f9a6e2eb-81ae-4248-8df6-561c6d3d6584.jpeg",
       "desc": null,
-      "amount": "2734549.65"
+      "amount": {
+        "currency": "GBP",
+        "value": "2734549.65"
+      }
     },
     {
       "display_name": "thespiffingbrit",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/94395/blob-2719482b-f2ca-45cd-adef-024254813e39.png",
       "desc": "Fanatical Tea Drinking Youtuber",
-      "amount": "361442.06"
+      "amount": {
+        "currency": "GBP",
+        "value": "361442.06"
+      }
     },
     {
       "display_name": "RTGame",
       "login": "rtgame",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/12f29a09-de89-4459-b826-6ce9a099ef7e-profile_image-300x300.png",
       "desc": " Hi I'm an Irish guy that plays games. Enjoy my content, or else.",
-      "amount": "76627.59"
+      "amount": {
+        "currency": "GBP",
+        "value": "76627.59"
+      }
     },
     {
       "display_name": "zoey",
       "login": "zoey",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/d9756118-3566-4136-a961-40d8cec09820-profile_image-300x300.png",
       "desc": "i'm zoey (she/her, raccoon vtuber), they're fionn (they/them, puppet). we stream together as the fizone! ok bye",
-      "amount": "32205.45"
+      "amount": {
+        "currency": "GBP",
+        "value": "32205.45"
+      }
     },
     {
       "display_name": "digbytathamwarter",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/473694/blob-6e7b6274-372a-4535-8ab0-4733e75e84f5.png",
       "desc": null,
-      "amount": "31705.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "31705.00"
+      }
     },
     {
       "display_name": "Terroriser",
       "login": "terroriser",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/c6c3a34a-1421-442e-a744-b6bcb58679db-profile_image-300x300.png",
       "desc": "i pretend to enjoy games 4 views and money. Prime sub 2day",
-      "amount": "15518.95"
+      "amount": {
+        "currency": "GBP",
+        "value": "15518.95"
+      }
     },
     {
       "display_name": "BritishRedCross",
       "login": "britishredcross",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/76e4c84d-2e28-4c06-bba2-e2fb23f320c4-profile_image-300x300.png",
       "desc": "The official Twitch page for the British Red Cross: a humanitarian charity supporting people in crisis all around the world. Take on a stream and raise vital funds to help people in crisis across the world! Sign up using the link on the right.",
-      "amount": "7855.57"
+      "amount": {
+        "currency": "GBP",
+        "value": "7855.57"
+      }
     },
     {
       "display_name": "howtobequiet",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": "I've been known to yell, so it's a very confusing channel name.",
-      "amount": "6969.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "6969.69"
+      }
     },
     {
       "display_name": "sam-eklls",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/426535/blob-c583aac9-9ec7-4acc-a1fe-a2373cb4f03d.jpeg",
       "desc": null,
-      "amount": "6709.66"
+      "amount": {
+        "currency": "GBP",
+        "value": "6709.66"
+      }
     },
     {
       "display_name": "thegrandappeal",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/475472/blob-1a7b0ecb-a259-4d0a-a495-873d64690cf7.png",
       "desc": "The Grand Appeal is the dedicated charity for Bristol Children's Hospital. We're raising money to create Jingle Jam Building. With accommodation for families and on-site therapy for patients under one roof, it will be the first of its kind in the UK!",
-      "amount": "5973.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "5973.00"
+      }
     },
     {
       "display_name": "hrry",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": null,
-      "amount": "5809.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "5809.69"
+      }
     },
     {
       "display_name": "highrollersdnd",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/482422/blob-4cea84ec-89ad-4994-a4ce-6ed9cc3c6c26.png",
       "desc": "Rolling High for Charity!",
-      "amount": "5415.18"
+      "amount": {
+        "currency": "GBP",
+        "value": "5415.18"
+      }
     },
     {
       "display_name": "dogsforautism",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/443805/blob-aefdf36e-a77b-4562-b2d1-82fc1948e146.jpeg",
       "desc": "We train dogs to help autistic people access the world in the way they want by carrying out specific tasks to mitigate the challenging effects of their autism. We're supportung the autistic community one cheeky puppy at a time",
-      "amount": "5409.28"
+      "amount": {
+        "currency": "GBP",
+        "value": "5409.28"
+      }
     },
     {
       "display_name": "wdc-whale-and-dolphin-conservation",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/31666/ea59703d-1589-4eb7-ac5f-005ebbc76020.jpeg",
       "desc": "Official WDC Campaign Account",
-      "amount": "4824.28"
+      "amount": {
+        "currency": "GBP",
+        "value": "4824.28"
+      }
     },
     {
       "display_name": "potatomcwhiskey",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "4668.31"
+      "amount": {
+        "currency": "GBP",
+        "value": "4668.31"
+      }
     },
     {
       "display_name": "midwinterminis",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/487693/blob-4338ccb9-9b7c-4bf8-b231-ae34d25ea7ea.png",
       "desc": "Midwinter Minis fundraising on Tiltify! Woo!",
-      "amount": "3559.44"
+      "amount": {
+        "currency": "GBP",
+        "value": "3559.44"
+      }
     },
     {
       "display_name": "bobawitch",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/73376/blob-f3732a67-212f-4629-929c-3f6907647b5d.jpeg",
       "desc": null,
-      "amount": "3492.55"
+      "amount": {
+        "currency": "GBP",
+        "value": "3492.55"
+      }
     },
     {
       "display_name": "Breeh",
       "login": "breeh",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/32e623ba-5231-433a-95b8-77df8afea65a-profile_image-300x300.png",
       "desc": "I'm Breeh! A streamer with the YogsCast who imagines he's the best at games and then proceeds to provide proof that he isn't!",
-      "amount": "3154.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "3154.69"
+      }
     },
     {
       "display_name": "crustydoggo",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/132386/blob-785b1a8c-2bdf-49f7-aa24-63d0035ddb4f.png",
       "desc": null,
-      "amount": "2640.55"
+      "amount": {
+        "currency": "GBP",
+        "value": "2640.55"
+      }
     },
     {
       "display_name": "jtmyng",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "2614.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "2614.69"
+      }
     },
     {
       "display_name": "steve-dower",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": null,
-      "amount": "2200.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "2200.00"
+      }
     },
     {
       "display_name": "Kellston",
       "login": "kellston",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/43936369-b65a-4284-89f2-293b4d21e9f4-profile_image-300x300.png",
       "desc": "Some people call me Michael, the real people call me Kellston.Business enquiries - kellstongaming(at)outlook.com",
-      "amount": "2196.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "2196.00"
+      }
     },
     {
       "display_name": "calm-campaign-against-living-miserably",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/408997/blob-98944acf-91a3-47ee-8897-66e73e33ec67.jpeg",
       "desc": null,
-      "amount": "2088.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "2088.00"
+      }
     },
     {
       "display_name": "specialeffectteam",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/323259/blob-252a55b5-0a81-4b7a-a988-50f90336b1e5.jpeg",
       "desc": null,
-      "amount": "1990.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "1990.69"
+      }
     },
     {
       "display_name": "meloncolliee",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/189263/2beef9e8-8f66-4ebe-a185-c49838353002.jpeg",
       "desc": null,
-      "amount": "1850.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1850.00"
+      }
     },
     {
       "display_name": "brionykay",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": null,
-      "amount": "1848.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "1848.69"
+      }
     },
     {
       "display_name": "custom-roles-for-ttt",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/344660/blob-79db1b4b-2afa-4aeb-a934-4470b77dc4ed.png",
       "desc": null,
-      "amount": "1825.69"
+      "amount": {
+        "currency": "GBP",
+        "value": "1825.69"
+      }
     },
     {
       "display_name": "shadowatnoon",
       "login": "shadowatnoon",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/60daf22e-15e9-47ee-a3c5-f406b9907008-profile_image-300x300.png",
       "desc": "Just a girl who likes to play video games! ",
-      "amount": "1740.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1740.00"
+      }
     },
     {
       "display_name": "sophie-fosterxx",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/478826/blob-b46a9aec-66d7-47f2-8283-28766fb4a589.jpeg",
       "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "1551.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1551.00"
+      }
     },
     {
       "display_name": "emmalittleduck",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/274508/blob-3584df8d-2328-4962-b4eb-df3a1ea239fc.png",
       "desc": null,
-      "amount": "1550.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1550.00"
+      }
     },
     {
       "display_name": "inthelittlewood",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/178431/blob-993807dd-d98c-45a0-abb7-2273a3d0dd0f.jpeg",
       "desc": "Hello everybody!",
-      "amount": "1529.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1529.00"
+      }
     },
     {
       "display_name": "bedgars",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/475989/blob-ec2eebe4-a371-4880-8c53-e5d41110db47.png",
       "desc": "Hi, I'm Ben from the Yogscast, please help us raise money for this fantastic charity.",
-      "amount": "1479.37"
+      "amount": {
+        "currency": "GBP",
+        "value": "1479.37"
+      }
     },
     {
       "display_name": "skunk-yognau-gh-t",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/176133/blob-5fe7eba1-9f3c-4ac7-83e0-5854d6c248f6.png",
       "desc": "This little skunk has hidden his bio, and we don't know where it is...",
-      "amount": "1467.70"
+      "amount": {
+        "currency": "GBP",
+        "value": "1467.70"
+      }
     },
     {
       "display_name": "nanokim",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/149806/blob-3cbf736c-9c21-465e-827c-6399ce9a34a1.png",
       "desc": "It's Jingle Jam Time! Let's get raising money for our 12 wonderful charities!",
-      "amount": "1287.90"
+      "amount": {
+        "currency": "GBP",
+        "value": "1287.90"
+      }
     },
     {
       "display_name": "ravs",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": null,
-      "amount": "1255.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1255.00"
+      }
     },
     {
       "display_name": "Meechree",
       "login": "meechree",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/5423500d-68e4-4981-916c-efe5f17d0350-profile_image-300x300.png",
       "desc": "Long hair. Big beard. Round sunglasses. Grey pants. Cinnabon enthusiast. Wannabe speedrunner. ",
-      "amount": "1046.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1046.00"
+      }
     },
     {
       "display_name": "bateson87",
       "login": "bateson87",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/bc33897e-f98d-4fba-befe-3adf0cc0bcb3-profile_image-300x300.png",
+      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/95a3d4f6-1a30-4284-bb00-4fca224e53ab-profile_image-300x300.png",
       "desc": "\"This job isnt physically or intellectually taxing though\" Business Email- toby@intertalentgroup.com",
-      "amount": "1035.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1035.00"
+      }
     },
     {
       "display_name": "WeAreSecretMode",
       "login": "wearesecretmode",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/ea133b8c-1983-4cff-a9d3-df40171a7266-profile_image-300x300.png",
       "desc": "We publish video games. Our goal is to delight and inspire you, and that\u2019s why we are Secret Mode.",
-      "amount": "1035.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1035.00"
+      }
     },
     {
       "display_name": "jgm",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/483704/blob-369e68c7-4625-4743-8df8-12fcf3e01990.png",
       "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "1026.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1026.00"
+      }
     },
     {
       "display_name": "someblokenamedross",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": "Just Some Bloke trying to make a difference!",
-      "amount": "1010.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1010.00"
+      }
     },
     {
       "display_name": "TheDementedSalad",
       "login": "thedementedsalad",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/590a480e-325d-47b3-ab74-73d1bce04962-profile_image-300x300.png",
       "desc": "~ World Record Speedrunner ~ Just an angry British bloke who plays games fast.",
-      "amount": "1000.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "1000.00"
+      }
     },
     {
       "display_name": "whattheflappies",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/472922/blob-250038a9-3bf9-4c69-a7b2-670ba1bbe8a8.png",
       "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "820.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "820.00"
+      }
     },
     {
       "display_name": "resetmh",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/473693/blob-bd8bd4e5-a63a-4c87-b20a-7e15b12aefed.jpeg",
       "desc": "RESET Mental Health is a charity that provides free culturally appropriate mental health services to underserved & underfunded black communities across the UK.\n\nThese services include: mental health training, peer support, group and individual therapy.",
-      "amount": "750.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "750.00"
+      }
     },
     {
       "display_name": "SussexEsports",
       "login": "sussexesports",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/2e9ba325-721d-452f-ac34-be2814d41612-profile_image-300x300.png",
       "desc": "Sussex University's Esports Society, Competing in a range of Esports titles! Home of the Sussex Sharks. Be sure to visit our Discord!",
-      "amount": "700.01"
+      "amount": {
+        "currency": "GBP",
+        "value": "700.01"
+      }
     },
     {
       "display_name": "demaiste",
       "login": "demaiste",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/68da1715-714a-46cd-be51-5a5b1cfaf6f3-profile_image-300x300.png",
       "desc": "If it's two steps away from Fire Emblem it's too far away from my hearthttps://throne.com/demaiste/wishlist",
-      "amount": "700.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "700.00"
+      }
     },
     {
       "display_name": "freethesquirls",
       "login": null,
       "img": "https://assets.tiltify.com/assets/default-avatar.png",
       "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "675.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "675.00"
+      }
     },
     {
       "display_name": "blebigames",
       "login": null,
       "img": "https://assets.tiltify.com/uploads/user/thumbnail/483821/blob-3983b4e9-5134-4e58-ab93-5a9391a8839b.png",
       "desc": "We make Minecraft game-modes together!",
-      "amount": "660.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "660.00"
+      }
     },
     {
       "display_name": "TheGaminEmbassy",
       "login": "thegaminembassy",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/4f1d4bcd-d41a-4605-a3f1-f4e2927dcae8-profile_image-300x300.png",
       "desc": "Hiya! My names Harry and TheGaminEmbassy is a channel where all insterested in gaming or just wanting to chat can come and hang out! We mainly stream Dead By Daylight but also Pokemon, Civ V and other games too!",
-      "amount": "620.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "620.00"
+      }
     },
     {
       "display_name": "TheFender4u",
       "login": "thefender4u",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/89196206-d763-4f8c-a8d3-1832f3f06aa9-profile_image-300x300.png",
       "desc": "Hey everyone welcome to my Twitch I stream new games and old on most platforms. Hope you enjoy your stay and follow me on my journey through each amazing game. my schedule is Monday to Thursday starting at 7:30pm GMT.",
-      "amount": "610.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "610.00"
+      }
     },
     {
       "display_name": "HannahBoingus",
       "login": "hannahboingus",
       "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/2a463c70-1233-4b9c-87f2-97ea4141ae68-profile_image-300x300.png",
       "desc": "she/her | accursed woman | in your walls | I have captions, but obvi speech to text technology isn't perfect yet :( hopefully it should at least help to some degree",
-      "amount": "608.07"
-    },
-    {
-      "display_name": "yayruthie",
-      "login": "yayruthie",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/7e71734e-7353-4f85-a861-07569e151390-profile_image-300x300.png",
-      "desc": "I am the human form of the 100 emoji",
-      "amount": "600.00"
-    },
-    {
-      "display_name": "icaruswaffles",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/362976/blob-9c22e23a-d3c5-468c-9166-a2bd362321d3.png",
-      "desc": null,
-      "amount": "600.00"
-    },
-    {
-      "display_name": "sotonlgbt",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/248736/blob-f52c525f-cfb8-4e9d-80c0-680a99dd2e43.jpeg",
-      "desc": "We're here to support all LGBTQ+ students at the University of Southampton. Come as you are, do what you love!",
-      "amount": "570.00"
-    },
-    {
-      "display_name": "bryonyatkidscape-org-uk",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "545.00"
-    },
-    {
-      "display_name": "HettyJ",
-      "login": "hettyj",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/d9643e52-121b-4b46-9975-03878445e02b-profile_image-300x300.png",
-      "desc": "Hello, I am a Fox vtuber, I'm a variety streamer, shy, chaotic and loud. And addicted to Apex.",
-      "amount": "535.00"
-    },
-    {
-      "display_name": "TitaniumSalt",
-      "login": "titaniumsalt",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/925949c1-297a-462d-af0c-d2293e5379ed-profile_image-300x300.png",
-      "desc": "Hey everyone, welcome in! My name is Salty and my entire personality is mental breakdowns and cheese. Come chill out with us and we'll just see what happens ^^",
-      "amount": "535.00"
-    },
-    {
-      "display_name": "shiroar",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/471654/blob-9068570a-9a4b-4891-a702-92b506ffc4ba.jpeg",
-      "desc": "Twitch streamer and part of the Blebs stream team.",
-      "amount": "515.02"
-    },
-    {
-      "display_name": "tytan",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": null,
-      "amount": "515.00"
-    },
-    {
-      "display_name": "okaroone",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": null,
-      "amount": "469.00"
-    },
-    {
-      "display_name": "SpookyGlitchPlays",
-      "login": "spookyglitchplays",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/77659604-fa73-4aaa-a7c1-6937568d84bc-profile_image-300x300.png",
-      "desc": "Spooky's channel is all about interaction, community and embracing the weird! She promotes autism advocacy, mental health awareness and charitable giving, partnering with various non-profits to raise funds and awareness for their valuable work. Join us as we hangout, chat and play games!",
-      "amount": "431.01"
-    },
-    {
-      "display_name": "beef571",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": null,
-      "amount": "422.03"
-    },
-    {
-      "display_name": "ruthberry",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/357365/blob-34e26ec8-ed81-4f1d-89bd-04a9ddc85dae.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "421.80"
-    },
-    {
-      "display_name": "samarchism",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/196751/blob-416b971b-827e-49d6-a17d-63494f1d2f54.jpeg",
-      "desc": "Raising money for Jingle Jam 2022!",
-      "amount": "420.00"
-    },
-    {
-      "display_name": "sbooskie",
-      "login": "sbooskie",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/00b26ddf-d7a8-41bc-beb7-b4d98bc6862b-profile_image-300x300.png",
-      "desc": "Abi, gaming failure turned Twitch streamer and YouTube creator... nice to meet you! \ud83d\udc96\ud83d\udc7b\u2728For business enquiries: abi@sbooskie.com ",
-      "amount": "415.00"
-    },
-    {
-      "display_name": "mongoos_",
-      "login": "mongoos_",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/d775ffe8-ebd2-404e-8ed2-cf54a355af4f-profile_image-300x300.png",
-      "desc": "",
-      "amount": "400.69"
-    },
-    {
-      "display_name": "bunni-bear",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/373327/blob-b99a9d2a-c2c0-46b5-bf80-0fb2e8035e51.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "385.00"
-    },
-    {
-      "display_name": "bekkiboom",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": null,
-      "amount": "380.00"
-    },
-    {
-      "display_name": "Schoenbek_Mika",
-      "login": "schoenbek_mika",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/395ac306-4715-4f26-8a4b-3d87fee6848b-profile_image-300x300.png",
-      "desc": "Onlogisch en chaotisch. Gigantische nerd met een liefde naar cinematografie, videogames en extreem scuffed doen om mijn verplichtingen te ontkomen. Kom gezellig viben met deze staatsmongool \u2764\ufe0f",
-      "amount": "369.05"
-    },
-    {
-      "display_name": "twilitpheonix",
-      "login": "twilitpheonix",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/0997368b-9f10-4095-a88a-0e7e99f8109b-profile_image-300x300.png",
-      "desc": "Uk female LGBTQ+ and ADHD streamer, will play games that have been requested by followers. Enjoy the stream and have fun!!! Join my discord and talk with me outside of my streams",
-      "amount": "365.00"
-    },
-    {
-      "display_name": "actuallyvii",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "362.05"
-    },
-    {
-      "display_name": "Chavvers",
-      "login": "chavvers",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/474eb991-fa70-49b7-9f4b-f4ed8b9915df-profile_image-300x300.png",
-      "desc": "Some guy. Feel free to hang out and have cool chill time :)",
-      "amount": "354.69"
-    },
-    {
-      "display_name": "casson",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/492735/blob-5bdf1e91-4f5c-4c5e-9aad-e702e0f9b2bf.jpeg",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "352.00"
-    },
-    {
-      "display_name": "TheLocalBrickShop",
-      "login": "thelocalbrickshop",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/fcb4b0a0-e386-45af-be24-aab68a3db8da-profile_image-300x300.png",
-      "desc": "Gamer, Lego lover and operator of The Local Brick Shop!  Join in for Lego builds, sorting streams and the Lego News! Plus free giveaways every Wednesday!",
-      "amount": "345.00"
-    },
-    {
-      "display_name": "diabetus",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/256432/blob-8e748284-6487-4a18-86bf-53e139eae13f.jpeg",
-      "desc": "have a blessed day and remember to look after yourself, take each day as it comes and that you're never alone",
-      "amount": "342.97"
-    },
-    {
-      "display_name": "huntingtons-disease-association",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/481757/blob-a3e48e7f-d55d-4561-9e59-007efb5d1759.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "329.00"
-    },
-    {
-      "display_name": "vagrantvortex",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "320.00"
-    },
-    {
-      "display_name": "snarch",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/489832/blob-16f652e8-3ad1-47a5-9199-6131c73fc86f.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "310.00"
-    },
-    {
-      "display_name": "nemet",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/204310/blob-fac814db-86be-403f-b955-4fa533d8c457.png",
-      "desc": null,
-      "amount": "309.12"
-    },
-    {
-      "display_name": "kidscape",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "Help Kidscape beat bullying! Kidscape is an award-winning charity providing practical anti-bullying support to children. Together, we can help protect young lives.",
-      "amount": "307.00"
-    },
-    {
-      "display_name": "cadenbopp",
-      "login": "cadenbopp",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/ebad578c-d9bf-4cba-8daf-8713cc4834aa-profile_image-300x300.png",
-      "desc": "Hey! I'm Caden! I've been playing games for a while and wanted to stream so I'm here now. I hope you guys enjoy the content I put out and feel free to join the conversation.",
-      "amount": "306.33"
-    },
-    {
-      "display_name": "Ryan404000",
-      "login": "ryan404000",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/ab2b2243-aef8-4085-9d3a-0ee8b8abbc39-profile_image-300x300.png",
-      "desc": "Hey I'm Ryan. I stream sometimes.",
-      "amount": "300.90"
-    },
-    {
-      "display_name": "RuddyGoober",
-      "login": "ruddygoober",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/c998e1a7-e985-442b-9947-c854f748e5b6-profile_image-300x300.png",
-      "desc": "Welcome to Ruddy's pad. This is a space where we stream some guff and have a laugh at anything that comes up.",
-      "amount": "300.00"
-    },
-    {
-      "display_name": "hobgoblinette",
-      "login": "hobgoblinette",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/d156a622-cf13-4ea9-9bea-0a7edb98fd98-profile_image-300x300.png",
-      "desc": "i'm Katy! *previously known as frumpopotamus* I play a ton of indies with a focus on puzzle games but I am very much a variety streamer. Business Inquiries: hobgoblinett3@gmail.com",
-      "amount": "297.00"
-    },
-    {
-      "display_name": "XanderOfBritain",
-      "login": "xanderofbritain",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/0663288f-2090-4b0c-885c-c862694375fd-profile_image-300x300.jpeg",
-      "desc": "Hello, I'm Xander (He/They). I am a Queer fella (bi/pan/queer) and I play games! would you like to join me? This is a safe space for the LGBTQ+ community. no hate speech or discrimination of any kind will be tolerated. Stick around, chat and have fun! ",
-      "amount": "296.01"
-    },
-    {
-      "display_name": "atawhaigames",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/479595/blob-58717aa3-becd-42f0-92d6-d2293653ac75.jpeg",
-      "desc": "Small indie game dev studio from \u014ctepoti, NZ!",
-      "amount": "290.00"
-    },
-    {
-      "display_name": "iAmBDG",
-      "login": "iambdg",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/48d61fb1-f03d-4035-95d5-9fc590ea6a07-profile_image-300x300.png",
-      "desc": "Random man plays random video games at random times. Supposedly occasionally spontaneously funny. Maybe he'll sing on occasion too, who knows.",
-      "amount": "290.00"
-    },
-    {
-      "display_name": "biggystick",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/472372/blob-e47f7665-de9b-44e1-8e57-86ba725fa6b2.jpeg",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "288.00"
-    },
-    {
-      "display_name": "mremeralddragon",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "I am a dad to two daughters with autism and they are the only thing that I find gives my life meaning.  I do what I can for them and if I can even remotely help anyone else either someone with autism or caring for someone with autism it is a massive win",
-      "amount": "275.00"
-    },
-    {
-      "display_name": "justeefie",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "269.69"
-    },
-    {
-      "display_name": "half-peeps",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/470250/blob-ea0d7a7f-fd60-4772-9a0f-0d7cc0b335f3.png",
-      "desc": "#JingleJam2022",
-      "amount": "265.00"
-    },
-    {
-      "display_name": "country-brawler",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "260.00"
-    },
-    {
-      "display_name": "the-spicyginger",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/482418/blob-5e9e7b09-6e06-488a-9214-1b31e32e223d.png",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "257.00"
-    },
-    {
-      "display_name": "darkweaver66",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/349858/blob-e9d7d1ca-1d1c-4edd-a784-846d54b0e471.png",
-      "desc": "Weaver and the guys at Wayfarer Gaming are supporting the Yogscast Jingle Jam 2021 by raising money for The Open Bionics Foundation! The Yogs are aiming to raise enough to get 25 bionic arms for below-elbow amputees ages 7+",
-      "amount": "250.69"
-    },
-    {
-      "display_name": "schrombomb",
-      "login": "schrombomb",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/299b1d69-d329-4d4e-8a79-01cc4083f81d-profile_image-300x300.png",
-      "desc": "I am a sporadically live variety streamer. You'll find things like space sims, building/survival, FPS, racing, and flying car football games here. Maybe even the occasional Just Chatting stream.",
-      "amount": "250.00"
-    },
-    {
-      "display_name": "simply-dog-memes-for-charity",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/474009/blob-a99421d4-3da7-4756-a4b6-58913ccd5378.png",
-      "desc": null,
-      "amount": "245.00"
-    },
-    {
-      "display_name": "gamepro250",
-      "login": null,
-      "img": "https://assets.tiltify.com/assets/default-avatar.png",
-      "desc": null,
-      "amount": "245.00"
-    },
-    {
-      "display_name": "far-from-home",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/489583/blob-d9d11355-6807-49b9-a894-578b73bfa416.png",
-      "desc": "Hello this is Far From Home Studio - Independent Video Game Developer, currently working on Forever Skies! \nhttps://t.co/pgWkPoX2EL",
-      "amount": "240.00"
-    },
-    {
-      "display_name": "artemis_game",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/71830/blob-2dfc2b52-2c68-428d-827d-494be54ee102.jpeg",
-      "desc": "Follow all my campaigns and fundraising efforts right here on my Tiltify fundraising profile!",
-      "amount": "237.00"
-    },
-    {
-      "display_name": "mudkipninja",
-      "login": null,
-      "img": "https://assets.tiltify.com/uploads/user/thumbnail/488675/blob-8ae3794a-1737-44be-8961-c9936e1c44e2.png",
-      "desc": "Supporting the JingleJam with great charity fundraisers!",
-      "amount": "230.00"
-    },
-    {
-      "display_name": "Ciabatta_Boi",
-      "login": "ciabatta_boi",
-      "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/95630031-0007-4289-bbaf-fbebe9fb933d-profile_image-300x300.png",
-      "desc": "Satyr Baker Vtuber \ud83c\udf5e Full Time Baker - Talk Bread to me! \ud83c\udf5eThe Beast with the Yeast \ud83c\udf5e The Goat with the Toast \ud83c\udf5e He/Him \ud83c\udf5e LIVE 5PM EST Tues/Thur \ud83c\udf5e LIVE 9AM EST Sat/Sun \ud83c\udf5e Warhammer Fan \ud83c\udf5e Fallout Fan \ud83c\udf5eMember of the Mythical Menagerie ",
-      "amount": "230.00"
+      "amount": {
+        "currency": "GBP",
+        "value": "608.07"
+      }
     }
   ]
+
 }
