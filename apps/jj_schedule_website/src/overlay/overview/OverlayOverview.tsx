@@ -140,7 +140,7 @@ const Body = () => {
               />
             </Accordion.Trigger>
           </Accordion.Header>
-          <Accordion.Content class={'p-2'}>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
             <ScheduleOverviewComponent />
           </Accordion.Content>
         </Accordion.Item>
@@ -157,7 +157,7 @@ const Body = () => {
               />
             </Accordion.Trigger>
           </Accordion.Header>
-          <Accordion.Content class={'p-2'}>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
             <FundraiserOverviewComponent />
           </Accordion.Content>
         </Accordion.Item>
@@ -174,7 +174,7 @@ const Body = () => {
               />
             </Accordion.Trigger>
           </Accordion.Header>
-          <Accordion.Content class={'p-2 '}>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
             <CharitiesOverviewComponent />
           </Accordion.Content>
         </Accordion.Item>
@@ -191,7 +191,7 @@ const Body = () => {
               />
             </Accordion.Trigger>
           </Accordion.Header>
-          <Accordion.Content class={'p-2'}>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
             <CharitiesOverviewComponent2 />
           </Accordion.Content>
         </Accordion.Item>
