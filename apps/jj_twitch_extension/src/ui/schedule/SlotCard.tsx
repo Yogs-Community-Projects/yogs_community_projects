@@ -121,7 +121,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
                   'hover:scale-102 flex h-full cursor-pointer flex-col justify-center rounded-2xl p-2 transition-all hover:brightness-105'
                 }
                 style={{
-                  ...backgroundImg(),
+                  ...background(),
                 }}
                 onclick={modalSignal.toggle}
               >
