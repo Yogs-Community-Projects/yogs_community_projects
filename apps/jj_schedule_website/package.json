@@ -50,6 +50,7 @@
     "solid-js": "^1.6.9",
     "solid-markdown": "^1.2.0",
     "solid-transition-group": "^0.2.2",
+    "tailwind-merge": "^1.14.0",
     "tw-elements": "^1.0.0-alpha13"
   }
 }

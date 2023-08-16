@@ -1,11 +1,12 @@
-import { Component } from 'solid-js'
+import { Component, createSignal } from 'solid-js'
 import { ScheduleOverviewComponent } from './ScheduleOverviewComponent'
 import { CharitiesOverviewComponent, CharitiesOverviewComponent2 } from './CharityOverviewComponents'
 import { FundraiserOverviewComponent } from './FundraiserOverviewComponent'
-import { Accordion } from '@kobalte/core'
+import { Accordion, Dialog } from '@kobalte/core'
 import { BiRegularChevronDown } from 'solid-icons/bi'
 import overlay1 from '../../assets/overlay/overlay1.png'
 import overlay2 from '../../assets/overlay/overlay2.png'
+import { twMerge } from 'tailwind-merge'
 /*
 export const OverlayOverview: Component = () => {
   return (
@@ -39,6 +40,9 @@ export const OverlayOverview: Component = () => {
 */
 
 export const OverlayOverview: Component = () => {
+  const [open, setOpen] = createSignal(false)
+  const [open2, setOpen2] = createSignal(false)
+
   return (
     <div class={''}>
       <div
@@ -58,71 +62,140 @@ export const OverlayOverview: Component = () => {
           <p>Use a desktop to configure the overlays</p>
         </div>
       </div>
-      <div class={'accent-accent-500 hidden text-left text-base md:flex'}>
-        <Accordion.Root collapsible={true}>
-          <Accordion.Item value={'schedule'}>
-            <Accordion.Header>
-              <Accordion.Trigger class={'hover:bg-accent-500/50 flex flex-row items-center p-2 text-xl text-white'}>
-                <p>Yogs JJ Schedule</p>
-                <BiRegularChevronDown />
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content class={'p-2'}>
-              <ScheduleOverviewComponent />
-            </Accordion.Content>
-          </Accordion.Item>
-          <Accordion.Item value={'fundraiser'}>
-            <Accordion.Header>
-              <Accordion.Trigger class={'hover:bg-accent-500/50 flex flex-row items-center p-2 text-xl text-white'}>
-                <p>Community Fundraisers</p>
-                <BiRegularChevronDown />
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content class={'p-2'}>
-              <FundraiserOverviewComponent />
-            </Accordion.Content>
-          </Accordion.Item>
-          <Accordion.Item value={'charities'}>
-            <Accordion.Header>
-              <Accordion.Trigger class={'hover:bg-accent-500/50 flex flex-row items-center p-2 text-xl text-white'}>
-                <p>Charities</p>
-                <BiRegularChevronDown />
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content class={'p-2'}>
-              <CharitiesOverviewComponent />
-            </Accordion.Content>
-          </Accordion.Item>
-          <Accordion.Item value={'charities2'}>
-            <Accordion.Header>
-              <Accordion.Trigger class={'hover:bg-accent-500/50 flex flex-row items-center p-2 text-xl text-white'}>
-                <p>Charities 2</p>
-                <BiRegularChevronDown />
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content class={'p-2'}>
-              <CharitiesOverviewComponent2 />
-            </Accordion.Content>
-          </Accordion.Item>
-        </Accordion.Root>
-      </div>
-
+      <Body />
       <div
         class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}
       >
         <div class={'p-2'}>
           <p>Screenshots</p>
-          <img src={overlay1} alt={'Screenshot from OBS'} />
+          <Dialog.Root open={open()} onOpenChange={setOpen}>
+            <img
+              class={'hover:scale-105 hover:cursor-pointer'}
+              src={overlay1}
+              alt={'Screenshot from OBS'}
+              onclick={() => {
+                setOpen(!open())
+              }}
+            />
+            <Dialog.Portal>
+              <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
+              <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+                <Dialog.Content class={'h-full w-[90%] p-2'}>
+                  <img class={''} src={overlay1} alt={'Screenshot from OBS'} />
+                </Dialog.Content>
+              </div>
+            </Dialog.Portal>
+          </Dialog.Root>
           <p class={'text-xs'}>
             A OBS Scene with all available JJ Community Overlays. The background is a screenshot of a Yogscast Jingle
             Jam Stream.
           </p>
         </div>
         <div class={'p-2'}>
-          <img src={overlay2} alt={'Screenshot from OBS'} />
+          <Dialog.Root open={open2()} onOpenChange={setOpen2}>
+            <img
+              class={'hover:scale-105 hover:cursor-pointer'}
+              src={overlay2}
+              alt={'Screenshot from OBS'}
+              onclick={() => {
+                setOpen2(!open2())
+              }}
+            />
+            <Dialog.Portal>
+              <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
+              <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+                <Dialog.Content class={'h-full w-[90%] p-2'}>
+                  <img class={''} src={overlay2} alt={'Screenshot from OBS'} />
+                </Dialog.Content>
+              </div>
+            </Dialog.Portal>
+          </Dialog.Root>
           <p class={'text-xs'}>Editing the Schedule Browser Source</p>
         </div>
       </div>
+    </div>
+  )
+}
+
+const Body = () => {
+  const [expandedItem, setExpandedItem] = createSignal<string[]>([])
+
+  const schedule = () => expandedItem().includes('schedule')
+  const fundraiser = () => expandedItem().includes('fundraiser')
+  const charities = () => expandedItem().includes('charities')
+  const charities2 = () => expandedItem().includes('charities2')
+  return (
+    <div class={'accent-accent-500 hidden items-center text-base md:flex md:flex-col'}>
+      <Accordion.Root collapsible={true} value={expandedItem()} onChange={setExpandedItem} class={''}>
+        <Accordion.Item value={'schedule'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Yogs JJ Schedule</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', schedule() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'p-2'}>
+            <ScheduleOverviewComponent />
+          </Accordion.Content>
+        </Accordion.Item>
+        <Accordion.Item value={'fundraiser'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Community Fundraisers</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', fundraiser() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'p-2'}>
+            <FundraiserOverviewComponent />
+          </Accordion.Content>
+        </Accordion.Item>
+        <Accordion.Item value={'charities'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Charities</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', charities() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'p-2 '}>
+            <CharitiesOverviewComponent />
+          </Accordion.Content>
+        </Accordion.Item>
+        <Accordion.Item value={'charities2'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Charities 2</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', charities2() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'p-2'}>
+            <CharitiesOverviewComponent2 />
+          </Accordion.Content>
+        </Accordion.Item>
+      </Accordion.Root>
     </div>
   )
 }

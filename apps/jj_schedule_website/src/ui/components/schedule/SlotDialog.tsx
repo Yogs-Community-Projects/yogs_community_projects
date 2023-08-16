@@ -19,7 +19,7 @@ export const SlotDialog: Component<SlotDialogProps> = props => {
   // w-[80%] left-[10%] md:w-[60%] md:left-[20%] lg:w-[50%] lg:left-[25%]  lg:w-[30%] lg:left-[35%]
   const { slot, modalSignal } = props
   return (
-    <Dialog.Root isOpen={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
+    <Dialog.Root open={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
       <Dialog.Portal>
         <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
         <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
