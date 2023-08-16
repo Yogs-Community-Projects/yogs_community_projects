@@ -1,43 +1,43 @@
 import { JJData } from './charity_model'
-import { Component, createSignal, onCleanup, onMount, ParentComponent, Show } from 'solid-js'
+import { Accessor, Component, createSignal, Match, onCleanup, onMount, ParentComponent, Show, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { DateTime } from 'luxon'
 import { NumberStyle } from 'i18n-mini/lib/types'
 import { Transition } from 'solid-transition-group'
+import { ToggleButton } from '@kobalte/core'
+import { BsCurrencyDollar, BsCurrencyPound } from 'solid-icons/bs'
+import { useCurrency } from '../CurrencyProvider'
+import { twMerge } from 'tailwind-merge'
 
 interface CharityOverviewProps {
   data: JJData
 }
 
 export const CharityOverview: Component<CharityOverviewProps> = props => {
-  const [dollar, setShowDollar] = createSignal(false)
-
-  const timer = setInterval(() => {
-    setShowDollar(!dollar())
-  }, 10000)
-  onCleanup(() => clearInterval(timer))
   return (
     <div class={'text-center text-xs'}>
       <div class={'flex w-full flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl'}>
-        <div>
-          <p class={'text-primary text-base font-bold'}>
-            <CurrencyAnim dollars={props.data.jj_api.total.dollars} pounds={props.data.jj_api.total.pounds} />
-          </p>
-          <p class={''}>Raised in {DateTime.fromISO(props.data.jj_api.date).year}</p>
+        <div id={'parent'} class={'relative h-12'}>
+          <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center'}>
+            <p class={'text-primary relative text-base font-bold'}>
+              <Currency dollars={props.data.jj_api.total.dollars} pounds={props.data.jj_api.total.pounds} />
+            </p>
+            <p class={''}>Raised in {DateTime.fromISO(props.data.jj_api.date).year}</p>
+          </div>
+          <div id={'div2'} class={'absolute right-0 top-0 p-1'}>
+            <CurrencyToggle />
+          </div>
         </div>
         <div class={'grid grid-cols-2 gap-1 gap-y-2'}>
           <div>
             <p class={'text-primary text-xs font-bold'}>
-              <CurrencyAnim dollars={props.data.jj_api.raised.dollars} pounds={props.data.jj_api.raised.pounds} />
+              <Currency dollars={props.data.jj_api.raised.dollars} pounds={props.data.jj_api.raised.pounds} />
             </p>
             <p>Raised by the Yogscast</p>
           </div>
           <div>
             <p class={'text-primary text-xs font-bold'}>
-              <CurrencyAnim
-                dollars={props.data.jj_api.fundraisers.dollars}
-                pounds={props.data.jj_api.fundraisers.pounds}
-              />
+              <Currency dollars={props.data.jj_api.fundraisers.dollars} pounds={props.data.jj_api.fundraisers.pounds} />
             </p>
             <p>Raised by Fundraisers</p>
           </div>
@@ -61,6 +61,36 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
         </div>
       </div>
     </div>
+  )
+}
+
+const CurrencyToggle: Component = () => {
+  const { pounds, toggle } = useCurrency()
+  const dollar = () => !pounds()
+
+  return (
+    <ToggleButton.Root class={'flex flex-row text-white transition-all'} pressed={dollar()} onChange={toggle}>
+      {state => (
+        <>
+          <div
+            class={twMerge(
+              'rounded-l-2xl bg-gray-500 p-1 opacity-60 transition-all',
+              !state.pressed() && 'bg-primary-500 opacity-100',
+            )}
+          >
+            <BsCurrencyPound size={12} />
+          </div>
+          <div
+            class={twMerge(
+              'rounded-r-2xl bg-gray-500 p-1 opacity-60 transition-all',
+              state.pressed() && 'bg-primary-500 opacity-100',
+            )}
+          >
+            <BsCurrencyDollar size={12} />
+          </div>
+        </>
+      )}
+    </ToggleButton.Root>
   )
 }
 
@@ -163,5 +193,24 @@ const CurrencyAnim: Component<CurrencyAnimProps> = props => {
         </div>
       </Show>
     </Anim>
+  )
+}
+
+const Currency: Component<CurrencyAnimProps> = props => {
+  const { pounds } = useCurrency()
+  const dollar = () => !pounds()
+  return (
+    <>
+      <Show when={dollar()}>
+        <div id={'usd'}>
+          <Numeric value={props.dollars} numberStyle="currency" currency={'USD'} />
+        </div>
+      </Show>
+      <Show when={!dollar()}>
+        <div id={'gbp'}>
+          <Numeric value={props.pounds} numberStyle="currency" currency={'GBP'} />
+        </div>
+      </Show>
+    </>
   )
 }

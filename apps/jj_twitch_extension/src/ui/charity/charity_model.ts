@@ -9,6 +9,7 @@ export interface CharityData {
   img: string
   total: Currency
 }
+
 export interface JJAPIData {
   average: Currency
   bundles: {
@@ -30,6 +31,7 @@ export interface JJAPIData {
   raised: Currency
   total: Currency
 }
+
 export interface JJData {
   jj_api: JJAPIData
   tiltify_campaign_data: CharityData[]
@@ -37,6 +39,7 @@ export interface JJData {
 
 export interface FundraiserData {
   data: Fundraiser[]
+  date: string
 }
 
 export interface Fundraiser {
@@ -44,5 +47,8 @@ export interface Fundraiser {
   login?: string
   img: string
   desc?: string
-  amount: string
+  amount: {
+    currency: string
+    value: string
+  }
 }

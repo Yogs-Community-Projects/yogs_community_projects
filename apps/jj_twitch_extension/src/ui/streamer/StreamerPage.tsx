@@ -3,6 +3,8 @@ import { Numeric } from 'solid-i18n'
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { FundraiserData } from '../charity/charity_model'
+import { FaBrandsTwitch } from 'solid-icons/fa'
+import { DateTime } from 'luxon'
 
 const StreamerPage: Component = () => {
   const excludeChannels = () => useJJConfig().excludeChannels ?? []
@@ -15,14 +17,15 @@ const StreamerPage: Component = () => {
     return fundraiserData.data.data
       .filter(d => !excludeChannels().includes(d.login) && !excludeChannels().includes(d.display_name))
       .sort((a, b) => {
+        /*
         if (a.login && b.login) {
-          return +b.amount - +a.amount
+          return +b.amount.value - +a.amount.value
         } else if (a.login) {
           return -1
         } else if (b.login) {
           return 1
-        }
-        return +b.amount - +a.amount
+        }*/
+        return +b.amount.value - +a.amount.value
       })
   }
 
@@ -38,6 +41,9 @@ const StreamerPage: Component = () => {
       <div class={'flex h-full flex-1 flex-col gap-2'}>
         <Switch>
           <Match when={fundraiserData.data}>
+            <p class={'text-center text-base text-white'}>
+              Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
+            </p>
             <For each={fundraiser()}>
               {d => {
                 return (
@@ -45,7 +51,7 @@ const StreamerPage: Component = () => {
                     <Match when={d.login}>
                       <a
                         class={
-                          'min-h-24 hover:scale-102 bg-twitch-200 w-full rounded-2xl shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
+                          'min-h-24 hover:scale-102 w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
                         }
                         href={`https://twitch.tv/${d.login}`}
                         target={'_blank'}
@@ -56,9 +62,11 @@ const StreamerPage: Component = () => {
                             <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
                             <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
                             <p class={'text-primary text-xs font-bold'}>
-                              Raised <Numeric value={+d.amount} numberStyle="currency" currency={'GBP'} />
+                              Raised{' '}
+                              <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
                             </p>
                           </div>
+                          <FaBrandsTwitch />
                         </div>
                       </a>
                     </Match>
@@ -70,7 +78,8 @@ const StreamerPage: Component = () => {
                             <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
                             <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
                             <p class={'text-primary text-xs font-bold'}>
-                              Raised <Numeric value={+d.amount} numberStyle="currency" currency={'GBP'} />
+                              Raised{' '}
+                              <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
                             </p>
                           </div>
                         </div>
