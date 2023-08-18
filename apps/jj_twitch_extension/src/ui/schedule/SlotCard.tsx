@@ -98,10 +98,13 @@ export const SlotCard: Component<SlotCardProps> = props => {
   }
 
   const isOver = () => {
-    return SlotUtils.isOver(props.slot)
+    return SlotUtils.isOver(props.slot, useNow())
   }
 
   const countdownFormat = () => {
+    if (SlotUtils.start(slot).diff(useNow()).as('day') > 14) {
+      return SlotUtils.start(slot).diff(useNow()).toFormat("dd 'days'")
+    }
     if (SlotUtils.start(slot).diff(useNow()).as('day') < 7) {
       return SlotUtils.start(slot).diff(useNow()).toFormat('hh:mm:ss')
     }
