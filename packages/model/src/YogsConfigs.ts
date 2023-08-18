@@ -1,6 +1,8 @@
 export interface JJExtensionConfig {
   scheduleId: string
   visible: boolean
+  showCharities: boolean
+  showCommunityFundraiser: boolean
   channels: string[]
   excludeChannels?: string[]
 }
