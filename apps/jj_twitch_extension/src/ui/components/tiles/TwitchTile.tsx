@@ -22,6 +22,7 @@ export const TwitchTile: Component<TwitchTileProps> = props => {
           class={'border-twitch-300 aspect-square h-full rounded-full border-2 object-fill'}
           src={imageUrl()}
           alt={'alt'}
+          loading={'lazy'}
         />
       </div>
       <div class={'flex h-[25%] w-full flex-col items-center justify-center'}>

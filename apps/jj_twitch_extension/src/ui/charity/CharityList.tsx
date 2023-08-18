@@ -39,7 +39,7 @@ export const CharityList: Component<CharityListProps> = props => {
           return (
             <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl hover:shadow-2xl'}>
               <div class={'flex h-full w-full items-center p-1'}>
-                <img class={'h-10 w-10 rounded-lg'} alt={charity.name} src={charity.img} />
+                <img class={'h-10 w-10 rounded-lg'} alt={charity.name} src={charity.img} loading={'lazy'} />
                 <div class={'w-full pl-1'}>
                   <p class={'truncate text-ellipsis text-sm'}>{name()}</p>
                   <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{charity.desc}</p>

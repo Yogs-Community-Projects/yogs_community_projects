@@ -5,6 +5,7 @@ import { Title } from './ScheduleHeader'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { ScheduleControls } from './ScheduleControls'
 import { DateTime } from 'luxon'
+import { useNextJJStartDate } from './SchedulePage'
 
 export const ScheduleBody: Component = () => {
   const scroll =

@@ -38,6 +38,7 @@ export const CreatorTile: Component<CreatorTileProps> = props => {
           }}
           src={imageUrl}
           alt={'alt'}
+          loading={'lazy'}
           onError={e => {
             e.currentTarget.onerror = null
             e.currentTarget.src = yogs

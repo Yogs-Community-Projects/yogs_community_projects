@@ -103,7 +103,7 @@ const CharityItem: Component<{ charity: CharityData }> = props => {
           'flex h-full flex-col items-center justify-start rounded-2xl bg-white p-2 text-center font-bold shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.img} />
+        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'text-primary-500 line-clamp-2 text-xl'}>
           Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
@@ -122,7 +122,7 @@ const CharityItem2: Component<{ charity: CharityData }> = props => {
           'bg-primary-500 flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold text-white shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.img} />
+        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'line-clamp-2 text-xl'}>
           Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
@@ -141,7 +141,7 @@ const CharityItem3: Component<{ charity: CharityData }> = props => {
           'bg-accent-500 flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold text-white shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} />
+        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'line-clamp-2 text-xl'}>
           Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />

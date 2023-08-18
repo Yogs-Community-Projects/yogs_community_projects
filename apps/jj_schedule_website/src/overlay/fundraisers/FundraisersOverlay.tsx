@@ -123,7 +123,7 @@ const Child: Component<ChildProps> = props => {
   return (
     <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
-        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.img} />
+        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.img} loading={'lazy'} />
         <div class={'flex h-full w-full flex-col items-start justify-center overflow-hidden truncate pl-2'}>
           <Switch>
             <Match when={props.d.login}>

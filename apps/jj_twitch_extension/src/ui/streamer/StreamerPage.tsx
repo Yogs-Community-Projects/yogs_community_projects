@@ -3,9 +3,9 @@ import { Numeric } from 'solid-i18n'
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { FundraiserData } from '../charity/charity_model'
-import { FaBrandsTwitch } from 'solid-icons/fa'
 import { DateTime } from 'luxon'
 import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
+import { FiExternalLink } from 'solid-icons/fi'
 
 const visible = () => useJJConfig().showCommunityFundraiser
 const StreamerPage: Component = () => {
@@ -65,13 +65,13 @@ const VisibleBody: Component = () => {
                     <Match when={d.login}>
                       <a
                         class={
-                          'min-h-24 hover:scale-102 w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
+                          'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
                         }
                         href={`https://twitch.tv/${d.login}`}
                         target={'_blank'}
                       >
                         <div class={'flex h-full w-full items-center p-1'}>
-                          <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} />
+                          <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
                           <div class={'w-full pl-1'}>
                             <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
                             <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
@@ -80,14 +80,14 @@ const VisibleBody: Component = () => {
                               <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
                             </p>
                           </div>
-                          <FaBrandsTwitch />
+                          <FiExternalLink />
                         </div>
                       </a>
                     </Match>
                     <Match when={!d.login}>
                       <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all'}>
                         <div class={'flex h-full w-full items-center p-1'}>
-                          <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} />
+                          <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
                           <div class={'w-full pl-1'}>
                             <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
                             <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>

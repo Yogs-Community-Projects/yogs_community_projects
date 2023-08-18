@@ -14,7 +14,7 @@ export const YoutubeChannelCard: Component<YoutubeChannelCardProps> = props => {
       class="bg-youtube hover:scale-101 my-auto flex aspect-[8/1] w-full rounded-2xl p-2 text-white transition-all hover:brightness-105"
       href={`https://www.youtube.com/watch?v=${video.id}`}
     >
-      <img class="mx-auto h-full rounded-full" src={channel.snippet.thumbnails.default.url} alt="" />
+      <img class="mx-auto h-full rounded-full" src={channel.snippet.thumbnails.default.url} alt="" loading={'lazy'} />
       <div class=" my-auto ml-2 w-full">
         <div class=" font-medium">{channel.snippet.title}</div>
         <div class=" text-sm">{video.snippet.title}</div>

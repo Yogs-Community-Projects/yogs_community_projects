@@ -77,12 +77,13 @@ export const OverlayOverview: Component = () => {
               onclick={() => {
                 setOpen(!open())
               }}
+              loading={'lazy'}
             />
             <Dialog.Portal>
               <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
               <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
                 <Dialog.Content class={'h-full w-[90%] p-2'}>
-                  <img class={''} src={overlay1} alt={'Screenshot from OBS'} />
+                  <img class={''} src={overlay1} alt={'Screenshot from OBS'} loading={'lazy'} />
                 </Dialog.Content>
               </div>
             </Dialog.Portal>
@@ -101,12 +102,13 @@ export const OverlayOverview: Component = () => {
               onclick={() => {
                 setOpen2(!open2())
               }}
+              loading={'lazy'}
             />
             <Dialog.Portal>
               <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
               <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
                 <Dialog.Content class={'h-full w-[90%] p-2'}>
-                  <img class={''} src={overlay2} alt={'Screenshot from OBS'} />
+                  <img class={''} src={overlay2} alt={'Screenshot from OBS'} loading={'lazy'} />
                 </Dialog.Content>
               </div>
             </Dialog.Portal>
