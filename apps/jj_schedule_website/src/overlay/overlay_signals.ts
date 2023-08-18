@@ -21,11 +21,21 @@ export const minAmount = () => {
 export const useSpeed = () => {
   return parseInt(useParam('speed') ?? '2') ?? 2
 }
+export const useShowTimezone = () => {
+  return (useParam('showtimezone') ?? 'true') === 'true'
+}
+export const useTimezone = () => {
+  return useParam('timezone')
+}
 export const useTheme = () => {
   return useParam('theme') ?? 'default'
 }
 export const useHeaderTheme = () => {
   return useParam('headertheme') ?? 'default'
+}
+export const useSimpleScheduleData = () => {
+  const scheduleData = useParam('scheduledata') ?? ''
+  return window.atob(scheduleData)
 }
 export const useNext = () => {
   const v = parseInt(useParam('next')) ?? 3

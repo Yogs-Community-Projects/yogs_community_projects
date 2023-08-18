@@ -1,18 +1,28 @@
 import { createSignal, Show } from 'solid-js'
 import { DateTime } from 'luxon'
 import { copyToClipboard } from './copyToClipboard'
-import { ScheduleOverlayDateProviderProvider } from '../schedule/ScheduleOverlayDateProvider'
-import { ScheduleOverlayComponent } from '../schedule/ScheduleOverlay'
 import { useNow } from '@ycapp/common'
+import { ScheduleOverlayDateProviderProvider } from '../schedule/ScheduleOverlayDateProvider'
+import { SimpleScheduleOverlayComponent } from '../schedule_simple/SimpleScheduleOverlay'
+import { ScheduleDataStringProvider, useScheduleDataString } from '../schedule_simple/ScheduleDataStringProvider'
+import { ScheduleDataStringEditor } from './ScheduleDataStringEditor'
 
-export const ScheduleOverviewComponent = () => {
+export const SimpleScheduleOverviewComponent = () => {
+  return (
+    <ScheduleDataStringProvider>
+      <Body />
+    </ScheduleDataStringProvider>
+  )
+}
+const Body = () => {
+  const { schedule, timezone } = useScheduleDataString()
   const [theme, setTheme] = createSignal('default')
   const [headerTheme, setHeaderTheme] = createSignal('default')
   const [next, setNext] = createSignal(3)
   const [transparent, setTransparent] = createSignal(true)
   const [header, setHeader] = createSignal(['upnext'])
   const [background, setBackground] = createSignal('#BDD9ED')
-  const [timezone, setTimezone] = createSignal(true)
+  const [showTimezone, setTimezone] = createSignal(true)
   const [date, setDate] = createSignal(
     DateTime.fromObject({
       year: 2023,
@@ -55,21 +65,24 @@ export const ScheduleOverviewComponent = () => {
   const heightStr = () => `${height()}px`
 
   const url = () => {
-    let url = 'https://jinglejam.yogs.app/overlay/schedule?'
+    const base = window.origin
+    let url = `${base}/overlay/customschedule?`
     if (!transparent()) {
       url += `background=${background().substring(1)}&`
     }
     url += `header=${header().join(',')}&`
     url += `theme=${theme()}&`
     url += `headertheme=${headerTheme()}&`
-    url += `showtimezone=${timezone()}&`
-    url += `next=${next()}`
+    url += `next=${next()}&`
+    url += `timezone=${timezone()}&`
+    url += `showtimezone=${showTimezone()}&`
+    url += `scheduledata=${window.btoa(schedule())}`
     return url
   }
 
   return (
     <div class={'flex flex-row items-start justify-start'}>
-      <div class={'flex-1 text-white'}>
+      <div class={'flex-2 text-white'}>
         <table>
           <tbody>
             <tr>
@@ -94,13 +107,13 @@ export const ScheduleOverviewComponent = () => {
             </tr>
             <tr>
               <td>
-                <label for="scheduleheaderoverviewtheme">Header Theme:</label>
+                <label for="custom_scheduleheaderoverviewtheme">Header Theme:</label>
               </td>
               <td>
                 <select
                   class={'accent-accent-500 bg-transparent'}
-                  name="scheduleheaderoverviewtheme"
-                  id="scheduleheaderoverviewtheme"
+                  name="custom_scheduleheaderoverviewtheme"
+                  id="custom_scheduleheaderoverviewtheme"
                   value={headerTheme()}
                   onchange={e => {
                     setHeaderTheme(e.target.value)
@@ -114,13 +127,13 @@ export const ScheduleOverviewComponent = () => {
             </tr>
             <tr>
               <td>
-                <label for="scheduleoverviewtheme">Theme:</label>
+                <label for="custom_scheduleoverviewtheme">Theme:</label>
               </td>
               <td>
                 <select
                   class={'accent-accent-500 bg-transparent'}
-                  name="scheduleoverviewtheme"
-                  id="scheduleoverviewtheme"
+                  name="custom_scheduleoverviewtheme"
+                  id="custom_scheduleoverviewtheme"
                   value={theme()}
                   onchange={e => {
                     setTheme(e.target.value)
@@ -221,11 +234,10 @@ export const ScheduleOverviewComponent = () => {
             <label for="headerextensionCheckbox">Show JJ Extension banner</label>
           </div>
         </div>
-
         <div>
           <input
             class={'accent-accent-500'}
-            checked={timezone()}
+            checked={showTimezone()}
             onchange={() => {
               setTimezone(!timezone())
             }}
@@ -235,6 +247,7 @@ export const ScheduleOverviewComponent = () => {
           />
           <label for="timezoneCheckbox">Show Time zone</label>
         </div>
+        <ScheduleDataStringEditor />
         <button
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
@@ -300,13 +313,15 @@ export const ScheduleOverviewComponent = () => {
           }}
         >
           <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
-            <ScheduleOverlayComponent
+            <SimpleScheduleOverlayComponent
               next={next()}
               background={color()}
               header={header()}
               theme={theme()}
               headerTheme={headerTheme()}
-              showTimezone={timezone()}
+              scheduleData={schedule()}
+              showTimezone={showTimezone()}
+              timezone={timezone()}
             />
           </ScheduleOverlayDateProviderProvider>
         </div>

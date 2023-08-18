@@ -7,6 +7,7 @@ import { BiRegularChevronDown } from 'solid-icons/bi'
 import overlay1 from '../../assets/overlay/overlay1.png'
 import overlay2 from '../../assets/overlay/overlay2.png'
 import { twMerge } from 'tailwind-merge'
+import { SimpleScheduleOverviewComponent } from './SimpleScheduleOverviewComponent'
 /*
 export const OverlayOverview: Component = () => {
   return (
@@ -121,29 +122,13 @@ const Body = () => {
   const [expandedItem, setExpandedItem] = createSignal<string[]>([])
 
   const schedule = () => expandedItem().includes('schedule')
+  const customCchedule = () => expandedItem().includes('custom_schedule')
   const fundraiser = () => expandedItem().includes('fundraiser')
   const charities = () => expandedItem().includes('charities')
   const charities2 = () => expandedItem().includes('charities2')
   return (
     <div class={'accent-accent-500 hidden items-center text-base md:flex md:flex-col'}>
       <Accordion.Root collapsible={true} value={expandedItem()} onChange={setExpandedItem} class={''}>
-        <Accordion.Item value={'schedule'} class={'flex flex-col items-center transition-all'}>
-          <Accordion.Header>
-            <Accordion.Trigger
-              class={
-                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
-              }
-            >
-              <p class={'flex-1 text-left'}>Yogs JJ Schedule</p>
-              <BiRegularChevronDown
-                class={twMerge('transition-all group-hover:animate-none', schedule() && 'rotate-180 animate-none')}
-              />
-            </Accordion.Trigger>
-          </Accordion.Header>
-          <Accordion.Content class={'max-w-[90vw] p-2'}>
-            <ScheduleOverviewComponent />
-          </Accordion.Content>
-        </Accordion.Item>
         <Accordion.Item value={'fundraiser'} class={'flex flex-col items-center transition-all'}>
           <Accordion.Header>
             <Accordion.Trigger
@@ -193,6 +178,43 @@ const Body = () => {
           </Accordion.Header>
           <Accordion.Content class={'max-w-[90vw] p-2'}>
             <CharitiesOverviewComponent2 />
+          </Accordion.Content>
+        </Accordion.Item>
+        <Accordion.Item value={'custom_schedule'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Custom JJ Schedule</p>
+              <BiRegularChevronDown
+                class={twMerge(
+                  'transition-all group-hover:animate-none',
+                  customCchedule() && 'rotate-180 animate-none',
+                )}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
+            <SimpleScheduleOverviewComponent />
+          </Accordion.Content>
+        </Accordion.Item>
+        <Accordion.Item value={'schedule'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Yogs JJ Schedule</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', schedule() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
+            <ScheduleOverviewComponent />
           </Accordion.Content>
         </Accordion.Item>
       </Accordion.Root>

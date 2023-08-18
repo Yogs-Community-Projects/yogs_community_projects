@@ -5,10 +5,19 @@ import { ScheduleDataProvider, useSlots } from '../../ui/schedule/providers/Sche
 import '../overlay.css'
 import { SlotUtils } from '@ycapp/model'
 import { OverlaySlotList } from './OverlaySlotList'
-import { background, useHeader, useHeaderTheme, useNext, useOverlayNow, useTheme } from '../overlay_signals'
+import {
+  background,
+  useHeader,
+  useHeaderTheme,
+  useNext,
+  useOverlayNow,
+  useShowTimezone,
+  useTheme,
+} from '../overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
 import { DateTime } from 'luxon'
 import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvider'
+import { p } from 'vitest/dist/index-2dd51af4'
 
 export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
   return (
@@ -19,6 +28,7 @@ export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
         background={background()}
         headerTheme={useHeaderTheme()}
         theme={useTheme()}
+        showTimezone={useShowTimezone()}
       />
     </ScheduleOverlayDateProviderProvider>
   )
@@ -30,6 +40,7 @@ export const ScheduleOverlayComponent: Component<{
   header: string[]
   theme: string
   headerTheme: string
+  showTimezone: boolean
 }> = props => {
   const schedule = useScheduleDB().read('jinglejam2023')
   const slots = () =>
@@ -39,6 +50,13 @@ export const ScheduleOverlayComponent: Component<{
       })
       .slice(0, props.next)
 
+  const timezone = () => {
+    const t = DateTime.fromISO(slots()[0].start, { setZone: true }).toFormat('ZZZZ')
+    if (t === 'UTC') {
+      return 'GMT'
+    }
+    return t
+  }
   const nextGrid = () => {
     switch (props.next) {
       case 2:
@@ -73,6 +91,9 @@ export const ScheduleOverlayComponent: Component<{
               <div class={'grid h-full flex-1 ' + nextGrid()}>
                 <Show when={slots().length > 0}>
                   <OverlaySlotList slots={slots()} theme={props.theme} />
+                  <Show when={props.showTimezone}>
+                    <Timezone next={props.next} theme={props.theme} />
+                  </Show>
                 </Show>
                 <Show when={slots().length == 0}>
                   <p>No Streams found {useOverlayNow().toFormat('dd.MM.yyyy')}</p>
@@ -82,6 +103,42 @@ export const ScheduleOverlayComponent: Component<{
           </ScheduleDataProvider>
         </Match>
       </Switch>
+    </div>
+  )
+}
+
+const Timezone: Component<{
+  theme: string
+  next: number
+}> = props => {
+  const slots = () =>
+    useSlots()
+      .filter(slot => {
+        return SlotUtils.isLive(slot, useOverlayNow()) || SlotUtils.isBefore(slot, useOverlayNow())
+      })
+      .slice(0, props.next)
+
+  const timezone = () => {
+    const t = DateTime.fromISO(slots()[0].start, { setZone: true }).toFormat('ZZZZ')
+    if (t === 'UTC') {
+      return 'GMT'
+    }
+    return t
+  }
+  const countdownBackground = () => {
+    if (props.theme === 'blue' || props.theme === 'blue_img') {
+      return 'bg-accent'
+    }
+    return 'bg-primary'
+  }
+
+  return (
+    <div class={'w-full p-2'}>
+      <div
+        class={`${countdownBackground()} flex h-6 w-full flex-col items-center justify-between rounded-2xl text-center`}
+      >
+        <p class={'text-center text-sm text-white'}>TIMES IN {timezone()}</p>
+      </div>
     </div>
   )
 }

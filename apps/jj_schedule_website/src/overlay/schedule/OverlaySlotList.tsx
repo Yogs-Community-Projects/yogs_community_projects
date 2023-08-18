@@ -20,13 +20,18 @@ interface SlotListProps {
 
 export const OverlaySlotList: Component<SlotListProps> = props => {
   if (useStyle() == '1') {
-    return <For each={props.slots}>{slot => <OverlayScheduleSlot slot={slot} theme={props.theme} />}</For>
+    return (
+      <For each={props.slots}>{(slot, i) => <OverlayScheduleSlot slot={slot} index={i()} theme={props.theme} />}</For>
+    )
   }
-  return <For each={props.slots}>{slot => <OverlayScheduleSlotV2 slot={slot} theme={props.theme} />}</For>
+  return (
+    <For each={props.slots}>{(slot, i) => <OverlayScheduleSlotV2 slot={slot} index={i()} theme={props.theme} />}</For>
+  )
 }
 
 interface MobileScheduleSlotProps {
   slot: Slot
+  index: number
   theme: string
 }
 
@@ -95,6 +100,34 @@ const OverlayScheduleSlotV2: Component<MobileScheduleSlotProps> = props => {
 const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const slot = props.slot
 
+  const redColors = [
+    'bg-gradient-to-b from-primary-200 to-primary-300 text-white',
+    'bg-gradient-to-b from-primary-300 to-primary-400 text-white',
+    'bg-gradient-to-b from-primary-400 to-primary-500 text-white',
+    'bg-gradient-to-b from-primary-500 to-primary-600 text-white',
+    'bg-gradient-to-b from-primary-600 to-primary-700 text-white',
+  ]
+  const redColorsTransparent = [
+    'bg-gradient-to-b from-primary-200/70 to-primary-300/70 text-white',
+    'bg-gradient-to-b from-primary-300/70 to-primary-400/70 text-white',
+    'bg-gradient-to-b from-primary-400/70 to-primary-500/70 text-white',
+    'bg-gradient-to-b from-primary-500/70 to-primary-600/70 text-white',
+    'bg-gradient-to-b from-primary-600/70 to-primary-700/70 text-white',
+  ]
+  const blueColors = [
+    'bg-gradient-to-b from-accent-200 to-accent-300 text-white',
+    'bg-gradient-to-b from-accent-300 to-accent-400 text-white',
+    'bg-gradient-to-b from-accent-400 to-accent-500 text-white',
+    'bg-gradient-to-b from-accent-500 to-accent-600 text-white',
+    'bg-gradient-to-b from-accent-600 to-accent-700 text-white',
+  ]
+  const blueColorsTransparent = [
+    'bg-gradient-to-b from-accent-200/70 to-accent-300/70 text-white',
+    'bg-gradient-to-b from-accent-300/70 to-accent-400/70 text-white',
+    'bg-gradient-to-b from-accent-400/70 to-accent-500/70 text-white',
+    'bg-gradient-to-b from-accent-500/70 to-accent-600/70 text-white',
+    'bg-gradient-to-b from-accent-600/70 to-accent-700/70 text-white',
+  ]
   const start = () => DateTime.fromISO(slot.start, { setZone: true })
 
   function textColor(background: string) {
@@ -159,7 +192,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
     if (SlotUtils.start(slot).diff(useOverlayNow()).as('day') < 7) {
       return SlotUtils.start(slot).diff(useOverlayNow()).toFormat('hh:mm:ss')
     }
-    return SlotUtils.start(slot).diff(useOverlayNow()).toFormat("dd 'days'")
+    return SlotUtils.start(slot).diff(useOverlayNow()).toFormat("d 'days'")
   }
 
   const showDate = () => {
@@ -212,27 +245,31 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
     if (props.theme !== 'red' && props.theme !== 'pink') {
       return ''
     }
+    return redColors[props.index]
+    /*
     if (start().hour >= 11 && start().hour < 14) {
-      return 'bg-gradient-to-b from-primary-200 to-primary-300 text-white'
+      return redColors[0]
     }
     if (start().hour >= 14 && start().hour < 17) {
-      return 'bg-gradient-to-b from-primary-300 to-primary-400 text-white'
+      return redColors[1]
     }
     if (start().hour >= 17 && start().hour < 20) {
-      return 'bg-gradient-to-b from-primary-400 to-primary-500 text-white'
+      return redColors[2]
     }
     if (start().hour >= 20 && start().hour < 23) {
-      return 'bg-gradient-to-b from-primary-500 to-primary-600 text-white'
+      return redColors[3]
     }
     if (start().hour >= 23 || start().hour < 11) {
-      return 'bg-gradient-to-b from-primary-600 to-primary-700 text-white'
+      return redColors[4]
     }
-    return ''
+    return ''*/
   }
   const redImg = () => {
     if (props.theme !== 'red_img' && props.theme !== 'pink_img') {
       return ''
     }
+    return redColorsTransparent[props.index]
+    /*
     if (start().hour >= 11 && start().hour < 14) {
       return 'bg-gradient-to-b from-primary-200/70 to-primary-300/70 text-white'
     }
@@ -248,12 +285,14 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
     if (start().hour >= 23 || start().hour < 11) {
       return 'bg-gradient-to-b from-primary-600/70 to-primary-700/70 text-white'
     }
-    return ''
+    return ''*/
   }
   const blue = () => {
     if (props.theme !== 'blue') {
       return ''
     }
+    return blueColors[props.index]
+    /*
     if (start().hour >= 11 && start().hour < 14) {
       return 'bg-gradient-to-b from-accent-200 to-accent-300 text-white'
     }
@@ -270,11 +309,14 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
       return 'bg-gradient-to-b from-accent-600 to-accent-700 text-white'
     }
     return ''
+      */
   }
   const blueImg = () => {
     if (props.theme !== 'blue_img') {
       return ''
     }
+    return blueColorsTransparent[props.index]
+    /*
     if (start().hour >= 11 && start().hour < 14) {
       return 'bg-gradient-to-b from-accent-200/70 to-accent-300/70 text-white'
     }
@@ -291,6 +333,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
       return 'bg-gradient-to-b from-accent-600/70 to-accent-700/70 text-white'
     }
     return ''
+    */
   }
 
   const countdownBackground = () => {
@@ -298,6 +341,17 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
       return 'bg-accent'
     }
     return 'bg-primary'
+  }
+
+  const timeString = () => {
+    if (showDate()) {
+      return DateTime.fromISO(props.slot.start, {
+        setZone: true,
+      }).toFormat('EEE, MMM d')
+    }
+    return DateTime.fromISO(props.slot.start, {
+      setZone: true,
+    }).toFormat('EEE, h:mm a')
   }
 
   return (
@@ -322,20 +376,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
               </Show>
               <Show when={!SlotUtils.isLive(slot, useOverlayNow())}>
                 <>
-                  <p class={'text-lg'}>
-                    {SlotUtils.start(slot).toLocaleString(
-                      {
-                        weekday: 'short',
-                        hour: 'numeric',
-                        minute: 'numeric',
-                        hour12: true,
-                        timeZone: 'GMT',
-                      },
-                      {
-                        locale: 'en-EN',
-                      },
-                    )}
-                  </p>
+                  <p class={'text-lg'}>{timeString()}</p>
                   <p class={'font-mono text-lg'}>{countdown()}</p>
                 </>
               </Show>
@@ -352,19 +393,7 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
                 <p class={'line-clamp-2 text-2xl font-bold'}>{props.slot.title}</p>
                 <p class={'text-1xl line-clamp-2'}>{props.slot.subtitle}</p>
                 <Show when={showDate()}>
-                  <p class={'text-lg'}>
-                    {SlotUtils.start(slot).toLocaleString(
-                      {
-                        weekday: 'short',
-                        day: 'numeric',
-                        month: 'short',
-                        timeZone: 'GMT',
-                      },
-                      {
-                        locale: 'en-EN',
-                      },
-                    )}
-                  </p>
+                  <p class={'text-lg'}>{start().toFormat('h:mm a')}</p>
                 </Show>
               </div>
             </div>
