@@ -50,7 +50,7 @@ const VisibleSchedule = () => {
 const CountDown = () => {
   return (
     <div class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}>
-      <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Yogscast Jingle Jam Countdown</p>
+      <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Jingle Jam Countdown</p>
       <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('DDDD')}</p>
       <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('ttt')}</p>
       <p class={''}>{useNextJJStartDate().toFormat('DDDD')}</p>
@@ -59,6 +59,7 @@ const CountDown = () => {
         <p class={'text-2xl md:text-4xl'}>Jingle Jam {useNextJJStartDate().year} starts</p>
         <p class={'font-mono text-2xl md:text-4xl'}>{useJJStartCountdown().toFormat("dd 'Days' hh:mm:ss")}</p>
       </div>
+      <p>The Yogscast Jingle Jam Schedule Page will be live soon.</p>
     </div>
   )
 }
