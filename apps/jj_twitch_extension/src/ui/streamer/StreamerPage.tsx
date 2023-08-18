@@ -1,12 +1,26 @@
-import { Component, For, Match, Switch } from 'solid-js'
+import { Component, For, Match, Show, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { FundraiserData } from '../charity/charity_model'
 import { FaBrandsTwitch } from 'solid-icons/fa'
 import { DateTime } from 'luxon'
+import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
 
+const visible = () => useJJConfig().showCommunityFundraiser
 const StreamerPage: Component = () => {
+  return (
+    <>
+      <Show when={visible()}>
+        <VisibleBody />
+      </Show>
+      <Show when={!visible()}>
+        <InvisibleBody />
+      </Show>
+    </>
+  )
+}
+const VisibleBody: Component = () => {
   const excludeChannels = () => useJJConfig().excludeChannels ?? []
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<FundraiserData>
@@ -96,4 +110,20 @@ const StreamerPage: Component = () => {
   )
 }
 
+const InvisibleBody: Component = () => {
+  return (
+    <div class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}>
+      <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Jingle Jam Countdown</p>
+      <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('DDDD')}</p>
+      <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('ttt')}</p>
+      <p class={''}>{useNextJJStartDate().toFormat('DDDD')}</p>
+      <p class={''}>{useNextJJStartDate().toFormat('ttt')}</p>
+      <div class={'flex flex-col items-center p-1 text-white md:p-4'}>
+        <p class={'text-2xl md:text-4xl'}>Jingle Jam {useNextJJStartDate().year} starts</p>
+        <p class={'font-mono text-2xl md:text-4xl'}>{useJJStartCountdown().toFormat("dd 'Days' hh:mm:ss")}</p>
+      </div>
+      <p>The Community Fundraiser Page will be live soon.</p>
+    </div>
+  )
+}
 export default StreamerPage
