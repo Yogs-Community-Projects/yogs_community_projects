@@ -101,7 +101,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
                 <p class={'block font-mono text-xs group-hover:hidden md:text-sm'}>
                   {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
                 </p>
-                <p class={'group-hover:line-clamp-1 hidden text-xs group-hover:block md:text-sm'}>
+                <p class={'hidden text-xs group-hover:line-clamp-1 group-hover:block md:text-sm'}>
                   {props.slot.subtitle}
                 </p>
               </Show>
@@ -246,7 +246,7 @@ export const SlotDialog: Component<SlotDialogProps> = props => {
   // w-[80%] left-[10%] md:w-[60%] md:left-[20%] lg:w-[50%] lg:left-[25%]  lg:w-[30%] lg:left-[35%]
   const { slot, modalSignal } = props
   return (
-    <Dialog.Root isOpen={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
+    <Dialog.Root open={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
       <Dialog.Portal>
         <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
         <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
