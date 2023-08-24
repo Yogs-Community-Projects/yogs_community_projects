@@ -39,7 +39,7 @@ export const AnalyticsConsent: Component = () => {
     deniedConsent()
   }
   return (
-    <Dialog.Root isOpen={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
+    <Dialog.Root open={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
       <Dialog.Portal>
         <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
         <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
