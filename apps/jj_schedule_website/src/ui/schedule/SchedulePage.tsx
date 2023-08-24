@@ -15,7 +15,7 @@ const SchedulePage: Component = () => {
           <Loading />
         </Match>
         <Match when={schedule.data}>
-          <ScheduleComponent schedule={schedule.data!} />
+          <ScheduleComponent schedule={schedule.data} />
         </Match>
       </Switch>
     </div>
