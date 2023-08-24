@@ -199,6 +199,7 @@ module.exports = {
         ],
         'slot-title': ['calc(var(--slot-height) / 8)'],
         'slot-subtitle': ['calc(var(--slot-height) / 10)'],
+        'slot-countdown': ['calc(var(--slot-height) / 11)'],
         'day-header': ['calc(var(--data-size) / 2)'],
       },
       backgroundImage: {
