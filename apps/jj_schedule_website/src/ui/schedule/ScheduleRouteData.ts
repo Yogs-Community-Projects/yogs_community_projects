@@ -4,6 +4,10 @@ import { RemoteData, useScheduleDB } from '@ycapp/common'
 
 export type ScheduleRouteDataType = RouteDataFunc<unknown, RemoteData<ScheduleData | null>>
 
+export const schedule2023RouteDataFunc: ScheduleRouteDataType = () => {
+  return useScheduleDB().read('jinglejam2023')
+}
+
 export const schedule2022RouteDataFunc: ScheduleRouteDataType = () => {
   return useScheduleDB().read('jinglejam2022')
 }
