@@ -16,7 +16,6 @@ export const useDatetimeNow: Accessor<DateTime> = () => {
   return date()
 }
 export const useNextJJStartDate: Accessor<DateTime> = () => {
-  const now = DateTime.now()
   if (!useIsAfterJJEnd()) {
     return DateTime.fromObject(
       {
