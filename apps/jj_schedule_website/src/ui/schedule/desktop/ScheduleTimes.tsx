@@ -1,8 +1,9 @@
 import { Component, For } from 'solid-js'
 
-import { useTimes } from '../providers/ScheduleDataProvider'
+import { useMaxDayCount, useTimes } from '../providers/ScheduleDataProvider'
 import { Time } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
+import { useNextJJStartDate } from '../../../store/jj_dates_signals'
 
 export const ScheduleTimes: Component = () => {
   return (
@@ -41,18 +42,16 @@ const ScheduleTime: Component<ScheduleTimeProps> = props => {
   )
 }
 
-interface TimezoneProps {}
-
-const Timezone: Component<TimezoneProps> = props => {
-  const dateTime = DateTime.local()
+const Timezone: Component = () => {
   return (
     <div class={'w-data h-data p-schedule text-[1.1vw]'}>
       <div class={'schedule-card-white grid place-items-center'}>
         <p>
           {
             // DateTime.now().toFormat('ZZZZ')
-            dateTime.offsetNameShort
+            useNextJJStartDate().toLocal().offsetNameShort
           }
+          {useMaxDayCount()}
         </p>
       </div>
     </div>
