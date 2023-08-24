@@ -257,6 +257,16 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
   createEffect(() => {
     setRelatedTwitchChannel(useTwitchDB().readSome(ids()))
   })
+  const showCountdown = () => {
+    return SlotUtils.isBefore(slot, useNow())
+  }
+  const countdown = () => {
+    const diff = DateTime.fromISO(slot.start).diff(useNow())
+    if (diff.as('day') < 7) {
+      return DateTime.fromISO(slot.start).diff(useNow()).toFormat('hh:mm:ss')
+    }
+    return DateTime.fromISO(slot.start).diff(useNow()).toFormat("dd 'Days', hh:mm:ss")
+  }
 
   return (
     <div class={`flex h-full w-full flex-col rounded-3xl bg-white`}>
@@ -276,6 +286,9 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
       </div>
       <div class={'flex w-full flex-1 flex-col overflow-auto p-4 text-xs'}>
         <p class={'text-lg'}>{slot.subtitle}</p>
+        <Show when={showCountdown()}>
+          <p class={'text-lg'}>{countdown()}</p>
+        </Show>
         <p class={'text-lg'}>
           {SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}{' '}
           {SlotUtils.nextStream(slot).toLocaleString({
