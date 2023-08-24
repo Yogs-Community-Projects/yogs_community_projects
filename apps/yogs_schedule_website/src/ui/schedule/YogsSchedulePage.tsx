@@ -29,7 +29,6 @@ const YogsSchedulePage: Component = () => {
   })
   return (
     <div class={'flex flex-col items-center'}>
-      <TinyTeams />
       <Title>Yogscast Stream Schedules</Title>
       <ScheduleNewsTop />
       <Switch>
