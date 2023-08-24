@@ -45,6 +45,7 @@ export interface FundraiserData {
 export interface Fundraiser {
   display_name: string
   login?: string
+  isLive?: boolean
   img: string
   desc?: string
   amount: {

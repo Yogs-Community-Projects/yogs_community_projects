@@ -1,8 +1,8 @@
-import { Component, For, Match, Show, Switch } from 'solid-js'
+import { Component, createEffect, createSignal, For, Match, onMount, Show, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
-import { FundraiserData } from '../charity/charity_model'
+import { Fundraiser, FundraiserData } from '../charity/charity_model'
 import { DateTime } from 'luxon'
 import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
 import { FiExternalLink } from 'solid-icons/fi'
@@ -21,12 +21,11 @@ const StreamerPage: Component = () => {
   )
 }
 const VisibleBody: Component = () => {
-  const excludeChannels = () => useJJConfig().excludeChannels ?? []
+  const excludeChannels = () => useJJConfig()?.excludeChannels ?? []
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<FundraiserData>
   const d = doc<FundraiserData>(coll, 'Fundraiser2023')
   const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
-
   const fundraiser = () => {
     return fundraiserData.data.data
       .filter(d => !excludeChannels().includes(d.login) && !excludeChannels().includes(d.display_name))
@@ -58,55 +57,107 @@ const VisibleBody: Component = () => {
             <p class={'text-center text-base text-white'}>
               Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
             </p>
-            <For each={fundraiser()}>
-              {d => {
-                return (
-                  <Switch>
-                    <Match when={d.login}>
-                      <a
-                        class={
-                          'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
-                        }
-                        href={`https://twitch.tv/${d.login}`}
-                        target={'_blank'}
-                      >
-                        <div class={'flex h-full w-full items-center p-1'}>
-                          <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
-                          <div class={'w-full pl-1'}>
-                            <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
-                            <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
-                            <p class={'text-primary text-xs font-bold'}>
-                              Raised{' '}
-                              <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
-                            </p>
-                          </div>
-                          <FiExternalLink />
-                        </div>
-                      </a>
-                    </Match>
-                    <Match when={!d.login}>
-                      <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all'}>
-                        <div class={'flex h-full w-full items-center p-1'}>
-                          <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
-                          <div class={'w-full pl-1'}>
-                            <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
-                            <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
-                            <p class={'text-primary text-xs font-bold'}>
-                              Raised{' '}
-                              <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </Match>
-                  </Switch>
-                )
-              }}
-            </For>
+            <RandomFundraiserButton fundraisers={fundraiser()} />
+            <FundraiserBody fundraisers={fundraiser()} />
           </Match>
         </Switch>
       </div>
     </div>
+  )
+}
+
+const FundraiserBody: Component<{ fundraisers: Fundraiser[] }> = props => {
+  const fundraiser = () => props.fundraisers
+  return (
+    <For each={fundraiser()}>
+      {d => {
+        return (
+          <Switch>
+            <Match when={d.login}>
+              <a
+                class={
+                  'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
+                }
+                href={`https://twitch.tv/${d.login}`}
+                target={'_blank'}
+              >
+                <div class={'flex h-full w-full items-center p-1'}>
+                  <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
+                  <div class={'w-full pl-1'}>
+                    <div class={'flex flex-row items-center gap-2'}>
+                      <Show when={d.isLive}>
+                        <p class={'text-xxs animate-pulse rounded bg-red-500 p-0.5 text-white'}>LIVE</p>
+                      </Show>
+                      <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
+                    </div>
+                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
+                    <p class={'text-primary text-xs font-bold'}>
+                      Raised <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
+                    </p>
+                  </div>
+                  <FiExternalLink />
+                </div>
+              </a>
+            </Match>
+            <Match when={!d.login}>
+              <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all'}>
+                <div class={'flex h-full w-full items-center p-1'}>
+                  <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
+                  <div class={'w-full pl-1'}>
+                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
+                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
+                    <p class={'text-primary text-xs font-bold'}>
+                      Raised <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Match>
+          </Switch>
+        )
+      }}
+    </For>
+  )
+}
+
+const RandomFundraiserButton: Component<{ fundraisers: Fundraiser[] }> = props => {
+  const fundraisers = () => props.fundraisers.filter(f => f.login && f.isLive)
+
+  const show = () => fundraisers().length > 0
+  const randomFundraiser = () => {
+    const f = fundraisers()
+    const rand = Math.floor(Math.random() * f.length)
+    return f[rand]
+  }
+
+  const [fundraiser, setFundraiser] = createSignal<Fundraiser>(randomFundraiser())
+
+  const updateSelectedFundraiser = () => setFundraiser(randomFundraiser())
+
+  onMount(() => {
+    updateSelectedFundraiser()
+  })
+
+  createEffect(() => {
+    updateSelectedFundraiser()
+  })
+
+  const url = () => `https://twitch.tv/${fundraiser().login}`
+
+  return (
+    <Show when={show()}>
+      <a
+        href={url()}
+        target={'_blank'}
+        class={
+          'bg-accent-500 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105'
+        }
+        onMouseEnter={updateSelectedFundraiser}
+      >
+        Open Random Fundraiser Stream
+        <FiExternalLink />
+      </a>
+    </Show>
   )
 }
 
