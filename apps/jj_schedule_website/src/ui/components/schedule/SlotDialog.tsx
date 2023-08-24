@@ -4,7 +4,7 @@ import { Component, For, Match, Show, Switch } from 'solid-js'
 import { CgClose } from 'solid-icons/cg'
 import { DateTime } from 'luxon'
 import SolidMarkdown from 'solid-markdown'
-import { getTailwindTextColor, ModalSignal, useCreatorDB, useTwitchDB, useYoutubeDB } from '@ycapp/common'
+import { getTailwindTextColor, ModalSignal, useCreatorDB, useNow, useTwitchDB, useYoutubeDB } from '@ycapp/common'
 import { Dialog } from '@kobalte/core'
 import { A } from '@solidjs/router'
 import { CreatorTile } from '../tiles/CreatorTile'
@@ -55,6 +55,16 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
   function _parseColor(c: string): string {
     return '#' + c.substring(2) //  + c.substring(0, 2)
   }
+  const showCountdown = () => {
+    return SlotUtils.isBefore(slot, useNow())
+  }
+  const countdown = () => {
+    const diff = DateTime.fromISO(slot.start).diff(useNow())
+    if (diff.as('day') < 7) {
+      return DateTime.fromISO(slot.start).diff(useNow()).toFormat('hh:mm:ss')
+    }
+    return DateTime.fromISO(slot.start).diff(useNow()).toFormat("dd 'Days', hh:mm:ss")
+  }
 
   return (
     <div class={`flex h-full w-full flex-col rounded-3xl bg-white`}>
@@ -74,6 +84,9 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
       </div>
       <div class={'flex w-full flex-1 flex-col overflow-auto p-4'}>
         <p class={'text-xl'}>{slot.subtitle}</p>
+        <Show when={showCountdown()}>
+          <p class={'text-xl'}>{countdown()}</p>
+        </Show>
         <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</p>
         <p class={'text-xl'}>{SlotUtils.nextStream(slot).toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}</p>
         <SolidMarkdown children={slot.markdownDesc} />
