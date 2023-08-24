@@ -5,9 +5,11 @@ import { Accessor } from 'solid-js'
 
 export type CreatorsRouteDataType = RouteDataFunc<unknown, Accessor<RemoteData<CreatorData[]>>>
 
+/*
 export const creatorsRouteDataFunction: CreatorsRouteDataType = () => {
   return useCreatorDB().readAll()
 }
+*/
 
 export const useCreatorsRouteData = (): Accessor<RemoteData<CreatorData[]>> => {
   return useRouteData<CreatorsRouteDataType>()
