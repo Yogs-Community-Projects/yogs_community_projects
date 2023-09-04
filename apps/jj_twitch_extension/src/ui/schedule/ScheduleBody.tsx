@@ -5,18 +5,27 @@ import { Title } from './ScheduleHeader'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { ScheduleControls } from './ScheduleControls'
 import { DateTime } from 'luxon'
-import { useNextJJStartDate } from './SchedulePage'
+import { twMerge } from 'tailwind-merge'
+import { useTwitchConfig } from '../config/TwitchConfigProvider'
 
 export const ScheduleBody: Component = () => {
   const scroll =
     'flex-1 overflow-auto scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 pt-0'
   const schedule = useScheduleData()
+  const { config } = useTwitchConfig()
   return (
     <div class="flex h-full flex-1 flex-col">
       <div class={'h-30'}>
         <Title />
       </div>
-      <div class={scroll}>
+      <div
+        class={twMerge(
+          scroll,
+          config.theme === 'blue'
+            ? 'scrollbar-corner-accent-100 scrollbar-thumb-primary-500 scrollbar-track-primary-100'
+            : '',
+        )}
+      >
         <ScheduleSlots />
       </div>
       <div class={'p-schedule flex h-14 flex-col justify-center p-1'}>

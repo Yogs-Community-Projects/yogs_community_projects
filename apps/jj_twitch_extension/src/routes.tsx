@@ -1,26 +1,32 @@
 import { RouteDefinition } from '@solidjs/router'
-import { lazy } from 'solid-js'
+import { JJTab1, JJTab2, JJTab3 } from './ui/components/JJTab'
+import { ConfigBody } from './ui/config/ConfigBody'
 
 export const routes: RouteDefinition[] = [
   {
-    path: '/',
+    path: '/1',
     // component: lazy(() => import('./ui/schedule/SchedulePage')),
-    component: lazy(() => import('./ui/schedule/SchedulePage')),
+    component: JJTab1,
   },
   {
     path: '',
-    component: lazy(() => import('./ui/schedule/SchedulePage')),
+    component: JJTab1,
   },
   {
     path: '*',
-    component: lazy(() => import('./ui/schedule/SchedulePage')),
+    component: JJTab1,
   },
   {
-    path: '/charities',
-    component: lazy(() => import('./ui/charity/CharityPage')),
+    path: '/2',
+    component: JJTab2,
   },
   {
-    path: '/community',
-    component: lazy(() => import('./ui/streamer/StreamerPage')),
+    path: '/3',
+    component: JJTab3,
   },
+  /*
+  {
+    path: '/config',
+    component: ConfigBody,
+  },*/
 ]

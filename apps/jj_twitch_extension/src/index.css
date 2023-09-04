@@ -21,7 +21,6 @@
 }
 
 html {
-  background: linear-gradient(#f15683, #e21350);
   overflow-scrolling: touch;
 }
 
@@ -40,6 +39,7 @@ html {
   animation: ripple 600ms linear;
   background-color: rgba(255, 255, 255, 0.7);
 }
+
 @keyframes ripple {
   to {
     transform: scale(4);

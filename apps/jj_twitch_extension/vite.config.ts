@@ -15,6 +15,7 @@ export default defineConfig(config => {
         input: {
           main: resolve(__dirname, 'index.html'),
           mobile: resolve(__dirname, 'mobile.html'),
+          config: resolve(__dirname, 'config.html'),
         },
       },
     },

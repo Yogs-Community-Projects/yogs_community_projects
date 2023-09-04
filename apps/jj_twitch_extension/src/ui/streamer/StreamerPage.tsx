@@ -6,6 +6,8 @@ import { Fundraiser, FundraiserData } from '../charity/charity_model'
 import { DateTime } from 'luxon'
 import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
 import { FiExternalLink } from 'solid-icons/fi'
+import { twMerge } from 'tailwind-merge'
+import { useTwitchConfig } from '../config/TwitchConfigProvider'
 
 const visible = () => useJJConfig().showCommunityFundraiser
 const StreamerPage: Component = () => {
@@ -22,6 +24,7 @@ const StreamerPage: Component = () => {
 }
 const VisibleBody: Component = () => {
   const excludeChannels = () => useJJConfig()?.excludeChannels ?? []
+  const { config } = useTwitchConfig()
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<FundraiserData>
   const d = doc<FundraiserData>(coll, 'Fundraiser2023')
@@ -44,9 +47,12 @@ const VisibleBody: Component = () => {
 
   return (
     <div
-      class={
-        'scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 h-full overflow-y-auto overflow-x-hidden p-1.5 pt-0'
-      }
+      class={twMerge(
+        'scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 h-full overflow-y-auto overflow-x-hidden p-1.5 pt-0',
+        config.theme === 'blue'
+          ? 'scrollbar-corner-accent-100 scrollbar-thumb-primary-500 scrollbar-track-primary-100'
+          : '',
+      )}
     >
       <div class={'h-30 flex flex-row p-0 pb-2 text-center text-xl text-white'}>
         <h3 class={'flex-1'}>Community Fundraiser</h3>
