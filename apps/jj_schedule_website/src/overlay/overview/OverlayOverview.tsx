@@ -152,7 +152,7 @@ const Body = () => {
           <Accordion.Header>
             <Accordion.Trigger
               class={
-                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow transition-all'
               }
             >
               <p class={'flex-1 text-left'}>Charities</p>
@@ -169,7 +169,7 @@ const Body = () => {
           <Accordion.Header>
             <Accordion.Trigger
               class={
-                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow transition-all'
               }
             >
               <p class={'flex-1 text-left'}>Charities 2</p>
@@ -186,7 +186,7 @@ const Body = () => {
           <Accordion.Header>
             <Accordion.Trigger
               class={
-                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow transition-all'
               }
             >
               <p class={'flex-1 text-left'}>Custom JJ Schedule</p>
@@ -206,7 +206,7 @@ const Body = () => {
           <Accordion.Header>
             <Accordion.Trigger
               class={
-                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow transition-all'
               }
             >
               <p class={'flex-1 text-left'}>Yogs JJ Schedule</p>

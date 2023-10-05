@@ -82,6 +82,8 @@ export const CharitiesOverviewComponent = () => {
 }
 
 export const CharitiesOverviewComponent2 = () => {
+  const [theme, setTheme] = createSignal('default')
+  const [headerTheme, setHeaderTheme] = createSignal('default')
   const [header, setHeader] = createSignal(['title'])
   const title = () => header().includes('title')
 
@@ -107,7 +109,9 @@ export const CharitiesOverviewComponent2 = () => {
   const heightStr = () => `${height()}px`
   const url = () => {
     let url = 'https://jinglejam.yogs.app/overlay/charities2?'
-    url += `header=${header().join(',')}`
+    url += `header=${header().join(',')}&`
+    url += `headerTheme=${headerTheme()}&`
+    url += `theme=${theme()}`
     return url
   }
   return (
@@ -154,6 +158,51 @@ export const CharitiesOverviewComponent2 = () => {
           />
           <label for="headercharity2jjlinkCheckbox">Show JJ Link</label>
         </div>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label for="charity2headeroverviewtheme">Header Theme:</label>
+              </td>
+              <td>
+                <select
+                  class={'accent-accent-500 bg-transparent'}
+                  name="charity2headeroverviewtheme"
+                  id="charity2headeroverviewtheme"
+                  value={headerTheme()}
+                  onchange={e => {
+                    setHeaderTheme(e.target.value)
+                  }}
+                >
+                  <option value={'default'}>Default</option>
+                  <option value={'red'}>Red</option>
+                  <option value={'blue'}>Blue</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="charity2overviewtheme">Theme:</label>
+              </td>
+              <td>
+                <select
+                  class={'accent-accent-500 bg-transparent'}
+                  name="charity2overviewtheme"
+                  id="charity2overviewtheme"
+                  value={theme()}
+                  onchange={e => {
+                    setTheme(e.target.value)
+                  }}
+                >
+                  <option value={'default'}>Default</option>
+                  <option value={'red'}>Red</option>
+                  <option value={'blue'}>Blue</option>
+                  <option value={'carousel'}>Carousel</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <button
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
@@ -170,7 +219,7 @@ export const CharitiesOverviewComponent2 = () => {
           height: heightStr(),
         }}
       >
-        <CharityOverlayComponent2 header={header()} />
+        <CharityOverlayComponent2 header={header()} theme={theme()} headerTheme={headerTheme()} />
       </div>
     </div>
   )

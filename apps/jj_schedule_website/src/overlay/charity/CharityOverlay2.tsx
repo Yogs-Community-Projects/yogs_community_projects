@@ -5,31 +5,34 @@ import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
 import { Transition } from 'solid-transition-group'
 import { Numeric } from 'solid-i18n'
-import { useHeader } from '../overlay_signals'
+import { useHeader, useHeaderTheme, useTheme } from '../overlay_signals'
+import { twMerge } from 'tailwind-merge'
 
 export const CharityOverlay2: Component<{ speed?: number }> = () => {
   return (
     <div class={'h-screen w-full'}>
-      <CharityOverlayComponent2 header={useHeader()} />
+      <CharityOverlayComponent2 header={useHeader()} theme={useTheme()} headerTheme={useHeaderTheme()} />
     </div>
   )
 }
 export const CharityOverlayComponent2: Component<{
   header: string[]
+  theme: string
+  headerTheme: string
 }> = props => {
   return (
     <div class={'flex h-full w-full flex-col'}>
       <div class={''}>
-        <OverlayHeader header={props.header} />
+        <OverlayHeader header={props.header} headerTheme={props.headerTheme} />
       </div>
       <div class={'flex-1'}>
-        <Body />
+        <Body theme={props.theme} />
       </div>
     </div>
   )
 }
 
-const Body = () => {
+const Body: Component<{ theme: string }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
@@ -46,13 +49,16 @@ const Body = () => {
   onCleanup(() => clearInterval(timer))
   const items = () => {
     return charityData.data.tiltify_campaign_data.map((c, i) => {
-      if (i % 3 == 0) {
-        return <CharityItem charity={c} />
+      if (props.theme === 'carousel') {
+        if (i % 3 == 0) {
+          return <CharityItemWhite charity={c} />
+        }
+        if (i % 3 == 1) {
+          return <CharityItemRed charity={c} />
+        }
+        return <CharityItemBlue charity={c} />
       }
-      if (i % 3 == 1) {
-        return <CharityItem2 charity={c} />
-      }
-      return <CharityItem3 charity={c} />
+      return <CharityItem charity={c} theme={props.theme} />
     })
   }
 
@@ -95,7 +101,7 @@ const Body = () => {
   )
 }
 
-const CharityItem: Component<{ charity: CharityData }> = props => {
+const CharityItemWhite: Component<{ charity: CharityData }> = props => {
   return (
     <div class={'h-full p-2'}>
       <div
@@ -103,7 +109,7 @@ const CharityItem: Component<{ charity: CharityData }> = props => {
           'flex h-full flex-col items-center justify-start rounded-2xl bg-white p-2 text-center font-bold shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
+        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'text-primary-500 line-clamp-2 text-xl'}>
           Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
@@ -114,7 +120,7 @@ const CharityItem: Component<{ charity: CharityData }> = props => {
   )
 }
 
-const CharityItem2: Component<{ charity: CharityData }> = props => {
+const CharityItemRed: Component<{ charity: CharityData }> = props => {
   return (
     <div class={'h-full p-2'}>
       <div
@@ -133,7 +139,7 @@ const CharityItem2: Component<{ charity: CharityData }> = props => {
   )
 }
 
-const CharityItem3: Component<{ charity: CharityData }> = props => {
+const CharityItemBlue: Component<{ charity: CharityData }> = props => {
   return (
     <div class={'h-full p-2'}>
       <div
@@ -151,8 +157,54 @@ const CharityItem3: Component<{ charity: CharityData }> = props => {
     </div>
   )
 }
+const CharityItem: Component<{ charity: CharityData; theme: string }> = props => {
+  const background = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'bg-primary-500'
+      case 'blue':
+        return 'bg-accent-500'
+    }
+    return 'bg-white'
+  }
+  const textColor = () => {
+    switch (props.theme) {
+      case 'red':
+      case 'blue':
+        return 'text-white'
+    }
+    return 'text-black'
+  }
+  const raisedColor = () => {
+    switch (props.theme) {
+      case 'red':
+      case 'blue':
+        return 'text-white'
+    }
+    return 'text-primary-500'
+  }
 
-const OverlayHeader: Component<{ header: string[] }> = props => {
+  return (
+    <div class={'h-full p-2'}>
+      <div
+        class={twMerge(
+          'flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold shadow-xl transition-all',
+          background(),
+          textColor(),
+        )}
+      >
+        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
+        <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
+        <p class={twMerge('line-clamp-2 text-xl', raisedColor())}>
+          Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
+        </p>
+        <p class={'line-clamp-3'}>{props.charity.desc}</p>
+      </div>
+    </div>
+  )
+}
+
+const OverlayHeader: Component<{ header: string[]; headerTheme: string }> = props => {
   const headerLength = () => props.header.length
   const headerLength2 = props.header.length
   const headerItemNames = () => props.header.map(h => h.toLowerCase())
