@@ -1,13 +1,13 @@
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { Component, Match, Show, Switch } from 'solid-js'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
-import { JJData } from './charity_model'
 import { CharityList } from './CharityList'
 import { CharityOverview } from './CharityOverview'
 import { CurrencyProvider } from '../CurrencyProvider'
 import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
 import { useTwitchConfig } from '../config/TwitchConfigProvider'
 import { twMerge } from 'tailwind-merge'
+import { JJData } from '@ycapp/model'
 
 const visible = () => useJJConfig().showCharities
 const CharityPage: Component = () => {
@@ -43,7 +43,7 @@ const VisibleBody: Component = () => {
           <Match when={charityData.data} keyed={true}>
             <CharityOverview data={charityData.data} />
             <div class={'h-3'} />
-            <CharityList charityData={charityData.data.tiltify_campaign_data} />
+            <CharityList charityData={charityData.data.causes} />
           </Match>
         </Switch>
       </div>

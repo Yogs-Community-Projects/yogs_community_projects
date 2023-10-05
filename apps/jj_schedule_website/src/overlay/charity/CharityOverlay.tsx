@@ -2,10 +2,10 @@ import { Component, For, JSXElement, Match, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { useSpeed, useTheme } from '../overlay_signals'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
-import { JJData } from 'jj_twitch_extension/src/ui/charity/charity_model'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
 import { JJLink } from '../JJLinkCard'
+import { Cause, JJData } from '@ycapp/model'
 
 export const CharityOverlay: Component = () => {
   return <CharityOverlayComponent speed={useSpeed()} theme={useTheme()} />
@@ -19,13 +19,13 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string }
     if (!charityData.data) {
       return 3
     }
-    if (charityData.data.tiltify_campaign_data.length % 4 == 0) {
+    if (charityData.data.causes.length % 4 == 0) {
       return 4
     }
     return 3
   }
   const items = () => {
-    const lst = charityData.data.tiltify_campaign_data
+    const lst = charityData.data.causes
     const result: JSXElement[] = []
 
     for (let i = 0; i < lst.length; i++) {
@@ -80,7 +80,7 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string }
 
 interface ChildProps {
   theme: string
-  d: any
+  d: Cause
 }
 
 const Child: Component<ChildProps> = props => {
@@ -118,11 +118,16 @@ const Child: Component<ChildProps> = props => {
   return (
     <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
-        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.img} loading={'lazy'} />
+        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.logo} loading={'lazy'} />
         <div class={'flex h-full flex-1 flex-col items-start justify-center overflow-hidden truncate pl-2 '}>
           <p class={`${useNameTextColor()} font-bold`}>{props.d.name}</p>
           <p class={`${useRaisedTextColor()} font-bold`}>
-            Raised <Numeric value={+props.d.total.pounds} numberStyle="currency" currency={'GBP'} />
+            Raised{' '}
+            <Numeric
+              value={props.d.raised.fundraisers + props.d.raised.yogscast}
+              numberStyle="currency"
+              currency={'GBP'}
+            />
           </p>
         </div>
       </div>

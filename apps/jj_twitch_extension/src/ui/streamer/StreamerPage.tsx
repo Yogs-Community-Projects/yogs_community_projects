@@ -2,12 +2,12 @@ import { Component, createEffect, createSignal, For, Match, onMount, Show, Switc
 import { Numeric } from 'solid-i18n'
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
-import { Fundraiser, FundraiserData } from '../charity/charity_model'
 import { DateTime } from 'luxon'
 import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
 import { FiExternalLink } from 'solid-icons/fi'
 import { twMerge } from 'tailwind-merge'
 import { useTwitchConfig } from '../config/TwitchConfigProvider'
+import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 
 const visible = () => useJJConfig().showCommunityFundraiser
 const StreamerPage: Component = () => {
@@ -26,14 +26,15 @@ const VisibleBody: Component = () => {
   const excludeChannels = () => useJJConfig()?.excludeChannels ?? []
   const { config } = useTwitchConfig()
 
-  const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<FundraiserData>
-  const d = doc<FundraiserData>(coll, 'Fundraiser2023')
+  const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
+  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023')
   const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
   const fundraiser = () => {
-    return fundraiserData.data.data
-      .filter(d => !excludeChannels().includes(d.login) && !excludeChannels().includes(d.display_name))
-      .sort((a, b) => {
-        /*
+    return (
+      fundraiserData.data.campaigns
+        // .filter(d => !excludeChannels().includes(d.login) && !excludeChannels().includes(d.display_name))
+        .sort((a, b) => {
+          /*
         if (a.login && b.login) {
           return +b.amount.value - +a.amount.value
         } else if (a.login) {
@@ -41,8 +42,9 @@ const VisibleBody: Component = () => {
         } else if (b.login) {
           return 1
         }*/
-        return +b.amount.value - +a.amount.value
-      })
+          return b.raised - a.raised
+        })
+    )
   }
 
   return (
@@ -72,48 +74,53 @@ const VisibleBody: Component = () => {
   )
 }
 
-const FundraiserBody: Component<{ fundraisers: Fundraiser[] }> = props => {
+const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
   const fundraiser = () => props.fundraisers
   return (
     <For each={fundraiser()}>
       {d => {
         return (
           <Switch>
-            <Match when={d.login}>
+            <Match when={d.twitch_data}>
               <a
                 class={
                   'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
                 }
-                href={`https://twitch.tv/${d.login}`}
+                href={`https://twitch.tv/${d.twitch_data.login}`}
                 target={'_blank'}
               >
                 <div class={'flex h-full w-full items-center p-1'}>
-                  <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
+                  <img
+                    class={'h-10 w-10 rounded-lg'}
+                    alt={d.twitch_data.display_name}
+                    src={d.twitch_data.profile_image_url}
+                    loading={'lazy'}
+                  />
                   <div class={'w-full pl-1'}>
                     <div class={'flex flex-row items-center gap-2'}>
                       <Show when={d.isLive}>
                         <p class={'text-xxs animate-pulse rounded bg-red-500 p-0.5 text-white'}>LIVE</p>
                       </Show>
-                      <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
+                      <p class={'truncate text-ellipsis text-sm font-bold'}>{d.twitch_data.display_name}</p>
                     </div>
-                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
+                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.description}</p>
                     <p class={'text-primary text-xs font-bold'}>
-                      Raised <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
+                      Raised <Numeric value={d.raised} numberStyle="currency" currency={'GBP'} />
                     </p>
                   </div>
                   <FiExternalLink />
                 </div>
               </a>
             </Match>
-            <Match when={!d.login}>
+            <Match when={d.livestream.type !== 'twitch' || !d.livestream.channel}>
               <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all'}>
                 <div class={'flex h-full w-full items-center p-1'}>
-                  <img class={'h-10 w-10 rounded-lg'} alt={d.display_name} src={d.img} loading={'lazy'} />
+                  <img class={'h-10 w-10 rounded-lg'} alt={d.user.name} src={d.user.avatar} loading={'lazy'} />
                   <div class={'w-full pl-1'}>
-                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.display_name}</p>
-                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.desc}</p>
+                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.user.name}</p>
+                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.description}</p>
                     <p class={'text-primary text-xs font-bold'}>
-                      Raised <Numeric value={+d.amount.value} numberStyle="currency" currency={d.amount.currency} />
+                      Raised <Numeric value={d.raised} numberStyle="currency" currency={'GBP'} />
                     </p>
                   </div>
                 </div>
@@ -126,8 +133,8 @@ const FundraiserBody: Component<{ fundraisers: Fundraiser[] }> = props => {
   )
 }
 
-const RandomFundraiserButton: Component<{ fundraisers: Fundraiser[] }> = props => {
-  const fundraisers = () => props.fundraisers.filter(f => f.login && f.isLive)
+const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => {
+  const fundraisers = () => props.fundraisers.filter(f => f.livestream.channel === 'twitch' && f.isLive)
 
   const show = () => fundraisers().length > 0
   const randomFundraiser = () => {
@@ -136,7 +143,7 @@ const RandomFundraiserButton: Component<{ fundraisers: Fundraiser[] }> = props =
     return f[rand]
   }
 
-  const [fundraiser, setFundraiser] = createSignal<Fundraiser>(randomFundraiser())
+  const [fundraiser, setFundraiser] = createSignal<Campaign>(randomFundraiser())
 
   const updateSelectedFundraiser = () => setFundraiser(randomFundraiser())
 
@@ -148,7 +155,7 @@ const RandomFundraiserButton: Component<{ fundraisers: Fundraiser[] }> = props =
     updateSelectedFundraiser()
   })
 
-  const url = () => `https://twitch.tv/${fundraiser().login}`
+  const url = () => `https://twitch.tv/${fundraiser().livestream.channel}`
 
   return (
     <Show when={show()}>

@@ -1,5 +1,4 @@
-import { JJData } from './charity_model'
-import { Accessor, Component, createSignal, Match, onCleanup, onMount, ParentComponent, Show, Switch } from 'solid-js'
+import { Component, createSignal, onCleanup, onMount, ParentComponent, Show } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { DateTime } from 'luxon'
 import { NumberStyle } from 'i18n-mini/lib/types'
@@ -8,21 +7,29 @@ import { ToggleButton } from '@kobalte/core'
 import { BsCurrencyDollar, BsCurrencyPound } from 'solid-icons/bs'
 import { useCurrency } from '../CurrencyProvider'
 import { twMerge } from 'tailwind-merge'
+import { JJData } from '@ycapp/model'
 
 interface CharityOverviewProps {
   data: JJData
 }
 
 export const CharityOverview: Component<CharityOverviewProps> = props => {
+  const totalYogsPounds = () => props.data.raised.yogscast
+  const totalYogs = () => totalYogsPounds() * props.data.avgConversionRate
+  const totalFundraiserPounds = () => props.data.raised.fundraisers
+  const totalFundraiser = () => props.data.raised.fundraisers * props.data.avgConversionRate
+  const totalPounds = () => props.data.raised.yogscast + props.data.raised.fundraisers
+  const total = () => totalPounds() * props.data.avgConversionRate
+
   return (
     <div class={'text-center text-xs'}>
       <div class={'flex w-full flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl'}>
         <div id={'parent'} class={'relative h-12'}>
           <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center'}>
             <p class={'text-primary relative text-base font-bold'}>
-              <Currency dollars={props.data.jj_api.total.dollars} pounds={props.data.jj_api.total.pounds} />
+              <Currency dollars={total()} pounds={totalPounds()} />
             </p>
-            <p class={''}>Raised in {DateTime.fromISO(props.data.jj_api.date).year}</p>
+            <p class={''}>Raised in {DateTime.fromISO(props.data.date).year}</p>
           </div>
           <div id={'div2'} class={'absolute right-0 top-0 p-1'}>
             <CurrencyToggle />
@@ -31,32 +38,32 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
         <div class={'grid grid-cols-2 gap-1 gap-y-2'}>
           <div>
             <p class={'text-primary text-xs font-bold'}>
-              <Currency dollars={props.data.jj_api.raised.dollars} pounds={props.data.jj_api.raised.pounds} />
+              <Currency dollars={totalYogs()} pounds={totalYogsPounds()} />
             </p>
             <p>Raised by the Yogscast</p>
           </div>
           <div>
             <p class={'text-primary text-xs font-bold'}>
-              <Currency dollars={props.data.jj_api.fundraisers.dollars} pounds={props.data.jj_api.fundraisers.pounds} />
+              <Currency dollars={totalFundraiser()} pounds={totalFundraiserPounds()} />
             </p>
             <p>Raised by Fundraisers</p>
           </div>
           <div>
             <p class={'text-primary text-xs font-bold'}>
-              <Numeric value={props.data.jj_api.bundles.sold} numberStyle={'decimal'} />
+              <Numeric value={props.data.collections.redeemed} numberStyle={'decimal'} />
             </p>
             <p>Collections Sold</p>
           </div>
           <div>
             <p class={'text-primary text-xs font-bold'}>
-              <Numeric value={props.data.jj_api.bundles.remaining} numberStyle={'decimal'} />
+              <Numeric value={props.data.collections.total - props.data.collections.redeemed} numberStyle={'decimal'} />
             </p>
             <p>Collections Available</p>
           </div>
         </div>
         <div class={'flex flex-1 items-end justify-center'}>
           <p class={'text-center'}>
-            Last update, {DateTime.fromISO(props.data.jj_api.date).toLocaleString(DateTime.DATETIME_MED)}
+            Last update, {DateTime.fromISO(props.data.date).toLocaleString(DateTime.DATETIME_MED)}
           </p>
         </div>
       </div>

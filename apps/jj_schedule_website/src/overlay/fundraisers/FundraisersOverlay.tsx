@@ -1,10 +1,12 @@
 import { Component, For, JSXElement, Match, Switch } from 'solid-js'
-import { data } from '../../assets/fundraiser_data.json'
 import { Numeric } from 'solid-i18n'
 import { FaBrandsTwitch } from 'solid-icons/fa'
 import { excludedChannel, minAmount, useSpeed, useTheme } from '../overlay_signals'
 import '../marquee.css'
 import { JJLink } from '../JJLinkCard'
+import { collection, CollectionReference, doc } from 'firebase/firestore'
+import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
+import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 
 export const FundraisersOverlay = () => {
   return <FundraisersOverlayComponent speed={useSpeed()} theme={useTheme()} />
@@ -12,11 +14,15 @@ export const FundraisersOverlay = () => {
 
 export const FundraisersOverlayComponent: Component<{ speed: number; theme: string }> = props => {
   const e = excludedChannel()
+
+  const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
+  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023')
+  const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
   const useData = () =>
-    data
-      .filter(d => !e.includes(d.login))
-      .filter(d => !e.includes(d.display_name))
-      .filter(d => +d.amount.value >= minAmount())
+    fundraiserData.data?.campaigns
+      // .filter(d => !e.includes(d.login))
+      // .filter(d => !e.includes(d.display_name))
+      .filter(d => d.raised >= minAmount()) ?? []
 
   const desc = () => {
     if (useData().length % 4 == 0) {
@@ -75,7 +81,7 @@ export const FundraisersOverlayComponent: Component<{ speed: number; theme: stri
 
 interface ChildProps {
   theme: string
-  d: any
+  d: Campaign
 }
 
 const Child: Component<ChildProps> = props => {
@@ -123,23 +129,28 @@ const Child: Component<ChildProps> = props => {
   return (
     <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
-        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.img} loading={'lazy'} />
+        <Switch>
+          <Match when={props.d.twitch_data}>
+            <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.twitch_data.profile_image_url} loading={'lazy'} />
+          </Match>
+          <Match when={!props.d.twitch_data}>
+            <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.user.avatar} loading={'lazy'} />
+          </Match>
+        </Switch>
         <div class={'flex h-full w-full flex-col items-start justify-center overflow-hidden truncate pl-2'}>
           <Switch>
-            <Match when={props.d.login}>
+            <Match when={props.d.twitch_data}>
               <div class={`${useTwitchIconColor()} flex flex-row items-center font-bold`}>
                 <FaBrandsTwitch size={18} />
-                <span class={`${useDisplayNameTextColor()}`}>/{props.d.login}</span>
+                <span class={`${useDisplayNameTextColor()}`}>/{props.d.twitch_data.login}</span>
               </div>
             </Match>
-            <Match when={!props.d.login}>
-              <div class={`${useDisplayNameTextColor()} flex flex-row items-center font-bold`}>
-                {props.d.display_name}
-              </div>
+            <Match when={!props.d.twitch_data}>
+              <div class={`${useDisplayNameTextColor()} flex flex-row items-center font-bold`}>{props.d.name}</div>
             </Match>
           </Switch>
           <p class={`${useRaisedTextColor()} text-sm font-bold`}>
-            Raised <Numeric value={+props.d.amount.value} numberStyle="currency" currency={props.d.amount.currency} />
+            Raised <Numeric value={props.d.raised} numberStyle="currency" currency={'GBP'} />
           </p>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import { Component, createSignal, JSXElement, onCleanup, ParentComponent, Show } from 'solid-js'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
-import { CharityData, JJData } from 'jj_twitch_extension/src/ui/charity/charity_model'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
 import { Transition } from 'solid-transition-group'
 import { Numeric } from 'solid-i18n'
 import { useHeader, useHeaderTheme, useTheme } from '../overlay_signals'
 import { twMerge } from 'tailwind-merge'
+import { Cause, JJData } from '@ycapp/model'
 
 export const CharityOverlay2: Component<{ speed?: number }> = () => {
   return (
@@ -39,7 +39,7 @@ const Body: Component<{ theme: string }> = props => {
 
   const [currentCharity, setCurrentCharity] = createSignal(0)
 
-  const charities = () => charityData.data.tiltify_campaign_data
+  const charities = () => charityData.data.causes
 
   const timer = setInterval(() => {
     if (charityData.data) {
@@ -48,7 +48,7 @@ const Body: Component<{ theme: string }> = props => {
   }, 8000)
   onCleanup(() => clearInterval(timer))
   const items = () => {
-    return charityData.data.tiltify_campaign_data.map((c, i) => {
+    return charityData.data.causes.map((c, i) => {
       if (props.theme === 'carousel') {
         if (i % 3 == 0) {
           return <CharityItemWhite charity={c} />
@@ -101,7 +101,7 @@ const Body: Component<{ theme: string }> = props => {
   )
 }
 
-const CharityItemWhite: Component<{ charity: CharityData }> = props => {
+const CharityItemWhite: Component<{ charity: Cause }> = props => {
   return (
     <div class={'h-full p-2'}>
       <div
@@ -109,18 +109,23 @@ const CharityItemWhite: Component<{ charity: CharityData }> = props => {
           'flex h-full flex-col items-center justify-start rounded-2xl bg-white p-2 text-center font-bold shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
+        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'text-primary-500 line-clamp-2 text-xl'}>
-          Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
+          Raised{' '}
+          <Numeric
+            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
+            numberStyle="currency"
+            currency={'GBP'}
+          />
         </p>
-        <p class={'line-clamp-3'}>{props.charity.desc}</p>
+        <p class={'line-clamp-3'}>{props.charity.description}</p>
       </div>
     </div>
   )
 }
 
-const CharityItemRed: Component<{ charity: CharityData }> = props => {
+const CharityItemRed: Component<{ charity: Cause }> = props => {
   return (
     <div class={'h-full p-2'}>
       <div
@@ -128,18 +133,23 @@ const CharityItemRed: Component<{ charity: CharityData }> = props => {
           'bg-primary-500 flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold text-white shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
+        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'line-clamp-2 text-xl'}>
-          Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
+          Raised{' '}
+          <Numeric
+            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
+            numberStyle="currency"
+            currency={'GBP'}
+          />
         </p>
-        <p class={'line-clamp-3'}>{props.charity.desc}</p>
+        <p class={'line-clamp-3'}>{props.charity.description}</p>
       </div>
     </div>
   )
 }
 
-const CharityItemBlue: Component<{ charity: CharityData }> = props => {
+const CharityItemBlue: Component<{ charity: Cause }> = props => {
   return (
     <div class={'h-full p-2'}>
       <div
@@ -147,17 +157,22 @@ const CharityItemBlue: Component<{ charity: CharityData }> = props => {
           'bg-accent-500 flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold text-white shadow-xl transition-all'
         }
       >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
+        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={'line-clamp-2 text-xl'}>
-          Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
+          Raised{' '}
+          <Numeric
+            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
+            numberStyle="currency"
+            currency={'GBP'}
+          />
         </p>
-        <p class={'line-clamp-3'}>{props.charity.desc}</p>
+        <p class={'line-clamp-3'}>{props.charity.description}</p>
       </div>
     </div>
   )
 }
-const CharityItem: Component<{ charity: CharityData; theme: string }> = props => {
+const CharityItem: Component<{ charity: Cause; theme: string }> = props => {
   const background = () => {
     switch (props.theme) {
       case 'red':
@@ -193,12 +208,17 @@ const CharityItem: Component<{ charity: CharityData; theme: string }> = props =>
           textColor(),
         )}
       >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.img} loading={'lazy'} />
+        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
         <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
         <p class={twMerge('line-clamp-2 text-xl', raisedColor())}>
-          Raised <Numeric value={+props.charity.total.pounds} numberStyle="currency" currency={'GBP'} />
+          Raised{' '}
+          <Numeric
+            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
+            numberStyle="currency"
+            currency={'GBP'}
+          />
         </p>
-        <p class={'line-clamp-3'}>{props.charity.desc}</p>
+        <p class={'line-clamp-3'}>{props.charity.description}</p>
       </div>
     </div>
   )
