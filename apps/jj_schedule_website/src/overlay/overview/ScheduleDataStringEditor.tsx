@@ -70,8 +70,8 @@ export const ScheduleDataStringEditor: Component = () => {
       <div class={'text-xs'}>
         <p>How do I format my schedule?</p>
         <p>Each line contains one stream slot. The slots need to be formated in the following way:</p>
-        <p>STREAM TITLE;SUBTITLE;START DATE;STREAM DURATION;COLOR 1;COLOR 2</p>
-        <p>Start dates need to be formated in the follwing way: yyyy-MM-dd-HH-mm-z</p>
+        <p>STREAM TITLE;SUBTITLE;START DATE;STREAM DURATION IN MINUTES;COLOR 1;COLOR 2</p>
+        <p>Start dates need to be formated in the follwing way: yyyy-MM-dd-HH-mm</p>
         <p>yyyy: Full Year</p>
         <p>MM: Month i.e. 12</p>
         <p>dd: Day i.e. 01</p>

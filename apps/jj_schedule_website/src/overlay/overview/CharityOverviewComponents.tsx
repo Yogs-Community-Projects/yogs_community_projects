@@ -2,6 +2,7 @@ import { createSignal } from 'solid-js'
 import { copyToClipboard } from './copyToClipboard'
 import { CharityOverlayComponent } from '../charity/CharityOverlay'
 import { CharityOverlayComponent2 } from '../charity/CharityOverlay2'
+import { useSpeed } from '../overlay_signals'
 
 export const CharitiesOverviewComponent = () => {
   const [speed, setSpeed] = createSignal(2)
@@ -85,6 +86,10 @@ export const CharitiesOverviewComponent2 = () => {
   const [theme, setTheme] = createSignal('default')
   const [headerTheme, setHeaderTheme] = createSignal('default')
   const [header, setHeader] = createSignal(['title'])
+  const [showDesc, setShowDesc] = createSignal(true)
+  const [showQRCode, setShowQRCode] = createSignal(true)
+  const [showUrl, setShowUrl] = createSignal(true)
+  const [speed, setSpeed] = createSignal(8)
   const title = () => header().includes('title')
 
   const donate = () => header().includes('donate')
@@ -111,14 +116,34 @@ export const CharitiesOverviewComponent2 = () => {
     let url = 'https://jinglejam.yogs.app/overlay/charities2?'
     url += `header=${header().join(',')}&`
     url += `headerTheme=${headerTheme()}&`
-    url += `theme=${theme()}`
+    url += `theme=${theme()}&`
+    url += `showcharitydesc=${showDesc()}&`
+    url += `showcharityqrcode=${showQRCode()}&`
+    url += `showcharityurl=${showUrl()}&`
+    url += `speed=${speed()}`
     return url
   }
   return (
-    <div>
-      <div class={'text-white'}>
+    <div class={''}>
+      <div class={'flex flex-col gap-1 text-white'}>
         <p class={'text-2xl'}>JJ Charities 2</p>
         <p>Recommended Browser source size 300x{height()}</p>
+        <div class={'flex flex-row gap-2'}>
+          <label for="headercharity2Speed">Animation speed</label>
+          <input
+            class={'flex-1 text-black'}
+            value={speed()}
+            onchange={e => {
+              setSpeed(+e.target.value)
+            }}
+            min={8}
+            max={20}
+            step={1}
+            type="number"
+            id="headercharity2Speed"
+            name="headercharity2Speed"
+          />
+        </div>
         <div>
           <input
             class={''}
@@ -158,6 +183,48 @@ export const CharitiesOverviewComponent2 = () => {
           />
           <label for="headercharity2jjlinkCheckbox">Show JJ Link</label>
         </div>
+
+        <div>
+          <input
+            class={''}
+            checked={showDesc()}
+            onchange={() => {
+              setShowDesc(!showDesc())
+            }}
+            type="checkbox"
+            id="charity2showDescCheckbox"
+            name="charity2showDescCheckbox"
+          />
+          <label for="charity2showDescCheckbox">Show charity description</label>
+        </div>
+
+        <div>
+          <input
+            class={''}
+            checked={showQRCode()}
+            onchange={() => {
+              setShowQRCode(!showQRCode())
+            }}
+            type="checkbox"
+            id="charity2showQRCodeCheckbox"
+            name="charity2showQRCodeCheckbox"
+          />
+          <label for="charity2showQRCodeCheckbox">Show charity QRCode</label>
+        </div>
+        <div>
+          <input
+            class={''}
+            checked={showUrl()}
+            onchange={() => {
+              setShowUrl(!showUrl())
+            }}
+            type="checkbox"
+            id="charity2showUrlCheckbox"
+            name="charity2showUrlCheckbox"
+          />
+          <label for="charity2showUrlCheckbox">Show charity url</label>
+        </div>
+
         <table>
           <tbody>
             <tr>
@@ -219,7 +286,15 @@ export const CharitiesOverviewComponent2 = () => {
           height: heightStr(),
         }}
       >
-        <CharityOverlayComponent2 header={header()} theme={theme()} headerTheme={headerTheme()} />
+        <CharityOverlayComponent2
+          header={header()}
+          theme={theme()}
+          headerTheme={headerTheme()}
+          showDesc={showDesc()}
+          showQRCode={showQRCode()}
+          showUrl={showUrl()}
+          speed={speed()}
+        />
       </div>
     </div>
   )

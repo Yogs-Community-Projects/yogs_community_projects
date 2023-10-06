@@ -33,6 +33,17 @@ export const useTheme = () => {
 export const useHeaderTheme = () => {
   return useParam('headertheme') ?? 'default'
 }
+
+export const useShowCharityDesc = () => {
+  return (useParam('showcharitydesc') ?? 'true') === 'true'
+}
+export const useShowCharityQRCode = () => {
+  return (useParam('showcharityqrcode') ?? 'true') === 'true'
+}
+export const useShowCharityUrl = () => {
+  return (useParam('showcharityurl') ?? 'true') === 'true'
+}
+
 export const useSimpleScheduleData = () => {
   const scheduleData = useParam('scheduledata') ?? ''
   return window.atob(scheduleData)

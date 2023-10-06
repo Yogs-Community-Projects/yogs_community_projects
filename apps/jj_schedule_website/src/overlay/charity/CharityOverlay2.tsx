@@ -4,14 +4,31 @@ import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
 import { Transition } from 'solid-transition-group'
 import { Numeric } from 'solid-i18n'
-import { useHeader, useHeaderTheme, useTheme } from '../overlay_signals'
+import {
+  useHeader,
+  useHeaderTheme,
+  useShowCharityDesc,
+  useShowCharityQRCode,
+  useShowCharityUrl,
+  useSpeed,
+  useTheme,
+} from '../overlay_signals'
 import { twMerge } from 'tailwind-merge'
 import { Cause, JJData } from '@ycapp/model'
+import { QRCodeSVG } from 'solid-qr-code'
 
-export const CharityOverlay2: Component<{ speed?: number }> = () => {
+export const CharityOverlay2: Component = () => {
   return (
     <div class={'h-screen w-full'}>
-      <CharityOverlayComponent2 header={useHeader()} theme={useTheme()} headerTheme={useHeaderTheme()} />
+      <CharityOverlayComponent2
+        header={useHeader()}
+        theme={useTheme()}
+        headerTheme={useHeaderTheme()}
+        showDesc={useShowCharityDesc()}
+        showQRCode={useShowCharityQRCode()}
+        showUrl={useShowCharityUrl()}
+        speed={useSpeed()}
+      />
     </div>
   )
 }
@@ -19,20 +36,36 @@ export const CharityOverlayComponent2: Component<{
   header: string[]
   theme: string
   headerTheme: string
+  showDesc: boolean
+  showQRCode: boolean
+  showUrl: boolean
+  speed: number
 }> = props => {
   return (
     <div class={'flex h-full w-full flex-col'}>
       <div class={''}>
-        <OverlayHeader header={props.header} headerTheme={props.headerTheme} />
+        <OverlayHeader header={props.header} headerTheme={props.headerTheme} speed={props.speed} />
       </div>
       <div class={'flex-1'}>
-        <Body theme={props.theme} />
+        <Body
+          theme={props.theme}
+          showDesc={props.showDesc}
+          showQRCode={props.showQRCode}
+          showUrl={props.showUrl}
+          speed={props.speed}
+        />
       </div>
     </div>
   )
 }
 
-const Body: Component<{ theme: string }> = props => {
+const Body: Component<{
+  theme: string
+  showDesc: boolean
+  showQRCode: boolean
+  showUrl: boolean
+  speed: number
+}> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
@@ -45,20 +78,55 @@ const Body: Component<{ theme: string }> = props => {
     if (charityData.data) {
       setCurrentCharity(i => (i + 1) % charities().length)
     }
-  }, 8000)
+  }, props.speed * 1000)
   onCleanup(() => clearInterval(timer))
   const items = () => {
     return charityData.data.causes.map((c, i) => {
       if (props.theme === 'carousel') {
         if (i % 3 == 0) {
-          return <CharityItemWhite charity={c} />
+          return (
+            <CharityItem
+              charity={c}
+              theme={'default'}
+              showDesc={props.showDesc}
+              showQRCode={props.showQRCode}
+              showUrl={props.showUrl}
+            />
+          )
+          //return <CharityItemWhite charity={c} />
         }
         if (i % 3 == 1) {
-          return <CharityItemRed charity={c} />
+          return (
+            <CharityItem
+              charity={c}
+              theme={'red'}
+              showDesc={props.showDesc}
+              showQRCode={props.showQRCode}
+              showUrl={props.showUrl}
+            />
+          )
+          //return <CharityItemRed charity={c} />
         }
-        return <CharityItemBlue charity={c} />
+        return (
+          <CharityItem
+            charity={c}
+            theme={'blue'}
+            showDesc={props.showDesc}
+            showQRCode={props.showQRCode}
+            showUrl={props.showUrl}
+          />
+        )
+        // return <CharityItemBlue charity={c} />
       }
-      return <CharityItem charity={c} theme={props.theme} />
+      return (
+        <CharityItem
+          charity={c}
+          theme={props.theme}
+          showDesc={props.showDesc}
+          showQRCode={props.showQRCode}
+          showUrl={props.showUrl}
+        />
+      )
     })
   }
 
@@ -101,78 +169,13 @@ const Body: Component<{ theme: string }> = props => {
   )
 }
 
-const CharityItemWhite: Component<{ charity: Cause }> = props => {
-  return (
-    <div class={'h-full p-2'}>
-      <div
-        class={
-          'flex h-full flex-col items-center justify-start rounded-2xl bg-white p-2 text-center font-bold shadow-xl transition-all'
-        }
-      >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
-        <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
-        <p class={'text-primary-500 line-clamp-2 text-xl'}>
-          Raised{' '}
-          <Numeric
-            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
-            numberStyle="currency"
-            currency={'GBP'}
-          />
-        </p>
-        <p class={'line-clamp-3'}>{props.charity.description}</p>
-      </div>
-    </div>
-  )
-}
-
-const CharityItemRed: Component<{ charity: Cause }> = props => {
-  return (
-    <div class={'h-full p-2'}>
-      <div
-        class={
-          'bg-primary-500 flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold text-white shadow-xl transition-all'
-        }
-      >
-        <img class={'h-24 w-24 rounded-lg  bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
-        <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
-        <p class={'line-clamp-2 text-xl'}>
-          Raised{' '}
-          <Numeric
-            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
-            numberStyle="currency"
-            currency={'GBP'}
-          />
-        </p>
-        <p class={'line-clamp-3'}>{props.charity.description}</p>
-      </div>
-    </div>
-  )
-}
-
-const CharityItemBlue: Component<{ charity: Cause }> = props => {
-  return (
-    <div class={'h-full p-2'}>
-      <div
-        class={
-          'bg-accent-500 flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold text-white shadow-xl transition-all'
-        }
-      >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
-        <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
-        <p class={'line-clamp-2 text-xl'}>
-          Raised{' '}
-          <Numeric
-            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
-            numberStyle="currency"
-            currency={'GBP'}
-          />
-        </p>
-        <p class={'line-clamp-3'}>{props.charity.description}</p>
-      </div>
-    </div>
-  )
-}
-const CharityItem: Component<{ charity: Cause; theme: string }> = props => {
+const CharityItem: Component<{
+  charity: Cause
+  theme: string
+  showDesc: boolean
+  showQRCode: boolean
+  showUrl: boolean
+}> = props => {
   const background = () => {
     switch (props.theme) {
       case 'red':
@@ -199,18 +202,57 @@ const CharityItem: Component<{ charity: Cause; theme: string }> = props => {
     return 'text-primary-500'
   }
 
+  const qrCodeFG = () => {
+    switch (props.theme) {
+      case 'red':
+      case 'blue':
+        return '#ffffff'
+    }
+    return '#000000'
+  }
+  const qrCodeBG = () => {
+    switch (props.theme) {
+      case 'red':
+        return '#E21350'
+      case 'blue':
+        return '#3484BF'
+    }
+    return '#ffffff'
+  }
+
+  const charityUrl = () => {
+    const url = props.charity.url
+    if (url.endsWith('/')) {
+      return url.substring(0, url.length - 1)
+    }
+    return url
+  }
+
+  const qrCodeSize = () => {
+    let base = 64
+
+    if (!props.showDesc) {
+      base += 24
+    }
+    if (!props.showUrl) {
+      base += 12
+    }
+
+    return base
+  }
+
   return (
     <div class={'h-full p-2'}>
       <div
         class={twMerge(
-          'flex h-full flex-col items-center justify-start rounded-2xl p-2 text-center font-bold shadow-xl transition-all',
+          'flex h-full flex-col items-center justify-center rounded-2xl p-2 text-center font-bold shadow-xl transition-all',
           background(),
           textColor(),
         )}
       >
-        <img class={'h-24 w-24 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'lazy'} />
-        <p class={'line-clamp-2 text-2xl'}>{props.charity.name}</p>
-        <p class={twMerge('line-clamp-2 text-xl', raisedColor())}>
+        <img class={'h-20 w-20 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'eager'} />
+        <p class={'line-clamp-2 overflow-hidden text-2xl'}>{props.charity.name}</p>
+        <p class={twMerge('line-clamp-2 overflow-hidden text-xl', raisedColor())}>
           Raised{' '}
           <Numeric
             value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
@@ -218,45 +260,44 @@ const CharityItem: Component<{ charity: Cause; theme: string }> = props => {
             currency={'GBP'}
           />
         </p>
-        <p class={'line-clamp-3'}>{props.charity.description}</p>
+        <Show when={props.showDesc}>
+          <p class={'line-clamp-2'}>{props.charity.description}</p>
+        </Show>
+        <Show when={props.showUrl && !props.showQRCode}>
+          <p>{charityUrl()}</p>
+        </Show>
+        <Show when={props.showQRCode}>
+          <div class={'flex w-full flex-1 flex-col content-center items-center justify-center gap-1 pt-2'}>
+            <Show when={props.showQRCode}>
+              <QRCodeSVG value={charityUrl()} size={qrCodeSize()} bgColor={qrCodeBG()} fgColor={qrCodeFG()} />
+            </Show>
+            <Show when={props.showUrl}>
+              <p>{charityUrl()}</p>
+            </Show>
+          </div>
+        </Show>
       </div>
     </div>
   )
 }
 
-const OverlayHeader: Component<{ header: string[]; headerTheme: string }> = props => {
+const OverlayHeader: Component<{ header: string[]; headerTheme: string; speed: number }> = props => {
   const headerLength = () => props.header.length
   const headerLength2 = props.header.length
   const headerItemNames = () => props.header.map(h => h.toLowerCase())
   const headerItems = () => {
     const items: JSXElement[] = []
     if (headerItemNames().includes('title')) {
-      items.push(
-        <HeaderCard>
-          <Title />
-        </HeaderCard>,
-      )
+      items.push(<Title theme={props.headerTheme} />)
     }
     if (headerItemNames().includes('donate') || headerItemNames().includes('donation')) {
-      items.push(
-        <HeaderCard>
-          <DonationChatCommand />
-        </HeaderCard>,
-      )
+      items.push(<DonationChatCommand theme={props.headerTheme} />)
     }
     if (headerItemNames().includes('extension')) {
-      items.push(
-        <HeaderCard>
-          <ExtensionAd />
-        </HeaderCard>,
-      )
+      items.push(<ExtensionAd theme={props.headerTheme} />)
     }
     if (headerItemNames().includes('jj') || headerItemNames().includes('jjlink')) {
-      items.push(
-        <PinkHeaderCard>
-          <JJLink />
-        </PinkHeaderCard>,
-      )
+      items.push(<JJLink theme={props.headerTheme} />)
     }
 
     return items
@@ -272,7 +313,7 @@ const OverlayHeader: Component<{ header: string[]; headerTheme: string }> = prop
     } catch (e) {
       setHeaderIndex((headerIndex() + 1) % headerLength2)
     }
-  }, 8000)
+  }, props.speed * 1000)
   onCleanup(() => clearInterval(timer))
 
   const currentHeader = (): JSXElement => {
@@ -325,57 +366,122 @@ const OverlayHeader: Component<{ header: string[]; headerTheme: string }> = prop
   )
 }
 
-const Title: Component = () => {
+const Title: Component<{ theme: string }> = props => {
+  const theme = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'text-white'
+      case 'blue':
+        return 'text-white'
+      default:
+        return 'text-primary-500'
+    }
+  }
   return (
-    <div class={'text-center text-2xl'}>
-      <p class={'text-primary-500'}>Charities</p>
-    </div>
+    <HeaderCard theme={props.theme}>
+      <div class={'text-center text-2xl'}>
+        <p class={theme()}>Charities</p>
+      </div>
+    </HeaderCard>
   )
 }
 
-const DonationChatCommand: Component = () => {
+const DonationChatCommand: Component<{ theme: string }> = props => {
+  const donate = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'text-white'
+      case 'blue':
+        return 'text-white'
+      default:
+        return 'text-accent-500'
+    }
+  }
+  const inChat = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'text-white'
+      case 'blue':
+        return 'text-white'
+      default:
+        return 'text-primary-500'
+    }
+  }
   return (
-    <p class={'text-center text-xl'}>
-      <span class={'text-accent-500'}>!Donate</span> <span class={'text-primary-500'}>in Chat</span>
-    </p>
+    <HeaderCard theme={props.theme}>
+      <p class={'text-center text-xl'}>
+        <span class={donate()}>!Donate</span> <span class={inChat()}>in Chat</span>
+      </p>
+    </HeaderCard>
   )
 }
-const JJLink: Component = () => {
+const JJLink: Component<{ theme: string }> = props => {
+  const theme = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'text-white'
+      case 'blue':
+        return 'text-white'
+      default:
+        return 'text-primary'
+    }
+  }
   return (
-    <p class={'text-center text-base'}>
-      <span class={'text-white'}>jinglejam.tiltify.com</span>
-    </p>
+    <HeaderCard theme={props.theme}>
+      <p class={'text-center text-base'}>
+        <span class={theme()}>jinglejam.tiltify.com</span>
+      </p>
+    </HeaderCard>
   )
 }
 
-const ExtensionAd: Component = () => {
+const ExtensionAd: Component<{ theme: string }> = props => {
+  const accent = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'text-white'
+      case 'blue':
+        return 'text-white'
+      default:
+        return 'text-accent-500'
+    }
+  }
+  const primary = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'text-white'
+      case 'blue':
+        return 'text-white'
+      default:
+        return 'text-primary-500'
+    }
+  }
   return (
-    <p class={'text-accent-500 text-center text-xs'}>
-      See the <span class={'text-primary-500'}>full schedule</span> using the{' '}
-      <span class={'text-primary-500'}>extension below</span>
-    </p>
+    <HeaderCard theme={props.theme}>
+      <p class={twMerge('text-accent-500 text-center text-xs', accent())}>
+        See the <span class={primary()}>full schedule</span> using the <span class={accent()}>extension below</span>
+      </p>
+    </HeaderCard>
   )
 }
 
-const HeaderCard: ParentComponent = props => {
-  const gradient =
-    'flex h-11 flex-row items-center justify-center rounded-2xl bg-gradient-to-b from-[#fffdf9] via-[#f6f6f6] to-[#dad1cb] p-2 text-4xl font-bold shadow-xl transition-all'
+const HeaderCard: ParentComponent<{ theme: string }> = props => {
   const background =
-    'bg-white flex h-11 flex-row items-center justify-center rounded-2xl p-2 text-4xl font-bold shadow-xl transition-all'
+    'flex h-11 flex-row items-center justify-center rounded-2xl p-2 text-4xl font-bold shadow-xl transition-all'
+  const theme = () => {
+    switch (props.theme) {
+      case 'red':
+        return 'bg-primary-500'
+      case 'blue':
+        return 'bg-accent-500'
+      default:
+        return 'bg-white '
+    }
+  }
+
   return (
     <div class={'p-2'}>
-      <div class={background}>{props.children}</div>
-    </div>
-  )
-}
-const PinkHeaderCard: ParentComponent = props => {
-  const gradient =
-    'flex h-11 flex-row items-center justify-center rounded-2xl bg-gradient-to-b from-[#fffdf9] via-[#f6f6f6] to-[#dad1cb] p-2 text-4xl font-bold shadow-xl transition-all'
-  const background =
-    'bg-primary flex h-11 flex-row items-center justify-center rounded-2xl p-2 text-4xl font-bold shadow-xl transition-all'
-  return (
-    <div class={'p-2'}>
-      <div class={background}>{props.children}</div>
+      <div class={twMerge(background, theme())}>{props.children}</div>
     </div>
   )
 }

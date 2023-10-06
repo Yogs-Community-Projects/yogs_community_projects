@@ -55,9 +55,7 @@ export const OverlayOverview: Component = () => {
           sources. Configure the Overlays and use these links and add them to your{' '}
           <a href={'https://obsproject.com/'}>OBS</a> scenes.
         </p>
-        <p class={'text-xl font-bold'}>
-          The Overlays are still work in progress. For demo purposes data from 2022 is used.
-        </p>
+        <p class={'text-xl font-bold'}>Feedback on these overlays is very much appreciated.</p>
         <a href={'https://obsproject.com/kb/browser-source'}>How to add a Browser source</a>
         <div class={'visible md:invisible'}>
           <p>Use a desktop to configure the overlays</p>

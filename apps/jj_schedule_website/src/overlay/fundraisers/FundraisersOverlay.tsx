@@ -1,12 +1,13 @@
 import { Component, For, JSXElement, Match, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
-import { FaBrandsTwitch } from 'solid-icons/fa'
+import { FaBrandsTwitch, FaBrandsYoutube } from 'solid-icons/fa'
 import { excludedChannel, minAmount, useSpeed, useTheme } from '../overlay_signals'
 import '../marquee.css'
 import { JJLink } from '../JJLinkCard'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
+import { twMerge } from 'tailwind-merge'
 
 export const FundraisersOverlay = () => {
   return <FundraisersOverlayComponent speed={useSpeed()} theme={useTheme()} />
@@ -126,27 +127,37 @@ const Child: Component<ChildProps> = props => {
         return 'text-twitch'
     }
   }
+
+  const isTwitch = () => props.d.twitch_data && props.d.livestream.type === 'twitch'
+  const isYoutube = () => props.d.livestream.type === 'youtube'
+
+  const img = () => {
+    if (props.d.user.avatar === 'https://assets.tiltify.com/assets/default-avatar.png') {
+      if (isTwitch()) {
+        return props.d.twitch_data.profile_image_url
+      }
+    }
+    return props.d.user.avatar
+  }
+
   return (
     <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
-        <Switch>
-          <Match when={props.d.twitch_data}>
-            <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.twitch_data.profile_image_url} loading={'lazy'} />
-          </Match>
-          <Match when={!props.d.twitch_data}>
-            <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.user.avatar} loading={'lazy'} />
-          </Match>
-        </Switch>
+        <img class={'h-12 w-12 rounded-lg'} alt={''} src={img()} loading={'eager'} />
         <div class={'flex h-full w-full flex-col items-start justify-center overflow-hidden truncate pl-2'}>
+          <div class={twMerge(`flex flex-row items-center font-bold`, useDisplayNameTextColor())}>{props.d.name}</div>
           <Switch>
-            <Match when={props.d.twitch_data}>
-              <div class={`${useTwitchIconColor()} flex flex-row items-center font-bold`}>
-                <FaBrandsTwitch size={18} />
-                <span class={`${useDisplayNameTextColor()}`}>/{props.d.twitch_data.login}</span>
+            <Match when={isTwitch()}>
+              <div class={twMerge(`flex flex-row items-center font-bold`, useTwitchIconColor())}>
+                <FaBrandsTwitch size={14} />
+                <span class={twMerge(`text-xs`, useDisplayNameTextColor())}>/{props.d.twitch_data.login}</span>
               </div>
             </Match>
-            <Match when={!props.d.twitch_data}>
-              <div class={`${useDisplayNameTextColor()} flex flex-row items-center font-bold`}>{props.d.name}</div>
+            <Match when={isYoutube()}>
+              <div class={`${useTwitchIconColor()} flex flex-row items-center font-bold`}>
+                <FaBrandsYoutube size={14} />
+                <span class={twMerge(`text-xs`, useDisplayNameTextColor())}>/{props.d.livestream.channel}</span>
+              </div>
             </Match>
           </Switch>
           <p class={`${useRaisedTextColor()} text-sm font-bold`}>
