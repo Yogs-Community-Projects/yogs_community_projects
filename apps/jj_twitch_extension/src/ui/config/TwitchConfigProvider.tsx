@@ -32,10 +32,6 @@ export const TwitchConfigProvider: ParentComponent = props => {
   const [originalConfig, setOriginalConfig] = createStore<TwitchConfig>(defaultConfig)
   const twitch = (window as any)?.Twitch?.ext
 
-  createEffect(() => {
-    console.log('TwitchConfigProvider', 'effect', config)
-  })
-
   const edited = () => {
     return (
       config.tab1 !== originalConfig.tab1 ||
@@ -46,15 +42,11 @@ export const TwitchConfigProvider: ParentComponent = props => {
   }
 
   const configOnChanged = () => {
-    console.log('TwitchConfigProvider', 'configOnChanged', twitch.configuration.broadcaster)
     if (twitch.configuration.broadcaster) {
       try {
         const config = JSON.parse(twitch.configuration.broadcaster.content)
-        console.log('TwitchConfigProvider', 'loaded', config)
         if (typeof config === 'object') {
-          console.log('TwitchConfigProvider', 'loaded', 'config === object')
           if (config.tab1 === undefined) {
-            console.log('TwitchConfigProvider', 'loaded', 'config.showThirdTab === undefined')
             setConfig(defaultConfig)
             setOriginalConfig(defaultConfig)
           } else {
@@ -62,54 +54,42 @@ export const TwitchConfigProvider: ParentComponent = props => {
             setOriginalConfig({ ...config })
           }
         } else {
-          console.log('TwitchConfigProvider', 'Invalid config')
           setConfig(defaultConfig)
           setOriginalConfig(defaultConfig)
         }
       } catch (e) {
-        console.log('TwitchConfigProvider', 'Invalid config', e)
         setConfig(defaultConfig)
         setOriginalConfig(defaultConfig)
       }
     } else {
-      console.log('TwitchConfigProvider', '!twitch.configuration.broadcaste')
       setConfig(defaultConfig)
       setOriginalConfig(defaultConfig)
     }
   }
   const loadConfig = () => {
-    console.log('TwitchConfigProvider', 'loadConfig')
     if (!twitch) {
-      console.log('TwitchConfigProvider', '!twitch')
       setConfig(defaultConfig)
       return
     }
     if (!twitch.configuration.broadcaster) {
-      console.log('!twitch.configuration.broadcaster')
       setConfig(defaultConfig)
     }
-    console.log('TwitchConfigProvider', 'twitch', twitch)
     configOnChanged()
     twitch.configuration.onChanged(() => {
-      console.log('TwitchConfigProvider', 'onChanged', twitch.configuration.broadcaster)
       configOnChanged()
     })
   }
 
   onMount(() => {
-    console.log('TwitchConfigProvider', 'onMount')
     twitch?.onAuthorized(auth => {
-      console.log('TwitchConfigProvider', 'auth', auth)
       loadConfig()
     })
   })
   const setTwitchConfiguration = (newConfig: Partial<TwitchConfig>) => {
     setConfig({ ...config, ...newConfig })
-    console.log('setTwitchConfiguration', config)
   }
   const save = () => {
     twitch?.configuration.set('broadcaster', '1', JSON.stringify(config))
-    console.log('save', config)
     setOriginalConfig(config)
   }
 

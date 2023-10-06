@@ -7,9 +7,8 @@ import { CreatorFilterProvider } from './CreatorFilterProvider'
 import { Accessor } from 'solid-js/types/reactive/signal'
 import { DateTime, Duration } from 'luxon'
 
-const visible = () => useJJConfig().visible
-const scheduleId = () => useJJConfig().scheduleId
 const SchedulePage: Component = () => {
+  const visible = () => useJJConfig().visible
   return (
     <>
       <Show when={visible()}>
@@ -23,6 +22,7 @@ const SchedulePage: Component = () => {
 }
 
 const VisibleSchedule = () => {
+  const scheduleId = () => useJJConfig().scheduleId
   const schedule = useScheduleDB().read(scheduleId())
   return (
     <>

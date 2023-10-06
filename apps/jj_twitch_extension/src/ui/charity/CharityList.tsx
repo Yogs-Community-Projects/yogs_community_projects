@@ -8,7 +8,7 @@ interface CharityListProps {
 }
 
 export const CharityList: Component<CharityListProps> = props => {
-  const { pounds } = useCurrency()
+  const { pounds, avgConversionRate } = useCurrency()
 
   return (
     <div class={'flex h-full flex-1 flex-col gap-2'}>
@@ -32,7 +32,7 @@ export const CharityList: Component<CharityListProps> = props => {
             if (pounds()) {
               return charity.raised.fundraisers
             } else {
-              return charity.raised.fundraisers
+              return charity.raised.fundraisers * avgConversionRate
             }
           }
 

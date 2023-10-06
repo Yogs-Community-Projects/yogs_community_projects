@@ -9,8 +9,8 @@ import { twMerge } from 'tailwind-merge'
 import { useTwitchConfig } from '../config/TwitchConfigProvider'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 
-const visible = () => useJJConfig().showCommunityFundraiser
 const StreamerPage: Component = () => {
+  const visible = () => useJJConfig().showCommunityFundraiser
   return (
     <>
       <Show when={visible()}>
@@ -31,7 +31,7 @@ const VisibleBody: Component = () => {
   const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
   const fundraiser = () => {
     return (
-      fundraiserData.data.campaigns
+      [...fundraiserData.data.campaigns]
         // .filter(d => !excludeChannels().includes(d.login) && !excludeChannels().includes(d.display_name))
         .sort((a, b) => {
           /*
@@ -96,7 +96,7 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
                     src={d.twitch_data.profile_image_url}
                     loading={'lazy'}
                   />
-                  <div class={'w-full pl-1'}>
+                  <div class={'w-full overflow-hidden pl-1'}>
                     <div class={'flex flex-row items-center gap-2'}>
                       <Show when={d.isLive}>
                         <p class={'text-xxs animate-pulse rounded bg-red-500 p-0.5 text-white'}>LIVE</p>
@@ -134,7 +134,7 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
 }
 
 const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => {
-  const fundraisers = () => props.fundraisers.filter(f => f.livestream.channel === 'twitch' && f.isLive)
+  const fundraisers = () => props.fundraisers.filter(f => f.livestream.type === 'twitch' && f.isLive)
 
   const show = () => fundraisers().length > 0
   const randomFundraiser = () => {
@@ -163,7 +163,7 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
         href={url()}
         target={'_blank'}
         class={
-          'bg-accent-500 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105'
+          'bg-accent-500 hover:scale-102 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105'
         }
         onMouseEnter={updateSelectedFundraiser}
       >

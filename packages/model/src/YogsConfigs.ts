@@ -5,6 +5,7 @@ export interface JJExtensionConfig {
   showCommunityFundraiser: boolean
   channels: string[]
   excludeChannels?: string[]
+  donationTrackerUrl?: string
 }
 
 export interface YogsExtensionConfig {
