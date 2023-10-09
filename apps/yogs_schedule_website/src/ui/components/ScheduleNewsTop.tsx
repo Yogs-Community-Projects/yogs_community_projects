@@ -3,6 +3,7 @@ import { News, newsToSlot } from '@ycapp/model'
 import { Accessor, Component, createEffect, createSignal, For, Match, onCleanup, Show, Switch } from 'solid-js'
 import { DateTime } from 'luxon'
 import { SlotDialog } from './schedule/SlotDialog'
+import { twMerge } from 'tailwind-merge'
 
 interface NewsWrapper {
   news: News
@@ -97,6 +98,10 @@ const NewsTile: Component<NewsTileProps> = props => {
     return false
   }
   const countdownDate = () => DateTime.fromMillis(news().news.countdown)
+  const hasSubtitle = () => {
+    return news().news.subtitle && news().news.subtitle !== ''
+  }
+
   const countdown = () => countdownDate().diff(useNow())
   if (news().news.type === 'Link' && news().news.url) {
     return (
@@ -109,12 +114,15 @@ const NewsTile: Component<NewsTileProps> = props => {
           color: textColor(),
         }}
         class={
-          'hover:scale-102 hover:brightness-102 flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 no-underline transition-all hover:cursor-pointer md:aspect-[6]'
+          'hover:scale-102 hover:brightness-102 group flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 no-underline transition-all hover:cursor-pointer md:aspect-[6]'
         }
       >
         <p class={'text-xl'}>{news().news.title}</p>
+        <Show when={hasSubtitle()}>
+          <p class={twMerge('text-md', showCountDown() ? 'group-hover:hidden' : '')}>{news().news.subtitle}</p>
+        </Show>
         <Show when={showCountDown()}>
-          <p class={'text-xs md:text-sm'}>
+          <p class={twMerge('text-xs md:text-sm', hasSubtitle() ? 'hidden group-hover:block' : '')}>
             <span>{countdownDate().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</span>,{' '}
             <span class={'font-mono'}>{countdown().toFormat('hh:mm:ss')}</span>
           </p>
@@ -131,12 +139,15 @@ const NewsTile: Component<NewsTileProps> = props => {
         color: textColor(),
       }}
       class={
-        'hover:scale-102 hover:brightness-102 flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 no-underline transition-all hover:cursor-pointer md:aspect-[6]'
+        'hover:scale-102 hover:brightness-102 group flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 no-underline transition-all hover:cursor-pointer md:aspect-[6]'
       }
     >
       <p class={'text-xl'}>{news().news.title}</p>
+      <Show when={hasSubtitle()}>
+        <p class={'text-md group-hover:hidden'}>{news().news.subtitle}</p>
+      </Show>
       <Show when={showCountDown()}>
-        <p class={'text-xs md:text-sm'}>
+        <p class={twMerge('text-xs md:text-sm', hasSubtitle() ? 'hidden group-hover:block' : '')}>
           <span>{countdownDate().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</span>,{' '}
           <span class={'font-mono'}>{countdown().toFormat('hh:mm:ss')}</span>
         </p>
