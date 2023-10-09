@@ -1,13 +1,13 @@
-import { createContext, createEffect, onMount, ParentComponent, useContext } from 'solid-js'
+import { createContext, onMount, ParentComponent, useContext } from 'solid-js'
 import { createStore } from 'solid-js/store'
 
 export type TabType = 'yogs' | 'charities' | 'community' | 'none'
-
+export type Theme = 'red' | 'blue' | 'dark' | 'red_dark' | 'blue_dark' | 'rainbow'
 interface TwitchConfig {
   tab1: TabType
   tab2: TabType
   tab3: TabType
-  theme: 'red' | 'blue'
+  theme: Theme
 }
 
 interface TwitchConfigContextProps {

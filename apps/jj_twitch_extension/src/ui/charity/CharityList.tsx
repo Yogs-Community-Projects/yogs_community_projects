@@ -2,6 +2,8 @@ import { Component, For } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { useCurrency } from '../CurrencyProvider'
 import { Cause } from '@ycapp/model'
+import { useTheme } from '../../ThemeProvider'
+import { twMerge } from 'tailwind-merge'
 
 interface CharityListProps {
   charityData: Cause[]
@@ -9,6 +11,7 @@ interface CharityListProps {
 
 export const CharityList: Component<CharityListProps> = props => {
   const { pounds, avgConversionRate } = useCurrency()
+  const { tailwindBGAccent, theme, tailwindTextPrimary } = useTheme()
 
   return (
     <div class={'flex h-full flex-1 flex-col gap-2'}>
@@ -43,7 +46,7 @@ export const CharityList: Component<CharityListProps> = props => {
                 <div class={'w-full pl-1'}>
                   <p class={'truncate text-ellipsis text-sm'}>{name()}</p>
                   <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{charity.description}</p>
-                  <p class={'text-primary text-xs font-bold'}>
+                  <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
                     Raised <Numeric value={value()} numberStyle="currency" currency={currency()} />
                   </p>
                 </div>

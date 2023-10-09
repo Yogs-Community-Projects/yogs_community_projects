@@ -8,6 +8,7 @@ import { BsCurrencyDollar, BsCurrencyPound } from 'solid-icons/bs'
 import { useCurrency } from '../CurrencyProvider'
 import { twMerge } from 'tailwind-merge'
 import { JJData } from '@ycapp/model'
+import { useTheme } from '../../ThemeProvider'
 
 interface CharityOverviewProps {
   data: JJData
@@ -21,12 +22,14 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
   const totalPounds = () => props.data.raised.yogscast + props.data.raised.fundraisers
   const total = () => totalPounds() * props.data.avgConversionRate
 
+  const { tailwindTextAccent, tailwindTextPrimary } = useTheme()
+
   return (
     <div class={'text-center text-xs'}>
       <div class={'flex w-full flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl'}>
         <div id={'parent'} class={'relative h-12'}>
           <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center'}>
-            <p class={'text-primary relative text-base font-bold'}>
+            <p class={twMerge('text-primary relative text-base font-bold', tailwindTextPrimary())}>
               <Currency dollars={total()} pounds={totalPounds()} />
             </p>
             <p class={''}>Raised in {DateTime.fromISO(props.data.date).year}</p>
@@ -37,25 +40,25 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
         </div>
         <div class={'grid grid-cols-2 gap-1 gap-y-2'}>
           <div>
-            <p class={'text-primary text-xs font-bold'}>
+            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
               <Currency dollars={totalYogs()} pounds={totalYogsPounds()} />
             </p>
             <p>Raised by the Yogscast</p>
           </div>
           <div>
-            <p class={'text-primary text-xs font-bold'}>
+            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
               <Currency dollars={totalFundraiser()} pounds={totalFundraiserPounds()} />
             </p>
             <p>Raised by Fundraisers</p>
           </div>
           <div>
-            <p class={'text-primary text-xs font-bold'}>
+            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
               <Numeric value={props.data.collections.redeemed} numberStyle={'decimal'} />
             </p>
             <p>Collections Sold</p>
           </div>
           <div>
-            <p class={'text-primary text-xs font-bold'}>
+            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
               <Numeric value={props.data.collections.total - props.data.collections.redeemed} numberStyle={'decimal'} />
             </p>
             <p>Collections Available</p>
@@ -73,6 +76,7 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
 
 const CurrencyToggle: Component = () => {
   const { pounds, toggle } = useCurrency()
+  const { tailwindTextAccent, tailwindTextPrimary, tailwindBGPrimary, tailwindBGAccent } = useTheme()
   const dollar = () => !pounds()
 
   return (
@@ -82,7 +86,8 @@ const CurrencyToggle: Component = () => {
           <div
             class={twMerge(
               'rounded-l-2xl bg-gray-500 p-1 opacity-60 transition-all',
-              !state.pressed() && 'bg-primary-500 opacity-100',
+              !state.pressed() && 'opacity-100',
+              !state.pressed() && tailwindBGPrimary(),
             )}
           >
             <BsCurrencyPound size={12} />
@@ -90,7 +95,8 @@ const CurrencyToggle: Component = () => {
           <div
             class={twMerge(
               'rounded-r-2xl bg-gray-500 p-1 opacity-60 transition-all',
-              state.pressed() && 'bg-primary-500 opacity-100',
+              state.pressed() && 'opacity-100',
+              state.pressed() && tailwindBGPrimary(),
             )}
           >
             <BsCurrencyDollar size={12} />

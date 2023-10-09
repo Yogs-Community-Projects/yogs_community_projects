@@ -1,13 +1,14 @@
-import { Component, createEffect, createSignal, For, Match, onMount, Show, Switch } from 'solid-js'
-import { Numeric } from 'solid-i18n'
+import { Component, createEffect, createSignal, For, Match, onMount, ParentComponent, Show, Switch } from 'solid-js'
 import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { DateTime } from 'luxon'
-import { useJJStartCountdown, useNextJJStartDate } from '../schedule/SchedulePage'
 import { FiExternalLink } from 'solid-icons/fi'
 import { twMerge } from 'tailwind-merge'
 import { useTwitchConfig } from '../config/TwitchConfigProvider'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
+import { useTheme } from '../../ThemeProvider'
+import { InvisibleBody } from '../InvisibleBody'
+import { Numeric } from 'solid-i18n'
 
 const StreamerPage: Component = () => {
   const visible = () => useJJConfig().showCommunityFundraiser
@@ -17,7 +18,7 @@ const StreamerPage: Component = () => {
         <VisibleBody />
       </Show>
       <Show when={!visible()}>
-        <InvisibleBody />
+        <InvisibleBody text={'The Community Fundraiser Page will be live soon.'} />
       </Show>
     </>
   )
@@ -76,35 +77,88 @@ const VisibleBody: Component = () => {
 
 const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
   const fundraiser = () => props.fundraisers
+  const { theme, tailwindTextPrimary } = useTheme()
+
+  const colors = [
+    'bg-red-300/80',
+    'bg-orange-300/80',
+    'bg-yellow-300/80',
+    'bg-green-300/80',
+    'bg-cyan-300/80',
+    'bg-blue-300/80',
+    'bg-purple-300/80',
+  ]
+
+  const campaignColor = (i: number) => {
+    if (theme() !== 'rainbow') {
+      return ''
+    }
+    return colors[i % colors.length]
+  }
+
+  const raisedColor = () => {
+    if (theme() === 'rainbow') {
+      return 'text-black'
+    }
+    return tailwindTextPrimary()
+  }
+
   return (
     <For each={fundraiser()}>
-      {d => {
+      {(d: Campaign, i) => {
+        const isTwitch = () => d.twitch_data && d.livestream.type === 'twitch'
+        const img = () => {
+          if (d.user.avatar === 'https://assets.tiltify.com/assets/default-avatar.png') {
+            if (isTwitch()) {
+              return d.twitch_data.profile_image_url
+            }
+          }
+          return d.user.avatar
+        }
+
+        const url = () => {
+          if (!d.twitch_data) {
+            return undefined
+          }
+          return `https://twitch.tv/${d.twitch_data.login}`
+        }
+
+        return (
+          <Child
+            i={i()}
+            img={img()}
+            title={d?.twitch_data?.display_name ?? d.user.name}
+            subtitle={d.name}
+            desc={d.description}
+            isLive={d.isLive}
+            raised={d.raised}
+            url={url()}
+          />
+        )
+        /*
         return (
           <Switch>
             <Match when={d.twitch_data}>
               <a
-                class={
-                  'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105'
-                }
+                class={twMerge(
+                  'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
+                  campaignColor(i()),
+                )}
                 href={`https://twitch.tv/${d.twitch_data.login}`}
                 target={'_blank'}
               >
-                <div class={'flex h-full w-full items-center p-1'}>
-                  <img
-                    class={'h-10 w-10 rounded-lg'}
-                    alt={d.twitch_data.display_name}
-                    src={d.twitch_data.profile_image_url}
-                    loading={'lazy'}
-                  />
+                <div class={'flex h-full w-full items-start p-1'}>
+                  <img class={'h-10 w-10 rounded-lg'} alt={d.twitch_data.display_name} src={img()} loading={'lazy'} />
                   <div class={'w-full overflow-hidden pl-1'}>
-                    <div class={'flex flex-row items-center gap-2'}>
+                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.name}</p>
+                    <div class={'flex max-h-[12px] flex-row items-center gap-1'}>
                       <Show when={d.isLive}>
-                        <p class={'text-xxs animate-pulse rounded bg-red-500 p-0.5 text-white'}>LIVE</p>
+                        <Live />
                       </Show>
-                      <p class={'truncate text-ellipsis text-sm font-bold'}>{d.twitch_data.display_name}</p>
+                      <p class={'text-xxs truncate text-ellipsis font-bold'}>{d.twitch_data.display_name}</p>
                     </div>
                     <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.description}</p>
-                    <p class={'text-primary text-xs font-bold'}>
+                    <p class={twMerge('text-primary text-xs font-bold', raisedColor())}>
                       Raised <Numeric value={d.raised} numberStyle="currency" currency={'GBP'} />
                     </p>
                   </div>
@@ -113,13 +167,14 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
               </a>
             </Match>
             <Match when={d.livestream.type !== 'twitch' || !d.livestream.channel}>
-              <div class={'min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all'}>
+              <div class={twMerge('min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all', campaignColor(i()))}>
                 <div class={'flex h-full w-full items-center p-1'}>
-                  <img class={'h-10 w-10 rounded-lg'} alt={d.user.name} src={d.user.avatar} loading={'lazy'} />
-                  <div class={'w-full pl-1'}>
-                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.user.name}</p>
+                  <img class={'h-10 w-10 rounded-lg'} alt={d.user.name} src={img()} loading={'lazy'} />
+                  <div class={'w-full overflow-hidden pl-1'}>
+                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.name}</p>
+                    <p class={'text-xxs truncate text-ellipsis font-bold'}>{d.user.name}</p>
                     <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.description}</p>
-                    <p class={'text-primary text-xs font-bold'}>
+                    <p class={twMerge('text-primary text-xs font-bold', raisedColor())}>
                       Raised <Numeric value={d.raised} numberStyle="currency" currency={'GBP'} />
                     </p>
                   </div>
@@ -128,6 +183,7 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
             </Match>
           </Switch>
         )
+        */
       }}
     </For>
   )
@@ -154,6 +210,7 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
   createEffect(() => {
     updateSelectedFundraiser()
   })
+  const { tailwindBGAccent } = useTheme()
 
   const url = () => `https://twitch.tv/${fundraiser().livestream.channel}`
 
@@ -162,9 +219,10 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
       <a
         href={url()}
         target={'_blank'}
-        class={
-          'bg-accent-500 hover:scale-102 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105'
-        }
+        class={twMerge(
+          'bg-accent-500 hover:scale-102 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105',
+          tailwindBGAccent(),
+        )}
         onMouseEnter={updateSelectedFundraiser}
       >
         Open Random Fundraiser Stream
@@ -174,20 +232,163 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
   )
 }
 
-const InvisibleBody: Component = () => {
+const Live = () => {
+  const { theme } = useTheme()
+  const color = () => {
+    switch (theme()) {
+      case 'blue':
+      case 'blue_dark':
+        return 'bg-blue-500'
+      default:
+        return 'bg-red-500'
+    }
+  }
+
+  const pulseColor = () => {
+    switch (theme()) {
+      case 'blue':
+      case 'blue_dark':
+        return 'bg-blue-400'
+      default:
+        return 'bg-red-400'
+    }
+  }
+  const pulseFGColor = () => {
+    switch (theme()) {
+      case 'blue':
+      case 'blue_dark':
+        return 'bg-blue-500'
+      default:
+        return 'bg-red-500'
+    }
+  }
   return (
-    <div class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}>
-      <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Jingle Jam Countdown</p>
-      <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('DDDD')}</p>
-      <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('ttt')}</p>
-      <p class={''}>{useNextJJStartDate().toFormat('DDDD')}</p>
-      <p class={''}>{useNextJJStartDate().toFormat('ttt')}</p>
-      <div class={'flex flex-col items-center p-1 text-white md:p-4'}>
-        <p class={'text-2xl md:text-4xl'}>Jingle Jam {useNextJJStartDate().year} starts</p>
-        <p class={'font-mono text-2xl md:text-4xl'}>{useJJStartCountdown().toFormat("dd 'Days' hh:mm:ss")}</p>
+    <span class="relative flex h-3 w-3">
+      <span
+        class={twMerge(
+          'absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75',
+          pulseColor(),
+        )}
+      />
+      <span class={twMerge('relative inline-flex h-full w-full rounded-full bg-red-500', pulseFGColor())} />
+    </span>
+  )
+  // return <p class={twMerge('h-4 animate-pulse rounded bg-red-500 p-0.5 text-[6px] text-white', color())}>LIVE</p>
+}
+
+const Child: Component<{
+  i: number
+  title: string
+  subtitle: string
+  img: string
+  isLive: boolean
+  desc: string
+  raised: number
+  url?: string
+}> = props => {
+  const { theme, tailwindTextPrimary } = useTheme()
+
+  const raisedColor = () => {
+    if (theme() === 'rainbow') {
+      return 'text-black'
+    }
+    return tailwindTextPrimary()
+  }
+
+  return (
+    <ChildBody url={props.url} i={props.i}>
+      <div class={'flex h-full min-h-[64px] w-full flex-row items-center gap-2 p-1.5'}>
+        <div class={'flex h-full flex-1 flex-col gap-1 overflow-hidden'}>
+          <div class={'flex flex-row gap-1'}>
+            <img class={'h-8 w-8 rounded-lg'} alt={props.title} src={props.img} loading={'lazy'} />
+            <div class={'flex flex-col overflow-hidden'}>
+              <div class={'flex max-h-[14px] flex-row items-center gap-1 overflow-hidden'}>
+                <Show when={props.isLive}>
+                  <Live />
+                </Show>
+                <p class={'truncate text-ellipsis text-sm font-bold'}>{props.title}</p>
+              </div>
+              <p class={'truncate text-ellipsis text-xs font-bold'}>{props.subtitle}</p>
+            </div>
+          </div>
+          <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{props.desc}</p>
+          <p class={twMerge('text-primary text-xs font-bold', raisedColor())}>
+            Raised <Numeric value={props.raised} numberStyle="currency" currency={'GBP'} />
+          </p>
+        </div>
+        <Show when={props.url}>
+          <FiExternalLink />
+        </Show>
       </div>
-      <p>The Community Fundraiser Page will be live soon.</p>
-    </div>
+    </ChildBody>
+  )
+
+  /*
+  return (
+    <ChildBody url={props.url} i={props.i}>
+      <div class={'flex h-full w-full items-start p-1'}>
+        <img class={'h-10 w-10 rounded-lg'} alt={props.title} src={props.img} loading={'lazy'} />
+        <div class={'w-full overflow-hidden pl-1'}>
+          <p class={'truncate text-ellipsis text-sm font-bold'}>{props.title}</p>
+          <div class={'flex max-h-[12px] flex-row items-center gap-1'}>
+            <Show when={props.isLive}>
+              <Live />
+            </Show>
+            <p class={'text-xxs truncate text-ellipsis font-bold'}>{props.subtitle}</p>
+          </div>
+          <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{props.desc}</p>
+          <p class={twMerge('text-primary text-xs font-bold', raisedColor())}>
+            Raised <Numeric value={props.raised} numberStyle="currency" currency={'GBP'} />
+          </p>
+        </div>
+        <Show when={props.url}>
+          <FiExternalLink />
+        </Show>
+      </div>
+    </ChildBody>
+  )*/
+}
+
+const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
+  const { theme } = useTheme()
+
+  const colors = [
+    'bg-red-300/80',
+    'bg-orange-300/80',
+    'bg-yellow-300/80',
+    'bg-green-300/80',
+    'bg-cyan-300/80',
+    'bg-blue-300/80',
+    'bg-purple-300/80',
+  ]
+
+  const campaignColor = (i: number) => {
+    if (theme() !== 'rainbow') {
+      return ''
+    }
+    return colors[i % colors.length]
+  }
+  return (
+    <Switch>
+      <Match when={props.url}>
+        <a
+          class={twMerge(
+            'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
+            campaignColor(props.i),
+          )}
+          href={props.url}
+          target={'_blank'}
+        >
+          {props.children}
+        </a>
+      </Match>
+      <Match when={!props.url}>
+        <div class={twMerge('min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all', campaignColor(props.i))}>
+          {props.children}
+        </div>
+      </Match>
+    </Switch>
   )
 }
+
 export default StreamerPage

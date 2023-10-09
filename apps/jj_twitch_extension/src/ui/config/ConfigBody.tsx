@@ -144,6 +144,35 @@ const TabSelect: Component<{
 const Theme: Component = () => {
   const { config, setConfig } = useTwitchConfig()
 
+  const colors = (): { theme: string; name: string }[] => {
+    return [
+      {
+        theme: 'red',
+        name: 'Red',
+      },
+      {
+        theme: 'blue',
+        name: 'Blue',
+      },
+      {
+        theme: 'blue_dark',
+        name: 'Dark Blue',
+      },
+      {
+        theme: 'red_dark',
+        name: 'Dark Red',
+      },
+      {
+        theme: 'dark',
+        name: 'Dark',
+      },
+      {
+        theme: 'rainbow',
+        name: 'Rainbow',
+      },
+    ]
+  }
+
   return (
     <RadioGroup.Root
       class="row col gap-4 p-2"
@@ -156,20 +185,19 @@ const Theme: Component = () => {
     >
       <RadioGroup.Label class="">Theme</RadioGroup.Label>
       <div class={'flex flex-col gap-2'}>
-        <RadioGroup.Item value={'red'} class="flex items-center hover:cursor-pointer">
-          <RadioGroup.ItemInput class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white" />
-          <RadioGroup.ItemControl class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white">
-            <RadioGroup.ItemIndicator class="border-1 bg-accent h-2 w-2 rounded-full border-black" />
-          </RadioGroup.ItemControl>
-          <RadioGroup.ItemLabel class="ml-2 hover:cursor-pointer">Red</RadioGroup.ItemLabel>
-        </RadioGroup.Item>
-        <RadioGroup.Item value={'blue'} class="flex items-center hover:cursor-pointer">
-          <RadioGroup.ItemInput class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white" />
-          <RadioGroup.ItemControl class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white">
-            <RadioGroup.ItemIndicator class="border-1 bg-accent h-2 w-2 rounded-full border-black" />
-          </RadioGroup.ItemControl>
-          <RadioGroup.ItemLabel class="ml-2 hover:cursor-pointer">Blue</RadioGroup.ItemLabel>
-        </RadioGroup.Item>
+        <For each={colors()}>
+          {({ theme, name }) => {
+            return (
+              <RadioGroup.Item value={theme} class="flex items-center hover:cursor-pointer">
+                <RadioGroup.ItemInput class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white" />
+                <RadioGroup.ItemControl class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white">
+                  <RadioGroup.ItemIndicator class="border-1 bg-accent h-2 w-2 rounded-full border-black" />
+                </RadioGroup.ItemControl>
+                <RadioGroup.ItemLabel class="ml-2 hover:cursor-pointer">{name}</RadioGroup.ItemLabel>
+              </RadioGroup.Item>
+            )
+          }}
+        </For>
       </div>
     </RadioGroup.Root>
   )
