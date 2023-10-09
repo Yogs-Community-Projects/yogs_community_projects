@@ -98,6 +98,30 @@ const NewsTile: Component<NewsTileProps> = props => {
   }
   const countdownDate = () => DateTime.fromMillis(news().news.countdown)
   const countdown = () => countdownDate().diff(useNow())
+  if (news().news.type === 'Link' && news().news.url) {
+    return (
+      <a
+        href={news().news.url}
+        target={'_blank'}
+        style={{
+          background: background(),
+          'border-color': border(),
+          color: textColor(),
+        }}
+        class={
+          'hover:scale-102 hover:brightness-102 flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 no-underline transition-all hover:cursor-pointer md:aspect-[6]'
+        }
+      >
+        <p class={'text-xl'}>{news().news.title}</p>
+        <Show when={showCountDown()}>
+          <p class={'text-xs md:text-sm'}>
+            <span>{countdownDate().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</span>,{' '}
+            <span class={'font-mono'}>{countdown().toFormat('hh:mm:ss')}</span>
+          </p>
+        </Show>
+      </a>
+    )
+  }
   return (
     <div
       onclick={news().signal.toggle}
@@ -107,7 +131,7 @@ const NewsTile: Component<NewsTileProps> = props => {
         color: textColor(),
       }}
       class={
-        'hover:scale-102 hover:brightness-102 flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 transition-all hover:cursor-pointer md:aspect-[6]'
+        'hover:scale-102 hover:brightness-102 flex h-24 w-full flex-col items-center justify-center rounded-2xl border-2 p-2 no-underline transition-all hover:cursor-pointer md:aspect-[6]'
       }
     >
       <p class={'text-xl'}>{news().news.title}</p>
