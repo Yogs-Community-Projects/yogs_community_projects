@@ -12,6 +12,7 @@ export interface News {
   title: string
   subtitle: string
   style: NewsStyle
+  url?: string
 }
 
 export interface NewsStyle {
