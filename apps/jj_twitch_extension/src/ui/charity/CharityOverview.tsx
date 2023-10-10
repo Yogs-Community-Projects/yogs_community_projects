@@ -39,9 +39,9 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
 
   const bgColor = () => {
     if (theme() === 'dark') {
-      return 'bg-gray-500'
+      return 'bg-gradient-to-br from-gray-500 to-gray-600'
     }
-    return 'bg-white'
+    return 'bg-gradient-to-br from-white to-gray-100'
   }
 
   return (

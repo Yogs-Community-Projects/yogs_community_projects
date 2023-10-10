@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge'
 
 export const LiveDonoTrackerLink: Component = () => {
   const extensionConfig = useJJConfig()
-  const { tailwindBGAccent, theme } = useTheme()
+  const { theme } = useTheme()
 
   const pulseColor = () => {
     switch (theme()) {
@@ -26,12 +26,27 @@ export const LiveDonoTrackerLink: Component = () => {
     }
   }
 
+  const gradient = () => {
+    switch (theme()) {
+      case 'blue':
+        return 'bg-gradient-to-br from-primary-400 to-primary-500'
+      case 'dark':
+        return 'bg-gradient-to-br from-gray-400 to-gray-500'
+      case 'red_dark':
+        return 'bg-gradient-to-br from-accent-500 to-accent-600'
+      case 'blue_dark':
+        return 'bg-gradient-to-br from-primary-500 to-primary-600'
+      default:
+        return 'bg-gradient-to-br from-accent-400 to-accent-500'
+    }
+  }
+
   return (
     <Show when={extensionConfig.donationTrackerUrl && extensionConfig.donationTrackerUrl !== ''}>
       <a
         class={twMerge(
           'min-h-24 hover:scale-102 bg-accent-500 flex w-full flex-row items-center justify-center rounded-2xl p-1 text-center text-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
-          tailwindBGAccent(),
+          gradient(),
         )}
         href={extensionConfig.donationTrackerUrl}
         target={'_blank'}

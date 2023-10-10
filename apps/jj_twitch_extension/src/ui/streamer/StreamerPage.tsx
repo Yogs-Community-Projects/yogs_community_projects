@@ -204,9 +204,23 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
   createEffect(() => {
     updateSelectedFundraiser()
   })
-  const { tailwindBGAccent } = useTheme()
+  const { theme } = useTheme()
 
   const url = () => `https://twitch.tv/${fundraiser().livestream.channel}`
+  const gradient = () => {
+    switch (theme()) {
+      case 'blue':
+        return 'bg-gradient-to-br from-primary-400 to-primary-500'
+      case 'dark':
+        return 'bg-gradient-to-br from-gray-400 to-gray-500'
+      case 'red_dark':
+        return 'bg-gradient-to-br from-accent-500 to-accent-600'
+      case 'blue_dark':
+        return 'bg-gradient-to-br from-primary-500 to-primary-600'
+      default:
+        return 'bg-gradient-to-br from-accent-400 to-accent-500'
+    }
+  }
 
   return (
     <Show when={show()}>
@@ -215,7 +229,7 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
         target={'_blank'}
         class={twMerge(
           'bg-accent-500 hover:scale-102 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105',
-          tailwindBGAccent(),
+          gradient(),
         )}
         onMouseEnter={updateSelectedFundraiser}
       >
@@ -285,6 +299,8 @@ const Child: Component<{
   const raisedColor = () => {
     if (theme() === 'rainbow') {
       return 'text-black'
+    } else if (theme() === 'dark') {
+      return 'text-white'
     }
     return tailwindTextPrimary()
   }
@@ -295,7 +311,7 @@ const Child: Component<{
         <div class={'flex h-full flex-1 flex-col gap-1 overflow-hidden'}>
           <div class={'flex flex-row gap-1'}>
             <img class={'h-8 w-8 rounded-lg'} alt={props.title} src={props.img} loading={'lazy'} />
-            <div class={'flex flex-col overflow-hidden'}>
+            <div class={'flex h-full flex-col justify-between overflow-hidden'}>
               <div class={'flex max-h-[14px] flex-row items-center gap-1 overflow-hidden'}>
                 <Show when={props.isLive}>
                   <Live />
@@ -356,11 +372,23 @@ const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
     'bg-purple-200',
   ]
 
+  const gradient = [
+    'bg-gradient-to-br from-red-200 to-red-400',
+    'bg-gradient-to-br from-orange-200 to-orange-400',
+    'bg-gradient-to-br from-yellow-200 to-yellow-400',
+    'bg-gradient-to-br from-green-200 to-green-400',
+    'bg-gradient-to-br from-cyan-200 to-cyan-400',
+    'bg-gradient-to-br from-blue-200 to-blue-400',
+    'bg-gradient-to-br from-purple-200 to-purple-400',
+  ]
+
   const campaignColor = (i: number) => {
-    if (theme() !== 'rainbow') {
-      return ''
+    if (theme() === 'rainbow') {
+      return gradient[i % colors.length]
+    } else if (theme() === 'dark') {
+      return 'bg-gray-500 text-white'
     }
-    return colors[i % colors.length]
+    return 'bg-gradient-to-br from-white to-gray-100'
   }
   return (
     <Switch>

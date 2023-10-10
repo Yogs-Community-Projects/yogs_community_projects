@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-file="archive.zip"
+file="jj_tv_ext_archive.zip"
 
 cd ./dist
 
@@ -10,4 +10,4 @@ if [ -e "$file" ]; then
 else
     echo "File $file does not exist."
 fi
-zip -r archive.zip index.html mobile.html config.html assets/
+zip -r jj_tv_ext_archive.zip index.html mobile.html config.html assets/
