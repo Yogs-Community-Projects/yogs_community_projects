@@ -26,6 +26,20 @@ const useInternalTheme = () => {
         return 'bg-accent-500'
     }
   }
+  const tailwindBGAccent300 = () => {
+    switch (theme()) {
+      case 'blue':
+        return 'bg-primary-300'
+      case 'dark':
+        return 'bg-gray-600'
+      case 'red_dark':
+        return 'bg-accent-500'
+      case 'blue_dark':
+        return 'bg-primary-500'
+      default:
+        return 'bg-accent-300'
+    }
+  }
   const tailwindBGPrimary = () => {
     switch (theme()) {
       case 'blue':
@@ -38,6 +52,20 @@ const useInternalTheme = () => {
         return 'bg-accent-600'
       default:
         return 'bg-primary-500'
+    }
+  }
+  const tailwindBGPrimary300 = () => {
+    switch (theme()) {
+      case 'blue':
+        return 'bg-accent-300'
+      case 'dark':
+        return 'bg-gray-600'
+      case 'red_dark':
+        return 'bg-primary-500'
+      case 'blue_dark':
+        return 'bg-accent-500'
+      default:
+        return 'bg-primary-300'
     }
   }
   const tailwindTextAccent = () => {
@@ -69,7 +97,15 @@ const useInternalTheme = () => {
     }
   }
 
-  return { theme, tailwindBGAccent, tailwindBGPrimary, tailwindTextAccent, tailwindTextPrimary }
+  return {
+    theme,
+    tailwindBGAccent,
+    tailwindBGPrimary,
+    tailwindTextAccent,
+    tailwindTextPrimary,
+    tailwindBGAccent300,
+    tailwindBGPrimary300,
+  }
 }
 
 const ThemeContext = createContext<ReturnType<typeof useInternalTheme>>()

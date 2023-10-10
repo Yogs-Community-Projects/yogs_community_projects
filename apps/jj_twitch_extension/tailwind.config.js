@@ -1,4 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
+const active = plugin.withOptions(function (selector = '.active') {
+  return function ({ addVariant }) {
+    addVariant('current', `&${selector}`)
+    addVariant('group-current', `${selector} &`)
+  }
+})
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,css,md,mdx,html,json,scss}'],
   darkMode: 'class',

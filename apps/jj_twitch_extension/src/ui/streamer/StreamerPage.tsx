@@ -9,6 +9,7 @@ import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 import { useTheme } from '../../ThemeProvider'
 import { InvisibleBody } from '../InvisibleBody'
 import { Numeric } from 'solid-i18n'
+import { ColoredScrollbar } from '../../ColoredScrollbar'
 
 const StreamerPage: Component = () => {
   const visible = () => useJJConfig().showCommunityFundraiser
@@ -49,14 +50,7 @@ const VisibleBody: Component = () => {
   }
 
   return (
-    <div
-      class={twMerge(
-        'scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 h-full overflow-y-auto overflow-x-hidden p-1.5 pt-0',
-        config.theme === 'blue'
-          ? 'scrollbar-corner-accent-100 scrollbar-thumb-primary-500 scrollbar-track-primary-100'
-          : '',
-      )}
-    >
+    <ColoredScrollbar>
       <div class={'h-30 flex flex-row p-0 pb-2 text-center text-xl text-white'}>
         <h3 class={'flex-1'}>Community Fundraiser</h3>
       </div>
@@ -71,7 +65,7 @@ const VisibleBody: Component = () => {
           </Match>
         </Switch>
       </div>
-    </div>
+    </ColoredScrollbar>
   )
 }
 
@@ -353,13 +347,13 @@ const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
   const { theme } = useTheme()
 
   const colors = [
-    'bg-red-300/80',
-    'bg-orange-300/80',
-    'bg-yellow-300/80',
-    'bg-green-300/80',
-    'bg-cyan-300/80',
-    'bg-blue-300/80',
-    'bg-purple-300/80',
+    'bg-red-200',
+    'bg-orange-200',
+    'bg-yellow-200',
+    'bg-green-200',
+    'bg-cyan-200',
+    'bg-blue-200',
+    'bg-purple-200',
   ]
 
   const campaignColor = (i: number) => {

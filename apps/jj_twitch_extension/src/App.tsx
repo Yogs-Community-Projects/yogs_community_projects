@@ -59,15 +59,28 @@ const Theme: ParentComponent = props => {
     if (theme() !== 'rainbow') {
       return undefined
     }
+    const colors = [
+      'rgb(239 68 68)',
+      'rgb(249 115 22)',
+      'rgb(245 158 11)',
+      'rgb(34 197 94)',
+      'rgb(6 182 212)',
+      'rgb(59 130 246)',
+      'rgb(168 85 247)',
+    ]
+    const p = +(100 / colors.length).toFixed(2)
+    const gradientColors = colors
+      .map((c, i) => {
+        if (i == 0) {
+          return [`${c}`, `${c} ${p * (i + 1)}%`]
+        } else if (i == colors.length - 1) {
+          return [`${c} ${p * i}%`, `${c}`]
+        }
+        return [`${c} ${p * i}%`, `${c} ${p * (i + 1)}%`]
+      })
+      .flat()
     return {
-      background: `linear-gradient(180deg,
-      rgb(239 68 68),
-      rgb(249 115 22),
-      rgb(245 158 11),
-      rgb(34 197 94),
-      rgb(6 182 212),
-      rgb(59 130 246),
-      rgb(168 85 247))`,
+      background: `linear-gradient(180deg, ${gradientColors.join(',')}`,
     }
   }
 

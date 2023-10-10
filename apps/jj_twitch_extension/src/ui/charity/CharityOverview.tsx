@@ -22,17 +22,37 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
   const totalPounds = () => props.data.raised.yogscast + props.data.raised.fundraisers
   const total = () => totalPounds() * props.data.avgConversionRate
 
-  const { tailwindTextAccent, tailwindTextPrimary } = useTheme()
+  const { tailwindTextPrimary, theme } = useTheme()
+  const raisedTextColor = () => {
+    if (theme() === 'dark') {
+      return 'text-white'
+    }
+    return tailwindTextPrimary()
+  }
+
+  const darkText = () => {
+    if (theme() === 'dark') {
+      return 'text-white'
+    }
+    return ''
+  }
+
+  const bgColor = () => {
+    if (theme() === 'dark') {
+      return 'bg-gray-500'
+    }
+    return 'bg-white'
+  }
 
   return (
-    <div class={'text-center text-xs'}>
-      <div class={'flex w-full flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl'}>
+    <div class={'min-h-[156px] text-center text-xs'}>
+      <div class={twMerge('flex h-full w-full flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl', bgColor())}>
         <div id={'parent'} class={'relative h-12'}>
           <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center'}>
-            <p class={twMerge('text-primary relative text-base font-bold', tailwindTextPrimary())}>
+            <p class={twMerge('relative text-base font-bold', raisedTextColor())}>
               <Currency dollars={total()} pounds={totalPounds()} />
             </p>
-            <p class={''}>Raised in {DateTime.fromISO(props.data.date).year}</p>
+            <p class={darkText()}>Raised in {DateTime.fromISO(props.data.date).year}</p>
           </div>
           <div id={'div2'} class={'absolute right-0 top-0 p-1'}>
             <CurrencyToggle />
@@ -40,32 +60,32 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
         </div>
         <div class={'grid grid-cols-2 gap-1 gap-y-2'}>
           <div>
-            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
+            <p class={twMerge('text-xs font-bold', raisedTextColor())}>
               <Currency dollars={totalYogs()} pounds={totalYogsPounds()} />
             </p>
-            <p>Raised by the Yogscast</p>
+            <p class={darkText()}>Raised by the Yogscast</p>
           </div>
           <div>
-            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
+            <p class={twMerge('text-xs font-bold', raisedTextColor())}>
               <Currency dollars={totalFundraiser()} pounds={totalFundraiserPounds()} />
             </p>
-            <p>Raised by Fundraisers</p>
+            <p class={darkText()}>Raised by Fundraisers</p>
           </div>
           <div>
-            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
+            <p class={twMerge('text-xs font-bold', raisedTextColor())}>
               <Numeric value={props.data.collections.redeemed} numberStyle={'decimal'} />
             </p>
-            <p>Collections Sold</p>
+            <p class={darkText()}>Collections Sold</p>
           </div>
           <div>
-            <p class={twMerge('text-primary text-xs font-bold', tailwindTextPrimary())}>
+            <p class={twMerge('text-xs font-bold', raisedTextColor())}>
               <Numeric value={props.data.collections.total - props.data.collections.redeemed} numberStyle={'decimal'} />
             </p>
-            <p>Collections Available</p>
+            <p class={darkText()}>Collections Available</p>
           </div>
         </div>
         <div class={'flex flex-1 items-end justify-center'}>
-          <p class={'text-center'}>
+          <p class={twMerge('text-center', darkText())}>
             Last update, {DateTime.fromISO(props.data.date).toLocaleString(DateTime.DATETIME_MED)}
           </p>
         </div>
@@ -74,9 +94,71 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
   )
 }
 
+export const CharityOverviewLoading: Component = () => {
+  const { theme, tailwindBGPrimary } = useTheme()
+  const raisedTextColor = () => {
+    if (theme() === 'dark') {
+      return 'bg-white'
+    }
+    return tailwindBGPrimary()
+  }
+
+  const darkText = () => {
+    if (theme() === 'dark') {
+      return 'bg-white'
+    }
+    return ''
+  }
+
+  const bgColor = () => {
+    if (theme() === 'dark') {
+      return 'bg-gray-500'
+    }
+    return 'bg-white'
+  }
+
+  return (
+    <div class={'min-h-[156px] text-center text-xs'}>
+      <div
+        class={twMerge('flex h-full w-full animate-pulse flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl', bgColor())}
+      >
+        <div id={'parent'} class={'relative h-12'}>
+          <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center gap-1'}>
+            <div
+              class={twMerge('relative h-3 w-[50%] rounded-full text-base font-bold opacity-75', raisedTextColor())}
+            />
+            <div class={twMerge('h-2 w-[40%] rounded-full bg-black text-xs opacity-75', darkText())}></div>
+          </div>
+        </div>
+        <div class={'grid grid-cols-2 gap-1 gap-y-2'}>
+          <div class={'flex flex-col items-center gap-1'}>
+            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
+            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
+          </div>
+          <div class={'flex flex-col items-center gap-1'}>
+            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
+            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
+          </div>
+          <div class={'flex flex-col items-center gap-1'}>
+            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
+            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
+          </div>
+          <div class={'flex flex-col items-center gap-1'}>
+            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
+            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
+          </div>
+        </div>
+        <div class={'flex flex-1 items-end justify-center'}>
+          <div class={twMerge('h-2 w-[50%] rounded-full bg-black text-center opacity-75', darkText())}></div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const CurrencyToggle: Component = () => {
   const { pounds, toggle } = useCurrency()
-  const { tailwindTextAccent, tailwindTextPrimary, tailwindBGPrimary, tailwindBGAccent } = useTheme()
+  const { tailwindBGPrimary } = useTheme()
   const dollar = () => !pounds()
 
   return (
@@ -85,7 +167,7 @@ const CurrencyToggle: Component = () => {
         <>
           <div
             class={twMerge(
-              'rounded-l-2xl bg-gray-500 p-1 opacity-60 transition-all',
+              'rounded-l-2xl bg-gray-400 p-1 opacity-60 transition-all',
               !state.pressed() && 'opacity-100',
               !state.pressed() && tailwindBGPrimary(),
             )}
@@ -94,7 +176,7 @@ const CurrencyToggle: Component = () => {
           </div>
           <div
             class={twMerge(
-              'rounded-r-2xl bg-gray-500 p-1 opacity-60 transition-all',
+              'rounded-r-2xl bg-gray-400 p-1 opacity-60 transition-all',
               state.pressed() && 'opacity-100',
               state.pressed() && tailwindBGPrimary(),
             )}
