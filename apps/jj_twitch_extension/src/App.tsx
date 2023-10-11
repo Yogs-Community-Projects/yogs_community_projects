@@ -1,14 +1,13 @@
 import type { Component, ParentComponent } from 'solid-js'
 import { Match, Switch } from 'solid-js'
 import NavBar from './ui/components/NavBar'
-import { routes } from './routes'
-import { useRoutes } from '@solidjs/router'
+import { Route, Routes } from '@solidjs/router'
 import { JJConfigProvider, useConfigDB } from '@ycapp/common'
 import { twMerge } from 'tailwind-merge'
 import { ThemeProvider, useTheme } from './ThemeProvider'
+import { JJTab1, JJTab2, JJTab3 } from './ui/components/JJTab'
 
 const App: Component = () => {
-  const Routes = useRoutes(routes)
   const jjExtensionConfig = useConfigDB().readJJExtensionConfig()
 
   return (
@@ -23,12 +22,19 @@ const App: Component = () => {
         <JJConfigProvider config={jjExtensionConfig.data}>
           <ThemeProvider>
             <Theme>
-              <>
+              <div class={'flex h-full flex-col'}>
                 <NavBar />
                 <div class={'mx-auto w-full flex-1 overflow-hidden overscroll-none'}>
-                  <Routes />
+                  <Routes>
+                    <Route path={'/'} component={JJTab1}></Route>
+                    <Route path={''} component={JJTab1}></Route>
+                    <Route path={'*'} component={JJTab1}></Route>
+                    <Route path={'/1'} component={JJTab1}></Route>
+                    <Route path={'/2'} component={JJTab2}></Route>
+                    <Route path={'/3'} component={JJTab3}></Route>
+                  </Routes>
                 </div>
-              </>
+              </div>
             </Theme>
           </ThemeProvider>
         </JJConfigProvider>

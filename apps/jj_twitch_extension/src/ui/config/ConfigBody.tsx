@@ -4,6 +4,7 @@ import { AlertDialog, Button, RadioGroup } from '@kobalte/core'
 import { JJExtensionDesktop } from '../../JJExtensionMain'
 import { createModalSignal } from '@ycapp/common'
 import { CgClose } from 'solid-icons/cg'
+import { ThemeRadioButtons, ThemeSelection } from './ThemeConfig'
 
 export const ConfigBody: Component = () => {
   const { config, setConfig, save, validConfig, edited } = useTwitchConfig()
@@ -41,7 +42,7 @@ export const ConfigBody: Component = () => {
           </div>
         </div>
         <div class={'p-2'}>
-          <Theme />
+          <ThemeSelection />
         </div>
         <Show when={!validConfig()}>
           <p>Make sure to show something different in each tab</p>
@@ -136,68 +137,6 @@ const TabSelect: Component<{
             <RadioGroup.ItemLabel class="ml-2 hover:cursor-pointer">Hide</RadioGroup.ItemLabel>
           </RadioGroup.Item>
         </Show>
-      </div>
-    </RadioGroup.Root>
-  )
-}
-
-const Theme: Component = () => {
-  const { config, setConfig } = useTwitchConfig()
-
-  const colors = (): { theme: string; name: string }[] => {
-    return [
-      {
-        theme: 'red',
-        name: 'Red',
-      },
-      {
-        theme: 'blue',
-        name: 'Blue',
-      },
-      {
-        theme: 'blue_dark',
-        name: 'Dark Blue',
-      },
-      {
-        theme: 'red_dark',
-        name: 'Dark Red',
-      },
-      {
-        theme: 'dark',
-        name: 'Dark',
-      },
-      {
-        theme: 'rainbow',
-        name: 'Rainbow',
-      },
-    ]
-  }
-
-  return (
-    <RadioGroup.Root
-      class="row col gap-4 p-2"
-      value={config.theme}
-      onChange={v => {
-        setConfig({
-          theme: v as 'red' | 'blue',
-        })
-      }}
-    >
-      <RadioGroup.Label class="">Theme</RadioGroup.Label>
-      <div class={'flex flex-col gap-2'}>
-        <For each={colors()}>
-          {({ theme, name }) => {
-            return (
-              <RadioGroup.Item value={theme} class="flex items-center hover:cursor-pointer">
-                <RadioGroup.ItemInput class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white" />
-                <RadioGroup.ItemControl class="flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-white">
-                  <RadioGroup.ItemIndicator class="border-1 bg-accent h-2 w-2 rounded-full border-black" />
-                </RadioGroup.ItemControl>
-                <RadioGroup.ItemLabel class="ml-2 hover:cursor-pointer">{name}</RadioGroup.ItemLabel>
-              </RadioGroup.Item>
-            )
-          }}
-        </For>
       </div>
     </RadioGroup.Root>
   )

@@ -6,15 +6,12 @@ import { useCreatorFilter } from './CreatorFilterProvider'
 import { ScheduleControls } from './ScheduleControls'
 import { DateTime } from 'luxon'
 import { twMerge } from 'tailwind-merge'
-import { useTwitchConfig } from '../config/TwitchConfigProvider'
-import { ColoredScrollbar } from '../../ColoredScrollbar'
 import { useTheme } from '../../ThemeProvider'
 
 export const ScheduleBody: Component = () => {
   const scroll =
     'flex-1 overflow-auto scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 pt-0'
   const schedule = useScheduleData()
-  const { config } = useTwitchConfig()
   const { theme } = useTheme()
 
   const scrollbar = () => {
@@ -39,7 +36,7 @@ export const ScheduleBody: Component = () => {
       <div class={twMerge(scroll, scrollbar())}>
         <ScheduleSlots />
       </div>
-      <div class={'p-schedule flex h-14 flex-col justify-center p-1'}>
+      <div class={'p-schedule mb-2 flex h-14 flex-col justify-center p-1'}>
         <p class={'text-xxs p-1 text-center font-bold text-white'}>
           Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
         </p>
