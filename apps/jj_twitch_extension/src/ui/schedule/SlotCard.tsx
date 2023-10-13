@@ -58,6 +58,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
     }
     return gradientStyle
   }
+  /*
   const backgroundImg = () => {
     let gradientStyle: JSX.CSSProperties | undefined
     if (slot.style.linearGradient) {
@@ -78,6 +79,7 @@ export const SlotCard: Component<SlotCardProps> = props => {
 
     return gradientStyle
   }
+  */
 
   const isLive = () => {
     return SlotUtils.isLive(props.slot, useNow())
@@ -92,9 +94,6 @@ export const SlotCard: Component<SlotCardProps> = props => {
 
   const nextStream = () => {
     return SlotUtils.nextStream(props.slot, useNow())
-  }
-  const countdown = () => {
-    return nextStream().diff(useNow())
   }
 
   const isOver = () => {

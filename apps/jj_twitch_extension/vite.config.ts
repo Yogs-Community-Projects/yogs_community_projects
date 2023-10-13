@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
-import federation from '@originjs/vite-plugin-federation'
 import { resolve } from 'path'
 
 export default defineConfig(config => {

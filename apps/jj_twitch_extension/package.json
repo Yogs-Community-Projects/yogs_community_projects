@@ -8,7 +8,7 @@
     "build": "npm run run-prettier-write && vite build && npm run after && npm run zip",
     "after": "node after.mjs",
     "zip": "zsh ./zip_dist.sh",
-    "serve": "vite preview",
+    "serve": "vite build && vite preview",
     "run-prettier-write": "prettier --write --config ../../.prettierrc.json ./",
     "run-prettier-check": "prettier --check --config ../../.prettierrc.json ./"
   },

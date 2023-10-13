@@ -200,7 +200,13 @@ export class ConfigDummyDB implements ConfigDB {
   private readonly yogsExtensionConfig: YogsExtensionConfig
 
   constructor(
-    jjExtensionConfig: JJExtensionConfig = { scheduleId: 'jinglejam2022_2', visible: true, channels: [] },
+    jjExtensionConfig: JJExtensionConfig = {
+      scheduleId: 'jinglejam2022_2',
+      visible: true,
+      channels: [],
+      showCharities: true,
+      showCommunityFundraiser: true,
+    },
     yogsExtensionConfig?: YogsExtensionConfig,
   ) {
     this.jjExtensionConfig = jjExtensionConfig

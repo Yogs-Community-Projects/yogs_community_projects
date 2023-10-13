@@ -4,7 +4,6 @@ import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { DateTime } from 'luxon'
 import { FiExternalLink } from 'solid-icons/fi'
 import { twMerge } from 'tailwind-merge'
-import { useTwitchConfig } from '../config/TwitchConfigProvider'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 import { useTheme } from '../../ThemeProvider'
 import { InvisibleBody } from '../InvisibleBody'
@@ -25,9 +24,6 @@ const StreamerPage: Component = () => {
   )
 }
 const VisibleBody: Component = () => {
-  const excludeChannels = () => useJJConfig()?.excludeChannels ?? []
-  const { config } = useTwitchConfig()
-
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
   const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023')
   const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
@@ -82,20 +78,6 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
     'bg-blue-300/80',
     'bg-purple-300/80',
   ]
-
-  const campaignColor = (i: number) => {
-    if (theme() !== 'rainbow') {
-      return ''
-    }
-    return colors[i % colors.length]
-  }
-
-  const raisedColor = () => {
-    if (theme() === 'rainbow') {
-      return 'text-black'
-    }
-    return tailwindTextPrimary()
-  }
 
   return (
     <For each={fundraiser()}>
@@ -242,15 +224,6 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
 
 const Live = () => {
   const { theme } = useTheme()
-  const color = () => {
-    switch (theme()) {
-      case 'blue':
-      case 'blue_dark':
-        return 'bg-blue-500'
-      default:
-        return 'bg-red-500'
-    }
-  }
 
   const pulseColor = () => {
     switch (theme()) {

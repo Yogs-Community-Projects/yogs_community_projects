@@ -1,11 +1,9 @@
-import { Component, createSignal, Match, onCleanup, Show, Switch } from 'solid-js'
+import { Component, Match, Show, Switch } from 'solid-js'
 import { ScheduleDataProvider } from './JJScheduleProvider'
 import { DayIndexProvider } from './DayIndexProvider'
 import { ScheduleBody } from './ScheduleBody'
 import { useJJConfig, useScheduleDB } from '@ycapp/common'
 import { CreatorFilterProvider } from './CreatorFilterProvider'
-import { Accessor } from 'solid-js/types/reactive/signal'
-import { DateTime, Duration } from 'luxon'
 import { InvisibleBody } from '../InvisibleBody'
 
 const SchedulePage: Component = () => {

@@ -33,3 +33,34 @@ Your app is ready to be deployed!
 ## Deployment
 
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+
+### twitch review
+
+This is an update to the "Unofficial Jingle Jam Schedule", now renamed to "Jingle Jam Community Extension".
+The Jingle Jam is a charity registered in England and Wales.
+From now JJ is used to shorten Jingle Jam
+
+There are 3 tabs.
+Streamers can rearrange or disable tabs.
+Streamers can also choose a different color theme for the extension.
+
+The Tabs (in default configuration):
+Yogscast Schedule tab
+
+- shows the Yogscast JJ streaming schedule.
+- You can click on a stream to get more details on a stream and see who takes part.
+- The detail screen can show links to other twitch channels.
+- At the bottom is the schedule navigation
+- The Navigation allows to go back and forth, filter the schedule and links to a website which shows the whole schedule.
+
+Charity Tab
+
+- Show the current amount raised during JJ.
+- Shows a list of charities that take part in JJ with a short description and the amounts raised for each.
+- Links to a website which shows the current amounts in realtime.
+- At the top right you can toggle between GBP and USD.
+
+Community Tab
+
+- Shows a list of community fundraisers (other content creator/streamer) who have (sub-)fundraisers for JJ
+- When possible it links to the Twitch Channel of the streamer.

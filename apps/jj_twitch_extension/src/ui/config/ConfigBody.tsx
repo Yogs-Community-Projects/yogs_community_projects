@@ -4,7 +4,7 @@ import { AlertDialog, Button, RadioGroup } from '@kobalte/core'
 import { JJExtensionDesktop } from '../../JJExtensionMain'
 import { createModalSignal } from '@ycapp/common'
 import { CgClose } from 'solid-icons/cg'
-import { ThemeRadioButtons, ThemeSelection } from './ThemeConfig'
+import { ThemeSelection } from './ThemeConfig'
 
 export const ConfigBody: Component = () => {
   const { config, setConfig, save, validConfig, edited } = useTwitchConfig()

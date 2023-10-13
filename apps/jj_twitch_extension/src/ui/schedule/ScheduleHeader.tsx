@@ -1,20 +1,8 @@
 import { Component, createEffect, createSignal, Match, Switch } from 'solid-js'
 import { useCurrentDay, useScheduleData } from './JJScheduleProvider'
 import { DateTime } from 'luxon'
-import { useDayIndexSetter } from './DayIndexProvider'
-import {
-  FaSolidCalendarDay,
-  FaSolidChevronLeft,
-  FaSolidChevronRight,
-  FaSolidFilter,
-  FaSolidLink,
-  FaSolidLinkSlash,
-  FaSolidShare,
-} from 'solid-icons/fa'
-import { FilterDialog } from './ScheduleCreatorFilterButton'
 import { useCreatorFilter } from './CreatorFilterProvider'
-import { createModalSignal, RemoteData, useCreatorDB } from '@ycapp/common'
-import { BiRegularReset } from 'solid-icons/bi'
+import { RemoteData, useCreatorDB } from '@ycapp/common'
 import { CreatorData } from '@ycapp/model'
 import { ScheduleControls } from './ScheduleControls'
 
