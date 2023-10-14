@@ -4,7 +4,7 @@ import { Component, Match, Show, Switch } from 'solid-js'
 import { FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidFilter } from 'solid-icons/fa'
 import { BiRegularReset } from 'solid-icons/bi'
 import { FilterDialog } from './ScheduleCreatorFilterButton'
-import { createModalSignal } from '@ycapp/common'
+import { createModalSignal, useIsJJ } from '@ycapp/common'
 import { FiExternalLink } from 'solid-icons/fi'
 import { Env, useEnv } from '../../EnvProvider'
 
@@ -32,14 +32,12 @@ export const ScheduleControls: Component = () => {
                 <FaSolidCalendarDay />
               </button>
             </Show>
-            <Show when={useEnv() === Env.desktop}>
-              <a class={'schedule-controls-link has-tooltip'} href={'https://jj.yogs.app'} target={'_blank'}>
-                <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>
-                  https://jj.yogs.app
-                </span>
-                <FiExternalLink />
-              </a>
-            </Show>
+            <a class={'schedule-controls-link has-tooltip'} href={'https://jj.yogs.app'} target={'_blank'}>
+              <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>
+                https://jj.yogs.app
+              </span>
+              <FiExternalLink />
+            </a>
             <button class={'schedule-controls-link has-tooltip rounded-r-2xl'} onclick={next}>
               <span class={'tooltip bg-accent text-xxs -mt-20 rounded p-1 text-white shadow-lg'}>Next day</span>
               <FaSolidChevronRight />
