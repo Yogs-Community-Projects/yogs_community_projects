@@ -67,17 +67,6 @@ const VisibleBody: Component = () => {
 
 const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
   const fundraiser = () => props.fundraisers
-  const { theme, tailwindTextPrimary } = useTheme()
-
-  const colors = [
-    'bg-red-300/80',
-    'bg-orange-300/80',
-    'bg-yellow-300/80',
-    'bg-green-300/80',
-    'bg-cyan-300/80',
-    'bg-blue-300/80',
-    'bg-purple-300/80',
-  ]
 
   return (
     <For each={fundraiser()}>
@@ -223,38 +212,19 @@ const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => 
 }
 
 const Live = () => {
-  const { theme } = useTheme()
-
-  const pulseColor = () => {
-    switch (theme()) {
-      case 'blue':
-      case 'blue_dark':
-        return 'bg-blue-400'
-      default:
-        return 'bg-red-400'
-    }
-  }
-  const pulseFGColor = () => {
-    switch (theme()) {
-      case 'blue':
-      case 'blue_dark':
-        return 'bg-blue-500'
-      default:
-        return 'bg-red-500'
-    }
-  }
   return (
-    <span class="relative flex h-3 w-3">
-      <span
-        class={twMerge(
-          'absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75',
-          pulseColor(),
-        )}
-      />
-      <span class={twMerge('relative inline-flex h-full w-full rounded-full bg-red-500', pulseFGColor())} />
-    </span>
+    <>
+      <div class={'relative hidden h-3 items-center justify-center group-hover/live:flex'}>
+        <p class={'bg-twitch-500 rounded p-0.5 text-[6px] text-white'}>LIVE</p>
+      </div>
+
+      <span class="relative flex h-3 w-3 items-center justify-center group-hover/live:hidden">
+        <span class={'bg-twitch-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75'} />
+        <span class={'bg-twitch-500 relative inline-flex h-full w-full rounded-full'} />
+      </span>
+    </>
   )
-  // return <p class={twMerge('h-4 animate-pulse rounded bg-red-500 p-0.5 text-[6px] text-white', color())}>LIVE</p>
+  //return <p class={twMerge('h-4 animate-pulse rounded bg-red-500 p-0.5 text-[6px] text-white', pulseFGColor())}>LIVE</p>
 }
 
 const Child: Component<{
@@ -286,7 +256,7 @@ const Child: Component<{
             <img class={'h-8 w-8 rounded-lg'} alt={props.title} src={props.img} loading={'lazy'} />
             <div class={'flex h-full flex-col justify-between overflow-hidden'}>
               <div class={'flex max-h-[14px] flex-row items-center gap-1 overflow-hidden'}>
-                <Show when={props.isLive}>
+                <Show when={props.isLive && props.url}>
                   <Live />
                 </Show>
                 <p class={'truncate text-ellipsis text-sm font-bold'}>{props.title}</p>
@@ -335,16 +305,6 @@ const Child: Component<{
 const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
   const { theme } = useTheme()
 
-  const colors = [
-    'bg-red-200',
-    'bg-orange-200',
-    'bg-yellow-200',
-    'bg-green-200',
-    'bg-cyan-200',
-    'bg-blue-200',
-    'bg-purple-200',
-  ]
-
   const gradient = [
     'bg-gradient-to-br from-red-200 to-red-400',
     'bg-gradient-to-br from-orange-200 to-orange-400',
@@ -357,7 +317,7 @@ const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
 
   const campaignColor = (i: number) => {
     if (theme() === 'rainbow') {
-      return gradient[i % colors.length]
+      return gradient[i % gradient.length]
     } else if (theme() === 'dark') {
       return 'bg-gray-500 text-white'
     }
@@ -368,7 +328,7 @@ const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
       <Match when={props.url}>
         <a
           class={twMerge(
-            'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
+            'min-h-24 hover:scale-102 group/live w-full rounded-2xl shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
             campaignColor(props.i),
           )}
           href={props.url}
@@ -378,7 +338,7 @@ const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
         </a>
       </Match>
       <Match when={!props.url}>
-        <div class={twMerge('min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all', campaignColor(props.i))}>
+        <div class={twMerge('min-h-24 w-full rounded-2xl shadow-xl transition-all', campaignColor(props.i))}>
           {props.children}
         </div>
       </Match>
