@@ -29,22 +29,24 @@ const VisibleBody: Component = () => {
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
 
   return (
-    <ColoredScrollbar>
+    <div class={'flex h-full flex-1 flex-col'}>
       <h3 class={'pb-2 text-center text-xl text-white'}>Charities</h3>
-      <Switch>
-        <Match when={charityData.data && !charityData.loading}>
-          <CurrencyProvider avgConversionRate={charityData?.data?.avgConversionRate}>
-            <CharityOverview data={charityData.data} />
-            <div class={'h-2'} />
-            <LiveDonoTrackerLink />
-            <CharityList charityData={charityData.data.causes} />
-          </CurrencyProvider>
-        </Match>
-        <Match when={charityData.loading && !charityData.data}>
-          <p>Loading</p>
-        </Match>
-      </Switch>
-    </ColoredScrollbar>
+      <ColoredScrollbar>
+        <Switch>
+          <Match when={charityData.data && !charityData.loading}>
+            <CurrencyProvider avgConversionRate={charityData?.data?.avgConversionRate}>
+              <CharityOverview data={charityData.data} />
+              <div class={'h-2'} />
+              <LiveDonoTrackerLink />
+              <CharityList charityData={charityData.data.causes} />
+            </CurrencyProvider>
+          </Match>
+          <Match when={charityData.loading && !charityData.data}>
+            <p>Loading</p>
+          </Match>
+        </Switch>
+      </ColoredScrollbar>
+    </div>
   )
 }
 

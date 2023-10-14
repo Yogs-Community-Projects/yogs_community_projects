@@ -46,22 +46,24 @@ const VisibleBody: Component = () => {
   }
 
   return (
-    <ColoredScrollbar>
+    <div class={'flex h-full flex-1 flex-col'}>
       <div class={'h-30 flex flex-row p-0 pb-2 text-center text-xl text-white'}>
         <h3 class={'flex-1'}>Community Fundraiser</h3>
       </div>
-      <div class={'mb-2 flex min-h-full flex-1 flex-col gap-2'}>
-        <Switch>
-          <Match when={fundraiserData.data}>
-            <p class={'text-center text-base text-white'}>
-              Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
-            </p>
-            <RandomFundraiserButton fundraisers={fundraiser()} />
-            <FundraiserBody fundraisers={fundraiser()} />
-          </Match>
-        </Switch>
-      </div>
-    </ColoredScrollbar>
+      <Switch>
+        <Match when={fundraiserData.data}>
+          <p class={'text-center text-base text-white'}>
+            Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
+          </p>
+          <RandomFundraiserButton fundraisers={fundraiser()} />
+          <ColoredScrollbar>
+            <div class={'mb-2 flex flex-1 flex-col gap-2'}>
+              <FundraiserBody fundraisers={fundraiser()} />
+            </div>
+          </ColoredScrollbar>
+        </Match>
+      </Switch>
+    </div>
   )
 }
 
@@ -250,7 +252,7 @@ const Child: Component<{
 
   return (
     <ChildBody url={props.url} i={props.i}>
-      <div class={'flex h-full min-h-[64px] w-full flex-row items-center gap-2 p-1.5'}>
+      <div class={'flex h-full w-full flex-row items-center gap-2 p-1.5'}>
         <div class={'flex h-full flex-1 flex-col gap-1 overflow-hidden'}>
           <div class={'flex flex-row gap-1'}>
             <img class={'h-8 w-8 rounded-lg'} alt={props.title} src={props.img} loading={'lazy'} />
@@ -328,7 +330,8 @@ const ChildBody: ParentComponent<{ i: number; url?: string }> = props => {
       <Match when={props.url}>
         <a
           class={twMerge(
-            'min-h-24 hover:scale-102 group/live w-full rounded-2xl shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
+            'min-h-24 w-full rounded-2xl shadow-xl',
+            'hover:scale-102 group/live transition-all hover:shadow-2xl hover:brightness-105',
             campaignColor(props.i),
           )}
           href={props.url}
