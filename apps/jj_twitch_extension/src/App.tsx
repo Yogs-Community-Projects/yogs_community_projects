@@ -1,15 +1,16 @@
 import type { Component, ParentComponent } from 'solid-js'
-import { Match, Switch } from 'solid-js'
+import { Match, Show, Switch } from 'solid-js'
 import NavBar from './ui/components/NavBar'
 import { Route, Routes } from '@solidjs/router'
 import { JJConfigProvider, useConfigDB } from '@ycapp/common'
 import { twMerge } from 'tailwind-merge'
 import { ThemeProvider, useTheme } from './ThemeProvider'
 import { JJTab1, JJTab2, JJTab3 } from './ui/components/JJTab'
+import { Env, useEnv } from './EnvProvider'
 
 const App: Component = () => {
   const jjExtensionConfig = useConfigDB().readJJExtensionConfig()
-
+  const env = useEnv()
   return (
     <Switch>
       <Match when={jjExtensionConfig.error}>
@@ -23,7 +24,9 @@ const App: Component = () => {
           <ThemeProvider>
             <Theme>
               <div class={'flex h-full flex-col'}>
-                <NavBar />
+                <Show when={env === Env.desktop}>
+                  <NavBar />
+                </Show>
                 <div class={'mx-auto w-full flex-1 overflow-hidden overscroll-none'}>
                   <Routes>
                     <Route path={'/'} component={JJTab1}></Route>
@@ -34,6 +37,9 @@ const App: Component = () => {
                     <Route path={'/3'} component={JJTab3}></Route>
                   </Routes>
                 </div>
+                <Show when={env === Env.mobile}>
+                  <NavBar />
+                </Show>
               </div>
             </Theme>
           </ThemeProvider>
