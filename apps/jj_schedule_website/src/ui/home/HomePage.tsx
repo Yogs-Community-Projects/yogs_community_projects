@@ -1,5 +1,5 @@
+import { useJJStartCountdown, useNextJJStartDate } from '@ycapp/common'
 import { Component } from 'solid-js'
-import { useJJStartCountdown, useNextJJStartDate } from '../../store/jj_dates_signals'
 
 const Disclaimer: Component = () => {
   return (
@@ -13,17 +13,18 @@ const Disclaimer: Component = () => {
 }
 
 const HomePage: Component = () => {
-  // linear-gradient(#f15683, #7b0a2b)
+  const nextJJStartDate = useNextJJStartDate()
+  const jjStartCountdown = useJJStartCountdown()
   return (
     <div class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}>
       <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Yogscast Jingle Jam Countdown</p>
-      <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('DDDD')}</p>
-      <p class={'text-xl md:text-3xl'}>{useNextJJStartDate().toLocal().toFormat('ttt')}</p>
-      <p class={''}>{useNextJJStartDate().toFormat('DDDD')}</p>
-      <p class={''}>{useNextJJStartDate().toFormat('ttt')}</p>
+      <p class={'text-xl md:text-3xl'}>{nextJJStartDate().toLocal().toFormat('DDDD')}</p>
+      <p class={'text-xl md:text-3xl'}>{nextJJStartDate().toLocal().toFormat('ttt')}</p>
+      <p class={''}>{nextJJStartDate().toFormat('DDDD')}</p>
+      <p class={''}>{nextJJStartDate().toFormat('ttt')}</p>
       <div class={'flex flex-col items-center p-1 text-white md:p-4'}>
-        <p class={'text-2xl md:text-4xl'}>Jingle Jam {useNextJJStartDate().year} starts</p>
-        <p class={'font-mono text-2xl md:text-4xl'}>{useJJStartCountdown().toFormat("dd 'Days' hh:mm:ss")}</p>
+        <p class={'text-2xl md:text-4xl'}>Jingle Jam {nextJJStartDate().year} starts</p>
+        <p class={'font-mono text-2xl md:text-4xl'}>{jjStartCountdown().toFormat("dd 'Days' hh:mm:ss")}</p>
       </div>
       <Disclaimer />
     </div>
@@ -31,11 +32,12 @@ const HomePage: Component = () => {
 }
 
 const Countdown: Component = () => {
-  const countdown = () => useJJStartCountdown()
-  const seconds = () => Math.round(useJJStartCountdown().as('seconds') % 60)
-  const minutes = () => Math.round(useJJStartCountdown().as('minutes') % 60)
-  const hours = () => Math.round(useJJStartCountdown().as('hours') % 60)
-  const days = () => Math.round(useJJStartCountdown().as('days'))
+  const nextJJStartDate = useNextJJStartDate()
+  const jjStartCountdown = useJJStartCountdown()
+  const seconds = () => Math.round(jjStartCountdown().as('seconds') % 60)
+  const minutes = () => Math.round(jjStartCountdown().as('minutes') % 60)
+  const hours = () => Math.round(jjStartCountdown().as('hours') % 60)
+  const days = () => Math.round(jjStartCountdown().as('days'))
   return (
     <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
       <div class="flex flex-col">

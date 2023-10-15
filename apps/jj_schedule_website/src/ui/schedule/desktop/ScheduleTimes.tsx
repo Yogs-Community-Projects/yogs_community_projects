@@ -3,7 +3,7 @@ import { Component, For } from 'solid-js'
 import { useMaxDayCount, useTimes } from '../providers/ScheduleDataProvider'
 import { Time } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
-import { useNextJJStartDate } from '../../../store/jj_dates_signals'
+import { useNextJJStartDate } from '@ycapp/common'
 
 export const ScheduleTimes: Component = () => {
   return (
@@ -43,13 +43,14 @@ const ScheduleTime: Component<ScheduleTimeProps> = props => {
 }
 
 const Timezone: Component = () => {
+  const nextJJStartDate = useNextJJStartDate()
   return (
     <div class={'w-data h-data p-schedule text-[1.1vw]'}>
       <div class={'schedule-card-white grid place-items-center'}>
         <p>
           {
             // DateTime.now().toFormat('ZZZZ')
-            useNextJJStartDate().toLocal().offsetNameShort
+            nextJJStartDate().toLocal().offsetNameShort
           }
           {useMaxDayCount()}
         </p>

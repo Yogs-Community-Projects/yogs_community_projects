@@ -1,6 +1,5 @@
 /* @refresh reload */
 import { render } from 'solid-js/web'
-import 'tw-elements'
 import './index.css'
 import { Component, lazy } from 'solid-js'
 import { useLocale } from '@kobalte/core'
