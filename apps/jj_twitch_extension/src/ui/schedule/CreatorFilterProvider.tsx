@@ -1,5 +1,5 @@
 import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
-import { Accessor } from 'solid-js/types/reactive/signal'
+import { Accessor } from 'solid-js'
 
 interface CreatorFilterContextProps {
   filter: Accessor<string[]>

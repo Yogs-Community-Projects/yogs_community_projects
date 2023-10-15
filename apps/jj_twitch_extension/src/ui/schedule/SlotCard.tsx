@@ -33,9 +33,9 @@ export const SlotCard: Component<SlotCardProps> = props => {
   function _parseColor(c: string): string {
     return '#' + c.substring(2) //  + c.substring(0, 2)
   }
-  function _parseColorWithOpacity(c: string): string {
+  /*  function _parseColorWithOpacity(c: string): string {
     return '#' + c.substring(2) + 'BB' //  + c.substring(0, 2)
-  }
+  }*/
 
   const background = () => {
     let gradientStyle: JSX.CSSProperties | undefined

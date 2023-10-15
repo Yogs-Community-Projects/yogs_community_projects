@@ -6,7 +6,7 @@ import { useCreatorFilter } from './CreatorFilterProvider'
 import { ScheduleControls } from './ScheduleControls'
 import { DateTime } from 'luxon'
 import { twMerge } from 'tailwind-merge'
-import { useTheme } from '../../ThemeProvider'
+import { useTheme } from '../themeProvider'
 
 export const ScheduleBody: Component = () => {
   const scroll =

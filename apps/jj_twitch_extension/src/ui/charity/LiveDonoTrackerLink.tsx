@@ -1,6 +1,6 @@
 import { useJJConfig } from '@ycapp/common'
 import { Component, Show } from 'solid-js'
-import { useTheme } from '../../ThemeProvider'
+import { useTheme } from '../themeProvider'
 import { twMerge } from 'tailwind-merge'
 
 export const LiveDonoTrackerLink: Component = () => {

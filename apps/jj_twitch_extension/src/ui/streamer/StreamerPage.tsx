@@ -1,14 +1,14 @@
 import { Component, createEffect, createSignal, For, Match, onMount, ParentComponent, Show, Switch } from 'solid-js'
-import { loadLocalAndRemote, useFirestoreDB, useJJConfig } from '@ycapp/common'
-import { collection, CollectionReference, doc } from 'firebase/firestore'
+import { useJJConfig } from '@ycapp/common'
 import { DateTime } from 'luxon'
 import { FiExternalLink } from 'solid-icons/fi'
 import { twMerge } from 'tailwind-merge'
-import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
-import { useTheme } from '../../ThemeProvider'
+import { Campaign } from '@ycapp/model'
+import { useTheme } from '../themeProvider'
 import { InvisibleBody } from '../InvisibleBody'
 import { Numeric } from 'solid-i18n'
 import { ColoredScrollbar } from '../../ColoredScrollbar'
+import { useData } from '../dataProvider'
 
 const StreamerPage: Component = () => {
   const visible = () => useJJConfig().showCommunityFundraiser
@@ -24,9 +24,7 @@ const StreamerPage: Component = () => {
   )
 }
 const VisibleBody: Component = () => {
-  const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
-  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023')
-  const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
+  const { fundraiserData } = useData()
   const fundraiser = () => {
     return (
       [...fundraiserData.data.campaigns]
@@ -61,6 +59,14 @@ const VisibleBody: Component = () => {
               <FundraiserBody fundraisers={fundraiser()} />
             </div>
           </ColoredScrollbar>
+        </Match>
+        <Match when={fundraiserData.error} keyed={false}>
+          <p>{fundraiserData.error.message}</p>
+        </Match>
+        <Match when={fundraiserData.loading} keyed={false}>
+          <div class={'flex h-full w-full flex-col items-center justify-center text-center text-white'}>
+            <p>Loading community fundraiser...</p>
+          </div>
         </Match>
       </Switch>
     </div>

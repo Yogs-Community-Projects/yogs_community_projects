@@ -1,6 +1,6 @@
 import { ParentComponent } from 'solid-js'
 import { twMerge } from 'tailwind-merge'
-import { useTheme } from './ThemeProvider'
+import { useTheme } from './ui/themeProvider'
 
 export const ColoredScrollbar: ParentComponent = props => {
   const { theme } = useTheme()

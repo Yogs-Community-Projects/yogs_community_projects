@@ -1,14 +1,12 @@
-import { Component, createSignal, onCleanup, onMount, ParentComponent, Show } from 'solid-js'
+import { Component, Show } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { DateTime } from 'luxon'
-import { NumberStyle } from 'i18n-mini/lib/types'
-import { Transition } from 'solid-transition-group'
 import { ToggleButton } from '@kobalte/core'
 import { BsCurrencyDollar, BsCurrencyPound } from 'solid-icons/bs'
 import { useCurrency } from '../CurrencyProvider'
 import { twMerge } from 'tailwind-merge'
 import { JJData } from '@ycapp/model'
-import { useTheme } from '../../ThemeProvider'
+import { useTheme } from '../themeProvider'
 
 interface CharityOverviewProps {
   data: JJData
@@ -94,68 +92,6 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
   )
 }
 
-export const CharityOverviewLoading: Component = () => {
-  const { theme, tailwindBGPrimary } = useTheme()
-  const raisedTextColor = () => {
-    if (theme() === 'dark') {
-      return 'bg-white'
-    }
-    return tailwindBGPrimary()
-  }
-
-  const darkText = () => {
-    if (theme() === 'dark') {
-      return 'bg-white'
-    }
-    return ''
-  }
-
-  const bgColor = () => {
-    if (theme() === 'dark') {
-      return 'bg-gray-500'
-    }
-    return 'bg-white'
-  }
-
-  return (
-    <div class={'min-h-[156px] text-center text-xs'}>
-      <div
-        class={twMerge('flex h-full w-full animate-pulse flex-col gap-1 rounded-2xl bg-white p-1 shadow-xl', bgColor())}
-      >
-        <div id={'parent'} class={'relative h-12'}>
-          <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center gap-1'}>
-            <div
-              class={twMerge('relative h-3 w-[50%] rounded-full text-base font-bold opacity-75', raisedTextColor())}
-            />
-            <div class={twMerge('h-2 w-[40%] rounded-full bg-black text-xs opacity-75', darkText())}></div>
-          </div>
-        </div>
-        <div class={'grid grid-cols-2 gap-1 gap-y-2'}>
-          <div class={'flex flex-col items-center gap-1'}>
-            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
-            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
-          </div>
-          <div class={'flex flex-col items-center gap-1'}>
-            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
-            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
-          </div>
-          <div class={'flex flex-col items-center gap-1'}>
-            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
-            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
-          </div>
-          <div class={'flex flex-col items-center gap-1'}>
-            <div class={twMerge('h-3 w-[50%] rounded-full text-xs font-bold opacity-75', raisedTextColor())} />
-            <div class={twMerge('h-2 w-[60%] rounded-full bg-black text-xs opacity-75', darkText())} />
-          </div>
-        </div>
-        <div class={'flex flex-1 items-end justify-center'}>
-          <div class={twMerge('h-2 w-[50%] rounded-full bg-black text-center opacity-75', darkText())}></div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 const CurrencyToggle: Component = () => {
   const { pounds, toggle } = useCurrency()
   const { tailwindBGPrimary } = useTheme()
@@ -189,106 +125,9 @@ const CurrencyToggle: Component = () => {
   )
 }
 
-interface CountUpProps {
-  value: number
-  numberStyle?: NumberStyle
-  currency?: string
-}
-
-const CountUp: Component<CountUpProps> = props => {
-  const [total, setTotal] = createSignal(0)
-
-  function animateCounting(duration, finalValue) {
-    const ms = 1000 / 60
-    const increment = finalValue / (duration / ms) // Calculate increment per second
-
-    let currentCount = 0
-
-    function updateCount() {
-      currentCount += increment // Increment current count by the increment
-      if (currentCount <= finalValue) {
-        setTotal(Math.ceil(currentCount))
-        setTimeout(updateCount, ms)
-      } else {
-        setTotal(finalValue) // Set the final value
-      }
-    }
-
-    updateCount()
-  }
-
-  onMount(() => {
-    animateCounting(1000, props.value)
-  })
-  return <Numeric value={total()} numberStyle={props.numberStyle} currency={props.currency} />
-}
-
-const Anim: ParentComponent = props => {
-  return (
-    <Transition
-      mode={'outin'}
-      onEnter={(el, done) => {
-        const a = el.animate(
-          [
-            {
-              opacity: 0, //transform: 'rotateX(-90deg) perspective(800px)'
-            },
-            {
-              opacity: 1, //transform: 'rotateX(0deg) perspective(0px)'
-            },
-          ],
-          {
-            duration: 700,
-          },
-        )
-        a.finished.then(done)
-      }}
-      onExit={(el, done) => {
-        const a = el.animate(
-          [
-            {
-              opacity: 1, //transform: 'rotateX(0deg) perspective(0px)'
-            },
-            {
-              opacity: 0, //transform: 'rotateX(90deg) perspective(800px)'
-            },
-          ],
-          {
-            duration: 700,
-          },
-        )
-        a.finished.then(done)
-      }}
-      children={props.children}
-    />
-  )
-}
-
 interface CurrencyAnimProps {
   dollars: number
   pounds: number
-}
-
-const CurrencyAnim: Component<CurrencyAnimProps> = props => {
-  const [dollar, setShowDollar] = createSignal(false)
-  const timer = setInterval(() => {
-    setShowDollar(!dollar())
-  }, 10000)
-  onCleanup(() => clearInterval(timer))
-  return (
-    <Anim>
-      <Show when={dollar()}>
-        <div id={'usd'}>
-          <Numeric value={props.dollars} numberStyle="currency" currency={'USD'} />
-        </div>
-      </Show>
-      <Show when={!dollar()}>
-        <div id={'gbp'}>
-          <Numeric value={props.pounds} numberStyle="currency" currency={'GBP'} />
-        </div>
-      </Show>
-    </Anim>
-  )
 }
 
 const Currency: Component<CurrencyAnimProps> = props => {

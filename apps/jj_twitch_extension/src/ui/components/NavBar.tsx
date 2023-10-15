@@ -2,7 +2,7 @@ import { Component, Show } from 'solid-js'
 import { A } from '@solidjs/router'
 import { FaRegularClock, FaSolidHeart, FaSolidPeopleGroup } from 'solid-icons/fa'
 import { twMerge } from 'tailwind-merge'
-import { useTheme } from '../../ThemeProvider'
+import { useTheme } from '../themeProvider'
 import { useTwitchConfig } from '../config/useTwitchConfig'
 import { TabType } from '../config/TwitchConfig'
 

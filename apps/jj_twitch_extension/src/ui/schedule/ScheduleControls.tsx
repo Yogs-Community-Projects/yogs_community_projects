@@ -4,9 +4,8 @@ import { Component, Match, Show, Switch } from 'solid-js'
 import { FaSolidCalendarDay, FaSolidChevronLeft, FaSolidChevronRight, FaSolidFilter } from 'solid-icons/fa'
 import { BiRegularReset } from 'solid-icons/bi'
 import { FilterDialog } from './ScheduleCreatorFilterButton'
-import { createModalSignal, useIsJJ } from '@ycapp/common'
+import { createModalSignal } from '@ycapp/common'
 import { FiExternalLink } from 'solid-icons/fi'
-import { Env, useEnv } from '../../EnvProvider'
 
 export const ScheduleControls: Component = () => {
   const [prev, next, today] = useDayIndexSetter()

@@ -2,7 +2,7 @@ import { Component, For } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { useCurrency } from '../CurrencyProvider'
 import { Cause } from '@ycapp/model'
-import { useTheme } from '../../ThemeProvider'
+import { useTheme } from '../themeProvider'
 import { twMerge } from 'tailwind-merge'
 
 interface CharityListProps {

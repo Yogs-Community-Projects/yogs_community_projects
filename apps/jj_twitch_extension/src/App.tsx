@@ -1,51 +1,35 @@
 import type { Component, ParentComponent } from 'solid-js'
-import { Match, Show, Switch } from 'solid-js'
+import { Show } from 'solid-js'
 import NavBar from './ui/components/NavBar'
 import { Route, Routes } from '@solidjs/router'
-import { JJConfigProvider, useConfigDB } from '@ycapp/common'
 import { twMerge } from 'tailwind-merge'
-import { ThemeProvider, useTheme } from './ThemeProvider'
+import { useTheme } from './ui/themeProvider'
 import { JJTab1, JJTab2, JJTab3 } from './ui/components/JJTab'
 import { Env, useEnv } from './EnvProvider'
 
 const App: Component = () => {
-  const jjExtensionConfig = useConfigDB().readJJExtensionConfig()
   const env = useEnv()
   return (
-    <Switch>
-      <Match when={jjExtensionConfig.error}>
-        <p>Error: {JSON.parse(jjExtensionConfig.error)}</p>
-      </Match>
-      <Match when={jjExtensionConfig.loading}>
-        <p>Loading...</p>
-      </Match>
-      <Match when={jjExtensionConfig.data}>
-        <JJConfigProvider config={jjExtensionConfig.data}>
-          <ThemeProvider>
-            <Theme>
-              <div class={'flex h-full flex-col'}>
-                <Show when={env === Env.desktop}>
-                  <NavBar />
-                </Show>
-                <div class={'mx-auto w-full flex-1 overflow-hidden overscroll-none'}>
-                  <Routes>
-                    <Route path={'/'} component={JJTab1}></Route>
-                    <Route path={''} component={JJTab1}></Route>
-                    <Route path={'*'} component={JJTab1}></Route>
-                    <Route path={'/1'} component={JJTab1}></Route>
-                    <Route path={'/2'} component={JJTab2}></Route>
-                    <Route path={'/3'} component={JJTab3}></Route>
-                  </Routes>
-                </div>
-                <Show when={env === Env.mobile}>
-                  <NavBar />
-                </Show>
-              </div>
-            </Theme>
-          </ThemeProvider>
-        </JJConfigProvider>
-      </Match>
-    </Switch>
+    <Theme>
+      <div class={'flex h-full flex-col'}>
+        <Show when={env === Env.desktop}>
+          <NavBar />
+        </Show>
+        <div class={'mx-auto w-full flex-1 overflow-hidden overscroll-none'}>
+          <Routes>
+            <Route path={'/'} component={JJTab1}></Route>
+            <Route path={''} component={JJTab1}></Route>
+            <Route path={'*'} component={JJTab1}></Route>
+            <Route path={'/1'} component={JJTab1}></Route>
+            <Route path={'/2'} component={JJTab2}></Route>
+            <Route path={'/3'} component={JJTab3}></Route>
+          </Routes>
+        </div>
+        <Show when={env === Env.mobile}>
+          <NavBar />
+        </Show>
+      </div>
+    </Theme>
   )
 }
 

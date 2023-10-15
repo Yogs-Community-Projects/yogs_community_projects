@@ -1,6 +1,6 @@
 import { createContext, ParentComponent, useContext } from 'solid-js'
 import { Day, Schedule, ScheduleData, Slot, Week } from '@ycapp/model'
-import { Accessor } from 'solid-js/types/reactive/signal'
+import { Accessor } from 'solid-js'
 import { useDayIndex } from './DayIndexProvider'
 
 interface ScheduleProps {

@@ -1,9 +1,9 @@
-import { createContext, ParentComponent, useContext } from 'solid-js'
+import { useTwitchConfig } from '../../config/useTwitchConfig'
 import { useSearchParams } from '@solidjs/router'
-import { useTwitchConfig } from './ui/config/useTwitchConfig'
-import { Theme } from './ui/config/TwitchConfig'
+import { Theme } from '../../config/TwitchConfig'
+import { createContext } from 'solid-js'
 
-const useInternalTheme = () => {
+export const useInternalTheme = () => {
   const { config } = useTwitchConfig()
   const [searchParams] = useSearchParams()
 
@@ -108,11 +108,4 @@ const useInternalTheme = () => {
     tailwindBGPrimary300,
   }
 }
-
-const ThemeContext = createContext<ReturnType<typeof useInternalTheme>>()
-
-export const ThemeProvider: ParentComponent = props => {
-  const t = useInternalTheme()
-  return <ThemeContext.Provider value={t}>{props.children}</ThemeContext.Provider>
-}
-export const useTheme = () => useContext(ThemeContext)
+export const ThemeContext = createContext<ReturnType<typeof useInternalTheme>>()

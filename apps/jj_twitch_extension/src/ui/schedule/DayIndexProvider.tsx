@@ -1,5 +1,5 @@
 import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
-import { Accessor } from 'solid-js/types/reactive/signal'
+import { Accessor } from 'solid-js'
 import { useDays, useDaysCount, useSlots } from './JJScheduleProvider'
 import { DayUtils, SlotUtils } from '@ycapp/model'
 import { DateTime } from 'luxon'

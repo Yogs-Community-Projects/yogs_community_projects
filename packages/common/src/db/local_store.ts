@@ -63,9 +63,9 @@ export function loadFromLocalstorage<T>(key: string): StoreItem<T> | undefined {
   return undefined
 }
 
-function isDataOldWithKey<T>(key: string, maxAge = 24): boolean {
+/*function isDataOldWithKey<T>(key: string, maxAge = 24): boolean {
   return isDataOld<T>(loadFromLocalstorage<T>(key), maxAge)
-}
+}*/
 
 export function isDataOld<T>(data?: StoreItem<T>, maxAge = 24): boolean {
   if (!data) {

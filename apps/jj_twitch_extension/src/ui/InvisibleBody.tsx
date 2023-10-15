@@ -1,5 +1,5 @@
 import { Component, Show } from 'solid-js'
-import { useTheme } from '../ThemeProvider'
+import { useTheme } from './themeProvider'
 import { twMerge } from 'tailwind-merge'
 import { useIsJJ, useJJStartCountdown, useNextJJStartDate } from '@ycapp/common'
 
