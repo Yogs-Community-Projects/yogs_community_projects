@@ -1,7 +1,7 @@
-import { ParentComponent } from 'solid-js'
-import YcDBDummyProvider from './dummy_db_provider'
-import YcDBFirebaseProvider from './firestore_db_provider'
+import { lazy, ParentComponent } from 'solid-js'
 
+const YcDBFirebaseProvider = lazy(() => import('./firestore_db_provider'))
+const YcDBDummyProvider = lazy(() => import('./dummy_db_provider'))
 export const YcDBProvider: ParentComponent = props => {
   const configString = import.meta.env.VITE_FIREBASE_CONFIG
   if (configString) {
