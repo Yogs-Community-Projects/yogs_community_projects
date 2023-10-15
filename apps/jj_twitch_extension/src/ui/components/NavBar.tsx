@@ -1,4 +1,4 @@
-import { Component, Show } from 'solid-js'
+import { Component, Match, Show, Switch } from 'solid-js'
 import { A } from '@solidjs/router'
 import { FaRegularClock, FaSolidHeart, FaSolidPeopleGroup } from 'solid-icons/fa'
 import { twMerge } from 'tailwind-merge'
@@ -26,14 +26,19 @@ const NavBar: Component = () => {
   )
 }
 const TabIcon: Component<{ tab: TabType }> = props => {
-  switch (props.tab) {
-    case 'yogs':
-      return <FaRegularClock />
-    case 'charities':
-      return <FaSolidHeart />
-    case 'community':
-      return <FaSolidPeopleGroup />
-  }
+  return (
+    <Switch>
+      <Match when={props.tab === 'yogs'}>
+        <FaRegularClock />
+      </Match>
+      <Match when={props.tab === 'charities'}>
+        <FaSolidHeart />
+      </Match>
+      <Match when={props.tab === 'community'}>
+        <FaSolidPeopleGroup />
+      </Match>
+    </Switch>
+  )
 }
 
 const TabC: Component<{ href: string; tabType: TabType; class?: string }> = props => {
