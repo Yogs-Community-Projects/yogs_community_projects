@@ -1,5 +1,6 @@
 import { Component, lazy, Match, Suspense, Switch } from 'solid-js'
-import { TabType, useTwitchConfig } from '../config/TwitchConfigProvider'
+import { TabType } from '../config/TwitchConfig'
+import { useTwitchConfig } from '../config/useTwitchConfig'
 
 interface JJTabProps {
   tab: TabType

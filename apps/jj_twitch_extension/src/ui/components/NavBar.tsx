@@ -1,9 +1,10 @@
 import { Component, Show } from 'solid-js'
 import { A } from '@solidjs/router'
 import { FaRegularClock, FaSolidHeart, FaSolidPeopleGroup } from 'solid-icons/fa'
-import { TabType, useTwitchConfig } from '../config/TwitchConfigProvider'
 import { twMerge } from 'tailwind-merge'
 import { useTheme } from '../../ThemeProvider'
+import { useTwitchConfig } from '../config/useTwitchConfig'
+import { TabType } from '../config/TwitchConfig'
 
 const NavBar: Component = () => {
   const { config } = useTwitchConfig()

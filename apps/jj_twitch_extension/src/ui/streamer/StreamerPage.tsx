@@ -52,12 +52,12 @@ const VisibleBody: Component = () => {
       </div>
       <Switch>
         <Match when={fundraiserData.data}>
-          <p class={'text-center text-base text-white'}>
+          <p class={'mb-2 text-center text-base text-white'}>
             Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
           </p>
           <RandomFundraiserButton fundraisers={fundraiser()} />
           <ColoredScrollbar>
-            <div class={'mb-2 flex flex-1 flex-col gap-2'}>
+            <div class={'my-2 flex flex-1 flex-col gap-2'}>
               <FundraiserBody fundraisers={fundraiser()} />
             </div>
           </ColoredScrollbar>

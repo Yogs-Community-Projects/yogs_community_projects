@@ -30,7 +30,7 @@ const VisibleBody: Component = () => {
 
   return (
     <div class={'flex h-full flex-1 flex-col'}>
-      <h3 class={'pb-2 text-center text-xl text-white'}>Charities</h3>
+      <h3 class={'mb-2 text-center text-xl text-white'}>Charities</h3>
       <ColoredScrollbar>
         <Switch>
           <Match when={charityData.data && !charityData.loading}>

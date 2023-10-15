@@ -1,6 +1,7 @@
 import { createContext, ParentComponent, useContext } from 'solid-js'
-import { Theme, useTwitchConfig } from './ui/config/TwitchConfigProvider'
 import { useSearchParams } from '@solidjs/router'
+import { useTwitchConfig } from './ui/config/useTwitchConfig'
+import { Theme } from './ui/config/TwitchConfig'
 
 const useInternalTheme = () => {
   const { config } = useTwitchConfig()

@@ -1,33 +1,9 @@
-import { createContext, onMount, ParentComponent, useContext } from 'solid-js'
+import { onMount, ParentComponent } from 'solid-js'
 import { createStore } from 'solid-js/store'
+import { defaultConfig, TwitchConfig } from './TwitchConfig'
+import { TwitchConfigContext } from './TwitchConfigContext'
 
-export type TabType = 'yogs' | 'charities' | 'community' | 'none'
-export type Theme = 'red' | 'blue' | 'dark' | 'red_dark' | 'blue_dark' | 'rainbow'
-interface TwitchConfig {
-  tab1: TabType
-  tab2: TabType
-  tab3: TabType
-  theme: Theme
-}
-
-interface TwitchConfigContextProps {
-  config: TwitchConfig
-  setConfig: (config: Partial<TwitchConfig>) => void
-  save: () => void
-  validConfig: () => boolean
-  edited: () => boolean
-}
-
-const TwitchConfigContext = createContext<TwitchConfigContextProps>()
-
-const defaultConfig: TwitchConfig = {
-  tab1: 'yogs',
-  tab2: 'charities',
-  tab3: 'community',
-  theme: 'red',
-}
-
-export const TwitchConfigProvider: ParentComponent = props => {
+const TwitchConfigProvider: ParentComponent = props => {
   const [config, setConfig] = createStore<TwitchConfig>(defaultConfig)
   const [originalConfig, setOriginalConfig] = createStore<TwitchConfig>(defaultConfig)
   const twitch = (window as any)?.Twitch?.ext
@@ -115,4 +91,4 @@ export const TwitchConfigProvider: ParentComponent = props => {
   )
 }
 
-export const useTwitchConfig = () => useContext(TwitchConfigContext)
+export default TwitchConfigProvider

@@ -1,7 +1,7 @@
 import { Component, For } from 'solid-js'
-import { useTwitchConfig } from './TwitchConfigProvider'
 import { RadioGroup, Select } from '@kobalte/core'
 import { AiOutlineCheck } from 'solid-icons/ai'
+import { useTwitchConfig } from './useTwitchConfig'
 
 const optionsMap = new Map<string, string>([
   ['red', 'Red'],
