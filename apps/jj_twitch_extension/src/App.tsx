@@ -1,7 +1,7 @@
 import type { Component, ParentComponent } from 'solid-js'
 import { Show } from 'solid-js'
 import NavBar from './ui/components/NavBar'
-import { Route, Routes } from '@solidjs/router'
+import { Route, Routes, useNavigate } from '@solidjs/router'
 import { twMerge } from 'tailwind-merge'
 import { useTheme } from './ui/themeProvider'
 import { JJTab1, JJTab2, JJTab3 } from './ui/components/JJTab'
@@ -9,6 +9,8 @@ import { Env, useEnv } from './EnvProvider'
 
 const App: Component = () => {
   const env = useEnv()
+  const navigate = useNavigate()
+  navigate('/1')
   return (
     <Theme>
       <div class={'flex h-full flex-col'}>
