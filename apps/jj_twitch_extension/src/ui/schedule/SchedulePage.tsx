@@ -6,6 +6,7 @@ import { useJJConfig } from '@ycapp/common'
 import { CreatorFilterProvider } from './CreatorFilterProvider'
 import { InvisibleBody } from '../InvisibleBody'
 import { useData } from '../dataProvider'
+import { LoadingPage, LoadingSchedule } from '../components/LoadingPage'
 
 const SchedulePage: Component = () => {
   const visible = () => useJJConfig().visible
@@ -40,9 +41,7 @@ const VisibleSchedule = () => {
         <p>{scheduleData.error.message}</p>
       </Match>
       <Match when={scheduleData.loading}>
-        <div class={'flex h-full w-full flex-col items-center justify-center text-center text-white'}>
-          <p>Loading Schedule...</p>
-        </div>
+        <LoadingSchedule />
       </Match>
     </Switch>
   )

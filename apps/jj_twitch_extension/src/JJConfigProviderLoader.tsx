@@ -1,18 +1,19 @@
 import { Match, ParentComponent, Switch } from 'solid-js'
 import { JJConfigProvider, useConfigDB } from '@ycapp/common'
+import { LoadingPage } from './ui/components/LoadingPage'
 
 const JJConfigProviderLoader: ParentComponent = props => {
-  const jjExtensionConfig = useConfigDB().readJJExtensionConfig()
+  const config = useConfigDB().readJJExtensionConfig()
   return (
     <Switch>
-      <Match when={jjExtensionConfig.error}>
-        <p>Error: {JSON.parse(jjExtensionConfig.error)}</p>
+      <Match when={config.error}>
+        <p>Error: {config.error.message}</p>
       </Match>
-      <Match when={jjExtensionConfig.loading}>
-        <p>Loading...</p>
+      <Match when={config.loading}>
+        <LoadingPage class={''} />
       </Match>
-      <Match when={jjExtensionConfig.data}>
-        <JJConfigProvider config={jjExtensionConfig.data}>{props.children}</JJConfigProvider>
+      <Match when={config.data}>
+        <JJConfigProvider config={config.data}>{props.children}</JJConfigProvider>
       </Match>
     </Switch>
   )

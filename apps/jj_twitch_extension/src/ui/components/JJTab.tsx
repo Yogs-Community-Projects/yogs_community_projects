@@ -1,6 +1,7 @@
 import { Component, lazy, Match, Suspense, Switch } from 'solid-js'
 import { TabType } from '../config/TwitchConfig'
 import { useTwitchConfig } from '../config/useTwitchConfig'
+import { LoadingCharities, LoadingFundraisers, LoadingSchedule } from './LoadingPage'
 
 interface JJTabProps {
   tab: TabType
@@ -18,28 +19,26 @@ const StreamerPage = lazy(() => {
 
 const JJTab: Component<JJTabProps> = props => {
   return (
-    <>
-      <Switch>
-        <Match when={props.tab == 'yogs'}>
-          <Suspense>
-            <SchedulePage />
-          </Suspense>
-        </Match>
-        <Match when={props.tab == 'charities'}>
-          <Suspense>
-            <CharityPage />
-          </Suspense>
-        </Match>
-        <Match when={props.tab == 'community'}>
-          <Suspense>
-            <StreamerPage />
-          </Suspense>
-        </Match>
-        <Match when={props.tab == 'none'}>
-          <p>None</p>
-        </Match>
-      </Switch>
-    </>
+    <Switch>
+      <Match when={props.tab == 'yogs'}>
+        <Suspense fallback={<LoadingSchedule />}>
+          <SchedulePage />
+        </Suspense>
+      </Match>
+      <Match when={props.tab == 'charities'}>
+        <Suspense fallback={<LoadingCharities />}>
+          <CharityPage />
+        </Suspense>
+      </Match>
+      <Match when={props.tab == 'community'}>
+        <Suspense fallback={<LoadingFundraisers />}>
+          <StreamerPage />
+        </Suspense>
+      </Match>
+      <Match when={props.tab == 'none'}>
+        <p>None</p>
+      </Match>
+    </Switch>
   )
 }
 

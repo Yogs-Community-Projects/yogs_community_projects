@@ -9,6 +9,7 @@ import { InvisibleBody } from '../InvisibleBody'
 import { Numeric } from 'solid-i18n'
 import { ColoredScrollbar } from '../../ColoredScrollbar'
 import { useData } from '../dataProvider'
+import { LoadingFundraisers } from '../components/LoadingPage'
 
 const StreamerPage: Component = () => {
   const visible = () => useJJConfig().showCommunityFundraiser
@@ -64,9 +65,7 @@ const VisibleBody: Component = () => {
           <p>{fundraiserData.error.message}</p>
         </Match>
         <Match when={fundraiserData.loading} keyed={false}>
-          <div class={'flex h-full w-full flex-col items-center justify-center text-center text-white'}>
-            <p>Loading community fundraiser...</p>
-          </div>
+          <LoadingFundraisers />
         </Match>
       </Switch>
     </div>

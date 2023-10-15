@@ -7,6 +7,7 @@ import { LiveDonoTrackerLink } from './LiveDonoTrackerLink'
 import { InvisibleBody } from '../InvisibleBody'
 import { ColoredScrollbar } from '../../ColoredScrollbar'
 import { useData } from '../dataProvider'
+import { LoadingCharities } from '../components/LoadingPage'
 
 const CharityPage: Component = () => {
   const visible = () => useJJConfig().showCharities
@@ -38,9 +39,7 @@ const VisibleBody: Component = () => {
             </CurrencyProvider>
           </Match>
           <Match when={charityData.loading && !charityData.data}>
-            <div class={'flex h-full w-full flex-col items-center justify-center text-center text-white'}>
-              <p>Loading Charities...</p>
-            </div>
+            <LoadingCharities />
           </Match>
           <Match when={charityData.error} keyed={false}>
             <p>{charityData.error.message}</p>

@@ -5,7 +5,7 @@ import { TabType } from '../../config/TwitchConfig'
 import { useFirestore } from 'solid-firebase'
 import { collection, CollectionReference, doc, FirestoreError } from 'firebase/firestore'
 import { useFirestoreDB, useJJConfig } from '@ycapp/common'
-import { JJCommunityFundraiser, JJData, ScheduleData } from '@ycapp/model'
+import { JJCommunityFundraiser, JJData, JJExtensionConfig, ScheduleData } from '@ycapp/model'
 import { createStore } from 'solid-js/store'
 
 interface UseFireStoreReturn<T> {
@@ -29,6 +29,10 @@ const getCharitiesDoc = () => {
 }
 const getFundraiserDoc = () => {
   return getDoc<JJCommunityFundraiser>('JJDonationTracker', 'Fundraiser2023')
+}
+
+const getConfigDoc = () => {
+  return getDoc<JJExtensionConfig>('JJExtensionConfig', 'TwitchExtensionConfig')
 }
 
 function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
@@ -94,6 +98,7 @@ export const useDataHook = () => {
   const scheduleData = useCache('yogs', getScheduleDoc())
   const charityData = useCache('charities', getCharitiesDoc())
   const fundraiserData = useCache('community', getFundraiserDoc())
-  return { scheduleData, charityData, fundraiserData }
+  const config = useFirestore(getConfigDoc())
+  return { scheduleData, charityData, fundraiserData, config }
 }
 export const DataContext = createContext<ReturnType<typeof useDataHook>>()
