@@ -1,8 +1,8 @@
 /* @refresh reload */
 import './config.css'
 import { render } from 'solid-js/web'
-import { TwitchConfigProvider } from './ui/config/TwitchConfigProvider'
 import { ConfigBody } from './ui/config/ConfigBody'
+import TwitchConfigProvider from './ui/config/TwitchConfigProvider'
 
 const root = document.getElementById('root')
 
