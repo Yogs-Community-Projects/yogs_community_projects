@@ -27,7 +27,7 @@ const VisibleSchedule = () => {
   const { scheduleData } = useData()
   return (
     <Switch>
-      <Match when={scheduleData.data} keyed={true}>
+      <Match when={scheduleData.data}>
         <ScheduleDataProvider scheduleData={scheduleData.data}>
           <DayIndexProvider>
             <CreatorFilterProvider>
@@ -36,10 +36,10 @@ const VisibleSchedule = () => {
           </DayIndexProvider>
         </ScheduleDataProvider>
       </Match>
-      <Match when={scheduleData.error} keyed={false}>
+      <Match when={scheduleData.error}>
         <p>{scheduleData.error.message}</p>
       </Match>
-      <Match when={scheduleData.loading} keyed={false}>
+      <Match when={scheduleData.loading}>
         <div class={'flex h-full w-full flex-col items-center justify-center text-center text-white'}>
           <p>Loading Schedule...</p>
         </div>
