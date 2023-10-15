@@ -1,8 +1,7 @@
-import { Component, lazy } from 'solid-js'
+import { Component } from 'solid-js'
 import { Router } from '@solidjs/router'
-
-const App = lazy(() => import('./App'))
-const Providers = lazy(() => import('./Providers'))
+import Providers from './Providers'
+import App from './App'
 
 export const JJExtensionMain: Component = () => {
   return (
