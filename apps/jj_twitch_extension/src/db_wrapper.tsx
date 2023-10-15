@@ -1,7 +1,7 @@
-import ExtensionDBDummyProvider from '@ycapp/common/src/jj_db/dummy_db_provider'
-import ExtensionDBFirebaseProvider from '@ycapp/common/src/jj_db/firestore_db_provider'
-import { ParentComponent } from 'solid-js'
+import { lazy, ParentComponent } from 'solid-js'
 
+const ExtensionDBFirebaseProvider = lazy(() => import('@ycapp/common/src/jj_db/firestore_db_provider'))
+const ExtensionDBDummyProvider = lazy(() => import('@ycapp/common/src/jj_db/dummy_db_provider'))
 const DBWrapper: ParentComponent = props => {
   const configString = import.meta.env.VITE_FIREBASE_CONFIG
   if (configString) {
