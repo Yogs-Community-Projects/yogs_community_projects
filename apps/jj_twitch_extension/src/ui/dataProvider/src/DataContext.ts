@@ -1,4 +1,4 @@
-import { createContext, createEffect, createRoot, createSignal } from 'solid-js'
+import { batch, createContext, createEffect, createRoot, createSignal } from 'solid-js'
 import { useLocation } from '@solidjs/router'
 import { useTwitchConfig } from '../../config/useTwitchConfig'
 import { TabType } from '../../config/TwitchConfig'
@@ -48,7 +48,7 @@ function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
       location.pathname === '/' ||
       location.pathname === '' ||
       location.pathname === '*' ||
-      location.pathname.endsWith('index.html'))
+      location.pathname.endsWith('.html'))
   const isTab = () => {
     return (
       isTab1() ||
@@ -68,13 +68,11 @@ function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
       createRoot(() => {
         const s = useFirestore<T>(load)
         createEffect(() => {
-          setCache('data', s.data)
-        })
-        createEffect(() => {
-          setCache('loading', s.loading)
-        })
-        createEffect(() => {
-          setCache('error', s.error)
+          batch(() => {
+            setCache('data', s.data)
+            setCache('loading', s.loading)
+            setCache('error', s.error)
+          })
         })
       })
     }
