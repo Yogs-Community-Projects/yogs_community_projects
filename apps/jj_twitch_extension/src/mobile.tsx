@@ -1,7 +1,7 @@
 /* @refresh reload */
 import './mobile.css'
 import { render } from 'solid-js/web'
-import { JJExtensionMobile } from './JJExtensionMain'
+import { JJExtensionMobile } from './JJExtensionMobile'
 
 const root = document.getElementById('root')
 
@@ -11,4 +11,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   )
 }
 
-render(() => <JJExtensionMobile />, root!)
+render(() => <JJExtensionMobile />, root)
