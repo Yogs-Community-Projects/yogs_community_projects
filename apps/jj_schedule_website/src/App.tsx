@@ -11,7 +11,6 @@ import { FundraisersOverlay } from './overlay/fundraisers/FundraisersOverlay'
 import { OverlayOverview } from './overlay/overview/OverlayOverview'
 import { CharityOverlay } from './overlay/charity/CharityOverlay'
 import { CharityOverlay2 } from './overlay/charity/CharityOverlay2'
-import { SimpleScheduleOverviewComponent } from './overlay/overview/SimpleScheduleOverviewComponent'
 import { SimpleScheduleOverlay } from './overlay/schedule_simple/SimpleScheduleOverlay'
 
 const App: Component = () => {
