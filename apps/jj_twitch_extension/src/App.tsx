@@ -1,4 +1,4 @@
-import type { Component, ParentComponent } from 'solid-js'
+import type { Component } from 'solid-js'
 import { Show } from 'solid-js'
 import NavBar from './ui/components/NavBar'
 import { Route, Routes, useNavigate } from '@solidjs/router'

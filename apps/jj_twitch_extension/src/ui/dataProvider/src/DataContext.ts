@@ -3,9 +3,9 @@ import { useLocation } from '@solidjs/router'
 import { useTwitchConfig } from '../../config/useTwitchConfig'
 import { TabType } from '../../config/TwitchConfig'
 import { useFirestore } from 'solid-firebase'
-import { collection, CollectionReference, doc, FirestoreError } from 'firebase/firestore'
-import { useFirestoreDB, useJJConfig } from '@ycapp/common'
-import { JJCommunityFundraiser, JJData, JJExtensionConfig, ScheduleData } from '@ycapp/model'
+import { collection, CollectionReference, doc, FirestoreError, Firestore } from 'firebase/firestore'
+import { useJJConfig } from '@ycapp/common'
+import { JJCommunityFundraiser, JJData, ScheduleData } from '@ycapp/model'
 import { createStore } from 'solid-js/store'
 
 interface UseFireStoreReturn<T> {
@@ -14,25 +14,20 @@ interface UseFireStoreReturn<T> {
   error: FirestoreError | null
 }
 
-function getDoc<T>(collectionName: string, id: string) {
-  const db = useFirestoreDB()
+function getDoc<T>(db: Firestore, collectionName: string, id: string) {
   const coll = collection(db, collectionName) as CollectionReference<T>
   return doc<T>(coll, id)
 }
 
-const getScheduleDoc = () => {
+const getScheduleDoc = (db: Firestore) => {
   const id = useJJConfig().scheduleId
-  return getDoc<ScheduleData>('ScheduleData', id)
+  return getDoc<ScheduleData>(db, 'ScheduleData', id)
 }
-const getCharitiesDoc = () => {
-  return getDoc<JJData>('JJDonationTracker', 'JJDonationTracker2023')
+const getCharitiesDoc = (db: Firestore) => {
+  return getDoc<JJData>(db, 'JJDonationTracker', 'JJDonationTracker2023')
 }
-const getFundraiserDoc = () => {
-  return getDoc<JJCommunityFundraiser>('JJDonationTracker', 'Fundraiser2023')
-}
-
-const getConfigDoc = () => {
-  return getDoc<JJExtensionConfig>('JJExtensionConfig', 'TwitchExtensionConfig')
+const getFundraiserDoc = (db: Firestore) => {
+  return getDoc<JJCommunityFundraiser>(db, 'JJDonationTracker', 'Fundraiser2023')
 }
 
 function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
@@ -94,11 +89,11 @@ function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
   */
   return cache
 }
-export const useDataHook = () => {
-  const scheduleData = useCache('yogs', getScheduleDoc())
-  const charityData = useCache('charities', getCharitiesDoc())
-  const fundraiserData = useCache('community', getFundraiserDoc())
-  const config = useFirestore(getConfigDoc())
-  return { scheduleData, charityData, fundraiserData, config }
+export const useDataHook = (db: Firestore) => {
+  const scheduleData = useCache('yogs', getScheduleDoc(db))
+  const charityData = useCache('charities', getCharitiesDoc(db))
+  const fundraiserData = useCache('community', getFundraiserDoc(db))
+
+  return { scheduleData, charityData, fundraiserData }
 }
 export const DataContext = createContext<ReturnType<typeof useDataHook>>()
