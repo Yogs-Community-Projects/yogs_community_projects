@@ -6,6 +6,7 @@ import { ScheduleOverlayComponent } from '../schedule/ScheduleOverlay'
 import { useNow } from '@ycapp/common'
 
 export const ScheduleOverviewComponent = () => {
+  const now = useNow()
   const [theme, setTheme] = createSignal('default')
   const [headerTheme, setHeaderTheme] = createSignal('default')
   const [next, setNext] = createSignal(3)
@@ -299,7 +300,7 @@ export const ScheduleOverviewComponent = () => {
             height: heightStr(),
           }}
         >
-          <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
+          <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : now()}>
             <ScheduleOverlayComponent
               next={next()}
               background={color()}

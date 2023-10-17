@@ -1,19 +1,8 @@
 import { DateTime } from 'luxon'
-import { createSignal, onCleanup } from 'solid-js'
+import { useDatetimeLondonNow, useNow } from './now_signal'
 
 const london = 'Europe/London'
-export const useDatetimeLondonNow = (init?: DateTime) => {
-  const [date, setDate] = createSignal(init ?? DateTime.now().setZone(london))
-  const interval = setInterval(() => setDate(init ?? DateTime.now().setZone(london)), 1000)
-  onCleanup(() => clearInterval(interval))
-  return date
-}
-export const useDatetimeNow = (init?: DateTime) => {
-  const [date, setDate] = createSignal(init ?? DateTime.now())
-  const interval = setInterval(() => setDate(init ?? DateTime.now()), 1000)
-  onCleanup(() => clearInterval(interval))
-  return date
-}
+
 export const useNextJJStartDate = (init?: DateTime) => {
   const now = useDatetimeLondonNow(init)
   const isAfterJJEnd = useIsAfterJJEnd(init)
@@ -90,7 +79,7 @@ export const useIsJJ = (init?: DateTime) => {
 
 export const useJJStartCountdown = (init?: DateTime) => {
   const jjStartDate = useNextJJStartDate(init)
-  const now = useDatetimeNow(init)
+  const now = useNow(init)
   return () => {
     return jjStartDate().diff(now())
   }

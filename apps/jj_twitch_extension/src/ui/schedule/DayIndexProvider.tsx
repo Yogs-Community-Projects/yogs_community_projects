@@ -33,13 +33,15 @@ export const isJJ = () => {
   return isAfterJJStart() && isBeforeJJEnd()
 }
 export const isBeforeJJStart = () => {
-  return useNow() < jjStart()
+  const now = useNow()
+  return now() < jjStart()
 }
 export const isAfterJJStart = () => {
   return !isBeforeJJStart()
 }
 export const isAfterJJEnd = () => {
-  return useNow() > jjEnd()
+  const now = useNow()
+  return now() > jjEnd()
 }
 export const isBeforeJJEnd = () => {
   return !isAfterJJEnd()
@@ -47,13 +49,20 @@ export const isBeforeJJEnd = () => {
 
 export const useTodayIndex = () => {
   const days = useDays()
+  const now = useNow()
   let index = 0
   if (isJJ()) {
     for (let i = 0; i < days.length; i++) {
-      const day = index[i]
+      const day = days[i]
       if (DayUtils.isToday(day)) {
         index = i
         break
+      } else if (i > 1) {
+        const prevDay = days[i - 1]
+        if (now() >= DayUtils.end(prevDay) && now() <= DayUtils.start(day)) {
+          index = i
+          break
+        }
       }
     }
   }

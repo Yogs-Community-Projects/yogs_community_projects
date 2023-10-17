@@ -15,6 +15,7 @@ export const SimpleScheduleOverviewComponent = () => {
   )
 }
 const Body = () => {
+  const now = useNow()
   const { schedule, timezone } = useScheduleDataString()
   const [theme, setTheme] = createSignal('default')
   const [headerTheme, setHeaderTheme] = createSignal('default')
@@ -65,6 +66,7 @@ const Body = () => {
   const heightStr = () => `${height()}px`
 
   const url = () => {
+    const now = useNow()
     const base = window.origin
     let url = `${base}/overlay/customschedule?`
     if (!transparent()) {
@@ -312,7 +314,7 @@ const Body = () => {
             height: heightStr(),
           }}
         >
-          <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : useNow()}>
+          <ScheduleOverlayDateProviderProvider debug={testDate()} date={testDate() ? date() : now()}>
             <SimpleScheduleOverlayComponent
               next={next()}
               background={color()}

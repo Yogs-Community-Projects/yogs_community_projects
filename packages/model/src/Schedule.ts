@@ -222,9 +222,9 @@ export class SlotUtils {
   static isBefore(slot: Slot, now?: DateTime) {
     now ??= DateTime.now()
     if (slot.type == 'special') {
-      return now < SlotUtils.start(slot).plus(SlotUtils.duration(slot))
+      return now < SlotUtils.start(slot)
     }
-    return now < SlotUtils.nextStream(slot, now).plus(SlotUtils.duration(slot))
+    return now < SlotUtils.nextStream(slot, now)
   }
 }
 
@@ -245,6 +245,7 @@ export class DayUtils {
   }
 
   static isToday(day: Day) {
-    return useNow() > DayUtils.start(day) && useNow() < DayUtils.end(day)
+    const now = useNow()
+    return now() >= DayUtils.start(day) && now() <= DayUtils.end(day)
   }
 }

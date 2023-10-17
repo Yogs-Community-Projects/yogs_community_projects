@@ -40,7 +40,7 @@ interface SlotDialogBodyProps {
 
 const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
   const { onClose, slot } = props
-
+  const now = useNow()
   const background = () => {
     return _parseColor(slot.style.background ?? slot.style.linearGradient?.colors[0] ?? 'ffff0000')
   }
@@ -56,14 +56,14 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
     return '#' + c.substring(2) //  + c.substring(0, 2)
   }
   const showCountdown = () => {
-    return SlotUtils.isBefore(slot, useNow())
+    return SlotUtils.isBefore(slot, now())
   }
   const countdown = () => {
-    const diff = DateTime.fromISO(slot.start).diff(useNow())
+    const diff = DateTime.fromISO(slot.start).diff(now())
     if (diff.as('day') < 7) {
-      return DateTime.fromISO(slot.start).diff(useNow()).toFormat('hh:mm:ss')
+      return DateTime.fromISO(slot.start).diff(now()).toFormat('hh:mm:ss')
     }
-    return DateTime.fromISO(slot.start).diff(useNow()).toFormat("dd 'Days', hh:mm:ss")
+    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd 'Days', hh:mm:ss")
   }
 
   return (

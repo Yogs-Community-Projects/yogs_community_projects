@@ -3,12 +3,12 @@ import { useCurrentDay, useScheduleData, useSlots } from './JJScheduleProvider'
 import { SlotCard } from './SlotCard'
 import { Title } from './ScheduleHeader'
 import { useCreatorFilter } from './CreatorFilterProvider'
-import { ScheduleControls } from './ScheduleControls'
 import { DateTime } from 'luxon'
 import { twMerge } from 'tailwind-merge'
 import { useTheme } from '../themeProvider'
+import ScheduleControls from './ScheduleControls'
 
-export const ScheduleBody: Component = () => {
+const ScheduleBody: Component = () => {
   const scroll =
     'flex-1 overflow-auto scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 pt-0'
   const schedule = useScheduleData()
@@ -72,7 +72,7 @@ const ScheduleSlots: Component = () => {
   return (
     <Switch>
       <Match when={isEmpty()}>
-        <div>
+        <div class={'flex min-h-full flex-col gap-2 p-2'}>
           <For each={slots()}>
             {slot => {
               return <SlotCard slot={slot} showCountdown={true} showTime={true} />
@@ -81,7 +81,7 @@ const ScheduleSlots: Component = () => {
         </div>
       </Match>
       <Match when={!isEmpty()}>
-        <div class={'pb-10'}>
+        <div class={'flex flex-col gap-2 p-2'}>
           <For each={filteredSlots()}>
             {slot => {
               return <SlotCard slot={slot} showCountdown={true} showTime={true} />
@@ -92,3 +92,5 @@ const ScheduleSlots: Component = () => {
     </Switch>
   )
 }
+
+export default ScheduleBody

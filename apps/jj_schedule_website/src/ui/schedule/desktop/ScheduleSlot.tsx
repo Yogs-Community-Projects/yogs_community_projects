@@ -14,6 +14,7 @@ interface ScheduleSlotProps {
 
 export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const slot = props.slot
+  const now = useNow()
   const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
 
   const { includes, isEmpty } = useCreatorFilter()
@@ -65,14 +66,14 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const modalSignal = createModalSignal()
 
   const showCountdown = () => {
-    return SlotUtils.isBefore(slot, useNow())
+    return SlotUtils.isBefore(slot, now())
   }
   const countdown = () => {
-    const diff = DateTime.fromISO(slot.start).diff(useNow())
+    const diff = DateTime.fromISO(slot.start).diff(now())
     if (diff.as('day') < 7) {
-      return DateTime.fromISO(slot.start).diff(useNow()).toFormat('hh:mm:ss')
+      return DateTime.fromISO(slot.start).diff(now()).toFormat('hh:mm:ss')
     }
-    return DateTime.fromISO(slot.start).diff(useNow()).toFormat("dd 'Days', hh:mm:ss")
+    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd 'Days', hh:mm:ss")
   }
 
   return (

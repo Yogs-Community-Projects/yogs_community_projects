@@ -16,12 +16,13 @@ import { FeedbackButtons } from '../../components/FeedbackButtons'
 
 const currentDay = () => useDays()[useDayIndex()]
 const isTimeNow = (time: Time) => {
+  const now = useNow()
   const start = DateTime.fromISO(time.start)
   start.weekday
   const end = start.plus(Duration.fromDurationLike({ millisecond: time.duration / 1000 }))
   const startTimeOfDay = TimeOfDay.fromDateTime(start)
   const endTimeOfDay = TimeOfDay.fromDateTime(end)
-  const nowTimeOfDay = () => TimeOfDay.fromDateTime(useNow())
+  const nowTimeOfDay = () => TimeOfDay.fromDateTime(now())
   return nowTimeOfDay().minOfDay >= startTimeOfDay.minOfDay && nowTimeOfDay().minOfDay <= endTimeOfDay.minOfDay
 }
 export const ScheduleBody: Component = () => {

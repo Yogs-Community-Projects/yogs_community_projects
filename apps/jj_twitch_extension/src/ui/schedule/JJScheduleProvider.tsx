@@ -12,7 +12,7 @@ const ScheduleContext = createContext<ScheduleProps>()
 export const ScheduleDataProvider: ParentComponent<{ scheduleData: ScheduleData }> = props => {
   return <ScheduleContext.Provider value={{ schedule: props.scheduleData }}>{props.children}</ScheduleContext.Provider>
 }
-const useScheduleDataContext = () => useContext(ScheduleContext)!
+const useScheduleDataContext = () => useContext(ScheduleContext)
 export const useScheduleData: Accessor<ScheduleData> = () => useScheduleDataContext().schedule
 export const useSchedule: Accessor<Schedule> = (): Schedule => useScheduleData().schedule
 export const useWeeks: Accessor<Week[]> = (): Week[] => useSchedule().weeks

@@ -25,7 +25,7 @@ export const TwitchTile: Component<TwitchTileProps> = props => {
           loading={'lazy'}
         />
       </div>
-      <div class={'flex h-[25%] w-full flex-col items-center justify-center'}>
+      <div class={'flex h-[25%] w-full flex-col items-center justify-center overflow-hidden'}>
         <p class={'m-auto truncate overflow-ellipsis text-center text-xs'}>{data.channel.display_name}</p>
       </div>
     </a>

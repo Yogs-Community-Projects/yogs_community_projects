@@ -7,7 +7,7 @@ import { FilterDialog } from './ScheduleCreatorFilterButton'
 import { createModalSignal } from '@ycapp/common'
 import { FiExternalLink } from 'solid-icons/fi'
 
-export const ScheduleControls: Component = () => {
+const ScheduleControls: Component = () => {
   const [prev, next, today] = useDayIndexSetter()
   const modalSignal = createModalSignal()
   const { reset, isEmpty } = useCreatorFilter()
@@ -63,3 +63,5 @@ export const ScheduleControls: Component = () => {
     </>
   )
 }
+
+export default ScheduleControls

@@ -4,20 +4,7 @@ import { DateTime } from 'luxon'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { RemoteData, useCreatorDB } from '@ycapp/common'
 import { CreatorData } from '@ycapp/model'
-import { ScheduleControls } from './ScheduleControls'
 
-export const ScheduleHeader: Component = () => {
-  return (
-    <div style={{}} class={'flex w-full flex-col'}>
-      <div class={'h-30'}>
-        <Title />
-      </div>
-      <div class={'p-schedule h-4'}>
-        <ScheduleControls />
-      </div>
-    </div>
-  )
-}
 export const Title: Component = () => {
   const day = () => useCurrentDay()
   const date = () => DateTime.fromISO(day().start)

@@ -1,12 +1,13 @@
-import { Component, Match, Show, Switch } from 'solid-js'
+import { Component, lazy, Match, Show, Suspense, Switch } from 'solid-js'
 import { ScheduleDataProvider } from './JJScheduleProvider'
 import { DayIndexProvider } from './DayIndexProvider'
-import { ScheduleBody } from './ScheduleBody'
 import { useJJConfig } from '@ycapp/common'
 import { CreatorFilterProvider } from './CreatorFilterProvider'
 import { InvisibleBody } from '../InvisibleBody'
 import { useData } from '../dataProvider'
-import { LoadingPage, LoadingSchedule } from '../components/LoadingPage'
+import { LoadingSchedule } from '../components/LoadingPage'
+
+const ScheduleBody = lazy(() => import('./ScheduleBody'))
 
 const SchedulePage: Component = () => {
   const visible = () => useJJConfig().visible
@@ -32,7 +33,9 @@ const VisibleSchedule = () => {
         <ScheduleDataProvider scheduleData={scheduleData.data}>
           <DayIndexProvider>
             <CreatorFilterProvider>
-              <ScheduleBody />
+              <Suspense fallback={<LoadingSchedule />}>
+                <ScheduleBody />
+              </Suspense>
             </CreatorFilterProvider>
           </DayIndexProvider>
         </ScheduleDataProvider>
