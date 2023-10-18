@@ -10,7 +10,7 @@ import ScheduleControls from './ScheduleControls'
 
 const ScheduleBody: Component = () => {
   const scroll =
-    'flex-1 overflow-auto scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 pt-0'
+    'flex-1 overflow-auto overflow-x-hidden scrollbar-thin scrollbar-corner-primary-100 scrollbar-thumb-accent-500 scrollbar-track-accent-100 pt-0'
   const schedule = useScheduleData()
   const { theme } = useTheme()
 
