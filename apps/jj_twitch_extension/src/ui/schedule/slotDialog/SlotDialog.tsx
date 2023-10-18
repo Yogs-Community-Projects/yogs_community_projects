@@ -79,7 +79,7 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
       <div class={'flex w-full flex-1 flex-col overflow-auto p-4 text-xs'}>
         <p class={'text-lg'}>{slot.subtitle}</p>
         <Show when={showCountdown()}>
-          <p class={'text-lg'}>{countdown()}</p>
+          <p class={'text-lg'}>Starts in {countdown()}</p>
         </Show>
         <p class={'text-lg'}>
           {SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}{' '}
