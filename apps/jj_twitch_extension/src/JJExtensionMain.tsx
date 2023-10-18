@@ -1,7 +1,7 @@
 import { Component, lazy, Suspense } from 'solid-js'
 import { Router } from '@solidjs/router'
-import App from './App'
 import { LoadingPage } from './ui/components/LoadingPage'
+import App from './App'
 
 const Providers = lazy(() => import('./ui/providers/Providers'))
 export const JJExtensionMain: Component = () => {
@@ -15,3 +15,5 @@ export const JJExtensionMain: Component = () => {
     </Router>
   )
 }
+
+export default JJExtensionMain
