@@ -70,8 +70,9 @@ export const useTodayIndex = () => {
 }
 
 export const DayIndexProvider: ParentComponent = props => {
-  const [useIndex, setIndex] = createSignal(useTodayIndex())
+  const todayIndex = useTodayIndex()
   const numberOfDays = useDaysCount()
+  const [useIndex, setIndex] = createSignal(todayIndex)
 
   const isTodaySelected = () => {
     return useIndex() == useWeekDay() - 1
@@ -90,7 +91,7 @@ export const DayIndexProvider: ParentComponent = props => {
     setIndex(next)
   }
   const today = () => {
-    setIndex(useTodayIndex())
+    setIndex(todayIndex)
   }
 
   return (
