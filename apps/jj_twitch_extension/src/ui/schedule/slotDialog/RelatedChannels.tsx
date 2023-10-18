@@ -3,6 +3,7 @@ import { Slot, TwitchChannelData } from '@ycapp/model'
 import { batch, Component, createEffect, createRoot, For, Match, Switch } from 'solid-js'
 import { TwitchTile } from '../../components/tiles/TwitchTile'
 import { createStore } from 'solid-js/store'
+import { useRelatedChannel } from '../useRelatedChannel'
 
 interface RelatedChannelProps {
   data: TwitchChannelData[]
@@ -21,42 +22,7 @@ interface RelatedChannelsProps {
 }
 
 const RelatedChannels: Component<RelatedChannelsProps> = props => {
-  const [relatedTwitchChannel, setRelatedTwitchChannel] = createStore<RemoteData<TwitchChannelData[]>>({
-    loading: true,
-    data: null,
-    error: null,
-  })
-  const creators = useCreatorDB().readSome(props.slot.relations.creators)
-  const ids = () => {
-    if (!creators.data) {
-      return []
-    }
-    const cs = creators.data
-    if (cs.length == 0) {
-      return []
-    }
-    if (cs.every(c => c.creator.relations.twitchChannels.length == 0)) {
-      return []
-    }
-    return cs.map(c => c.creator.relations.twitchChannels).reduce((a, b) => a.concat(b))
-  }
-  const twitchDB = useTwitchDB()
-
-  createEffect(() => {
-    if (creators.data) {
-      createRoot(() => {
-        const twitch = twitchDB.readSome(ids())
-        createEffect(() => {
-          batch(() => {
-            setRelatedTwitchChannel('data', twitch.data)
-            setRelatedTwitchChannel('loading', twitch.loading)
-            setRelatedTwitchChannel('error', twitch.error)
-          })
-        })
-      })
-    }
-  })
-
+  const relatedTwitchChannel = useRelatedChannel(props.slot)
   return (
     <>
       <Switch>
