@@ -2,7 +2,6 @@ import { createSignal } from 'solid-js'
 import { copyToClipboard } from './copyToClipboard'
 import { CharityOverlayComponent } from '../charity/CharityOverlay'
 import { CharityOverlayComponent2 } from '../charity/CharityOverlay2'
-import { useSpeed } from '../overlay_signals'
 
 export const CharitiesOverviewComponent = () => {
   const [speed, setSpeed] = createSignal(2)
