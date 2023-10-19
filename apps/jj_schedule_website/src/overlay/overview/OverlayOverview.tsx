@@ -8,6 +8,7 @@ import overlay1 from '../../assets/overlay/overlay1.png'
 import overlay2 from '../../assets/overlay/overlay2.png'
 import { twMerge } from 'tailwind-merge'
 import { SimpleScheduleOverviewComponent } from './SimpleScheduleOverviewComponent'
+import { FeedbackButtons } from '../../ui/components/FeedbackButtons'
 /*
 export const OverlayOverview: Component = () => {
   return (
@@ -50,6 +51,7 @@ export const OverlayOverview: Component = () => {
         class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}
       >
         <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>JJ Community OBS Overlays</p>
+        <FeedbackButtons />
         <p>
           These are JJ related overlays are meant to be used in an <a href={'https://obsproject.com/'}>OBS</a> browser
           sources. Configure the Overlays and use these links and add them to your{' '}
