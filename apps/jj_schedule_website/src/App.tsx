@@ -5,7 +5,6 @@ import {
   schedule2020RouteDataFunc,
   schedule2021RouteDataFunc,
   schedule2022RouteDataFunc,
-  schedule2023RouteDataFunc,
 } from './ui/schedule/ScheduleRouteData'
 import { ScheduleOverlay } from './overlay/schedule/ScheduleOverlay'
 import { FundraisersOverlay } from './overlay/fundraisers/FundraisersOverlay'
@@ -19,8 +18,8 @@ const App: Component = () => {
     <Router>
       <Routes>
         <Route path={'/'} component={lazy(() => import('./ui/AppBody'))}>
-          <Route path={'/'} component={lazy(() => import('./ui/home/HomePage'))}></Route>
-          <Route path={'/extension'} component={lazy(() => import('./ui/extension/ExtensionPage'))}></Route>
+          <Route path={'/'} component={lazy(() => import('./ui/home/HomePage'))} />
+          <Route path={'/extension'} component={lazy(() => import('./ui/extension/ExtensionPage'))} />
           <Route
             path={'/2021'}
             data={schedule2021RouteDataFunc}
@@ -36,18 +35,13 @@ const App: Component = () => {
             data={schedule2022RouteDataFunc}
             component={lazy(() => import('./ui/schedule/SchedulePage'))}
           ></Route>
-          <Route
-            path={'/2023'}
-            data={schedule2023RouteDataFunc}
-            component={lazy(() => import('./ui/schedule/SchedulePage'))}
-          ></Route>
-          <Route path={'/overlay'} component={OverlayOverview}></Route>
+          <Route path={'/overlay'} component={OverlayOverview} />
         </Route>
-        <Route path={'/overlay/schedule'} component={ScheduleOverlay}></Route>
-        <Route path={'/overlay/fundraisers'} component={FundraisersOverlay}></Route>
-        <Route path={'/overlay/charities'} component={CharityOverlay}></Route>
-        <Route path={'/overlay/charities2'} component={CharityOverlay2}></Route>
-        <Route path={'/overlay/customschedule'} component={SimpleScheduleOverlay}></Route>
+        <Route path={'/overlay/schedule'} component={ScheduleOverlay} />
+        <Route path={'/overlay/fundraisers'} component={FundraisersOverlay} />
+        <Route path={'/overlay/charities'} component={CharityOverlay} />
+        <Route path={'/overlay/charities2'} component={CharityOverlay2} />
+        <Route path={'/overlay/customschedule'} component={SimpleScheduleOverlay} />
       </Routes>
     </Router>
   )
