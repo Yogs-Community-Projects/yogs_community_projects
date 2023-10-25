@@ -10,12 +10,13 @@ import { useDivDimension } from '@ycapp/common'
 export const ScheduleComponent: Component<{ schedule: ScheduleData }> = props => {
   const [size, setRef] = useDivDimension()
   const mobile = () => size().width < 768
+  const desktop = () => !mobile()
 
   return (
     <div class={'mx-4'}>
       <div class={'flex min-h-screen w-full flex-col items-center'} ref={setRef}>
         <Switch>
-          <Match when={!mobile()} keyed>
+          <Match when={desktop()} keyed>
             <ScheduleProviderContainer size={size} scheduleData={props.schedule}>
               <ScheduleFrame />
               <ScheduleDisclaimer />
