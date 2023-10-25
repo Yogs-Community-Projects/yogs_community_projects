@@ -1,6 +1,6 @@
 import type { Component } from 'solid-js'
 import { lazy } from 'solid-js'
-import { Route, Router, Routes } from '@solidjs/router'
+import { Navigate, Route, Router, Routes, useNavigate } from '@solidjs/router'
 import {
   schedule2020RouteDataFunc,
   schedule2021RouteDataFunc,
@@ -42,9 +42,16 @@ const App: Component = () => {
         <Route path={'/overlay/charities'} component={CharityOverlay} />
         <Route path={'/overlay/charities2'} component={CharityOverlay2} />
         <Route path={'/overlay/customschedule'} component={SimpleScheduleOverlay} />
+        <Route path="*" component={Redirect}></Route>
       </Routes>
     </Router>
   )
+}
+
+export const Redirect = () => {
+  const navigate = useNavigate()
+  navigate('/')
+  return <></>
 }
 
 export default App
