@@ -10,7 +10,7 @@ const ExtensionPage: Component = () => {
       <FeedbackButtons />
       <div class={'flex flex-col items-center p-2'}>
         <img class={'md:w-[50%]'} src={screenshot} alt={'Discovery'} />
-        <a class={'p-1 md:p-4'} href={'https://dashboard.twitch.tv/extensions/7m5fitr4o8raxn6fv59lndv2iy0uuz-0.0.5'}>
+        <a class={'p-1 md:p-4'} href={'https://dashboard.twitch.tv/extensions/7m5fitr4o8raxn6fv59lndv2iy0uuz'}>
           Get the current version of the extension on Twitch
         </a>
 
