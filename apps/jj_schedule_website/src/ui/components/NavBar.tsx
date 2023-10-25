@@ -1,4 +1,4 @@
-import { Component, createSignal, Show } from 'solid-js'
+import { Component, createEffect, createSignal, Show } from 'solid-js'
 import { A, useLocation } from '@solidjs/router'
 import './NavBar.css'
 import { CgClose, CgMenu } from 'solid-icons/cg'
@@ -10,6 +10,7 @@ export const NavBar: Component = () => {
         <Link path="/" title="Home" />
         <Link path="/2022" title="Jingle Jam 2022" />
         <Link path="/2021" title="Jingle Jam 2021" />
+        <Link path="/2020" title="Jingle Jam 2020" />
         <Link path="/extension" title="Twitch Extension" />
         <Link path="/overlay" title="Streaming Overlays" />
         <a
@@ -30,13 +31,21 @@ const DropdownNavBar: Component = () => {
   const [open, setOpen] = createSignal(false)
   const [ref, setRef] = createSignal<HTMLDivElement>()
 
+  createEffect(() => {
+    if (open()) {
+      ref()?.classList.remove('hidden')
+      ref()?.classList.add('flex')
+    } else {
+      ref()?.classList.add('hidden')
+      ref()?.classList.remove('flex')
+    }
+  })
+
   const onClick = () => {
-    ref()?.classList.toggle('hidden')
     setOpen(!open())
   }
 
   const onClose = () => {
-    ref()?.classList.add('hidden')
     setOpen(false)
   }
 
@@ -45,10 +54,11 @@ const DropdownNavBar: Component = () => {
       <button class={'text-text flex flex-row items-center rounded-xl bg-white p-4'} onClick={onClick}>
         Menu {!open() ? <CgMenu class={'ml-2'} /> : <CgClose class={'ml-2'} />}
       </button>
-      <div class={'mt-1 flex flex-col space-y-1 md:hidden'} ref={setRef}>
+      <div class={'mt-1 flex flex-col space-y-1 transition-all md:hidden'} ref={setRef}>
         <LinkMobile path="/" title="Home" close={onClose} />
         <LinkMobile path="/2022" title="Jingle Jam 2022" close={onClose} />
         <LinkMobile path="/2021" title="Jingle Jam 2021" close={onClose} />
+        <LinkMobile path="/2020" title="Jingle Jam 2020" close={onClose} />
         <LinkMobile path="/extension" title="Twitch Extension" close={onClose} />
         <a
           href={'https://schedule.yogs.app'}

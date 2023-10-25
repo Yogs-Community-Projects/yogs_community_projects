@@ -16,6 +16,10 @@ export const schedule2021RouteDataFunc: ScheduleRouteDataType = () => {
   return useScheduleDB().read('jinglejam2021')
 }
 
+export const schedule2020RouteDataFunc: ScheduleRouteDataType = () => {
+  return useScheduleDB().read('jinglejam2020')
+}
+
 export const useScheduleRouteData = () => {
   return useRouteData<ScheduleRouteDataType>()
 }

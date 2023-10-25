@@ -2,6 +2,7 @@ import type { Component } from 'solid-js'
 import { lazy } from 'solid-js'
 import { Route, Router, Routes } from '@solidjs/router'
 import {
+  schedule2020RouteDataFunc,
   schedule2021RouteDataFunc,
   schedule2022RouteDataFunc,
   schedule2023RouteDataFunc,
@@ -23,6 +24,11 @@ const App: Component = () => {
           <Route
             path={'/2021'}
             data={schedule2021RouteDataFunc}
+            component={lazy(() => import('./ui/schedule/SchedulePage'))}
+          ></Route>
+          <Route
+            path={'/2020'}
+            data={schedule2020RouteDataFunc}
             component={lazy(() => import('./ui/schedule/SchedulePage'))}
           ></Route>
           <Route
