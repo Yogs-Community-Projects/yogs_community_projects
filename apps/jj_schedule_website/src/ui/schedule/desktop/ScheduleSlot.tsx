@@ -4,7 +4,7 @@ import { DateTime, Duration } from 'luxon'
 import { useScheduleDimensions } from '../providers/ScheduleDimensionsProvider'
 import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
-import { BsHeart } from 'solid-icons/bs'
+import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 
@@ -103,14 +103,17 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               </Show>
             </div>
             <div class={'flex w-full flex-row justify-around'}>
-              <Show when={slot.showTwitchIcon} fallback={<div />}>
+              <Show when={slot.showTwitchIcon}>
                 <BiLogosTwitch size={18} />
               </Show>
-              <Show when={slot.showHighlightIcon} fallback={<div />}>
+              <Show when={slot.showHighlightIcon}>
                 <BsHeart size={18} />
               </Show>
-              <Show when={slot.showYoutubeIcon} fallback={<div />}>
+              <Show when={slot.showYoutubeIcon}>
                 <BiLogosYoutube size={18} />
+              </Show>
+              <Show when={slot.relations.creators.length > 0}>
+                <BsPeopleFill size={18} />
               </Show>
             </div>
           </button>
