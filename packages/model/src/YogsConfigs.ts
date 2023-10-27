@@ -1,5 +1,7 @@
 export interface JJExtensionConfig {
   scheduleId: string
+  jjDonationTrackerDoc?: string
+  fundraiserDoc?: string
   visible: boolean
   showCharities: boolean
   showCommunityFundraiser: boolean

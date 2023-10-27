@@ -3,7 +3,7 @@ import { useLocation } from '@solidjs/router'
 import { useTwitchConfig } from '../../config/useTwitchConfig'
 import { TabType } from '../../config/TwitchConfig'
 import { useFirestore } from 'solid-firebase'
-import { collection, CollectionReference, doc, FirestoreError, Firestore } from 'firebase/firestore'
+import { collection, CollectionReference, doc, Firestore, FirestoreError } from 'firebase/firestore'
 import { useJJConfig } from '@ycapp/common'
 import { JJCommunityFundraiser, JJData, ScheduleData } from '@ycapp/model'
 import { createStore } from 'solid-js/store'
@@ -24,10 +24,12 @@ const getScheduleDoc = (db: Firestore) => {
   return getDoc<ScheduleData>(db, 'ScheduleData', id)
 }
 const getCharitiesDoc = (db: Firestore) => {
-  return getDoc<JJData>(db, 'JJDonationTracker', 'JJDonationTracker2023')
+  const docId = useJJConfig().jjDonationTrackerDoc ?? 'JJDonationTracker2023'
+  return getDoc<JJData>(db, 'JJDonationTracker', docId)
 }
 const getFundraiserDoc = (db: Firestore) => {
-  return getDoc<JJCommunityFundraiser>(db, 'JJDonationTracker', 'Fundraiser2023')
+  const docId = useJJConfig().fundraiserDoc ?? 'Fundraiser2023'
+  return getDoc<JJCommunityFundraiser>(db, 'JJDonationTracker', docId)
 }
 
 function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
@@ -89,6 +91,7 @@ function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
   */
   return cache
 }
+
 export const useDataHook = (db: Firestore) => {
   const scheduleData = useCache('yogs', getScheduleDoc(db))
   const charityData = useCache('charities', getCharitiesDoc(db))
