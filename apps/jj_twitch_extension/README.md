@@ -36,6 +36,12 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 
 ### twitch review
 
+Change
+0.0.6
+Updated capabilities, Allowlist for Image Domains, Added https://assets.jinglejam.no1mann.com
+Reason: In the future the logos for the charities are hosted there.
+
+Extension Description
 This is an update to the "Unofficial Jingle Jam Schedule", now renamed to "Jingle Jam Community Extension".
 The Jingle Jam is a charity registered in England and Wales.
 From now JJ is used to shorten Jingle Jam
@@ -72,9 +78,3 @@ Community Tab
 - Shows a list of community fundraisers (other content creator/streamer) who have (sub-)fundraisers for JJ
 - When possible it links to the Twitch Channel of the streamer.
   Currently data from 2022 is shown.
-
-The extension also works on mobile.
-The application to enable ios was send shortly before this submission.
-
-https://images.squarespace-cdn.com/content/v1/5e9ffda024070b085edcd9f2/3a8e89ce-eb69-4e96-8a1a-9cb47ea0ce42/autistica.png?format=2500w
-https://images.squarespace-cdn.com/content/v1/5e9ffda024070b085edcd9f2/b731e808-7136-44af-8b1b-4958c6116ee5/CALM.jpg?format=2500w
