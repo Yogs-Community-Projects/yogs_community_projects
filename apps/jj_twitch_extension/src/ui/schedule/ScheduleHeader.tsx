@@ -23,7 +23,7 @@ export const Title: Component = () => {
   })
 
   return (
-    <div class={'h-full flex-1 p-2'}>
+    <div class={'h-full flex-1 px-2'}>
       <div class={'schedule-card-white flex h-full flex-col items-center justify-center'}>
         <h3 class={'text-center text-xl'}>{useScheduleData().name}</h3>
         <Switch>
