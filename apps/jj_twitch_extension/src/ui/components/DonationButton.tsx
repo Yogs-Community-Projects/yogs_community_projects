@@ -17,7 +17,7 @@ export const DonationButton: Component = () => {
   }
 
   const url = () => {
-    if (!config.donationUrl || config.donationUrl === '') {
+    if (!config.donationUrl || config.donationUrl === '' || !jjConfig.donationLink.allowCustomLinks) {
       return jjConfig.donationLink.url
     }
     return config.donationUrl
@@ -39,16 +39,18 @@ export const DonationButton: Component = () => {
   }
   return (
     <Show when={jjConfig.donationLink.visible}>
-      <a
-        class={twMerge(
-          'hover:scale-102 bg-accent-500 flex w-full flex-row items-center justify-center rounded-2xl p-0.5 text-center text-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
-          gradient(),
-        )}
-        href={url()}
-        target={'_blank'}
-      >
-        {jjConfig.donationLink.text ?? 'Donate'}
-      </a>
+      <div class={'px-2 pt-2'}>
+        <a
+          class={twMerge(
+            'hover:scale-102 flex w-full flex-row items-center justify-center rounded-2xl p-0.5 text-center text-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
+            gradient(),
+          )}
+          href={url()}
+          target={'_blank'}
+        >
+          {jjConfig.donationLink.text ?? 'Donate'}
+        </a>
+      </div>
     </Show>
   )
 }
