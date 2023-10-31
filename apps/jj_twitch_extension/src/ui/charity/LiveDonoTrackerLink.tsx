@@ -45,7 +45,7 @@ export const LiveDonoTrackerLink: Component = () => {
     <Show when={extensionConfig.donationTrackerUrl && extensionConfig.donationTrackerUrl !== ''}>
       <a
         class={twMerge(
-          'min-h-24 hover:scale-102 bg-accent-500 flex w-full flex-row items-center justify-center rounded-2xl p-1 text-center text-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
+          'min-h-24 hover:scale-102 bg-accent-500 flex w-full flex-row items-center justify-center rounded-2xl p-0.5 text-center text-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
           gradient(),
         )}
         href={extensionConfig.donationTrackerUrl}
