@@ -16,7 +16,7 @@
   }
 
   .schedule-controls-link {
-    @apply flex flex-1 flex-col items-center justify-center transition-all;
+    @apply flex flex-1 flex-col items-center justify-center p-1 transition-all;
   }
 }
 
