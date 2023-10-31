@@ -5,7 +5,6 @@ import { twMerge } from 'tailwind-merge'
 import { useTheme } from '../themeProvider'
 import { useTwitchConfig } from '../config/useTwitchConfig'
 import { TabType } from '../config/TwitchConfig'
-import { DonationButton } from './DonationButton'
 
 const NavBar: Component = () => {
   const { config } = useTwitchConfig()
@@ -17,18 +16,13 @@ const NavBar: Component = () => {
   const showTabs = () => visibleTabsLength() > 1
 
   return (
-    <div class={'flex flex-col gap-2 pb-1 pt-2'}>
-      <div class={'px-2'}>
-        <DonationButton />
+    <Show when={showTabs()}>
+      <div class={`flex w-full flex-row items-center justify-items-stretch p-2 text-white underline`}>
+        <TabC href={'/1'} tabType={tab1()} class={'rounded-l-2xl'} />
+        <TabC href={'/2'} tabType={tab2()} class={tab3() === 'none' ? 'rounded-r-2xl' : ''} />
+        <TabC href={'/3'} tabType={tab3()} class={'rounded-r-2xl'} />
       </div>
-      <Show when={showTabs()}>
-        <div class={`flex w-full flex-row items-center justify-items-stretch px-2 pb-0 text-white underline`}>
-          <TabC href={'/1'} tabType={tab1()} class={'rounded-l-2xl'} />
-          <TabC href={'/2'} tabType={tab2()} class={tab3() === 'none' ? 'rounded-r-2xl' : ''} />
-          <TabC href={'/3'} tabType={tab3()} class={'rounded-r-2xl'} />
-        </div>
-      </Show>
-    </div>
+    </Show>
   )
 }
 const TabIcon: Component<{ tab: TabType }> = props => {
