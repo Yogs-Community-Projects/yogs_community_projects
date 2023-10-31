@@ -5,6 +5,7 @@ export interface TwitchConfig {
   tab2: TabType
   tab3: TabType
   theme: Theme
+  donationUrl: string
 }
 
 export const defaultConfig: TwitchConfig = {
@@ -12,4 +13,5 @@ export const defaultConfig: TwitchConfig = {
   tab2: 'charities',
   tab3: 'community',
   theme: 'red',
+  donationUrl: 'https://jinglejam.tiltify.com',
 }
