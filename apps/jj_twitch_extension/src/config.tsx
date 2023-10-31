@@ -3,6 +3,9 @@ import './config.css'
 import { render } from 'solid-js/web'
 import { ConfigBody } from './ui/config/ConfigBody'
 import TwitchConfigProvider from './ui/config/TwitchConfigProvider'
+import JJConfigProviderLoader from './JJConfigProviderLoader'
+import DBWrapper from './db_wrapper'
+import { useFirestoreDB } from '@ycapp/common'
 
 const root = document.getElementById('root')
 
@@ -14,9 +17,20 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(
   () => (
-    <TwitchConfigProvider>
-      <ConfigBody />
-    </TwitchConfigProvider>
+    <DBWrapper>
+      <Body />
+    </DBWrapper>
   ),
   root,
 )
+
+const Body = () => {
+  const db = useFirestoreDB()
+  return (
+    <JJConfigProviderLoader db={db}>
+      <TwitchConfigProvider>
+        <ConfigBody />
+      </TwitchConfigProvider>
+    </JJConfigProviderLoader>
+  )
+}
