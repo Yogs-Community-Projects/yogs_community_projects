@@ -36,12 +36,10 @@ const ScheduleBody: Component = () => {
       <div class={twMerge(scroll, scrollbar())}>
         <ScheduleSlots />
       </div>
-      <div class={'p-schedule mb-2 flex h-14 flex-col justify-center px-1'}>
-        <p class={'text-xxs p-1 text-center font-bold text-white'}>
-          Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
-        </p>
-        <ScheduleControls />
-      </div>
+      <p class={'text-xxs p-1 text-center font-bold text-white'}>
+        Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
+      </p>
+      <ScheduleControls />
     </div>
   )
 }
