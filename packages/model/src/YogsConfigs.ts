@@ -12,6 +12,7 @@ export interface JJExtensionConfig {
     visible: boolean
     url: string
     text: string
+    allowCustomLinks: boolean
   }
   jingleJamRegistrationUrl: string
 }
