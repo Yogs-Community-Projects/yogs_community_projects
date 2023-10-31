@@ -72,7 +72,7 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
           <CgClose size={24} />
         </button>
         <div class={'flex-1'}></div>
-        <h3 class={'text-2xl'}>{slot.title}</h3>
+        <h3 class={'line-clamp-1 text-center text-2xl'}>{slot.title}</h3>
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
