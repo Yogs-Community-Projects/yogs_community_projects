@@ -8,6 +8,12 @@ export interface JJExtensionConfig {
   channels: string[]
   excludeChannels?: string[]
   donationTrackerUrl?: string
+  donationLink: {
+    visible: boolean
+    url: string
+    text: string
+  }
+  jingleJamRegistrationUrl: string
 }
 
 export interface YogsExtensionConfig {
