@@ -36,10 +36,32 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 
 ### twitch review
 
-Change
-0.0.6
-Updated capabilities, Allowlist for Image Domains, Added https://assets.jinglejam.no1mann.com
-Reason: In the future the logos for the charities are hosted there.
+Changelog
+
+0.0.7
+Updates
+
+- Updated the paddings of some ui elements.
+- Added a Donate Button at the top which links to the Jingle Jam page on tiltify.com.
+  - Streamer can customize the url in the extension config with their own JJ Tiltify url.
+    - The Jingle Jam allows streamers to register a Community Fundraiser with their own donation url.
+    - The url must be a tiltify.com url or subdomain. e.g https://jinglejam.tiltify.com
+      or https://tiltify.com/my-jj-fundraiser
+  - It links to https://jinglejam.tiltify.com by default
+  - The Donate Button will only be visible for testing/review purposes and during the Jingle Jam from Dec 1st until
+    Dec. 15th.
+- Added links to the homepages of the charities on the Charity tab.
+
+Reasons
+
+- The purpose of the extension is to give as much information about the Jingle Jam which should also include a link to
+  the charity donation page.
+- The links to the charities are relevant to the extension since they provide more context to the Jingle Jam Charity
+  event.
+
+  0.0.6
+  Updated capabilities, Allowlist for Image Domains, Added https://assets.jinglejam.no1mann.com
+  Reason: In the future the logos for the charities are hosted there.
 
 Extension Description
 This is an update to the "Unofficial Jingle Jam Schedule", now renamed to "Jingle Jam Community Extension".
@@ -47,7 +69,8 @@ The Jingle Jam is a charity registered in England and Wales.
 From now JJ is used to shorten Jingle Jam
 This Extension is run by the community and not directly associated with the Jingle Jam.
 
-This Extension is for streamers who participates in the Jingle Jam and provides information about the JJ described below.
+This Extension is for streamers who participates in the Jingle Jam and provides information about the JJ described
+below.
 
 There are 3 tabs.
 Streamers can rearrange or disable tabs.
