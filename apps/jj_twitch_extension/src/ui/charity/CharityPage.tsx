@@ -32,10 +32,11 @@ const VisibleBody: Component = () => {
         <Switch>
           <Match when={charityData.data && !charityData.loading}>
             <CurrencyProvider avgConversionRate={charityData?.data?.avgConversionRate}>
-              <CharityOverview data={charityData.data} />
-              <div class={'h-2'} />
-              <LiveDonoTrackerLink />
-              <CharityList charityData={charityData.data.causes} />
+              <div class={'flex flex-col gap-2'}>
+                <CharityOverview data={charityData.data} />
+                <LiveDonoTrackerLink />
+                <CharityList charityData={charityData.data.causes} />
+              </div>
             </CurrencyProvider>
           </Match>
           <Match when={charityData.loading && !charityData.data}>

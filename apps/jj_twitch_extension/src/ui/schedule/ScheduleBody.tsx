@@ -1,4 +1,4 @@
-import { Component, For, Match, Switch } from 'solid-js'
+import { Component, For, Match, Show, Switch } from 'solid-js'
 import { useCurrentDay, useScheduleData, useSlots } from './JJScheduleProvider'
 import { SlotCard } from './SlotCard'
 import { Title } from './ScheduleHeader'
@@ -7,6 +7,7 @@ import { DateTime } from 'luxon'
 import { twMerge } from 'tailwind-merge'
 import { useTheme } from '../themeProvider'
 import ScheduleControls from './ScheduleControls'
+import { Env, useEnv } from '../../EnvProvider'
 
 const ScheduleBody: Component = () => {
   const scroll =
@@ -28,8 +29,13 @@ const ScheduleBody: Component = () => {
         return ''
     }
   }
+
+  const env = useEnv()
   return (
     <div class="flex h-full flex-1 flex-col">
+      <Show when={env === Env.mobile}>
+        <div class={'h-2'} />
+      </Show>
       <div class={'h-30 mb-2'}>
         <Title />
       </div>
@@ -40,6 +46,9 @@ const ScheduleBody: Component = () => {
         Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
       </p>
       <ScheduleControls />
+      <Show when={env === Env.desktop}>
+        <div class={'h-2'} />
+      </Show>
     </div>
   )
 }

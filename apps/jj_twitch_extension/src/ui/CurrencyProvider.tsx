@@ -27,4 +27,4 @@ export const CurrencyProvider: ParentComponent<{ avgConversionRate?: number }> =
     </CurrencyContext.Provider>
   )
 }
-export const useCurrency = () => useContext(CurrencyContext)!
+export const useCurrency = () => useContext(CurrencyContext)

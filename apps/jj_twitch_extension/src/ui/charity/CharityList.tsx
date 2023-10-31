@@ -41,7 +41,7 @@ export const CharityList: Component<CharityListProps> = props => {
     return tailwindTextPrimary()
   }
   return (
-    <div class={'my-2 flex min-h-full flex-1 flex-col gap-2'}>
+    <div class={'mb-2 flex min-h-full flex-1 flex-col gap-2'}>
       <For each={props.charityData}>
         {(charity, i) => {
           const name = () => {

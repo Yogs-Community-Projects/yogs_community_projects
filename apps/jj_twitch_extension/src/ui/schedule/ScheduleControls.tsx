@@ -13,7 +13,7 @@ const ScheduleControls: Component = () => {
   const { reset, isEmpty } = useCreatorFilter()
 
   return (
-    <div class={'flex flex-col justify-center p-2'}>
+    <div class={'flex flex-col justify-center px-2 pb-0 pt-2'}>
       <Switch>
         <Match when={isEmpty()}>
           <div style={{}} class={`schedule-card-white flex h-full flex-row`}>

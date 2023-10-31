@@ -54,7 +54,7 @@ const VisibleBody: Component = () => {
           </p>
           <RandomFundraiserButton fundraisers={fundraiser()} />
           <ColoredScrollbar>
-            <div class={'my-2 flex flex-1 flex-col gap-2'}>
+            <div class={'mb-2 flex flex-1 flex-col gap-2'}>
               <FundraiserBody fundraisers={fundraiser()} />
             </div>
           </ColoredScrollbar>

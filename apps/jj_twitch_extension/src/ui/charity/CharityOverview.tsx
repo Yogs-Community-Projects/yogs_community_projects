@@ -43,7 +43,7 @@ export const CharityOverview: Component<CharityOverviewProps> = props => {
   }
 
   return (
-    <div class={'min-h-[156px] text-center text-xs'}>
+    <div class={'text-center text-xs'}>
       <div class={twMerge('flex h-full w-full flex-col gap-1 rounded-2xl p-1 shadow-xl', bgColor())}>
         <div id={'parent'} class={'relative h-12'}>
           <div id={'div1'} class={'absolute inset-0 flex flex-col items-center justify-center'}>
