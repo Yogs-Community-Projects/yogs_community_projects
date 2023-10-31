@@ -55,31 +55,34 @@ export const ConfigBody: Component = () => {
         <div class={'p-2'}>
           <ThemeSelection />
         </div>
-        <div class={'flex flex-col p-1'}>
-          <p>The donation link will disappear after the Jingle Jam ends.</p>
-          <div class={'flex flex-row items-center justify-normal gap-2'}>
-            <TextField.Root
-              class={'flex flex-col gap-1'}
-              value={config.donationUrl}
-              onChange={v => {
-                setConfig({ donationUrl: v })
-              }}
-              validationState={validateDonationUrl() ? 'valid' : 'invalid'}
-            >
-              <TextField.Label>Donation URL</TextField.Label>
-              <TextField.Input class={'text-black'} />
-              <TextField.Description>Enter your custom Jingle Jam Donation URL here.</TextField.Description>
-              <TextField.ErrorMessage>Invalid tiltify url</TextField.ErrorMessage>
-            </TextField.Root>
-            <a
-              target={'_blank'}
-              class={'bg-accent rounded-2xl p-2 text-white disabled:bg-gray-400'}
-              href={jjConfig.jingleJamRegistrationUrl}
-            >
-              Register as a Jingle Jam Fundraiser
-            </a>
+        <Show when={jjConfig.donationLink.allowCustomLinks}>
+          <div class={'flex flex-col p-1'}>
+            <p>The donation link will disappear after the Jingle Jam ends.</p>
+            <div class={'flex flex-row items-center justify-normal gap-2'}>
+              <TextField.Root
+                class={'flex flex-col gap-1'}
+                value={config.donationUrl}
+                onChange={v => {
+                  setConfig({ donationUrl: v })
+                }}
+                validationState={validateDonationUrl() ? 'valid' : 'invalid'}
+              >
+                <TextField.Label>Donation URL</TextField.Label>
+                <TextField.Input class={'text-black'} />
+                <TextField.Description>Enter your custom Jingle Jam Donation URL here.</TextField.Description>
+                <TextField.ErrorMessage>Invalid tiltify url</TextField.ErrorMessage>
+              </TextField.Root>
+              <a
+                target={'_blank'}
+                class={'bg-accent rounded-2xl p-2 text-white disabled:bg-gray-400'}
+                href={jjConfig.jingleJamRegistrationUrl}
+              >
+                Register as a Jingle Jam Fundraiser
+              </a>
+            </div>
           </div>
-        </div>
+        </Show>
+
         <Show when={!validConfig()}>
           <p>Make sure to show something different in each tab</p>
         </Show>
