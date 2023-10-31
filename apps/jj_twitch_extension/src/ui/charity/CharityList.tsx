@@ -4,6 +4,7 @@ import { useCurrency } from '../CurrencyProvider'
 import { Cause } from '@ycapp/model'
 import { useTheme } from '../themeProvider'
 import { twMerge } from 'tailwind-merge'
+import { FiExternalLink } from 'solid-icons/fi'
 
 interface CharityListProps {
   charityData: Cause[]
@@ -66,7 +67,14 @@ export const CharityList: Component<CharityListProps> = props => {
           }
 
           return (
-            <div class={twMerge('min-h-24 w-full rounded-2xl shadow-xl hover:shadow-2xl', campaignColor(i()))}>
+            <a
+              target={'_blank'}
+              href={charity.url}
+              class={twMerge(
+                'hover:scale-102 min-h-24 flex w-full flex-row items-center gap-2 rounded-2xl p-1.5 shadow-xl transition-all hover:shadow-2xl',
+                campaignColor(i()),
+              )}
+            >
               <div class={'flex h-full w-full items-center p-1'}>
                 <img class={'h-10 w-10 rounded-lg'} alt={charity.name} src={charity.logo} loading={'lazy'} />
                 <div class={'w-full pl-1'}>
@@ -77,7 +85,9 @@ export const CharityList: Component<CharityListProps> = props => {
                   </p>
                 </div>
               </div>
-            </div>
+
+              <FiExternalLink />
+            </a>
           )
         }}
       </For>
