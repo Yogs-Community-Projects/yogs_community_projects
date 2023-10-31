@@ -39,12 +39,12 @@ export const Title: Component = () => {
           <Match when={!isEmpty()}>
             <Switch>
               <Match when={filter().length == 1 && creator().data}>
-                <h3 class={'text-center text-2xl'}>Streams with {creator().data.creator.name}</h3>
+                <h3 class={'text-center text-xl'}>Streams with {creator().data.creator.name}</h3>
               </Match>
               <Match when={filter().length > 1 && creator().data}>
-                <h2 class={'text-center text-xl'}>
-                  Streams with {creator().data.creator.name} & {filter().length - 1} more streamer
-                </h2>
+                <h3 class={'text-md text-center'}>
+                  Streams with {creator().data.creator.name} or {filter().length - 1} more streamer
+                </h3>
               </Match>
             </Switch>
           </Match>
