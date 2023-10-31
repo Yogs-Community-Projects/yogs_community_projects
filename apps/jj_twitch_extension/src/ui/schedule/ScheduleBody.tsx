@@ -36,7 +36,7 @@ const ScheduleBody: Component = () => {
       <div class={twMerge(scroll, scrollbar())}>
         <ScheduleSlots />
       </div>
-      <div class={'p-schedule mb-2 flex h-14 flex-col justify-center p-1'}>
+      <div class={'p-schedule mb-2 flex h-14 flex-col justify-center px-1'}>
         <p class={'text-xxs p-1 text-center font-bold text-white'}>
           Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
         </p>
@@ -72,7 +72,7 @@ const ScheduleSlots: Component = () => {
   return (
     <Switch>
       <Match when={isEmpty()}>
-        <div class={'flex min-h-full flex-col gap-2 p-2'}>
+        <div class={'flex min-h-full flex-col gap-2 px-2'}>
           <For each={slots()}>
             {slot => {
               return <SlotCard slot={slot} showCountdown={true} showTime={true} />
