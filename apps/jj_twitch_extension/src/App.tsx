@@ -1,14 +1,17 @@
 import type { Component } from 'solid-js'
 import { Show } from 'solid-js'
 import NavBar from './ui/components/NavBar'
-import { Route, Routes, useNavigate } from '@solidjs/router'
+import { Route, Routes, useLocation, useNavigate } from '@solidjs/router'
 import { JJTab1, JJTab2, JJTab3 } from './ui/components/JJTab'
 import { Env, useEnv } from './EnvProvider'
 
 const App: Component = () => {
   const env = useEnv()
+  const location = useLocation
   const navigate = useNavigate()
-  navigate('/1')
+  if (!location().pathname.includes('config')) {
+    navigate('/1')
+  }
   return (
     <div class={'flex h-full flex-col'}>
       <Show when={env === Env.desktop}>
