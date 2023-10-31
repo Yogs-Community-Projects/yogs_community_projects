@@ -18,6 +18,7 @@ import { OverlayHeader } from './OverlayHeader'
 import { DateTime } from 'luxon'
 import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvider'
 import { p } from 'vitest/dist/index-2dd51af4'
+import { twMerge } from 'tailwind-merge'
 
 export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
   return (
@@ -135,7 +136,10 @@ const Timezone: Component<{
   return (
     <div class={'w-full p-2'}>
       <div
-        class={`${countdownBackground()} flex h-6 w-full flex-col items-center justify-between rounded-2xl text-center`}
+        class={twMerge(
+          `flex h-6 w-full flex-col items-center justify-center rounded-2xl text-center`,
+          countdownBackground(),
+        )}
       >
         <p class={'text-center text-sm text-white'}>TIMES IN {timezone()}</p>
       </div>

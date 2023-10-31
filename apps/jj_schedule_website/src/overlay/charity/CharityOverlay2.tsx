@@ -1,15 +1,17 @@
-import { Component, createSignal, JSXElement, onCleanup, ParentComponent, Show } from 'solid-js'
+import { Component, createEffect, createSignal, JSXElement, onCleanup, onMount, ParentComponent, Show } from 'solid-js'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
 import { Transition } from 'solid-transition-group'
 import { Numeric } from 'solid-i18n'
 import {
+  useCauses,
   useHeader,
   useHeaderTheme,
   useShowCharityDesc,
   useShowCharityQRCode,
   useShowCharityUrl,
+  useShowRaised,
   useSpeed,
   useTheme,
 } from '../overlay_signals'
@@ -28,6 +30,8 @@ export const CharityOverlay2: Component = () => {
         showQRCode={useShowCharityQRCode()}
         showUrl={useShowCharityUrl()}
         speed={useSpeed()}
+        showRaised={useShowRaised()}
+        causes={useCauses()}
       />
     </div>
   )
@@ -40,6 +44,8 @@ export const CharityOverlayComponent2: Component<{
   showQRCode: boolean
   showUrl: boolean
   speed: number
+  showRaised: boolean
+  causes?: string[]
 }> = props => {
   return (
     <div class={'flex h-full w-full flex-col'}>
@@ -53,6 +59,8 @@ export const CharityOverlayComponent2: Component<{
           showQRCode={props.showQRCode}
           showUrl={props.showUrl}
           speed={props.speed}
+          showRaised={props.showRaised}
+          causes={props.causes ?? []}
         />
       </div>
     </div>
@@ -65,6 +73,8 @@ const Body: Component<{
   showQRCode: boolean
   showUrl: boolean
   speed: number
+  showRaised: boolean
+  causes: string[]
 }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023')
@@ -72,16 +82,49 @@ const Body: Component<{
 
   const [currentCharity, setCurrentCharity] = createSignal(0)
 
-  const charities = () => charityData.data.causes
-
-  const timer = setInterval(() => {
-    if (charityData.data) {
-      setCurrentCharity(i => (i + 1) % charities().length)
+  const oneCause = () => props.causes.length === 1
+  const charities = () => {
+    if (props.causes.length > 0) {
+      return charityData.data.causes.filter(cause => {
+        return props.causes.includes(`${cause.id}`)
+      })
     }
-  }, props.speed * 1000)
-  onCleanup(() => clearInterval(timer))
+    return charityData.data.causes
+  }
+  const [timer, setTimer] = createSignal<ReturnType<typeof setInterval>>()
+
+  onMount(() => {
+    if (!oneCause()) {
+      const t = setInterval(() => {
+        if (charityData.data) {
+          setCurrentCharity(i => (i + 1) % charities().length)
+        }
+      }, props.speed * 1000)
+      setTimer(t)
+    }
+  })
+
+  createEffect(() => {
+    if (!oneCause()) {
+      if (timer()) {
+        clearInterval(timer())
+      }
+      const t = setInterval(() => {
+        if (charityData.data) {
+          setCurrentCharity(i => (i + 1) % charities().length)
+        }
+      }, props.speed * 1000)
+      setTimer(t)
+    }
+  })
+
+  onCleanup(() => {
+    if (timer()) {
+      clearInterval(timer())
+    }
+  })
   const items = () => {
-    return charityData.data.causes.map((c, i) => {
+    return charities().map((c, i) => {
       if (props.theme === 'carousel') {
         if (i % 3 == 0) {
           return (
@@ -91,6 +134,7 @@ const Body: Component<{
               showDesc={props.showDesc}
               showQRCode={props.showQRCode}
               showUrl={props.showUrl}
+              showRaised={props.showRaised}
             />
           )
           //return <CharityItemWhite charity={c} />
@@ -103,6 +147,7 @@ const Body: Component<{
               showDesc={props.showDesc}
               showQRCode={props.showQRCode}
               showUrl={props.showUrl}
+              showRaised={props.showRaised}
             />
           )
           //return <CharityItemRed charity={c} />
@@ -114,6 +159,7 @@ const Body: Component<{
             showDesc={props.showDesc}
             showQRCode={props.showQRCode}
             showUrl={props.showUrl}
+            showRaised={props.showRaised}
           />
         )
         // return <CharityItemBlue charity={c} />
@@ -125,12 +171,25 @@ const Body: Component<{
           showDesc={props.showDesc}
           showQRCode={props.showQRCode}
           showUrl={props.showUrl}
+          showRaised={props.showRaised}
         />
       )
     })
   }
 
   const currentItem = () => {
+    if (oneCause()) {
+      return (
+        <CharityItem
+          charity={charities()[0]}
+          theme={'default'}
+          showDesc={props.showDesc}
+          showQRCode={props.showQRCode}
+          showUrl={props.showUrl}
+          showRaised={props.showRaised}
+        />
+      )
+    }
     return items()[currentCharity()]
   }
 
@@ -175,6 +234,7 @@ const CharityItem: Component<{
   showDesc: boolean
   showQRCode: boolean
   showUrl: boolean
+  showRaised: boolean
 }> = props => {
   const background = () => {
     switch (props.theme) {
@@ -221,7 +281,7 @@ const CharityItem: Component<{
   }
 
   const charityUrl = () => {
-    const url = props.charity.url
+    const url = props.charity.url.replace('https://', '').replace('www.', '')
     if (url.endsWith('/')) {
       return url.substring(0, url.length - 1)
     }
@@ -235,6 +295,9 @@ const CharityItem: Component<{
       base += 24
     }
     if (!props.showUrl) {
+      base += 12
+    }
+    if (!props.showRaised) {
       base += 12
     }
 
@@ -252,14 +315,16 @@ const CharityItem: Component<{
       >
         <img class={'h-20 w-20 rounded-lg bg-white'} alt={''} src={props.charity.logo} loading={'eager'} />
         <p class={'line-clamp-2 overflow-hidden text-2xl'}>{props.charity.name}</p>
-        <p class={twMerge('line-clamp-2 overflow-hidden text-xl', raisedColor())}>
-          Raised{' '}
-          <Numeric
-            value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
-            numberStyle="currency"
-            currency={'GBP'}
-          />
-        </p>
+        <Show when={props.showRaised}>
+          <p class={twMerge('line-clamp-2 overflow-hidden text-xl', raisedColor())}>
+            Raised{' '}
+            <Numeric
+              value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
+              numberStyle="currency"
+              currency={'GBP'}
+            />
+          </p>
+        </Show>
         <Show when={props.showDesc}>
           <p class={'line-clamp-2'}>{props.charity.description}</p>
         </Show>
@@ -269,7 +334,7 @@ const CharityItem: Component<{
         <Show when={props.showQRCode}>
           <div class={'flex w-full flex-1 flex-col content-center items-center justify-center gap-1 pt-2'}>
             <Show when={props.showQRCode}>
-              <QRCodeSVG value={charityUrl()} size={qrCodeSize()} bgColor={qrCodeBG()} fgColor={qrCodeFG()} />
+              <QRCodeSVG value={props.charity.url} size={qrCodeSize()} bgColor={qrCodeBG()} fgColor={qrCodeFG()} />
             </Show>
             <Show when={props.showUrl}>
               <p>{charityUrl()}</p>

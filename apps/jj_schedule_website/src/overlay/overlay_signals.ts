@@ -9,6 +9,16 @@ const useParam = (key: string) => {
 export const useHeader = () => {
   return (useParam('header') ?? 'upnext').split(',')
 }
+export const useCauses = () => {
+  const c = useParam('causes')
+  if (!c) {
+    return undefined
+  }
+  if (c === '') {
+    return undefined
+  }
+  return c.split(',')
+}
 export const background = () => {
   return '#' + useParam('background') ?? 'ff000000'
 }
@@ -33,7 +43,9 @@ export const useTheme = () => {
 export const useHeaderTheme = () => {
   return useParam('headertheme') ?? 'default'
 }
-
+export const useShowRaised = () => {
+  return (useParam('showraised') ?? 'true') === 'true'
+}
 export const useShowCharityDesc = () => {
   return (useParam('showcharitydesc') ?? 'true') === 'true'
 }

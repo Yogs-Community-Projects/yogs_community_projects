@@ -1,6 +1,6 @@
-import { Component, For, JSXElement, Match, Switch } from 'solid-js'
+import { Component, For, JSXElement, Match, Show, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
-import { useSpeed, useTheme } from '../overlay_signals'
+import { useShowRaised, useSpeed, useTheme } from '../overlay_signals'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
@@ -8,10 +8,10 @@ import { JJLink } from '../JJLinkCard'
 import { Cause, JJData } from '@ycapp/model'
 
 export const CharityOverlay: Component = () => {
-  return <CharityOverlayComponent speed={useSpeed()} theme={useTheme()} />
+  return <CharityOverlayComponent speed={useSpeed()} theme={useTheme()} showRaised={useShowRaised()} />
 }
 
-export const CharityOverlayComponent: Component<{ speed: number; theme: string }> = props => {
+export const CharityOverlayComponent: Component<{ speed: number; theme: string; showRaised: boolean }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
@@ -37,7 +37,7 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string }
           result.push(<JJLink theme={props.theme} />)
         }
       }
-      result.push(<Child d={d} theme={props.theme} />)
+      result.push(<Child d={d} theme={props.theme} showRaised={props.showRaised} />)
     }
 
     return result
@@ -81,6 +81,7 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string }
 interface ChildProps {
   theme: string
   d: Cause
+  showRaised: boolean
 }
 
 const Child: Component<ChildProps> = props => {
@@ -121,14 +122,16 @@ const Child: Component<ChildProps> = props => {
         <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.logo} loading={'lazy'} />
         <div class={'flex h-full flex-1 flex-col items-start justify-center overflow-hidden truncate pl-2 '}>
           <p class={`${useNameTextColor()} font-bold`}>{props.d.name}</p>
-          <p class={`${useRaisedTextColor()} font-bold`}>
-            Raised{' '}
-            <Numeric
-              value={props.d.raised.fundraisers + props.d.raised.yogscast}
-              numberStyle="currency"
-              currency={'GBP'}
-            />
-          </p>
+          <Show when={props.showRaised}>
+            <p class={`${useRaisedTextColor()} font-bold`}>
+              Raised{' '}
+              <Numeric
+                value={props.d.raised.fundraisers + props.d.raised.yogscast}
+                numberStyle="currency"
+                currency={'GBP'}
+              />
+            </p>
+          </Show>
         </div>
       </div>
     </div>
