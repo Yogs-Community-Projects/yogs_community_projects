@@ -30,13 +30,13 @@ const ScheduleBody: Component = () => {
   }
   return (
     <div class="flex h-full flex-1 flex-col">
-      <div class={'h-30'}>
+      <div class={'h-30 mb-2'}>
         <Title />
       </div>
       <div class={twMerge(scroll, scrollbar())}>
         <ScheduleSlots />
       </div>
-      <p class={'text-xxs p-1 text-center font-bold text-white'}>
+      <p class={'text-xxs text-center font-bold text-white'}>
         Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
       </p>
       <ScheduleControls />
