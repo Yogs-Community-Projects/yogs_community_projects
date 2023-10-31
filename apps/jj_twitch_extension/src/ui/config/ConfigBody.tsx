@@ -1,6 +1,6 @@
 import { Component, For, Show } from 'solid-js'
-import { AlertDialog, Button, RadioGroup } from '@kobalte/core'
-import { createModalSignal } from '@ycapp/common'
+import { AlertDialog, Button, RadioGroup, TextField } from '@kobalte/core'
+import { createModalSignal, useJJConfig } from '@ycapp/common'
 import { CgClose } from 'solid-icons/cg'
 import { ThemeSelection } from './ThemeConfig'
 import { useTwitchConfig } from './useTwitchConfig'
@@ -8,10 +8,20 @@ import { TabType } from './TwitchConfig'
 import { JJExtensionDesktop } from '../../JJExtensionDesktop'
 
 export const ConfigBody: Component = () => {
+  const jjConfig = useJJConfig()
   const { config, setConfig, save, validConfig, edited } = useTwitchConfig()
   const modalSignal = createModalSignal()
+  const validateDonationUrl = () => {
+    const urlRegex = /\bhttps?:\/\/(?:\w+\.)?tiltify\.com\b/
+    return (
+      ((config.donationUrl.includes('tiltify.com') && config.donationUrl.startsWith('https://')) ||
+        config.donationUrl === '') &&
+      urlRegex.test(config.donationUrl)
+    )
+  }
+
   return (
-    <div class={'bg-primary-500 flex flex-row'}>
+    <div class={'bg-primary-500 flex flex-row p-1'}>
       <div class={'text-white'}>
         <div class={'p-2'}>
           <p>Set the contents for each tab</p>
@@ -45,6 +55,31 @@ export const ConfigBody: Component = () => {
         <div class={'p-2'}>
           <ThemeSelection />
         </div>
+        <div class={'flex flex-col p-1'}>
+          <p>The donation link will disappear after the Jingle Jam ends.</p>
+          <div class={'flex flex-row items-center justify-normal gap-2'}>
+            <TextField.Root
+              class={'flex flex-col gap-1'}
+              value={config.donationUrl}
+              onChange={v => {
+                setConfig({ donationUrl: v })
+              }}
+              validationState={validateDonationUrl() ? 'valid' : 'invalid'}
+            >
+              <TextField.Label>Donation URL</TextField.Label>
+              <TextField.Input class={'text-black'} />
+              <TextField.Description>Enter your custom Jingle Jam Donation URL here.</TextField.Description>
+              <TextField.ErrorMessage>Invalid tiltify url</TextField.ErrorMessage>
+            </TextField.Root>
+            <a
+              target={'_blank'}
+              class={'bg-accent rounded-2xl p-2 text-white disabled:bg-gray-400'}
+              href={jjConfig.jingleJamRegistrationUrl}
+            >
+              Register as a Jingle Jam Fundraiser
+            </a>
+          </div>
+        </div>
         <Show when={!validConfig()}>
           <p>Make sure to show something different in each tab</p>
         </Show>
@@ -55,7 +90,7 @@ export const ConfigBody: Component = () => {
               save()
               modalSignal.toggle()
             }}
-            disabled={!validConfig()}
+            disabled={!validateDonationUrl() || !validConfig()}
           >
             Save
           </Button.Root>
