@@ -23,8 +23,8 @@ const HomePage: Component = () => {
       <p class={''}>{nextJJStartDate().toFormat('DDDD')}</p>
       <p class={''}>{nextJJStartDate().toFormat('ttt')}</p>
       <div class={'flex flex-col items-center p-1 text-white md:p-4'}>
-        <p class={'text-2xl md:text-4xl'}>Jingle Jam {nextJJStartDate().year} starts</p>
-        <p class={'font-mono text-2xl md:text-4xl'}>{jjStartCountdown().toFormat("dd 'Days' hh:mm:ss")}</p>
+        <p class={'text-2xl md:text-4xl'}>Jingle Jam {nextJJStartDate().year} starts in</p>
+        <p class={'font-mono text-2xl md:text-4xl'}>{jjStartCountdown().toFormat("dd'd' hh'h' mm'm' ss's'")}</p>
       </div>
       <Disclaimer />
     </div>
