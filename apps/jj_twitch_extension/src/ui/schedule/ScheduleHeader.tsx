@@ -31,7 +31,7 @@ export const Title: Component = () => {
         <h3 class={'text-center text-xl'}>{useScheduleData().name}</h3>
         <Switch>
           <Match when={isEmpty()}>
-            <h3 class={'text-center text-xl'}>
+            <h3 class={'text-md text-center'}>
               {date().toLocaleString({
                 weekday: 'short',
                 day: '2-digit',
@@ -42,7 +42,7 @@ export const Title: Component = () => {
           <Match when={!isEmpty()}>
             <Switch>
               <Match when={filter().length == 1 && creator()}>
-                <h3 class={'text-center text-xl'}>Streams with {creator().creator.name}</h3>
+                <h3 class={'text-center text-lg'}>Streams with {creator().creator.name}</h3>
               </Match>
               <Match when={filter().length > 1 && creator()}>
                 <h3 class={'text-md text-center'}>
