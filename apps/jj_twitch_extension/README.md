@@ -44,6 +44,8 @@ Updates
 - Updated the paddings of some ui elements.
 - Removed the twitch vod indicator (heart icon) and changed it to a small text saying VOD
 - Added an icon to the stream slots indicating if streamers are associated with a stream
+- Updated countdown formats
+
 - Added a Donate Button at the top which links to the Jingle Jam page on tiltify.com.
   - Streamer can customize the url in the extension config with their own JJ Tiltify url.
     - The Jingle Jam allows streamers to register a Community Fundraiser with their own donation url.
@@ -71,7 +73,7 @@ The Jingle Jam is a charity registered in England and Wales.
 From now JJ is used to shorten Jingle Jam
 This Extension is run by the community and not directly associated with the Jingle Jam.
 
-This Extension is for streamers who participates in the Jingle Jam and provides information about the JJ described
+This Extension is for all streamers who participate in the Jingle Jam and provides information about the JJ described
 below.
 
 There are 3 tabs.
