@@ -67,54 +67,64 @@ export const OverlayOverview: Component = () => {
       <div
         class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}
       >
-        <div class={'p-2'}>
-          <p>Screenshots</p>
-          <Dialog.Root open={open()} onOpenChange={setOpen}>
-            <img
-              class={'hover:scale-105 hover:cursor-pointer'}
-              src={overlay1}
-              alt={'Screenshot from OBS'}
-              onclick={() => {
-                setOpen(!open())
-              }}
-              loading={'lazy'}
-            />
-            <Dialog.Portal>
-              <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
-              <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
-                <Dialog.Content class={'h-full w-[90%] p-2'}>
-                  <img class={''} src={overlay1} alt={'Screenshot from OBS'} loading={'lazy'} />
-                </Dialog.Content>
-              </div>
-            </Dialog.Portal>
-          </Dialog.Root>
-          <p class={'text-xs'}>
-            A OBS Scene with all available JJ Community Overlays. The background is a screenshot of a Yogscast Jingle
-            Jam Stream.
-          </p>
-        </div>
-        <div class={'p-2'}>
-          <Dialog.Root open={open2()} onOpenChange={setOpen2}>
-            <img
-              class={'hover:scale-105 hover:cursor-pointer'}
-              src={overlay2}
-              alt={'Screenshot from OBS'}
-              onclick={() => {
-                setOpen2(!open2())
-              }}
-              loading={'lazy'}
-            />
-            <Dialog.Portal>
-              <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
-              <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
-                <Dialog.Content class={'h-full w-[90%] p-2'}>
-                  <img class={''} src={overlay2} alt={'Screenshot from OBS'} loading={'lazy'} />
-                </Dialog.Content>
-              </div>
-            </Dialog.Portal>
-          </Dialog.Root>
-          <p class={'text-xs'}>Editing the Schedule Browser Source</p>
-        </div>
+        <p>Screenshots</p>
+        <Dialog.Root open={open()} onOpenChange={setOpen}>
+          <div
+            class={'flex flex-col gap-2 p-2 transition-all hover:scale-105 hover:cursor-pointer'}
+            onclick={() => {
+              setOpen(!open())
+            }}
+          >
+            <img src={overlay1} alt={'Screenshot from OBS'} loading={'lazy'} />
+            <p class={'text-xs'}>
+              A OBS Scene with all available JJ Community Overlays. The background is an asset from the JJ Streamer
+              Toolkit 2022
+            </p>
+          </div>
+          <Dialog.Portal>
+            <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
+            <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+              <Dialog.Content class={'h-full w-[90%] p-2'}>
+                <img
+                  class={''}
+                  onclick={() => {
+                    setOpen(!open())
+                  }}
+                  src={overlay1}
+                  alt={'Screenshot from OBS'}
+                  loading={'lazy'}
+                />
+              </Dialog.Content>
+            </div>
+          </Dialog.Portal>
+        </Dialog.Root>
+        <Dialog.Root open={open2()} onOpenChange={setOpen2}>
+          <div
+            class={'flex flex-col gap-2 p-2 transition-all hover:scale-105 hover:cursor-pointer'}
+            onclick={() => {
+              setOpen2(!open2())
+            }}
+          >
+            <img class={''} src={overlay2} alt={'Screenshot from OBS'} loading={'lazy'} />
+            <p class={'text-xs'}>Editing the Community Fundraiser scrolling overlay</p>
+          </div>
+          <Dialog.Portal>
+            <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
+            <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+              <Dialog.Content class={'h-full w-[90%] p-2'}>
+                <img
+                  class={''}
+                  onclick={() => {
+                    setOpen2(!open2())
+                  }}
+                  src={overlay2}
+                  alt={'Screenshot from OBS'}
+                  loading={'lazy'}
+                />
+              </Dialog.Content>
+            </div>
+          </Dialog.Portal>
+        </Dialog.Root>
       </div>
     </div>
   )
