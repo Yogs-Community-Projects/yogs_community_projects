@@ -46,7 +46,7 @@ const VisibleBody: Component = () => {
 
   return (
     <div class={'flex h-full flex-1 flex-col'}>
-      <h3 class={'px-2 text-center text-xl text-white'}>Community Fundraiser</h3>
+      <p class={'px-2 text-center text-xl text-white'}>Community Fundraiser</p>
       <Switch>
         <Match when={fundraiserData.data}>
           <p class={'mb-2 text-center text-base text-white'}>
