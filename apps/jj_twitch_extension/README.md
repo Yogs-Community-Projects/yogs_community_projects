@@ -42,6 +42,8 @@ Changelog
 Updates
 
 - Updated the paddings of some ui elements.
+- Removed the twitch vod indicator (heart icon) and changed it to a small text saying VOD
+- Added an icon to the stream slots indicating if streamers are associated with a stream
 - Added a Donate Button at the top which links to the Jingle Jam page on tiltify.com.
   - Streamer can customize the url in the extension config with their own JJ Tiltify url.
     - The Jingle Jam allows streamers to register a Community Fundraiser with their own donation url.
