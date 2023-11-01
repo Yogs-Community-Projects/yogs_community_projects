@@ -1,7 +1,7 @@
 export interface Relations {
   creators: string[]
-  twitchChannels: any[]
-  youtubeChannels: any[]
-  podcasts: any[]
-  schedules: any[]
+  twitchChannels: string[]
+  youtubeChannels: string[]
+  podcasts: string[]
+  schedules: string[]
 }
