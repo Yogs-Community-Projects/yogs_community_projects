@@ -54,10 +54,10 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
   }
   const countdown = () => {
     const diff = DateTime.fromISO(slot.start).diff(now())
-    if (diff.as('day') < 7) {
-      return DateTime.fromISO(slot.start).diff(now()).toFormat('hh:mm:ss')
+    if (diff.as('day') < 1) {
+      return SlotUtils.start(slot).diff(now()).toFormat("hh'h' mm'm' ss's'")
     }
-    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd 'Days', hh:mm:ss")
+    return SlotUtils.start(slot).diff(now()).toFormat("dd'd' hh'h' mm'm' ss's'")
   }
 
   return (
@@ -79,7 +79,9 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
       <div class={'flex w-full flex-1 flex-col overflow-auto p-4 text-xs'}>
         <p class={'text-lg'}>{slot.subtitle}</p>
         <Show when={showCountdown()}>
-          <p class={'text-lg'}>Starts in {countdown()}</p>
+          <p class={'text-lg'}>
+            Starts in <span class={'font-mono'}>{countdown()}</span>
+          </p>
         </Show>
         <p class={'text-lg'}>
           {SlotUtils.nextStream(slot).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}{' '}

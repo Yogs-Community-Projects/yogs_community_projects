@@ -1,10 +1,9 @@
 import { Slot, SlotUtils } from '@ycapp/model'
 import { Component, JSX, Show, Suspense } from 'solid-js'
 import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
-import { DateTime } from 'luxon'
-import { FaSolidHeart } from 'solid-icons/fa'
 import SlotDialog from './slotDialog/SlotDialog'
 import { BsPeopleFill } from 'solid-icons/bs'
+import { DateTime } from 'luxon'
 
 interface SlotCardProps {
   slot: Slot
@@ -99,43 +98,50 @@ export const SlotCard: Component<SlotCardProps> = props => {
   }
 
   const countdownFormat = () => {
-    if (SlotUtils.start(slot).diff(now()).as('day') > 14) {
-      return SlotUtils.start(slot).diff(now()).toFormat("dd 'days'")
+    if (SlotUtils.start(slot).diff(now()).as('day') < 1) {
+      return SlotUtils.start(slot).diff(now()).toFormat("hh'h' mm'm' ss's'")
     }
-    if (SlotUtils.start(slot).diff(now()).as('day') < 7) {
-      return SlotUtils.start(slot).diff(now()).toFormat('hh:mm:ss')
-    }
-    return SlotUtils.start(slot).diff(now()).toFormat("dd 'days,' hh:mm:ss")
+    return SlotUtils.start(slot).diff(now()).toFormat("dd'd' hh'h' mm'm' ss's'")
   }
 
   const modalSignal = createModalSignal()
-
   return (
     <>
       <div
         class={
-          'hover:scale-102 flex h-[64px] cursor-pointer flex-col items-center justify-center rounded-2xl p-2 shadow-2xl transition-all hover:brightness-105'
+          'hover:scale-102 flex h-[68px] cursor-pointer flex-col items-center justify-between rounded-2xl p-2 shadow-2xl transition-all hover:brightness-105'
         }
         style={{
           ...background(),
         }}
         onclick={modalSignal.toggle}
       >
-        <p class={'text-sm font-bold md:text-base' + underline()}>{props.slot.title}</p>
-        <Show when={props.showTime && !isLive()}>
-          <p class={'font-mono text-xs md:text-sm'}>
-            {nextStream().toLocaleString(DateTime.TIME_24_WITH_SHORT_OFFSET)}
-          </p>
-        </Show>
-        <Show when={props.showCountdown && isBefore()}>
-          <p class={'text-xs md:text-sm'}>
-            Starts in <span class={'font-mono'}>{countdownFormat()}</span>
-          </p>
-        </Show>
-        <Show when={isLive()}>
-          <p class={'text-xs md:text-sm'}>LIVE</p>
-        </Show>
-        <div class={'flex w-full flex-row justify-center gap-4'}>
+        <div class={'flex flex-col items-center justify-center'}>
+          <p class={'text-sm font-bold uppercase'}>{props.slot.title}</p>
+          <Show when={props.showTime && isOver()}>
+            <p class={'text-xs'}>
+              {nextStream().toLocaleString({
+                hour: 'numeric',
+                minute: 'numeric',
+                timeZoneName: 'short',
+              })}
+            </p>
+          </Show>
+          <Show when={props.showCountdown && isBefore()}>
+            <p class={'text-xs'}>
+              <span class={'font-mono'}>{countdownFormat()}</span>,{' '}
+              {nextStream().toLocaleString({
+                hour: 'numeric',
+                minute: 'numeric',
+                timeZoneName: 'short',
+              })}
+            </p>
+          </Show>
+          <Show when={isLive()}>
+            <p class={'text-xs'}>LIVE</p>
+          </Show>
+        </div>
+        <div class={'mb-0 flex w-full flex-row justify-center gap-4'}>
           <Show when={(slot.showTwitchIcon || slot.showHighlightIcon) && isOver()}>
             <p class={'text-xxs font-bold'}>VOD</p>
           </Show>
