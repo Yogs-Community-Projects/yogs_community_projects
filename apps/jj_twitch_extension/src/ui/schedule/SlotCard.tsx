@@ -3,7 +3,6 @@ import { Component, JSX, Show, Suspense } from 'solid-js'
 import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import SlotDialog from './slotDialog/SlotDialog'
 import { BsPeopleFill } from 'solid-icons/bs'
-import { DateTime } from 'luxon'
 
 interface SlotCardProps {
   slot: Slot
@@ -22,10 +21,6 @@ export const SlotCard: Component<SlotCardProps> = props => {
   function _parseColor(c: string): string {
     return '#' + c.substring(2) //  + c.substring(0, 2)
   }
-
-  /*  function _parseColorWithOpacity(c: string): string {
-    return '#' + c.substring(2) + 'BB' //  + c.substring(0, 2)
-  }*/
 
   const background = () => {
     let gradientStyle: JSX.CSSProperties | undefined
@@ -48,45 +43,12 @@ export const SlotCard: Component<SlotCardProps> = props => {
     }
     return gradientStyle
   }
-  /*
-  const backgroundImg = () => {
-    let gradientStyle: JSX.CSSProperties | undefined
-    if (slot.style.linearGradient) {
-      const linearGradient = slot.style.linearGradient
-      gradientStyle = {
-        background: `linear-gradient(180deg, ${linearGradient.colors.map(_parseColorWithOpacity).join(', ')})`,
-        color: textColor(_parseColor(slot.style.background ?? linearGradient.colors[0] ?? 'ffff0000')),
-      }
-    } else {
-      if (slot.style.background) {
-        gradientStyle = {
-          background: `${_parseColorWithOpacity(slot.style.background ?? 'ffff0000')}`,
-          // background: _parseColor(slot.style.background)
-          color: textColor(_parseColor(slot.style.background ?? 'ffff0000')),
-        }
-      }
-    }
-
-    return gradientStyle
-  }
-  */
 
   const isLive = () => {
     return SlotUtils.isLive(props.slot, now())
   }
   const isBefore = () => {
     return SlotUtils.isBefore(props.slot, now())
-  }
-
-  const start = () => {
-    return SlotUtils.start(props.slot)
-  }
-
-  const underline = () => {
-    if (isLive()) {
-      return 'underline'
-    }
-    return ''
   }
 
   const nextStream = () => {
