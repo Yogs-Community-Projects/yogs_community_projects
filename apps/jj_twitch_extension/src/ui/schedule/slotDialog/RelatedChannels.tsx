@@ -1,9 +1,7 @@
-import { RemoteData, useCreatorDB, useTwitchDB } from '@ycapp/common'
 import { Slot, TwitchChannelData } from '@ycapp/model'
-import { batch, Component, createEffect, createRoot, For, Match, Switch } from 'solid-js'
+import { Component, For, Show } from 'solid-js'
 import { TwitchTile } from '../../components/tiles/TwitchTile'
-import { createStore } from 'solid-js/store'
-import { useRelatedChannel } from '../useRelatedChannel'
+import { useData } from '../../dataProvider'
 
 interface RelatedChannelProps {
   data: TwitchChannelData[]
@@ -22,22 +20,13 @@ interface RelatedChannelsProps {
 }
 
 const RelatedChannels: Component<RelatedChannelsProps> = props => {
-  const relatedTwitchChannel = useRelatedChannel(props.slot)
+  const { useTwitchWithCreators } = useData()
+  const relatedTwitchChannel = useTwitchWithCreators(() => props.slot.relations.creators)
   return (
-    <>
-      <Switch>
-        <Match when={relatedTwitchChannel.data}>
-          <p class={'text-2xl'}>Related Channel</p>
-          <RelatedChannel data={relatedTwitchChannel.data} />
-        </Match>
-        <Match when={relatedTwitchChannel.loading}>
-          <p>Loading Related Channels...</p>
-        </Match>
-        <Match when={relatedTwitchChannel.error}>
-          <p>{JSON.stringify(relatedTwitchChannel.error)}</p>
-        </Match>
-      </Switch>
-    </>
+    <Show when={relatedTwitchChannel().length > 0}>
+      <p class={'text-2xl'}>Related Channel</p>
+      <RelatedChannel data={relatedTwitchChannel()} />
+    </Show>
   )
 }
 

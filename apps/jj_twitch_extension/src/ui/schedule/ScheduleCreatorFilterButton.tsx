@@ -1,10 +1,11 @@
 import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
-import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
+import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { FaRegularSquare, FaSolidFilter, FaSolidSquareCheck } from 'solid-icons/fa'
 import { Dialog } from '@kobalte/core'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { useCreatorIds, useSlots } from './JJScheduleProvider'
 import { CgClose } from 'solid-icons/cg'
+import { useData } from '../dataProvider'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -54,7 +55,9 @@ interface FilterDialogBodyProps {
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
   const slots = useSlots()
-  const creators = useCreatorDB().readSome(useCreatorIds())
+  const { useCreators } = useData()
+  const ids = useCreatorIds()
+  const creators = useCreators(() => ids)
   const { includes, toggle, reset } = useCreatorFilter()
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
@@ -63,16 +66,16 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const [sortByName, setSortByName] = createSignal(true)
 
   const creatorList = () => {
-    if (!creators.data) {
+    if (!creators()) {
       return []
     }
 
     if (sortByName()) {
-      return [...creators.data].sort((a, b) => {
+      return [...creators()].sort((a, b) => {
         return a.creator.name.toLowerCase().localeCompare(b.creator.name.toLowerCase())
       })
     } else {
-      return [...creators.data].sort((a, b) => {
+      return [...creators()].sort((a, b) => {
         const aAppearance = appearanceCount(a.creator.creatorId)
         const bAppearance = appearanceCount(b.creator.creatorId)
         if (a == b) {
@@ -112,7 +115,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
 
       <div class={'flex w-full flex-1 flex-col gap-1 overflow-auto p-4 pt-0'}>
         <Switch>
-          <Match when={creators.data}>
+          <Match when={creators()}>
             <For each={creatorList()}>
               {creator => (
                 <>

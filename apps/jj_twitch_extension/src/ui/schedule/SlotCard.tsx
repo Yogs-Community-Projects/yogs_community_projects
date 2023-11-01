@@ -4,6 +4,7 @@ import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { DateTime } from 'luxon'
 import { FaSolidHeart } from 'solid-icons/fa'
 import SlotDialog from './slotDialog/SlotDialog'
+import { BsPeopleFill } from 'solid-icons/bs'
 
 interface SlotCardProps {
   slot: Slot
@@ -134,11 +135,14 @@ export const SlotCard: Component<SlotCardProps> = props => {
         <Show when={isLive()}>
           <p class={'text-xs md:text-sm'}>LIVE</p>
         </Show>
-        <Show when={(slot.showTwitchIcon || slot.showHighlightIcon) && isOver()}>
-          <div class={'flex w-full flex-row justify-around'}>
-            <FaSolidHeart size={12} />
-          </div>
-        </Show>
+        <div class={'flex w-full flex-row justify-center gap-4'}>
+          <Show when={(slot.showTwitchIcon || slot.showHighlightIcon) && isOver()}>
+            <p class={'text-xxs font-bold'}>VOD</p>
+          </Show>
+          <Show when={slot.relations.creators.length > 0}>
+            <BsPeopleFill size={12} />
+          </Show>
+        </div>
       </div>
       <Suspense>
         <SlotDialog slot={slot} modalSignal={modalSignal} />

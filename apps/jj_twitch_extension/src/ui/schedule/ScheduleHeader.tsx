@@ -1,29 +1,32 @@
-import { Component, createEffect, createSignal, Match, Switch } from 'solid-js'
+import { Component, Match, Switch } from 'solid-js'
 import { useCurrentDay, useScheduleData } from './JJScheduleProvider'
 import { DateTime } from 'luxon'
 import { useCreatorFilter } from './CreatorFilterProvider'
-import { RemoteData, useCreatorDB } from '@ycapp/common'
-import { CreatorData } from '@ycapp/model'
+import { useData } from '../dataProvider'
 
 export const Title: Component = () => {
   const day = () => useCurrentDay()
+  const { useCreator, getCreatorCache, getTwitchCache } = useData()
   const date = () => DateTime.fromISO(day().start)
   const { isEmpty, filter } = useCreatorFilter()
-
-  const [creator, setCreator] = createSignal<RemoteData<CreatorData | null>>({
-    data: null,
-    loading: true,
-    error: null,
-  })
-
-  createEffect(() => {
+  const id = () => {
     if (filter().length > 0) {
-      setCreator(useCreatorDB().read(filter()[0]))
+      return filter()[0]
     }
-  })
+    return undefined
+  }
+  const creator = useCreator(id)
 
   return (
-    <div class={'h-full flex-1 px-2'}>
+    <div
+      class={'h-full flex-1 px-2'}
+      onClick={() => {
+        if (import.meta.env.DEV) {
+          console.log('creatorCache', getCreatorCache())
+          console.log('twitchCache', getTwitchCache())
+        }
+      }}
+    >
       <div class={'schedule-card-white flex h-full flex-col items-center justify-center'}>
         <h3 class={'text-center text-xl'}>{useScheduleData().name}</h3>
         <Switch>
@@ -38,12 +41,12 @@ export const Title: Component = () => {
           </Match>
           <Match when={!isEmpty()}>
             <Switch>
-              <Match when={filter().length == 1 && creator().data}>
-                <h3 class={'text-center text-xl'}>Streams with {creator().data.creator.name}</h3>
+              <Match when={filter().length == 1 && creator()}>
+                <h3 class={'text-center text-xl'}>Streams with {creator().creator.name}</h3>
               </Match>
-              <Match when={filter().length > 1 && creator().data}>
+              <Match when={filter().length > 1 && creator()}>
                 <h3 class={'text-md text-center'}>
-                  Streams with {creator().data.creator.name} or {filter().length - 1} more streamer
+                  Streams with {creator().creator.name} or {filter().length - 1} more streamer
                 </h3>
               </Match>
             </Switch>

@@ -1,29 +1,24 @@
-import { useTwitchDB } from '@ycapp/common'
 import { Slot } from '@ycapp/model'
-import { Component, For, Match, Switch } from 'solid-js'
+import { Component, For, Show } from 'solid-js'
 import { TwitchTile } from '../../components/tiles/TwitchTile'
+import { useData } from '../../dataProvider'
 
 interface SlotDialogTwitchChannelsProps {
   slot: Slot
 }
 
 const SlotDialogTwitchChannels: Component<SlotDialogTwitchChannelsProps> = props => {
-  const liveChannel = useTwitchDB().readSome(props.slot.relations.twitchChannels)
+  const { useTwitchChannels } = useData()
+
+  const liveChannel = useTwitchChannels(() => props.slot.relations.twitchChannels)
+  const show = () => liveChannel().length > 0
   return (
-    <Switch>
-      <Match when={liveChannel.data}>
-        <p class={'text-2xl'}>Twitch Channel</p>
-        <div class={'grid grid-cols-3 gap-1'}>
-          <For each={liveChannel.data}>{channel => <TwitchTile data={channel} />}</For>
-        </div>
-      </Match>
-      <Match when={liveChannel.loading}>
-        <p>Loading Live Channels...</p>
-      </Match>
-      <Match when={liveChannel.error}>
-        <p>{JSON.stringify(liveChannel.error)}</p>
-      </Match>
-    </Switch>
+    <Show when={show()}>
+      <p class={'text-2xl'}>Twitch Channel</p>
+      <div class={'grid grid-cols-3 gap-1'}>
+        <For each={liveChannel()}>{channel => <TwitchTile data={channel} />}</For>
+      </div>
+    </Show>
   )
 }
 export default SlotDialogTwitchChannels
