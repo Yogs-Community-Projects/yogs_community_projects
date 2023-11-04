@@ -1,9 +1,11 @@
-import { Component, JSX } from 'solid-js'
-import { Slot } from '@ycapp/model'
-import { Duration } from 'luxon'
+import { Component, JSX, Show } from 'solid-js'
+import { Slot, SlotUtils } from '@ycapp/model'
+import { DateTime, Duration } from 'luxon'
 import { useScheduleMobileDimensions } from '../providers/ScheduleMobileDimensionsProvider'
-import { createModalSignal, getTextColor } from '@ycapp/common'
+import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
+import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
+import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 
 interface MobileScheduleSlotProps {
   slot: Slot
@@ -11,8 +13,19 @@ interface MobileScheduleSlotProps {
 
 export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const slot = props.slot
-  const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
+  const now = useNow()
 
+  const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
+  const countdown = () => {
+    const diff = DateTime.fromISO(slot.start).diff(now())
+    if (diff.as('day') < 1) {
+      return DateTime.fromISO(slot.start).diff(now()).toFormat("hh'h' mm'm' ss's'")
+    }
+    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd'd' hh'h' mm'm' ss's'")
+  }
+  const showCountdown = () => {
+    return SlotUtils.isBefore(slot, now())
+  }
   const style = (): JSX.CSSProperties => {
     return {
       height: useScheduleMobileDimensions().slotHeight + 'px',
@@ -66,8 +79,25 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             }}
             onclick={modalSignal.open}
           >
-            <p class={'text-[calc(var(--slot-height)_/_4)] font-bold'}>{props.slot.title}</p>
-            <p class={'text-[calc(var(--slot-height)_/_6)]'}>{props.slot.subtitle}</p>
+            <p class={'text-md font-bold'}>{props.slot.title}</p>
+            <p class={'text-sm'}>{props.slot.subtitle}</p>
+            <Show when={showCountdown()}>
+              <p class={'mono text-sm'}>{countdown()}</p>
+            </Show>
+            <div class={'flex w-full flex-row justify-around'}>
+              <Show when={slot.showTwitchIcon}>
+                <BiLogosTwitch size={18} />
+              </Show>
+              <Show when={slot.showHighlightIcon}>
+                <BsHeart size={18} />
+              </Show>
+              <Show when={slot.showYoutubeIcon}>
+                <BiLogosYoutube size={18} />
+              </Show>
+              <Show when={slot.relations.creators.length > 0}>
+                <BsPeopleFill size={18} />
+              </Show>
+            </div>
           </div>
         </div>
       </div>

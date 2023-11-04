@@ -60,10 +60,10 @@ const SlotDialogBody: Component<SlotDialogBodyProps> = props => {
   }
   const countdown = () => {
     const diff = DateTime.fromISO(slot.start).diff(now())
-    if (diff.as('day') < 7) {
-      return DateTime.fromISO(slot.start).diff(now()).toFormat('hh:mm:ss')
+    if (diff.as('day') < 1) {
+      return DateTime.fromISO(slot.start).diff(now()).toFormat("hh'h' mm'm' ss's'")
     }
-    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd 'Days', hh:mm:ss")
+    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd'd' hh'h' mm'm' ss's'")
   }
 
   return (

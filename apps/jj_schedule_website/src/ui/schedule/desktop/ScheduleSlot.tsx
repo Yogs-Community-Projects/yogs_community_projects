@@ -70,10 +70,10 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   }
   const countdown = () => {
     const diff = DateTime.fromISO(slot.start).diff(now())
-    if (diff.as('day') < 7) {
-      return DateTime.fromISO(slot.start).diff(now()).toFormat('hh:mm:ss')
+    if (diff.as('day') < 1) {
+      return DateTime.fromISO(slot.start).diff(now()).toFormat("hh'h' mm'm' ss's'")
     }
-    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd 'Days', hh:mm:ss")
+    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd'd' hh'h' mm'm' ss's'")
   }
 
   return (
@@ -87,7 +87,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
         <div class={'p-schedule h-full transition-all'}>
           <button
             class={
-              'hover:scale-102 schedule-card flex flex-col justify-center p-1 text-center transition-all hover:shadow-2xl hover:brightness-105 disabled:scale-100 disabled:shadow-xl disabled:brightness-100'
+              'hover:scale-102 schedule-card flex flex-col items-center justify-between p-1 text-center transition-all hover:shadow-2xl hover:brightness-105 disabled:scale-100 disabled:shadow-xl disabled:brightness-100'
             }
             style={{
               ...background(),
