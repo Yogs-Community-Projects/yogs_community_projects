@@ -1,40 +1,104 @@
 import type { Component } from 'solid-js'
-import { lazy } from 'solid-js'
-import { Navigate, Route, Router, Routes, useNavigate } from '@solidjs/router'
+import { lazy, Show } from 'solid-js'
+import { Route, Router, Routes, useLocation, useNavigate } from '@solidjs/router'
 import {
   schedule2020RouteDataFunc,
   schedule2021RouteDataFunc,
   schedule2022RouteDataFunc,
+  scheduleCurrentRouteDataFunc,
 } from './ui/schedule/ScheduleRouteData'
 import { ScheduleOverlay } from './overlay/schedule/ScheduleOverlay'
 import { FundraisersOverlay } from './overlay/fundraisers/FundraisersOverlay'
-import { OverlayOverview } from './overlay/overview/OverlayOverview'
 import { CharityOverlay } from './overlay/charity/CharityOverlay'
 import { CharityOverlay2 } from './overlay/charity/CharityOverlay2'
 import { SimpleScheduleOverlay } from './overlay/schedule_simple/SimpleScheduleOverlay'
+import { useConfig } from './ui/configProvider/ConfigProvider'
+import { Meta, Title } from '@solidjs/meta'
+
+const HomePage = lazy(() => import('./ui/home/HomePage'))
+const SchedulePage = lazy(() => import('./ui/schedule/SchedulePage'))
+const ExtensionPage = lazy(() => import('./ui/extension/ExtensionPage'))
+const OverlayOverviewPage = lazy(() => import('./overlay/overview/OverlayOverview'))
+
+const Home = () => {
+  return (
+    <>
+      <Title>Yogscast Jingle Jam Schedules and more</Title>
+      <Meta
+        name="description"
+        content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
+      />
+      <HomePage />
+    </>
+  )
+}
+const Schedule = () => {
+  const location = useLocation()
+
+  const title = () => `Yogscast Jingle Jam Schedule ${location.pathname.replace('/', '').replace('\\n', '')}`
+  return (
+    <>
+      <Show when={location.pathname === '/'}>
+        <Title>Yogscast Jingle Jam Schedules and more</Title>
+        <Meta
+          name="description"
+          content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
+        />
+      </Show>
+      <Show when={location.pathname !== '/'}>
+        <Title>{title()}</Title>
+        <Meta
+          name="description"
+          content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
+        />
+      </Show>
+      <SchedulePage />
+    </>
+  )
+}
+
+const Extension = () => {
+  return (
+    <>
+      <Title>Jingle Jam Community Twitch Extension</Title>
+      <Meta
+        name="description"
+        content="Jingle Jam Community Twitch Extension. Add the extension to your channel to give your viewers more information about the Jingle Jam"
+      />
+      <ExtensionPage />
+    </>
+  )
+}
+
+const OverlayOverview = () => {
+  return (
+    <>
+      <Title>Jingle Jam Community Streaming Overlays</Title>
+      <Meta
+        name="description"
+        content="Jingle Jam Community Streaming Overlays. Jingle Jam related Overlays that show the charities and community fundraiser. Customize and add them to your stream."
+      />
+      <OverlayOverviewPage />
+    </>
+  )
+}
 
 const App: Component = () => {
+  const config = useConfig()
   return (
     <Router>
       <Routes>
         <Route path={'/'} component={lazy(() => import('./ui/AppBody'))}>
-          <Route path={'/'} component={lazy(() => import('./ui/home/HomePage'))} />
-          <Route path={'/extension'} component={lazy(() => import('./ui/extension/ExtensionPage'))} />
-          <Route
-            path={'/2021'}
-            data={schedule2021RouteDataFunc}
-            component={lazy(() => import('./ui/schedule/SchedulePage'))}
-          ></Route>
-          <Route
-            path={'/2020'}
-            data={schedule2020RouteDataFunc}
-            component={lazy(() => import('./ui/schedule/SchedulePage'))}
-          ></Route>
-          <Route
-            path={'/2022'}
-            data={schedule2022RouteDataFunc}
-            component={lazy(() => import('./ui/schedule/SchedulePage'))}
-          ></Route>
+          <Show when={!config.visible}>
+            <Route path={'/'} component={Home} />
+          </Show>
+          <Show when={config.visible}>
+            <Route path={'/'} data={scheduleCurrentRouteDataFunc} component={Schedule}></Route>
+          </Show>
+          <Route path={'/extension'} component={Extension} />
+          <Route path={'/2021'} data={schedule2021RouteDataFunc} component={Schedule}></Route>
+          <Route path={'/2020'} data={schedule2020RouteDataFunc} component={Schedule}></Route>
+          <Route path={'/2022'} data={schedule2022RouteDataFunc} component={Schedule}></Route>
           <Route path={'/overlay'} component={OverlayOverview} />
         </Route>
         <Route path={'/overlay/schedule'} component={ScheduleOverlay} />
