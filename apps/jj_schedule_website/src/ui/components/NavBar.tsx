@@ -6,7 +6,7 @@ import { CgClose, CgMenu } from 'solid-icons/cg'
 export const NavBar: Component = () => {
   return (
     <>
-      <div class={'hidden flex-row justify-center gap-4 p-4 align-middle text-2xl text-white md:flex'}>
+      <div class={'text-md hidden flex-row justify-center gap-6 p-4 align-middle text-white md:flex'}>
         <Link path="/" title="Home" />
         <Link path="/2022" title="Jingle Jam 2022" />
         <Link path="/2021" title="Jingle Jam 2021" />
@@ -84,9 +84,9 @@ const Link: Component<LinkProps> = props => {
 
   const useClasses = () => {
     if (useIsActive()) {
-      return 'nav text-lg activeLink hover:text-accent-100'
+      return 'nav activeLink hover:text-accent-100'
     }
-    return 'nav text-lg inactiveLink hover:scale-105 transition-all hover:text-accent-100'
+    return 'nav inactiveLink hover:scale-105 transition-all hover:text-accent-100'
   }
   return (
     <A class={useClasses()} href={props.path}>
