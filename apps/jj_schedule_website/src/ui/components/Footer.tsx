@@ -4,8 +4,8 @@ import { DateTime } from 'luxon'
 
 export const Footer: Component = () => {
   return (
-    <div>
-      <div class={'grid grid-cols-1 gap-8 px-2 px-4 text-white md:grid-cols-3 md:px-6 md:py-8'}>
+    <div class={'mt-2'}>
+      <div class={'grid grid-cols-1 gap-8 px-4 text-white md:grid-cols-3 md:px-6 md:py-8'}>
         <About />
         <Feedback />
         <Disclaimer />
