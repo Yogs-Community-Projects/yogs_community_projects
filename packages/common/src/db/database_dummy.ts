@@ -4,6 +4,7 @@ import { ConfigDB, YcDBImpl, YcNewsDB, YcScheduleDB } from './database'
 import {
   CreatorData,
   JJExtensionConfig,
+  JJWebsiteConfig,
   News,
   Podcast,
   ScheduleData,
@@ -201,6 +202,8 @@ export class ConfigDummyDB implements ConfigDB {
 
   constructor(
     jjExtensionConfig: JJExtensionConfig = {
+      donationLink: { allowCustomLinks: false, text: '', url: '', visible: false },
+      jingleJamRegistrationUrl: '',
       scheduleId: 'jinglejam2022_2',
       visible: true,
       channels: [],
@@ -228,6 +231,14 @@ export class ConfigDummyDB implements ConfigDB {
   readYogsExtensionConfig() {
     return {
       data: this.yogsExtensionConfig,
+      loading: false,
+      error: null,
+    }
+  }
+
+  readJJWebsiteConfig(): RemoteData<JJWebsiteConfig | null> {
+    return {
+      data: { scheduleId: '', visible: false },
       loading: false,
       error: null,
     }

@@ -23,3 +23,8 @@ export interface YogsExtensionConfig {
   streamerTabName?: string
   scheduleTabName?: string
 }
+
+export interface JJWebsiteConfig {
+  scheduleId: string
+  visible: boolean
+}

@@ -14,6 +14,7 @@ import { ConfigDB, YcFirestoreDB, YcNewsDB, YcScheduleDB } from './database'
 import {
   CreatorData,
   JJExtensionConfig,
+  JJWebsiteConfig,
   News,
   Podcast,
   ScheduleData,
@@ -199,6 +200,15 @@ export class ConfigFirestoreDB implements ConfigDB {
     const coll = collection(this.db, 'Config') as CollectionReference<YogsExtensionConfig>
     const ref = doc<YogsExtensionConfig>(coll, 'YogsTwitchExtension')
     return loadLocalAndRemote<YogsExtensionConfig>('yogs_extension_config', ref, {
+      forceRemote: false,
+      ageInHours: 3,
+    })
+  }
+
+  readJJWebsiteConfig() {
+    const coll = collection(this.db, 'Config') as CollectionReference<JJWebsiteConfig>
+    const ref = doc(coll, 'JJConfig')
+    return loadLocalAndRemote('jj_website_config', ref, {
       forceRemote: false,
       ageInHours: 3,
     })
