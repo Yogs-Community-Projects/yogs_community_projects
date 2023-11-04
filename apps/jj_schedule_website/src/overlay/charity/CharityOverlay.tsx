@@ -13,7 +13,7 @@ export const CharityOverlay: Component = () => {
 
 export const CharityOverlayComponent: Component<{ speed: number; theme: string; showRaised: boolean }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
-  const d = doc<JJData>(coll, 'JJDonationTracker2023')
+  const d = doc<JJData>(coll, 'JJDonationTracker2023_2')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
   const desc = () => {
     if (!charityData.data) {
@@ -56,7 +56,7 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string; 
           >
             <For each={items()}>
               {d => {
-                return <div class="inline-block h-[72px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
+                return <div class="inline-block h-[80px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
               }}
             </For>
           </div>
@@ -68,7 +68,7 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string; 
           >
             <For each={items()}>
               {d => {
-                return <div class="inline-block h-[72px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
+                return <div class="inline-block h-[80px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
               }}
             </For>
           </div>

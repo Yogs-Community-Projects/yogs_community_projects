@@ -14,7 +14,7 @@ export const CharitiesOverviewComponent = () => {
   return (
     <div>
       <div class={'text-white'}>
-        <p>Recommended Browser source height 72px</p>
+        <p>Recommended Browser source height 80px</p>
         <table>
           <tbody>
             <tr>
@@ -115,9 +115,9 @@ export const CharitiesOverviewComponent2 = () => {
 
   const height = () => {
     if (header().length > 0) {
-      return 50 + 350
+      return 50 + 400
     }
-    return 350
+    return 400
   }
 
   const heightStr = () => `${height()}px`

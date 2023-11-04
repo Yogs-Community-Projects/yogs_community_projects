@@ -189,10 +189,10 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   }
 
   const countdown = () => {
-    if (SlotUtils.start(slot).diff(useOverlayNow()).as('day') < 7) {
-      return SlotUtils.start(slot).diff(useOverlayNow()).toFormat('hh:mm:ss')
+    if (SlotUtils.start(slot).diff(useOverlayNow()).as('day') < 1) {
+      return SlotUtils.start(slot).diff(useOverlayNow()).toFormat("hh'h' mm'm' ss's")
     }
-    return SlotUtils.start(slot).diff(useOverlayNow()).toFormat("d 'days'")
+    return SlotUtils.start(slot).diff(useOverlayNow()).toFormat("dd'd' hh'h' mm'm'")
   }
 
   const showDate = () => {
@@ -367,18 +367,14 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             }
           >
             <div
-              class={`${countdownBackground()} text-md flex w-full flex-row justify-between rounded-t-2xl p-1 px-4 text-center text-white`}
+              class={`${countdownBackground()} text-md flex w-full flex-row items-center justify-between rounded-t-2xl p-1 px-4 text-center text-white`}
             >
               <Show when={SlotUtils.isLive(slot, useOverlayNow())}>
-                <>
-                  <p class={'w-full text-center font-bold'}>LIVE</p>
-                </>
+                <p class={'w-full text-center font-bold'}>LIVE</p>
               </Show>
               <Show when={!SlotUtils.isLive(slot, useOverlayNow())}>
-                <>
-                  <p class={'text-lg'}>{timeString()}</p>
-                  <p class={'font-mono text-lg'}>{countdown()}</p>
-                </>
+                <p class={'text-lg'}>{timeString()}</p>
+                <p class={'text-md font-mono lowercase'}>{countdown()}</p>
               </Show>
             </div>
             <div class={'bg-jj_background_2 h-full rounded-b-2xl bg-contain bg-repeat'}>

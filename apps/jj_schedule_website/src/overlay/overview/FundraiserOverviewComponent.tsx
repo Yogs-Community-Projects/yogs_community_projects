@@ -8,7 +8,7 @@ export const FundraiserOverviewComponent = () => {
   return (
     <div>
       <div class={'text-white'}>
-        <p>Recommended Browser source height 72px</p>
+        <p>Recommended Browser source height 80px</p>
         <table>
           <tbody>
             <tr>

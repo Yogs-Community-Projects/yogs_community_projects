@@ -41,7 +41,7 @@ export const OverlayOverview: Component = () => {
 }
 */
 
-export const OverlayOverview: Component = () => {
+const OverlayOverview: Component = () => {
   const [open, setOpen] = createSignal(false)
   const [open2, setOpen2] = createSignal(false)
 
@@ -233,3 +233,5 @@ const Body = () => {
     </div>
   )
 }
+
+export default OverlayOverview

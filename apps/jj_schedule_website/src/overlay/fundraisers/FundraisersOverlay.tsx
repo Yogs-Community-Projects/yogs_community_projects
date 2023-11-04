@@ -17,7 +17,7 @@ export const FundraisersOverlayComponent: Component<{ speed: number; theme: stri
   const e = excludedChannel()
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
-  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023')
+  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023_2')
   const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
   const useData = () =>
     fundraiserData.data?.campaigns
@@ -60,7 +60,7 @@ export const FundraisersOverlayComponent: Component<{ speed: number; theme: stri
       >
         <For each={items()}>
           {d => {
-            return <div class="inline-block h-[72px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
+            return <div class="inline-block h-[80px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
           }}
         </For>
       </div>
@@ -72,7 +72,7 @@ export const FundraisersOverlayComponent: Component<{ speed: number; theme: stri
       >
         <For each={items()}>
           {d => {
-            return <div class="inline-block h-[72px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
+            return <div class="inline-block h-[80px] w-[256px] items-center justify-center px-2 py-1">{d}</div>
           }}
         </For>
       </div>
@@ -141,7 +141,7 @@ const Child: Component<ChildProps> = props => {
   }
 
   return (
-    <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
+    <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 text-base shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
         <img class={'h-12 w-12 rounded-lg'} alt={''} src={img()} loading={'eager'} />
         <div class={'flex h-full w-full flex-col items-start justify-center overflow-hidden truncate pl-2'}>
@@ -160,7 +160,7 @@ const Child: Component<ChildProps> = props => {
               </div>
             </Match>
           </Switch>
-          <p class={`${useRaisedTextColor()} text-sm font-bold`}>
+          <p class={`${useRaisedTextColor()} font-bold`}>
             Raised <Numeric value={props.d.raised} numberStyle="currency" currency={'GBP'} />
           </p>
         </div>

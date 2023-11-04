@@ -77,7 +77,7 @@ const Body: Component<{
   causes: string[]
 }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
-  const d = doc<JJData>(coll, 'JJDonationTracker2023')
+  const d = doc<JJData>(coll, 'JJDonationTracker2023_2')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
 
   const [currentCharity, setCurrentCharity] = createSignal(0)
@@ -326,7 +326,7 @@ const CharityItem: Component<{
           </p>
         </Show>
         <Show when={props.showDesc}>
-          <p class={'line-clamp-2'}>{props.charity.description}</p>
+          <p class={'line-clamp-3 text-center'}>{props.charity.description}</p>
         </Show>
         <Show when={props.showUrl && !props.showQRCode}>
           <p>{charityUrl()}</p>
