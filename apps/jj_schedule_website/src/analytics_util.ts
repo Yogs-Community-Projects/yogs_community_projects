@@ -15,18 +15,23 @@ export const useAnalytics = () => {
       personalization_storage: 'denied',
       security_storage: 'denied',
     })
-    setConsent({
-      ad_storage: 'denied',
-      analytics_storage: 'granted',
-      functionality_storage: 'granted',
-      personalization_storage: 'denied',
-      security_storage: 'denied',
-    })
+
+    if (analytics) {
+      setConsent({
+        ad_storage: 'denied',
+        analytics_storage: 'granted',
+        functionality_storage: 'granted',
+        personalization_storage: 'denied',
+        security_storage: 'denied',
+      })
+    }
   }
 
   const log = (eventName: string, data: { [key: string]: any }) => {
     gtag('event', eventName, data)
-    logEvent(analytics, eventName, data)
+    if (analytics) {
+      logEvent(analytics, eventName, data)
+    }
   }
 
   const logSlotClick = (slot: Slot) => {
@@ -52,32 +57,38 @@ export const useAnalytics = () => {
     }
   }
   const grantConsent = () => {
-    setAnalyticsCollectionEnabled(analytics, true)
     gtag('consent', 'update', {
       analytics_storage: 'granted',
       functionality_storage: 'granted',
     })
-    setConsent({
-      ad_storage: 'denied',
-      analytics_storage: 'granted',
-      functionality_storage: 'granted',
-      personalization_storage: 'denied',
-      security_storage: 'denied',
-    })
+
+    if (analytics) {
+      setAnalyticsCollectionEnabled(analytics, true)
+      setConsent({
+        ad_storage: 'denied',
+        analytics_storage: 'granted',
+        functionality_storage: 'granted',
+        personalization_storage: 'denied',
+        security_storage: 'denied',
+      })
+    }
   }
   const deniedConsent = () => {
-    setAnalyticsCollectionEnabled(analytics, false)
     gtag('consent', 'update', {
       analytics_storage: 'denied',
       functionality_storage: 'denied',
     })
-    setConsent({
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      functionality_storage: 'denied',
-      personalization_storage: 'denied',
-      security_storage: 'denied',
-    })
+
+    if (analytics) {
+      setAnalyticsCollectionEnabled(analytics, false)
+      setConsent({
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'denied',
+        personalization_storage: 'denied',
+        security_storage: 'denied',
+      })
+    }
   }
 
   return { installGTag, logSlotClick, logCreator, log, grantConsent, deniedConsent }
