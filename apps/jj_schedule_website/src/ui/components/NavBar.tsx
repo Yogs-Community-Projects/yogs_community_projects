@@ -15,7 +15,7 @@ export const NavBar: Component = () => {
         <Link path="/overlay" title="Streaming Overlays" />
         <a
           href={'https://schedule.yogs.app'}
-          class={'hover:text-accent-100 text-lg no-underline transition-all hover:scale-105'}
+          class={'hover:text-accent-100 no-underline transition-all hover:scale-105'}
         >
           Regular Schedule
         </a>
