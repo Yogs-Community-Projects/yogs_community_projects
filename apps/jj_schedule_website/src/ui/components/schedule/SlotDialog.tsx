@@ -9,6 +9,7 @@ import { Dialog } from '@kobalte/core'
 import { A } from '@solidjs/router'
 import { CreatorTile } from '../tiles/CreatorTile'
 import { TwitchTile, YoutubeTile } from '../tiles/ChannelTile'
+import { useAnalytics } from '../../../analytics_util'
 
 interface SlotDialogProps {
   modalSignal: ModalSignal
@@ -111,7 +112,7 @@ interface CreatorSectionProps {
 
 const CreatorSection: Component<CreatorSectionProps> = props => {
   const creators = useCreatorDB().readSome(props.slot.relations.creators)
-
+  const { logCreator } = useAnalytics()
   return (
     <Show when={props.slot.relations.creators.length > 0}>
       <p class={'text-2xl'}>Creators</p>
@@ -120,9 +121,14 @@ const CreatorSection: Component<CreatorSectionProps> = props => {
           <div class={'grid grid-cols-3 gap-2'}>
             <For each={creators.data}>
               {result => (
-                <A href={'/creators/' + result.creator.creatorId}>
+                <a
+                  href={'https://schedule.yogs.app/creators/' + result.creator.creatorId}
+                  onClick={() => {
+                    logCreator(result.creator)
+                  }}
+                >
                   <CreatorTile creator={result.creator} style={result.style} />
-                </A>
+                </a>
               )}
             </For>
           </div>

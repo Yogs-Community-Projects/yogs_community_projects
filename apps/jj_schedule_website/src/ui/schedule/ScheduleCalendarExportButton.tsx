@@ -1,5 +1,5 @@
 import { Component, createSignal, For, Show } from 'solid-js'
-import { useCreatorIds, useDays } from './providers/ScheduleDataProvider'
+import { useCreatorIds, useDays, useScheduleData } from './providers/ScheduleDataProvider'
 import { Dialog } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
@@ -8,6 +8,7 @@ import { CreatorData, Slot } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import ical from 'ical-generator'
 import { ICalAlarmType } from 'ical-generator/dist/alarm'
+import { useAnalytics } from '../../analytics_util'
 
 export const CalendarExportButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -59,10 +60,11 @@ interface CalendarDialogDialogBodyProps {
 const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props => {
   const { onClose } = props
   const days = useDays()
+  const schedule = useScheduleData()
   const creators = useCreatorDB().readSome(useCreatorIds())
   const [selectedSlots, setSelectedSlots] = createSignal<Slot[]>([])
   const [search, setSearch] = createSignal('')
-
+  const { log } = useAnalytics()
   const creatorMap = () => {
     const map = new Map<string, CreatorData>()
     if (!creators.data) {
@@ -84,6 +86,10 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
     const s = icalString()
     const start = DateTime.fromISO(days[0].slots[0].start)
     downloadFile(`MyJJSchedule${start.year}.ics`, s)
+    log('schedule_export', {
+      schedule: schedule.name,
+      slots: selectedSlots().map(s => s.title),
+    })
   }
   const downloadFile = (filename: string, text: string) => {
     const element = document.createElement('a')

@@ -1,10 +1,11 @@
 import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
-import { useCreatorIds, useSlots } from './providers/ScheduleDataProvider'
+import { useCreatorIds, useSchedule, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { useCreatorFilter } from './providers/CreatorFilterProvider'
 import { Dialog } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
 import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
+import { useAnalytics } from '../../analytics_util'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -54,8 +55,10 @@ interface FilterDialogBodyProps {
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
   const slots = useSlots()
+  const schedule = useScheduleData()
   const creators = useCreatorDB().readSome(useCreatorIds())
-  const { includes, toggle, reset } = useCreatorFilter()
+  const { includes, toggle, reset, filter } = useCreatorFilter()
+  const { log } = useAnalytics()
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
   }
@@ -144,6 +147,10 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
           onclick={() => {
             reset()
             onClose()
+            log('schedule_filter', {
+              filter: filter(),
+              schedule: schedule.name,
+            })
           }}
         >
           Reset
