@@ -2,30 +2,19 @@ import { Component } from 'solid-js'
 import { Dialog } from '@kobalte/core'
 import { createModalSignal } from '@ycapp/common'
 import { Accessor } from 'solid-js/types/reactive/signal'
-import { gtag, install } from 'ga-gtag'
-
-function grantConsent() {
-  console.log('grantConsent')
-  gtag('consent', 'update', {
-    analytics_storage: 'granted',
-    functionality_storage: 'granted',
-  })
-}
-
-function deniedConsent() {
-  console.log('deniedConsent')
-  gtag('consent', 'update', {
-    analytics_storage: 'denied',
-    functionality_storage: 'denied',
-  })
-}
+// import { gtag, install } from 'ga-gtag'
+import { useAnalytics } from '../../analytics_util'
 
 export const AnalyticsConsent: Component = () => {
   const showDisclaimerAnalyticsLocalStorage = localStorage?.getItem('showDisclaimerAnalytics') ?? null
-  const acceptAnalytics = (localStorage?.getItem('acceptAnalytics') ?? null) == 'true'
+  const acceptAnalytics = (localStorage?.getItem('acceptAnalytics') ?? null) === 'true'
   const showDisclaimerAnalytics = showDisclaimerAnalyticsLocalStorage == null
   const modalSignal = createModalSignal(showDisclaimerAnalytics)
-  install(import.meta.env.VITE_GTAG, { anonymize_ip: true })
+  //install(import.meta.env.VITE_GTAG, { anonymize_ip: true })
+
+  const { grantConsent, deniedConsent, installGTag } = useAnalytics()
+  installGTag()
+  /*
   gtag('consent', 'default', {
     ad_storage: 'denied',
     analytics_storage: 'denied',
@@ -33,6 +22,7 @@ export const AnalyticsConsent: Component = () => {
     personalization_storage: 'denied',
     security_storage: 'denied',
   })
+  */
   if (acceptAnalytics) {
     grantConsent()
   } else {
@@ -59,7 +49,7 @@ interface AnalyticsConsentBodyProps {
 
 const AnalyticsConsentBody: Component<AnalyticsConsentBodyProps> = props => {
   const { onClose } = props
-
+  const { grantConsent, deniedConsent } = useAnalytics()
   const onDecline = () => {
     localStorage?.setItem('showDisclaimerAnalytics', 'false')
     localStorage?.setItem('acceptAnalytics', 'false')
