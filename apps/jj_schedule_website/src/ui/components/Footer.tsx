@@ -1,10 +1,14 @@
 import { Component, Show } from 'solid-js'
 import { FeedbackButtons } from './FeedbackButtons'
 import { DateTime } from 'luxon'
+import { Button, Dialog } from '@kobalte/core'
+import { AnalyticsConsentBody } from './AnalyticsConsent'
+import { createModalSignal } from '@ycapp/common'
 
 export const Footer: Component = () => {
+  const modalSignal = createModalSignal(false)
   return (
-    <div class={'mt-2'}>
+    <div class={'mt-2 flex flex-col items-center justify-center'}>
       <div class={'grid grid-cols-1 gap-8 px-4 text-white md:grid-cols-3 md:px-6 md:py-8'}>
         <About />
         <Feedback />
@@ -16,6 +20,25 @@ export const Footer: Component = () => {
           Website released, {DateTime.fromISO(import.meta.env.VITE_BUILD_DATE).toLocaleString(DateTime.DATETIME_FULL)}
         </p>
       </Show>
+      <Button.Root
+        class={'text-white underline'}
+        onClick={() => {
+          modalSignal.open()
+        }}
+      >
+        Analytics Disclaimer
+      </Button.Root>
+
+      <Dialog.Root open={modalSignal.isOpen()} onOpenChange={modalSignal.setOpen}>
+        <Dialog.Portal>
+          <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
+          <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+            <Dialog.Content class={'h-full w-full max-w-[500px] p-2 lg:w-[min(calc(100vw_-_16px),_500px)] lg:p-16'}>
+              <AnalyticsConsentBody open={modalSignal.open} onClose={modalSignal.close} />
+            </Dialog.Content>
+          </div>
+        </Dialog.Portal>
+      </Dialog.Root>
     </div>
   )
 }
