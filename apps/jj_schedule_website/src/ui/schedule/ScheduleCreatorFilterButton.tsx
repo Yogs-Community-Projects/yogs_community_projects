@@ -147,15 +147,20 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
           onclick={() => {
             reset()
             onClose()
+          }}
+        >
+          Reset
+        </button>
+        <button
+          class={'bg-primary rounded-xl p-2 text-white'}
+          onclick={() => {
+            onClose()
             log('schedule_filter', {
               filter: filter(),
               schedule: schedule.name,
             })
           }}
         >
-          Reset
-        </button>
-        <button class={'bg-primary rounded-xl p-2 text-white'} onclick={onClose}>
           Done
         </button>
       </div>
