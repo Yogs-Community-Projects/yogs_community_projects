@@ -10,6 +10,7 @@
     "mf": "vite build && vite preview --port 5001",
     "local-test": "vite build && vite preview",
     "deploy": "npm run run-prettier-write && node before.js && vite build && firebase deploy --only hosting",
+    "deploy-preview": "npm run run-prettier-write && node before.js && vite build && firebase hosting:channel:deploy test",
     "run-prettier-write": "prettier --write --config ../../.prettierrc.json ./",
     "run-prettier-check": "prettier --check --config ../../.prettierrc.json ./"
   },
