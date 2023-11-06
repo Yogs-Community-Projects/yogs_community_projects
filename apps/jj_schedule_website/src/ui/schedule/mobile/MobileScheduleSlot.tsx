@@ -6,6 +6,7 @@ import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
+import { useAnalytics } from '../../../AnalyticsProvider'
 
 interface MobileScheduleSlotProps {
   slot: Slot
@@ -14,6 +15,7 @@ interface MobileScheduleSlotProps {
 export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const slot = props.slot
   const now = useNow()
+  const { logSlotClick } = useAnalytics()
 
   const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
   const countdown = () => {
@@ -77,7 +79,10 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             style={{
               ...background(),
             }}
-            onclick={modalSignal.open}
+            onclick={() => {
+              logSlotClick(slot)
+              modalSignal.open()
+            }}
           >
             <p class={'text-md font-bold'}>{props.slot.title}</p>
             <p class={'text-sm'}>{props.slot.subtitle}</p>
