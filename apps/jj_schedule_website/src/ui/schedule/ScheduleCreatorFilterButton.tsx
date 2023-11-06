@@ -156,7 +156,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
           onclick={() => {
             onClose()
             log('schedule_filter', {
-              filter: filter(),
+              filter: filter().join(','),
               schedule: schedule.name,
             })
           }}
