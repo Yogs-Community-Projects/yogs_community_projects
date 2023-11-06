@@ -120,6 +120,16 @@ const Child: Component<{
     return `https://twitch.tv/${campaign.twitch_data.login}`
   }
 
+  const youtubeUrl = () => {
+    if (campaign.livestream.type === 'youtube_live') {
+      return `https://www.youtube.com/channel/${campaign.livestream.channel}`
+    }
+    if (campaign.livestream.type === 'youtube_video') {
+      return `https://www.youtube.com/watch?v=${campaign.livestream.channel}`
+    }
+    return undefined
+  }
+
   return (
     <div class={'min-h-24 flex flex-col'}>
       <div
@@ -167,6 +177,17 @@ const Child: Component<{
             Twitch
           </a>
         </Show>
+        <Show when={youtubeUrl()}>
+          <a
+            class={
+              'bg-youtube hover:scale-102 rounded-xl p-1 no-underline shadow hover:text-white hover:brightness-105'
+            }
+            href={youtubeUrl()}
+            target={'_blank'}
+          >
+            Youtube
+          </a>
+        </Show>
       </div>
     </div>
   )
@@ -187,7 +208,7 @@ const Live = () => {
 }
 
 const RandomTwitchButton: Component<{ fundraisers: Campaign[] }> = props => {
-  const fundraisers = () => props.fundraisers.filter(f => f.livestream.type === 'twitch')
+  const fundraisers = () => props.fundraisers.filter(f => f.livestream.type === 'twitch' && f.twitch_data)
   const show = () => fundraisers().length > 0
   const randomFundraiser = () => {
     const f = fundraisers()
