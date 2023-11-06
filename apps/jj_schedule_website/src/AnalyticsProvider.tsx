@@ -3,7 +3,8 @@ import { gtag, install } from 'ga-gtag'
 import { logEvent, setAnalyticsCollectionEnabled, setConsent } from '@firebase/analytics'
 import { useFBAnalytics } from '@ycapp/common'
 import { Creator, Slot } from '@ycapp/model'
-import { SlotUtils } from '@ycapp/model'
+import { DateTime } from 'luxon'
+
 const useAnalyticsHook = () => {
   const analytics = useFBAnalytics()
 
@@ -29,33 +30,31 @@ const useAnalyticsHook = () => {
   }
 
   const log = (eventName: string, data: { [key: string]: any }) => {
-    gtag('event', eventName, data)
-    if (analytics) {
-      logEvent(analytics, eventName, data)
+    try {
+      gtag('event', eventName, data)
+      if (analytics) {
+        logEvent(analytics, eventName, data)
+      }
+    } catch (e) {
+      console.error(e)
     }
   }
 
   const logSlotClick = (slot: Slot) => {
-    try {
-      const start = SlotUtils.start(slot)
-      const data = {
-        slot_title: slot.title,
-        slot_year: start.year,
-        event_label: `${start.year}_${start.day}_${slot}`,
-      }
-      log('click_slot', data)
-    } catch (e) {
-      console.error(e)
+    const start = DateTime.fromISO(slot.start, {
+      setZone: true,
+    })
+    const data = {
+      slot_title: slot.title,
+      slot_year: start.year,
+      event_label: `${start.year}_${start.day}_${start.hour}`,
     }
+    log('click_slot', data)
   }
   const logCreator = (creator: Creator) => {
-    try {
-      log('click_creator', {
-        name: creator.name,
-      })
-    } catch (e) {
-      console.error(e)
-    }
+    log('click_creator', {
+      name: creator.name,
+    })
   }
   const grantConsent = () => {
     gtag('consent', 'update', {
