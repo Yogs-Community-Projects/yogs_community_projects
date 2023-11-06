@@ -11,6 +11,7 @@ export const NavBar: Component = () => {
         <Link path="/2022" title="Jingle Jam 2022" />
         <Link path="/2021" title="Jingle Jam 2021" />
         <Link path="/2020" title="Jingle Jam 2020" />
+        <Link path="/community" title="Community" />
         <Link path="/extension" title="Twitch Extension" />
         <Link path="/overlay" title="Streaming Overlays" />
         <a
@@ -59,6 +60,7 @@ const DropdownNavBar: Component = () => {
         <LinkMobile path="/2022" title="Jingle Jam 2022" close={onClose} />
         <LinkMobile path="/2021" title="Jingle Jam 2021" close={onClose} />
         <LinkMobile path="/2020" title="Jingle Jam 2020" close={onClose} />
+        <LinkMobile path="/community" title="Community" close={onClose} />
         <LinkMobile path="/extension" title="Twitch Extension" close={onClose} />
         <a
           href={'https://schedule.yogs.app'}
