@@ -19,6 +19,7 @@ const HomePage = lazy(() => import('./ui/home/HomePage'))
 const SchedulePage = lazy(() => import('./ui/schedule/SchedulePage'))
 const ExtensionPage = lazy(() => import('./ui/extension/ExtensionPage'))
 const OverlayOverviewPage = lazy(() => import('./overlay/overview/OverlayOverview'))
+const CommunityPage = lazy(() => import('./ui/community/CommunityPage'))
 
 const Home = () => {
   return (
@@ -82,6 +83,18 @@ const OverlayOverview = () => {
     </>
   )
 }
+const Community = () => {
+  return (
+    <>
+      <Title>Jingle Jam Community Fundraiser</Title>
+      <Meta
+        name="description"
+        content="Jingle Jam Community Fundraiser. A list of the top 50 Community Fundraisers with links to their tiltify Campaign and channel."
+      />
+      <CommunityPage />
+    </>
+  )
+}
 
 const App: Component = () => {
   const config = useConfig()
@@ -96,10 +109,11 @@ const App: Component = () => {
             <Route path={'/'} data={scheduleCurrentRouteDataFunc} component={Schedule}></Route>
           </Show>
           <Route path={'/extension'} component={Extension} />
+          <Route path={'/overlay'} component={OverlayOverview} />
+          <Route path={'/community'} component={Community} />
           <Route path={'/2021'} data={schedule2021RouteDataFunc} component={Schedule}></Route>
           <Route path={'/2020'} data={schedule2020RouteDataFunc} component={Schedule}></Route>
           <Route path={'/2022'} data={schedule2022RouteDataFunc} component={Schedule}></Route>
-          <Route path={'/overlay'} component={OverlayOverview} />
         </Route>
         <Route path={'/overlay/schedule'} component={ScheduleOverlay} />
         <Route path={'/overlay/fundraisers'} component={FundraisersOverlay} />

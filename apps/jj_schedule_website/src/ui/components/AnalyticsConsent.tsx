@@ -2,7 +2,7 @@ import { Dialog } from '@kobalte/core'
 import { createModalSignal } from '@ycapp/common'
 import { Component, createSignal, Show } from 'solid-js'
 import { Accessor } from 'solid-js/types/reactive/signal'
-import { useAnalytics } from '../../analytics_util'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 export const AnalyticsConsent: Component = () => {
   const showDisclaimerAnalyticsLocalStorage = localStorage?.getItem('showDisclaimerAnalytics') ?? null

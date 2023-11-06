@@ -9,7 +9,7 @@ import { Dialog } from '@kobalte/core'
 import { A } from '@solidjs/router'
 import { CreatorTile } from '../tiles/CreatorTile'
 import { TwitchTile, YoutubeTile } from '../tiles/ChannelTile'
-import { useAnalytics } from '../../../analytics_util'
+import { useAnalytics } from '../../../AnalyticsProvider'
 
 interface SlotDialogProps {
   modalSignal: ModalSignal

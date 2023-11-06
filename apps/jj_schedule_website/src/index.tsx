@@ -6,6 +6,7 @@ import { useLocale } from '@kobalte/core'
 import { createI18n, I18nProvider } from 'solid-i18n'
 import { ConfigProviderLoader } from './ui/configProvider/ConfigProvider'
 import { MetaProvider } from '@solidjs/meta'
+import { AnalyticsProvider } from './AnalyticsProvider'
 const DBWrapper = lazy(() => import('./db_wrapper'))
 const App = lazy(() => import('./App'))
 
@@ -16,7 +17,9 @@ const Main: Component = () => {
       <I18nProvider i18n={i18n}>
         <DBWrapper>
           <ConfigProviderLoader>
-            <App />
+            <AnalyticsProvider>
+              <App />
+            </AnalyticsProvider>
           </ConfigProviderLoader>
         </DBWrapper>
       </I18nProvider>

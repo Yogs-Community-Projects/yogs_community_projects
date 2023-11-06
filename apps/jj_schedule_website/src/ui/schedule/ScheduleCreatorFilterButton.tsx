@@ -1,11 +1,11 @@
 import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
-import { useCreatorIds, useSchedule, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
+import { useCreatorIds, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { useCreatorFilter } from './providers/CreatorFilterProvider'
 import { Dialog } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
 import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
-import { useAnalytics } from '../../analytics_util'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()

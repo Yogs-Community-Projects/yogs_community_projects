@@ -8,7 +8,7 @@ import { CreatorData, Slot } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import ical from 'ical-generator'
 import { ICalAlarmType } from 'ical-generator/dist/alarm'
-import { useAnalytics } from '../../analytics_util'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 export const CalendarExportButton: Component = () => {
   const modalSignal = createModalSignal()

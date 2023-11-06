@@ -1,9 +1,10 @@
-import { Creator, Slot, SlotUtils } from '@ycapp/model'
+import { createContext, ParentComponent, useContext } from 'solid-js'
 import { gtag, install } from 'ga-gtag'
 import { logEvent, setAnalyticsCollectionEnabled, setConsent } from '@firebase/analytics'
 import { useFBAnalytics } from '@ycapp/common'
-
-export const useAnalytics = () => {
+import { Creator, Slot } from '@ycapp/model'
+import { SlotUtils } from '@ycapp/model'
+const useAnalyticsHook = () => {
   const analytics = useFBAnalytics()
 
   const installGTag = () => {
@@ -93,3 +94,11 @@ export const useAnalytics = () => {
 
   return { installGTag, logSlotClick, logCreator, log, grantConsent, deniedConsent }
 }
+
+const AnalyticsContext = createContext<ReturnType<typeof useAnalyticsHook>>()
+
+export const AnalyticsProvider: ParentComponent = props => {
+  const hook = useAnalyticsHook()
+  return <AnalyticsContext.Provider value={hook}>{props.children}</AnalyticsContext.Provider>
+}
+export const useAnalytics = () => useContext(AnalyticsContext)
