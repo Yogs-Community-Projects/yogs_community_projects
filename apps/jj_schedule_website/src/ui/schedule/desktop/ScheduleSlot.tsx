@@ -7,6 +7,7 @@ import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
+import { useAnalytics } from '../../../AnalyticsProvider'
 
 interface ScheduleSlotProps {
   slot: Slot
@@ -15,6 +16,7 @@ interface ScheduleSlotProps {
 export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const slot = props.slot
   const now = useNow()
+  const { logSlotClick } = useAnalytics()
   const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
 
   const { includes, isEmpty } = useCreatorFilter()
@@ -93,7 +95,10 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               ...background(),
             }}
             disabled={!enable()}
-            onclick={modalSignal.toggle}
+            onclick={() => {
+              logSlotClick(slot)
+              modalSignal.toggle()
+            }}
           >
             <div class={'flex h-full w-full flex-col justify-center text-center'}>
               <p class={'text-slot-title font-bold tracking-widest'}>{props.slot.title}</p>
