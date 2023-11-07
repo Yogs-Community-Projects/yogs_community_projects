@@ -38,8 +38,18 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 
 Changelog
 
-0.0.7
+0.0.8
 Updates
+
+- Updated Background colors
+  - Updated primary and accent color values
+  - Updated background gradient
+- Updated Schedule slot layout
+
+  - moved the VOD and Streamer icons to the sides
+
+  0.0.7
+  Updates
 
 - Updated the paddings of some ui elements.
 - Removed the twitch vod indicator (heart icon) and changed it to a small text saying VOD
