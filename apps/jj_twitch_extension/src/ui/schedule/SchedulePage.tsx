@@ -6,6 +6,7 @@ import { CreatorFilterProvider } from './CreatorFilterProvider'
 import { InvisibleBody } from '../InvisibleBody'
 import { useData } from '../dataProvider'
 import { LoadingSchedule } from '../components/LoadingPage'
+import { Button } from '@kobalte/core'
 
 const ScheduleBody = lazy(() => import('./ScheduleBody'))
 
@@ -17,7 +18,7 @@ const SchedulePage: Component = () => {
         <VisibleSchedule />
       </Show>
       <Show when={!visible()}>
-        <InvisibleBody text={'The Yogscast Jingle Jam Schedule Page will be live soon.'} />
+        <InvisibleBody text={'The Yogscast Jingle Jam Schedule will be live soon...'}></InvisibleBody>
       </Show>
     </>
   )

@@ -26,13 +26,10 @@ export const DonationButton: Component = () => {
   const gradient = () => {
     switch (theme()) {
       case 'blue':
+      case 'blue_light':
         return 'bg-gradient-to-br from-primary-400 to-primary-500'
       case 'dark':
         return 'bg-gradient-to-br from-gray-400 to-gray-500'
-      case 'red_dark':
-        return 'bg-gradient-to-br from-accent-500 to-accent-600'
-      case 'blue_dark':
-        return 'bg-gradient-to-br from-primary-500 to-primary-600'
       default:
         return 'bg-gradient-to-br from-accent-400 to-accent-500'
     }

@@ -1,5 +1,5 @@
 export type TabType = 'yogs' | 'charities' | 'community' | 'none'
-export type Theme = 'red' | 'blue' | 'dark' | 'red_dark' | 'blue_dark' | 'rainbow'
+export type Theme = 'red' | 'blue' | 'dark' | 'red_light' | 'blue_light' | 'rainbow'
 export interface TwitchConfig {
   tab1: TabType
   tab2: TabType

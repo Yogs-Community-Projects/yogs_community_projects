@@ -5,9 +5,9 @@ import { useTwitchConfig } from './useTwitchConfig'
 
 const optionsMap = new Map<string, string>([
   ['red', 'Red'],
-  ['red_dark', 'Dark Red'],
+  ['red_light', 'Light Red'],
   ['blue', 'Blue'],
-  ['blue_dark', 'Dark Blue'],
+  ['blue_light', 'Light Blue'],
   ['dark', 'Dark'],
   ['rainbow', 'Rainbow'],
 ])
@@ -17,34 +17,6 @@ const themeOptions = (): { theme: string; name: string }[] => {
   return keys.map(key => {
     return { theme: key, name: optionsMap[key] as string }
   })
-  /*
-  return [
-    {
-      theme: 'red',
-      name: 'Red',
-    },
-    {
-      theme: 'red_dark',
-      name: 'Dark Red',
-    },
-    {
-      theme: 'blue',
-      name: 'Blue',
-    },
-    {
-      theme: 'blue_dark',
-      name: 'Dark Blue',
-    },
-    {
-      theme: 'dark',
-      name: 'Dark',
-    },
-    {
-      theme: 'rainbow',
-      name: 'Rainbow',
-    },
-  ]
-  */
 }
 export const ThemeRadioButtons: Component = () => {
   const { config, setConfig } = useTwitchConfig()

@@ -20,8 +20,8 @@ function getDoc<T>(db: Firestore, collectionName: string, id: string) {
 }
 
 const getScheduleDoc = (db: Firestore) => {
-  const id = useJJConfig().scheduleId
-  return getDoc<ScheduleData>(db, 'ScheduleData', id)
+  const id = () => useJJConfig().scheduleId
+  return getDoc<ScheduleData>(db, 'ScheduleData', id())
 }
 const getCharitiesDoc = (db: Firestore) => {
   const docId = useJJConfig().jjDonationTrackerDoc ?? 'JJDonationTracker2023'
@@ -68,6 +68,61 @@ function useCache<T>(tab: TabType, load: ReturnType<typeof getDoc<T>>) {
     if (visited()) {
       createRoot(() => {
         const s = useFirestore<T>(load)
+        createEffect(() => {
+          batch(() => {
+            setCache('data', s.data)
+            setCache('loading', s.loading)
+            setCache('error', s.error)
+          })
+        })
+      })
+    }
+  })
+  return cache
+}
+
+function useSchedule(tab: TabType, db: Firestore) {
+  const jjConfig = useJJConfig()
+  const id = () => jjConfig.scheduleId
+
+  const d = () => getDoc<ScheduleData>(db, 'ScheduleData', id())
+
+  const location = useLocation()
+  const { config } = useTwitchConfig()
+  const [visited, setVisited] = createSignal<boolean>(false)
+
+  const [cache, setCache] = createStore<UseFireStoreReturn<ScheduleData>>({
+    loading: false,
+    error: null,
+    data: null,
+  })
+
+  const isTab1 = () =>
+    config.tab1 === tab &&
+    (location.pathname === '/1' ||
+      location.pathname === '/' ||
+      location.pathname === '' ||
+      location.pathname === '*' ||
+      location.pathname.endsWith('.html'))
+  const isTab = () => {
+    return (
+      isTab1() ||
+      (config.tab2 === tab && location.pathname === '/2') ||
+      (config.tab3 === tab && location.pathname === '/3')
+    )
+  }
+
+  createEffect(() => {
+    if (isTab()) {
+      setVisited(true)
+    }
+  })
+
+  createEffect(() => {
+    const scheduleDoc = d()
+    if (visited()) {
+      createRoot(() => {
+        const s = useFirestore(scheduleDoc)
         createEffect(() => {
           batch(() => {
             setCache('data', s.data)
@@ -182,7 +237,7 @@ function creatorAndChannelCache() {
 }
 
 export const useDataHook = (db: Firestore) => {
-  const scheduleData = useCache('yogs', getScheduleDoc(db))
+  const scheduleData = useSchedule('yogs', db)
   const charityData = useCache('charities', getCharitiesDoc(db))
   const fundraiserData = useCache('community', getFundraiserDoc(db))
   const { useCreators, useCreator, getCreatorCache, useTwitchChannels, getTwitchCache, useTwitchWithCreators } =

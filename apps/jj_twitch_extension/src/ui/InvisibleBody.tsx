@@ -1,4 +1,4 @@
-import { Component, Show } from 'solid-js'
+import { Component, ParentComponent, Show } from 'solid-js'
 import { useTheme } from './themeProvider'
 import { twMerge } from 'tailwind-merge'
 import { useIsJJ, useJJStartCountdown, useNextJJStartDate } from '@ycapp/common'
@@ -7,7 +7,7 @@ interface InvisibleBodyProps {
   text: string
 }
 
-export const InvisibleBody: Component<InvisibleBodyProps> = props => {
+export const InvisibleBody: ParentComponent<InvisibleBodyProps> = props => {
   const { theme } = useTheme()
   const nextJJStartDate = useNextJJStartDate()
   const jjCountdown = useJJStartCountdown()
@@ -21,7 +21,7 @@ export const InvisibleBody: Component<InvisibleBodyProps> = props => {
         )}
       >
         <Show when={!isJJ()}>
-          <p class={'p-1 text-2xl font-bold md:p-2 md:text-4xl'}>Jingle Jam Countdown</p>
+          <p class={'p-1 text-2xl font-bold'}>Jingle Jam Countdown</p>
           <p class={'text-xl md:text-3xl'}>{nextJJStartDate().toLocal().toFormat('DDDD')}</p>
           <p class={'text-xl md:text-3xl'}>{nextJJStartDate().toLocal().toFormat('ttt')}</p>
           <p class={''}>{nextJJStartDate().toFormat('DDDD')}</p>
@@ -32,6 +32,7 @@ export const InvisibleBody: Component<InvisibleBodyProps> = props => {
           </div>
         </Show>
         <p>{props.text}</p>
+        {props.children}
       </div>
     </div>
   )

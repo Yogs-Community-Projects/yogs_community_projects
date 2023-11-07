@@ -19,10 +19,10 @@ export const useInternalTheme = () => {
         return 'bg-primary-500'
       case 'dark':
         return 'bg-gray-500'
-      case 'red_dark':
-        return 'bg-accent-600'
-      case 'blue_dark':
-        return 'bg-primary-600'
+      case 'red_light':
+        return 'bg-accent-400'
+      case 'blue_light':
+        return 'bg-primary-400'
       default:
         return 'bg-accent-500'
     }
@@ -33,10 +33,10 @@ export const useInternalTheme = () => {
         return 'bg-primary-300'
       case 'dark':
         return 'bg-gray-600'
-      case 'red_dark':
-        return 'bg-accent-500'
-      case 'blue_dark':
-        return 'bg-primary-500'
+      case 'red_light':
+        return 'bg-accent-400'
+      case 'blue_light':
+        return 'bg-primary-400'
       default:
         return 'bg-accent-300'
     }
@@ -47,10 +47,10 @@ export const useInternalTheme = () => {
         return 'bg-accent-500'
       case 'dark':
         return 'bg-gray-800'
-      case 'red_dark':
-        return 'bg-primary-600'
-      case 'blue_dark':
-        return 'bg-accent-600'
+      case 'red_light':
+        return 'bg-primary-400'
+      case 'blue_light':
+        return 'bg-accent-400'
       default:
         return 'bg-primary-500'
     }
@@ -61,10 +61,10 @@ export const useInternalTheme = () => {
         return 'bg-accent-300'
       case 'dark':
         return 'bg-gray-600'
-      case 'red_dark':
-        return 'bg-primary-500'
-      case 'blue_dark':
-        return 'bg-accent-500'
+      case 'red_light':
+        return 'bg-primary-400'
+      case 'blue_light':
+        return 'bg-accent-400'
       default:
         return 'bg-primary-300'
     }
@@ -75,10 +75,10 @@ export const useInternalTheme = () => {
         return 'text-primary-500'
       case 'dark':
         return 'text-gray-500'
-      case 'red_dark':
-        return 'text-accent-600'
-      case 'blue_dark':
-        return 'text-primary-600'
+      case 'red_light':
+        return 'text-accent-400'
+      case 'blue_light':
+        return 'text-primary-400'
       default:
         return 'text-accent-500'
     }
@@ -89,10 +89,10 @@ export const useInternalTheme = () => {
         return 'text-accent-500'
       case 'dark':
         return 'text-gray-800'
-      case 'red_dark':
-        return 'text-primary-600'
-      case 'blue_dark':
-        return 'text-accent-600'
+      case 'red_light':
+        return 'text-primary-400'
+      case 'blue_light':
+        return 'text-accent-400'
       default:
         return 'text-primary-500'
     }

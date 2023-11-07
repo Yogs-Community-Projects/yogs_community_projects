@@ -1,4 +1,4 @@
-import { ParentComponent } from 'solid-js'
+import { Match, ParentComponent, Switch } from 'solid-js'
 import { useTheme } from './ui/themeProvider'
 import { twMerge } from 'tailwind-merge'
 
@@ -7,17 +7,17 @@ const Background: ParentComponent = props => {
   const gradient = () => {
     switch (theme()) {
       case 'blue':
-        return 'from-accent-300 to-accent-600'
+        return 'from-accent-shade from-10% via-accent to-accent-shade to-90%'
       case 'dark':
         return 'from-gray-500 to-gray-800'
-      case 'red_dark':
-        return 'from-primary-500 to-primary-800'
-      case 'blue_dark':
-        return 'from-accent-500 to-accent-800'
+      case 'red_light':
+        return 'from-primary-300 to-primary-600'
+      case 'blue_light':
+        return 'from-accent-300 to-accent-600'
       case 'rainbow':
         return ''
       default:
-        return 'from-primary-300 to-primary-600'
+        return 'from-primary-shade from-10% via-primary to-primary-shade to-90%'
     }
   }
   const cssStyle = () => {
@@ -51,7 +51,7 @@ const Background: ParentComponent = props => {
 
   return (
     <div
-      class={twMerge('flex h-screen flex-col overflow-hidden overscroll-none bg-red-400 bg-gradient-to-b', gradient())}
+      class={twMerge('flex h-screen flex-col overflow-hidden overscroll-none bg-gradient-to-b', gradient())}
       style={cssStyle()}
     >
       {props.children}

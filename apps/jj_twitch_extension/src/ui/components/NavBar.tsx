@@ -51,13 +51,10 @@ const TabC: Component<{ href: string; tabType: TabType; class?: string }> = prop
   const active = () => {
     switch (theme()) {
       case 'blue':
+      case 'blue_light':
         return '[&.active]:bg-primary-500'
       case 'dark':
         return '[&.active]:bg-gray-800'
-      case 'red_dark':
-        return '[&.active]:bg-accent-600'
-      case 'blue_dark':
-        return '[&.active]:bg-primary-600'
       default:
         return '[&.active]:bg-accent-500'
     }
@@ -65,13 +62,10 @@ const TabC: Component<{ href: string; tabType: TabType; class?: string }> = prop
   const hover = () => {
     switch (theme()) {
       case 'blue':
+      case 'blue_light':
         return 'hover:bg-primary-300'
       case 'dark':
         return 'hover:bg-gray-600'
-      case 'red_dark':
-        return 'hover:bg-accent-500'
-      case 'blue_dark':
-        return 'hover:bg-primary-500'
       default:
         return 'hover:bg-accent-300'
     }
