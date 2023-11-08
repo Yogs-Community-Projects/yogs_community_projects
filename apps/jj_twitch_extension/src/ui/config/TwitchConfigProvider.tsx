@@ -1,4 +1,4 @@
-import { onMount, ParentComponent } from 'solid-js'
+import { createSignal, onMount, ParentComponent } from 'solid-js'
 import { createStore } from 'solid-js/store'
 import { defaultConfig, TwitchConfig } from './TwitchConfig'
 import { TwitchConfigContext } from './TwitchConfigContext'
@@ -7,7 +7,7 @@ const TwitchConfigProvider: ParentComponent = props => {
   const [config, setConfig] = createStore<TwitchConfig>(defaultConfig)
   const [originalConfig, setOriginalConfig] = createStore<TwitchConfig>(defaultConfig)
   const twitch = (window as any)?.Twitch?.ext
-
+  const [channelId, setChannelId] = createSignal<string>()
   const edited = () => {
     return (
       config.tab1 !== originalConfig.tab1 ||
@@ -58,6 +58,9 @@ const TwitchConfigProvider: ParentComponent = props => {
 
   onMount(() => {
     twitch?.onAuthorized(auth => {
+      if (auth) {
+        setChannelId(auth.channelId)
+      }
       loadConfig()
     })
   })
@@ -84,6 +87,7 @@ const TwitchConfigProvider: ParentComponent = props => {
         save,
         validConfig,
         edited,
+        channelId,
       }}
     >
       {props.children}

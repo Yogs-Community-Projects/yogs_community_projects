@@ -8,6 +8,7 @@ import DataProvider from '../dataProvider/src/DataProvider'
 import Background from '../../Background'
 import DBWrapper from '../../db_wrapper'
 import { useFirestoreDB } from '@ycapp/common'
+import { AnalyticsProvider } from '../../AnalyticsProvider'
 
 /*
 const DBWrapper = lazy(() => import('./db_wrapper'))
@@ -66,7 +67,9 @@ const Body: ParentComponent = props => {
   const db = useFirestoreDB()
   return (
     <JJConfigProviderLoader db={db}>
-      <DataProvider db={db}>{props.children}</DataProvider>
+      <AnalyticsProvider>
+        <DataProvider db={db}>{props.children}</DataProvider>
+      </AnalyticsProvider>
     </JJConfigProviderLoader>
   )
 }

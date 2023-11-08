@@ -6,6 +6,8 @@ import { useCreatorFilter } from './CreatorFilterProvider'
 import { useCreatorIds, useSlots } from './JJScheduleProvider'
 import { CgClose } from 'solid-icons/cg'
 import { useData } from '../dataProvider'
+import { useAnalytics } from '../../AnalyticsProvider'
+import { useScheduleData } from '@ycapp/jj_schedule_website/src/ui/schedule/providers/ScheduleDataProvider'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -55,10 +57,12 @@ interface FilterDialogBodyProps {
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
   const slots = useSlots()
+  const schedule = useScheduleData()
   const { useCreators } = useData()
   const ids = useCreatorIds()
   const creators = useCreators(() => ids)
-  const { includes, toggle, reset } = useCreatorFilter()
+  const { includes, toggle, reset, filter } = useCreatorFilter()
+  const { log } = useAnalytics()
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
   }
@@ -153,7 +157,16 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         >
           Reset
         </button>
-        <button class={'bg-primary rounded-xl p-2 text-white'} onclick={onClose}>
+        <button
+          class={'bg-primary rounded-xl p-2 text-white'}
+          onclick={() => {
+            onClose()
+            log('schedule_filter', {
+              filter: filter().join(','),
+              schedule: schedule.name,
+            })
+          }}
+        >
           Done
         </button>
       </div>

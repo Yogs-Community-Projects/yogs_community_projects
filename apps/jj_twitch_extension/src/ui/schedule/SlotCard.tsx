@@ -3,6 +3,7 @@ import { Component, JSX, Show, Suspense } from 'solid-js'
 import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import SlotDialog from './slotDialog/SlotDialog'
 import { BsPeopleFill } from 'solid-icons/bs'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 interface SlotCardProps {
   slot: Slot
@@ -13,6 +14,7 @@ interface SlotCardProps {
 export const SlotCard: Component<SlotCardProps> = props => {
   const { slot } = props
   const now = useNow()
+  const { logSlotClick } = useAnalytics()
 
   function textColor(background: string) {
     return getTextColor(background)
@@ -78,7 +80,10 @@ export const SlotCard: Component<SlotCardProps> = props => {
         style={{
           ...background(),
         }}
-        onclick={modalSignal.toggle}
+        onclick={() => {
+          logSlotClick(slot)
+          modalSignal.toggle()
+        }}
       >
         <div class={'absolute top-0 flex h-full w-full flex-col items-center justify-center px-4 py-2'}>
           <Show when={!hasSubtitle()}>

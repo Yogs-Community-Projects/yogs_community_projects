@@ -48,8 +48,8 @@ Updates
 
   - moved the VOD and Streamer icons to the sides
 
-  0.0.7
-  Updates
+    0.0.7
+    Updates
 
 - Updated the paddings of some ui elements.
 - Removed the twitch vod indicator (heart icon) and changed it to a small text saying VOD
