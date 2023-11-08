@@ -6,7 +6,11 @@ const DBWrapper: ParentComponent = props => {
   const configString = import.meta.env.VITE_FIREBASE_CONFIG
   if (configString) {
     const config = JSON.parse(configString)
-    return <ExtensionDBFirebaseProvider config={config}>{props.children}</ExtensionDBFirebaseProvider>
+    return (
+      <ExtensionDBFirebaseProvider initAnalytics={false} config={config}>
+        {props.children}
+      </ExtensionDBFirebaseProvider>
+    )
   } else {
     return (
       <ExtensionDBDummyProvider>
