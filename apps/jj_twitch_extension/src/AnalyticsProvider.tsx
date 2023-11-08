@@ -16,8 +16,8 @@ const useAnalyticsHook = () => {
       if (data) {
         completeData = { ...completeData, ...data }
       }
-      console.log('ap', 'log', completeData)
       gtag('event', eventName, completeData)
+      console.log('ap', 'log', completeData)
     } catch (e) {
       console.error('ap', 'error', e)
     }
