@@ -45,17 +45,17 @@ Updates
   - Updated primary and accent color values
   - Updated background gradient
 - Updated Schedule slot layout
+  - moved the VOD and Streamer icons to the bottom corners
+- Changed the schedule icon
+- Added Google Analytics
 
-  - moved the VOD and Streamer icons to the sides
-
-    0.0.7
-    Updates
+  0.0.7
+  Updates
 
 - Updated the paddings of some ui elements.
 - Removed the twitch vod indicator (heart icon) and changed it to a small text saying VOD
 - Added an icon to the stream slots indicating if streamers are associated with a stream
 - Updated countdown formats
-
 - Added a Donate Button at the top which links to the Jingle Jam page on tiltify.com.
   - Streamer can customize the url in the extension config with their own JJ Tiltify url.
     - The Jingle Jam allows streamers to register a Community Fundraiser with their own donation url.
@@ -65,9 +65,7 @@ Updates
   - The Donate Button will only be visible for testing/review purposes and during the Jingle Jam from Dec 1st until
     Dec. 15th.
 - Added links to the homepages of the charities on the Charity tab.
-
-Reasons
-
+  Reasons
 - The purpose of the extension is to give as much information about the Jingle Jam which should also include a link to
   the charity donation page.
 - The links to the charities are relevant to the extension since they provide more context to the Jingle Jam Charity
