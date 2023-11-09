@@ -5,3 +5,4 @@ node_modules
 *.json
 /src/analytics/analytics.js
 /src/analytics/ga.js
+README.md
