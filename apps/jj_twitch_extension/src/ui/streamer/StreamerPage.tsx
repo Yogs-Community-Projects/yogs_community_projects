@@ -46,26 +46,26 @@ const VisibleBody: Component = () => {
 
   return (
     <div class={'flex h-full flex-1 flex-col'}>
-      <p class={'px-2 text-center text-xl text-white'}>Community Fundraiser</p>
-      <Switch>
-        <Match when={fundraiserData.data}>
-          <p class={'mb-2 text-center text-base text-white'}>
-            Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
-          </p>
-          <RandomFundraiserButton fundraisers={fundraiser()} />
-          <ColoredScrollbar>
+      <ColoredScrollbar>
+        <p class={'px-2 text-center text-xl text-white'}>Community Fundraiser</p>
+        <Switch>
+          <Match when={fundraiserData.data}>
+            <p class={'mb-2 text-center text-base text-white'}>
+              Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
+            </p>
+            <RandomFundraiserButton fundraisers={fundraiser()} />
             <div class={'mb-2 flex flex-1 flex-col gap-2'}>
               <FundraiserBody fundraisers={fundraiser()} />
             </div>
-          </ColoredScrollbar>
-        </Match>
-        <Match when={fundraiserData.error} keyed={false}>
-          <p>{fundraiserData.error.message}</p>
-        </Match>
-        <Match when={fundraiserData.loading} keyed={false}>
-          <LoadingFundraisers />
-        </Match>
-      </Switch>
+          </Match>
+          <Match when={fundraiserData.error} keyed={false}>
+            <p>{fundraiserData.error.message}</p>
+          </Match>
+          <Match when={fundraiserData.loading} keyed={false}>
+            <LoadingFundraisers />
+          </Match>
+        </Switch>
+      </ColoredScrollbar>
     </div>
   )
 }
