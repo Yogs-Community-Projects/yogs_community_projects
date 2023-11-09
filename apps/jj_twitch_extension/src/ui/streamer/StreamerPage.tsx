@@ -160,8 +160,7 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
 }
 
 const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => {
-  const fundraisers = () => props.fundraisers.filter(f => f.livestream.type === 'twitch' && f.isLive)
-
+  const fundraisers = () => props.fundraisers.filter(f => f.livestream.type === 'twitch' && f.isLive && f.twitch_data)
   const show = () => fundraisers().length > 0
   const randomFundraiser = () => {
     const f = fundraisers()
