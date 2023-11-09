@@ -3,11 +3,10 @@ import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { FaRegularSquare, FaSolidFilter, FaSolidSquareCheck } from 'solid-icons/fa'
 import { Dialog } from '@kobalte/core'
 import { useCreatorFilter } from './CreatorFilterProvider'
-import { useCreatorIds, useSlots } from './JJScheduleProvider'
+import { useCreatorIds, useSlots, useScheduleData } from './JJScheduleProvider'
 import { CgClose } from 'solid-icons/cg'
 import { useData } from '../dataProvider'
-import { useAnalytics } from '../../AnalyticsProvider'
-import { useScheduleData } from '@ycapp/jj_schedule_website/src/ui/schedule/providers/ScheduleDataProvider'
+import { useAnalytics } from '../../analytics/AnalyticsProvider'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()

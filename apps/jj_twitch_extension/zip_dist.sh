@@ -10,4 +10,4 @@ if [ -e "$file" ]; then
 else
     echo "File $file does not exist."
 fi
-zip -r jj_tv_ext_archive.zip index.html mobile.html config.html assets/
+zip -r jj_tv_ext_archive.zip index.html mobile.html config.html analytics.js assets/

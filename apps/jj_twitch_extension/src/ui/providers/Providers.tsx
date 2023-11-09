@@ -8,7 +8,7 @@ import DataProvider from '../dataProvider/src/DataProvider'
 import Background from '../../Background'
 import DBWrapper from '../../db_wrapper'
 import { useFirestoreDB } from '@ycapp/common'
-import { AnalyticsProvider } from '../../AnalyticsProvider'
+import { AnalyticsProvider } from '../../analytics/AnalyticsProvider'
 
 /*
 const DBWrapper = lazy(() => import('./db_wrapper'))

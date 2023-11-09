@@ -3,7 +3,7 @@ import { Component, JSX, Show, Suspense } from 'solid-js'
 import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import SlotDialog from './slotDialog/SlotDialog'
 import { BsPeopleFill } from 'solid-icons/bs'
-import { useAnalytics } from '../../AnalyticsProvider'
+import { useAnalytics } from '../../analytics/AnalyticsProvider'
 
 interface SlotCardProps {
   slot: Slot
