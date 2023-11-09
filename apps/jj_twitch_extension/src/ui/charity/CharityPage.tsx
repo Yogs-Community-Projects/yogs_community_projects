@@ -27,8 +27,8 @@ const VisibleBody: Component = () => {
   const { charityData } = useData()
   return (
     <div class={'flex h-full flex-1 flex-col'}>
-      <p class={'mb-2 text-center text-xl text-white'}>Charities</p>
       <ColoredScrollbar>
+        <p class={'mb-2 text-center text-xl text-white'}>Charities</p>
         <Switch>
           <Match when={charityData.data && !charityData.loading}>
             <CurrencyProvider avgConversionRate={charityData?.data?.avgConversionRate}>

@@ -23,6 +23,7 @@ module.exports = {
         overlay: '#ffffff05',
         primary: {
           DEFAULT: '#E30E50',
+          shade: '#57051f',
           50: '#FAAFC6',
           100: '#F99BB8',
           200: '#F6759D',
@@ -37,6 +38,7 @@ module.exports = {
         },
         accent: {
           DEFAULT: '#3584BF',
+          shade: '#09437a',
           50: '#BED9ED',
           100: '#AFD0E9',
           200: '#8FBDE0',
