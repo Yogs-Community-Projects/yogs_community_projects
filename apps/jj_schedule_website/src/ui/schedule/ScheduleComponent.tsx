@@ -13,7 +13,7 @@ export const ScheduleComponent: Component<{ schedule: ScheduleData }> = props =>
   const desktop = () => !mobile()
 
   return (
-    <div class={'mx-4'}>
+    <div class={'mx-16'}>
       <div class={'flex min-h-screen w-full flex-col items-center'} ref={setRef}>
         <Switch>
           <Match when={desktop()} keyed>
