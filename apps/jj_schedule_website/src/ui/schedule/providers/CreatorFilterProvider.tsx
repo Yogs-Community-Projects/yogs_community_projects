@@ -37,6 +37,7 @@ const useHook = () => {
   const [loaded, setLoaded] = createSignal<boolean>(false)
   const [runInitNames, setRunInitNames] = createSignal<boolean>(true)
   const [runFilterType, setRunFilterType] = createSignal<boolean>(true)
+
   createEffect(() => {
     if (creators.data) {
       setLoaded(true)
@@ -64,7 +65,7 @@ const useHook = () => {
 
   createEffect(() => {
     if (loaded()) {
-      if (!isEmpty()) {
+      if (filter().length > 1) {
         if (and()) {
           setSearchParams({ filterType: 'and' })
         } else {
@@ -75,6 +76,7 @@ const useHook = () => {
       }
     }
   })
+
   createEffect(() => {
     if (loaded()) {
       if (!isEmpty()) {
@@ -82,6 +84,13 @@ const useHook = () => {
           .map(id => creatorIdMap().get(id))
           .join(',')
         setSearchParams({ filter: normalizedNames })
+        if (filter().length > 1) {
+          if (and()) {
+            setSearchParams({ filterType: 'and' })
+          } else {
+            setSearchParams({ filterType: 'or' })
+          }
+        }
       } else {
         setSearchParams({ filter: undefined, filterType: undefined })
       }
