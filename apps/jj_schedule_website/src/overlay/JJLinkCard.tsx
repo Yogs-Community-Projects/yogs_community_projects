@@ -1,7 +1,8 @@
-import { Component } from 'solid-js'
+import { Component, Match, Switch } from 'solid-js'
 
 interface JJLinkProps {
   theme: string
+  url: string
 }
 
 export const JJLink: Component<JJLinkProps> = props => {
@@ -28,7 +29,14 @@ export const JJLink: Component<JJLinkProps> = props => {
   }
   return (
     <div class={`${background()} flex h-full w-full flex-col items-center justify-center rounded-2xl p-2 shadow-2xl`}>
-      <p class={`text-xl font-bold ${link()}`}>jinglejam.tiltify.com</p>
+      <Switch>
+        <Match when={props.url === 'jinglejam.tiltify.com'}>
+          <p class={`text-xl font-bold ${link()}`}>{props.url}</p>
+        </Match>
+        <Match when={props.url !== 'jinglejam.tiltify.com'}>
+          <p class={`text-sm font-bold ${link()}`}>{props.url}</p>
+        </Match>
+      </Switch>
     </div>
   )
 }

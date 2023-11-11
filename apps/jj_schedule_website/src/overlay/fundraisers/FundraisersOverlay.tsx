@@ -1,19 +1,32 @@
 import { Component, For, JSXElement, Match, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
 import { FaBrandsTwitch, FaBrandsYoutube } from 'solid-icons/fa'
-import { excludedChannel, minAmount, useSpeed, useTheme } from '../overlay_signals'
+import { excludedChannel, minAmount, useTiltifyUrl, useSpeed, useTheme, useTitleLogo } from '../overlay_signals'
 import '../marquee.css'
 import { JJLink } from '../JJLinkCard'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 import { twMerge } from 'tailwind-merge'
+import { JJTitleCard } from '../JJTitleCard'
 
 export const FundraisersOverlay = () => {
-  return <FundraisersOverlayComponent speed={useSpeed()} theme={useTheme()} />
+  return (
+    <FundraisersOverlayComponent
+      speed={useSpeed()}
+      theme={useTheme()}
+      url={useTiltifyUrl()}
+      titleLogo={useTitleLogo()}
+    />
+  )
 }
 
-export const FundraisersOverlayComponent: Component<{ speed: number; theme: string }> = props => {
+export const FundraisersOverlayComponent: Component<{
+  speed: number
+  theme: string
+  url: string
+  titleLogo: string
+}> = props => {
   const e = excludedChannel()
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
@@ -39,9 +52,9 @@ export const FundraisersOverlayComponent: Component<{ speed: number; theme: stri
       const d = lst[i]
       if (i % desc() == 0) {
         if (i % (desc() * 2) == 0) {
-          result.push(<Title theme={props.theme} />)
+          result.push(<Title theme={props.theme} titleLogo={props.titleLogo} />)
         } else {
-          result.push(<JJLink theme={props.theme} />)
+          result.push(<JJLink theme={props.theme} url={props.url} />)
         }
       }
       result.push(<Child d={d} theme={props.theme} />)
@@ -171,20 +184,10 @@ const Child: Component<ChildProps> = props => {
 
 interface TitleProps {
   theme: string
+  titleLogo: string
 }
 
 const Title: Component<TitleProps> = props => {
-  const background = () => {
-    switch (props.theme) {
-      case 'pink':
-      case 'red':
-        return 'bg-primary-500'
-      case 'blue':
-        return 'bg-accent-500'
-      default:
-        return 'bg-white'
-    }
-  }
   const community = () => {
     switch (props.theme) {
       case 'pink':
@@ -206,9 +209,9 @@ const Title: Component<TitleProps> = props => {
     }
   }
   return (
-    <div class={`flex h-full w-full flex-col items-center justify-center rounded-2xl ${background()} p-2 shadow-2xl`}>
-      <p class={`${community()} font-bold`}>Community</p>
-      <p class={`${fundraisers()} font-bold`}>Fundraisers</p>
-    </div>
+    <JJTitleCard theme={props.theme} titleLogo={props.titleLogo}>
+      <p class={`${community()} font-bold`}>Jingle Jam</p>
+      <p class={`${fundraisers()} font-bold`}>Charities</p>
+    </JJTitleCard>
   )
 }

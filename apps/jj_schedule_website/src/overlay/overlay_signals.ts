@@ -37,6 +37,9 @@ export const useShowTimezone = () => {
 export const useTimezone = () => {
   return useParam('timezone')
 }
+export const useTiltifyUrl = () => {
+  return useParam('tiltifyurl') ?? 'jinglejam.tiltify.com'
+}
 export const useTheme = () => {
   return useParam('theme') ?? 'default'
 }
@@ -60,6 +63,11 @@ export const useSimpleScheduleData = () => {
   const scheduleData = useParam('scheduledata') ?? ''
   return window.atob(scheduleData)
 }
+
+export const useTitleLogo = () => {
+  return useParam('titlelogo') ?? 'none'
+}
+
 export const useNext = () => {
   const v = parseInt(useParam('next')) ?? 3
   if (v < 2) {

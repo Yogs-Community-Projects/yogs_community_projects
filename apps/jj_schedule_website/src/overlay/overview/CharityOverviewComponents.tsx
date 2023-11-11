@@ -5,15 +5,21 @@ import { CharityOverlayComponent2 } from '../charity/CharityOverlay2'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import { JJData } from '@ycapp/model'
+import { TextField } from '@kobalte/core'
 
 export const CharitiesOverviewComponent = () => {
   const [speed, setSpeed] = createSignal(2)
+  const [titleLogo, setTitleLogo] = createSignal('none')
   const [theme, setTheme] = createSignal('default')
+  const [url, setUrl] = createSignal('jinglejam.tiltify.com')
   const [showRaised, setShowRaised] = createSignal<boolean>(true)
 
+  const validationState = () => {
+    return url().includes('tiltify.com') ? 'valid' : 'invalid'
+  }
   return (
     <div>
-      <div class={'text-white'}>
+      <div class={'w-[50%] text-white'}>
         <p>Recommended Browser source height 80px</p>
         <table>
           <tbody>
@@ -59,14 +65,40 @@ export const CharitiesOverviewComponent = () => {
                 </select>
               </td>
             </tr>
+            <tr>
+              <td>
+                <label for="ctitletheme">Title Logo:</label>
+              </td>
+              <td>
+                <select
+                  class={'bg-transparent'}
+                  name="ctitletheme"
+                  id="ctitletheme"
+                  value={titleLogo()}
+                  onchange={e => {
+                    setTitleLogo(e.target.value)
+                  }}
+                >
+                  <option value={'none'}>None</option>
+                  <option value={'jjred'}>Red JJ Logo</option>
+                  <option value={'jjblue'}>Blue JJ Logo</option>
+                  <option value={'jjwhite'}>White JJ Logo</option>
+                </select>
+              </td>
+            </tr>
           </tbody>
         </table>
+        <TextField.Root class={'flex flex-col p-2'} value={url()} onChange={setUrl} validationState={validationState()}>
+          <TextField.Label class={'flex flex-row items-center'}>Tiltify url</TextField.Label>
+          <TextField.Input class={'text-black'}></TextField.Input>
+          <TextField.ErrorMessage class={''}>Not a Tiltify Url</TextField.ErrorMessage>
+        </TextField.Root>
         <button
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
             console.log('copy')
-            const url = `https://jinglejam.yogs.app/overlay/charities?speed=${speed()}&theme=${theme()}`
-            copyToClipboard(url)
+            const overlay = `https://jinglejam.yogs.app/overlay/charities?speed=${speed()}&theme=${theme()}&tiltifyurl=${url()}&titlelogo=${titleLogo()}`
+            copyToClipboard(overlay)
           }}
         >
           Copy Link
@@ -79,7 +111,13 @@ export const CharitiesOverviewComponent = () => {
           height: '72px',
         }}
       >
-        <CharityOverlayComponent speed={speed()} theme={theme()} showRaised={showRaised()} />
+        <CharityOverlayComponent
+          speed={speed()}
+          theme={theme()}
+          showRaised={showRaised()}
+          url={url()}
+          titleLogo={titleLogo()}
+        />
       </div>
     </div>
   )

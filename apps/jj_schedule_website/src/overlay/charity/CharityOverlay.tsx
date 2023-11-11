@@ -1,27 +1,36 @@
 import { Component, For, JSXElement, Match, Show, Switch } from 'solid-js'
 import { Numeric } from 'solid-i18n'
-import { useShowRaised, useSpeed, useTheme } from '../overlay_signals'
+import { useTiltifyUrl, useShowRaised, useSpeed, useTheme, useTitleLogo } from '../overlay_signals'
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import '../marquee.css'
 import { JJLink } from '../JJLinkCard'
 import { Cause, JJData } from '@ycapp/model'
+import { JJTitleCard } from '../JJTitleCard'
 
 export const CharityOverlay: Component = () => {
-  return <CharityOverlayComponent speed={useSpeed()} theme={useTheme()} showRaised={useShowRaised()} />
+  return (
+    <CharityOverlayComponent
+      speed={useSpeed()}
+      theme={useTheme()}
+      showRaised={useShowRaised()}
+      url={useTiltifyUrl()}
+      titleLogo={useTitleLogo()}
+    />
+  )
 }
 
-export const CharityOverlayComponent: Component<{ speed: number; theme: string; showRaised: boolean }> = props => {
+export const CharityOverlayComponent: Component<{
+  speed: number
+  theme: string
+  showRaised: boolean
+  url: string
+  titleLogo: string
+}> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023_2')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
   const desc = () => {
-    if (!charityData.data) {
-      return 3
-    }
-    if (charityData.data.causes.length % 4 == 0) {
-      return 4
-    }
     return 3
   }
   const items = () => {
@@ -32,9 +41,9 @@ export const CharityOverlayComponent: Component<{ speed: number; theme: string; 
       const d = lst[i]
       if (i % desc() == 0) {
         if (i % (desc() * 2) == 0) {
-          result.push(<Title theme={props.theme} />)
+          result.push(<Title theme={props.theme} titleLogo={props.titleLogo} />)
         } else {
-          result.push(<JJLink theme={props.theme} />)
+          result.push(<JJLink theme={props.theme} url={props.url} />)
         }
       }
       result.push(<Child d={d} theme={props.theme} showRaised={props.showRaised} />)
@@ -119,7 +128,7 @@ const Child: Component<ChildProps> = props => {
   return (
     <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
-        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.logo} loading={'lazy'} />
+        <img class={'h-12 w-12 rounded-lg'} alt={''} src={props.d.logo} loading={'eager'} />
         <div class={'flex h-full flex-1 flex-col items-start justify-center overflow-hidden truncate pl-2 '}>
           <p class={`${useNameTextColor()} font-bold`}>{props.d.name}</p>
           <Show when={props.showRaised}>
@@ -140,20 +149,10 @@ const Child: Component<ChildProps> = props => {
 
 interface TitleProps {
   theme: string
+  titleLogo: string
 }
 
 const Title: Component<TitleProps> = props => {
-  const background = () => {
-    switch (props.theme) {
-      case 'pink':
-      case 'red':
-        return 'bg-primary-500'
-      case 'blue':
-        return 'bg-accent-500'
-      default:
-        return 'bg-white'
-    }
-  }
   const community = () => {
     switch (props.theme) {
       case 'pink':
@@ -175,9 +174,9 @@ const Title: Component<TitleProps> = props => {
     }
   }
   return (
-    <div class={`flex h-full w-full flex-col items-center justify-center rounded-2xl ${background()} p-2 shadow-2xl`}>
+    <JJTitleCard theme={props.theme} titleLogo={props.titleLogo}>
       <p class={`${community()} font-bold`}>Jingle Jam</p>
       <p class={`${fundraisers()} font-bold`}>Charities</p>
-    </div>
+    </JJTitleCard>
   )
 }
