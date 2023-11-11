@@ -122,8 +122,11 @@ const useHook = () => {
     const normalizedNames = filter()
       .map(id => creatorIdMap().get(id))
       .join(',')
-    const filterType = `${and() ? 'and' : 'or'}`
-    return `https://jj.yogs.app${location.pathname}?filterType=${filterType}&filter=${normalizedNames}`
+    let filterType = ''
+    if (filter().length > 1) {
+      filterType = `filterType=${and() ? 'and' : 'or'}&`
+    }
+    return `https://jj.yogs.app${location.pathname}?${filterType}filter=${normalizedNames}`
   }
 
   const toggleAnd = () => setAnd(v => !v)
