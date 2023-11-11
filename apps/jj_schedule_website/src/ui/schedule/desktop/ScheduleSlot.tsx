@@ -19,8 +19,8 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const { logSlotClick } = useAnalytics()
   const durationHour = () => Duration.fromDurationLike({ second: slot.duration }).as('hours')
 
-  const { includes, isEmpty } = useCreatorFilter()
-  const enable = () => isEmpty() || slot.relations.creators.some(id => includes(id))
+  const { includes, isEmpty, isSlotPartOfFilter } = useCreatorFilter()
+  const enable = () => isSlotPartOfFilter(slot)
   const style = (): JSX.CSSProperties => {
     return {
       height: (useScheduleDimensions().slotSize / 3) * (slot.gridTileSize * 3) + 'px',

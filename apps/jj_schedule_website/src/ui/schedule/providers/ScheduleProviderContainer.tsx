@@ -39,7 +39,9 @@ export const ScheduleMobileProviderContainer: ParentComponent<{
       <ScheduleDataProvider scheduleData={props.scheduleData}>
         <ScheduleMobileDimensionsProvider>
           <ScheduleMobileDimensionsCSS>
-            <DayIndexProvider>{props.children}</DayIndexProvider>
+            <DayIndexProvider>
+              <CreatorFilterProvider>{props.children}</CreatorFilterProvider>
+            </DayIndexProvider>
           </ScheduleMobileDimensionsCSS>
         </ScheduleMobileDimensionsProvider>
       </ScheduleDataProvider>

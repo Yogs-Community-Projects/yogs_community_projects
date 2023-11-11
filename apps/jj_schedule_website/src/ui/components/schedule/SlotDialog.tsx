@@ -10,6 +10,7 @@ import { A } from '@solidjs/router'
 import { CreatorTile } from '../tiles/CreatorTile'
 import { TwitchTile, YoutubeTile } from '../tiles/ChannelTile'
 import { useAnalytics } from '../../../AnalyticsProvider'
+import { useData } from '../../../dataProvider'
 
 interface SlotDialogProps {
   modalSignal: ModalSignal
@@ -111,7 +112,8 @@ interface CreatorSectionProps {
 }
 
 const CreatorSection: Component<CreatorSectionProps> = props => {
-  const creators = useCreatorDB().readSome(props.slot.relations.creators)
+  const { useCreators } = useData()
+  const creators = useCreators(() => props.slot.relations.creators)
   const { logCreator } = useAnalytics()
   return (
     <Show when={props.slot.relations.creators.length > 0}>
@@ -143,7 +145,8 @@ interface TwitchSectionProps {
 }
 
 const TwitchSection: Component<TwitchSectionProps> = props => {
-  const channels = useTwitchDB().readSome(props.slot.relations.twitchChannels)
+  const { useTwitchChannels } = useData()
+  const channels = useTwitchChannels(() => props.slot.relations.twitchChannels)
   return (
     <Show when={props.slot.relations.twitchChannels.length > 0}>
       <p class={'text-2xl'}>Twitch Channel</p>

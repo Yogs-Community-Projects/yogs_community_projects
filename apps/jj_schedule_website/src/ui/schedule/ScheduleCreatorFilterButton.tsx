@@ -1,11 +1,13 @@
 import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
 import { useCreatorIds, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { useCreatorFilter } from './providers/CreatorFilterProvider'
-import { Dialog } from '@kobalte/core'
+import { Dialog, ToggleButton } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
-import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
+import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { useAnalytics } from '../../AnalyticsProvider'
+import { useData } from '../../dataProvider'
+import { twMerge } from 'tailwind-merge'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -31,7 +33,7 @@ interface FilterDialogProps {
   modalSignal: ModalSignal
 }
 
-const FilterDialog: Component<FilterDialogProps> = props => {
+export const FilterDialog: Component<FilterDialogProps> = props => {
   const { modalSignal } = props
 
   return (
@@ -56,8 +58,10 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
   const slots = useSlots()
   const schedule = useScheduleData()
-  const creators = useCreatorDB().readSome(useCreatorIds())
-  const { includes, toggle, reset, filter } = useCreatorFilter()
+  const { useCreators } = useData()
+  const creatorIds = useCreatorIds()
+  const creators = useCreators(() => creatorIds)
+  const { includes, toggle, reset, filter, makeLink } = useCreatorFilter()
   const { log } = useAnalytics()
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
@@ -113,6 +117,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
               >
                 Sort by appearance
               </button>
+              <AndToggle />
             </div>
             <For each={creatorList()}>
               {creator => (
@@ -143,6 +148,35 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
       </div>
       <div class={'flex h-[72px] flex-row items-center justify-end gap-2 p-4'}>
         <button
+          class={'bg-primary rounded-xl p-2 text-white disabled:bg-gray-500 disabled:opacity-75'}
+          disabled={filter().length == 0}
+          onclick={async () => {
+            const url = makeLink()
+            try {
+              let copyValue = ''
+
+              if (!navigator.clipboard) {
+                throw new Error("Browser don't have support for native clipboard.")
+              }
+
+              if (url) {
+                copyValue = url
+              }
+
+              await navigator.clipboard.writeText(copyValue)
+            } catch (e) {
+              console.log(e.toString())
+            }
+            try {
+              window.alert(`Copied ${url}`)
+            } catch (e) {
+              console.log(e.toString())
+            }
+          }}
+        >
+          Share Link
+        </button>
+        <button
           class={'bg-primary rounded-xl p-2 text-white'}
           onclick={() => {
             reset()
@@ -165,5 +199,34 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         </button>
       </div>
     </div>
+  )
+}
+
+const AndToggle = () => {
+  const { and, toggleAnd } = useCreatorFilter()
+
+  return (
+    <ToggleButton.Root class={'flex flex-row text-white transition-all'} pressed={and()} onChange={toggleAnd}>
+      {state => (
+        <>
+          <div
+            class={twMerge(
+              'rounded-l-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              !state.pressed() && 'bg-primary opacity-100',
+            )}
+          >
+            OR
+          </div>
+          <div
+            class={twMerge(
+              'rounded-r-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              state.pressed() && 'bg-primary opacity-100',
+            )}
+          >
+            AND
+          </div>
+        </>
+      )}
+    </ToggleButton.Root>
   )
 }

@@ -35,8 +35,7 @@ export const CalendarExportButton: Component = () => {
 interface CalendarDialogDialogProps {
   modalSignal: ModalSignal
 }
-
-const CalendarDialog: Component<CalendarDialogDialogProps> = props => {
+export const CalendarDialog: Component<CalendarDialogDialogProps> = props => {
   const { modalSignal } = props
 
   return (

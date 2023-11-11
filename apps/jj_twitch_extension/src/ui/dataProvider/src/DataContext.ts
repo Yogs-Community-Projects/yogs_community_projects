@@ -222,6 +222,7 @@ function creatorAndChannelCache() {
       creators()
         .map(c => c.creator.relations.twitchChannels)
         .flat()
+
     return useTwitchChannels(twitchIds)
   }
 

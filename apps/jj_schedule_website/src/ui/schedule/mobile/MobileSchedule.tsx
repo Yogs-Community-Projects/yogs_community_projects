@@ -1,7 +1,8 @@
-import { Component, For } from 'solid-js'
+import { Component, For, Show } from 'solid-js'
 import { MobileScheduleHeader } from './MobileHeader'
-import { useCurrentDay } from '../providers/ScheduleDataProvider'
+import { useCurrentDay, useSlots } from '../providers/ScheduleDataProvider'
 import { MobileScheduleSlot } from './MobileScheduleSlot'
+import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 
 export const MobileSchedule: Component = () => {
   return (
@@ -13,9 +14,20 @@ export const MobileSchedule: Component = () => {
 }
 
 const MobileScheduleBody: Component = () => {
+  const { isEmpty, includes } = useCreatorFilter()
+  const slots = () => useCurrentDay().slots
+  const filteredSlots = () => {
+    return useSlots().filter(s => s.relations.creators.some(includes))
+  }
+
   return (
     <div>
-      <For each={useCurrentDay().slots}>{slot => <MobileScheduleSlot slot={slot} />}</For>
+      <Show when={isEmpty()}>
+        <For each={slots()}>{slot => <MobileScheduleSlot slot={slot} />}</For>
+      </Show>
+      <Show when={!isEmpty()}>
+        <For each={filteredSlots()}>{slot => <MobileScheduleSlot slot={slot} />}</For>
+      </Show>
     </div>
   )
 }

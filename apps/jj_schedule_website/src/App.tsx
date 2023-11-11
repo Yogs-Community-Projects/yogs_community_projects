@@ -5,6 +5,7 @@ import {
   schedule2020RouteDataFunc,
   schedule2021RouteDataFunc,
   schedule2022RouteDataFunc,
+  schedule2023RouteDataFunc,
   scheduleCurrentRouteDataFunc,
 } from './ui/schedule/ScheduleRouteData'
 import { ScheduleOverlay } from './overlay/schedule/ScheduleOverlay'
@@ -125,6 +126,7 @@ const App: Component = () => {
     </Router>
   )
 }
+// <Route path={'/2023'} data={schedule2023RouteDataFunc} component={Schedule}></Route>
 
 export const Redirect = () => {
   const navigate = useNavigate()

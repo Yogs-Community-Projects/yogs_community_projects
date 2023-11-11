@@ -7,6 +7,7 @@ import { createI18n, I18nProvider } from 'solid-i18n'
 import { ConfigProviderLoader } from './ui/configProvider/ConfigProvider'
 import { MetaProvider } from '@solidjs/meta'
 import { AnalyticsProvider } from './AnalyticsProvider'
+import DataProvider from './dataProvider/src/DataProvider'
 const DBWrapper = lazy(() => import('./db_wrapper'))
 const App = lazy(() => import('./App'))
 
@@ -16,11 +17,13 @@ const Main: Component = () => {
     <MetaProvider>
       <I18nProvider i18n={i18n}>
         <DBWrapper>
-          <ConfigProviderLoader>
-            <AnalyticsProvider>
-              <App />
-            </AnalyticsProvider>
-          </ConfigProviderLoader>
+          <DataProvider>
+            <ConfigProviderLoader>
+              <AnalyticsProvider>
+                <App />
+              </AnalyticsProvider>
+            </ConfigProviderLoader>
+          </DataProvider>
         </DBWrapper>
       </I18nProvider>
     </MetaProvider>
