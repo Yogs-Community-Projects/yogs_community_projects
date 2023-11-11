@@ -1,7 +1,7 @@
 import { Component, createSignal, For, Show } from 'solid-js'
 import { useCreatorIds, useDays, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { Dialog } from '@kobalte/core'
-import { CgClose } from 'solid-icons/cg'
+import { CgClose, CgInfo } from 'solid-icons/cg'
 import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
 import { FaRegularCalendar, FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
 import { CreatorData, Slot } from '@ycapp/model'
@@ -161,13 +161,21 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
           <CgClose size={24} class={''} />
         </button>
         <div class={'flex-1'}></div>
-        <h3 class={'text-2xl'}>Calendar Export (iCAL)</h3>
+        <h3 class={'text-2xl'}>Calendar Export</h3>
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
-      <p class={'px-4 py-2'}>Filtered slots: {filteredSlots().length}</p>
-      <p class={'px-4 py-2'}>This list of streams takes the creator filter into account</p>
-      <div class="p-4">
+
+      <a
+        class={'flex flex-row items-center justify-start gap-1 px-2 py-2 text-sm'}
+        href={'https://support.google.com/calendar/answer/37118?co=GENIE.Platform%3DDesktop'}
+        target={'_blank'}
+      >
+        <CgInfo /> How to import an .ics (iCal) file into Google Calendar
+      </a>
+      <p class={'px-2 py-2'}>Filtered slots: {filteredSlots().length}</p>
+      <p class={'px-2 py-2'}>This list of streams takes the creator filter into account</p>
+      <div class="p-2">
         <label class="mb-2 block text-sm font-bold text-gray-700" for="search">
           Search
         </label>
@@ -185,7 +193,7 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
           }}
         />
       </div>
-      <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-4'}>
+      <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-2'}>
         <For each={days}>
           {day => {
             const start = DateTime.fromISO(day.start)
@@ -236,7 +244,7 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
           }}
         </For>
       </div>
-      <div class={'flex h-[72px] flex-row items-center justify-end gap-2 p-4'}>
+      <div class={'flex h-[72px] flex-row items-center justify-end gap-2 p-2'}>
         <Show when={selectedSlots().length < filteredSlots().length}>
           <button
             class={'bg-primary rounded-xl p-2 text-white'}
