@@ -35,7 +35,7 @@ const WeekButtons: Component = () => {
       <div class={'schedule-card-white flex flex-row'}>
         <button
           class={
-            'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl hover:scale-105'
+            'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl transition-all hover:scale-105'
           }
           onclick={prev}
         >
@@ -43,7 +43,7 @@ const WeekButtons: Component = () => {
         </button>
         <button
           class={
-            'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-r-2xl hover:scale-105'
+            'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-r-2xl transition-all hover:scale-105'
           }
           onclick={next}
         >
