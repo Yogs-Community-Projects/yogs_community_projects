@@ -173,7 +173,7 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
       >
         <CgInfo /> How to import an .ics (iCal) file into Google Calendar
       </a>
-      <p class={'px-2 py-2'}>Filtered slots: {filteredSlots().length}</p>
+      <p class={'px-2 py-2'}>Filtered streams: {filteredSlots().length}</p>
       <p class={'px-2 py-2'}>This list of streams takes the creator filter into account</p>
       <div class="p-2">
         <label class="mb-2 block text-sm font-bold text-gray-700" for="search">
