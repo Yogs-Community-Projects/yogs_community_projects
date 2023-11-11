@@ -1,4 +1,4 @@
-import { createContext, createEffect, createSignal, onMount, ParentComponent, useContext } from 'solid-js'
+import { createContext, createEffect, createSignal, ParentComponent, useContext } from 'solid-js'
 import { useLocation, useSearchParams } from '@solidjs/router'
 import { useCreatorIds, useSlots } from './ScheduleDataProvider'
 import { useData } from '../../../dataProvider'
