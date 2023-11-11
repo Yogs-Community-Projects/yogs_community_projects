@@ -1,12 +1,11 @@
-import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
-import { useCreatorIds, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
+import { Component, For, Match, Show, Switch } from 'solid-js'
+import { useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { useCreatorFilter } from './providers/CreatorFilterProvider'
 import { Dialog, ToggleButton } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
 import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { useAnalytics } from '../../AnalyticsProvider'
-import { useData } from '../../dataProvider'
 import { twMerge } from 'tailwind-merge'
 
 export const FilterButton: Component = () => {
@@ -57,8 +56,13 @@ interface FilterDialogBodyProps {
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
   const schedule = useScheduleData()
-  const { creators, includes, toggle, reset, filter, makeLink, creatorList, appearanceCount } = useCreatorFilter()
+  const { creators, includes, toggle, reset, filter, makeLink, creatorList, appearanceCount, isSlotPartOfFilter } =
+    useCreatorFilter()
   const { log } = useAnalytics()
+
+  const slots = useSlots()
+
+  const filteredSlots = () => slots.filter(isSlotPartOfFilter)
 
   return (
     <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
@@ -74,6 +78,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
       <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-4'}>
         <Switch>
           <Match when={creators.data}>
+            <p>Filtered slots: {filteredSlots().length}</p>
             <div class={'flex flex-row items-center justify-stretch gap-2'}>
               <SortToggle />
               <AndToggle />
@@ -139,7 +144,6 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
           class={'bg-primary rounded-xl p-2 text-white'}
           onclick={() => {
             reset()
-            onClose()
           }}
         >
           Reset
