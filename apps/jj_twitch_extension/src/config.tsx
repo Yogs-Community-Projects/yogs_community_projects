@@ -6,6 +6,7 @@ import TwitchConfigProvider from './ui/config/TwitchConfigProvider'
 import JJConfigProviderLoader from './JJConfigProviderLoader'
 import DBWrapper from './db_wrapper'
 import { useFirestoreDB } from '@ycapp/common'
+import { AnalyticsProvider } from './analytics/AnalyticsProvider'
 
 const root = document.getElementById('root')
 
@@ -29,7 +30,9 @@ const Body = () => {
   return (
     <JJConfigProviderLoader db={db}>
       <TwitchConfigProvider>
-        <ConfigBody />
+        <AnalyticsProvider>
+          <ConfigBody />
+        </AnalyticsProvider>
       </TwitchConfigProvider>
     </JJConfigProviderLoader>
   )

@@ -1,4 +1,4 @@
-import { createContext } from 'solid-js'
+import { Accessor, createContext } from 'solid-js'
 import { TwitchConfig } from './TwitchConfig'
 
 interface TwitchConfigContextProps {
@@ -7,6 +7,7 @@ interface TwitchConfigContextProps {
   save: () => void
   validConfig: () => boolean
   edited: () => boolean
+  channelId: Accessor<string>
 }
 
 export const TwitchConfigContext = createContext<TwitchConfigContextProps>()

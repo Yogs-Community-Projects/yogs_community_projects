@@ -3,3 +3,6 @@ node_modules
 .env
 .firebaserc
 *.json
+/src/analytics/analytics.js
+/src/analytics/ga.js
+README.md

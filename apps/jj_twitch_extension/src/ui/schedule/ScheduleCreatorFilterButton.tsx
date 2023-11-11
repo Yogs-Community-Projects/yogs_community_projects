@@ -3,9 +3,10 @@ import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { FaRegularSquare, FaSolidFilter, FaSolidSquareCheck } from 'solid-icons/fa'
 import { Dialog } from '@kobalte/core'
 import { useCreatorFilter } from './CreatorFilterProvider'
-import { useCreatorIds, useSlots } from './JJScheduleProvider'
+import { useCreatorIds, useSlots, useScheduleData } from './JJScheduleProvider'
 import { CgClose } from 'solid-icons/cg'
 import { useData } from '../dataProvider'
+import { useAnalytics } from '../../analytics/AnalyticsProvider'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -55,10 +56,12 @@ interface FilterDialogBodyProps {
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
   const slots = useSlots()
+  const schedule = useScheduleData()
   const { useCreators } = useData()
   const ids = useCreatorIds()
   const creators = useCreators(() => ids)
-  const { includes, toggle, reset } = useCreatorFilter()
+  const { includes, toggle, reset, filter } = useCreatorFilter()
+  const { log } = useAnalytics()
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
   }
@@ -153,7 +156,16 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         >
           Reset
         </button>
-        <button class={'bg-primary rounded-xl p-2 text-white'} onclick={onClose}>
+        <button
+          class={'bg-primary rounded-xl p-2 text-white'}
+          onclick={() => {
+            onClose()
+            log('schedule_filter', {
+              filter: filter().join(','),
+              schedule: schedule.name,
+            })
+          }}
+        >
           Done
         </button>
       </div>

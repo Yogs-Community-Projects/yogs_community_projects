@@ -6,11 +6,13 @@ import { ThemeSelection } from './ThemeConfig'
 import { useTwitchConfig } from './useTwitchConfig'
 import { TabType } from './TwitchConfig'
 import { JJExtensionDesktop } from '../../JJExtensionDesktop'
+import { useAnalytics } from '../../analytics/AnalyticsProvider'
 
 export const ConfigBody: Component = () => {
   const jjConfig = useJJConfig()
   const { config, setConfig, save, validConfig, edited } = useTwitchConfig()
   const modalSignal = createModalSignal()
+  const { log } = useAnalytics()
   const validateDonationUrl = () => {
     const urlRegex = /\bhttps?:\/\/(?:\w+\.)?tiltify\.com\b/
     return (
@@ -92,6 +94,7 @@ export const ConfigBody: Component = () => {
             onClick={() => {
               save()
               modalSignal.toggle()
+              log('config_save', config)
             }}
             disabled={!validateDonationUrl() || !validConfig()}
           >

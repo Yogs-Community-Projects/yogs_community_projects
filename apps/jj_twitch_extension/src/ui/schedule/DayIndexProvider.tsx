@@ -1,9 +1,9 @@
-import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
-import { Accessor } from 'solid-js'
+import { Accessor, createContext, createSignal, ParentComponent, useContext } from 'solid-js'
 import { useDays, useDaysCount, useSlots } from './JJScheduleProvider'
 import { DayUtils, SlotUtils } from '@ycapp/model'
 import { DateTime } from 'luxon'
 import { useNow } from '@ycapp/common'
+import { useAnalytics } from '../../analytics/AnalyticsProvider'
 
 type DayIndexProps = {
   useIndex: Accessor<number>
@@ -72,6 +72,7 @@ export const useTodayIndex = () => {
 export const DayIndexProvider: ParentComponent = props => {
   const todayIndex = useTodayIndex()
   const numberOfDays = useDaysCount()
+  const { log } = useAnalytics()
   const [useIndex, setIndex] = createSignal(todayIndex)
 
   const isTodaySelected = () => {
@@ -84,11 +85,17 @@ export const DayIndexProvider: ParentComponent = props => {
       next = numberOfDays - 1
     }
     setIndex(next)
+    log('schedule_prev', {
+      day: next,
+    })
   }
   const next = () => {
     const current = useIndex()
     const next = (current + 1) % numberOfDays
     setIndex(next)
+    log('schedule_next', {
+      day: next,
+    })
   }
   const today = () => {
     setIndex(todayIndex)
