@@ -1,23 +1,8 @@
-import { createContext, createEffect, createSignal, ParentComponent, useContext } from 'solid-js'
-import { Accessor } from 'solid-js/types/reactive/signal'
+import { createContext, createEffect, createSignal, onMount, ParentComponent, useContext } from 'solid-js'
 import { useLocation, useSearchParams } from '@solidjs/router'
 import { useCreatorIds, useSlots } from './ScheduleDataProvider'
 import { useData } from '../../../dataProvider'
 import { Slot } from '@ycapp/model'
-
-interface CreatorFilterContextProps {
-  filter: Accessor<string[]>
-  add: (id: string) => void
-  remove: (id: string) => void
-  toggle: (id: string) => void
-  reset: () => void
-  includes: (id: string) => boolean
-  isEmpty: () => boolean
-  makeLink: () => string
-  and: () => boolean
-  toggleAnd: () => void
-  isSlotPartOfFilter: (slot: Slot) => boolean
-}
 
 const useHook = () => {
   const [params, setSearchParams] = useSearchParams()
@@ -49,35 +34,57 @@ const useHook = () => {
   const [filter, setFilter] = createSignal<string[]>([])
   const [and, setAnd] = createSignal<boolean>(false)
   const [sortByName, setSortByName] = createSignal(true)
+  const [loaded, setLoaded] = createSignal<boolean>(false)
+  const [runInitNames, setRunInitNames] = createSignal<boolean>(true)
+  const [runFilterType, setRunFilterType] = createSignal<boolean>(true)
   createEffect(() => {
-    if (params['filter'] && creators.data) {
-      const initNames = (params['filter'] ?? '').split(',')
-      console.log('initNames', initNames)
-      setFilter(initNames.map(name => creatorNameMap().get(name)))
-    }
-  })
-  createEffect(() => {
-    if (params['filterType'] && creators.data) {
-      const filterType = params['filterType']
-      setAnd(filterType === 'and')
+    if (creators.data) {
+      setLoaded(true)
     }
   })
 
   createEffect(() => {
-    if (!isEmpty()) {
-      if (and()) {
-        setSearchParams({ filterType: 'and' })
+    if (runInitNames() && creators.data) {
+      if (params['filter'] && creators.data) {
+        const initNames = (params['filter'] ?? '').split(',')
+        setFilter(initNames.map(name => creatorNameMap().get(name)).filter(e => e))
+      }
+      setRunInitNames(false)
+    }
+  })
+  createEffect(() => {
+    if (runFilterType() && creators.data) {
+      if (params['filterType'] && creators.data) {
+        const filterType = params['filterType']
+        setAnd(filterType === 'and')
+      }
+      setRunFilterType(false)
+    }
+  })
+
+  createEffect(() => {
+    if (loaded()) {
+      if (!isEmpty()) {
+        if (and()) {
+          setSearchParams({ filterType: 'and' })
+        } else {
+          setSearchParams({ filterType: 'or' })
+        }
       } else {
-        setSearchParams({ filterType: 'or' })
+        setSearchParams({ filterType: undefined })
       }
     }
   })
   createEffect(() => {
-    if (!isEmpty()) {
-      const normalizedNames = filter()
-        .map(id => creatorIdMap().get(id))
-        .join(',')
-      setSearchParams({ filter: normalizedNames })
+    if (loaded()) {
+      if (!isEmpty()) {
+        const normalizedNames = filter()
+          .map(id => creatorIdMap().get(id))
+          .join(',')
+        setSearchParams({ filter: normalizedNames })
+      } else {
+        setSearchParams({ filter: undefined, filterType: undefined })
+      }
     }
   })
   const add = (id: string) => {
