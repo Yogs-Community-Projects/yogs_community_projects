@@ -1,4 +1,4 @@
-import { Component, For, Match, Show, Switch } from 'solid-js'
+import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
 import { useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { useCreatorFilter } from './providers/CreatorFilterProvider'
 import { Dialog, ToggleButton } from '@kobalte/core'
@@ -64,11 +64,22 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const schedule = useScheduleData()
   const { creators, includes, toggle, reset, filter, makeLink, creatorList, appearanceCount, isSlotPartOfFilter } =
     useCreatorFilter()
+  const [search, setSearch] = createSignal('')
+
   const { log } = useAnalytics()
 
   const slots = useSlots()
 
   const filteredSlots = () => slots.filter(isSlotPartOfFilter)
+
+  const searchCreatorList = () => {
+    if (search() === '') {
+      return creatorList()
+    }
+    return creatorList().filter(c => {
+      return c.creator.name.toLowerCase().includes(search().toLowerCase())
+    })
+  }
 
   return (
     <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
@@ -89,7 +100,25 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
               <SortToggle />
               <AndToggle />
             </div>
-            <For each={creatorList()}>
+            <div class="p-2">
+              <label class="mb-2 block text-sm font-bold text-gray-700" for="search">
+                Search
+              </label>
+              <input
+                class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                id="search"
+                type="text"
+                placeholder="Search"
+                value={search()}
+                onInput={e => {
+                  const target = e.target as HTMLInputElement
+                  if (target) {
+                    setSearch(target.value)
+                  }
+                }}
+              />
+            </div>
+            <For each={searchCreatorList()}>
               {creator => (
                 <>
                   <button
