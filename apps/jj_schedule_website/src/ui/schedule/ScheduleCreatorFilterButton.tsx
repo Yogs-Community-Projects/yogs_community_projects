@@ -84,7 +84,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
       <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-4'}>
         <Switch>
           <Match when={creators.data}>
-            <p>Filtered slots: {filteredSlots().length}</p>
+            <p>Filtered streams: {filteredSlots().length}</p>
             <div class={'flex flex-row items-center justify-stretch gap-2'}>
               <SortToggle />
               <AndToggle />
