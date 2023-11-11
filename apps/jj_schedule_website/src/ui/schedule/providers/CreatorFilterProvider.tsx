@@ -1,7 +1,7 @@
 import { createContext, createEffect, createSignal, ParentComponent, useContext } from 'solid-js'
 import { Accessor } from 'solid-js/types/reactive/signal'
 import { useLocation, useSearchParams } from '@solidjs/router'
-import { useCreatorIds } from './ScheduleDataProvider'
+import { useCreatorIds, useSlots } from './ScheduleDataProvider'
 import { useData } from '../../../dataProvider'
 import { Slot } from '@ycapp/model'
 
@@ -19,9 +19,7 @@ interface CreatorFilterContextProps {
   isSlotPartOfFilter: (slot: Slot) => boolean
 }
 
-const CreatorFilterContext = createContext<CreatorFilterContextProps>()
-
-export const CreatorFilterProvider: ParentComponent = props => {
+const useHook = () => {
   const [params, setSearchParams] = useSearchParams()
   const location = useLocation()
   const { useCreators } = useData()
@@ -50,6 +48,7 @@ export const CreatorFilterProvider: ParentComponent = props => {
 
   const [filter, setFilter] = createSignal<string[]>([])
   const [and, setAnd] = createSignal<boolean>(false)
+  const [sortByName, setSortByName] = createSignal(true)
   createEffect(() => {
     if (params['filter'] && creators.data) {
       const initNames = (params['filter'] ?? '').split(',')
@@ -123,25 +122,58 @@ export const CreatorFilterProvider: ParentComponent = props => {
       return filter().some(id => slot.relations.creators.includes(id))
     }
   }
+  const slots = useSlots()
+  const appearanceCount = (id: string) => {
+    return slots.filter(s => s.relations.creators.includes(id)).length
+  }
 
-  return (
-    <CreatorFilterContext.Provider
-      value={{
-        filter,
-        add,
-        remove,
-        toggle,
-        reset,
-        includes,
-        isEmpty,
-        makeLink,
-        and,
-        toggleAnd,
-        isSlotPartOfFilter,
-      }}
-    >
-      {props.children}
-    </CreatorFilterContext.Provider>
-  )
+  const creatorList = () => {
+    if (!creators.data) {
+      return []
+    }
+
+    if (sortByName()) {
+      return [...creators.data].sort((a, b) => {
+        return a.creator.name.toLowerCase().localeCompare(b.creator.name.toLowerCase())
+      })
+    } else {
+      return [...creators.data].sort((a, b) => {
+        const aAppearance = appearanceCount(a.creator.creatorId)
+        const bAppearance = appearanceCount(b.creator.creatorId)
+        if (a == b) {
+          return a.creator.name.toLowerCase().localeCompare(b.creator.name.toLowerCase())
+        }
+        return bAppearance - aAppearance
+      })
+    }
+  }
+
+  const toggleSortByName = () => setSortByName(v => !v)
+
+  return {
+    creators,
+    filter,
+    add,
+    remove,
+    toggle,
+    reset,
+    includes,
+    isEmpty,
+    makeLink,
+    and,
+    toggleAnd,
+    isSlotPartOfFilter,
+    appearanceCount,
+    creatorList,
+    sortByName,
+    toggleSortByName,
+  }
+}
+
+const CreatorFilterContext = createContext<ReturnType<typeof useHook>>()
+
+export const CreatorFilterProvider: ParentComponent = props => {
+  const hook = useHook()
+  return <CreatorFilterContext.Provider value={hook}>{props.children}</CreatorFilterContext.Provider>
 }
 export const useCreatorFilter = () => useContext(CreatorFilterContext)
