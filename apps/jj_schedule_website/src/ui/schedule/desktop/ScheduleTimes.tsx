@@ -1,6 +1,6 @@
 import { Component, For } from 'solid-js'
 
-import { useMaxDayCount, useTimes } from '../providers/ScheduleDataProvider'
+import { useTimes } from '../providers/ScheduleDataProvider'
 import { Time } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import { useNextJJStartDate } from '@ycapp/common'
@@ -52,7 +52,6 @@ const Timezone: Component = () => {
             // DateTime.now().toFormat('ZZZZ')
             nextJJStartDate().toLocal().offsetNameShort
           }
-          {useMaxDayCount()}
         </p>
       </div>
     </div>
