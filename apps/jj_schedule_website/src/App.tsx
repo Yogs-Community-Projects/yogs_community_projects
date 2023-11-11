@@ -21,11 +21,12 @@ const SchedulePage = lazy(() => import('./ui/schedule/SchedulePage'))
 const ExtensionPage = lazy(() => import('./ui/extension/ExtensionPage'))
 const OverlayOverviewPage = lazy(() => import('./overlay/overview/OverlayOverview'))
 const CommunityPage = lazy(() => import('./ui/community/CommunityPage'))
+const StatsPage = lazy(() => import('./ui/stats/StatsPage'))
 
 const Home = () => {
   return (
     <>
-      <Title>Yogscast Jingle Jam Schedules and more</Title>
+      <Title>Interactive Yogscast Jingle Jam Schedules and more</Title>
       <Meta
         name="description"
         content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
@@ -37,11 +38,12 @@ const Home = () => {
 const Schedule = () => {
   const location = useLocation()
 
-  const title = () => `Yogscast Jingle Jam Schedule ${location.pathname.replace('/', '').replace('\\n', '')}`
+  const title = () =>
+    `Interactive Yogscast Jingle Jam Schedule ${location.pathname.replace('/', '').replace('\\n', '')}`
   return (
     <>
       <Show when={location.pathname === '/'}>
-        <Title>Yogscast Jingle Jam Schedules and more</Title>
+        <Title>Interactive Yogscast Jingle Jam Schedules and more</Title>
         <Meta
           name="description"
           content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
@@ -96,6 +98,18 @@ const Community = () => {
     </>
   )
 }
+const Stats = () => {
+  return (
+    <>
+      <Title>Jingle Jam Community Fundraiser</Title>
+      <Meta
+        name="description"
+        content="Jingle Jam Community Fundraiser. A list of the top 50 Community Fundraisers with links to their tiltify Campaign and channel."
+      />
+      <StatsPage />
+    </>
+  )
+}
 
 const App: Component = () => {
   const config = useConfig()
@@ -112,8 +126,9 @@ const App: Component = () => {
           <Route path={'/extension'} component={Extension} />
           <Route path={'/overlay'} component={OverlayOverview} />
           <Route path={'/community'} component={Community} />
-          <Route path={'/2021'} data={schedule2021RouteDataFunc} component={Schedule}></Route>
+          <Route path={'/stats'} component={Stats} />
           <Route path={'/2020'} data={schedule2020RouteDataFunc} component={Schedule}></Route>
+          <Route path={'/2021'} data={schedule2021RouteDataFunc} component={Schedule}></Route>
           <Route path={'/2022'} data={schedule2022RouteDataFunc} component={Schedule}></Route>
         </Route>
         <Route path={'/overlay/schedule'} component={ScheduleOverlay} />
