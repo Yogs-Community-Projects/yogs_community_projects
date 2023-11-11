@@ -56,39 +56,9 @@ interface FilterDialogBodyProps {
 
 const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { onClose } = props
-  const slots = useSlots()
   const schedule = useScheduleData()
-  const { useCreators } = useData()
-  const creatorIds = useCreatorIds()
-  const creators = useCreators(() => creatorIds)
-  const { includes, toggle, reset, filter, makeLink } = useCreatorFilter()
+  const { creators, includes, toggle, reset, filter, makeLink, creatorList, appearanceCount } = useCreatorFilter()
   const { log } = useAnalytics()
-  const appearanceCount = (id: string) => {
-    return slots.filter(s => s.relations.creators.includes(id)).length
-  }
-
-  const [sortByName, setSortByName] = createSignal(true)
-
-  const creatorList = () => {
-    if (!creators.data) {
-      return []
-    }
-
-    if (sortByName()) {
-      return [...creators.data].sort((a, b) => {
-        return a.creator.name.toLowerCase().localeCompare(b.creator.name.toLowerCase())
-      })
-    } else {
-      return [...creators.data].sort((a, b) => {
-        const aAppearance = appearanceCount(a.creator.creatorId)
-        const bAppearance = appearanceCount(b.creator.creatorId)
-        if (a == b) {
-          return a.creator.name.toLowerCase().localeCompare(b.creator.name.toLowerCase())
-        }
-        return bAppearance - aAppearance
-      })
-    }
-  }
 
   return (
     <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
@@ -104,19 +74,8 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
       <div class={'flex w-full flex-1 flex-col gap-2 overflow-auto p-4'}>
         <Switch>
           <Match when={creators.data}>
-            <div class={'grid grid-cols-2 gap-2'}>
-              <button
-                class={'hover:bg-accent-50 border-accent-50 rounded-full border-2'}
-                onclick={() => setSortByName(true)}
-              >
-                Sort by name
-              </button>
-              <button
-                class={'hover:bg-accent-50 border-accent-50 rounded-full border-2'}
-                onclick={() => setSortByName(false)}
-              >
-                Sort by appearance
-              </button>
+            <div class={'flex flex-row items-center justify-stretch gap-2'}>
+              <SortToggle />
               <AndToggle />
             </div>
             <For each={creatorList()}>
@@ -203,27 +162,66 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
 }
 
 const AndToggle = () => {
-  const { and, toggleAnd } = useCreatorFilter()
+  const { and, toggleAnd, isEmpty } = useCreatorFilter()
 
   return (
-    <ToggleButton.Root class={'flex flex-row text-white transition-all'} pressed={and()} onChange={toggleAnd}>
+    <ToggleButton.Root
+      class={
+        'border-accent-50 flex flex-1 flex-row items-stretch justify-stretch rounded-full border-2 text-sm text-white transition-all'
+      }
+      pressed={and()}
+      onChange={toggleAnd}
+    >
       {state => (
         <>
           <div
             class={twMerge(
-              'rounded-l-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              'flex-1 rounded-l-2xl bg-gray-400 p-1 opacity-60 transition-all',
               !state.pressed() && 'bg-primary opacity-100',
             )}
           >
-            OR
+            <p>OR</p>
           </div>
           <div
             class={twMerge(
-              'rounded-r-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              'flex-1 rounded-r-2xl bg-gray-400 p-1 opacity-60 transition-all',
               state.pressed() && 'bg-primary opacity-100',
             )}
           >
-            AND
+            <p>AND</p>
+          </div>
+        </>
+      )}
+    </ToggleButton.Root>
+  )
+}
+
+const SortToggle = () => {
+  const { sortByName, toggleSortByName } = useCreatorFilter()
+
+  return (
+    <ToggleButton.Root
+      class={'border-accent-50 flex flex-1 flex-row rounded-full border-2 text-sm text-white transition-all'}
+      pressed={sortByName()}
+      onChange={toggleSortByName}
+    >
+      {state => (
+        <>
+          <div
+            class={twMerge(
+              'flex-1 rounded-l-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              !state.pressed() && 'bg-primary opacity-100',
+            )}
+          >
+            <p>Appearance</p>
+          </div>
+          <div
+            class={twMerge(
+              'flex-1 rounded-r-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              state.pressed() && 'bg-primary opacity-100',
+            )}
+          >
+            <p>Name</p>
           </div>
         </>
       )}
