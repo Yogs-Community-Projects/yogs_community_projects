@@ -7,6 +7,7 @@ import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
 import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { useAnalytics } from '../../AnalyticsProvider'
 import { twMerge } from 'tailwind-merge'
+import { BsPeopleFill } from 'solid-icons/bs'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -16,10 +17,15 @@ export const FilterButton: Component = () => {
       <div class={'w-slot h-data p-schedule'}>
         <div class={'schedule-card-white flex flex-row'}>
           <button
-            class={'hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-2xl hover:scale-105'}
+            class={
+              'hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-2xl transition-all hover:scale-105'
+            }
             onclick={modalSignal.open}
           >
-            Filter
+            <div class={'flex w-full flex-row items-center justify-around'}>
+              <p>Filter</p>
+              <BsPeopleFill />
+            </div>
           </button>
         </div>
       </div>
