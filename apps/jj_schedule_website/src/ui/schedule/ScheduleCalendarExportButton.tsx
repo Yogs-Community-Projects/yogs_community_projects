@@ -1,5 +1,5 @@
 import { Component, createSignal, For, Show } from 'solid-js'
-import { useCreatorIds, useDays, useScheduleData } from './providers/ScheduleDataProvider'
+import { useCreatorIds, useDays, useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { Dialog } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { createModalSignal, ModalSignal, useCreatorDB } from '@ycapp/common'
@@ -9,6 +9,7 @@ import { DateTime, Duration } from 'luxon'
 import ical from 'ical-generator'
 import { ICalAlarmType } from 'ical-generator/dist/alarm'
 import { useAnalytics } from '../../AnalyticsProvider'
+import { useCreatorFilter } from './providers/CreatorFilterProvider'
 
 export const CalendarExportButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -18,7 +19,9 @@ export const CalendarExportButton: Component = () => {
       <div class={'w-slot h-data p-schedule'}>
         <div class={'schedule-card-white flex flex-row'}>
           <button
-            class={'hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-2xl hover:scale-105'}
+            class={
+              'hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-2xl transition-all hover:scale-105'
+            }
             onclick={modalSignal.open}
           >
             <div class={'flex w-full flex-row items-center justify-around'}>
@@ -60,6 +63,8 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
   const { onClose } = props
   const days = useDays()
   const schedule = useScheduleData()
+  const slots = useSlots()
+  const { isSlotPartOfFilter } = useCreatorFilter()
   const creators = useCreatorDB().readSome(useCreatorIds())
   const [selectedSlots, setSelectedSlots] = createSignal<Slot[]>([])
   const [search, setSearch] = createSignal('')
@@ -113,6 +118,9 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
     }
   }
   const isInSearch = (slot: Slot) => {
+    if (!isSlotPartOfFilter(slot)) {
+      return false
+    }
     if (search() == '') {
       return true
     }
@@ -145,6 +153,7 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
     return calendar.toString()
   }
 
+  const filteredSlots = () => slots.filter(isInSearch)
   return (
     <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
       <div class={`bg-primary flex h-[72px] items-center justify-center rounded-t-3xl p-2 text-white shadow-xl`}>
@@ -156,6 +165,8 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
+      <p class={'px-4 py-2'}>Filtered slots: {filteredSlots().length}</p>
+      <p class={'px-4 py-2'}>This list of streams takes the creator filter into account</p>
       <div class="p-4">
         <label class="mb-2 block text-sm font-bold text-gray-700" for="search">
           Search
@@ -226,14 +237,27 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
         </For>
       </div>
       <div class={'flex h-[72px] flex-row items-center justify-end gap-2 p-4'}>
-        <button
-          class={'bg-primary rounded-xl p-2 text-white'}
-          onclick={() => {
-            onClose()
-          }}
-        >
-          Close
-        </button>
+        <Show when={selectedSlots().length < filteredSlots().length}>
+          <button
+            class={'bg-primary rounded-xl p-2 text-white'}
+            onclick={() => {
+              const filteredSlots = slots.filter(isInSearch)
+              setSelectedSlots(filteredSlots)
+            }}
+          >
+            Select All
+          </button>
+        </Show>
+        <Show when={selectedSlots().length === filteredSlots().length}>
+          <button
+            class={'bg-primary rounded-xl p-2 text-white'}
+            onclick={() => {
+              setSelectedSlots([])
+            }}
+          >
+            Deselect All
+          </button>
+        </Show>
         <button
           disabled={selectedSlots().length == 0}
           class={'bg-primary rounded-xl p-2 text-white disabled:bg-gray-500 disabled:opacity-75'}
