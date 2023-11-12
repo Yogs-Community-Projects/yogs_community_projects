@@ -1,11 +1,9 @@
-import type { Component } from 'solid-js'
-import { lazy, Show } from 'solid-js'
+import { Component, lazy, onMount, ParentComponent, Show } from 'solid-js'
 import { Route, Router, Routes, useLocation, useNavigate } from '@solidjs/router'
 import {
   schedule2020RouteDataFunc,
   schedule2021RouteDataFunc,
   schedule2022RouteDataFunc,
-  schedule2023RouteDataFunc,
   scheduleCurrentRouteDataFunc,
 } from './ui/schedule/ScheduleRouteData'
 import { ScheduleOverlay } from './overlay/schedule/ScheduleOverlay'
@@ -14,7 +12,6 @@ import { CharityOverlay } from './overlay/charity/CharityOverlay'
 import { CharityOverlay2 } from './overlay/charity/CharityOverlay2'
 import { SimpleScheduleOverlay } from './overlay/schedule_simple/SimpleScheduleOverlay'
 import { useConfig } from './ui/configProvider/ConfigProvider'
-import { Meta, Title } from '@solidjs/meta'
 
 const HomePage = lazy(() => import('./ui/home/HomePage'))
 const SchedulePage = lazy(() => import('./ui/schedule/SchedulePage'))
@@ -23,91 +20,99 @@ const OverlayOverviewPage = lazy(() => import('./overlay/overview/OverlayOvervie
 const CommunityPage = lazy(() => import('./ui/community/CommunityPage'))
 const StatsPage = lazy(() => import('./ui/stats/StatsPage'))
 
+const Page: ParentComponent<{ title: string; desc: string }> = props => {
+  onMount(() => {
+    document.title = props.title
+    document.getElementsByTagName('meta')['description'].content = props.title
+    // document.head.title = props.title
+  })
+  return <>{props.children}</>
+
+  /*
+  *       <Title>{props.title}</Title>
+      <Meta name="description" content={props.desc} />
+*/
+}
 const Home = () => {
   return (
-    <>
-      <Title>Interactive Yogscast Jingle Jam Schedules and more</Title>
-      <Meta
-        name="description"
-        content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
-      />
+    <Page
+      title={'Interactive Yogscast Jingle Jam Schedules and more'}
+      desc={
+        'Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information.'
+      }
+    >
       <HomePage />
-    </>
+    </Page>
   )
 }
 const Schedule = () => {
   const location = useLocation()
 
-  const title = () =>
+  const scheduleTitle = () =>
     `Interactive Yogscast Jingle Jam Schedule ${location.pathname.replace('/', '').replace('\\n', '')}`
+
+  const title = () => {
+    if (location.pathname === '/') {
+      return 'Interactive Yogscast Jingle Jam Schedules and more'
+    }
+    return scheduleTitle()
+  }
+
+  const desc = () =>
+    'Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information.'
+
   return (
-    <>
-      <Show when={location.pathname === '/'}>
-        <Title>Interactive Yogscast Jingle Jam Schedules and more</Title>
-        <Meta
-          name="description"
-          content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
-        />
-      </Show>
-      <Show when={location.pathname !== '/'}>
-        <Title>{title()}</Title>
-        <Meta
-          name="description"
-          content="Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information."
-        />
-      </Show>
+    <Page title={title()} desc={desc()}>
       <SchedulePage />
-    </>
+    </Page>
   )
 }
 
 const Extension = () => {
   return (
-    <>
-      <Title>Jingle Jam Community Twitch Extension</Title>
-      <Meta
-        name="description"
-        content="Jingle Jam Community Twitch Extension. Add the extension to your channel to give your viewers more information about the Jingle Jam"
-      />
+    <Page
+      title={'Jingle Jam Community Twitch Extension'}
+      desc="Jingle Jam Community Twitch Extension. Add the extension to your channel to give your viewers more information about the Jingle Jam"
+    >
       <ExtensionPage />
-    </>
+    </Page>
   )
 }
 
 const OverlayOverview = () => {
   return (
-    <>
-      <Title>Jingle Jam Community Streaming Overlays</Title>
-      <Meta
-        name="description"
-        content="Jingle Jam Community Streaming Overlays. Jingle Jam related Overlays that show the charities and community fundraiser. Customize and add them to your stream."
-      />
+    <Page
+      title={'Jingle Jam Community Streaming Overlays'}
+      desc={
+        'Jingle Jam Community Streaming Overlays. Jingle Jam related Overlays that show the charities and community fundraiser. Customize and add them to your stream.'
+      }
+    >
       <OverlayOverviewPage />
-    </>
+    </Page>
   )
 }
 const Community = () => {
   return (
-    <>
-      <Title>Jingle Jam Community Fundraiser</Title>
-      <Meta
-        name="description"
-        content="Jingle Jam Community Fundraiser. A list of the top 50 Community Fundraisers with links to their tiltify Campaign and channel."
-      />
+    <Page
+      title={'Jingle Jam Community Fundraiser'}
+      desc={
+        'Jingle Jam Community Fundraiser. A list of the top 50 Community Fundraisers with links to their tiltify Campaign and channel.'
+      }
+    >
       <CommunityPage />
-    </>
+    </Page>
   )
 }
 const Stats = () => {
   return (
-    <>
-      <Title>Jingle Jam Community Fundraiser</Title>
-      <Meta
-        name="description"
-        content="Jingle Jam Community Fundraiser. A list of the top 50 Community Fundraisers with links to their tiltify Campaign and channel."
-      />
+    <Page
+      title={'Jingle Jam Stats'}
+      desc={
+        'Jingle Jam Community Fundraiser. A list of the top 50 Community Fundraisers with links to their tiltify Campaign and channel.'
+      }
+    >
       <StatsPage />
-    </>
+    </Page>
   )
 }
 
