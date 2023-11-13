@@ -61,7 +61,7 @@ export const FundraiserOverviewComponent = () => {
             </tr>
             <tr>
               <td>
-                <label for="ctitletheme">Title Theme:</label>
+                <label for="ctitletheme">Title Logo:</label>
               </td>
               <td>
                 <select
@@ -92,7 +92,7 @@ export const FundraiserOverviewComponent = () => {
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
             console.log('copy')
-            const overlayUrl = `https://jinglejam.yogs.app/overlay/fundraisers?speed=${speed()}&theme=${theme()}&tiltifyurl=${url()}%titlelogo=${titleLogo()}`
+            const overlayUrl = `https://jinglejam.yogs.app/overlay/fundraisers?speed=${speed()}&theme=${theme()}&tiltifyurl=${url()}&titlelogo=${titleLogo()}`
             copyToClipboard(overlayUrl)
           }}
         >

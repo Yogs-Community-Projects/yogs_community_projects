@@ -14,6 +14,7 @@ export const NavBar: Component = () => {
         <Link path="/community" title="Community" />
         <Link path="/extension" title="Twitch Extension" />
         <Link path="/overlay" title="Streaming Overlays" />
+        <Link path="/stats" title="Stats" />
         <a
           href={'https://schedule.yogs.app'}
           class={'hover:text-accent-100 no-underline transition-all hover:scale-105'}
