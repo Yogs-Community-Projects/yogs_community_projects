@@ -12,6 +12,7 @@ import { CharityOverlay } from './overlay/charity/CharityOverlay'
 import { CharityOverlay2 } from './overlay/charity/CharityOverlay2'
 import { SimpleScheduleOverlay } from './overlay/schedule_simple/SimpleScheduleOverlay'
 import { useConfig } from './ui/configProvider/ConfigProvider'
+import { useAnalytics } from './AnalyticsProvider'
 
 const HomePage = lazy(() => import('./ui/home/HomePage'))
 const SchedulePage = lazy(() => import('./ui/schedule/SchedulePage'))
@@ -21,10 +22,16 @@ const CommunityPage = lazy(() => import('./ui/community/CommunityPage'))
 const StatsPage = lazy(() => import('./ui/stats/StatsPage'))
 
 const Page: ParentComponent<{ title: string; desc: string }> = props => {
+  const { log } = useAnalytics()
+  const location = useLocation()
   onMount(() => {
     document.title = props.title
     document.getElementsByTagName('meta')['description'].content = props.title
     // document.head.title = props.title
+    log('page_view', {
+      page_title: props.title,
+      page_location: location.pathname,
+    })
   })
   return <>{props.children}</>
 
