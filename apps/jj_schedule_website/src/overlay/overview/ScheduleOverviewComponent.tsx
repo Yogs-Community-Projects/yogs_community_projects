@@ -4,8 +4,10 @@ import { copyToClipboard } from './copyToClipboard'
 import { ScheduleOverlayDateProviderProvider } from '../schedule/ScheduleOverlayDateProvider'
 import { ScheduleOverlayComponent } from '../schedule/ScheduleOverlay'
 import { useNow } from '@ycapp/common'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 export const ScheduleOverviewComponent = () => {
+  const { log } = useAnalytics()
   const now = useNow()
   const [theme, setTheme] = createSignal('default')
   const [headerTheme, setHeaderTheme] = createSignal('default')
@@ -239,6 +241,7 @@ export const ScheduleOverviewComponent = () => {
         <button
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
+            log('overlay_copy', { overlay_url: url() })
             copyToClipboard(url())
           }}
         >

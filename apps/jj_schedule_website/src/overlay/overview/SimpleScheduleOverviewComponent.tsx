@@ -6,6 +6,7 @@ import { ScheduleOverlayDateProviderProvider } from '../schedule/ScheduleOverlay
 import { SimpleScheduleOverlayComponent } from '../schedule_simple/SimpleScheduleOverlay'
 import { ScheduleDataStringProvider, useScheduleDataString } from '../schedule_simple/ScheduleDataStringProvider'
 import { ScheduleDataStringEditor } from './ScheduleDataStringEditor'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 export const SimpleScheduleOverviewComponent = () => {
   return (
@@ -15,6 +16,7 @@ export const SimpleScheduleOverviewComponent = () => {
   )
 }
 const Body = () => {
+  const { log } = useAnalytics()
   const now = useNow()
   const { schedule, timezone } = useScheduleDataString()
   const [theme, setTheme] = createSignal('default')
@@ -253,6 +255,7 @@ const Body = () => {
         <button
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
+            log('overlay_copy', { overlay_url: url() })
             copyToClipboard(url())
           }}
         >

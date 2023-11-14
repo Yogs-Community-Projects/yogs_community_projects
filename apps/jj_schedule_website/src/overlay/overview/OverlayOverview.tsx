@@ -1,4 +1,4 @@
-import { Component, createSignal } from 'solid-js'
+import { Component, createEffect, createSignal } from 'solid-js'
 import { ScheduleOverviewComponent } from './ScheduleOverviewComponent'
 import { CharitiesOverviewComponent, CharitiesOverviewComponent2 } from './CharityOverviewComponents'
 import { FundraiserOverviewComponent } from './FundraiserOverviewComponent'
@@ -9,6 +9,7 @@ import overlay2 from '../../assets/overlay/overlay2.png'
 import { twMerge } from 'tailwind-merge'
 import { SimpleScheduleOverviewComponent } from './SimpleScheduleOverviewComponent'
 import { FeedbackButtons } from '../../ui/components/FeedbackButtons'
+import { useAnalytics } from '../../AnalyticsProvider'
 /*
 export const OverlayOverview: Component = () => {
   return (
@@ -131,8 +132,15 @@ const OverlayOverview: Component = () => {
 }
 
 const Body = () => {
-  const [expandedItem, setExpandedItem] = createSignal<string[]>([])
+  const { log } = useAnalytics()
 
+  const [expandedItem, setExpandedItem] = createSignal<string[]>([])
+  createEffect(() => {
+    const items = expandedItem()
+    if (items.length > 0) {
+      log('overlay_open', { overlay: items[0] })
+    }
+  })
   const schedule = () => expandedItem().includes('schedule')
   const customCchedule = () => expandedItem().includes('custom_schedule')
   const fundraiser = () => expandedItem().includes('fundraiser')

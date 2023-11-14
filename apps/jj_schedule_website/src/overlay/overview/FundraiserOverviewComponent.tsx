@@ -2,7 +2,9 @@ import { createSignal } from 'solid-js'
 import { copyToClipboard } from './copyToClipboard'
 import { FundraisersOverlayComponent } from '../fundraisers/FundraisersOverlay'
 import { TextField } from '@kobalte/core'
+import { useAnalytics } from '../../AnalyticsProvider'
 export const FundraiserOverviewComponent = () => {
+  const { log } = useAnalytics()
   const [speed, setSpeed] = createSignal(2)
   const [titleLogo, setTitleLogo] = createSignal('none')
   const [theme, setTheme] = createSignal('default')
@@ -93,6 +95,7 @@ export const FundraiserOverviewComponent = () => {
           onclick={() => {
             console.log('copy')
             const overlayUrl = `https://jinglejam.yogs.app/overlay/fundraisers?speed=${speed()}&theme=${theme()}&tiltifyurl=${url()}&titlelogo=${titleLogo()}`
+            log('overlay_copy', { overlay_url: overlayUrl })
             copyToClipboard(overlayUrl)
           }}
         >

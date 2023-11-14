@@ -6,8 +6,10 @@ import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import { JJData } from '@ycapp/model'
 import { TextField } from '@kobalte/core'
+import { useAnalytics } from '../../AnalyticsProvider'
 
 export const CharitiesOverviewComponent = () => {
+  const { log } = useAnalytics()
   const [speed, setSpeed] = createSignal(2)
   const [titleLogo, setTitleLogo] = createSignal('none')
   const [theme, setTheme] = createSignal('default')
@@ -98,6 +100,7 @@ export const CharitiesOverviewComponent = () => {
           onclick={() => {
             console.log('copy')
             const overlay = `https://jinglejam.yogs.app/overlay/charities?speed=${speed()}&theme=${theme()}&tiltifyurl=${url()}&titlelogo=${titleLogo()}`
+            log('overlay_copy', { overlay_url: overlay })
             copyToClipboard(overlay)
           }}
         >
@@ -124,6 +127,7 @@ export const CharitiesOverviewComponent = () => {
 }
 
 export const CharitiesOverviewComponent2 = () => {
+  const { log } = useAnalytics()
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
   const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
@@ -391,6 +395,7 @@ export const CharitiesOverviewComponent2 = () => {
         <button
           class={'bg-accent-500 rounded-2xl p-2 text-white'}
           onclick={() => {
+            log('overlay_copy', { overlay_url: url() })
             copyToClipboard(url())
           }}
         >
