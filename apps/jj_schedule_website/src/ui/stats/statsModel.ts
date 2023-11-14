@@ -15,8 +15,5 @@ export interface SlotDonation {
 export interface DonationData {
   slots: SlotDonation[]
   hours: Donation[]
-  total: {
-    slots: SlotDonation[]
-    hours: Donation[]
-  }
+  total: Donation[]
 }
