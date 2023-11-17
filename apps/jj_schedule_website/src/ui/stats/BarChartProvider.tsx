@@ -1,211 +1,56 @@
 import { createContext, ParentComponent, useContext } from 'solid-js'
-import { useBarChartFilter } from './BarChartFilterProvider'
-import { DonationData, SlotDonation } from './statsModel'
-import { DateTime } from 'luxon'
-import { Bars, ChartType } from './BarChartEnums'
+import { DonationData } from './statsModel'
 import { EChartsOption } from 'echarts'
-import { Slot } from '@ycapp/model'
+import { useChartSeries } from './utils/useChartSeries'
+import { useChartXAxis } from './utils/useChartXAxis'
+import { useLegend } from './utils/useLegend'
+import { useData } from '../../dataProvider'
+import { CreatorData, Slot } from '@ycapp/model'
+import { useChartOnStreamFilter } from './BarChartFilterProvider'
+import { OnStreamType } from './BarChartEnums'
 
 const useBarChartHook = (data: DonationData) => {
-  const { bars, type, sortByAmount, top15, excludeDay1, excludeNights } = useBarChartFilter()
-
-  const isNight = (s: SlotDonation) => {
-    return s.slot.title.includes('Night ') && s.slot.style.background === 'aaaaaa'
-  }
-
-  const isNotNight = (s: SlotDonation) => !isNight(s)
-
-  const sortByAmountFunc = (a: SlotDonation, b: SlotDonation) => {
-    if (showYogs() && !showFundraiser()) {
-      return yogsValue(a) - yogsValue(b)
-    } else if (!showYogs() && showFundraiser()) {
-      return fundraiserValue(a) - fundraiserValue(b)
-    }
-    return totalValue(a) - totalValue(b)
-  }
-  const sortByDateFunc = (a: SlotDonation, b: SlotDonation) => {
-    return DateTime.fromISO(b.slot.start).toMillis() - DateTime.fromISO(a.slot.start).toMillis()
-  }
-  const slots = () => {
-    let slots = data.slots.sort(sortByAmountFunc).reverse()
-    if (excludeNights()) {
-      slots = slots.filter(isNotNight)
-    }
-    if (excludeDay1()) {
-      slots = slots.filter(s => {
-        const date = DateTime.fromISO(s.slot.start)
-        return date.day !== 1
-      })
-    }
-    if (top15()) {
-      slots = slots.sort(sortByAmountFunc).reverse().slice(0, 15)
-    }
-    if (!sortByAmount()) {
-      slots = slots.sort(sortByDateFunc).reverse()
-    }
-    return slots
-  }
-
-  const color = (s: Slot) => {
-    const color = s.style?.linearGradient?.colors[0]?.substring(2) ?? s.style?.background?.substring(2)
-    return '#' + (color ?? 'aaaaaa')
-  }
-  const labels = () =>
-    slots().map(s => {
-      if (s.slot.title.length > 15) {
-        return s.slot.title.substring(0, 12) + '...'
-      }
-      return s.slot.title
-    })
-
-  const totalValue = (s: SlotDonation) => {
-    if (type() === ChartType.amountPerMinute) {
-      // const duration = SlotUtils.duration(s.slot)
-      return +(s.donation.total / (s.slot.duration / 60)).toFixed(2)
-    }
-    return s.donation.total
-  }
-  const yogsValue = (s: SlotDonation) => {
-    if (type() === ChartType.amountPerMinute) {
-      // const duration = SlotUtils.duration(s.slot)
-      return +(s.donation.yogs / (s.slot.duration / 60)).toFixed(2)
-    }
-    return s.donation.yogs
-  }
-  const fundraiserValue = (s: SlotDonation) => {
-    if (type() === ChartType.amountPerMinute) {
-      // const duration = SlotUtils.duration(s.slot)
-      return +(s.donation.fundraiser / (s.slot.duration / 60)).toFixed(2)
-    }
-    return s.donation.fundraiser
-  }
-  const yogs = () => {
-    return slots().map(s => {
+  const series = useChartSeries(data)
+  const xAxis = useChartXAxis(data)
+  const legend = useLegend()
+  return {
+    data,
+    chartOptions: (): EChartsOption => {
       return {
-        value: yogsValue(s),
-        itemStyle: {
-          color: color(s.slot),
-        },
-        data: s,
-      }
-    })
-  }
-  const fundraiser = () => {
-    return slots().map(s => {
-      return {
-        value: fundraiserValue(s),
-        itemStyle: {
-          color: bars() === Bars.total2 ? '#ff0000' : color(s.slot),
-        },
         tooltip: {
+          trigger: 'item',
+        },
+        dataZoom: {},
+        legend: legend(),
+        grid: {
           show: true,
+          top: '4px',
+          left: '10px',
+          right: '4px',
+          bottom: '4px',
+          containLabel: true,
         },
+        yAxis: {
+          name: 'Amounts raised in Pounds',
+          position: 'top',
+          type: 'value',
+          show: true,
+          splitLine: {
+            lineStyle: {
+              type: 'solid',
+              width: 2,
+            },
+          },
+          axisLabel: {
+            rotate: 45,
+            hideOverlap: false,
+            fontSize: 10,
+          },
+        },
+        xAxis: xAxis(),
+        series: series(),
       }
-    })
-  }
-
-  const showYogs = () => bars() === Bars.yogs || bars() === Bars.total || bars() === Bars.total2
-  const showFundraiser = () => bars() === Bars.fundraiser || bars() === Bars.total || bars() === Bars.total2
-
-  const yogsFormatter = params => {
-    const dataIndex = params.dataIndex
-    const slot = slots().at(dataIndex)
-    const date = DateTime.fromISO(slot.slot.start)
-    const f = date.toFormat('MMM dd, HH:mm')
-    return `
-                  ${params.seriesName}
-                  <br>${params.marker}${slot.slot.title} ${f} ${date.offsetNameShort}
-                  <span style="float: right; margin-left: 20px"><b>${params.value}£</b></span>`
-
-    // return `${params.seriesName}<br/>`
-  }
-  return (): EChartsOption => {
-    return {
-      tooltip: {
-        trigger: 'item',
-      },
-      legend: {
-        show: false,
-        selected: {
-          Yogs: showYogs(),
-          Fundraiser: showFundraiser(),
-        },
-      },
-      grid: {
-        show: true,
-        top: '4px',
-        left: '10px',
-        right: '4px',
-        bottom: '4px',
-        containLabel: true,
-      },
-      yAxis: {
-        name: 'Amounts raised in Pounds',
-        position: 'top',
-        type: 'value',
-        show: true,
-        splitLine: {
-          lineStyle: {
-            type: 'solid',
-            width: 2,
-          },
-        },
-        axisLabel: {
-          rotate: 45,
-          hideOverlap: false,
-          fontSize: 10,
-        },
-      },
-      xAxis: {
-        axisLabel: {
-          rotate: 45,
-          hideOverlap: false,
-          fontSize: top15() ? 12 : 8,
-        },
-        splitLine: {
-          lineStyle: {
-            type: 'solid',
-            width: 2,
-          },
-        },
-        type: 'category',
-        data: labels(),
-      },
-      series: [
-        {
-          name: 'Yogs',
-          type: 'bar',
-          stack: 'total',
-          label: {
-            show: false,
-          },
-          emphasis: {
-            // focus: 'series',
-          },
-          tooltip: {
-            show: true,
-            formatter: yogsFormatter,
-          },
-          data: yogs(),
-        },
-        {
-          name: 'Fundraiser',
-          type: 'bar',
-          stack: 'total',
-          label: {
-            show: false,
-          },
-          emphasis: {
-            // focus: 'series',
-          },
-          tooltip: {
-            show: true,
-            formatter: yogsFormatter,
-          },
-          data: fundraiser(),
-        },
-      ],
-    }
+    },
   }
 }
 
@@ -220,3 +65,155 @@ export const BarChartProvider: ParentComponent<BarChartProps> = props => {
   return <BarChartContext.Provider value={hook}>{props.children}</BarChartContext.Provider>
 }
 export const useBarChart = () => useContext(BarChartContext)
+
+const useBarChartOnStreamHook = (donationData: DonationData) => {
+  const { bars, sortByAmount, top15 } = useChartOnStreamFilter()
+
+  const { useCreators } = useData()
+  const slots = donationData.slots
+
+  const jjLength = slots.map(s => s.slot.duration).reduce((a, b) => a + b)
+  const creatorIds = () => [...new Set(slots.map(s => s.slot.relations.creators).flat()).keys()]
+
+  const creators = useCreators(creatorIds)
+
+  const isCreatorInSlot = (cId: string, s: Slot) => s.relations.creators.includes(cId)
+
+  const numberOfAppearances = (cId: string) => slots.filter(s => isCreatorInSlot(cId, s.slot)).length
+  const numberOfMinutesOnStream = (cId: string) =>
+    slots
+      .filter(s => isCreatorInSlot(cId, s.slot))
+      .map(s => +(s.slot.duration / (60 * 60)).toFixed(2))
+      .reduce((a, b) => a + b)
+
+  const percentageOfTotalStreams = (cId: string) =>
+    +(
+      slots
+        .filter(s => isCreatorInSlot(cId, s.slot))
+        .map(s => s.slot.duration)
+        .reduce((a, b) => a + b) / jjLength
+    ).toFixed(2)
+
+  const dataNumber = (c: CreatorData) => {
+    switch (bars()) {
+      case OnStreamType.appearances:
+        return numberOfAppearances(c.creator.creatorId)
+      case OnStreamType.hoursStreamed:
+        return numberOfMinutesOnStream(c.creator.creatorId)
+      case OnStreamType.percentageOfTotal:
+        return percentageOfTotalStreams(c.creator.creatorId)
+    }
+  }
+  const rawData = (): { label: string; n: number; color: string }[] => {
+    if (!creators.data) {
+      return []
+    }
+    return creators.data.map(c => {
+      return {
+        label: c.creator.name,
+        n: dataNumber(c),
+        color: '#' + c.style.primaryColor.substring(2),
+      }
+    })
+  }
+
+  const data = (): { label: string; n: number; color: string }[] => {
+    let d = rawData().sort((a, b) => {
+      return b.n - a.n
+    })
+
+    if (top15()) {
+      d = d.slice(0, 15)
+    }
+
+    return d
+  }
+
+  return {
+    creators,
+    data,
+    chartOptions: (): EChartsOption => {
+      return {
+        tooltip: {
+          trigger: 'item',
+        },
+        grid: {
+          show: true,
+          top: '4px',
+          left: '10px',
+          right: '4px',
+          bottom: '4px',
+          containLabel: true,
+        },
+        yAxis: {
+          name: 'Amounts raised in Pounds',
+          position: 'top',
+          type: 'value',
+          show: true,
+          splitLine: {
+            lineStyle: {
+              type: 'solid',
+              width: 2,
+            },
+          },
+          axisLabel: {
+            rotate: 45,
+            hideOverlap: false,
+            fontSize: 10,
+          },
+        },
+        xAxis: {
+          axisLabel: {
+            rotate: 45,
+            hideOverlap: false,
+            fontSize: 12,
+          },
+          splitLine: {
+            lineStyle: {
+              type: 'solid',
+              width: 2,
+            },
+          },
+          type: 'category',
+          data: data().map(d => d.label),
+        },
+        series: [
+          {
+            name: 'Yogs on Stream',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: false,
+            },
+            emphasis: {
+              // focus: 'series',
+            },
+            tooltip: {
+              show: true,
+            },
+            data: data().map(d => {
+              return {
+                value: d.n,
+                itemStyle: {
+                  color: d.color,
+                },
+              }
+            }),
+          },
+        ],
+      }
+    },
+  }
+}
+
+interface BarChartOnStreamProps {
+  data: DonationData
+}
+
+const BarChartOnStreamContext = createContext<ReturnType<typeof useBarChartOnStreamHook>>()
+
+export const BarChartOnStreamProvider: ParentComponent<BarChartOnStreamProps> = props => {
+  const hook = useBarChartOnStreamHook(props.data)
+  return <BarChartOnStreamContext.Provider value={hook}>{props.children}</BarChartOnStreamContext.Provider>
+}
+export const useBarChartOnStream = () => useContext(BarChartOnStreamContext)

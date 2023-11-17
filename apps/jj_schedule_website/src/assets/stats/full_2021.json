@@ -338,9 +338,9 @@
             },
             "donation": {
                 "date": "2021-12-02T20:00:00+00:00",
-                "yogs": 37546.32,
-                "fundraiser": 9233.46,
-                "total": 46779.78
+                "yogs": 63788.4,
+                "fundraiser": 17927.41,
+                "total": 81715.81
             }
         },
         {
@@ -363,16 +363,16 @@
                 "showYoutubeIcon": false,
                 "markdownDesc": "",
                 "title": "Night 2",
-                "start": "2021-12-02T14:00:00.000000+0000",
+                "start": "2021-12-02T23:00:00.000000+0000",
                 "visible": true,
-                "duration": 75600,
+                "duration": 43200,
                 "type": "special"
             },
             "donation": {
-                "date": "2021-12-02T14:00:00+00:00",
-                "yogs": 245599.86,
-                "fundraiser": 68925.62,
-                "total": 314525.48
+                "date": "2021-12-02T23:00:00+00:00",
+                "yogs": 84662.04,
+                "fundraiser": 24269.63,
+                "total": 108931.67
             }
         },
         {

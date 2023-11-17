@@ -1,158 +1,67 @@
-import { Component } from 'solid-js'
+import { Component, createEffect, createSignal, lazy, Suspense } from 'solid-js'
+import { useAnalytics } from '../../AnalyticsProvider'
+import { Accordion } from '@kobalte/core'
+import { BiRegularChevronDown } from 'solid-icons/bi'
+import { twMerge } from 'tailwind-merge'
 
-import full_2022 from '../../assets/stats/full_2022.json'
-import full_2021 from '../../assets/stats/full_2021.json'
-import full_2020 from '../../assets/stats/full_2020.json'
-import { DonationData } from './statsModel'
-import { ECharts } from 'echarts-solid'
-import { BarChartFilterProvider } from './BarChartFilterProvider'
-import { BarChartProvider, useBarChart } from './BarChartProvider'
-import { BarChartJJSettings } from './BarChartJJSettings'
-import { EChartsOption } from 'echarts'
-import { DateTime } from 'luxon'
-
+const BarChartsJJSchedule = lazy(() => import('./BarChartsJJSchedule'))
+const BarChartsOnStreamProvider = lazy(() => import('./BarChartsOnStreamProvider'))
 const StatsPage: Component = () => {
+  const { log } = useAnalytics()
+
+  const [expandedItem, setExpandedItem] = createSignal<string[]>([])
+  createEffect(() => {
+    const items = expandedItem()
+    if (items.length > 0) {
+      log('stats_open', { overlay: items[0] })
+    }
+  })
+  const donations = () => expandedItem().includes('donations')
+  const yogs = () => expandedItem().includes('yogs')
   return (
     <div class={'flex flex-col gap-4'}>
-      <BarChartFilterProvider>
-        <BarChartProvider data={full_2022 as unknown as DonationData}>
-          <BarChartJJSchedule title={'Jingle Jam 2022'} />
-        </BarChartProvider>
-        <BarChartProvider data={full_2021 as DonationData}>
-          <BarChartJJSchedule title={'Jingle Jam 2021'} />
-        </BarChartProvider>
-        <BarChartProvider data={full_2020 as DonationData}>
-          <BarChartJJSchedule title={'Jingle Jam 2020'} />
-        </BarChartProvider>
-      </BarChartFilterProvider>
+      <Accordion.Root collapsible={true} value={expandedItem()} onChange={setExpandedItem} class={''}>
+        <Accordion.Item value={'donations'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Donations</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', donations() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'max-w-[90vw] p-2'}>
+            <Suspense fallback={<p class={'text-white'}>Loading...</p>}>
+              <BarChartsJJSchedule />
+            </Suspense>
+          </Accordion.Content>
+        </Accordion.Item>
+        <Accordion.Item value={'yogs'} class={'flex flex-col items-center transition-all'}>
+          <Accordion.Header>
+            <Accordion.Trigger
+              class={
+                'hover:scale-102 hover:brightness-102 bg-primary-200/50 border-accent-500 border-1 group m-2 flex w-[30vw] flex-row items-center rounded p-2 text-xl text-white shadow'
+              }
+            >
+              <p class={'flex-1 text-left'}>Yogs & Friends on Stream</p>
+              <BiRegularChevronDown
+                class={twMerge('transition-all group-hover:animate-none', yogs() && 'rotate-180 animate-none')}
+              />
+            </Accordion.Trigger>
+          </Accordion.Header>
+          <Accordion.Content class={'flex max-w-[90vw] flex-col items-center p-2'}>
+            <Suspense fallback={<p class={'text-white'}>Loading...</p>}>
+              <BarChartsOnStreamProvider />
+            </Suspense>
+          </Accordion.Content>
+        </Accordion.Item>
+      </Accordion.Root>
     </div>
   )
 }
 
-/*
-
-      <LineChart
-        data2022={full_2022 as DonationData}
-        data2021={full_2021 as DonationData}
-        data2020={full_2020 as DonationData}
-      />
- */
-const BarChartJJSchedule: Component<{ title: string }> = props => {
-  const chartOptions = useBarChart()
-  return (
-    <div class={'flex w-full flex-col gap-2'}>
-      <p class={'text-xl text-white'}>{props.title}</p>
-      <div class={'bg-white'}>
-        <ECharts height={400} width={1200} option={chartOptions()} />
-      </div>
-      <BarChartJJSettings />
-    </div>
-  )
-}
-
-const LineChart: Component<{ data2022: DonationData; data2021: DonationData; data2020: DonationData }> = props => {
-  const donations2022 = props.data2022.total
-  const donations2021 = props.data2021.total
-  const donations2020 = props.data2020.total
-  const time2022 = () => donations2022.map((d, i) => d.date)
-  const data2022 = () => donations2022.map((d, i) => d.total)
-  const data2021 = () => donations2022.map((d, i) => d.total)
-  const data2020 = () => donations2022.map((d, i) => d.total)
-  const chartOptions = (): EChartsOption => {
-    return {
-      tooltip: {
-        trigger: 'item',
-      },
-      xAxis: {
-        type: 'category',
-        boundaryGap: false,
-        data: time2022(),
-      },
-      yAxis: {
-        type: 'value',
-      },
-      dataZoom: {
-        disabled: false,
-      },
-      grid: {
-        show: true,
-        top: '4px',
-        left: '10px',
-        right: '4px',
-        bottom: '4px',
-        containLabel: true,
-      },
-      series: [
-        {
-          name: 'Jingle Jam 2022',
-          data: data2022(),
-          type: 'line',
-          tooltip: {
-            show: true,
-            formatter: formatter2022,
-          },
-        },
-        {
-          name: 'Jingle Jam 2021',
-          data: data2021(),
-          type: 'line',
-          tooltip: {
-            show: true,
-            formatter: formatter2021,
-          },
-        },
-        {
-          name: 'Jingle Jam 2020',
-          data: data2020(),
-          type: 'line',
-          tooltip: {
-            show: true,
-            formatter: formatter2020,
-          },
-        },
-      ],
-    }
-  }
-  const formatter2022 = params => {
-    const dataIndex = params.dataIndex
-    const slot = donations2022.at(dataIndex)
-    const date = DateTime.fromISO(slot.date)
-    const f = date.toFormat('MMM dd, HH:mm')
-    return `
-                  ${params.seriesName} ${f} ${date.offsetNameShort}
-                  <br>${params.marker}<b>${params.value}£</b>`
-
-    // return `${params.seriesName}<br/>`
-  }
-  const formatter2021 = params => {
-    const dataIndex = params.dataIndex
-    const slot = donations2021.at(dataIndex)
-    const date = DateTime.fromISO(slot.date)
-    const f = date.toFormat('MMM dd, HH:mm')
-    return `
-                  ${params.seriesName} ${f} ${date.offsetNameShort}
-                  <br>${params.marker}<b>${params.value}£</b>`
-
-    // return `${params.seriesName}<br/>`
-  }
-  const formatter2020 = params => {
-    const dataIndex = params.dataIndex
-    const slot = donations2020.at(dataIndex)
-    const date = DateTime.fromISO(slot.date)
-    const f = date.toFormat('MMM dd, HH:mm')
-    return `
-                  ${params.seriesName} ${f} ${date.offsetNameShort}
-                  <br>${params.marker}<b>${params.value}£</b>`
-
-    // return `${params.seriesName}<br/>`
-  }
-  return (
-    <div class={'flex w-full flex-col gap-2'}>
-      <p class={'text-xl text-white'}>Total Donations</p>
-      <div class={'bg-white'}>
-        <ECharts height={400} width={1200} option={chartOptions()} />
-      </div>
-    </div>
-  )
-}
 export default StatsPage

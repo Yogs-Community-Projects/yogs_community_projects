@@ -1,9 +1,10 @@
 import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
-import { Bars, ChartType } from './BarChartEnums'
+import { Bars, ChartDataType, ChartType, OnStreamType } from './BarChartEnums'
 
 const useBarChartFilterHook = () => {
   const [bars, setBars] = createSignal<Bars>(Bars.total)
   const [type, setType] = createSignal<ChartType>(ChartType.total)
+  const [dataType, setDataType] = createSignal<ChartDataType>(ChartDataType.yogsStreams)
 
   const [sortByAmount, setSortByAmount] = createSignal<boolean>(false)
   const [top15, setTop15] = createSignal<boolean>(false)
@@ -23,6 +24,8 @@ const useBarChartFilterHook = () => {
     setExcludeDay1,
     excludeNights,
     setExcludeNights,
+    dataType,
+    setDataType,
   }
 }
 
@@ -33,3 +36,19 @@ export const BarChartFilterProvider: ParentComponent = props => {
   return <BarChartFilterContext.Provider value={hook}>{props.children}</BarChartFilterContext.Provider>
 }
 export const useBarChartFilter = () => useContext(BarChartFilterContext)
+
+const useChartOnStreamFilterHook = () => {
+  const [bars, setBars] = createSignal<OnStreamType>(OnStreamType.appearances)
+  const [sortByAmount, setSortByAmount] = createSignal<boolean>(true)
+  const [top15, setTop15] = createSignal<boolean>(true)
+
+  return { bars, setBars, sortByAmount, setSortByAmount, top15, setTop15 }
+}
+
+const ChartOnStreamFilterContext = createContext<ReturnType<typeof useChartOnStreamFilterHook>>()
+
+export const ChartOnStreamFilterProvider: ParentComponent = props => {
+  const hook = useChartOnStreamFilterHook()
+  return <ChartOnStreamFilterContext.Provider value={hook}>{props.children}</ChartOnStreamFilterContext.Provider>
+}
+export const useChartOnStreamFilter = () => useContext(ChartOnStreamFilterContext)

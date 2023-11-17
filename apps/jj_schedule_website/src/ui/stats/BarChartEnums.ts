@@ -8,4 +8,16 @@ export enum Bars {
 export enum ChartType {
   total = 'Total',
   amountPerMinute = 'Amount per minute',
+  percentageOfTotal = '% of Total',
+}
+
+export enum ChartDataType {
+  yogsStreams = 'Yogs Streams',
+  hourly = 'Hourly',
+}
+
+export enum OnStreamType {
+  appearances = 'Appearances',
+  hoursStreamed = 'Hours streamed',
+  percentageOfTotal = '% of all streams',
 }
