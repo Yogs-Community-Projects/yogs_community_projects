@@ -1,13 +1,98 @@
 import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
 import { useScheduleData, useSlots } from './providers/ScheduleDataProvider'
 import { useCreatorFilter } from './providers/CreatorFilterProvider'
-import { Dialog, ToggleButton } from '@kobalte/core'
+import { Dialog, ToggleButton, Tooltip } from '@kobalte/core'
 import { CgClose } from 'solid-icons/cg'
 import { FaRegularSquare, FaSolidSquareCheck } from 'solid-icons/fa'
 import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { useAnalytics } from '../../AnalyticsProvider'
 import { twMerge } from 'tailwind-merge'
 import { BsPeopleFill } from 'solid-icons/bs'
+import { BiRegularReset, BiRegularShare } from 'solid-icons/bi'
+
+const useCopyFilterUrl = () => {
+  const { makeLink } = useCreatorFilter()
+
+  return async () => {
+    const url = makeLink()
+    try {
+      let copyValue = ''
+
+      if (url) {
+        copyValue = url
+      }
+
+      await navigator.clipboard.writeText(copyValue)
+    } catch (e) {
+      console.log(e.toString())
+    }
+    try {
+      window.alert(`Copied ${url} to your clipboard`)
+    } catch (e) {
+      console.log(e.toString())
+    }
+  }
+}
+
+export const FilterResetButton: Component = () => {
+  const { isEmpty, reset } = useCreatorFilter()
+  return (
+    <Show when={!isEmpty()}>
+      <div class={'w-data h-data p-schedule'}>
+        <div class={'schedule-card-white flex flex-row'}>
+          <Tooltip.Root openDelay={300} closeDelay={300}>
+            <Tooltip.Trigger
+              class={
+                'hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-2xl transition-all hover:scale-105'
+              }
+              onClick={reset}
+            >
+              <div class={'flex w-full flex-row items-center justify-around'}>
+                <BiRegularReset />
+              </div>
+            </Tooltip.Trigger>
+            <Tooltip.Portal>
+              <Tooltip.Content class={'bg-accent rounded p-2 text-white'}>
+                <Tooltip.Arrow />
+                <p>Reset Filter</p>
+              </Tooltip.Content>
+            </Tooltip.Portal>
+          </Tooltip.Root>
+        </div>
+      </div>
+    </Show>
+  )
+}
+export const FilterShareButton: Component = () => {
+  const { isEmpty } = useCreatorFilter()
+  const copy = useCopyFilterUrl()
+  return (
+    <Show when={!isEmpty() && navigator.clipboard}>
+      <div class={'w-data h-data p-schedule'}>
+        <div class={'schedule-card-white flex flex-row'}>
+          <Tooltip.Root openDelay={300} closeDelay={300}>
+            <Tooltip.Trigger
+              class={
+                'hover:bg-accent-50 flex flex-1 flex-col items-center justify-center rounded-2xl transition-all hover:scale-105'
+              }
+              onClick={copy}
+            >
+              <div class={'flex w-full flex-row items-center justify-around'}>
+                <BiRegularShare />
+              </div>
+            </Tooltip.Trigger>
+            <Tooltip.Portal>
+              <Tooltip.Content class={'bg-accent rounded p-2 text-white'}>
+                <Tooltip.Arrow />
+                <p>Share Schedule Link</p>
+              </Tooltip.Content>
+            </Tooltip.Portal>
+          </Tooltip.Root>
+        </div>
+      </div>
+    </Show>
+  )
+}
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -65,6 +150,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { creators, includes, toggle, reset, filter, makeLink, creatorList, appearanceCount, isSlotPartOfFilter } =
     useCreatorFilter()
   const [search, setSearch] = createSignal('')
+  const copy = useCopyFilterUrl()
 
   const { log } = useAnalytics()
 
@@ -146,35 +232,15 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         </Switch>
       </div>
       <div class={'flex h-[72px] flex-row items-center justify-end gap-2 p-4'}>
-        <button
-          class={'bg-primary rounded-xl p-2 text-white disabled:bg-gray-500 disabled:opacity-75'}
-          disabled={filter().length == 0}
-          onclick={async () => {
-            const url = makeLink()
-            try {
-              let copyValue = ''
-
-              if (!navigator.clipboard) {
-                throw new Error("Browser don't have support for native clipboard.")
-              }
-
-              if (url) {
-                copyValue = url
-              }
-
-              await navigator.clipboard.writeText(copyValue)
-            } catch (e) {
-              console.log(e.toString())
-            }
-            try {
-              window.alert(`Copied ${url}`)
-            } catch (e) {
-              console.log(e.toString())
-            }
-          }}
-        >
-          Share Link
-        </button>
+        <Show when={navigator.clipboard}>
+          <button
+            class={'bg-primary rounded-xl p-2 text-white disabled:bg-gray-500 disabled:opacity-75'}
+            disabled={filter().length == 0}
+            onclick={copy}
+          >
+            Share Link
+          </button>
+        </Show>
         <button
           class={'bg-primary rounded-xl p-2 text-white'}
           onclick={() => {
@@ -189,6 +255,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
             onClose()
             log('schedule_filter', {
               filter: filter().join(','),
+              filter_url: makeLink(),
               schedule: schedule.name,
             })
           }}

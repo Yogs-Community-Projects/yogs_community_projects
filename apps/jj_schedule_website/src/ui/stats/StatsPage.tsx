@@ -19,7 +19,8 @@ const StatsPage: Component = () => {
   const donations = () => expandedItem().includes('donations')
   const yogs = () => expandedItem().includes('yogs')
   return (
-    <div class={'flex flex-col gap-4'}>
+    <div class={'flex flex-col items-center gap-4'}>
+      <p class={'p-2 text-2xl font-bold text-white md:text-4xl'}>Jingle Jam Statistics</p>
       <Accordion.Root collapsible={true} value={expandedItem()} onChange={setExpandedItem} class={''}>
         <Accordion.Item value={'donations'} class={'flex flex-col items-center transition-all'}>
           <Accordion.Header>

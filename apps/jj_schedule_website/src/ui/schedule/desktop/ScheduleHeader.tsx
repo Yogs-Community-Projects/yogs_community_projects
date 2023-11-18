@@ -2,17 +2,20 @@ import { Component } from 'solid-js'
 import { useWeekIndexSetter } from '../providers/WeekIndexProvider'
 import { useScheduleData } from '../providers/ScheduleDataProvider'
 import { FaSolidChevronLeft, FaSolidChevronRight } from 'solid-icons/fa'
-import { FilterButton } from '../ScheduleCreatorFilterButton'
+import { FilterButton, FilterResetButton, FilterShareButton } from '../ScheduleCreatorFilterButton'
 import { CalendarExportButton } from '../ScheduleCalendarExportButton'
+import { Tooltip } from '@kobalte/core'
 
 export const ScheduleHeader: Component = () => {
   return (
-    <div class={'w-schedule flex flex-row'}>
+    <div class={'w-schedule flex snap-start flex-row'}>
       <div class={'h-data w-data p-schedule'} />
       <Title />
       <div class={'flex-1'} />
-      <CalendarExportButton />
+      <FilterShareButton />
+      <FilterResetButton />
       <FilterButton />
+      <CalendarExportButton />
       <WeekButtons />
     </div>
   )
@@ -33,22 +36,38 @@ const WeekButtons: Component = () => {
   return (
     <div class={'w-slot h-data p-schedule'}>
       <div class={'schedule-card-white flex flex-row'}>
-        <button
-          class={
-            'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl transition-all hover:scale-105'
-          }
-          onclick={prev}
-        >
-          <FaSolidChevronLeft />
-        </button>
-        <button
-          class={
-            'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-r-2xl transition-all hover:scale-105'
-          }
-          onclick={next}
-        >
-          <FaSolidChevronRight />
-        </button>
+        <Tooltip.Root openDelay={300} closeDelay={300}>
+          <Tooltip.Trigger
+            class={
+              'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-l-2xl transition-all hover:scale-105'
+            }
+            onClick={prev}
+          >
+            <FaSolidChevronLeft />
+          </Tooltip.Trigger>
+          <Tooltip.Portal>
+            <Tooltip.Content class={'bg-accent rounded p-2 text-white'}>
+              <Tooltip.Arrow />
+              <p>Previous Week</p>
+            </Tooltip.Content>
+          </Tooltip.Portal>
+        </Tooltip.Root>
+        <Tooltip.Root openDelay={300} closeDelay={300}>
+          <Tooltip.Trigger
+            class={
+              'hover:bg-accent-50 ripple flex flex-1 flex-col items-center justify-center rounded-r-2xl transition-all hover:scale-105'
+            }
+            onClick={next}
+          >
+            <FaSolidChevronRight />
+          </Tooltip.Trigger>
+          <Tooltip.Portal>
+            <Tooltip.Content class={'bg-accent rounded p-2 text-white'}>
+              <Tooltip.Arrow />
+              <p>Next Week</p>
+            </Tooltip.Content>
+          </Tooltip.Portal>
+        </Tooltip.Root>
       </div>
     </div>
   )

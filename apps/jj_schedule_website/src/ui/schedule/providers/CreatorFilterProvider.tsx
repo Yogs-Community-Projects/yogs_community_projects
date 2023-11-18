@@ -77,19 +77,24 @@ const useHook = () => {
     }
   })
 
+  const normalizedNames = () =>
+    filter()
+      .map(id => creatorIdMap().get(id))
+      .sort((a, b) => a.localeCompare(b))
+
   createEffect(() => {
     if (loaded()) {
       if (!isEmpty()) {
-        const normalizedNames = filter()
-          .map(id => creatorIdMap().get(id))
-          .join(',')
-        setSearchParams({ filter: normalizedNames })
-        if (filter().length > 1) {
+        const namesList = normalizedNames()
+        const names = namesList.join('%2C')
+        if (namesList.length > 1) {
           if (and()) {
-            setSearchParams({ filterType: 'and' })
+            setSearchParams({ filterType: 'and', filter: names })
           } else {
-            setSearchParams({ filterType: 'or' })
+            setSearchParams({ filterType: 'or', filter: names })
           }
+        } else {
+          setSearchParams({ filter: names })
         }
       } else {
         setSearchParams({ filter: undefined, filterType: undefined })
@@ -119,14 +124,12 @@ const useHook = () => {
   const isEmpty = () => filter().length == 0
 
   const makeLink = () => {
-    const normalizedNames = filter()
-      .map(id => creatorIdMap().get(id))
-      .join(',')
+    const names = normalizedNames().join(',')
     let filterType = ''
     if (filter().length > 1) {
       filterType = `filterType=${and() ? 'and' : 'or'}&`
     }
-    return `https://jj.yogs.app${location.pathname}?${filterType}filter=${normalizedNames}`
+    return `https://jj.yogs.app${location.pathname}?${filterType}filter=${names}`
   }
 
   const toggleAnd = () => setAnd(v => !v)

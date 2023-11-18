@@ -48,7 +48,7 @@ const ScheduleTime: Component<ScheduleTimeProps> = props => {
   const end = DateTime.fromISO(time.start).plus(duration)
 
   return (
-    <div class={'p-schedule w-data h-slot text-[1vw]'}>
+    <div class={'p-schedule w-data h-slot snap-start text-[1vw]'}>
       <div class={'schedule-card-white flex h-full flex-col place-content-around items-center'}>
         <p>
           {start.toLocaleString({
