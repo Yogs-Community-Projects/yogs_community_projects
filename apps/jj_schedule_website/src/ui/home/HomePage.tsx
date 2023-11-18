@@ -3,12 +3,15 @@ import { Component } from 'solid-js'
 
 const Disclaimer: Component = () => {
   return (
-    <p class={'px-4 pb-8 text-base md:text-xl lg:px-32'}>
-      This Jingle Jam schedule <strong>is maintained by the community</strong>. If you find errors or see that a stream
-      is missing use the contact info below. Streams that appear here are not guaranteed to happen or might be delayed.
-      For more information visit the Jingle Jam Twitter page. This schedule is a{' '}
-      <strong>fan Project and not associated with the Jingle Jam, the Yogscast or their partners.</strong>
-    </p>
+    <div class={'flex flex-col px-4 pb-8 text-base md:text-xl lg:px-32'}>
+      <p class={''}>Once the Yogscast Jingle Jam schedule is published it will be shown here.</p>
+      <p class={''}>
+        This site <strong>is maintained by the community</strong>. If you find errors or see that a stream is missing
+        use the contact info below. Streams that appear here are not guaranteed to happen or might be delayed. For more
+        information visit the Jingle Jam Twitter page. This site is a{' '}
+        <strong>fan Project and not associated with the Jingle Jam, the Yogscast or their partners.</strong>
+      </p>
+    </div>
   )
 }
 

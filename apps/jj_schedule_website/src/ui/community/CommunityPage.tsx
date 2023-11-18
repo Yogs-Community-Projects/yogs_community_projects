@@ -64,6 +64,9 @@ const FundraiserBody: Component<{ fundraiserData: JJCommunityFundraiser }> = pro
 
   return (
     <div class={'flex flex-col items-center gap-4'}>
+      <p class={'text-center text-base text-white'}>
+        This is data from 2022. Once this years fundraiser are online they will be shown here.
+      </p>
       <p class={'mb-2 text-center text-base text-white'}>
         Last update, {DateTime.fromISO(props.fundraiserData.date).toLocaleString(DateTime.DATETIME_MED)}
       </p>

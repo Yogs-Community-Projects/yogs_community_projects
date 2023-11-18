@@ -42,9 +42,9 @@ const ScheduleDisclaimer: Component = () => {
         Last updated, {DateTime.fromISO(schedule.updatedAt).toLocaleString(DateTime.DATETIME_FULL)}
       </p>
       <p>
-        This Jingle Jam schedule is maintained <strong>by the community</strong>. If you find errors or see that a
-        stream is missing use the contact info below. Streams that appear here are not guaranteed to happen or might be
-        delayed. For more information visit the Jingle Jam Twitter page.
+        This Yogscast Jingle Jam schedule is maintained <strong>by the community</strong>. If you find errors or see
+        that a stream is missing use the contact info below. Streams that appear here are not guaranteed to happen or
+        might be delayed. For more information visit the Jingle Jam Twitter page.
         <strong>
           This schedule is a fan Project and not associated with the Jingle Jam, the Yogscast or their partners.
         </strong>
