@@ -1,4 +1,4 @@
-import { Component, lazy, onMount, ParentComponent, Show } from 'solid-js'
+import { Component, lazy, onMount, ParentComponent, Show, Suspense } from 'solid-js'
 import { Route, Router, Routes, useLocation, useNavigate } from '@solidjs/router'
 import {
   schedule2020RouteDataFunc,
@@ -33,7 +33,7 @@ const Page: ParentComponent<{ title: string; desc: string }> = props => {
       page_location: location.pathname,
     })
   })
-  return <>{props.children}</>
+  return <Suspense fallback={<p class={'text-center text-white'}>Loading...</p>}>{props.children}</Suspense>
 
   /*
   *       <Title>{props.title}</Title>
