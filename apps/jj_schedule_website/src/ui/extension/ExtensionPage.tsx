@@ -7,23 +7,28 @@ const ExtensionPage: Component = () => {
   return (
     <div class={'mx-auto flex flex-col items-center p-1 text-center text-white md:w-[75%]'}>
       <p class={'p-2 text-2xl font-bold md:text-4xl'}>Jingle Jam Community Twitch Extension</p>
+      <a
+        class={'p-1 text-xl md:p-2'}
+        href={'https://dashboard.twitch.tv/extensions/7m5fitr4o8raxn6fv59lndv2iy0uuz'}
+        target={'_blank'}
+      >
+        Get the extension on Twitch
+      </a>
       <FeedbackButtons />
       <div class={'flex flex-col items-center p-2'}>
         <img class={'md:w-[50%]'} src={screenshot} alt={'Discovery'} />
-        <a class={'p-1 md:p-4'} href={'https://dashboard.twitch.tv/extensions/7m5fitr4o8raxn6fv59lndv2iy0uuz'}>
-          Get the current version of the extension on Twitch
-        </a>
-
         <p>This Extension is for everyone who participates in the Jingle Jam.</p>
         <p>It allow you to see the charities, community fundraiser & the Yogscast Jingle Jam Schedule</p>
         <p>Streamers can rearrange or disable tabs.</p>
         <p>This new version is also available in the Twitch mobile app.</p>
-
         <p>
           Thanks to <a href={'https://www.twitch.tv/nairdwoody'}>Nairdwood</a> for making the Extension assets. And
           thanks to <a href={'https://www.twitch.tv/no1mann'}>No1mann</a> for the access to the Jingle Jam Donation
           Tracker.
         </p>
+        <a class={'p-1 text-xl md:p-2'} href={'https://dashboard.twitch.tv/extensions/7m5fitr4o8raxn6fv59lndv2iy0uuz'}>
+          Get the current version of the extension on Twitch
+        </a>
       </div>
 
       <div class={'flex flex-col items-center p-2'}>
