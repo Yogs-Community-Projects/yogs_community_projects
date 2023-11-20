@@ -10,37 +10,6 @@ import { twMerge } from 'tailwind-merge'
 import { SimpleScheduleOverviewComponent } from './SimpleScheduleOverviewComponent'
 import { FeedbackButtons } from '../../ui/components/FeedbackButtons'
 import { useAnalytics } from '../../AnalyticsProvider'
-/*
-export const OverlayOverview: Component = () => {
-  return (
-    <div class={'p-4'}>
-      <p class={'text-3xl'}>JJ OBS Overlays</p>
-      <p>
-        These are JJ related overlays meant to be used in <a href={'https://obsproject.com/'}>OBS</a> browser sources.
-        Configure the Overlays and use these links and add them to your <a href={'https://obsproject.com/'}>OBS</a>{' '}
-        scenes.
-      </p>
-      <p class={'text-xl font-bold text-red-600'}>
-        The Overlays are still work in progress. For demo purposes data from 2022 is used.
-      </p>
-      <a href={'https://obsproject.com/kb/browser-source#:~:text=Description,video%2C%20and%20even%20audio%20tasks.'}>
-        How to add a Browser source
-      </a>
-      <div class={'visible md:invisible'}>
-        <p>Use a desktop to configure your overlays</p>
-      </div>
-      <div class={'hidden grid-cols-2 md:grid'}>
-        <ScheduleOverviewComponent />
-        <div>
-          <FundraiserOverviewComponent />
-          <CharitiesOverviewComponent />
-          <CharitiesOverviewComponent2 />
-        </div>
-      </div>
-    </div>
-  )
-}
-*/
 
 const OverlayOverview: Component = () => {
   const [open, setOpen] = createSignal(false)
@@ -60,13 +29,13 @@ const OverlayOverview: Component = () => {
         </p>
         <p class={'text-xl font-bold'}>Feedback on these overlays is very much appreciated.</p>
         <a href={'https://obsproject.com/kb/browser-source'}>How to add a Browser source</a>
-        <div class={'visible md:invisible'}>
-          <p>Use a desktop to configure the overlays</p>
-        </div>
+        <p class={'visible p-2 font-bold md:invisible'}>Use a desktop to configure the overlays</p>
       </div>
       <Body />
       <div
-        class={'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:w-[50%] md:text-2xl'}
+        class={
+          'mx-auto hidden w-fit flex-col items-center p-1 text-center text-base text-white md:flex md:w-[50%] md:text-2xl'
+        }
       >
         <p>Screenshots</p>
         <Dialog.Root open={open()} onOpenChange={setOpen}>
@@ -84,7 +53,12 @@ const OverlayOverview: Component = () => {
           </div>
           <Dialog.Portal>
             <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
-            <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+            <div
+              class={'fixed inset-0 z-50 flex items-center justify-center'}
+              onclick={() => {
+                setOpen(!open())
+              }}
+            >
               <Dialog.Content class={'h-full w-[90%] p-2'}>
                 <img
                   class={''}
@@ -111,7 +85,12 @@ const OverlayOverview: Component = () => {
           </div>
           <Dialog.Portal>
             <Dialog.Overlay class={'fixed inset-0 z-50 bg-black bg-opacity-20'} />
-            <div class={'fixed inset-0 z-50 flex items-center justify-center'}>
+            <div
+              class={'fixed inset-0 z-50 flex items-center justify-center'}
+              onclick={() => {
+                setOpen2(!open2())
+              }}
+            >
               <Dialog.Content class={'h-full w-[90%] p-2'}>
                 <img
                   class={''}
@@ -126,6 +105,26 @@ const OverlayOverview: Component = () => {
             </div>
           </Dialog.Portal>
         </Dialog.Root>
+      </div>
+
+      <div
+        class={
+          'mx-auto flex w-fit flex-col items-center p-1 text-center text-base text-white md:hidden md:w-[50%] md:text-2xl'
+        }
+      >
+        <p>Screenshots</p>
+
+        <div class={'flex flex-col gap-2 p-2'}>
+          <img src={overlay1} alt={'Screenshot from OBS'} loading={'lazy'} />
+          <p class={'text-xs'}>
+            A OBS Scene with all available JJ Community Overlays. The background is an asset from the JJ Streamer
+            Toolkit 2022
+          </p>
+        </div>
+        <div class={'flex flex-col gap-2 p-2'}>
+          <img class={''} src={overlay2} alt={'Screenshot from OBS'} loading={'lazy'} />
+          <p class={'text-xs'}>Editing the Community Fundraiser scrolling overlay</p>
+        </div>
       </div>
     </div>
   )
