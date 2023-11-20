@@ -1,10 +1,8 @@
-import { Component, createContext, Match, ParentComponent, Switch, useContext } from 'solid-js'
+import { createContext, Match, ParentComponent, Switch, useContext } from 'solid-js'
 import { LoadingPage } from 'jj_twitch_extension/src/ui/components/LoadingPage'
 import { useConfigDB } from '@ycapp/common'
 
 import { JJWebsiteConfig } from '@ycapp/model'
-import { Outlet } from '@solidjs/router'
-import { p } from 'vitest/dist/index-2dd51af4'
 
 const ConfigContext = createContext<JJWebsiteConfig>()
 
