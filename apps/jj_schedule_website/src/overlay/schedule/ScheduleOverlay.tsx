@@ -17,8 +17,8 @@ import {
 import { OverlayHeader } from './OverlayHeader'
 import { DateTime } from 'luxon'
 import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvider'
-import { p } from 'vitest/dist/index-2dd51af4'
 import { twMerge } from 'tailwind-merge'
+import { useConfig } from '../../ui/configProvider/ConfigProvider'
 
 export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
   return (
@@ -35,15 +35,41 @@ export const ScheduleOverlay: Component<{ date?: DateTime }> = props => {
   )
 }
 
-export const ScheduleOverlayComponent: Component<{
+interface Props {
   next: number
   background: string
   header: string[]
   theme: string
   headerTheme: string
   showTimezone: boolean
-}> = props => {
-  const schedule = useScheduleDB().read('jinglejam2023')
+}
+
+export const ScheduleOverlayComponent: Component<Props> = props => {
+  const config = useConfig()
+
+  return (
+    <Switch>
+      <Match when={config.overlay.yogsSchedule}>
+        <Body
+          next={props.next}
+          background={props.background}
+          header={props.header}
+          theme={props.theme}
+          headerTheme={props.headerTheme}
+          showTimezone={props.showTimezone}
+        />
+      </Match>
+      <Match when={!config.overlay.yogsSchedule}>
+        <p class={'rounded bg-white p-2 text-black'}>The Yogs schedule is not available yet</p>
+      </Match>
+    </Switch>
+  )
+}
+
+const Body: Component<Props> = props => {
+  const config = useConfig()
+
+  const schedule = useScheduleDB().read(config.overlay.yogsScheduleId)
   const slots = () =>
     useSlots()
       .filter(slot => {

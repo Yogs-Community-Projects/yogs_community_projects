@@ -9,6 +9,7 @@ import { loadLocalAndRemote, useFirestoreDB } from '@ycapp/common'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 import { twMerge } from 'tailwind-merge'
 import { JJTitleCard } from '../JJTitleCard'
+import { useConfig } from '../../ui/configProvider/ConfigProvider'
 
 export const FundraisersOverlay = () => {
   return (
@@ -21,12 +22,28 @@ export const FundraisersOverlay = () => {
   )
 }
 
-export const FundraisersOverlayComponent: Component<{
+interface Props {
   speed: number
   theme: string
   url: string
   titleLogo: string
-}> = props => {
+}
+
+export const FundraisersOverlayComponent: Component<Props> = props => {
+  const config = useConfig()
+  return (
+    <Switch>
+      <Match when={config.overlay.fundraiser}>
+        <Body speed={props.speed} theme={props.theme} url={props.url} titleLogo={props.titleLogo} />
+      </Match>
+      <Match when={!config.overlay.fundraiser}>
+        <p class={'rounded bg-white p-2 text-black'}>The Fundraisers are not available yet</p>
+      </Match>
+    </Switch>
+  )
+}
+
+const Body: Component<Props> = props => {
   const e = excludedChannel()
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
