@@ -1,0 +1,3199 @@
+{
+  "slots": [
+    {
+      "label": "Office Cam",
+      "color": "#00bbe0",
+      "date": "2020-12-01T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 12937.65,
+      "fundraiser": 395.56,
+      "total": 17419.58
+    },
+    {
+      "label": "Pre Jingle Jangle",
+      "color": "#009fd4",
+      "date": "2020-12-01T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 31515.99,
+      "fundraiser": -721.25,
+      "total": 42156.06
+    },
+    {
+      "label": "Jingle Cats",
+      "color": "#0081c7",
+      "date": "2020-12-01T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 442850.97,
+      "fundraiser": 4587.34,
+      "total": 591194.04
+    },
+    {
+      "label": "OpenTTD",
+      "color": "#0069ba",
+      "date": "2020-12-01T21:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 137850.65,
+      "fundraiser": -956.64,
+      "total": 184438.67
+    },
+    {
+      "label": "Night 1",
+      "color": "#aaaaaa",
+      "date": "2020-12-02T00:00:00.000000+0000",
+      "duration": 39600,
+      "yogs": 97686.33,
+      "fundraiser": -1563.5,
+      "total": 129928.77
+    },
+    {
+      "label": "Christmas Colony",
+      "color": "#ffd900",
+      "date": "2020-12-02T11:00:00.000+0000",
+      "duration": 32400,
+      "yogs": 121071.83,
+      "fundraiser": 774.5,
+      "total": 161266.56
+    },
+    {
+      "label": "Jackbox",
+      "color": "#ffa600",
+      "date": "2020-12-02T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 26509.66,
+      "fundraiser": -1524.5,
+      "total": 35551.85
+    },
+    {
+      "label": "Night 2",
+      "color": "#aaaaaa",
+      "date": "2020-12-02T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 39552.95,
+      "fundraiser": -375.0,
+      "total": 52406.46
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#a7cc00",
+      "date": "2020-12-03T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 25924.96,
+      "fundraiser": 680.0,
+      "total": 34404.81
+    },
+    {
+      "label": "Would you go on a date",
+      "color": "#74b800",
+      "date": "2020-12-03T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 21395.26,
+      "fundraiser": 225.0,
+      "total": 28481.62
+    },
+    {
+      "label": "Hat Films Christmas Album",
+      "color": "#49a300",
+      "date": "2020-12-03T17:00:00.000+0000",
+      "duration": 21600,
+      "yogs": 63767.19,
+      "fundraiser": 468.0,
+      "total": 85681.14
+    },
+    {
+      "label": "Night 3",
+      "color": "#aaaaaa",
+      "date": "2020-12-03T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 30932.81,
+      "fundraiser": -1453.0,
+      "total": 41150.9
+    },
+    {
+      "label": "Big Rips Big Fishing",
+      "color": "#fc7600",
+      "date": "2020-12-04T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 11941.71,
+      "fundraiser": 206.0,
+      "total": 15932.52
+    },
+    {
+      "label": "Jerk Off",
+      "color": "#f55e00",
+      "date": "2020-12-04T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 27244.48,
+      "fundraiser": 710.0,
+      "total": 36567.37
+    },
+    {
+      "label": "Farming Sim",
+      "color": "#ed4300",
+      "date": "2020-12-04T17:00:00.000+0000",
+      "duration": 21600,
+      "yogs": 39874.06,
+      "fundraiser": -654.0,
+      "total": 53629.38
+    },
+    {
+      "label": "Night 4",
+      "color": "#aaaaaa",
+      "date": "2020-12-04T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 25250.69,
+      "fundraiser": -362.0,
+      "total": 34001.91
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#00e8c5",
+      "date": "2020-12-05T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 18040.44,
+      "fundraiser": 50.0,
+      "total": 24363.99
+    },
+    {
+      "label": "Tom Clark's Wheel of Wonder",
+      "color": "#00deb1",
+      "date": "2020-12-05T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 15301.55,
+      "fundraiser": 1280.0,
+      "total": 20608.01
+    },
+    {
+      "label": "MCC",
+      "color": "#00d49b",
+      "date": "2020-12-05T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 16430.15,
+      "fundraiser": -1105.0,
+      "total": 22128.06
+    },
+    {
+      "label": "Armchair Admirals TD",
+      "color": "#00c98a",
+      "date": "2020-12-05T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 25079.63,
+      "fundraiser": 35.0,
+      "total": 33878.07
+    },
+    {
+      "label": "Night 5",
+      "color": "#aaaaaa",
+      "date": "2020-12-05T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 23714.99,
+      "fundraiser": -210.0,
+      "total": 31972.95
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#f74acc",
+      "date": "2020-12-06T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 9799.32,
+      "fundraiser": 280.0,
+      "total": 13197.66
+    },
+    {
+      "label": "Hades Challange",
+      "color": "#eb36b1",
+      "date": "2020-12-06T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 12094.16,
+      "fundraiser": 31.0,
+      "total": 16288.32
+    },
+    {
+      "label": "Poker Tournament",
+      "color": "#de2396",
+      "date": "2020-12-06T17:00:00.000+0000",
+      "duration": 21600,
+      "yogs": 26807.51,
+      "fundraiser": -156.0,
+      "total": 36070.84
+    },
+    {
+      "label": "Night 6",
+      "color": "#aaaaaa",
+      "date": "2020-12-06T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 16913.99,
+      "fundraiser": -230.0,
+      "total": 22612.74
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#ffa600",
+      "date": "2020-12-07T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 6569.14,
+      "fundraiser": 51.0,
+      "total": 8625.68
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#ff7b00",
+      "date": "2020-12-07T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 8235.37,
+      "fundraiser": -101.0,
+      "total": 11012.45
+    },
+    {
+      "label": "Civ 5",
+      "color": "#ff5500",
+      "date": "2020-12-07T17:00:00.000+0000",
+      "duration": 21600,
+      "yogs": 86152.97,
+      "fundraiser": 463.0,
+      "total": 114585.17
+    },
+    {
+      "label": "Night 7",
+      "color": "#aaaaaa",
+      "date": "2020-12-07T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 13603.34,
+      "fundraiser": -512.0,
+      "total": 18027.04
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#00bbe0",
+      "date": "2020-12-08T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 6959.43,
+      "fundraiser": 229.0,
+      "total": 9153.29
+    },
+    {
+      "label": "Among Us",
+      "color": "#008bcc",
+      "date": "2020-12-08T14:00:00.000+0000",
+      "duration": 32400,
+      "yogs": 36619.52,
+      "fundraiser": 165.69,
+      "total": 48642.56
+    },
+    {
+      "label": "Night 8",
+      "color": "#aaaaaa",
+      "date": "2020-12-08T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 11770.48,
+      "fundraiser": -420.69,
+      "total": 15511.94
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#ffd900",
+      "date": "2020-12-09T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 3472.79,
+      "fundraiser": 50.0,
+      "total": 4548.61
+    },
+    {
+      "label": "Don't Starve",
+      "color": "#ffcc00",
+      "date": "2020-12-09T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 4942.25,
+      "fundraiser": 430.0,
+      "total": 6639.7
+    },
+    {
+      "label": "Slag Sleepover",
+      "color": "#ffc400",
+      "date": "2020-12-09T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 9287.78,
+      "fundraiser": -169.0,
+      "total": 12496.82
+    },
+    {
+      "label": "Protessional Strem",
+      "color": "#ffb700",
+      "date": "2020-12-09T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 32529.27,
+      "fundraiser": 49.69,
+      "total": 43768.74
+    },
+    {
+      "label": "PoxNora",
+      "color": "#ffae00",
+      "date": "2020-12-09T23:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 5750.88,
+      "fundraiser": -235.69,
+      "total": 7738.42
+    },
+    {
+      "label": "Night 9",
+      "color": "#aaaaaa",
+      "date": "2020-12-10T02:00:00.000000+0000",
+      "duration": 32400,
+      "yogs": 6355.66,
+      "fundraiser": -150.0,
+      "total": 8485.44
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#a7cc00",
+      "date": "2020-12-10T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 3198.62,
+      "fundraiser": 50.69,
+      "total": 4237.28
+    },
+    {
+      "label": "Hat Films Art Stream",
+      "color": "#7cba00",
+      "date": "2020-12-10T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 7077.95,
+      "fundraiser": -25.69,
+      "total": 9465.28
+    },
+    {
+      "label": "ISP's Wheel of Sorrow",
+      "color": "#5aa800",
+      "date": "2020-12-10T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 6531.64,
+      "fundraiser": 1101.0,
+      "total": 8686.74
+    },
+    {
+      "label": "Fizone Christmas Special",
+      "color": "#3a9600",
+      "date": "2020-12-10T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 16832.42,
+      "fundraiser": -801.77,
+      "total": 22387.15
+    },
+    {
+      "label": "Night 10",
+      "color": "#aaaaaa",
+      "date": "2020-12-10T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 15513.08,
+      "fundraiser": -299.23,
+      "total": 20605.06
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#fc7600",
+      "date": "2020-12-11T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 5786.31,
+      "fundraiser": 150.56,
+      "total": 7593.42
+    },
+    {
+      "label": "Yogs Game Jam Finals",
+      "color": "#f76300",
+      "date": "2020-12-11T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 6937.23,
+      "fundraiser": 97.44,
+      "total": 9220.24
+    },
+    {
+      "label": "Simon's Important Videos",
+      "color": "#f25100",
+      "date": "2020-12-11T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 50668.87,
+      "fundraiser": 307.0,
+      "total": 66577.08
+    },
+    {
+      "label": "Spiff & PFlax CSGO Scrub Tourny",
+      "color": "#ed3b00",
+      "date": "2020-12-11T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 10600.97,
+      "fundraiser": -18.0,
+      "total": 13929.61
+    },
+    {
+      "label": "Night 11",
+      "color": "#aaaaaa",
+      "date": "2020-12-11T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 20620.47,
+      "fundraiser": -487.0,
+      "total": 27160.89
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#00e8c5",
+      "date": "2020-12-12T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 10943.97,
+      "fundraiser": 390.0,
+      "total": 14380.19
+    },
+    {
+      "label": "Minecraft Community Build",
+      "color": "#00dbac",
+      "date": "2020-12-12T14:00:00.000+0000",
+      "duration": 21600,
+      "yogs": 29386.05,
+      "fundraiser": 40.0,
+      "total": 38613.01
+    },
+    {
+      "label": "PFlax Rust RP",
+      "color": "#00cf94",
+      "date": "2020-12-12T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 10598.31,
+      "fundraiser": -225.0,
+      "total": 13926.14
+    },
+    {
+      "label": "Night 12",
+      "color": "#aaaaaa",
+      "date": "2020-12-12T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 21141.16,
+      "fundraiser": -180.0,
+      "total": 27812.28
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#f74acc",
+      "date": "2020-12-13T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 14337.72,
+      "fundraiser": 662.0,
+      "total": 18806.47
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#ed39b7",
+      "date": "2020-12-13T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 23827.32,
+      "fundraiser": 11.0,
+      "total": 31308.68
+    },
+    {
+      "label": "High Rollers Christmas Special",
+      "color": "#e329a2",
+      "date": "2020-12-13T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 34621.67,
+      "fundraiser": 1525.0,
+      "total": 45557.88
+    },
+    {
+      "label": "Sweaty Shooters",
+      "color": "#d91a89",
+      "date": "2020-12-13T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 23614.85,
+      "fundraiser": -1408.0,
+      "total": 31095.42
+    },
+    {
+      "label": "Night 13",
+      "color": "#aaaaaa",
+      "date": "2020-12-13T23:00:00.000000+0000",
+      "duration": 43200,
+      "yogs": 36295.41,
+      "fundraiser": -649.0,
+      "total": 47577.2
+    },
+    {
+      "label": "Stocking Stuffers",
+      "color": "#ffa600",
+      "date": "2020-12-14T11:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 22680.5,
+      "fundraiser": 1009.69,
+      "total": 29769.14
+    },
+    {
+      "label": "Warhammer Painting",
+      "color": "#ff8400",
+      "date": "2020-12-14T14:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 34354.48,
+      "fundraiser": 2800.47,
+      "total": 45320.1
+    },
+    {
+      "label": "Fighting Fantasy",
+      "color": "#ff6600",
+      "date": "2020-12-14T17:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 35940.35,
+      "fundraiser": -2961.16,
+      "total": 48025.29
+    },
+    {
+      "label": "Late Late Show",
+      "color": "#ff4400",
+      "date": "2020-12-14T20:00:00.000+0000",
+      "duration": 10800,
+      "yogs": 31692.91,
+      "fundraiser": -103.0,
+      "total": 42401.72
+    }
+  ],
+  "creator_data": [
+    {
+      "creator_id": "0w4JSboJK6RdTDmDKoYL",
+      "name": "Pedguin",
+      "color": "ff5babc7",
+      "streams": 9,
+      "stream_percentage": 18.75,
+      "duration": 151200,
+      "duration_percentage": 24.56
+    },
+    {
+      "creator_id": "3fNrixu9cDhggDXyLTwG",
+      "name": "Alex the Rambler",
+      "color": "ff70a760",
+      "streams": 6,
+      "stream_percentage": 12.5,
+      "duration": 108000,
+      "duration_percentage": 17.54
+    },
+    {
+      "creator_id": "4ty8OfAA0hoXSV6trUY9",
+      "name": "Sips",
+      "color": "ff99adf1",
+      "streams": 5,
+      "stream_percentage": 10.42,
+      "duration": 75600,
+      "duration_percentage": 12.28
+    },
+    {
+      "creator_id": "5h6PnMWEghJSDaS5ZNbc",
+      "name": "Zylus",
+      "color": "ff58a800",
+      "streams": 6,
+      "stream_percentage": 12.5,
+      "duration": 75600,
+      "duration_percentage": 12.28
+    },
+    {
+      "creator_id": "6oSnPSBKF79EBwS1G5DF",
+      "name": "Harry",
+      "color": "fff8f060",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 43200,
+      "duration_percentage": 7.02
+    },
+    {
+      "creator_id": "8K6EIOpBvb6ROSHWHx9Q",
+      "name": "Duncan",
+      "color": "ff60b8e8",
+      "streams": 9,
+      "stream_percentage": 18.75,
+      "duration": 172800,
+      "duration_percentage": 28.07
+    },
+    {
+      "creator_id": "AZGGyF9uschXdM8gGB1v",
+      "name": "Daltos",
+      "color": "ff3b5882",
+      "streams": 6,
+      "stream_percentage": 12.5,
+      "duration": 108000,
+      "duration_percentage": 17.54
+    },
+    {
+      "creator_id": "Dvsw8FJa8v3LjEXSXr9e",
+      "name": "Ben",
+      "color": "ff5878b8",
+      "streams": 12,
+      "stream_percentage": 25.0,
+      "duration": 205200,
+      "duration_percentage": 33.33
+    },
+    {
+      "creator_id": "EoUzF0nQQGdpY9NlZfeU",
+      "name": "Wilsonator",
+      "color": "ff1b5587",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 10800,
+      "duration_percentage": 1.75
+    },
+    {
+      "creator_id": "G2xAxM8JBwtNIojLq1cE",
+      "name": "Bouphe",
+      "color": "ffe8f028",
+      "streams": 6,
+      "stream_percentage": 12.5,
+      "duration": 97200,
+      "duration_percentage": 15.79
+    },
+    {
+      "creator_id": "Gq7a6r1Pq0loxIUiNk8v",
+      "name": "Lewis",
+      "color": "ff008cf2",
+      "streams": 19,
+      "stream_percentage": 39.58,
+      "duration": 291600,
+      "duration_percentage": 47.37
+    },
+    {
+      "creator_id": "Gz3S1VJlA6iPISXuIl7p",
+      "name": "Briony",
+      "color": "ffcbe3f4",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 32400,
+      "duration_percentage": 5.26
+    },
+    {
+      "creator_id": "HkZh9sasvBrpZ4r22Sb3",
+      "name": "Zoey",
+      "color": "fff68d02",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 10800,
+      "duration_percentage": 1.75
+    },
+    {
+      "creator_id": "Hn8e1EgqFKg2RbJglY2x",
+      "name": "Tom",
+      "color": "ff391a54",
+      "streams": 8,
+      "stream_percentage": 16.67,
+      "duration": 140400,
+      "duration_percentage": 22.81
+    },
+    {
+      "creator_id": "Hz3L8GFTsM0EFg0caGoG",
+      "name": "Hat Films",
+      "color": "ff40c8e8",
+      "streams": 4,
+      "stream_percentage": 8.33,
+      "duration": 86400,
+      "duration_percentage": 14.04
+    },
+    {
+      "creator_id": "MYZPOwKsujCZbtPEJtBG",
+      "name": "Spiff",
+      "color": "ff3880c8",
+      "streams": 9,
+      "stream_percentage": 18.75,
+      "duration": 140400,
+      "duration_percentage": 22.81
+    },
+    {
+      "creator_id": "MsNyFTyL0zikJ4zKOZm2",
+      "name": "Osie",
+      "color": "ffc1b2da",
+      "streams": 4,
+      "stream_percentage": 8.33,
+      "duration": 75600,
+      "duration_percentage": 12.28
+    },
+    {
+      "creator_id": "Ot78GPFYxZbxjK6On2CW",
+      "name": "Chippy",
+      "color": "ff91132f",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 32400,
+      "duration_percentage": 5.26
+    },
+    {
+      "creator_id": "OxMCBocsLB1lXH5tQV6u",
+      "name": "Kim",
+      "color": "ffcf2322",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 54000,
+      "duration_percentage": 8.77
+    },
+    {
+      "creator_id": "QLpFsapfyzIU4TYdVmjM",
+      "name": "Simon",
+      "color": "fff38c3c",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 32400,
+      "duration_percentage": 5.26
+    },
+    {
+      "creator_id": "RuJTT0r57IGKXWtlHNVX",
+      "name": "Sherlock Hulmes",
+      "color": "ffab2607",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 54000,
+      "duration_percentage": 8.77
+    },
+    {
+      "creator_id": "ShFoVukMUs1HAf2YryPl",
+      "name": "Daf",
+      "color": "ff12a4e0",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 21600,
+      "duration_percentage": 3.51
+    },
+    {
+      "creator_id": "Tm2dvIIhVA3xb7nH19jJ",
+      "name": "RTGame",
+      "color": "ff8eaee4",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 54000,
+      "duration_percentage": 8.77
+    },
+    {
+      "creator_id": "WvavBOeHzCXZPBzahkRX",
+      "name": "Breeh",
+      "color": "ff91043a",
+      "streams": 8,
+      "stream_percentage": 16.67,
+      "duration": 129600,
+      "duration_percentage": 21.05
+    },
+    {
+      "creator_id": "c9raygCH9eGa09OLB12t",
+      "name": "High Rollers",
+      "color": "ff282828",
+      "streams": 2,
+      "stream_percentage": 4.17,
+      "duration": 21600,
+      "duration_percentage": 3.51
+    },
+    {
+      "creator_id": "deBUVdSqWrH6FwlXPe2m",
+      "name": "Rythian",
+      "color": "ff6e22a7",
+      "streams": 10,
+      "stream_percentage": 20.83,
+      "duration": 129600,
+      "duration_percentage": 21.05
+    },
+    {
+      "creator_id": "dvynb4nu7GmqelY4HW3f",
+      "name": "Mousie",
+      "color": "ff3098e7",
+      "streams": 6,
+      "stream_percentage": 12.5,
+      "duration": 97200,
+      "duration_percentage": 15.79
+    },
+    {
+      "creator_id": "eE4FNKcFiBhoc3jFb9Fo",
+      "name": "Lydia",
+      "color": "ff262626",
+      "streams": 5,
+      "stream_percentage": 10.42,
+      "duration": 75600,
+      "duration_percentage": 12.28
+    },
+    {
+      "creator_id": "jP4KqZEefrAj53jHZ8HO",
+      "name": "Simon Clark",
+      "color": "ff445160",
+      "streams": 2,
+      "stream_percentage": 4.17,
+      "duration": 32400,
+      "duration_percentage": 5.26
+    },
+    {
+      "creator_id": "kmVGNmGPDoQW8OWMLkmW",
+      "name": "Yogscast Games",
+      "color": "ffe11559",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 10800,
+      "duration_percentage": 1.75
+    },
+    {
+      "creator_id": "o1gdP5407amAmS5vEXvP",
+      "name": "Pyrion",
+      "color": "ffc50741",
+      "streams": 4,
+      "stream_percentage": 8.33,
+      "duration": 54000,
+      "duration_percentage": 8.77
+    },
+    {
+      "creator_id": "rJlQvAiwpuCL4I5qI6Og",
+      "name": "Gemma",
+      "color": "fff7d1a0",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 10800,
+      "duration_percentage": 1.75
+    },
+    {
+      "creator_id": "sMGdgzZrZP8c68C0pFfU",
+      "name": "Fionn",
+      "color": "ff328094",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 10800,
+      "duration_percentage": 1.75
+    },
+    {
+      "creator_id": "t811tuTpZHK0Uzh6LqD9",
+      "name": "Bo",
+      "color": "ffa00002",
+      "streams": 2,
+      "stream_percentage": 4.17,
+      "duration": 32400,
+      "duration_percentage": 5.26
+    },
+    {
+      "creator_id": "uuZ2P6KPhmLVGc7ZjWXR",
+      "name": "Nilesy",
+      "color": "ff264061",
+      "streams": 5,
+      "stream_percentage": 10.42,
+      "duration": 86400,
+      "duration_percentage": 14.04
+    },
+    {
+      "creator_id": "v1aFWA8DXs58iyW2ZFA6",
+      "name": "ISP",
+      "color": "ffc50000",
+      "streams": 1,
+      "stream_percentage": 2.08,
+      "duration": 10800,
+      "duration_percentage": 1.75
+    },
+    {
+      "creator_id": "vz0XWPLfxV9gFyChCgMO",
+      "name": "Ravs",
+      "color": "ffefe700",
+      "streams": 10,
+      "stream_percentage": 20.83,
+      "duration": 162000,
+      "duration_percentage": 26.32
+    },
+    {
+      "creator_id": "yAmEX9kxAZTdKzwQcIsy",
+      "name": "Boba",
+      "color": "ff6936f8",
+      "streams": 6,
+      "stream_percentage": 12.5,
+      "duration": 86400,
+      "duration_percentage": 14.04
+    },
+    {
+      "creator_id": "zFdYfSFj4efXLheSHG5Z",
+      "name": "Gee",
+      "color": "ffc858c6",
+      "streams": 4,
+      "stream_percentage": 8.33,
+      "duration": 64800,
+      "duration_percentage": 10.53
+    },
+    {
+      "creator_id": "zMMAq6kg87R8WsHUS3s0",
+      "name": "Mango",
+      "color": "ffeb6197",
+      "streams": 3,
+      "stream_percentage": 6.25,
+      "duration": 54000,
+      "duration_percentage": 8.77
+    }
+  ],
+  "hours": [
+    {
+      "date": "2020-12-01T11:00:00+00:00",
+      "yogs": 4659.9,
+      "fundraiser": 809.16,
+      "total": 6314.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T12:00:00+00:00",
+      "yogs": 4393.11,
+      "fundraiser": -467.35,
+      "total": 5925.08,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T13:00:00+00:00",
+      "yogs": 3884.64,
+      "fundraiser": 53.75,
+      "total": 5180.39,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T14:00:00+00:00",
+      "yogs": 6687.39,
+      "fundraiser": 1479.89,
+      "total": 8951.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T15:00:00+00:00",
+      "yogs": 11559.72,
+      "fundraiser": 301.86,
+      "total": 15515.4,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T16:00:00+00:00",
+      "yogs": 13268.88,
+      "fundraiser": -2503.0,
+      "total": 17689.42,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T17:00:00+00:00",
+      "yogs": 293075.84,
+      "fundraiser": 1954.33,
+      "total": 391234.97,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T18:00:00+00:00",
+      "yogs": 103717.78,
+      "fundraiser": -1090.6,
+      "total": 138487.69,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T19:00:00+00:00",
+      "yogs": 46057.35,
+      "fundraiser": 3723.61,
+      "total": 61471.38,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T20:00:00+00:00",
+      "yogs": 63085.94,
+      "fundraiser": -802.2,
+      "total": 84380.2,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T21:00:00+00:00",
+      "yogs": 49450.11,
+      "fundraiser": 9266.67,
+      "total": 67883.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T22:00:00+00:00",
+      "yogs": 43631.93,
+      "fundraiser": -6798.12,
+      "total": 56795.15,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-01T23:00:00+00:00",
+      "yogs": 44768.61,
+      "fundraiser": -3425.19,
+      "total": 59760.41,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T00:00:00+00:00",
+      "yogs": 14547.75,
+      "fundraiser": -1354.43,
+      "total": 19455.74,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T01:00:00+00:00",
+      "yogs": 13540.96,
+      "fundraiser": 1141.43,
+      "total": 18080.58,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T02:00:00+00:00",
+      "yogs": 11336.89,
+      "fundraiser": -305.43,
+      "total": 15109.65,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T03:00:00+00:00",
+      "yogs": 10066.79,
+      "fundraiser": -945.07,
+      "total": 13516.91,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T04:00:00+00:00",
+      "yogs": 8232.81,
+      "fundraiser": -681.74,
+      "total": 11005.93,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T05:00:00+00:00",
+      "yogs": 7125.0,
+      "fundraiser": 397.74,
+      "total": 9629.41,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T06:00:00+00:00",
+      "yogs": 6437.01,
+      "fundraiser": -676.0,
+      "total": 8579.17,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T07:00:00+00:00",
+      "yogs": 5911.8,
+      "fundraiser": 155.0,
+      "total": 7879.19,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T08:00:00+00:00",
+      "yogs": 5171.01,
+      "fundraiser": 75.0,
+      "total": 6891.89,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T09:00:00+00:00",
+      "yogs": 7272.0,
+      "fundraiser": 240.0,
+      "total": 9358.81,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T10:00:00+00:00",
+      "yogs": 8044.31,
+      "fundraiser": 390.0,
+      "total": 10421.49,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T11:00:00+00:00",
+      "yogs": 13334.47,
+      "fundraiser": 628.0,
+      "total": 17738.74,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T12:00:00+00:00",
+      "yogs": 12908.51,
+      "fundraiser": -386.5,
+      "total": 17170.97,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T13:00:00+00:00",
+      "yogs": 10995.01,
+      "fundraiser": 278.5,
+      "total": 14554.09,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T14:00:00+00:00",
+      "yogs": 14069.16,
+      "fundraiser": 531.72,
+      "total": 18751.13,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T15:00:00+00:00",
+      "yogs": 12608.81,
+      "fundraiser": -706.71,
+      "total": 16804.87,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T16:00:00+00:00",
+      "yogs": 12986.14,
+      "fundraiser": 451.62,
+      "total": 17245.56,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T17:00:00+00:00",
+      "yogs": 13998.19,
+      "fundraiser": -31.63,
+      "total": 18500.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T18:00:00+00:00",
+      "yogs": 17879.21,
+      "fundraiser": 260.0,
+      "total": 24175.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T19:00:00+00:00",
+      "yogs": 12292.33,
+      "fundraiser": -250.5,
+      "total": 16325.68,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T20:00:00+00:00",
+      "yogs": 10860.73,
+      "fundraiser": -309.5,
+      "total": 14549.84,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T21:00:00+00:00",
+      "yogs": 9145.0,
+      "fundraiser": -384.0,
+      "total": 12228.63,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T22:00:00+00:00",
+      "yogs": 6503.93,
+      "fundraiser": -831.0,
+      "total": 8773.38,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-02T23:00:00+00:00",
+      "yogs": 6313.61,
+      "fundraiser": 370.0,
+      "total": 8419.56,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T00:00:00+00:00",
+      "yogs": 5032.93,
+      "fundraiser": -340.0,
+      "total": 6711.78,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T01:00:00+00:00",
+      "yogs": 3728.48,
+      "fundraiser": -300.0,
+      "total": 5005.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T02:00:00+00:00",
+      "yogs": 3090.25,
+      "fundraiser": -65.0,
+      "total": 4121.07,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T03:00:00+00:00",
+      "yogs": 3521.13,
+      "fundraiser": 250.13,
+      "total": 4728.96,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T04:00:00+00:00",
+      "yogs": 2520.91,
+      "fundraiser": -291.22,
+      "total": 3395.2,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T05:00:00+00:00",
+      "yogs": 2631.5,
+      "fundraiser": -203.91,
+      "total": 3509.29,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T06:00:00+00:00",
+      "yogs": 2835.0,
+      "fundraiser": 180.0,
+      "total": 3813.94,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T07:00:00+00:00",
+      "yogs": 1645.0,
+      "fundraiser": -255.0,
+      "total": 2193.75,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T08:00:00+00:00",
+      "yogs": 2370.5,
+      "fundraiser": 325.5,
+      "total": 3094.56,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T09:00:00+00:00",
+      "yogs": 2421.33,
+      "fundraiser": -170.5,
+      "total": 3095.67,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T10:00:00+00:00",
+      "yogs": 3442.31,
+      "fundraiser": 125.0,
+      "total": 4317.15,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T11:00:00+00:00",
+      "yogs": 13834.44,
+      "fundraiser": 910.0,
+      "total": 18448.29,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T12:00:00+00:00",
+      "yogs": 5705.0,
+      "fundraiser": -200.0,
+      "total": 7607.98,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T13:00:00+00:00",
+      "yogs": 6385.52,
+      "fundraiser": -30.0,
+      "total": 8348.54,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T14:00:00+00:00",
+      "yogs": 6912.0,
+      "fundraiser": 360.0,
+      "total": 9217.42,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T15:00:00+00:00",
+      "yogs": 8042.26,
+      "fundraiser": -524.75,
+      "total": 10735.72,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T16:00:00+00:00",
+      "yogs": 6441.0,
+      "fundraiser": 389.75,
+      "total": 8528.48,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T17:00:00+00:00",
+      "yogs": 16050.5,
+      "fundraiser": 563.23,
+      "total": 21485.37,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T18:00:00+00:00",
+      "yogs": 10308.07,
+      "fundraiser": -348.23,
+      "total": 13929.42,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T19:00:00+00:00",
+      "yogs": 8764.98,
+      "fundraiser": -294.75,
+      "total": 11787.05,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T20:00:00+00:00",
+      "yogs": 7765.87,
+      "fundraiser": -110.25,
+      "total": 10343.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T21:00:00+00:00",
+      "yogs": 11196.5,
+      "fundraiser": 1602.0,
+      "total": 15090.17,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T22:00:00+00:00",
+      "yogs": 9681.27,
+      "fundraiser": -944.0,
+      "total": 13045.9,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-03T23:00:00+00:00",
+      "yogs": 5331.0,
+      "fundraiser": -728.0,
+      "total": 7202.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T00:00:00+00:00",
+      "yogs": 6645.63,
+      "fundraiser": -675.0,
+      "total": 8936.84,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T01:00:00+00:00",
+      "yogs": 2822.67,
+      "fundraiser": -112.83,
+      "total": 3795.9,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T02:00:00+00:00",
+      "yogs": 2449.0,
+      "fundraiser": 12.83,
+      "total": 3327.01,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T03:00:00+00:00",
+      "yogs": 2406.1,
+      "fundraiser": 105.0,
+      "total": 3235.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T04:00:00+00:00",
+      "yogs": 2239.93,
+      "fundraiser": -228.0,
+      "total": 3012.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T05:00:00+00:00",
+      "yogs": 1520.44,
+      "fundraiser": 129.44,
+      "total": 2044.68,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T06:00:00+00:00",
+      "yogs": 1220.04,
+      "fundraiser": -166.4,
+      "total": 1640.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T07:00:00+00:00",
+      "yogs": 1180.0,
+      "fundraiser": 64.96,
+      "total": 1586.86,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T08:00:00+00:00",
+      "yogs": 1300.0,
+      "fundraiser": 120.0,
+      "total": 1614.36,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T09:00:00+00:00",
+      "yogs": 1715.0,
+      "fundraiser": -150.0,
+      "total": 2159.39,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T10:00:00+00:00",
+      "yogs": 2103.0,
+      "fundraiser": 175.0,
+      "total": 2594.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T11:00:00+00:00",
+      "yogs": 4616.0,
+      "fundraiser": 215.0,
+      "total": 6247.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T12:00:00+00:00",
+      "yogs": 3602.52,
+      "fundraiser": -160.0,
+      "total": 4811.32,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T13:00:00+00:00",
+      "yogs": 3723.19,
+      "fundraiser": 151.0,
+      "total": 4873.58,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T14:00:00+00:00",
+      "yogs": 11773.58,
+      "fundraiser": 1578.64,
+      "total": 15799.6,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T15:00:00+00:00",
+      "yogs": 7674.77,
+      "fundraiser": -1324.64,
+      "total": 10267.64,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T16:00:00+00:00",
+      "yogs": 7796.13,
+      "fundraiser": 456.0,
+      "total": 10500.13,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T17:00:00+00:00",
+      "yogs": 11186.48,
+      "fundraiser": 977.1,
+      "total": 15032.48,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T18:00:00+00:00",
+      "yogs": 6134.69,
+      "fundraiser": -1243.43,
+      "total": 8262.17,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T19:00:00+00:00",
+      "yogs": 6092.11,
+      "fundraiser": 41.38,
+      "total": 8238.49,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T20:00:00+00:00",
+      "yogs": 5248.81,
+      "fundraiser": -179.05,
+      "total": 7069.08,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T21:00:00+00:00",
+      "yogs": 6275.14,
+      "fundraiser": 160.56,
+      "total": 8411.92,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T22:00:00+00:00",
+      "yogs": 4936.83,
+      "fundraiser": -410.56,
+      "total": 6615.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-04T23:00:00+00:00",
+      "yogs": 3725.0,
+      "fundraiser": -7.0,
+      "total": 5050.49,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T00:00:00+00:00",
+      "yogs": 3113.69,
+      "fundraiser": 0.0,
+      "total": 4227.18,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T01:00:00+00:00",
+      "yogs": 2527.0,
+      "fundraiser": -280.0,
+      "total": 3437.02,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T02:00:00+00:00",
+      "yogs": 2237.0,
+      "fundraiser": 117.0,
+      "total": 3012.78,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T03:00:00+00:00",
+      "yogs": 2398.0,
+      "fundraiser": 5.0,
+      "total": 3229.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T04:00:00+00:00",
+      "yogs": 1875.0,
+      "fundraiser": -167.0,
+      "total": 2525.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T05:00:00+00:00",
+      "yogs": 1380.1,
+      "fundraiser": -30.0,
+      "total": 1858.72,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T06:00:00+00:00",
+      "yogs": 1390.0,
+      "fundraiser": -120.0,
+      "total": 1764.72,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T07:00:00+00:00",
+      "yogs": 1721.69,
+      "fundraiser": 155.0,
+      "total": 2319.12,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T08:00:00+00:00",
+      "yogs": 1455.01,
+      "fundraiser": -60.0,
+      "total": 1959.6,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T09:00:00+00:00",
+      "yogs": 1283.2,
+      "fundraiser": 112.2,
+      "total": 1761.88,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T10:00:00+00:00",
+      "yogs": 2145.0,
+      "fundraiser": -87.2,
+      "total": 2855.54,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T11:00:00+00:00",
+      "yogs": 4051.0,
+      "fundraiser": 655.0,
+      "total": 5489.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T12:00:00+00:00",
+      "yogs": 4244.12,
+      "fundraiser": -163.0,
+      "total": 5715.93,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T13:00:00+00:00",
+      "yogs": 9745.32,
+      "fundraiser": -442.0,
+      "total": 13158.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T14:00:00+00:00",
+      "yogs": 4280.36,
+      "fundraiser": 152.0,
+      "total": 5764.76,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T15:00:00+00:00",
+      "yogs": 4553.0,
+      "fundraiser": 789.0,
+      "total": 6131.95,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T16:00:00+00:00",
+      "yogs": 6468.19,
+      "fundraiser": 339.0,
+      "total": 8711.3,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T17:00:00+00:00",
+      "yogs": 6559.15,
+      "fundraiser": -267.92,
+      "total": 8833.83,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T18:00:00+00:00",
+      "yogs": 6170.0,
+      "fundraiser": -587.08,
+      "total": 8309.73,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T19:00:00+00:00",
+      "yogs": 3701.0,
+      "fundraiser": -250.0,
+      "total": 4984.5,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T20:00:00+00:00",
+      "yogs": 11886.72,
+      "fundraiser": 360.0,
+      "total": 16143.63,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T21:00:00+00:00",
+      "yogs": 8077.0,
+      "fundraiser": 1346.0,
+      "total": 10844.38,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T22:00:00+00:00",
+      "yogs": 5115.91,
+      "fundraiser": -1671.0,
+      "total": 6890.06,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-05T23:00:00+00:00",
+      "yogs": 4789.23,
+      "fundraiser": 69.0,
+      "total": 6450.12,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T00:00:00+00:00",
+      "yogs": 2770.0,
+      "fundraiser": 151.0,
+      "total": 3730.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T01:00:00+00:00",
+      "yogs": 1890.0,
+      "fundraiser": -480.0,
+      "total": 2579.12,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T02:00:00+00:00",
+      "yogs": 2149.0,
+      "fundraiser": 190.0,
+      "total": 2894.26,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T03:00:00+00:00",
+      "yogs": 1855.0,
+      "fundraiser": -135.0,
+      "total": 2498.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T04:00:00+00:00",
+      "yogs": 1899.1,
+      "fundraiser": -105.0,
+      "total": 2557.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T05:00:00+00:00",
+      "yogs": 1235.15,
+      "fundraiser": -125.0,
+      "total": 1663.5,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T06:00:00+00:00",
+      "yogs": 1075.01,
+      "fundraiser": 75.0,
+      "total": 1447.82,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T07:00:00+00:00",
+      "yogs": 1295.0,
+      "fundraiser": -25.0,
+      "total": 1744.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T08:00:00+00:00",
+      "yogs": 855.5,
+      "fundraiser": -75.0,
+      "total": 1152.19,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T09:00:00+00:00",
+      "yogs": 1807.0,
+      "fundraiser": 206.0,
+      "total": 2433.67,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T10:00:00+00:00",
+      "yogs": 2095.0,
+      "fundraiser": 44.0,
+      "total": 2821.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T11:00:00+00:00",
+      "yogs": 2600.69,
+      "fundraiser": 295.0,
+      "total": 3502.6,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T12:00:00+00:00",
+      "yogs": 3160.01,
+      "fundraiser": -25.0,
+      "total": 4255.87,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T13:00:00+00:00",
+      "yogs": 4038.62,
+      "fundraiser": 10.0,
+      "total": 5439.19,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T14:00:00+00:00",
+      "yogs": 4075.0,
+      "fundraiser": -230.0,
+      "total": 5488.18,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T15:00:00+00:00",
+      "yogs": 3405.65,
+      "fundraiser": 260.18,
+      "total": 4586.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T16:00:00+00:00",
+      "yogs": 4613.51,
+      "fundraiser": 0.82,
+      "total": 6213.44,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T17:00:00+00:00",
+      "yogs": 4799.41,
+      "fundraiser": 713.41,
+      "total": 6463.8,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T18:00:00+00:00",
+      "yogs": 4032.01,
+      "fundraiser": -924.41,
+      "total": 5430.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T19:00:00+00:00",
+      "yogs": 5399.42,
+      "fundraiser": 238.41,
+      "total": 7271.92,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T20:00:00+00:00",
+      "yogs": 5045.01,
+      "fundraiser": -78.41,
+      "total": 6761.27,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T21:00:00+00:00",
+      "yogs": 4243.21,
+      "fundraiser": 75.21,
+      "total": 5714.72,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T22:00:00+00:00",
+      "yogs": 3288.45,
+      "fundraiser": -180.21,
+      "total": 4428.85,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-06T23:00:00+00:00",
+      "yogs": 2227.0,
+      "fundraiser": -165.0,
+      "total": 2999.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T00:00:00+00:00",
+      "yogs": 2015.0,
+      "fundraiser": 85.0,
+      "total": 2781.14,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T01:00:00+00:00",
+      "yogs": 1733.24,
+      "fundraiser": -95.0,
+      "total": 2334.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T02:00:00+00:00",
+      "yogs": 1924.22,
+      "fundraiser": -65.0,
+      "total": 2591.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T03:00:00+00:00",
+      "yogs": 1454.0,
+      "fundraiser": 10.0,
+      "total": 1958.25,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T04:00:00+00:00",
+      "yogs": 1396.07,
+      "fundraiser": -23.93,
+      "total": 1880.22,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T05:00:00+00:00",
+      "yogs": 765.0,
+      "fundraiser": -101.07,
+      "total": 1030.3,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T06:00:00+00:00",
+      "yogs": 990.69,
+      "fundraiser": -75.0,
+      "total": 1334.26,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T07:00:00+00:00",
+      "yogs": 727.27,
+      "fundraiser": 55.0,
+      "total": 979.47,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T08:00:00+00:00",
+      "yogs": 1250.0,
+      "fundraiser": 215.0,
+      "total": 1650.13,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T09:00:00+00:00",
+      "yogs": 1175.0,
+      "fundraiser": -45.0,
+      "total": 1549.17,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T10:00:00+00:00",
+      "yogs": 1256.5,
+      "fundraiser": -25.0,
+      "total": 1524.65,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T11:00:00+00:00",
+      "yogs": 2067.0,
+      "fundraiser": 50.0,
+      "total": 2615.52,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T12:00:00+00:00",
+      "yogs": 2540.82,
+      "fundraiser": 0.0,
+      "total": 3335.0,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T13:00:00+00:00",
+      "yogs": 1961.32,
+      "fundraiser": 1.0,
+      "total": 2675.16,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T14:00:00+00:00",
+      "yogs": 2752.69,
+      "fundraiser": 74.0,
+      "total": 3673.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T15:00:00+00:00",
+      "yogs": 2849.68,
+      "fundraiser": 294.0,
+      "total": 3837.91,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T16:00:00+00:00",
+      "yogs": 2633.0,
+      "fundraiser": -469.0,
+      "total": 3500.84,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T17:00:00+00:00",
+      "yogs": 14615.08,
+      "fundraiser": 2021.69,
+      "total": 19432.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T18:00:00+00:00",
+      "yogs": 9650.24,
+      "fundraiser": -1506.69,
+      "total": 12831.0,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T19:00:00+00:00",
+      "yogs": 5360.99,
+      "fundraiser": -234.8,
+      "total": 7128.01,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T20:00:00+00:00",
+      "yogs": 4062.0,
+      "fundraiser": -50.2,
+      "total": 5434.09,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T21:00:00+00:00",
+      "yogs": 19032.06,
+      "fundraiser": 1037.0,
+      "total": 25372.54,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T22:00:00+00:00",
+      "yogs": 33432.6,
+      "fundraiser": -804.0,
+      "total": 44387.25,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-07T23:00:00+00:00",
+      "yogs": 2446.03,
+      "fundraiser": -488.0,
+      "total": 3252.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T00:00:00+00:00",
+      "yogs": 1743.0,
+      "fundraiser": -25.0,
+      "total": 2317.51,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T01:00:00+00:00",
+      "yogs": 1560.0,
+      "fundraiser": 0.0,
+      "total": 2074.18,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T02:00:00+00:00",
+      "yogs": 1058.45,
+      "fundraiser": 100.0,
+      "total": 1407.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T03:00:00+00:00",
+      "yogs": 775.01,
+      "fundraiser": -150.0,
+      "total": 1030.45,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T04:00:00+00:00",
+      "yogs": 982.0,
+      "fundraiser": 50.0,
+      "total": 1305.67,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T05:00:00+00:00",
+      "yogs": 580.0,
+      "fundraiser": -125.0,
+      "total": 771.17,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T06:00:00+00:00",
+      "yogs": 1001.35,
+      "fundraiser": 126.35,
+      "total": 1304.74,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T07:00:00+00:00",
+      "yogs": 725.5,
+      "fundraiser": 74.15,
+      "total": 964.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T08:00:00+00:00",
+      "yogs": 741.0,
+      "fundraiser": -125.5,
+      "total": 985.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T09:00:00+00:00",
+      "yogs": 955.0,
+      "fundraiser": 50.0,
+      "total": 1236.44,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T10:00:00+00:00",
+      "yogs": 1036.0,
+      "fundraiser": 1.0,
+      "total": 1377.47,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T11:00:00+00:00",
+      "yogs": 2225.0,
+      "fundraiser": 324.0,
+      "total": 2891.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T12:00:00+00:00",
+      "yogs": 2752.43,
+      "fundraiser": -225.0,
+      "total": 3626.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T13:00:00+00:00",
+      "yogs": 1982.0,
+      "fundraiser": 130.0,
+      "total": 2635.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T14:00:00+00:00",
+      "yogs": 3945.0,
+      "fundraiser": 120.0,
+      "total": 5244.78,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T15:00:00+00:00",
+      "yogs": 3230.56,
+      "fundraiser": 276.14,
+      "total": 4295.4,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T16:00:00+00:00",
+      "yogs": 6269.23,
+      "fundraiser": -170.14,
+      "total": 8232.73,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T17:00:00+00:00",
+      "yogs": 5491.23,
+      "fundraiser": 319.0,
+      "total": 7298.64,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T18:00:00+00:00",
+      "yogs": 2450.0,
+      "fundraiser": -475.0,
+      "total": 3289.72,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T19:00:00+00:00",
+      "yogs": 4907.0,
+      "fundraiser": 296.0,
+      "total": 6522.24,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T20:00:00+00:00",
+      "yogs": 4985.61,
+      "fundraiser": -405.77,
+      "total": 6626.79,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T21:00:00+00:00",
+      "yogs": 2490.14,
+      "fundraiser": 189.77,
+      "total": 3343.06,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T22:00:00+00:00",
+      "yogs": 2850.75,
+      "fundraiser": 15.69,
+      "total": 3789.2,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-08T23:00:00+00:00",
+      "yogs": 1638.69,
+      "fundraiser": -290.69,
+      "total": 2178.13,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T00:00:00+00:00",
+      "yogs": 1060.0,
+      "fundraiser": -105.0,
+      "total": 1408.94,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T01:00:00+00:00",
+      "yogs": 1168.03,
+      "fundraiser": 55.0,
+      "total": 1552.51,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T02:00:00+00:00",
+      "yogs": 1316.18,
+      "fundraiser": -25.0,
+      "total": 1749.44,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T03:00:00+00:00",
+      "yogs": 1133.0,
+      "fundraiser": 50.0,
+      "total": 1539.21,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T04:00:00+00:00",
+      "yogs": 982.8,
+      "fundraiser": -105.0,
+      "total": 1306.33,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T05:00:00+00:00",
+      "yogs": 480.0,
+      "fundraiser": -75.0,
+      "total": 638.01,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T06:00:00+00:00",
+      "yogs": 631.0,
+      "fundraiser": 146.0,
+      "total": 838.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T07:00:00+00:00",
+      "yogs": 660.0,
+      "fundraiser": -121.0,
+      "total": 877.27,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T08:00:00+00:00",
+      "yogs": 925.78,
+      "fundraiser": 50.0,
+      "total": 1230.54,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T09:00:00+00:00",
+      "yogs": 825.0,
+      "fundraiser": -25.0,
+      "total": 996.8,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T10:00:00+00:00",
+      "yogs": 950.0,
+      "fundraiser": 25.0,
+      "total": 1196.06,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T11:00:00+00:00",
+      "yogs": 1337.79,
+      "fundraiser": 50.0,
+      "total": 1778.15,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T12:00:00+00:00",
+      "yogs": 1095.0,
+      "fundraiser": -75.0,
+      "total": 1388.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T13:00:00+00:00",
+      "yogs": 1040.0,
+      "fundraiser": 75.0,
+      "total": 1382.35,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T14:00:00+00:00",
+      "yogs": 1350.0,
+      "fundraiser": 155.0,
+      "total": 1794.43,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T15:00:00+00:00",
+      "yogs": 1577.25,
+      "fundraiser": -90.0,
+      "total": 2100.36,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T16:00:00+00:00",
+      "yogs": 2015.0,
+      "fundraiser": 365.0,
+      "total": 2744.91,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T17:00:00+00:00",
+      "yogs": 2048.35,
+      "fundraiser": -477.0,
+      "total": 2756.09,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T18:00:00+00:00",
+      "yogs": 5460.54,
+      "fundraiser": 1459.99,
+      "total": 7347.18,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T19:00:00+00:00",
+      "yogs": 1778.89,
+      "fundraiser": -1151.99,
+      "total": 2393.55,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T20:00:00+00:00",
+      "yogs": 14944.19,
+      "fundraiser": 2040.99,
+      "total": 20107.36,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T21:00:00+00:00",
+      "yogs": 12124.73,
+      "fundraiser": -2113.99,
+      "total": 16313.99,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T22:00:00+00:00",
+      "yogs": 5460.35,
+      "fundraiser": 122.69,
+      "total": 7347.39,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-09T23:00:00+00:00",
+      "yogs": 3599.9,
+      "fundraiser": -305.69,
+      "total": 4844.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T00:00:00+00:00",
+      "yogs": 1172.82,
+      "fundraiser": -5.0,
+      "total": 1578.12,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T01:00:00+00:00",
+      "yogs": 978.16,
+      "fundraiser": 75.0,
+      "total": 1316.19,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T02:00:00+00:00",
+      "yogs": 737.41,
+      "fundraiser": 12.41,
+      "total": 992.25,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T03:00:00+00:00",
+      "yogs": 955.0,
+      "fundraiser": -162.41,
+      "total": 1285.02,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T04:00:00+00:00",
+      "yogs": 750.0,
+      "fundraiser": 75.0,
+      "total": 1009.2,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T05:00:00+00:00",
+      "yogs": 825.0,
+      "fundraiser": -125.0,
+      "total": 1110.09,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T06:00:00+00:00",
+      "yogs": 452.0,
+      "fundraiser": -25.0,
+      "total": 608.17,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T07:00:00+00:00",
+      "yogs": 731.25,
+      "fundraiser": 50.0,
+      "total": 983.93,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T08:00:00+00:00",
+      "yogs": 330.0,
+      "fundraiser": -50.0,
+      "total": 444.04,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T09:00:00+00:00",
+      "yogs": 800.0,
+      "fundraiser": 105.0,
+      "total": 1009.49,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T10:00:00+00:00",
+      "yogs": 775.0,
+      "fundraiser": -30.0,
+      "total": 1043.25,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T11:00:00+00:00",
+      "yogs": 972.81,
+      "fundraiser": 45.0,
+      "total": 1275.64,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T12:00:00+00:00",
+      "yogs": 1146.0,
+      "fundraiser": 5.0,
+      "total": 1508.68,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T13:00:00+00:00",
+      "yogs": 1079.81,
+      "fundraiser": 0.69,
+      "total": 1452.96,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T14:00:00+00:00",
+      "yogs": 2552.15,
+      "fundraiser": 109.31,
+      "total": 3400.67,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T15:00:00+00:00",
+      "yogs": 2638.3,
+      "fundraiser": 375.3,
+      "total": 3509.97,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T16:00:00+00:00",
+      "yogs": 1887.5,
+      "fundraiser": -510.3,
+      "total": 2554.64,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T17:00:00+00:00",
+      "yogs": 2252.14,
+      "fundraiser": 405.0,
+      "total": 2995.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T18:00:00+00:00",
+      "yogs": 1911.5,
+      "fundraiser": -330.0,
+      "total": 2542.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T19:00:00+00:00",
+      "yogs": 2368.0,
+      "fundraiser": 1026.0,
+      "total": 3149.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T20:00:00+00:00",
+      "yogs": 7453.22,
+      "fundraiser": -558.32,
+      "total": 9912.09,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T21:00:00+00:00",
+      "yogs": 6875.55,
+      "fundraiser": -17.61,
+      "total": 9145.3,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T22:00:00+00:00",
+      "yogs": 2503.65,
+      "fundraiser": -225.84,
+      "total": 3329.76,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-10T23:00:00+00:00",
+      "yogs": 7344.26,
+      "fundraiser": 36.09,
+      "total": 9767.32,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T00:00:00+00:00",
+      "yogs": 1253.82,
+      "fundraiser": -310.32,
+      "total": 1700.83,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T01:00:00+00:00",
+      "yogs": 850.0,
+      "fundraiser": 55.0,
+      "total": 1130.49,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T02:00:00+00:00",
+      "yogs": 1105.0,
+      "fundraiser": 45.0,
+      "total": 1469.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T03:00:00+00:00",
+      "yogs": 750.0,
+      "fundraiser": -150.0,
+      "total": 997.5,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T04:00:00+00:00",
+      "yogs": 425.0,
+      "fundraiser": -75.0,
+      "total": 565.25,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T05:00:00+00:00",
+      "yogs": 675.0,
+      "fundraiser": 25.0,
+      "total": 897.71,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T06:00:00+00:00",
+      "yogs": 945.0,
+      "fundraiser": 100.0,
+      "total": 1256.79,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T07:00:00+00:00",
+      "yogs": 430.0,
+      "fundraiser": -125.0,
+      "total": 571.9,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T08:00:00+00:00",
+      "yogs": 535.0,
+      "fundraiser": -25.0,
+      "total": 711.54,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T09:00:00+00:00",
+      "yogs": 470.0,
+      "fundraiser": 155.0,
+      "total": 565.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T10:00:00+00:00",
+      "yogs": 730.0,
+      "fundraiser": -30.0,
+      "total": 970.88,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T11:00:00+00:00",
+      "yogs": 2418.19,
+      "fundraiser": 75.0,
+      "total": 3215.98,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T12:00:00+00:00",
+      "yogs": 1682.0,
+      "fundraiser": 20.0,
+      "total": 2236.98,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T13:00:00+00:00",
+      "yogs": 1686.12,
+      "fundraiser": 55.56,
+      "total": 2140.46,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T14:00:00+00:00",
+      "yogs": 2357.23,
+      "fundraiser": -18.33,
+      "total": 3135.0,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T15:00:00+00:00",
+      "yogs": 2178.0,
+      "fundraiser": 890.77,
+      "total": 2896.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T16:00:00+00:00",
+      "yogs": 2402.0,
+      "fundraiser": -775.0,
+      "total": 3188.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T17:00:00+00:00",
+      "yogs": 40893.67,
+      "fundraiser": 784.01,
+      "total": 53732.5,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T18:00:00+00:00",
+      "yogs": 4642.2,
+      "fundraiser": -145.53,
+      "total": 6099.83,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T19:00:00+00:00",
+      "yogs": 5133.0,
+      "fundraiser": -331.48,
+      "total": 6744.75,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T20:00:00+00:00",
+      "yogs": 4267.34,
+      "fundraiser": -24.0,
+      "total": 5607.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T21:00:00+00:00",
+      "yogs": 2601.63,
+      "fundraiser": -215.0,
+      "total": 3418.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T22:00:00+00:00",
+      "yogs": 3732.0,
+      "fundraiser": 221.0,
+      "total": 4903.8,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-11T23:00:00+00:00",
+      "yogs": 4132.67,
+      "fundraiser": -189.97,
+      "total": 5495.99,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T00:00:00+00:00",
+      "yogs": 2638.21,
+      "fundraiser": -247.03,
+      "total": 3433.75,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T01:00:00+00:00",
+      "yogs": 1856.0,
+      "fundraiser": 150.0,
+      "total": 2438.78,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T02:00:00+00:00",
+      "yogs": 1925.0,
+      "fundraiser": -95.0,
+      "total": 2529.45,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T03:00:00+00:00",
+      "yogs": 1792.46,
+      "fundraiser": -5.0,
+      "total": 2388.14,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T04:00:00+00:00",
+      "yogs": 1300.0,
+      "fundraiser": -70.0,
+      "total": 1708.2,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T05:00:00+00:00",
+      "yogs": 1857.0,
+      "fundraiser": -34.0,
+      "total": 2440.06,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T06:00:00+00:00",
+      "yogs": 1165.0,
+      "fundraiser": -71.0,
+      "total": 1530.81,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T07:00:00+00:00",
+      "yogs": 1250.0,
+      "fundraiser": 50.0,
+      "total": 1642.49,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T08:00:00+00:00",
+      "yogs": 700.0,
+      "fundraiser": -50.0,
+      "total": 919.8,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T09:00:00+00:00",
+      "yogs": 1111.34,
+      "fundraiser": 86.34,
+      "total": 1460.29,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T10:00:00+00:00",
+      "yogs": 892.79,
+      "fundraiser": -11.34,
+      "total": 1173.13,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T11:00:00+00:00",
+      "yogs": 3443.0,
+      "fundraiser": 385.0,
+      "total": 4524.08,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T12:00:00+00:00",
+      "yogs": 3659.97,
+      "fundraiser": -259.0,
+      "total": 4809.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T13:00:00+00:00",
+      "yogs": 3841.0,
+      "fundraiser": 264.0,
+      "total": 5047.0,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T14:00:00+00:00",
+      "yogs": 4331.69,
+      "fundraiser": -90.0,
+      "total": 5691.78,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T15:00:00+00:00",
+      "yogs": 4625.69,
+      "fundraiser": 75.0,
+      "total": 6078.1,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T16:00:00+00:00",
+      "yogs": 6136.5,
+      "fundraiser": 335.0,
+      "total": 8063.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T17:00:00+00:00",
+      "yogs": 6278.35,
+      "fundraiser": -14.66,
+      "total": 8282.54,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T18:00:00+00:00",
+      "yogs": 4093.82,
+      "fundraiser": -184.34,
+      "total": 5346.41,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T19:00:00+00:00",
+      "yogs": 3920.0,
+      "fundraiser": -81.0,
+      "total": 5150.87,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T20:00:00+00:00",
+      "yogs": 4054.5,
+      "fundraiser": -42.5,
+      "total": 5327.61,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T21:00:00+00:00",
+      "yogs": 3852.81,
+      "fundraiser": 20.5,
+      "total": 5062.57,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T22:00:00+00:00",
+      "yogs": 2691.0,
+      "fundraiser": -203.0,
+      "total": 3535.96,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-12T23:00:00+00:00",
+      "yogs": 3348.86,
+      "fundraiser": 95.0,
+      "total": 4400.39,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T00:00:00+00:00",
+      "yogs": 2548.0,
+      "fundraiser": -250.0,
+      "total": 3348.05,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T01:00:00+00:00",
+      "yogs": 2033.41,
+      "fundraiser": 50.0,
+      "total": 2671.9,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T02:00:00+00:00",
+      "yogs": 2141.0,
+      "fundraiser": 110.0,
+      "total": 2813.27,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T03:00:00+00:00",
+      "yogs": 1580.0,
+      "fundraiser": -135.0,
+      "total": 2076.12,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T04:00:00+00:00",
+      "yogs": 1625.05,
+      "fundraiser": 25.0,
+      "total": 2135.31,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T05:00:00+00:00",
+      "yogs": 1487.0,
+      "fundraiser": -50.0,
+      "total": 1953.92,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T06:00:00+00:00",
+      "yogs": 1125.0,
+      "fundraiser": -75.0,
+      "total": 1478.25,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T07:00:00+00:00",
+      "yogs": 1098.79,
+      "fundraiser": 126.0,
+      "total": 1443.8,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T08:00:00+00:00",
+      "yogs": 1425.0,
+      "fundraiser": -151.0,
+      "total": 1872.45,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T09:00:00+00:00",
+      "yogs": 1449.05,
+      "fundraiser": 35.0,
+      "total": 1904.05,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T10:00:00+00:00",
+      "yogs": 1280.0,
+      "fundraiser": 40.0,
+      "total": 1714.77,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T11:00:00+00:00",
+      "yogs": 4409.77,
+      "fundraiser": 660.08,
+      "total": 5761.16,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T12:00:00+00:00",
+      "yogs": 4405.3,
+      "fundraiser": 79.92,
+      "total": 5788.56,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T13:00:00+00:00",
+      "yogs": 5522.65,
+      "fundraiser": -78.0,
+      "total": 7256.75,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T14:00:00+00:00",
+      "yogs": 7076.59,
+      "fundraiser": 208.69,
+      "total": 9298.57,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T15:00:00+00:00",
+      "yogs": 12739.7,
+      "fundraiser": -78.68,
+      "total": 16739.63,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T16:00:00+00:00",
+      "yogs": 4011.03,
+      "fundraiser": -119.01,
+      "total": 5270.48,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T17:00:00+00:00",
+      "yogs": 18508.05,
+      "fundraiser": 32.0,
+      "total": 24318.96,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T18:00:00+00:00",
+      "yogs": 7546.62,
+      "fundraiser": 761.01,
+      "total": 9981.93,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T19:00:00+00:00",
+      "yogs": 8567.0,
+      "fundraiser": 731.99,
+      "total": 11256.99,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T20:00:00+00:00",
+      "yogs": 10715.52,
+      "fundraiser": -1383.0,
+      "total": 14178.56,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T21:00:00+00:00",
+      "yogs": 6698.03,
+      "fundraiser": 365.0,
+      "total": 8768.35,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T22:00:00+00:00",
+      "yogs": 6201.3,
+      "fundraiser": -390.0,
+      "total": 8148.51,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-13T23:00:00+00:00",
+      "yogs": 5830.84,
+      "fundraiser": -435.0,
+      "total": 7694.52,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T00:00:00+00:00",
+      "yogs": 4382.0,
+      "fundraiser": -25.0,
+      "total": 5757.94,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T01:00:00+00:00",
+      "yogs": 4137.17,
+      "fundraiser": -29.0,
+      "total": 5436.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T02:00:00+00:00",
+      "yogs": 3550.54,
+      "fundraiser": -21.0,
+      "total": 4665.41,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T03:00:00+00:00",
+      "yogs": 2965.0,
+      "fundraiser": 160.0,
+      "total": 3896.0,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T04:00:00+00:00",
+      "yogs": 2910.07,
+      "fundraiser": -49.93,
+      "total": 3823.83,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T05:00:00+00:00",
+      "yogs": 2085.44,
+      "fundraiser": -340.07,
+      "total": 2740.26,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T06:00:00+00:00",
+      "yogs": 2091.11,
+      "fundraiser": 5.0,
+      "total": 2606.58,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T07:00:00+00:00",
+      "yogs": 1874.0,
+      "fundraiser": 180.0,
+      "total": 2462.43,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T08:00:00+00:00",
+      "yogs": 1892.24,
+      "fundraiser": 65.0,
+      "total": 2486.4,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T09:00:00+00:00",
+      "yogs": 2025.0,
+      "fundraiser": -145.0,
+      "total": 2654.28,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T10:00:00+00:00",
+      "yogs": 2552.0,
+      "fundraiser": -14.0,
+      "total": 3353.32,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T11:00:00+00:00",
+      "yogs": 4888.0,
+      "fundraiser": 1587.0,
+      "total": 6389.93,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T12:00:00+00:00",
+      "yogs": 5932.45,
+      "fundraiser": -713.47,
+      "total": 7795.23,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T13:00:00+00:00",
+      "yogs": 11860.05,
+      "fundraiser": 136.16,
+      "total": 15583.98,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T14:00:00+00:00",
+      "yogs": 12412.08,
+      "fundraiser": 24.75,
+      "total": 16276.38,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T15:00:00+00:00",
+      "yogs": 8446.42,
+      "fundraiser": 379.56,
+      "total": 11098.53,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T16:00:00+00:00",
+      "yogs": 13495.98,
+      "fundraiser": 2396.16,
+      "total": 17945.19,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T17:00:00+00:00",
+      "yogs": 18644.22,
+      "fundraiser": -2660.5,
+      "total": 24834.11,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T18:00:00+00:00",
+      "yogs": 7603.23,
+      "fundraiser": -175.97,
+      "total": 10194.56,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T19:00:00+00:00",
+      "yogs": 9692.9,
+      "fundraiser": -124.69,
+      "total": 12996.62,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T20:00:00+00:00",
+      "yogs": 8934.91,
+      "fundraiser": -324.48,
+      "total": 11920.7,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T21:00:00+00:00",
+      "yogs": 14074.19,
+      "fundraiser": 492.59,
+      "total": 18837.45,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T22:00:00+00:00",
+      "yogs": 8683.81,
+      "fundraiser": -271.11,
+      "total": 11643.57,
+      "duration": 3600
+    },
+    {
+      "date": "2020-12-14T23:00:00+00:00",
+      "yogs": 14487.94,
+      "fundraiser": -734.16,
+      "total": 19425.95,
+      "duration": 3600
+    }
+  ],
+  "summary": {
+    "total": 2802830.56,
+    "yogs": 2103513.95,
+    "fundraiser": -287.85,
+    "duration": 615600,
+    "total_number_of_streams": 48
+  }
+}

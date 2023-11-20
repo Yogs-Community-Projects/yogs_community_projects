@@ -1,7 +1,7 @@
 import { Component } from 'solid-js'
 import { useBarChartFilter, useChartOnStreamFilter } from './BarChartFilterProvider'
 import { Select, ToggleButton } from '@kobalte/core'
-import { Bars, ChartDataType, ChartType, OnStreamType } from './BarChartEnums'
+import { ChartDataType, ChartType, DonationType, OnStreamType } from './BarChartEnums'
 import { AiOutlineCheck } from 'solid-icons/ai'
 import { twMerge } from 'tailwind-merge'
 
@@ -24,12 +24,12 @@ export const BarChartJJSettings: Component = () => {
   } = useBarChartFilter()
   return (
     <div class={'flex flex-1 flex-row items-center gap-4 p-2 text-white'}>
-      <Select.Root<Bars>
+      <Select.Root<DonationType>
         class="row col w-32 gap-4 p-2"
         value={bars()}
         placeholder="Select a Theme"
         onChange={setBars}
-        options={[Bars.total, Bars.total2, Bars.yogs, Bars.fundraiser]}
+        options={[DonationType.total, DonationType.total2, DonationType.yogs, DonationType.fundraiser]}
         itemComponent={props => (
           <Select.Item
             class={'flex w-full flex-row justify-between p-1 text-white hover:cursor-pointer'}
@@ -156,7 +156,12 @@ export const BarChartOnStreamSettings: Component = () => {
         value={bars()}
         placeholder="Select a Theme"
         onChange={setBars}
-        options={[OnStreamType.appearances, OnStreamType.hoursStreamed, OnStreamType.percentageOfTotal]}
+        options={[
+          OnStreamType.appearances,
+          OnStreamType.hoursStreamed,
+          OnStreamType.percentageOfHours,
+          OnStreamType.percentageOfStreams,
+        ]}
         itemComponent={props => (
           <Select.Item
             class={'flex w-full flex-row justify-between p-1 text-white hover:cursor-pointer'}

@@ -1,8 +1,8 @@
 import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
-import { Bars, ChartDataType, ChartType, OnStreamType } from './BarChartEnums'
+import { DonationType, ChartDataType, ChartType, OnStreamType } from './BarChartEnums'
 
 const useBarChartFilterHook = () => {
-  const [bars, setBars] = createSignal<Bars>(Bars.total)
+  const [bars, setBars] = createSignal<DonationType>(DonationType.total)
   const [type, setType] = createSignal<ChartType>(ChartType.total)
   const [dataType, setDataType] = createSignal<ChartDataType>(ChartDataType.yogsStreams)
 

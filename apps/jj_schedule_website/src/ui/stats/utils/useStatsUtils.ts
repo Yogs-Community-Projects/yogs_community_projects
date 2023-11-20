@@ -1,5 +1,5 @@
-import { Donation, DonationData, SlotDonation } from '../statsModel'
-import { Bars, ChartType } from '../BarChartEnums'
+import { Donation, DonationData, DonationData2, HourDonation2, SlotDonation, SlotDonation2 } from '../statsModel'
+import { ChartType, DonationType } from '../BarChartEnums'
 import { useBarChartFilter } from '../BarChartFilterProvider'
 import { DateTime } from 'luxon'
 import { Slot } from '@ycapp/model'
@@ -8,18 +8,19 @@ export const useStatsUtils = (data: DonationData) => {
   const { bars, type, sortByAmount, top15, excludeDay1, excludeNights, dataType, setDataType } = useBarChartFilter()
   const calcSum = () => {
     switch (bars()) {
-      case Bars.total:
-      case Bars.total2:
+      case DonationType.total:
+      case DonationType.total2:
         return data.hours.map(s => s.total).reduce((a, b) => a + b, 0)
-      case Bars.yogs:
+      case DonationType.yogs:
         return data.hours.map(s => s.yogs).reduce((a, b) => a + b, 0)
-      case Bars.fundraiser:
+      case DonationType.fundraiser:
         return data.hours.map(s => s.fundraiser).reduce((a, b) => a + b, 0)
     }
   }
   const sum = calcSum()
-  const showYogs = () => bars() === Bars.yogs || bars() === Bars.total || bars() === Bars.total2
-  const showFundraiser = () => bars() === Bars.fundraiser || bars() === Bars.total || bars() === Bars.total2
+  const showYogs = () => bars() === DonationType.yogs || bars() === DonationType.total || bars() === DonationType.total2
+  const showFundraiser = () =>
+    bars() === DonationType.fundraiser || bars() === DonationType.total || bars() === DonationType.total2
 
   const isNight = (s: SlotDonation) => {
     return s.slot.title.includes('Night ') && s.slot.style.background === 'aaaaaa'
@@ -138,6 +139,141 @@ export const useStatsUtils = (data: DonationData) => {
     if (excludeDay1()) {
       slots = slots.filter(s => {
         const date = DateTime.fromISO(s.slot.start)
+        return date.day !== 1
+      })
+    }
+    if (top15()) {
+      slots = slots.sort(sortByAmountFunc).reverse().slice(0, 15)
+    }
+    if (!sortByAmount()) {
+      slots = slots.sort(sortByDateFunc).reverse()
+    }
+    return slots
+  }
+
+  const hours = () => {
+    let h = data.hours // .sort(sortByAmountFunc).reverse()
+    if (excludeNights()) {
+      h = h.filter(s => {
+        const date = DateTime.fromISO(s.date, { setZone: false })
+        const hour = date.hour
+        return !(hour < 11 || hour >= 23)
+      })
+    }
+    if (excludeDay1()) {
+      h = h.filter(s => {
+        const date = DateTime.fromISO(s.date, { setZone: false })
+        return date.day !== 1
+      })
+    }
+    if (top15()) {
+      h = h.sort(sortByAmountFunc).reverse().slice(0, 15)
+    }
+    if (!sortByAmount()) {
+      h = h.sort(sortByDateFunc).reverse()
+    }
+    return h
+  }
+
+  return {
+    isNight,
+    isNotNight,
+    totalValue,
+    yogsValue,
+    fundraiserValue,
+    sortByDateFunc,
+    color,
+    sortByAmountFunc,
+    showYogs,
+    showFundraiser,
+    slots,
+    hours,
+  }
+}
+export const useStatsUtils2 = (data: DonationData2) => {
+  const { bars, type, sortByAmount, top15, excludeDay1, excludeNights, dataType, setDataType } = useBarChartFilter()
+  const calcSum = () => {
+    switch (bars()) {
+      case DonationType.total:
+      case DonationType.total2:
+        return data.hours.map(s => s.total).reduce((a, b) => a + b, 0)
+      case DonationType.yogs:
+        return data.hours.map(s => s.yogs).reduce((a, b) => a + b, 0)
+      case DonationType.fundraiser:
+        return data.hours.map(s => s.fundraiser).reduce((a, b) => a + b, 0)
+    }
+  }
+  const sum = calcSum()
+  const showYogs = () => bars() === DonationType.yogs || bars() === DonationType.total || bars() === DonationType.total2
+  const showFundraiser = () =>
+    bars() === DonationType.fundraiser || bars() === DonationType.total || bars() === DonationType.total2
+
+  const isNight = (s: SlotDonation2) => {
+    return s.label.includes('Night ')
+  }
+  const isNotNight = (s: SlotDonation2) => !isNight(s)
+
+  const totalValue = (s: HourDonation2) => {
+    switch (type()) {
+      case ChartType.total:
+        return s.total
+      case ChartType.amountPerMinute:
+        return +(s.total / (s.duration / 60)).toFixed(2)
+      case ChartType.percentageOfTotal:
+        return +((s.total / sum) * 100).toFixed(2)
+    }
+  }
+
+  const yogsValue = (s: HourDonation2) => {
+    switch (type()) {
+      case ChartType.total:
+        return s.yogs
+      case ChartType.amountPerMinute:
+        return +(s.yogs / (s.duration / 60)).toFixed(2)
+      case ChartType.percentageOfTotal:
+        return +((s.yogs / sum) * 100).toFixed(2)
+    }
+  }
+
+  const fundraiserValue = (s: HourDonation2) => {
+    const f = +(s.total - s.yogs).toFixed(2)
+    switch (type()) {
+      case ChartType.total:
+        return f
+      case ChartType.amountPerMinute:
+        return +(f / (s.duration / 60)).toFixed(2)
+      case ChartType.percentageOfTotal:
+        return +((f / sum) * 100).toFixed(2)
+    }
+  }
+
+  const getDonationDate = (d: HourDonation2) => {
+    return d.date
+  }
+  const sortByDateFunc = (a: HourDonation2, b: HourDonation2) => {
+    return DateTime.fromISO(getDonationDate(b)).toMillis() - DateTime.fromISO(getDonationDate(a)).toMillis()
+  }
+  const sortByAmountFunc = (a: HourDonation2, b: HourDonation2) => {
+    if (showYogs() && !showFundraiser()) {
+      return yogsValue(a) - yogsValue(b)
+    } else if (!showYogs() && showFundraiser()) {
+      return fundraiserValue(a) - fundraiserValue(b)
+    }
+    return totalValue(a) - totalValue(b)
+  }
+
+  const color = (s: SlotDonation2) => {
+    return s.color
+  }
+
+  const slots = () => {
+    let slots = data.slots.sort(sortByAmountFunc).reverse()
+    if (excludeNights()) {
+      slots = slots.filter(isNotNight)
+    }
+    if (excludeDay1()) {
+      slots = slots.filter(s => {
+        const date = DateTime.fromISO(s.date)
         return date.day !== 1
       })
     }

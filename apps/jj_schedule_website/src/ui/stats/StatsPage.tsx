@@ -5,7 +5,7 @@ import { BiRegularChevronDown } from 'solid-icons/bi'
 import { twMerge } from 'tailwind-merge'
 
 const BarChartsJJSchedule = lazy(() => import('./BarChartsJJSchedule'))
-const BarChartsOnStreamProvider = lazy(() => import('./BarChartsOnStreamProvider'))
+const BarChartsOnStreamProvider = lazy(() => import('./BarChartsOnStream'))
 const StatsPage: Component = () => {
   const { log } = useAnalytics()
 

@@ -1,4 +1,4 @@
-export enum Bars {
+export enum DonationType {
   total = 'Total',
   total2 = 'Total With Highlighted Fundraiser',
   yogs = 'Yogs',
@@ -19,5 +19,6 @@ export enum ChartDataType {
 export enum OnStreamType {
   appearances = 'Appearances',
   hoursStreamed = 'Hours streamed',
-  percentageOfTotal = '% of all streams',
+  percentageOfHours = '% of hours streamed',
+  percentageOfStreams = '% of streams',
 }
