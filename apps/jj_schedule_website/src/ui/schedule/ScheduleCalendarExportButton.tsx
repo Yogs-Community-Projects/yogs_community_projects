@@ -90,9 +90,8 @@ const CalendarDialogDialogBody: Component<CalendarDialogDialogBodyProps> = props
     const s = icalString()
     const start = DateTime.fromISO(days[0].slots[0].start)
     downloadFile(`MyJJSchedule${start.year}.ics`, s)
-    log('schedule_export', {
+    log('export_schedule', {
       schedule: schedule.name,
-      slots: selectedSlots().map(s => s.title),
     })
   }
   const downloadFile = (filename: string, text: string) => {

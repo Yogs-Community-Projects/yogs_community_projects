@@ -12,6 +12,7 @@ import { BiRegularReset, BiRegularShare } from 'solid-icons/bi'
 
 const useCopyFilterUrl = () => {
   const { makeLink } = useCreatorFilter()
+  const { log } = useAnalytics()
 
   return async () => {
     const url = makeLink()
@@ -27,6 +28,9 @@ const useCopyFilterUrl = () => {
       console.log(e.toString())
     }
     try {
+      log('filter_copy', {
+        filter_url: url,
+      })
       window.alert(`Copied ${url} to your clipboard`)
     } catch (e) {
       console.log(e.toString())
@@ -253,7 +257,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
           class={'bg-primary rounded-xl p-2 text-white'}
           onclick={() => {
             onClose()
-            log('schedule_filter', {
+            log('filter_schedule', {
               filter: filter().join(','),
               filter_url: makeLink(),
               schedule: schedule.name,
@@ -268,7 +272,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
 }
 
 const AndToggle = () => {
-  const { and, toggleAnd, isEmpty } = useCreatorFilter()
+  const { and, toggleAnd } = useCreatorFilter()
 
   return (
     <ToggleButton.Root
