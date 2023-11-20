@@ -27,4 +27,9 @@ export interface YogsExtensionConfig {
 export interface JJWebsiteConfig {
   scheduleId: string
   visible: boolean
+  overlay: {
+    fundraiser: boolean
+    yogsSchedule: boolean
+    yogsScheduleId: string
+  }
 }
