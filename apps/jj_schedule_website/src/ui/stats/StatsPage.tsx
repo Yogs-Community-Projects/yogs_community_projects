@@ -21,7 +21,8 @@ const StatsPage: Component = () => {
   return (
     <div class={'flex flex-col items-center gap-4'}>
       <p class={'p-2 text-2xl font-bold text-white md:text-4xl'}>Jingle Jam Statistics</p>
-      <Accordion.Root collapsible={true} value={expandedItem()} onChange={setExpandedItem} class={''}>
+      <p class={'block text-center text-white md:hidden'}>This page is currently not optimized for mobile devices.</p>
+      <Accordion.Root collapsible={true} value={expandedItem()} onChange={setExpandedItem} class={'hidden md:block'}>
         <Accordion.Item value={'donations'} class={'flex flex-col items-center transition-all'}>
           <Accordion.Header>
             <Accordion.Trigger
