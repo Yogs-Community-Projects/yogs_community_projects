@@ -63,6 +63,8 @@ const DropdownNavBar: Component = () => {
         <LinkMobile path="/2020" title="Jingle Jam 2020" close={onClose} />
         <LinkMobile path="/community" title="Community" close={onClose} />
         <LinkMobile path="/extension" title="Twitch Extension" close={onClose} />
+        <LinkMobile path="/overlay" title="Streaming Overlays" close={onClose} />
+        <LinkMobile path="/stats" title="Stats" close={onClose} />
         <a
           href={'https://schedule.yogs.app'}
           class={
