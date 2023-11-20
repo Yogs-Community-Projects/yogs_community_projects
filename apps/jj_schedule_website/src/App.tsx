@@ -45,7 +45,7 @@ const Home = () => {
     <Page
       title={'Interactive Yogscast Jingle Jam Schedules and more'}
       desc={
-        'Interactive Yogscast Jingle Jam Schedule with additional information. Click on each stream slot for more information.'
+        'Interactive Yogscast Jingle Jam Schedule with additional information. And more Jingle Jam related community resources like a Twitch extension and Streaming Overlays.'
       }
     >
       <HomePage />
