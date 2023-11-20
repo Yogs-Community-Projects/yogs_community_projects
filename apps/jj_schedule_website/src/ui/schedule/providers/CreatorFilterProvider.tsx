@@ -3,11 +3,13 @@ import { useLocation, useSearchParams } from '@solidjs/router'
 import { useCreatorIds, useSlots } from './ScheduleDataProvider'
 import { useData } from '../../../dataProvider'
 import { Slot } from '@ycapp/model'
+import { useAnalytics } from '../../../AnalyticsProvider'
 
 const useHook = () => {
   const [params, setSearchParams] = useSearchParams()
   const location = useLocation()
   const { useCreators } = useData()
+  const { log } = useAnalytics()
   const creatorIds = useCreatorIds()
   const creators = useCreators(() => creatorIds)
   const creatorNameMap = () => {
@@ -47,6 +49,10 @@ const useHook = () => {
   createEffect(() => {
     if (runInitNames() && creators.data) {
       if (params['filter'] && creators.data) {
+        log('filter_visit', {
+          filter: params['filter'],
+          filterType: params['filterType'],
+        })
         const initNames = (params['filter'] ?? '').split(',')
         setFilter(initNames.map(name => creatorNameMap().get(name)).filter(e => e))
       }
@@ -86,7 +92,7 @@ const useHook = () => {
     if (loaded()) {
       if (!isEmpty()) {
         const namesList = normalizedNames()
-        const names = namesList.join('%2C')
+        const names = namesList.join(',')
         if (namesList.length > 1) {
           if (and()) {
             setSearchParams({ filterType: 'and', filter: names })
@@ -129,7 +135,8 @@ const useHook = () => {
     if (filter().length > 1) {
       filterType = `filterType=${and() ? 'and' : 'or'}&`
     }
-    return `https://jj.yogs.app${location.pathname}?${filterType}filter=${names}`
+    const url = `https://jj.yogs.app${location.pathname}?${filterType}filter=${names}`
+    return encodeURI(url)
   }
 
   const toggleAnd = () => setAnd(v => !v)
