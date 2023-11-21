@@ -111,7 +111,7 @@ export const AnalyticsConsentBody: Component<AnalyticsConsentBodyProps> = props 
           jinglejam.yogs.app is a fan project and not associated or endorsed by the Yogscast or their partners.
         </p>
         <p class={'text-xl'}>
-          jinglejam.yogs.app uses Google Analytics 4 which collects Anonymous data about the usage of this site, the
+          jinglejam.yogs.app uses Google Analytics which collects Anonymous data about the usage of this site, the
           duration of the visit and the country the site is visited from.
         </p>
       </div>
