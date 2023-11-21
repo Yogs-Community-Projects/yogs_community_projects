@@ -30,6 +30,7 @@ const BarChartsOnStream = () => {
         <BarChartOnStreamProvider data={full_2020 as unknown as DonationData2}>
           <OnStreamTimeChart title={'Jingle Jam 2020'} />
         </BarChartOnStreamProvider>
+        <BarChartOnStreamSettings />
       </ChartOnStreamFilterProvider>
     </div>
   )

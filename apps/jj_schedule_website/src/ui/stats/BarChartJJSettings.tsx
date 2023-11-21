@@ -150,9 +150,9 @@ export const BarChartJJSettings: Component = () => {
 export const BarChartOnStreamSettings: Component = () => {
   const { bars, setBars, sortByAmount, setSortByAmount, top15, setTop15 } = useChartOnStreamFilter()
   return (
-    <div class={'flex flex-1 flex-row items-center gap-4 p-2 text-white'}>
+    <div class={'flex flex-1 flex-row items-center justify-center gap-4 p-2 text-white'}>
       <Select.Root<OnStreamType>
-        class="row col w-32 gap-4 p-2"
+        class="row col gap-4 p-2"
         value={bars()}
         placeholder="Select a Theme"
         onChange={setBars}

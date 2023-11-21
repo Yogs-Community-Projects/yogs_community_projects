@@ -287,7 +287,7 @@ export const useStatsUtils2 = (data: DonationData2) => {
   }
 
   const hours = () => {
-    let h = data.hours // .sort(sortByAmountFunc).reverse()
+    let h = data.hours.sort(sortByAmountFunc).reverse()
     if (excludeNights()) {
       h = h.filter(s => {
         const date = DateTime.fromISO(s.date, { setZone: false })
