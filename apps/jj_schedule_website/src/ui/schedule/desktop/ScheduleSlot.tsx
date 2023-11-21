@@ -101,7 +101,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
             }}
           >
             <div class={'flex h-full w-full flex-col justify-center text-center'}>
-              <p class={'text-slot-title font-bold tracking-widest'}>{props.slot.title}</p>
+              <p class={'text-slot-title line-clamp-2 font-bold tracking-widest'}>{props.slot.title}</p>
               <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
               <Show when={showCountdown()}>
                 <p class={'text-slot-countdown tracking-wide'}>{countdown()}</p>
