@@ -32,4 +32,9 @@ export interface JJWebsiteConfig {
     yogsSchedule: boolean
     yogsScheduleId: string
   }
+  donateButton: {
+    text?: string
+    url?: string
+    visible: boolean
+  }
 }
