@@ -3,7 +3,7 @@ import { A, useLocation } from '@solidjs/router'
 import './NavBar.css'
 import { CgClose, CgMenu } from 'solid-icons/cg'
 import { useAnalytics } from '../../AnalyticsProvider'
-import { DropdownMenu } from '@kobalte/core'
+import { FiExternalLink } from 'solid-icons/fi'
 
 export const NavBar: Component = () => {
   return (
@@ -17,9 +17,10 @@ export const NavBar: Component = () => {
         <Link path="/stats" title="Stats" />
         <a
           href={'https://schedule.yogs.app'}
-          class={'hover:text-accent-100 no-underline transition-all hover:scale-105'}
+          class={'hover:text-accent-100 flex flex-row items-center gap-2 no-underline transition-all hover:scale-105'}
         >
-          Regular Schedule
+          <p>Regular Schedule</p>
+          <FiExternalLink size={18} />
         </a>
       </div>
       <div class={'w-schedule md:hidden'}>
