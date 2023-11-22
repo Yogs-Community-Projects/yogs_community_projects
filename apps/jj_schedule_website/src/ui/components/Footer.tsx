@@ -8,7 +8,7 @@ import { createModalSignal } from '@ycapp/common'
 export const Footer: Component = () => {
   const modalSignal = createModalSignal(false)
   return (
-    <div class={'mt-2 flex flex-col items-center justify-center'}>
+    <div class={'my-2 flex flex-col items-center justify-center'}>
       <div class={'grid grid-cols-1 gap-8 px-4 text-white md:grid-cols-3 md:px-6 md:py-8'}>
         <About />
         <Feedback />
