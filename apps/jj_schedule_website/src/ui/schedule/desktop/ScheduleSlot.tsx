@@ -73,9 +73,9 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const countdown = () => {
     const diff = DateTime.fromISO(slot.start).diff(now())
     if (diff.as('day') < 1) {
-      return DateTime.fromISO(slot.start).diff(now()).toFormat("hh'h' mm'm' ss's'")
+      return DateTime.fromISO(slot.start).diff(now()).toFormat("h'h' mm'm' ss's'")
     }
-    return DateTime.fromISO(slot.start).diff(now()).toFormat("dd'd' hh'h' mm'm' ss's'")
+    return DateTime.fromISO(slot.start).diff(now()).toFormat("d'd' hh'h' mm'm' ss's'")
   }
 
   return (
@@ -104,7 +104,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               <p class={'text-slot-title line-clamp-2 font-bold tracking-widest'}>{props.slot.title}</p>
               <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
               <Show when={showCountdown()}>
-                <p class={'text-slot-countdown tracking-wide'}>{countdown()}</p>
+                <p class={'font-mono text-xs lowercase tracking-wide'}>{countdown()}</p>
               </Show>
             </div>
             <div class={'flex w-full flex-row justify-around'}>

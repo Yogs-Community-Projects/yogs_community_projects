@@ -87,7 +87,7 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             <p class={'text-md font-bold'}>{props.slot.title}</p>
             <p class={'text-sm'}>{props.slot.subtitle}</p>
             <Show when={showCountdown()}>
-              <p class={'mono text-sm'}>{countdown()}</p>
+              <p class={'font-mono text-xs'}>{countdown()}</p>
             </Show>
             <div class={'flex w-full flex-row justify-around'}>
               <Show when={slot.showTwitchIcon}>
