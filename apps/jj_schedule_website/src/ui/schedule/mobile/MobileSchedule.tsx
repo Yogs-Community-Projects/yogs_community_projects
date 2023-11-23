@@ -14,10 +14,10 @@ export const MobileSchedule: Component = () => {
 }
 
 const MobileScheduleBody: Component = () => {
-  const { isEmpty, includes } = useCreatorFilter()
+  const { isEmpty, isSlotPartOfFilter } = useCreatorFilter()
   const slots = () => useCurrentDay().slots
   const filteredSlots = () => {
-    return useSlots().filter(s => s.relations.creators.some(includes))
+    return useSlots().filter(isSlotPartOfFilter)
   }
 
   return (
