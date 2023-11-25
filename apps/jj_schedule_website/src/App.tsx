@@ -125,14 +125,15 @@ const Stats = () => {
 
 const App: Component = () => {
   const config = useConfig()
+  const visible = () => config.visible
   return (
     <Router>
       <Routes>
         <Route path={'/'} component={lazy(() => import('./ui/AppBody'))}>
-          <Show when={!config.visible}>
+          <Show when={!visible()}>
             <Route path={'/'} component={Home} />
           </Show>
-          <Show when={config.visible}>
+          <Show when={visible()}>
             <Route path={'/'} data={scheduleCurrentRouteDataFunc} component={Schedule}></Route>
           </Show>
           <Route path={'/extension'} component={Extension} />
