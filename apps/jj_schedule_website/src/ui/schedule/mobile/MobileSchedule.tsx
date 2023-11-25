@@ -6,7 +6,7 @@ import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 
 export const MobileSchedule: Component = () => {
   return (
-    <div class={'font-babas flex flex-col tracking-wider'}>
+    <div class={'font-babas flex w-full flex-col tracking-wider'}>
       <MobileScheduleHeader />
       <MobileScheduleBody />
     </div>
