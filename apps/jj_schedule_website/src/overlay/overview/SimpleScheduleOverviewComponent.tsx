@@ -271,7 +271,7 @@ const Body = () => {
             class={'accent-accent-500'}
             checked={showTimezone()}
             onchange={() => {
-              setTimezone(!timezone())
+              setTimezone(!showTimezone())
             }}
             type="checkbox"
             id="timezoneCheckbox"
