@@ -2,15 +2,24 @@ import { Component, JSX, Show } from 'solid-js'
 import { Slot, SlotUtils } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import { useScheduleDimensions } from '../providers/ScheduleDimensionsProvider'
-import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
+import { createModalSignal, getInverseTextColor, getTextColor, isColorLight, useNow } from '@ycapp/common'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 import { useAnalytics } from '../../../AnalyticsProvider'
+import { twMerge } from 'tailwind-merge'
 
 interface ScheduleSlotProps {
   slot: Slot
+}
+
+function _parseColor(c: string): string {
+  return '#' + c.substring(2) //  + c.substring(0, 2)
+}
+
+function textColor(background: string) {
+  return getTextColor(background)
 }
 
 export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
@@ -25,14 +34,6 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
     return {
       height: (useScheduleDimensions().slotSize / 3) * (slot.gridTileSize * 3) + 'px',
     }
-  }
-
-  function textColor(background: string) {
-    return getTextColor(background)
-  }
-
-  function _parseColor(c: string): string {
-    return '#' + c.substring(2) //  + c.substring(0, 2)
   }
 
   const background = () => {
@@ -104,7 +105,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               <p class={'text-slot-title line-clamp-2 font-bold tracking-widest'}>{props.slot.title}</p>
               <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
               <Show when={showCountdown()}>
-                <p class={'font-mono text-xs lowercase tracking-wide'}>{countdown()}</p>
+                <p class={'font-mono text-xs font-bold lowercase tracking-wide'}>{countdown()}</p>
               </Show>
             </div>
             <div class={'flex w-full flex-row justify-around'}>
