@@ -16,6 +16,9 @@ export const FundraiserOverviewComponent = () => {
   return (
     <div>
       <div class={'w-[50%] text-white'}>
+        <p class={'font-bold'}>
+          Especially at the beginning of JJ the fundraisers will change a lot which might not look good on stream.
+        </p>
         <p>Recommended Browser source height 80px</p>
         <table>
           <tbody>
