@@ -76,8 +76,9 @@ const Body: Component<{
   showRaised: boolean
   causes: string[]
 }> = props => {
-  const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
-  const d = doc<JJData>(coll, 'JJDonationTracker2023_2')
+  const db = useFirestoreDB()
+  const coll = collection(db, 'JJDonationTracker') as CollectionReference<JJData>
+  const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
 
   const [currentCharity, setCurrentCharity] = createSignal(0)
