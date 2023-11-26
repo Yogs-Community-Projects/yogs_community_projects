@@ -39,9 +39,15 @@ export const CharitiesOverviewComponent = () => {
                     setTheme(e.target.value)
                   }}
                 >
-                  <option value={'default'}>Default</option>
-                  <option value={'red'}>Red</option>
-                  <option value={'blue'}>Blue</option>
+                  <option class={'text-black'} value={'default'}>
+                    Default
+                  </option>
+                  <option class={'text-black'} value={'red'}>
+                    Red
+                  </option>
+                  <option class={'text-black'} value={'blue'}>
+                    Blue
+                  </option>
                 </select>
               </td>
             </tr>
@@ -59,11 +65,21 @@ export const CharitiesOverviewComponent = () => {
                     setSpeed(+e.target.value)
                   }}
                 >
-                  <option value={1}>1</option>
-                  <option value={2}>2</option>
-                  <option value={3}>3</option>
-                  <option value={4}>4</option>
-                  <option value={5}>5</option>
+                  <option class={'text-black'} value={1}>
+                    1
+                  </option>
+                  <option class={'text-black'} value={2}>
+                    2
+                  </option>
+                  <option class={'text-black'} value={3}>
+                    3
+                  </option>
+                  <option class={'text-black'} value={4}>
+                    4
+                  </option>
+                  <option class={'text-black'} value={5}>
+                    5
+                  </option>
                 </select>
               </td>
             </tr>
@@ -81,10 +97,18 @@ export const CharitiesOverviewComponent = () => {
                     setTitleLogo(e.target.value)
                   }}
                 >
-                  <option value={'none'}>None</option>
-                  <option value={'jjred'}>Red JJ Logo</option>
-                  <option value={'jjblue'}>Blue JJ Logo</option>
-                  <option value={'jjwhite'}>White JJ Logo</option>
+                  <option class={'text-black'} value={'none'}>
+                    None
+                  </option>
+                  <option class={'text-black'} value={'jjred'}>
+                    Red JJ Logo
+                  </option>
+                  <option class={'text-black'} value={'jjblue'}>
+                    Blue JJ Logo
+                  </option>
+                  <option class={'text-black'} value={'jjwhite'}>
+                    White JJ Logo
+                  </option>
                 </select>
               </td>
             </tr>
@@ -314,9 +338,15 @@ export const CharitiesOverviewComponent2 = () => {
                         setHeaderTheme(e.target.value)
                       }}
                     >
-                      <option value={'default'}>Default</option>
-                      <option value={'red'}>Red</option>
-                      <option value={'blue'}>Blue</option>
+                      <option class={'text-black'} value={'default'}>
+                        Default
+                      </option>
+                      <option class={'text-black'} value={'red'}>
+                        Red
+                      </option>
+                      <option class={'text-black'} value={'blue'}>
+                        Blue
+                      </option>
                     </select>
                   </td>
                 </tr>
@@ -334,10 +364,18 @@ export const CharitiesOverviewComponent2 = () => {
                         setTheme(e.target.value)
                       }}
                     >
-                      <option value={'default'}>Default</option>
-                      <option value={'red'}>Red</option>
-                      <option value={'blue'}>Blue</option>
-                      <option value={'carousel'}>Carousel</option>
+                      <option class={'text-black'} value={'default'}>
+                        Default
+                      </option>
+                      <option class={'text-black'} value={'red'}>
+                        Red
+                      </option>
+                      <option class={'text-black'} value={'blue'}>
+                        Blue
+                      </option>
+                      <option class={'text-black'} value={'carousel'}>
+                        Carousel
+                      </option>
                     </select>
                   </td>
                 </tr>

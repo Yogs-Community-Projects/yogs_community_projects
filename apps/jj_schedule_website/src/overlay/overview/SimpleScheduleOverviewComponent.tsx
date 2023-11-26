@@ -103,9 +103,15 @@ const Body = () => {
                     setNext(+e.target.value)
                   }}
                 >
-                  <option value={2}>2</option>
-                  <option value={3}>3</option>
-                  <option value={4}>4</option>
+                  <option class={'text-black'} value={2}>
+                    2
+                  </option>
+                  <option class={'text-black'} value={3}>
+                    3
+                  </option>
+                  <option class={'text-black'} value={4}>
+                    4
+                  </option>
                 </select>
               </td>
             </tr>
@@ -123,9 +129,15 @@ const Body = () => {
                     setHeaderTheme(e.target.value)
                   }}
                 >
-                  <option value={'default'}>Default</option>
-                  <option value={'red'}>Red</option>
-                  <option value={'blue'}>Blue</option>
+                  <option class={'text-black'} value={'default'}>
+                    Default
+                  </option>
+                  <option class={'text-black'} value={'red'}>
+                    Red
+                  </option>
+                  <option class={'text-black'} value={'blue'}>
+                    Blue
+                  </option>
                 </select>
               </td>
             </tr>
@@ -143,14 +155,30 @@ const Body = () => {
                     setTheme(e.target.value)
                   }}
                 >
-                  <option value={'default'}>Default</option>
-                  <option value={'timeofday'}>Time of day</option>
-                  <option value={'red'}>Red</option>
-                  <option value={'blue'}>Blue</option>
-                  <option value={'default_img'}>Default with img</option>
-                  <option value={'timeofday_img'}>Time of day with img</option>
-                  <option value={'red_img'}>Red with img</option>
-                  <option value={'blue_img'}>Blue with img</option>
+                  <option class={'text-black'} value={'default'}>
+                    Default
+                  </option>
+                  <option class={'text-black'} value={'timeofday'}>
+                    Time of day
+                  </option>
+                  <option class={'text-black'} value={'red'}>
+                    Red
+                  </option>
+                  <option class={'text-black'} value={'blue'}>
+                    Blue
+                  </option>
+                  <option class={'text-black'} value={'default_img'}>
+                    Default with img
+                  </option>
+                  <option class={'text-black'} value={'timeofday_img'}>
+                    Time of day with img
+                  </option>
+                  <option class={'text-black'} value={'red_img'}>
+                    Red with img
+                  </option>
+                  <option class={'text-black'} value={'blue_img'}>
+                    Blue with img
+                  </option>
                 </select>
               </td>
             </tr>
