@@ -26,12 +26,9 @@ const StreamerPage: Component = () => {
   )
 }
 const VisibleBody: Component = () => {
-  const config = useJJConfig()
   const { fundraiserData } = useData()
 
-  const fundraiser = () => {
-    return fundraiserData.data.campaigns
-  }
+  const fundraiser = () => fundraiserData.data.campaigns
 
   return (
     <div class={'flex h-full flex-1 flex-col'}>
