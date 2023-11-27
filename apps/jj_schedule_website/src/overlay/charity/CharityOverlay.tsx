@@ -28,7 +28,7 @@ export const CharityOverlayComponent: Component<{
   titleLogo: string
 }> = props => {
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJData>
-  const d = doc<JJData>(coll, 'JJDonationTracker2023_2')
+  const d = doc<JJData>(coll, 'JJDonationTracker2023')
   const charityData = loadLocalAndRemote('charityData', d, { forceRemote: true, ageInHours: 0 })
   const desc = () => {
     return 3
