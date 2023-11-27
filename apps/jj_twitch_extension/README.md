@@ -38,6 +38,10 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 
 Changelog
 
+0.0.9
+Updates
+Fixed bugs related to the live indicator on the Fundraiser Tab
+
 0.0.8
 Updates
 
