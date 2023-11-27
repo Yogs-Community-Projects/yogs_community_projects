@@ -46,7 +46,7 @@ export const Title: Component = () => {
               </Match>
               <Match when={filter().length > 1 && creator()}>
                 <h3 class={'text-md text-center'}>
-                  Streams with {creator().creator.name} or {filter().length - 1} more streamer
+                  Streams with {creator().creator.name} or {filter().length - 1} more
                 </h3>
               </Match>
             </Switch>
