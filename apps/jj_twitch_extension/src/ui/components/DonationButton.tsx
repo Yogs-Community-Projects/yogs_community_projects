@@ -17,7 +17,7 @@ export const DonationButton: Component = () => {
   }
 
   const url = () => {
-    if (!config.donationUrl || config.donationUrl === '' || !jjConfig.donationLink.allowCustomLinks) {
+    if (!config.donationUrl || config.donationUrl === '' || jjConfig.donationLink.overrideCustomLink) {
       return jjConfig.donationLink.url
     }
     return config.donationUrl
