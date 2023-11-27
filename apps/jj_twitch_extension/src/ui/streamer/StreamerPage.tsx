@@ -1,4 +1,4 @@
-import { Component, createEffect, createSignal, For, Match, onMount, ParentComponent, Show, Switch } from 'solid-js'
+import { Component, For, Match, ParentComponent, Show, Switch } from 'solid-js'
 import { useJJConfig } from '@ycapp/common'
 import { DateTime } from 'luxon'
 import { FiExternalLink } from 'solid-icons/fi'
@@ -12,7 +12,8 @@ import { useData } from '../dataProvider'
 import { LoadingFundraisers } from '../components/LoadingPage'
 
 const StreamerPage: Component = () => {
-  const visible = () => useJJConfig().showCommunityFundraiser
+  const config = useJJConfig()
+  const visible = () => config.showCommunityFundraiser
   return (
     <>
       <Show when={visible()}>
@@ -25,23 +26,11 @@ const StreamerPage: Component = () => {
   )
 }
 const VisibleBody: Component = () => {
+  const config = useJJConfig()
   const { fundraiserData } = useData()
+
   const fundraiser = () => {
-    return (
-      [...fundraiserData.data.campaigns]
-        // .filter(d => !excludeChannels().includes(d.login) && !excludeChannels().includes(d.display_name))
-        .sort((a, b) => {
-          /*
-        if (a.login && b.login) {
-          return +b.amount.value - +a.amount.value
-        } else if (a.login) {
-          return -1
-        } else if (b.login) {
-          return 1
-        }*/
-          return b.raised - a.raised
-        })
-    )
+    return fundraiserData.data.campaigns
   }
 
   return (
@@ -53,7 +42,6 @@ const VisibleBody: Component = () => {
             <p class={'mb-2 text-center text-base text-white'}>
               Last update, {DateTime.fromISO(fundraiserData.data.date).toLocaleString(DateTime.DATETIME_MED)}
             </p>
-            <RandomFundraiserButton fundraisers={fundraiser()} />
             <div class={'mb-2 flex flex-1 flex-col gap-2'}>
               <FundraiserBody fundraisers={fundraiser()} />
             </div>
@@ -156,59 +144,6 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
         */
       }}
     </For>
-  )
-}
-
-const RandomFundraiserButton: Component<{ fundraisers: Campaign[] }> = props => {
-  const fundraisers = () => props.fundraisers.filter(f => f.livestream.type === 'twitch' && f.isLive && f.twitch_data)
-  const show = () => fundraisers().length > 0
-  const randomFundraiser = () => {
-    const f = fundraisers()
-    const rand = Math.floor(Math.random() * f.length)
-    return f[rand]
-  }
-
-  const [fundraiser, setFundraiser] = createSignal<Campaign>(randomFundraiser())
-
-  const updateSelectedFundraiser = () => setFundraiser(randomFundraiser())
-
-  onMount(() => {
-    updateSelectedFundraiser()
-  })
-
-  createEffect(() => {
-    updateSelectedFundraiser()
-  })
-  const { theme } = useTheme()
-
-  const url = () => `https://twitch.tv/${fundraiser().livestream.channel}`
-  const gradient = () => {
-    switch (theme()) {
-      case 'blue':
-      case 'blue_light':
-        return 'bg-gradient-to-br from-primary-400 to-primary-500'
-      case 'dark':
-        return 'bg-gradient-to-br from-gray-400 to-gray-500'
-      default:
-        return 'bg-gradient-to-br from-accent-400 to-accent-500'
-    }
-  }
-
-  return (
-    <Show when={show()}>
-      <a
-        href={url()}
-        target={'_blank'}
-        class={twMerge(
-          'bg-accent-500 hover:scale-102 flex flex-row items-center justify-center gap-1 rounded-full p-1 text-sm text-white shadow hover:brightness-105',
-          gradient(),
-        )}
-        onMouseEnter={updateSelectedFundraiser}
-      >
-        Open Random Fundraiser Stream
-        <FiExternalLink />
-      </a>
-    </Show>
   )
 }
 
