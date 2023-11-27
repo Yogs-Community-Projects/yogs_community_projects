@@ -40,7 +40,10 @@ Changelog
 
 0.0.9
 Updates
-Fixed bugs related to the live indicator on the Fundraiser Tab
+- Small bug fixes
+- Updated Filter Dialog
+  - Added Search field
+  - Changed Sort toggle
 
 0.0.8
 Updates
