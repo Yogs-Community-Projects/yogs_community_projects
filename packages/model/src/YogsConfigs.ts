@@ -13,6 +13,7 @@ export interface JJExtensionConfig {
     url: string
     text: string
     allowCustomLinks: boolean
+    overrideCustomLink: boolean
   }
   jingleJamRegistrationUrl: string
 }
