@@ -47,7 +47,7 @@ const Body: Component<Props> = props => {
   const e = excludedChannel()
 
   const coll = collection(useFirestoreDB(), 'JJDonationTracker') as CollectionReference<JJCommunityFundraiser>
-  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023_2')
+  const d = doc<JJCommunityFundraiser>(coll, 'Fundraiser2023')
   const fundraiserData = loadLocalAndRemote('fundraiserData', d, { forceRemote: true, ageInHours: 0 })
   const useData = () =>
     fundraiserData.data?.campaigns
