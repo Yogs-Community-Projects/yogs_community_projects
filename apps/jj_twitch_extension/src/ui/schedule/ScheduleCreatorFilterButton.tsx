@@ -1,12 +1,13 @@
 import { Component, createSignal, For, Match, Show, Switch } from 'solid-js'
 import { createModalSignal, ModalSignal } from '@ycapp/common'
 import { FaRegularSquare, FaSolidFilter, FaSolidSquareCheck } from 'solid-icons/fa'
-import { Dialog } from '@kobalte/core'
+import { Dialog, ToggleButton } from '@kobalte/core'
 import { useCreatorFilter } from './CreatorFilterProvider'
 import { useCreatorIds, useSlots, useScheduleData } from './JJScheduleProvider'
 import { CgClose } from 'solid-icons/cg'
 import { useData } from '../dataProvider'
 import { useAnalytics } from '../../analytics/AnalyticsProvider'
+import { twMerge } from 'tailwind-merge'
 
 export const FilterButton: Component = () => {
   const modalSignal = createModalSignal()
@@ -60,13 +61,14 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
   const { useCreators } = useData()
   const ids = useCreatorIds()
   const creators = useCreators(() => ids)
-  const { includes, toggle, reset, filter } = useCreatorFilter()
+  const { includes, toggle, reset, filter, sortByName } = useCreatorFilter()
+  const [search, setSearch] = createSignal('')
+
   const { log } = useAnalytics()
+
   const appearanceCount = (id: string) => {
     return slots.filter(s => s.relations.creators.includes(id)).length
   }
-
-  const [sortByName, setSortByName] = createSignal(true)
 
   const creatorList = () => {
     if (!creators()) {
@@ -89,8 +91,17 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
     }
   }
 
+  const searchCreatorList = () => {
+    if (search() === '') {
+      return creatorList()
+    }
+    return creatorList().filter(c => {
+      return c.creator.name.toLowerCase().includes(search().toLowerCase())
+    })
+  }
+
   return (
-    <div class={'flex h-full w-full flex-col rounded-3xl bg-white'}>
+    <div class={'flex h-full w-full flex-col gap-2 rounded-3xl bg-white'}>
       <div class={`bg-primary flex h-[64px] items-center justify-center rounded-t-3xl p-2 text-white shadow-xl`}>
         <button onClick={onClose}>
           <CgClose size={24} class={''} />
@@ -100,30 +111,30 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         <div class={'flex-1'}></div>
         <div class={'w-[24px]'}></div>
       </div>
-
-      <div class={'flex flex-row content-center justify-center gap-1 p-2 text-sm'}>
-        <button
-          class={'hover:bg-accent-50 border-accent-50 flex-1 rounded-full border-2'}
-          onclick={() => setSortByName(true)}
-        >
-          Sort by name
-        </button>
-        <button
-          class={'hover:bg-accent-50 border-accent-50 flex-1 rounded-full border-2'}
-          onclick={() => setSortByName(false)}
-        >
-          Sort by appearance
-        </button>
+      <SortToggle />
+      <div class="px-2">
+        <input
+          class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+          id="search"
+          type="text"
+          placeholder="Search"
+          value={search()}
+          onInput={e => {
+            const target = e.target as HTMLInputElement
+            if (target) {
+              setSearch(target.value)
+            }
+          }}
+        />
       </div>
-
-      <div class={'flex w-full flex-1 flex-col gap-1 overflow-auto p-4 pt-0'}>
+      <div class={'flex w-full flex-1 flex-col gap-1 overflow-auto px-2'}>
         <Switch>
           <Match when={creators()}>
-            <For each={creatorList()}>
+            <For each={searchCreatorList()}>
               {creator => (
                 <>
                   <button
-                    class={'hover:bg-accent-50 border-accent-50 rounded-xl border-2 p-4 hover:brightness-105'}
+                    class={'hover:bg-accent-50 border-accent-50 rounded-xl border-2 p-2 hover:brightness-105'}
                     onClick={() => toggle(creator.creator.creatorId)}
                   >
                     <div class={'flex flex-row items-center'}>
@@ -146,7 +157,7 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
           </Match>
         </Switch>
       </div>
-      <div class={'flex h-[72px] flex-row items-center justify-end gap-2 p-4'}>
+      <div class={'flex flex-row items-center justify-end gap-2 px-4 pb-4'}>
         <button
           class={'bg-primary rounded-xl p-2 text-white'}
           onclick={() => {
@@ -170,5 +181,38 @@ const FilterDialogBody: Component<FilterDialogBodyProps> = props => {
         </button>
       </div>
     </div>
+  )
+}
+
+const SortToggle = () => {
+  const { sortByName, toggleSortByName } = useCreatorFilter()
+
+  return (
+    <ToggleButton.Root
+      class={'border-accent-50 mx-2 flex flex-row rounded-full border-2 text-sm text-white transition-all'}
+      pressed={sortByName()}
+      onChange={toggleSortByName}
+    >
+      {state => (
+        <>
+          <div
+            class={twMerge(
+              'flex-1 rounded-l-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              !state.pressed() && 'bg-primary opacity-100',
+            )}
+          >
+            <p>Appearance</p>
+          </div>
+          <div
+            class={twMerge(
+              'flex-1 rounded-r-2xl bg-gray-400 p-1 opacity-60 transition-all',
+              state.pressed() && 'bg-primary opacity-100',
+            )}
+          >
+            <p>Name</p>
+          </div>
+        </>
+      )}
+    </ToggleButton.Root>
   )
 }
