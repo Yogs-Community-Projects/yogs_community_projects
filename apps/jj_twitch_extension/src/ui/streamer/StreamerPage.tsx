@@ -90,55 +90,6 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
             url={url()}
           />
         )
-        /*
-        return (
-          <Switch>
-            <Match when={d.twitch_data}>
-              <a
-                class={twMerge(
-                  'min-h-24 hover:scale-102 group w-full rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl hover:brightness-105',
-                  campaignColor(i()),
-                )}
-                href={`https://twitch.tv/${d.twitch_data.login}`}
-                target={'_blank'}
-              >
-                <div class={'flex h-full w-full items-start p-1'}>
-                  <img class={'h-10 w-10 rounded-lg'} alt={d.twitch_data.display_name} src={img()} loading={'lazy'} />
-                  <div class={'w-full overflow-hidden pl-1'}>
-                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.name}</p>
-                    <div class={'flex max-h-[12px] flex-row items-center gap-1'}>
-                      <Show when={d.isLive}>
-                        <Live />
-                      </Show>
-                      <p class={'text-xxs truncate text-ellipsis font-bold'}>{d.twitch_data.display_name}</p>
-                    </div>
-                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.description}</p>
-                    <p class={twMerge('text-primary text-xs font-bold', raisedColor())}>
-                      Raised <Numeric value={d.raised} numberStyle="currency" currency={'GBP'} />
-                    </p>
-                  </div>
-                  <FiExternalLink />
-                </div>
-              </a>
-            </Match>
-            <Match when={d.livestream.type !== 'twitch' || !d.livestream.channel}>
-              <div class={twMerge('min-h-24 w-full rounded-2xl bg-white shadow-xl transition-all', campaignColor(i()))}>
-                <div class={'flex h-full w-full items-center p-1'}>
-                  <img class={'h-10 w-10 rounded-lg'} alt={d.user.name} src={img()} loading={'lazy'} />
-                  <div class={'w-full overflow-hidden pl-1'}>
-                    <p class={'truncate text-ellipsis text-sm font-bold'}>{d.name}</p>
-                    <p class={'text-xxs truncate text-ellipsis font-bold'}>{d.user.name}</p>
-                    <p class={'line-clamp-2 w-full text-ellipsis text-xs'}>{d.description}</p>
-                    <p class={twMerge('text-primary text-xs font-bold', raisedColor())}>
-                      Raised <Numeric value={d.raised} numberStyle="currency" currency={'GBP'} />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Match>
-          </Switch>
-        )
-        */
       }}
     </For>
   )
@@ -146,18 +97,10 @@ const FundraiserBody: Component<{ fundraisers: Campaign[] }> = props => {
 
 const Live = () => {
   return (
-    <>
-      <div class={'relative hidden h-3 items-center justify-center group-hover/live:flex'}>
-        <p class={'bg-twitch-500 rounded p-0.5 text-[6px] text-white'}>LIVE</p>
-      </div>
-
-      <span class="relative flex h-3 w-3 items-center justify-center group-hover/live:hidden">
-        <span class={'bg-twitch-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75'} />
-        <span class={'bg-twitch-500 relative inline-flex h-full w-full rounded-full'} />
-      </span>
-    </>
+    <div class={'relative flex h-3 items-center justify-center'}>
+      <p class={'bg-twitch-500 rounded p-0.5 text-[6px] text-white'}>LIVE</p>
+    </div>
   )
-  //return <p class={twMerge('h-4 animate-pulse rounded bg-red-500 p-0.5 text-[6px] text-white', pulseFGColor())}>LIVE</p>
 }
 
 const Child: Component<{
