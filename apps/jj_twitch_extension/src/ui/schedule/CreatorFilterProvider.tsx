@@ -2,6 +2,7 @@ import { createContext, createSignal, ParentComponent, useContext } from 'solid-
 
 const useHook = () => {
   const [filter, setFilter] = createSignal<string[]>([])
+  const [sortByName, setSortByName] = createSignal(false)
 
   const add = (id: string) => {
     setFilter([...filter(), id])
@@ -25,6 +26,8 @@ const useHook = () => {
   }
 
   const isEmpty = () => filter().length == 0
+  const toggleSortByName = () => setSortByName(v => !v)
+
   return {
     filter,
     add,
@@ -33,6 +36,9 @@ const useHook = () => {
     reset,
     includes,
     isEmpty,
+    sortByName,
+    setSortByName,
+    toggleSortByName,
   }
 }
 
