@@ -16,7 +16,7 @@ import {
 } from '../overlay_signals'
 import { OverlayHeader } from './OverlayHeader'
 import { DateTime } from 'luxon'
-import { ScheduleOverlayDateProviderProvider } from './ScheduleOverlayDateProvider'
+import { ScheduleOverlayDateProviderProvider, useScheduleOverlayDateProvider } from './ScheduleOverlayDateProvider'
 import { twMerge } from 'tailwind-merge'
 import { useConfig } from '../../ui/configProvider/ConfigProvider'
 
@@ -68,12 +68,15 @@ export const ScheduleOverlayComponent: Component<Props> = props => {
 
 const Body: Component<Props> = props => {
   const config = useConfig()
+  const date = useScheduleOverlayDateProvider()
 
   const schedule = useScheduleDB().read(config.overlay.yogsScheduleId)
   const slots = () =>
     useSlots()
       .filter(slot => {
-        return SlotUtils.isLive(slot, useOverlayNow()) || SlotUtils.isBefore(slot, useOverlayNow())
+        const start = SlotUtils.start(slot)
+        const end = SlotUtils.nextStreamEnd(slot, date())
+        return (date() >= start && date() < end) || date() <= start
       })
       .slice(0, props.next)
 

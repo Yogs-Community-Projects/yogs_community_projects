@@ -4,6 +4,7 @@ import { useOverlayNow } from '../overlay_signals'
 import { Slot, SlotUtils } from '@ycapp/model'
 import { getTextColor } from '@ycapp/common'
 import { DateTime } from 'luxon'
+import { useScheduleOverlayDateProvider } from './ScheduleOverlayDateProvider'
 const useParam = (key: string) => {
   const [params] = useSearchParams()
   return params[key]
@@ -37,6 +38,7 @@ interface MobileScheduleSlotProps {
 
 const OverlayScheduleSlotV2: Component<MobileScheduleSlotProps> = props => {
   const slot = props.slot
+  const date = useScheduleOverlayDateProvider()
 
   function textColor(background: string) {
     return getTextColor(background)
@@ -72,6 +74,13 @@ const OverlayScheduleSlotV2: Component<MobileScheduleSlotProps> = props => {
     return SlotUtils.start(slot).diff(useOverlayNow()).toFormat('hh:mm:ss')
   }
 
+  const showLiveText = () => {
+    const now = date()
+    const start = SlotUtils.nextStream(slot, now)
+    const end = SlotUtils.nextStreamEnd(slot, now)
+    return now > start && now < end
+  }
+
   return (
     <>
       <div class={'p-2'}>
@@ -88,8 +97,8 @@ const OverlayScheduleSlotV2: Component<MobileScheduleSlotProps> = props => {
           <Show when={!SlotUtils.isLive(slot, useOverlayNow())}>
             <p class={'text-xl'}>{countdown()}</p>
           </Show>
-          <Show when={SlotUtils.isLive(slot, useOverlayNow())}>
-            <p class={'font-mono text-xl'}>Live</p>
+          <Show when={showLiveText()}>
+            <p class={'text-xl'}>Live</p>
           </Show>
         </div>
       </div>
@@ -99,6 +108,7 @@ const OverlayScheduleSlotV2: Component<MobileScheduleSlotProps> = props => {
 
 const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const slot = props.slot
+  const date = useScheduleOverlayDateProvider()
 
   const redColors = [
     'bg-gradient-to-b from-primary-200 to-primary-300 text-white',
@@ -354,6 +364,13 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
     }).toFormat('EEE, h:mm a')
   }
 
+  const showLiveText = () => {
+    const now = date()
+    const start = SlotUtils.nextStream(slot, now)
+    const end = SlotUtils.nextStreamEnd(slot, now)
+    return now >= start && now < end
+  }
+
   return (
     <>
       <div class={'p-2'}>
@@ -369,10 +386,10 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             <div
               class={`${countdownBackground()} text-md flex w-full flex-row items-center justify-between rounded-t-2xl p-1 px-4 text-center text-white`}
             >
-              <Show when={SlotUtils.isLive(slot, useOverlayNow())}>
-                <p class={'w-full text-center font-bold'}>LIVE</p>
+              <Show when={showLiveText()}>
+                <p class={'w-full text-center text-lg font-bold'}>LIVE</p>
               </Show>
-              <Show when={!SlotUtils.isLive(slot, useOverlayNow())}>
+              <Show when={!showLiveText()}>
                 <p class={'text-lg'}>{timeString()}</p>
                 <p class={'text-md font-mono lowercase'}>{countdown()}</p>
               </Show>
@@ -386,8 +403,8 @@ const OverlayScheduleSlot: Component<MobileScheduleSlotProps> = props => {
                   // background_image: jjImage,
                 }}
               >
-                <p class={'line-clamp-2 text-2xl font-bold'}>{props.slot.title}</p>
-                <p class={'text-1xl line-clamp-2'}>{props.slot.subtitle}</p>
+                <p class={'line-clamp-2 text-xl font-bold'}>{props.slot.title}</p>
+                <p class={'text-md line-clamp-2'}>{props.slot.subtitle}</p>
                 <Show when={showDate()}>
                   <p class={'text-lg'}>{start().toFormat('h:mm a')}</p>
                 </Show>
