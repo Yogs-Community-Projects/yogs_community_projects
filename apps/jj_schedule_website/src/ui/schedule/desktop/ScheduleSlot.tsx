@@ -2,13 +2,14 @@ import { Component, JSX, Show } from 'solid-js'
 import { Slot, SlotUtils } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import { useScheduleDimensions } from '../providers/ScheduleDimensionsProvider'
-import { createModalSignal, getInverseTextColor, getTextColor, isColorLight, useNow } from '@ycapp/common'
+import { contrast, createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 import { useAnalytics } from '../../../AnalyticsProvider'
 import { twMerge } from 'tailwind-merge'
+import { LivePulseDot } from '../LivePulseDot'
 
 interface ScheduleSlotProps {
   slot: Slot
@@ -71,6 +72,8 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
   const showCountdown = () => {
     return SlotUtils.isBefore(slot, now())
   }
+
+  const isLive = () => SlotUtils.isLive(slot, now())
   const countdown = () => {
     const diff = DateTime.fromISO(slot.start).diff(now())
     if (diff.as('day') < 1) {
@@ -106,6 +109,9 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
               <Show when={showCountdown()}>
                 <p class={'font-mono text-xs font-bold lowercase tracking-wide'}>{countdown()}</p>
+              </Show>
+              <Show when={!showCountdown() && isLive()}>
+                <LivePulseDot />
               </Show>
             </div>
             <div class={'flex w-full flex-row justify-around'}>
