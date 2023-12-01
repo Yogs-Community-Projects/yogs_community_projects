@@ -2,11 +2,13 @@ import { Component, JSX, Show } from 'solid-js'
 import { Slot, SlotUtils } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import { useScheduleMobileDimensions } from '../providers/ScheduleMobileDimensionsProvider'
-import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
+import { contrast, createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useAnalytics } from '../../../AnalyticsProvider'
+import { twMerge } from 'tailwind-merge'
+import { LivePulseDot } from '../LivePulseDot'
 
 interface MobileScheduleSlotProps {
   slot: Slot
@@ -28,6 +30,8 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
   const showCountdown = () => {
     return SlotUtils.isBefore(slot, now())
   }
+  const isLive = () => SlotUtils.isLive(slot, now())
+
   const style = (): JSX.CSSProperties => {
     return {
       height: useScheduleMobileDimensions().slotHeight + 'px',
@@ -88,6 +92,9 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
             <p class={'text-sm'}>{props.slot.subtitle}</p>
             <Show when={showCountdown()}>
               <p class={'font-mono text-xs'}>{countdown()}</p>
+            </Show>
+            <Show when={!showCountdown() && isLive()}>
+              <LivePulseDot />
             </Show>
             <div class={'flex w-full flex-row justify-around'}>
               <Show when={slot.showTwitchIcon}>
