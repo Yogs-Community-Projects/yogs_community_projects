@@ -57,7 +57,7 @@ export const useTodayIndex = () => {
       if (DayUtils.isToday(day)) {
         index = i
         break
-      } else if (i > 1) {
+      } else if (i > 0) {
         const prevDay = days[i - 1]
         if (now() >= DayUtils.end(prevDay) && now() <= DayUtils.start(day)) {
           index = i
