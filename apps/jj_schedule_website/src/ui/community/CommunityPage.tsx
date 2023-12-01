@@ -2,7 +2,7 @@ import { Component, createEffect, createSignal, For, Match, onMount, Show, Switc
 import { collection, CollectionReference, doc } from 'firebase/firestore'
 import { Campaign, JJCommunityFundraiser } from '@ycapp/model'
 import { useFirestore } from 'solid-firebase'
-import { useFirestoreDB } from '@ycapp/common'
+import { useFirestoreDB, useNow } from '@ycapp/common'
 import { twMerge } from 'tailwind-merge'
 import { Numeric } from 'solid-i18n'
 import { DateTime } from 'luxon'
@@ -56,6 +56,13 @@ const FundraiserBody: Component<{ fundraiserData: JJCommunityFundraiser }> = pro
     )
   }
 
+  const now = useNow()
+  const nowYear = () => now().year
+  const date = () => DateTime.fromISO(props.fundraiserData.date)
+  const dataYear = () => date().year
+
+  const isDataFromLastYear = () => dataYear() < nowYear()
+
   const top = () => fundraiser().at(0)
 
   const top10 = () => (fundraiser().length > 10 ? fundraiser().slice(1, 10) : fundraiser().slice(1))
@@ -64,9 +71,11 @@ const FundraiserBody: Component<{ fundraiserData: JJCommunityFundraiser }> = pro
 
   return (
     <div class={'flex flex-col items-center gap-4'}>
-      <p class={'text-center text-base text-white'}>
-        This is data from 2022. Once this years fundraiser are online they will be shown here.
-      </p>
+      <Show when={isDataFromLastYear()}>
+        <p class={'text-center text-base text-white'}>
+          This is data from {dataYear()}. Once this years fundraiser are online they will be shown here.
+        </p>
+      </Show>
       <p class={'mb-2 text-center text-base text-white'}>
         Last update, {DateTime.fromISO(props.fundraiserData.date).toLocaleString(DateTime.DATETIME_MED)}
       </p>
