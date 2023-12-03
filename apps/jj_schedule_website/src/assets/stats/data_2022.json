@@ -7,7 +7,9 @@
       "duration": 10800,
       "yogs": 635782.94,
       "fundraiser": 25002.71,
-      "total": 660785.64
+      "total": 660785.64,
+      "bundles": 16817,
+      "donations": 16903
     },
     {
       "label": "Christmas Trains",
@@ -16,7 +18,9 @@
       "duration": 15180,
       "yogs": 324038.46,
       "fundraiser": 54259.72,
-      "total": 378298.19
+      "total": 378298.19,
+      "bundles": 8077,
+      "donations": 8621
     },
     {
       "label": "Night 1",
@@ -25,7 +29,9 @@
       "duration": 38820,
       "yogs": 138479.83,
       "fundraiser": 42038.1,
-      "total": 180517.93
+      "total": 180517.93,
+      "bundles": 4856,
+      "donations": 4912
     },
     {
       "label": "Switch Sports",
@@ -34,7 +40,9 @@
       "duration": 10800,
       "yogs": 37546.32,
       "fundraiser": 9233.46,
-      "total": 46779.78
+      "total": 46779.78,
+      "bundles": 1240,
+      "donations": 1268
     },
     {
       "label": "Plate Up",
@@ -43,7 +51,9 @@
       "duration": 10800,
       "yogs": 51609.28,
       "fundraiser": 11913.76,
-      "total": 63523.04
+      "total": 63523.04,
+      "bundles": 1596,
+      "donations": 1627
     },
     {
       "label": "Mario Kart Tournament",
@@ -52,7 +62,9 @@
       "duration": 10800,
       "yogs": 45540.14,
       "fundraiser": 14814.82,
-      "total": 60354.96
+      "total": 60354.96,
+      "bundles": 1535,
+      "donations": 1613
     },
     {
       "label": "Protessional Strem",
@@ -61,7 +73,9 @@
       "duration": 18000,
       "yogs": 98029.8,
       "fundraiser": 25540.81,
-      "total": 123570.61
+      "total": 123570.61,
+      "bundles": 2606,
+      "donations": 4206
     },
     {
       "label": "Night 2",
@@ -70,7 +84,9 @@
       "duration": 36000,
       "yogs": 50420.64,
       "fundraiser": 16656.23,
-      "total": 67076.87
+      "total": 67076.87,
+      "bundles": 1759,
+      "donations": 1887
     },
     {
       "label": "Puzzle Sisters",
@@ -79,7 +95,9 @@
       "duration": 10800,
       "yogs": 23121.53,
       "fundraiser": 7627.55,
-      "total": 30749.09
+      "total": 30749.09,
+      "bundles": 772,
+      "donations": 804
     },
     {
       "label": "Cute Corner",
@@ -88,7 +106,9 @@
       "duration": 10800,
       "yogs": 41339.89,
       "fundraiser": 29716.83,
-      "total": 71056.71
+      "total": 71056.71,
+      "bundles": 1561,
+      "donations": 1672
     },
     {
       "label": "Simon's Important Videos",
@@ -97,7 +117,9 @@
       "duration": 10800,
       "yogs": 53249.42,
       "fundraiser": 18680.65,
-      "total": 71930.06
+      "total": 71930.06,
+      "bundles": 1550,
+      "donations": 1609
     },
     {
       "label": "Minecraft Bingo",
@@ -106,7 +128,9 @@
       "duration": 10800,
       "yogs": 28477.82,
       "fundraiser": 14636.37,
-      "total": 43114.2
+      "total": 43114.2,
+      "bundles": 1096,
+      "donations": 1195
     },
     {
       "label": "Jingleathon",
@@ -115,7 +139,9 @@
       "duration": 36000,
       "yogs": 65687.38,
       "fundraiser": 24969.31,
-      "total": 90656.69
+      "total": 90656.69,
+      "bundles": 2170,
+      "donations": 2314
     },
     {
       "label": "Night 3",
@@ -124,7 +150,9 @@
       "duration": 7200,
       "yogs": 14156.93,
       "fundraiser": 5578.53,
-      "total": 19735.46
+      "total": 19735.46,
+      "bundles": 382,
+      "donations": 461
     },
     {
       "label": "Game Hard",
@@ -133,7 +161,9 @@
       "duration": 10800,
       "yogs": 20053.98,
       "fundraiser": 7730.87,
-      "total": 27784.85
+      "total": 27784.85,
+      "bundles": 666,
+      "donations": 709
     },
     {
       "label": "Map Master",
@@ -142,7 +172,9 @@
       "duration": 10800,
       "yogs": 25568.84,
       "fundraiser": 16324.96,
-      "total": 41893.8
+      "total": 41893.8,
+      "bundles": 1117,
+      "donations": 1152
     },
     {
       "label": "Simon Clark's Yogs Challenges",
@@ -151,7 +183,9 @@
       "duration": 10800,
       "yogs": 35839.7,
       "fundraiser": 15044.11,
-      "total": 50883.81
+      "total": 50883.81,
+      "bundles": 1223,
+      "donations": 1311
     },
     {
       "label": "Canadian Evening",
@@ -160,7 +194,9 @@
       "duration": 10800,
       "yogs": 21635.9,
       "fundraiser": 10876.71,
-      "total": 32512.61
+      "total": 32512.61,
+      "bundles": 868,
+      "donations": 922
     },
     {
       "label": "Night 4",
@@ -169,7 +205,9 @@
       "duration": 43200,
       "yogs": 36799.97,
       "fundraiser": 22242.38,
-      "total": 59042.35
+      "total": 59042.35,
+      "bundles": 1596,
+      "donations": 1632
     },
     {
       "label": "Co-op Mayham",
@@ -178,7 +216,9 @@
       "duration": 10800,
       "yogs": 13206.9,
       "fundraiser": 4047.06,
-      "total": 17253.97
+      "total": 17253.97,
+      "bundles": 449,
+      "donations": 475
     },
     {
       "label": "Cozy Boardgames",
@@ -187,7 +227,9 @@
       "duration": 10800,
       "yogs": 12207.73,
       "fundraiser": 9015.56,
-      "total": 21223.28
+      "total": 21223.28,
+      "bundles": 536,
+      "donations": 584
     },
     {
       "label": "Civ: Salt & Strategy",
@@ -196,7 +238,9 @@
       "duration": 21600,
       "yogs": 83130.65,
       "fundraiser": 27162.05,
-      "total": 110292.7
+      "total": 110292.7,
+      "bundles": 2142,
+      "donations": 2378
     },
     {
       "label": "Night 5",
@@ -205,7 +249,9 @@
       "duration": 43200,
       "yogs": 33094.49,
       "fundraiser": 14192.9,
-      "total": 47287.39
+      "total": 47287.39,
+      "bundles": 1220,
+      "donations": 1272
     },
     {
       "label": "Dark Mysteries",
@@ -214,7 +260,9 @@
       "duration": 10800,
       "yogs": 8589.39,
       "fundraiser": 2617.57,
-      "total": 11206.96
+      "total": 11206.96,
+      "bundles": 290,
+      "donations": 303
     },
     {
       "label": "Tom & Wheelboy",
@@ -223,7 +271,9 @@
       "duration": 10800,
       "yogs": 18480.44,
       "fundraiser": 2828.78,
-      "total": 21309.22
+      "total": 21309.22,
+      "bundles": 538,
+      "donations": 558
     },
     {
       "label": "Hat Films Christmas Album",
@@ -232,7 +282,9 @@
       "duration": 21600,
       "yogs": 57794.82,
       "fundraiser": 24147.4,
-      "total": 81942.22
+      "total": 81942.22,
+      "bundles": 1841,
+      "donations": 1976
     },
     {
       "label": "Night 6",
@@ -241,7 +293,9 @@
       "duration": 43200,
       "yogs": 50558.77,
       "fundraiser": 21383.56,
-      "total": 71942.33
+      "total": 71942.33,
+      "bundles": 1566,
+      "donations": 2001
     },
     {
       "label": "Scrub Dota inhouse",
@@ -250,7 +304,9 @@
       "duration": 10800,
       "yogs": 12816.57,
       "fundraiser": 4976.06,
-      "total": 17792.64
+      "total": 17792.64,
+      "bundles": 375,
+      "donations": 404
     },
     {
       "label": "Cursedcraft",
@@ -259,7 +315,9 @@
       "duration": 10800,
       "yogs": 13044.42,
       "fundraiser": 5660.07,
-      "total": 18704.48
+      "total": 18704.48,
+      "bundles": 460,
+      "donations": 479
     },
     {
       "label": "Feed a cow for christmas",
@@ -268,7 +326,9 @@
       "duration": 10800,
       "yogs": 18545.6,
       "fundraiser": 6697.47,
-      "total": 25243.06
+      "total": 25243.06,
+      "bundles": 639,
+      "donations": 690
     },
     {
       "label": "Fizone After Dark",
@@ -277,7 +337,9 @@
       "duration": 10800,
       "yogs": 28819.95,
       "fundraiser": 13579.38,
-      "total": 42399.34
+      "total": 42399.34,
+      "bundles": 777,
+      "donations": 976
     },
     {
       "label": "Night 7",
@@ -286,7 +348,9 @@
       "duration": 43200,
       "yogs": 30259.91,
       "fundraiser": 11415.74,
-      "total": 41675.65
+      "total": 41675.65,
+      "bundles": 1050,
+      "donations": 1164
     },
     {
       "label": "Hangover Hangout",
@@ -295,7 +359,9 @@
       "duration": 10800,
       "yogs": 16524.59,
       "fundraiser": 2432.09,
-      "total": 18956.68
+      "total": 18956.68,
+      "bundles": 277,
+      "donations": 298
     },
     {
       "label": "Pedguin's Pre Poker Party",
@@ -304,7 +370,9 @@
       "duration": 10800,
       "yogs": 11186.4,
       "fundraiser": 3282.21,
-      "total": 14468.61
+      "total": 14468.61,
+      "bundles": 329,
+      "donations": 348
     },
     {
       "label": "Poker Night",
@@ -313,7 +381,9 @@
       "duration": 21600,
       "yogs": 32882.33,
       "fundraiser": 7278.7,
-      "total": 40161.03
+      "total": 40161.03,
+      "bundles": 966,
+      "donations": 1124
     },
     {
       "label": "Night 8",
@@ -322,7 +392,9 @@
       "duration": 41400,
       "yogs": 18633.56,
       "fundraiser": 6396.51,
-      "total": 25030.07
+      "total": 25030.07,
+      "bundles": 702,
+      "donations": 725
     },
     {
       "label": "Other Worlds",
@@ -331,7 +403,9 @@
       "duration": 10800,
       "yogs": 10221.01,
       "fundraiser": 2580.08,
-      "total": 12801.1
+      "total": 12801.1,
+      "bundles": 246,
+      "donations": 270
     },
     {
       "label": "Fighting Fantasy",
@@ -340,7 +414,9 @@
       "duration": 10800,
       "yogs": 11199.43,
       "fundraiser": 4537.97,
-      "total": 15737.39
+      "total": 15737.39,
+      "bundles": 356,
+      "donations": 423
     },
     {
       "label": "Scultping the Yogscast",
@@ -349,7 +425,9 @@
       "duration": 10800,
       "yogs": 10121.66,
       "fundraiser": 7098.94,
-      "total": 17220.59
+      "total": 17220.59,
+      "bundles": 354,
+      "donations": 478
     },
     {
       "label": "CSGO Scrub Major",
@@ -358,7 +436,9 @@
       "duration": 10800,
       "yogs": 13454.84,
       "fundraiser": 3884.13,
-      "total": 17338.98
+      "total": 17338.98,
+      "bundles": 363,
+      "donations": 430
     },
     {
       "label": "Night 9",
@@ -367,7 +447,9 @@
       "duration": 43200,
       "yogs": 19555.56,
       "fundraiser": 7482.86,
-      "total": 27038.42
+      "total": 27038.42,
+      "bundles": 684,
+      "donations": 770
     },
     {
       "label": "Breakfest Mixup",
@@ -376,7 +458,9 @@
       "duration": 10800,
       "yogs": 7184.98,
       "fundraiser": 1730.31,
-      "total": 8915.29
+      "total": 8915.29,
+      "bundles": 228,
+      "donations": 247
     },
     {
       "label": "Tactic games",
@@ -385,7 +469,9 @@
       "duration": 10800,
       "yogs": 15296.68,
       "fundraiser": 2822.62,
-      "total": 18119.3
+      "total": 18119.3,
+      "bundles": 359,
+      "donations": 406
     },
     {
       "label": "Everyone is santa",
@@ -394,7 +480,9 @@
       "duration": 10800,
       "yogs": 11758.71,
       "fundraiser": 3784.46,
-      "total": 15543.17
+      "total": 15543.17,
+      "bundles": 361,
+      "donations": 400
     },
     {
       "label": "Longest John Singalong",
@@ -403,7 +491,9 @@
       "duration": 14400,
       "yogs": 16837.89,
       "fundraiser": 3722.91,
-      "total": 20560.8
+      "total": 20560.8,
+      "bundles": 448,
+      "donations": 516
     },
     {
       "label": "Harry's Vault Hunters Marathon",
@@ -412,7 +502,9 @@
       "duration": 39600,
       "yogs": 29578.8,
       "fundraiser": 8150.46,
-      "total": 37729.26
+      "total": 37729.26,
+      "bundles": 713,
+      "donations": 910
     },
     {
       "label": "Cutesy Chums",
@@ -421,7 +513,9 @@
       "duration": 10800,
       "yogs": 7148.7,
       "fundraiser": 1684.73,
-      "total": 8833.44
+      "total": 8833.44,
+      "bundles": 215,
+      "donations": 248
     },
     {
       "label": "Friend Time",
@@ -430,7 +524,9 @@
       "duration": 10800,
       "yogs": 8437.4,
       "fundraiser": 1807.33,
-      "total": 10244.72
+      "total": 10244.72,
+      "bundles": 251,
+      "donations": 281
     },
     {
       "label": "High rollers",
@@ -439,7 +535,9 @@
       "duration": 10800,
       "yogs": 10575.79,
       "fundraiser": 6700.79,
-      "total": 17276.57
+      "total": 17276.57,
+      "bundles": 385,
+      "donations": 453
     },
     {
       "label": "Lolip's Satisfactory",
@@ -448,7 +546,9 @@
       "duration": 10800,
       "yogs": 17513.5,
       "fundraiser": 3536.64,
-      "total": 21050.15
+      "total": 21050.15,
+      "bundles": 411,
+      "donations": 569
     },
     {
       "label": "Late Night Ranch Sim",
@@ -457,7 +557,9 @@
       "duration": 10800,
       "yogs": 15613.67,
       "fundraiser": 1811.63,
-      "total": 17425.3
+      "total": 17425.3,
+      "bundles": 267,
+      "donations": 378
     },
     {
       "label": "Night 11",
@@ -466,7 +568,9 @@
       "duration": 32400,
       "yogs": 10624.13,
       "fundraiser": 12714.05,
-      "total": 23338.18
+      "total": 23338.18,
+      "bundles": 411,
+      "donations": 714
     },
     {
       "label": "Dad Town",
@@ -475,7 +579,9 @@
       "duration": 10800,
       "yogs": 5927.21,
       "fundraiser": 1606.92,
-      "total": 7534.13
+      "total": 7534.13,
+      "bundles": 203,
+      "donations": 221
     },
     {
       "label": "Chillout Clundle",
@@ -484,7 +590,9 @@
       "duration": 10800,
       "yogs": 11670.21,
       "fundraiser": 2607.07,
-      "total": 14277.28
+      "total": 14277.28,
+      "bundles": 270,
+      "donations": 299
     },
     {
       "label": "IRL Plateup challenge",
@@ -493,7 +601,9 @@
       "duration": 10800,
       "yogs": 10251.55,
       "fundraiser": 1769.89,
-      "total": 12021.44
+      "total": 12021.44,
+      "bundles": 285,
+      "donations": 310
     },
     {
       "label": "MSPaint Fighting Fantasy",
@@ -502,7 +612,9 @@
       "duration": 12600,
       "yogs": 11444.01,
       "fundraiser": 3166.5,
-      "total": 14610.51
+      "total": 14610.51,
+      "bundles": 358,
+      "donations": 424
     },
     {
       "label": "Co-op Games",
@@ -511,7 +623,9 @@
       "duration": 10800,
       "yogs": 6240.4,
       "fundraiser": 8643.09,
-      "total": 14883.49
+      "total": 14883.49,
+      "bundles": 205,
+      "donations": 253
     },
     {
       "label": "Night 12",
@@ -520,7 +634,9 @@
       "duration": 30600,
       "yogs": 10591.82,
       "fundraiser": 2098.29,
-      "total": 12690.11
+      "total": 12690.11,
+      "bundles": 341,
+      "donations": 368
     },
     {
       "label": "Save the world",
@@ -529,7 +645,9 @@
       "duration": 10800,
       "yogs": 10728.39,
       "fundraiser": 1272.91,
-      "total": 12001.31
+      "total": 12001.31,
+      "bundles": 239,
+      "donations": 263
     },
     {
       "label": "4 Player co-op games",
@@ -538,7 +656,9 @@
       "duration": 10800,
       "yogs": 8577.36,
       "fundraiser": 2046.08,
-      "total": 10623.43
+      "total": 10623.43,
+      "bundles": 240,
+      "donations": 249
     },
     {
       "label": "Hatfilms gameshow",
@@ -547,7 +667,9 @@
       "duration": 10800,
       "yogs": 10903.72,
       "fundraiser": 2367.95,
-      "total": 13271.66
+      "total": 13271.66,
+      "bundles": 307,
+      "donations": 330
     },
     {
       "label": "Terraria Hangout",
@@ -556,7 +678,9 @@
       "duration": 10800,
       "yogs": 46681.43,
       "fundraiser": 43488.8,
-      "total": 90170.24
+      "total": 90170.24,
+      "bundles": 470,
+      "donations": 611
     },
     {
       "label": "Elden Ring Co-op",
@@ -565,7 +689,9 @@
       "duration": 10800,
       "yogs": 9860.0,
       "fundraiser": 1797.76,
-      "total": 11657.76
+      "total": 11657.76,
+      "bundles": 310,
+      "donations": 321
     },
     {
       "label": "Night 13",
@@ -574,7 +700,9 @@
       "duration": 32400,
       "yogs": 16504.51,
       "fundraiser": 2736.19,
-      "total": 19240.7
+      "total": 19240.7,
+      "bundles": 511,
+      "donations": 519
     },
     {
       "label": "Space wars",
@@ -583,7 +711,9 @@
       "duration": 10800,
       "yogs": 23018.14,
       "fundraiser": 988.48,
-      "total": 24006.62
+      "total": 24006.62,
+      "bundles": 540,
+      "donations": 571
     },
     {
       "label": "Tech 'em up",
@@ -592,7 +722,9 @@
       "duration": 10800,
       "yogs": 21326.02,
       "fundraiser": 2172.06,
-      "total": 23498.08
+      "total": 23498.08,
+      "bundles": 582,
+      "donations": 619
     },
     {
       "label": "Martyn's Minecraft",
@@ -601,7 +733,9 @@
       "duration": 10800,
       "yogs": 36601.99,
       "fundraiser": 5289.77,
-      "total": 41891.76
+      "total": 41891.76,
+      "bundles": 974,
+      "donations": 1068
     },
     {
       "label": "Late Late Show",
@@ -610,7 +744,9 @@
       "duration": 10800,
       "yogs": 39900.5,
       "fundraiser": 15508.68,
-      "total": 55409.18
+      "total": 55409.18,
+      "bundles": 1037,
+      "donations": 1221
     }
   ],
   "creator_data": [
@@ -1017,6 +1153,8 @@
       "yogs": 0,
       "fundraiser": 0,
       "total": 0,
+      "bundles": 0,
+      "donations": 0,
       "duration": 3600
     },
     {
@@ -1024,6 +1162,8 @@
       "yogs": 0,
       "fundraiser": 0,
       "total": 0,
+      "bundles": 0,
+      "donations": 0,
       "duration": 3600
     },
     {
@@ -1031,6 +1171,8 @@
       "yogs": 0,
       "fundraiser": 0,
       "total": 0,
+      "bundles": 0,
+      "donations": 0,
       "duration": 3600
     },
     {
@@ -1038,6 +1180,8 @@
       "yogs": 0,
       "fundraiser": 0,
       "total": 0,
+      "bundles": 0,
+      "donations": 0,
       "duration": 3600
     },
     {
@@ -1045,6 +1189,8 @@
       "yogs": 0,
       "fundraiser": 0,
       "total": 0,
+      "bundles": 0,
+      "donations": 0,
       "duration": 3600
     },
     {
@@ -1052,6 +1198,8 @@
       "yogs": 0.0,
       "fundraiser": 0.0,
       "total": 0.0,
+      "bundles": 0,
+      "donations": 0,
       "duration": 3600
     },
     {
@@ -1059,6 +1207,8 @@
       "yogs": 468251.35,
       "fundraiser": 3901.69,
       "total": 472153.04,
+      "bundles": 11828,
+      "donations": 11875,
       "duration": 3600
     },
     {
@@ -1066,6 +1216,8 @@
       "yogs": 98838.91,
       "fundraiser": 4777.74,
       "total": 103616.65,
+      "bundles": 2708,
+      "donations": 2724,
       "duration": 3600
     },
     {
@@ -1073,6 +1225,8 @@
       "yogs": 68692.68,
       "fundraiser": 16323.28,
       "total": 85015.95,
+      "bundles": 2281,
+      "donations": 2304,
       "duration": 3600
     },
     {
@@ -1080,6 +1234,8 @@
       "yogs": 75726.51,
       "fundraiser": 12790.5,
       "total": 88517.01,
+      "bundles": 2245,
+      "donations": 2266,
       "duration": 3600
     },
     {
@@ -1087,6 +1243,8 @@
       "yogs": 59800.86,
       "fundraiser": 13175.28,
       "total": 72976.15,
+      "bundles": 1829,
+      "donations": 1850,
       "duration": 3600
     },
     {
@@ -1094,6 +1252,8 @@
       "yogs": 50206.99,
       "fundraiser": 12302.03,
       "total": 62509.02,
+      "bundles": 1563,
+      "donations": 1627,
       "duration": 3600
     },
     {
@@ -1101,6 +1261,8 @@
       "yogs": 91755.03,
       "fundraiser": 11200.49,
       "total": 102955.52,
+      "bundles": 1696,
+      "donations": 1906,
       "duration": 3600
     },
     {
@@ -1108,6 +1270,8 @@
       "yogs": 63057.42,
       "fundraiser": 8382.43,
       "total": 71439.85,
+      "bundles": 1269,
+      "donations": 1503,
       "duration": 3600
     },
     {
@@ -1115,6 +1279,8 @@
       "yogs": 21534.43,
       "fundraiser": 5476.71,
       "total": 27011.14,
+      "bundles": 704,
+      "donations": 715,
       "duration": 3600
     },
     {
@@ -1122,6 +1288,8 @@
       "yogs": 16812.62,
       "fundraiser": 4579.73,
       "total": 21392.35,
+      "bundles": 582,
+      "donations": 589,
       "duration": 3600
     },
     {
@@ -1129,6 +1297,8 @@
       "yogs": 13795.38,
       "fundraiser": 4130.02,
       "total": 17925.4,
+      "bundles": 481,
+      "donations": 488,
       "duration": 3600
     },
     {
@@ -1136,6 +1306,8 @@
       "yogs": 11556.53,
       "fundraiser": 4162.04,
       "total": 15718.57,
+      "bundles": 433,
+      "donations": 436,
       "duration": 3600
     },
     {
@@ -1143,6 +1315,8 @@
       "yogs": 10353.34,
       "fundraiser": 3295.02,
       "total": 13648.37,
+      "bundles": 358,
+      "donations": 361,
       "duration": 3600
     },
     {
@@ -1150,6 +1324,8 @@
       "yogs": 7894.31,
       "fundraiser": 3539.04,
       "total": 11433.34,
+      "bundles": 324,
+      "donations": 324,
       "duration": 3600
     },
     {
@@ -1157,6 +1333,8 @@
       "yogs": 8509.58,
       "fundraiser": 3912.71,
       "total": 12422.29,
+      "bundles": 347,
+      "donations": 349,
       "duration": 3600
     },
     {
@@ -1164,6 +1342,8 @@
       "yogs": 9582.17,
       "fundraiser": 3314.03,
       "total": 12896.2,
+      "bundles": 353,
+      "donations": 355,
       "duration": 3600
     },
     {
@@ -1171,6 +1351,8 @@
       "yogs": 11243.55,
       "fundraiser": 3171.76,
       "total": 14415.31,
+      "bundles": 385,
+      "donations": 386,
       "duration": 3600
     },
     {
@@ -1178,6 +1360,8 @@
       "yogs": 10689.57,
       "fundraiser": 2866.03,
       "total": 13555.6,
+      "bundles": 364,
+      "donations": 378,
       "duration": 3600
     },
     {
@@ -1185,6 +1369,8 @@
       "yogs": 12696.57,
       "fundraiser": 3381.72,
       "total": 16078.28,
+      "bundles": 410,
+      "donations": 421,
       "duration": 3600
     },
     {
@@ -1192,6 +1378,8 @@
       "yogs": 12081.92,
       "fundraiser": 3075.03,
       "total": 15156.95,
+      "bundles": 416,
+      "donations": 427,
       "duration": 3600
     },
     {
@@ -1199,6 +1387,8 @@
       "yogs": 12767.83,
       "fundraiser": 2776.71,
       "total": 15544.55,
+      "bundles": 414,
+      "donations": 420,
       "duration": 3600
     },
     {
@@ -1206,6 +1396,8 @@
       "yogs": 22012.54,
       "fundraiser": 5235.71,
       "total": 27248.25,
+      "bundles": 645,
+      "donations": 656,
       "duration": 3600
     },
     {
@@ -1213,6 +1405,8 @@
       "yogs": 15068.16,
       "fundraiser": 3417.02,
       "total": 18485.18,
+      "bundles": 473,
+      "donations": 487,
       "duration": 3600
     },
     {
@@ -1220,6 +1414,8 @@
       "yogs": 14528.58,
       "fundraiser": 3261.03,
       "total": 17789.61,
+      "bundles": 478,
+      "donations": 484,
       "duration": 3600
     },
     {
@@ -1227,6 +1423,8 @@
       "yogs": 15409.22,
       "fundraiser": 4053.74,
       "total": 19462.96,
+      "bundles": 508,
+      "donations": 526,
       "duration": 3600
     },
     {
@@ -1234,6 +1432,8 @@
       "yogs": 15582.98,
       "fundraiser": 4566.84,
       "total": 20149.82,
+      "bundles": 523,
+      "donations": 539,
       "duration": 3600
     },
     {
@@ -1241,6 +1441,8 @@
       "yogs": 14547.94,
       "fundraiser": 6194.24,
       "total": 20742.18,
+      "bundles": 504,
+      "donations": 548,
       "duration": 3600
     },
     {
@@ -1248,6 +1450,8 @@
       "yogs": 26900.43,
       "fundraiser": 6899.4,
       "total": 33799.83,
+      "bundles": 674,
+      "donations": 775,
       "duration": 3600
     },
     {
@@ -1255,6 +1459,8 @@
       "yogs": 24678.88,
       "fundraiser": 5323.61,
       "total": 30002.5,
+      "bundles": 603,
+      "donations": 1110,
       "duration": 3600
     },
     {
@@ -1262,6 +1468,8 @@
       "yogs": 12209.09,
       "fundraiser": 5704.4,
       "total": 17913.48,
+      "bundles": 436,
+      "donations": 508,
       "duration": 3600
     },
     {
@@ -1269,6 +1477,8 @@
       "yogs": 9662.48,
       "fundraiser": 3407.72,
       "total": 13070.2,
+      "bundles": 350,
+      "donations": 370,
       "duration": 3600
     },
     {
@@ -1276,6 +1486,8 @@
       "yogs": 24578.92,
       "fundraiser": 4205.68,
       "total": 28784.6,
+      "bundles": 543,
+      "donations": 1443,
       "duration": 3600
     },
     {
@@ -1283,6 +1495,8 @@
       "yogs": 10920.62,
       "fundraiser": 2147.58,
       "total": 13068.2,
+      "bundles": 293,
+      "donations": 389,
       "duration": 3600
     },
     {
@@ -1290,6 +1504,8 @@
       "yogs": 6127.57,
       "fundraiser": 1995.7,
       "total": 8123.27,
+      "bundles": 215,
+      "donations": 218,
       "duration": 3600
     },
     {
@@ -1297,6 +1513,8 @@
       "yogs": 5676.57,
       "fundraiser": 1746.04,
       "total": 7422.6,
+      "bundles": 205,
+      "donations": 207,
       "duration": 3600
     },
     {
@@ -1304,6 +1522,8 @@
       "yogs": 5070.57,
       "fundraiser": 1759.02,
       "total": 6829.59,
+      "bundles": 186,
+      "donations": 192,
       "duration": 3600
     },
     {
@@ -1311,6 +1531,8 @@
       "yogs": 4136.56,
       "fundraiser": 1070.02,
       "total": 5206.59,
+      "bundles": 146,
+      "donations": 146,
       "duration": 3600
     },
     {
@@ -1318,6 +1540,8 @@
       "yogs": 3132.57,
       "fundraiser": 1429.44,
       "total": 4562.01,
+      "bundles": 126,
+      "donations": 128,
       "duration": 3600
     },
     {
@@ -1325,6 +1549,8 @@
       "yogs": 2781.74,
       "fundraiser": 1231.02,
       "total": 4012.76,
+      "bundles": 112,
+      "donations": 115,
       "duration": 3600
     },
     {
@@ -1332,6 +1558,8 @@
       "yogs": 3562.88,
       "fundraiser": 1861.96,
       "total": 5424.84,
+      "bundles": 141,
+      "donations": 145,
       "duration": 3600
     },
     {
@@ -1339,6 +1567,8 @@
       "yogs": 4027.99,
       "fundraiser": 1588.59,
       "total": 5616.58,
+      "bundles": 155,
+      "donations": 159,
       "duration": 3600
     },
     {
@@ -1346,6 +1576,8 @@
       "yogs": 4983.57,
       "fundraiser": 1826.86,
       "total": 6810.43,
+      "bundles": 180,
+      "donations": 188,
       "duration": 3600
     },
     {
@@ -1353,6 +1585,8 @@
       "yogs": 8735.44,
       "fundraiser": 2078.03,
       "total": 10813.47,
+      "bundles": 249,
+      "donations": 259,
       "duration": 3600
     },
     {
@@ -1360,6 +1594,8 @@
       "yogs": 7203.57,
       "fundraiser": 2466.53,
       "total": 9670.1,
+      "bundles": 256,
+      "donations": 267,
       "duration": 3600
     },
     {
@@ -1367,6 +1603,8 @@
       "yogs": 7182.52,
       "fundraiser": 3082.99,
       "total": 10265.52,
+      "bundles": 267,
+      "donations": 278,
       "duration": 3600
     },
     {
@@ -1374,6 +1612,8 @@
       "yogs": 17586.32,
       "fundraiser": 11656.28,
       "total": 29242.59,
+      "bundles": 555,
+      "donations": 613,
       "duration": 3600
     },
     {
@@ -1381,6 +1621,8 @@
       "yogs": 12815.8,
       "fundraiser": 11164.66,
       "total": 23980.46,
+      "bundles": 559,
+      "donations": 590,
       "duration": 3600
     },
     {
@@ -1388,6 +1630,8 @@
       "yogs": 10937.77,
       "fundraiser": 6895.89,
       "total": 17833.66,
+      "bundles": 447,
+      "donations": 469,
       "duration": 3600
     },
     {
@@ -1395,6 +1639,8 @@
       "yogs": 25321.5,
       "fundraiser": 8680.72,
       "total": 34002.22,
+      "bundles": 569,
+      "donations": 592,
       "duration": 3600
     },
     {
@@ -1402,6 +1648,8 @@
       "yogs": 17320.08,
       "fundraiser": 5592.07,
       "total": 22912.15,
+      "bundles": 586,
+      "donations": 608,
       "duration": 3600
     },
     {
@@ -1409,6 +1657,8 @@
       "yogs": 10607.84,
       "fundraiser": 4407.86,
       "total": 15015.69,
+      "bundles": 395,
+      "donations": 409,
       "duration": 3600
     },
     {
@@ -1416,6 +1666,8 @@
       "yogs": 10854.26,
       "fundraiser": 5028.08,
       "total": 15882.34,
+      "bundles": 400,
+      "donations": 430,
       "duration": 3600
     },
     {
@@ -1423,6 +1675,8 @@
       "yogs": 9406.33,
       "fundraiser": 4371.6,
       "total": 13777.94,
+      "bundles": 349,
+      "donations": 385,
       "duration": 3600
     },
     {
@@ -1430,6 +1684,8 @@
       "yogs": 8217.23,
       "fundraiser": 5236.69,
       "total": 13453.92,
+      "bundles": 347,
+      "donations": 380,
       "duration": 3600
     },
     {
@@ -1437,6 +1693,8 @@
       "yogs": 10577.72,
       "fundraiser": 3081.73,
       "total": 13659.45,
+      "bundles": 325,
+      "donations": 337,
       "duration": 3600
     },
     {
@@ -1444,6 +1702,8 @@
       "yogs": 10542.57,
       "fundraiser": 2739.03,
       "total": 13281.6,
+      "bundles": 305,
+      "donations": 317,
       "duration": 3600
     },
     {
@@ -1451,6 +1711,8 @@
       "yogs": 5671.57,
       "fundraiser": 3359.71,
       "total": 9031.28,
+      "bundles": 249,
+      "donations": 255,
       "duration": 3600
     },
     {
@@ -1458,6 +1720,8 @@
       "yogs": 6872.23,
       "fundraiser": 2575.02,
       "total": 9447.25,
+      "bundles": 225,
+      "donations": 234,
       "duration": 3600
     },
     {
@@ -1465,6 +1729,8 @@
       "yogs": 7394.1,
       "fundraiser": 2817.71,
       "total": 10211.81,
+      "bundles": 229,
+      "donations": 241,
       "duration": 3600
     },
     {
@@ -1472,6 +1738,8 @@
       "yogs": 5264.61,
       "fundraiser": 1974.02,
       "total": 7238.63,
+      "bundles": 179,
+      "donations": 185,
       "duration": 3600
     },
     {
@@ -1479,6 +1747,8 @@
       "yogs": 7070.73,
       "fundraiser": 2982.02,
       "total": 10052.76,
+      "bundles": 236,
+      "donations": 281,
       "duration": 3600
     },
     {
@@ -1486,6 +1756,8 @@
       "yogs": 3433.22,
       "fundraiser": 2019.03,
       "total": 5452.24,
+      "bundles": 140,
+      "donations": 146,
       "duration": 3600
     },
     {
@@ -1493,6 +1765,8 @@
       "yogs": 3613.56,
       "fundraiser": 1619.02,
       "total": 5232.58,
+      "bundles": 122,
+      "donations": 135,
       "duration": 3600
     },
     {
@@ -1500,6 +1774,8 @@
       "yogs": 5247.07,
       "fundraiser": 1802.02,
       "total": 7049.09,
+      "bundles": 160,
+      "donations": 183,
       "duration": 3600
     },
     {
@@ -1507,6 +1783,8 @@
       "yogs": 9384.36,
       "fundraiser": 2817.82,
       "total": 12202.18,
+      "bundles": 205,
+      "donations": 280,
       "duration": 3600
     },
     {
@@ -1514,6 +1792,8 @@
       "yogs": 4772.57,
       "fundraiser": 2760.71,
       "total": 7533.28,
+      "bundles": 177,
+      "donations": 181,
       "duration": 3600
     },
     {
@@ -1521,6 +1801,8 @@
       "yogs": 5425.16,
       "fundraiser": 2357.12,
       "total": 7782.27,
+      "bundles": 204,
+      "donations": 220,
       "duration": 3600
     },
     {
@@ -1528,6 +1810,8 @@
       "yogs": 5868.26,
       "fundraiser": 2354.04,
       "total": 8222.3,
+      "bundles": 206,
+      "donations": 219,
       "duration": 3600
     },
     {
@@ -1535,6 +1819,8 @@
       "yogs": 8760.56,
       "fundraiser": 3019.71,
       "total": 11780.28,
+      "bundles": 256,
+      "donations": 270,
       "duration": 3600
     },
     {
@@ -1542,6 +1828,8 @@
       "yogs": 6235.58,
       "fundraiser": 5829.66,
       "total": 12065.24,
+      "bundles": 325,
+      "donations": 343,
       "duration": 3600
     },
     {
@@ -1549,6 +1837,8 @@
       "yogs": 8590.02,
       "fundraiser": 5385.99,
       "total": 13976.01,
+      "bundles": 377,
+      "donations": 390,
       "duration": 3600
     },
     {
@@ -1556,6 +1846,8 @@
       "yogs": 10743.24,
       "fundraiser": 5109.31,
       "total": 15852.55,
+      "bundles": 415,
+      "donations": 419,
       "duration": 3600
     },
     {
@@ -1563,6 +1855,8 @@
       "yogs": 10087.46,
       "fundraiser": 5446.87,
       "total": 15534.33,
+      "bundles": 414,
+      "donations": 434,
       "duration": 3600
     },
     {
@@ -1570,6 +1864,8 @@
       "yogs": 10704.67,
       "fundraiser": 4978.21,
       "total": 15682.88,
+      "bundles": 388,
+      "donations": 421,
       "duration": 3600
     },
     {
@@ -1577,6 +1873,8 @@
       "yogs": 15047.57,
       "fundraiser": 4619.03,
       "total": 19666.6,
+      "bundles": 421,
+      "donations": 456,
       "duration": 3600
     },
     {
@@ -1584,6 +1882,8 @@
       "yogs": 7453.79,
       "fundraiser": 3856.72,
       "total": 11310.51,
+      "bundles": 307,
+      "donations": 316,
       "duration": 3600
     },
     {
@@ -1591,6 +1891,8 @@
       "yogs": 7466.97,
       "fundraiser": 3149.26,
       "total": 10616.24,
+      "bundles": 283,
+      "donations": 302,
       "duration": 3600
     },
     {
@@ -1598,6 +1900,8 @@
       "yogs": 6715.14,
       "fundraiser": 3870.73,
       "total": 10585.86,
+      "bundles": 278,
+      "donations": 304,
       "duration": 3600
     },
     {
@@ -1605,6 +1909,8 @@
       "yogs": 6764.57,
       "fundraiser": 3906.22,
       "total": 10670.79,
+      "bundles": 253,
+      "donations": 262,
       "duration": 3600
     },
     {
@@ -1612,6 +1918,8 @@
       "yogs": 4986.57,
       "fundraiser": 2563.15,
       "total": 7549.72,
+      "bundles": 203,
+      "donations": 211,
       "duration": 3600
     },
     {
@@ -1619,6 +1927,8 @@
       "yogs": 3067.57,
       "fundraiser": 2126.37,
       "total": 5193.94,
+      "bundles": 145,
+      "donations": 148,
       "duration": 3600
     },
     {
@@ -1626,6 +1936,8 @@
       "yogs": 2891.57,
       "fundraiser": 2160.71,
       "total": 5052.28,
+      "bundles": 142,
+      "donations": 143,
       "duration": 3600
     },
     {
@@ -1633,6 +1945,8 @@
       "yogs": 2902.13,
       "fundraiser": 1779.03,
       "total": 4681.15,
+      "bundles": 132,
+      "donations": 133,
       "duration": 3600
     },
     {
@@ -1640,6 +1954,8 @@
       "yogs": 2541.57,
       "fundraiser": 1380.02,
       "total": 3921.59,
+      "bundles": 103,
+      "donations": 105,
       "duration": 3600
     },
     {
@@ -1647,6 +1963,8 @@
       "yogs": 2014.09,
       "fundraiser": 1749.04,
       "total": 3763.14,
+      "bundles": 106,
+      "donations": 108,
       "duration": 3600
     },
     {
@@ -1654,6 +1972,8 @@
       "yogs": 2451.57,
       "fundraiser": 1409.02,
       "total": 3860.59,
+      "bundles": 107,
+      "donations": 109,
       "duration": 3600
     },
     {
@@ -1661,6 +1981,8 @@
       "yogs": 2334.07,
       "fundraiser": 1394.02,
       "total": 3728.09,
+      "bundles": 101,
+      "donations": 102,
       "duration": 3600
     },
     {
@@ -1668,6 +1990,8 @@
       "yogs": 1846.57,
       "fundraiser": 1387.72,
       "total": 3234.29,
+      "bundles": 93,
+      "donations": 94,
       "duration": 3600
     },
     {
@@ -1675,6 +1999,8 @@
       "yogs": 2240.12,
       "fundraiser": 1415.03,
       "total": 3655.15,
+      "bundles": 104,
+      "donations": 106,
       "duration": 3600
     },
     {
@@ -1682,6 +2008,8 @@
       "yogs": 2759.57,
       "fundraiser": 972.05,
       "total": 3731.62,
+      "bundles": 107,
+      "donations": 111,
       "duration": 3600
     },
     {
@@ -1689,6 +2017,8 @@
       "yogs": 3949.57,
       "fundraiser": 1284.02,
       "total": 5233.59,
+      "bundles": 141,
+      "donations": 144,
       "duration": 3600
     },
     {
@@ -1696,6 +2026,8 @@
       "yogs": 4561.57,
       "fundraiser": 1225.02,
       "total": 5786.59,
+      "bundles": 148,
+      "donations": 158,
       "duration": 3600
     },
     {
@@ -1703,6 +2035,8 @@
       "yogs": 4695.76,
       "fundraiser": 1538.02,
       "total": 6233.79,
+      "bundles": 160,
+      "donations": 173,
       "duration": 3600
     },
     {
@@ -1710,6 +2044,8 @@
       "yogs": 3936.59,
       "fundraiser": 1899.69,
       "total": 5836.27,
+      "bundles": 152,
+      "donations": 168,
       "duration": 3600
     },
     {
@@ -1717,6 +2053,8 @@
       "yogs": 3767.57,
       "fundraiser": 1783.3,
       "total": 5550.87,
+      "bundles": 141,
+      "donations": 159,
       "duration": 3600
     },
     {
@@ -1724,6 +2062,8 @@
       "yogs": 4503.57,
       "fundraiser": 5332.57,
       "total": 9836.14,
+      "bundles": 243,
+      "donations": 257,
       "duration": 3600
     },
     {
@@ -1731,6 +2071,8 @@
       "yogs": 24178.53,
       "fundraiser": 4540.12,
       "total": 28718.65,
+      "bundles": 480,
+      "donations": 519,
       "duration": 3600
     },
     {
@@ -1738,6 +2080,8 @@
       "yogs": 19855.03,
       "fundraiser": 4591.02,
       "total": 24446.05,
+      "bundles": 447,
+      "donations": 482,
       "duration": 3600
     },
     {
@@ -1745,6 +2089,8 @@
       "yogs": 11721.25,
       "fundraiser": 6256.78,
       "total": 17978.02,
+      "bundles": 363,
+      "donations": 399,
       "duration": 3600
     },
     {
@@ -1752,6 +2098,8 @@
       "yogs": 11716.58,
       "fundraiser": 5781.47,
       "total": 17498.05,
+      "bundles": 346,
+      "donations": 393,
       "duration": 3600
     },
     {
@@ -1759,6 +2107,8 @@
       "yogs": 6862.58,
       "fundraiser": 3276.74,
       "total": 10139.33,
+      "bundles": 238,
+      "donations": 281,
       "duration": 3600
     },
     {
@@ -1766,6 +2116,8 @@
       "yogs": 8796.68,
       "fundraiser": 2715.92,
       "total": 11512.6,
+      "bundles": 268,
+      "donations": 304,
       "duration": 3600
     },
     {
@@ -1773,6 +2125,8 @@
       "yogs": 5052.02,
       "fundraiser": 2932.56,
       "total": 7984.58,
+      "bundles": 197,
+      "donations": 222,
       "duration": 3600
     },
     {
@@ -1780,6 +2134,8 @@
       "yogs": 3712.27,
       "fundraiser": 1745.73,
       "total": 5458.0,
+      "bundles": 151,
+      "donations": 165,
       "duration": 3600
     },
     {
@@ -1787,6 +2143,8 @@
       "yogs": 3257.57,
       "fundraiser": 1658.03,
       "total": 4915.6,
+      "bundles": 136,
+      "donations": 140,
       "duration": 3600
     },
     {
@@ -1794,6 +2152,8 @@
       "yogs": 3191.57,
       "fundraiser": 1035.35,
       "total": 4226.92,
+      "bundles": 122,
+      "donations": 122,
       "duration": 3600
     },
     {
@@ -1801,6 +2161,8 @@
       "yogs": 1926.57,
       "fundraiser": 879.02,
       "total": 2805.59,
+      "bundles": 81,
+      "donations": 81,
       "duration": 3600
     },
     {
@@ -1808,6 +2170,8 @@
       "yogs": 2451.57,
       "fundraiser": 876.52,
       "total": 3328.09,
+      "bundles": 95,
+      "donations": 98,
       "duration": 3600
     },
     {
@@ -1815,6 +2179,8 @@
       "yogs": 1996.56,
       "fundraiser": 1189.23,
       "total": 3185.8,
+      "bundles": 84,
+      "donations": 86,
       "duration": 3600
     },
     {
@@ -1822,6 +2188,8 @@
       "yogs": 1171.57,
       "fundraiser": 874.03,
       "total": 2045.59,
+      "bundles": 59,
+      "donations": 60,
       "duration": 3600
     },
     {
@@ -1829,6 +2197,8 @@
       "yogs": 2031.57,
       "fundraiser": 854.02,
       "total": 2885.59,
+      "bundles": 80,
+      "donations": 81,
       "duration": 3600
     },
     {
@@ -1836,6 +2206,8 @@
       "yogs": 1447.57,
       "fundraiser": 804.02,
       "total": 2251.59,
+      "bundles": 66,
+      "donations": 66,
       "duration": 3600
     },
     {
@@ -1843,6 +2215,8 @@
       "yogs": 5124.08,
       "fundraiser": 570.02,
       "total": 5694.1,
+      "bundles": 76,
+      "donations": 78,
       "duration": 3600
     },
     {
@@ -1850,6 +2224,8 @@
       "yogs": 1731.57,
       "fundraiser": 774.37,
       "total": 2505.94,
+      "bundles": 73,
+      "donations": 73,
       "duration": 3600
     },
     {
@@ -1857,6 +2233,8 @@
       "yogs": 2586.57,
       "fundraiser": 754.03,
       "total": 3340.59,
+      "bundles": 90,
+      "donations": 94,
       "duration": 3600
     },
     {
@@ -1864,6 +2242,8 @@
       "yogs": 2507.26,
       "fundraiser": 804.02,
       "total": 3311.28,
+      "bundles": 82,
+      "donations": 87,
       "duration": 3600
     },
     {
@@ -1871,6 +2251,8 @@
       "yogs": 3495.56,
       "fundraiser": 1059.52,
       "total": 4555.09,
+      "bundles": 118,
+      "donations": 122,
       "duration": 3600
     },
     {
@@ -1878,6 +2260,8 @@
       "yogs": 4895.87,
       "fundraiser": 759.02,
       "total": 5654.89,
+      "bundles": 149,
+      "donations": 153,
       "duration": 3600
     },
     {
@@ -1885,6 +2269,8 @@
       "yogs": 4853.57,
       "fundraiser": 1159.71,
       "total": 6013.28,
+      "bundles": 152,
+      "donations": 156,
       "duration": 3600
     },
     {
@@ -1892,6 +2278,8 @@
       "yogs": 8731.0,
       "fundraiser": 910.05,
       "total": 9641.05,
+      "bundles": 237,
+      "donations": 249,
       "duration": 3600
     },
     {
@@ -1899,6 +2287,8 @@
       "yogs": 8735.97,
       "fundraiser": 1880.71,
       "total": 10616.68,
+      "bundles": 240,
+      "donations": 259,
       "duration": 3600
     },
     {
@@ -1906,6 +2296,8 @@
       "yogs": 13797.15,
       "fundraiser": 2383.91,
       "total": 16181.06,
+      "bundles": 299,
+      "donations": 326,
       "duration": 3600
     },
     {
@@ -1913,6 +2305,8 @@
       "yogs": 13107.56,
       "fundraiser": 5122.72,
       "total": 18230.28,
+      "bundles": 401,
+      "donations": 422,
       "duration": 3600
     },
     {
@@ -1920,6 +2314,8 @@
       "yogs": 7527.9,
       "fundraiser": 6250.41,
       "total": 13778.31,
+      "bundles": 350,
+      "donations": 371,
       "duration": 3600
     },
     {
@@ -1927,6 +2323,8 @@
       "yogs": 7112.15,
       "fundraiser": 4219.91,
       "total": 11332.07,
+      "bundles": 279,
+      "donations": 311,
       "duration": 3600
     },
     {
@@ -1934,6 +2332,8 @@
       "yogs": 7514.09,
       "fundraiser": 4289.74,
       "total": 11803.82,
+      "bundles": 272,
+      "donations": 287,
       "duration": 3600
     },
     {
@@ -1941,6 +2341,8 @@
       "yogs": 9334.36,
       "fundraiser": 3715.34,
       "total": 13049.7,
+      "bundles": 282,
+      "donations": 321,
       "duration": 3600
     },
     {
@@ -1948,6 +2350,8 @@
       "yogs": 21044.03,
       "fundraiser": 2786.02,
       "total": 23830.05,
+      "bundles": 328,
+      "donations": 703,
       "duration": 3600
     },
     {
@@ -1955,6 +2359,8 @@
       "yogs": 2691.57,
       "fundraiser": 2326.02,
       "total": 5017.59,
+      "bundles": 141,
+      "donations": 143,
       "duration": 3600
     },
     {
@@ -1962,6 +2368,8 @@
       "yogs": 2806.62,
       "fundraiser": 2187.02,
       "total": 4993.64,
+      "bundles": 141,
+      "donations": 144,
       "duration": 3600
     },
     {
@@ -1969,6 +2377,8 @@
       "yogs": 2282.57,
       "fundraiser": 1742.13,
       "total": 4024.69,
+      "bundles": 109,
+      "donations": 109,
       "duration": 3600
     },
     {
@@ -1976,6 +2386,8 @@
       "yogs": 1782.65,
       "fundraiser": 1894.02,
       "total": 3676.67,
+      "bundles": 105,
+      "donations": 106,
       "duration": 3600
     },
     {
@@ -1983,6 +2395,8 @@
       "yogs": 2183.61,
       "fundraiser": 1499.52,
       "total": 3683.14,
+      "bundles": 103,
+      "donations": 105,
       "duration": 3600
     },
     {
@@ -1990,6 +2404,8 @@
       "yogs": 1913.57,
       "fundraiser": 1386.71,
       "total": 3300.28,
+      "bundles": 94,
+      "donations": 95,
       "duration": 3600
     },
     {
@@ -1997,6 +2413,8 @@
       "yogs": 1054.58,
       "fundraiser": 1024.02,
       "total": 2078.6,
+      "bundles": 58,
+      "donations": 62,
       "duration": 3600
     },
     {
@@ -2004,6 +2422,8 @@
       "yogs": 1562.07,
       "fundraiser": 824.03,
       "total": 2386.1,
+      "bundles": 68,
+      "donations": 70,
       "duration": 3600
     },
     {
@@ -2011,6 +2431,8 @@
       "yogs": 2466.57,
       "fundraiser": 924.02,
       "total": 3390.59,
+      "bundles": 70,
+      "donations": 71,
       "duration": 3600
     },
     {
@@ -2018,6 +2440,8 @@
       "yogs": 1436.57,
       "fundraiser": 1074.71,
       "total": 2511.28,
+      "bundles": 67,
+      "donations": 72,
       "duration": 3600
     },
     {
@@ -2025,6 +2449,8 @@
       "yogs": 4777.94,
       "fundraiser": 874.02,
       "total": 5651.96,
+      "bundles": 125,
+      "donations": 132,
       "duration": 3600
     },
     {
@@ -2032,6 +2458,8 @@
       "yogs": 5497.07,
       "fundraiser": 2113.02,
       "total": 7610.09,
+      "bundles": 129,
+      "donations": 148,
       "duration": 3600
     },
     {
@@ -2039,6 +2467,8 @@
       "yogs": 2541.56,
       "fundraiser": 1989.02,
       "total": 4530.59,
+      "bundles": 121,
+      "donations": 124,
       "duration": 3600
     },
     {
@@ -2046,6 +2476,8 @@
       "yogs": 3009.14,
       "fundraiser": 2362.03,
       "total": 5371.16,
+      "bundles": 144,
+      "donations": 149,
       "duration": 3600
     },
     {
@@ -2053,6 +2485,8 @@
       "yogs": 5606.33,
       "fundraiser": 1872.92,
       "total": 7479.25,
+      "bundles": 169,
+      "donations": 173,
       "duration": 3600
     },
     {
@@ -2060,6 +2494,8 @@
       "yogs": 4428.95,
       "fundraiser": 1425.12,
       "total": 5854.07,
+      "bundles": 147,
+      "donations": 157,
       "duration": 3600
     },
     {
@@ -2067,6 +2503,8 @@
       "yogs": 4835.64,
       "fundraiser": 2612.02,
       "total": 7447.66,
+      "bundles": 193,
+      "donations": 212,
       "duration": 3600
     },
     {
@@ -2074,6 +2512,8 @@
       "yogs": 5756.91,
       "fundraiser": 2055.42,
       "total": 7812.33,
+      "bundles": 208,
+      "donations": 221,
       "duration": 3600
     },
     {
@@ -2081,6 +2521,8 @@
       "yogs": 7953.05,
       "fundraiser": 2030.03,
       "total": 9983.07,
+      "bundles": 238,
+      "donations": 257,
       "duration": 3600
     },
     {
@@ -2088,6 +2530,8 @@
       "yogs": 12765.22,
       "fundraiser": 5005.84,
       "total": 17771.06,
+      "bundles": 310,
+      "donations": 357,
       "duration": 3600
     },
     {
@@ -2095,6 +2539,8 @@
       "yogs": 8348.25,
       "fundraiser": 5046.25,
       "total": 13394.51,
+      "bundles": 266,
+      "donations": 308,
       "duration": 3600
     },
     {
@@ -2102,6 +2548,8 @@
       "yogs": 7706.48,
       "fundraiser": 3527.29,
       "total": 11233.77,
+      "bundles": 201,
+      "donations": 311,
       "duration": 3600
     },
     {
@@ -2109,6 +2557,8 @@
       "yogs": 7366.08,
       "fundraiser": 2519.82,
       "total": 9885.9,
+      "bundles": 161,
+      "donations": 242,
       "duration": 3600
     },
     {
@@ -2116,6 +2566,8 @@
       "yogs": 3025.42,
       "fundraiser": 1478.03,
       "total": 4503.45,
+      "bundles": 126,
+      "donations": 131,
       "duration": 3600
     },
     {
@@ -2123,6 +2575,8 @@
       "yogs": 3093.57,
       "fundraiser": 1186.71,
       "total": 4280.28,
+      "bundles": 116,
+      "donations": 119,
       "duration": 3600
     },
     {
@@ -2130,6 +2584,8 @@
       "yogs": 2274.6,
       "fundraiser": 695.02,
       "total": 2969.62,
+      "bundles": 84,
+      "donations": 89,
       "duration": 3600
     },
     {
@@ -2137,6 +2593,8 @@
       "yogs": 2726.57,
       "fundraiser": 912.71,
       "total": 3639.28,
+      "bundles": 103,
+      "donations": 105,
       "duration": 3600
     },
     {
@@ -2144,6 +2602,8 @@
       "yogs": 2184.57,
       "fundraiser": 776.02,
       "total": 2960.59,
+      "bundles": 84,
+      "donations": 86,
       "duration": 3600
     },
     {
@@ -2151,6 +2611,8 @@
       "yogs": 1896.56,
       "fundraiser": 847.02,
       "total": 2743.59,
+      "bundles": 72,
+      "donations": 79,
       "duration": 3600
     },
     {
@@ -2158,6 +2620,8 @@
       "yogs": 1364.26,
       "fundraiser": 744.03,
       "total": 2108.28,
+      "bundles": 61,
+      "donations": 62,
       "duration": 3600
     },
     {
@@ -2165,6 +2629,8 @@
       "yogs": 1343.57,
       "fundraiser": 615.02,
       "total": 1958.59,
+      "bundles": 55,
+      "donations": 57,
       "duration": 3600
     },
     {
@@ -2172,6 +2638,8 @@
       "yogs": 1686.57,
       "fundraiser": 542.32,
       "total": 2228.89,
+      "bundles": 63,
+      "donations": 64,
       "duration": 3600
     },
     {
@@ -2179,6 +2647,8 @@
       "yogs": 1451.57,
       "fundraiser": 555.02,
       "total": 2006.59,
+      "bundles": 58,
+      "donations": 60,
       "duration": 3600
     },
     {
@@ -2186,6 +2656,8 @@
       "yogs": 1846.57,
       "fundraiser": 544.02,
       "total": 2390.59,
+      "bundles": 67,
+      "donations": 70,
       "duration": 3600
     },
     {
@@ -2193,6 +2665,8 @@
       "yogs": 10378.26,
       "fundraiser": 669.03,
       "total": 11047.28,
+      "bundles": 87,
+      "donations": 92,
       "duration": 3600
     },
     {
@@ -2200,6 +2674,8 @@
       "yogs": 2261.57,
       "fundraiser": 639.02,
       "total": 2900.59,
+      "bundles": 74,
+      "donations": 81,
       "duration": 3600
     },
     {
@@ -2207,6 +2683,8 @@
       "yogs": 3884.76,
       "fundraiser": 1124.04,
       "total": 5008.81,
+      "bundles": 116,
+      "donations": 125,
       "duration": 3600
     },
     {
@@ -2214,6 +2692,8 @@
       "yogs": 4317.1,
       "fundraiser": 1338.16,
       "total": 5655.26,
+      "bundles": 113,
+      "donations": 124,
       "duration": 3600
     },
     {
@@ -2221,6 +2701,8 @@
       "yogs": 2950.57,
       "fundraiser": 1125.02,
       "total": 4075.59,
+      "bundles": 112,
+      "donations": 118,
       "duration": 3600
     },
     {
@@ -2228,6 +2710,8 @@
       "yogs": 3918.73,
       "fundraiser": 819.03,
       "total": 4737.76,
+      "bundles": 104,
+      "donations": 106,
       "duration": 3600
     },
     {
@@ -2235,6 +2719,8 @@
       "yogs": 4716.57,
       "fundraiser": 1019.02,
       "total": 5735.59,
+      "bundles": 158,
+      "donations": 163,
       "duration": 3600
     },
     {
@@ -2242,6 +2728,8 @@
       "yogs": 7238.73,
       "fundraiser": 1345.02,
       "total": 8583.75,
+      "bundles": 207,
+      "donations": 218,
       "duration": 3600
     },
     {
@@ -2249,6 +2737,8 @@
       "yogs": 5268.8,
       "fundraiser": 1506.9,
       "total": 6775.7,
+      "bundles": 167,
+      "donations": 179,
       "duration": 3600
     },
     {
@@ -2256,6 +2746,8 @@
       "yogs": 5706.31,
       "fundraiser": 1190.02,
       "total": 6896.33,
+      "bundles": 163,
+      "donations": 182,
       "duration": 3600
     },
     {
@@ -2263,6 +2755,8 @@
       "yogs": 4474.25,
       "fundraiser": 729.02,
       "total": 5203.28,
+      "bundles": 138,
+      "donations": 145,
       "duration": 3600
     },
     {
@@ -2270,6 +2764,8 @@
       "yogs": 6212.36,
       "fundraiser": 1151.72,
       "total": 7364.07,
+      "bundles": 145,
+      "donations": 234,
       "duration": 3600
     },
     {
@@ -2277,6 +2773,8 @@
       "yogs": 2991.88,
       "fundraiser": 1524.52,
       "total": 4516.4,
+      "bundles": 118,
+      "donations": 143,
       "duration": 3600
     },
     {
@@ -2284,6 +2782,8 @@
       "yogs": 2506.57,
       "fundraiser": 713.79,
       "total": 3220.36,
+      "bundles": 88,
+      "donations": 93,
       "duration": 3600
     },
     {
@@ -2291,6 +2791,8 @@
       "yogs": 1827.57,
       "fundraiser": 719.02,
       "total": 2546.59,
+      "bundles": 72,
+      "donations": 72,
       "duration": 3600
     },
     {
@@ -2298,6 +2800,8 @@
       "yogs": 1766.57,
       "fundraiser": 723.02,
       "total": 2489.59,
+      "bundles": 68,
+      "donations": 73,
       "duration": 3600
     },
     {
@@ -2305,6 +2809,8 @@
       "yogs": 1271.57,
       "fundraiser": 439.03,
       "total": 1710.59,
+      "bundles": 51,
+      "donations": 51,
       "duration": 3600
     },
     {
@@ -2312,6 +2818,8 @@
       "yogs": 1703.57,
       "fundraiser": 469.02,
       "total": 2172.59,
+      "bundles": 62,
+      "donations": 63,
       "duration": 3600
     },
     {
@@ -2319,6 +2827,8 @@
       "yogs": 1442.99,
       "fundraiser": 499.02,
       "total": 1942.02,
+      "bundles": 57,
+      "donations": 58,
       "duration": 3600
     },
     {
@@ -2326,6 +2836,8 @@
       "yogs": 952.24,
       "fundraiser": 349.02,
       "total": 1301.26,
+      "bundles": 39,
+      "donations": 39,
       "duration": 3600
     },
     {
@@ -2333,6 +2845,8 @@
       "yogs": 1442.57,
       "fundraiser": 349.02,
       "total": 1791.59,
+      "bundles": 52,
+      "donations": 52,
       "duration": 3600
     },
     {
@@ -2340,6 +2854,8 @@
       "yogs": 1396.57,
       "fundraiser": 514.03,
       "total": 1910.6,
+      "bundles": 55,
+      "donations": 56,
       "duration": 3600
     },
     {
@@ -2347,6 +2863,8 @@
       "yogs": 1470.07,
       "fundraiser": 419.02,
       "total": 1889.09,
+      "bundles": 51,
+      "donations": 52,
       "duration": 3600
     },
     {
@@ -2354,6 +2872,8 @@
       "yogs": 1233.27,
       "fundraiser": 384.02,
       "total": 1617.29,
+      "bundles": 46,
+      "donations": 46,
       "duration": 3600
     },
     {
@@ -2361,6 +2881,8 @@
       "yogs": 4317.57,
       "fundraiser": 859.02,
       "total": 5176.59,
+      "bundles": 75,
+      "donations": 81,
       "duration": 3600
     },
     {
@@ -2368,6 +2890,8 @@
       "yogs": 3556.88,
       "fundraiser": 597.02,
       "total": 4153.9,
+      "bundles": 87,
+      "donations": 96,
       "duration": 3600
     },
     {
@@ -2375,6 +2899,8 @@
       "yogs": 2346.56,
       "fundraiser": 1124.04,
       "total": 3470.61,
+      "bundles": 84,
+      "donations": 93,
       "duration": 3600
     },
     {
@@ -2382,6 +2908,8 @@
       "yogs": 3906.57,
       "fundraiser": 2478.93,
       "total": 6385.49,
+      "bundles": 124,
+      "donations": 166,
       "duration": 3600
     },
     {
@@ -2389,6 +2917,8 @@
       "yogs": 3764.37,
       "fundraiser": 1283.02,
       "total": 5047.39,
+      "bundles": 126,
+      "donations": 139,
       "duration": 3600
     },
     {
@@ -2396,6 +2926,8 @@
       "yogs": 3528.49,
       "fundraiser": 776.02,
       "total": 4304.51,
+      "bundles": 106,
+      "donations": 118,
       "duration": 3600
     },
     {
@@ -2403,6 +2935,8 @@
       "yogs": 3717.57,
       "fundraiser": 1543.02,
       "total": 5260.59,
+      "bundles": 121,
+      "donations": 139,
       "duration": 3600
     },
     {
@@ -2410,6 +2944,8 @@
       "yogs": 3354.52,
       "fundraiser": 2131.02,
       "total": 5485.54,
+      "bundles": 120,
+      "donations": 181,
       "duration": 3600
     },
     {
@@ -2417,6 +2953,8 @@
       "yogs": 3049.57,
       "fundraiser": 3424.9,
       "total": 6474.46,
+      "bundles": 113,
+      "donations": 158,
       "duration": 3600
     },
     {
@@ -2424,6 +2962,8 @@
       "yogs": 4473.7,
       "fundraiser": 1192.52,
       "total": 5666.22,
+      "bundles": 108,
+      "donations": 127,
       "duration": 3600
     },
     {
@@ -2431,6 +2971,8 @@
       "yogs": 4759.56,
       "fundraiser": 1692.9,
       "total": 6452.47,
+      "bundles": 129,
+      "donations": 165,
       "duration": 3600
     },
     {
@@ -2438,6 +2980,8 @@
       "yogs": 4221.58,
       "fundraiser": 998.71,
       "total": 5220.29,
+      "bundles": 126,
+      "donations": 138,
       "duration": 3600
     },
     {
@@ -2445,6 +2989,8 @@
       "yogs": 2752.57,
       "fundraiser": 630.71,
       "total": 3383.28,
+      "bundles": 95,
+      "donations": 99,
       "duration": 3600
     },
     {
@@ -2452,6 +2998,8 @@
       "yogs": 2161.57,
       "fundraiser": 637.83,
       "total": 2799.4,
+      "bundles": 75,
+      "donations": 80,
       "duration": 3600
     },
     {
@@ -2459,6 +3007,8 @@
       "yogs": 2753.14,
       "fundraiser": 474.02,
       "total": 3227.16,
+      "bundles": 87,
+      "donations": 91,
       "duration": 3600
     },
     {
@@ -2466,6 +3016,8 @@
       "yogs": 2741.48,
       "fundraiser": 681.01,
       "total": 3422.49,
+      "bundles": 89,
+      "donations": 91,
       "duration": 3600
     },
     {
@@ -2473,6 +3025,8 @@
       "yogs": 1678.95,
       "fundraiser": 1219.99,
       "total": 2898.94,
+      "bundles": 69,
+      "donations": 85,
       "duration": 3600
     },
     {
@@ -2480,6 +3034,8 @@
       "yogs": 1387.58,
       "fundraiser": 2286.87,
       "total": 3674.45,
+      "bundles": 58,
+      "donations": 98,
       "duration": 3600
     },
     {
@@ -2487,6 +3043,8 @@
       "yogs": 1011.56,
       "fundraiser": 387.02,
       "total": 1398.59,
+      "bundles": 40,
+      "donations": 48,
       "duration": 3600
     },
     {
@@ -2494,6 +3052,8 @@
       "yogs": 934.34,
       "fundraiser": 244.03,
       "total": 1178.36,
+      "bundles": 34,
+      "donations": 34,
       "duration": 3600
     },
     {
@@ -2501,6 +3061,8 @@
       "yogs": 662.57,
       "fundraiser": 399.83,
       "total": 1062.4,
+      "bundles": 32,
+      "donations": 34,
       "duration": 3600
     },
     {
@@ -2508,6 +3070,8 @@
       "yogs": 1413.66,
       "fundraiser": 174.02,
       "total": 1587.68,
+      "bundles": 35,
+      "donations": 35,
       "duration": 3600
     },
     {
@@ -2515,6 +3079,8 @@
       "yogs": 906.57,
       "fundraiser": 139.02,
       "total": 1045.59,
+      "bundles": 32,
+      "donations": 32,
       "duration": 3600
     },
     {
@@ -2522,6 +3088,8 @@
       "yogs": 1151.57,
       "fundraiser": 208.51,
       "total": 1360.08,
+      "bundles": 38,
+      "donations": 43,
       "duration": 3600
     },
     {
@@ -2529,6 +3097,8 @@
       "yogs": 2206.0,
       "fundraiser": 364.03,
       "total": 2570.02,
+      "bundles": 69,
+      "donations": 72,
       "duration": 3600
     },
     {
@@ -2536,6 +3106,8 @@
       "yogs": 2791.42,
       "fundraiser": 499.02,
       "total": 3290.44,
+      "bundles": 87,
+      "donations": 91,
       "duration": 3600
     },
     {
@@ -2543,6 +3115,8 @@
       "yogs": 2187.56,
       "fundraiser": 867.26,
       "total": 3054.83,
+      "bundles": 72,
+      "donations": 84,
       "duration": 3600
     },
     {
@@ -2550,6 +3124,8 @@
       "yogs": 3711.57,
       "fundraiser": 1024.02,
       "total": 4735.59,
+      "bundles": 107,
+      "donations": 126,
       "duration": 3600
     },
     {
@@ -2557,6 +3133,8 @@
       "yogs": 4353.37,
       "fundraiser": 803.33,
       "total": 5156.7,
+      "bundles": 135,
+      "donations": 145,
       "duration": 3600
     },
     {
@@ -2564,6 +3142,8 @@
       "yogs": 7231.74,
       "fundraiser": 995.27,
       "total": 8227.01,
+      "bundles": 117,
+      "donations": 135,
       "duration": 3600
     },
     {
@@ -2571,6 +3151,8 @@
       "yogs": 4153.57,
       "fundraiser": 1087.72,
       "total": 5241.29,
+      "bundles": 128,
+      "donations": 144,
       "duration": 3600
     },
     {
@@ -2578,6 +3160,8 @@
       "yogs": 4176.57,
       "fundraiser": 793.83,
       "total": 4970.4,
+      "bundles": 123,
+      "donations": 132,
       "duration": 3600
     },
     {
@@ -2585,6 +3169,8 @@
       "yogs": 3428.57,
       "fundraiser": 1902.91,
       "total": 5331.48,
+      "bundles": 110,
+      "donations": 124,
       "duration": 3600
     },
     {
@@ -2592,6 +3178,8 @@
       "yogs": 4096.57,
       "fundraiser": 910.42,
       "total": 5006.99,
+      "bundles": 122,
+      "donations": 143,
       "duration": 3600
     },
     {
@@ -2599,6 +3187,8 @@
       "yogs": 5528.25,
       "fundraiser": 762.02,
       "total": 6290.28,
+      "bundles": 122,
+      "donations": 134,
       "duration": 3600
     },
     {
@@ -2606,6 +3196,8 @@
       "yogs": 3627.26,
       "fundraiser": 1177.45,
       "total": 4804.7,
+      "bundles": 116,
+      "donations": 133,
       "duration": 3600
     },
     {
@@ -2613,6 +3205,8 @@
       "yogs": 3585.81,
       "fundraiser": 873.02,
       "total": 4458.83,
+      "bundles": 88,
+      "donations": 106,
       "duration": 3600
     },
     {
@@ -2620,6 +3214,8 @@
       "yogs": 2929.57,
       "fundraiser": 1193.18,
       "total": 4122.75,
+      "bundles": 86,
+      "donations": 115,
       "duration": 3600
     },
     {
@@ -2627,6 +3223,8 @@
       "yogs": 5874.26,
       "fundraiser": 2116.39,
       "total": 7990.65,
+      "bundles": 91,
+      "donations": 142,
       "duration": 3600
     },
     {
@@ -2634,6 +3232,8 @@
       "yogs": 3312.17,
       "fundraiser": 787.58,
       "total": 4099.75,
+      "bundles": 88,
+      "donations": 113,
       "duration": 3600
     },
     {
@@ -2641,6 +3241,8 @@
       "yogs": 2645.95,
       "fundraiser": 678.19,
       "total": 3324.13,
+      "bundles": 80,
+      "donations": 92,
       "duration": 3600
     },
     {
@@ -2648,6 +3250,8 @@
       "yogs": 2365.43,
       "fundraiser": 1059.02,
       "total": 3424.45,
+      "bundles": 62,
+      "donations": 79,
       "duration": 3600
     },
     {
@@ -2655,6 +3259,8 @@
       "yogs": 2861.56,
       "fundraiser": 476.01,
       "total": 3337.58,
+      "bundles": 50,
+      "donations": 69,
       "duration": 3600
     },
     {
@@ -2662,6 +3268,8 @@
       "yogs": 2416.57,
       "fundraiser": 234.02,
       "total": 2650.59,
+      "bundles": 46,
+      "donations": 51,
       "duration": 3600
     },
     {
@@ -2669,6 +3277,8 @@
       "yogs": 2122.57,
       "fundraiser": 500.0,
       "total": 2622.57,
+      "bundles": 62,
+      "donations": 65,
       "duration": 3600
     },
     {
@@ -2676,6 +3286,8 @@
       "yogs": 1247.44,
       "fundraiser": 449.03,
       "total": 1696.47,
+      "bundles": 43,
+      "donations": 62,
       "duration": 3600
     },
     {
@@ -2683,6 +3295,8 @@
       "yogs": 2106.57,
       "fundraiser": 319.02,
       "total": 2425.59,
+      "bundles": 53,
+      "donations": 56,
       "duration": 3600
     },
     {
@@ -2690,6 +3304,8 @@
       "yogs": 1696.71,
       "fundraiser": 338.02,
       "total": 2034.73,
+      "bundles": 52,
+      "donations": 66,
       "duration": 3600
     },
     {
@@ -2697,6 +3313,8 @@
       "yogs": 2329.57,
       "fundraiser": 478.52,
       "total": 2808.09,
+      "bundles": 72,
+      "donations": 84,
       "duration": 3600
     },
     {
@@ -2704,6 +3322,8 @@
       "yogs": 2562.57,
       "fundraiser": 474.02,
       "total": 3036.59,
+      "bundles": 68,
+      "donations": 75,
       "duration": 3600
     },
     {
@@ -2711,6 +3331,8 @@
       "yogs": 2256.56,
       "fundraiser": 732.19,
       "total": 2988.76,
+      "bundles": 75,
+      "donations": 89,
       "duration": 3600
     },
     {
@@ -2718,6 +3340,8 @@
       "yogs": 3086.57,
       "fundraiser": 278.03,
       "total": 3364.59,
+      "bundles": 71,
+      "donations": 81,
       "duration": 3600
     },
     {
@@ -2725,6 +3349,8 @@
       "yogs": 2744.26,
       "fundraiser": 423.28,
       "total": 3167.54,
+      "bundles": 82,
+      "donations": 95,
       "duration": 3600
     },
     {
@@ -2732,6 +3358,8 @@
       "yogs": 2606.57,
       "fundraiser": 1106.02,
       "total": 3712.59,
+      "bundles": 98,
+      "donations": 105,
       "duration": 3600
     },
     {
@@ -2739,6 +3367,8 @@
       "yogs": 3807.26,
       "fundraiser": 3263.1,
       "total": 7070.36,
+      "bundles": 153,
+      "donations": 185,
       "duration": 3600
     },
     {
@@ -2746,6 +3376,8 @@
       "yogs": 3692.96,
       "fundraiser": 2203.92,
       "total": 5896.88,
+      "bundles": 125,
+      "donations": 144,
       "duration": 3600
     },
     {
@@ -2753,6 +3385,8 @@
       "yogs": 3075.57,
       "fundraiser": 1233.77,
       "total": 4309.33,
+      "bundles": 107,
+      "donations": 124,
       "duration": 3600
     },
     {
@@ -2760,6 +3394,8 @@
       "yogs": 3376.65,
       "fundraiser": 952.21,
       "total": 4328.86,
+      "bundles": 105,
+      "donations": 123,
       "duration": 3600
     },
     {
@@ -2767,6 +3403,8 @@
       "yogs": 6093.69,
       "fundraiser": 1506.01,
       "total": 7599.71,
+      "bundles": 143,
+      "donations": 163,
       "duration": 3600
     },
     {
@@ -2774,6 +3412,8 @@
       "yogs": 8043.16,
       "fundraiser": 1078.42,
       "total": 9121.58,
+      "bundles": 163,
+      "donations": 283,
       "duration": 3600
     },
     {
@@ -2781,6 +3421,8 @@
       "yogs": 11905.47,
       "fundraiser": 919.13,
       "total": 12824.6,
+      "bundles": 143,
+      "donations": 245,
       "duration": 3600
     },
     {
@@ -2788,6 +3430,8 @@
       "yogs": 1921.57,
       "fundraiser": 349.03,
       "total": 2270.6,
+      "bundles": 65,
+      "donations": 66,
       "duration": 3600
     },
     {
@@ -2795,6 +3439,8 @@
       "yogs": 1786.63,
       "fundraiser": 543.47,
       "total": 2330.1,
+      "bundles": 59,
+      "donations": 67,
       "duration": 3600
     },
     {
@@ -2802,6 +3448,8 @@
       "yogs": 1557.57,
       "fundraiser": 2994.71,
       "total": 4552.28,
+      "bundles": 64,
+      "donations": 111,
       "duration": 3600
     },
     {
@@ -2809,6 +3457,8 @@
       "yogs": 1582.36,
       "fundraiser": 471.02,
       "total": 2053.38,
+      "bundles": 57,
+      "donations": 65,
       "duration": 3600
     },
     {
@@ -2816,6 +3466,8 @@
       "yogs": 1146.57,
       "fundraiser": 1098.61,
       "total": 2245.18,
+      "bundles": 41,
+      "donations": 89,
       "duration": 3600
     },
     {
@@ -2823,6 +3475,8 @@
       "yogs": 1236.56,
       "fundraiser": 1457.64,
       "total": 2694.21,
+      "bundles": 50,
+      "donations": 97,
       "duration": 3600
     },
     {
@@ -2830,6 +3484,8 @@
       "yogs": 1139.78,
       "fundraiser": 1325.45,
       "total": 2465.22,
+      "bundles": 44,
+      "donations": 69,
       "duration": 3600
     },
     {
@@ -2837,6 +3493,8 @@
       "yogs": 886.57,
       "fundraiser": 1306.45,
       "total": 2193.02,
+      "bundles": 36,
+      "donations": 60,
       "duration": 3600
     },
     {
@@ -2844,6 +3502,8 @@
       "yogs": 836.57,
       "fundraiser": 1568.08,
       "total": 2404.65,
+      "bundles": 36,
+      "donations": 83,
       "duration": 3600
     },
     {
@@ -2851,6 +3511,8 @@
       "yogs": 801.57,
       "fundraiser": 2170.08,
       "total": 2971.65,
+      "bundles": 37,
+      "donations": 91,
       "duration": 3600
     },
     {
@@ -2858,6 +3520,8 @@
       "yogs": 1436.58,
       "fundraiser": 322.01,
       "total": 1758.59,
+      "bundles": 46,
+      "donations": 49,
       "duration": 3600
     },
     {
@@ -2865,6 +3529,8 @@
       "yogs": 1847.54,
       "fundraiser": 214.03,
       "total": 2061.56,
+      "bundles": 56,
+      "donations": 57,
       "duration": 3600
     },
     {
@@ -2872,6 +3538,8 @@
       "yogs": 1993.1,
       "fundraiser": 996.33,
       "total": 2989.43,
+      "bundles": 83,
+      "donations": 92,
       "duration": 3600
     },
     {
@@ -2879,6 +3547,8 @@
       "yogs": 2086.57,
       "fundraiser": 396.56,
       "total": 2483.14,
+      "bundles": 64,
+      "donations": 72,
       "duration": 3600
     },
     {
@@ -2886,6 +3556,8 @@
       "yogs": 5209.98,
       "fundraiser": 229.02,
       "total": 5439.0,
+      "bundles": 75,
+      "donations": 78,
       "duration": 3600
     },
     {
@@ -2893,6 +3565,8 @@
       "yogs": 3467.11,
       "fundraiser": 773.02,
       "total": 4240.13,
+      "bundles": 103,
+      "donations": 117,
       "duration": 3600
     },
     {
@@ -2900,6 +3574,8 @@
       "yogs": 2993.12,
       "fundraiser": 1605.03,
       "total": 4598.15,
+      "bundles": 92,
+      "donations": 104,
       "duration": 3600
     },
     {
@@ -2907,6 +3583,8 @@
       "yogs": 3024.29,
       "fundraiser": 749.85,
       "total": 3774.14,
+      "bundles": 95,
+      "donations": 99,
       "duration": 3600
     },
     {
@@ -2914,6 +3592,8 @@
       "yogs": 2264.83,
       "fundraiser": 470.02,
       "total": 2734.85,
+      "bundles": 73,
+      "donations": 84,
       "duration": 3600
     },
     {
@@ -2921,6 +3601,8 @@
       "yogs": 4962.43,
       "fundraiser": 550.02,
       "total": 5512.45,
+      "bundles": 117,
+      "donations": 127,
       "duration": 3600
     },
     {
@@ -2928,6 +3610,8 @@
       "yogs": 3558.57,
       "fundraiser": 959.88,
       "total": 4518.45,
+      "bundles": 105,
+      "donations": 132,
       "duration": 3600
     },
     {
@@ -2935,6 +3619,8 @@
       "yogs": 4195.56,
       "fundraiser": 1040.02,
       "total": 5235.59,
+      "bundles": 128,
+      "donations": 147,
       "duration": 3600
     },
     {
@@ -2942,6 +3628,8 @@
       "yogs": 2456.57,
       "fundraiser": 755.03,
       "total": 3211.59,
+      "bundles": 82,
+      "donations": 93,
       "duration": 3600
     },
     {
@@ -2949,6 +3637,8 @@
       "yogs": 2578.31,
       "fundraiser": 877.57,
       "total": 3455.88,
+      "bundles": 80,
+      "donations": 96,
       "duration": 3600
     },
     {
@@ -2956,6 +3646,8 @@
       "yogs": 2111.26,
       "fundraiser": 5396.02,
       "total": 7507.28,
+      "bundles": 68,
+      "donations": 88,
       "duration": 3600
     },
     {
@@ -2963,6 +3655,8 @@
       "yogs": 1931.57,
       "fundraiser": 2602.05,
       "total": 4533.62,
+      "bundles": 69,
+      "donations": 89,
       "duration": 3600
     },
     {
@@ -2970,6 +3664,8 @@
       "yogs": 1978.57,
       "fundraiser": 237.45,
       "total": 2216.02,
+      "bundles": 60,
+      "donations": 63,
       "duration": 3600
     },
     {
@@ -2977,6 +3673,8 @@
       "yogs": 1636.57,
       "fundraiser": 119.03,
       "total": 1755.59,
+      "bundles": 50,
+      "donations": 53,
       "duration": 3600
     },
     {
@@ -2984,6 +3682,8 @@
       "yogs": 1408.57,
       "fundraiser": 244.02,
       "total": 1652.59,
+      "bundles": 40,
+      "donations": 40,
       "duration": 3600
     },
     {
@@ -2991,6 +3691,8 @@
       "yogs": 1166.56,
       "fundraiser": 720.71,
       "total": 1887.28,
+      "bundles": 48,
+      "donations": 53,
       "duration": 3600
     },
     {
@@ -2998,6 +3700,8 @@
       "yogs": 1066.57,
       "fundraiser": 100.01,
       "total": 1166.58,
+      "bundles": 32,
+      "donations": 33,
       "duration": 3600
     },
     {
@@ -3005,6 +3709,8 @@
       "yogs": 1071.57,
       "fundraiser": 174.02,
       "total": 1245.59,
+      "bundles": 36,
+      "donations": 36,
       "duration": 3600
     },
     {
@@ -3012,6 +3718,8 @@
       "yogs": 851.57,
       "fundraiser": 149.03,
       "total": 1000.6,
+      "bundles": 29,
+      "donations": 30,
       "duration": 3600
     },
     {
@@ -3019,6 +3727,8 @@
       "yogs": 1056.57,
       "fundraiser": 194.02,
       "total": 1250.59,
+      "bundles": 35,
+      "donations": 37,
       "duration": 3600
     },
     {
@@ -3026,6 +3736,8 @@
       "yogs": 1207.84,
       "fundraiser": 339.02,
       "total": 1546.86,
+      "bundles": 42,
+      "donations": 55,
       "duration": 3600
     },
     {
@@ -3033,6 +3745,8 @@
       "yogs": 4624.9,
       "fundraiser": 272.02,
       "total": 4896.92,
+      "bundles": 80,
+      "donations": 91,
       "duration": 3600
     },
     {
@@ -3040,6 +3754,8 @@
       "yogs": 2732.93,
       "fundraiser": 786.52,
       "total": 3519.45,
+      "bundles": 77,
+      "donations": 88,
       "duration": 3600
     },
     {
@@ -3047,6 +3763,8 @@
       "yogs": 3370.56,
       "fundraiser": 214.37,
       "total": 3584.94,
+      "bundles": 82,
+      "donations": 84,
       "duration": 3600
     },
     {
@@ -3054,6 +3772,8 @@
       "yogs": 2211.57,
       "fundraiser": 1212.04,
       "total": 3423.6,
+      "bundles": 69,
+      "donations": 71,
       "duration": 3600
     },
     {
@@ -3061,6 +3781,8 @@
       "yogs": 2928.53,
       "fundraiser": 444.02,
       "total": 3372.55,
+      "bundles": 79,
+      "donations": 82,
       "duration": 3600
     },
     {
@@ -3068,6 +3790,8 @@
       "yogs": 3437.26,
       "fundraiser": 390.02,
       "total": 3827.28,
+      "bundles": 92,
+      "donations": 96,
       "duration": 3600
     },
     {
@@ -3075,6 +3799,8 @@
       "yogs": 3716.92,
       "fundraiser": 563.71,
       "total": 4280.63,
+      "bundles": 107,
+      "donations": 115,
       "duration": 3600
     },
     {
@@ -3082,6 +3808,8 @@
       "yogs": 3840.23,
       "fundraiser": 1269.02,
       "total": 5109.25,
+      "bundles": 103,
+      "donations": 108,
       "duration": 3600
     },
     {
@@ -3089,6 +3817,8 @@
       "yogs": 3346.57,
       "fundraiser": 535.22,
       "total": 3881.78,
+      "bundles": 97,
+      "donations": 107,
       "duration": 3600
     },
     {
@@ -3096,6 +3826,8 @@
       "yogs": 8481.38,
       "fundraiser": 41792.37,
       "total": 50273.75,
+      "bundles": 179,
+      "donations": 229,
       "duration": 3600
     },
     {
@@ -3103,6 +3835,8 @@
       "yogs": 27198.86,
       "fundraiser": 957.7,
       "total": 28156.57,
+      "bundles": 157,
+      "donations": 195,
       "duration": 3600
     },
     {
@@ -3110,6 +3844,8 @@
       "yogs": 11001.19,
       "fundraiser": 738.73,
       "total": 11739.92,
+      "bundles": 134,
+      "donations": 187,
       "duration": 3600
     },
     {
@@ -3117,6 +3853,8 @@
       "yogs": 3855.57,
       "fundraiser": 584.02,
       "total": 4439.59,
+      "bundles": 121,
+      "donations": 123,
       "duration": 3600
     },
     {
@@ -3124,6 +3862,8 @@
       "yogs": 3707.57,
       "fundraiser": 784.72,
       "total": 4492.29,
+      "bundles": 121,
+      "donations": 123,
       "duration": 3600
     },
     {
@@ -3131,6 +3871,8 @@
       "yogs": 2296.86,
       "fundraiser": 429.02,
       "total": 2725.88,
+      "bundles": 68,
+      "donations": 75,
       "duration": 3600
     },
     {
@@ -3138,6 +3880,8 @@
       "yogs": 2504.06,
       "fundraiser": 449.02,
       "total": 2953.08,
+      "bundles": 81,
+      "donations": 82,
       "duration": 3600
     },
     {
@@ -3145,6 +3889,8 @@
       "yogs": 2412.57,
       "fundraiser": 649.02,
       "total": 3061.59,
+      "bundles": 79,
+      "donations": 80,
       "duration": 3600
     },
     {
@@ -3152,6 +3898,8 @@
       "yogs": 2226.52,
       "fundraiser": 394.02,
       "total": 2620.54,
+      "bundles": 70,
+      "donations": 72,
       "duration": 3600
     },
     {
@@ -3159,6 +3907,8 @@
       "yogs": 1836.56,
       "fundraiser": 349.02,
       "total": 2185.59,
+      "bundles": 37,
+      "donations": 37,
       "duration": 3600
     },
     {
@@ -3166,6 +3916,8 @@
       "yogs": 1477.57,
       "fundraiser": 139.03,
       "total": 1616.59,
+      "bundles": 46,
+      "donations": 46,
       "duration": 3600
     },
     {
@@ -3173,6 +3925,8 @@
       "yogs": 1465.57,
       "fundraiser": 139.02,
       "total": 1604.59,
+      "bundles": 47,
+      "donations": 47,
       "duration": 3600
     },
     {
@@ -3180,6 +3934,8 @@
       "yogs": 1226.57,
       "fundraiser": 109.02,
       "total": 1335.59,
+      "bundles": 39,
+      "donations": 40,
       "duration": 3600
     },
     {
@@ -3187,6 +3943,8 @@
       "yogs": 1483.52,
       "fundraiser": 149.02,
       "total": 1632.54,
+      "bundles": 48,
+      "donations": 50,
       "duration": 3600
     },
     {
@@ -3194,6 +3952,8 @@
       "yogs": 1871.57,
       "fundraiser": 359.02,
       "total": 2230.59,
+      "bundles": 64,
+      "donations": 65,
       "duration": 3600
     },
     {
@@ -3201,6 +3961,8 @@
       "yogs": 5206.77,
       "fundraiser": 424.03,
       "total": 5630.79,
+      "bundles": 135,
+      "donations": 145,
       "duration": 3600
     },
     {
@@ -3208,6 +3970,8 @@
       "yogs": 7148.06,
       "fundraiser": 334.02,
       "total": 7482.08,
+      "bundles": 150,
+      "donations": 162,
       "duration": 3600
     },
     {
@@ -3215,6 +3979,8 @@
       "yogs": 10663.31,
       "fundraiser": 230.43,
       "total": 10893.75,
+      "bundles": 255,
+      "donations": 264,
       "duration": 3600
     },
     {
@@ -3222,6 +3988,8 @@
       "yogs": 8622.18,
       "fundraiser": 834.02,
       "total": 9456.2,
+      "bundles": 223,
+      "donations": 235,
       "duration": 3600
     },
     {
@@ -3229,6 +3997,8 @@
       "yogs": 5908.59,
       "fundraiser": 466.02,
       "total": 6374.61,
+      "bundles": 163,
+      "donations": 172,
       "duration": 3600
     },
     {
@@ -3236,6 +4006,8 @@
       "yogs": 6795.25,
       "fundraiser": 872.02,
       "total": 7667.27,
+      "bundles": 196,
+      "donations": 212,
       "duration": 3600
     },
     {
@@ -3243,6 +4015,8 @@
       "yogs": 11571.84,
       "fundraiser": 1607.25,
       "total": 13179.09,
+      "bundles": 311,
+      "donations": 346,
       "duration": 3600
     },
     {
@@ -3250,6 +4024,8 @@
       "yogs": 11886.73,
       "fundraiser": 1155.22,
       "total": 13041.95,
+      "bundles": 333,
+      "donations": 373,
       "duration": 3600
     },
     {
@@ -3257,6 +4033,8 @@
       "yogs": 13143.42,
       "fundraiser": 2527.3,
       "total": 15670.72,
+      "bundles": 330,
+      "donations": 349,
       "duration": 3600
     },
     {
@@ -3264,6 +4042,8 @@
       "yogs": 12065.73,
       "fundraiser": 1938.48,
       "total": 14004.21,
+      "bundles": 319,
+      "donations": 349,
       "duration": 3600
     },
     {
@@ -3271,6 +4051,8 @@
       "yogs": 15318.35,
       "fundraiser": 10699.66,
       "total": 26018.02,
+      "bundles": 368,
+      "donations": 467,
       "duration": 3600
     },
     {
@@ -3278,6 +4060,8 @@
       "yogs": 12516.42,
       "fundraiser": 2870.54,
       "total": 15386.95,
+      "bundles": 350,
+      "donations": 405,
       "duration": 3600
     },
     {
@@ -3285,6 +4069,8 @@
       "yogs": 22353.17,
       "fundraiser": 2099.28,
       "total": 24452.45,
+      "bundles": 372,
+      "donations": 630,
       "duration": 3600
     }
   ],
@@ -3292,6 +4078,8 @@
     "total": 3441044.68,
     "yogs": 2726965.04,
     "fundraiser": 714079.64,
+    "bundles": 79009,
+    "donations": 86413,
     "duration": 729780,
     "total_number_of_streams": 58
   }

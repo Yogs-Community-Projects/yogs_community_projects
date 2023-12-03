@@ -5,6 +5,8 @@ export interface Donation {
   yogs: number
   fundraiser: number
   total: number
+  bundles: number
+  donations: number
 }
 
 export interface SlotDonation {
@@ -42,6 +44,8 @@ export interface Donation2 {
   yogs: number
   fundraiser: number
   total: number
+  bundles: number
+  donations: number
 }
 
 export interface HourDonation2 extends Donation2 {

@@ -1,17 +1,19 @@
-export enum DonationType {
+export enum ChartDataType {
   total = 'Total',
-  total2 = 'Total With Highlighted Fundraiser',
   yogs = 'Yogs',
   fundraiser = 'Fundraiser',
+  collections = 'Collections',
+  donations = 'Donations',
+  avgDonationAmount = 'Average Donation',
 }
 
-export enum ChartType {
+export enum ChartValueType {
   total = 'Total',
   amountPerMinute = 'Amount per minute',
   percentageOfTotal = '% of Total',
 }
 
-export enum ChartDataType {
+export enum ChartTimeType {
   yogsStreams = 'Yogs Streams',
   hourly = 'Hourly',
 }

@@ -1,186 +1,56 @@
-import { DonationData, DonationData2 } from '../statsModel'
+import { DonationData2, HourDonation2, SlotDonation2 } from '../statsModel'
 import { useBarChartFilter } from '../BarChartFilterProvider'
 import { DateTime } from 'luxon'
-import { DonationType, ChartDataType } from '../BarChartEnums'
-import { useStatsUtils, useStatsUtils2 } from './useStatsUtils'
-import { EChartsOption } from 'echarts'
+import { ChartDataType, ChartTimeType } from '../BarChartEnums'
+import { useStatsUtils2 } from './useStatsUtils'
+import { BarSeriesOption, EChartsOption } from 'echarts'
+import { RegisteredSeriesOption } from 'echarts/types/dist/echarts'
 
+declare type Values<T> = T[keyof T]
 const _Series = () => {
   const b: EChartsOption = {}
   return b.series
 }
 
-type Series = ReturnType<typeof _Series>
-export const useChartSeries = (data: DonationData) => {
-  const { bars, dataType } = useBarChartFilter()
-  const { yogsValue, fundraiserValue, color, slots, hours } = useStatsUtils(data)
-  const hoursYogs = () => {
-    return hours().map(s => {
-      const date = DateTime.fromISO(s.date, { setZone: false })
-      const hour = date.hour
-      const isNight = hour < 11 || hour >= 23
-      return {
-        value: yogsValue(s),
-        itemStyle: {
-          color: isNight ? '#09437a' : '#3584BF',
-        },
-        data: s,
-      }
-    })
-  }
-  const hoursFundraiser = () => {
-    return hours().map(s => {
-      return {
-        value: fundraiserValue(s),
-        itemStyle: {
-          color: '#E30E50',
-        },
-        data: s,
-      }
-    })
-  }
-  const fundraiser = () => {
-    return slots().map(s => {
-      return {
-        value: fundraiserValue(s),
-        itemStyle: {
-          color: bars() === DonationType.total2 ? '#ff0000' : color(s.slot),
-        },
-        tooltip: {
-          show: true,
-        },
-      }
-    })
-  }
-
-  const yogsFormatter = params => {
-    const dataIndex = params.dataIndex
-    const slot = slots().at(dataIndex)
-    const date = DateTime.fromISO(slot.slot.start)
-    const f = date.toFormat('MMM dd, HH:mm')
-    return `
-                  ${params.seriesName}
-                  <br>${params.marker}${slot.slot.title} ${f} ${date.offsetNameShort}
-                  <span style='float: right; margin-left: 20px'><b>${params.value}£</b></span>`
-
-    // return `${params.seriesName}<br/>`
-  }
-  const hoursFormatter = params => {
-    const dataIndex = params.dataIndex
-    const slot = hours().at(dataIndex)
-    const date = DateTime.fromISO(slot.date)
-    const f = date.toFormat('MMM dd, HH:mm')
-    return `
-                  ${params.seriesName}
-                  <br>${params.marker} ${f} ${date.offsetNameShort}
-                  <span style='float: right; margin-left: 20px'><b>${params.value}£</b></span>`
-
-    // return `${params.seriesName}<br/>`
-  }
-  const yogs = () => {
-    return slots().map(s => {
-      return {
-        value: yogsValue(s),
-        itemStyle: {
-          color: color(s.slot),
-        },
-        data: s,
-      }
-    })
-  }
-  const yogSeries = (): Series => {
-    return [
-      {
-        name: 'Yogs',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: yogsFormatter,
-        },
-        data: yogs(),
-      },
-      {
-        name: 'Fundraiser',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: yogsFormatter,
-        },
-        data: fundraiser(),
-      },
-    ]
-  }
-  const hourlySeries = (): Series => {
-    return [
-      {
-        name: 'Yogs',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: hoursFormatter,
-        },
-        data: hoursYogs(),
-      },
-      {
-        name: 'Fundraiser',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: hoursFormatter,
-        },
-        data: hoursFundraiser(),
-      },
-    ]
-  }
-
-  return () => {
-    if (dataType() === ChartDataType.yogsStreams) {
-      return yogSeries()
-    }
-    return hourlySeries()
-  }
+const _V = () => {
+  const b: BarSeriesOption = {}
+  return b.data
 }
+const _VS = () => {
+  const b: BarSeriesOption = {}
+  return b.data[0]
+}
+
+type Series = ReturnType<typeof _Series>
+type Data = ReturnType<typeof _V>
+type SingleData = ReturnType<typeof _VS>
 export const useChartSeries2 = (data: DonationData2) => {
-  const { bars } = useBarChartFilter()
-  const { totalValue, yogsValue, fundraiserValue, slots, hours } = useStatsUtils2(data)
+  const { bars, dataType } = useBarChartFilter()
+  const { value, slots, hours } = useStatsUtils2(data)
+
+  const isNight = (s: HourDonation2) => {
+    const date = DateTime.fromISO(s.date, { setZone: false })
+    const hour = date.hour
+    return hour < 11 || hour >= 23
+  }
+  const redColor = (s: HourDonation2) => (isNight(s) ? '#57051f' : '#E30E50')
+  const blueColor = (s: HourDonation2) => (isNight(s) ? '#09437a' : '#3584BF')
+
+  const slotItem = (s: SlotDonation2): SingleData => {
+    return {
+      value: value(s),
+      itemStyle: {
+        color: s.color,
+      },
+    }
+  }
 
   const hoursTotal = () => {
     return hours().map(s => {
-      const date = DateTime.fromISO(s.date, { setZone: false })
-      const hour = date.hour
-      const isNight = hour < 11 || hour >= 23
       return {
-        value: totalValue(s),
+        value: value(s),
         itemStyle: {
-          color: isNight ? '#09437a' : '#3584BF',
+          color: blueColor(s),
         },
         data: s,
       }
@@ -188,13 +58,10 @@ export const useChartSeries2 = (data: DonationData2) => {
   }
   const hoursYogs = () => {
     return hours().map(s => {
-      const date = DateTime.fromISO(s.date, { setZone: false })
-      const hour = date.hour
-      const isNight = hour < 11 || hour >= 23
       return {
-        value: yogsValue(s),
+        value: value(s),
         itemStyle: {
-          color: isNight ? '#09437a' : '#3584BF',
+          color: blueColor(s),
         },
         data: s,
       }
@@ -202,55 +69,38 @@ export const useChartSeries2 = (data: DonationData2) => {
   }
   const hoursFundraiser = () => {
     return hours().map(s => {
-      const date = DateTime.fromISO(s.date, { setZone: false })
-      const hour = date.hour
-      const isNight = hour < 11 || hour >= 23
       return {
-        value: fundraiserValue(s),
+        value: value(s),
         itemStyle: {
-          color: isNight ? '#57051f' : '#E30E50',
+          color: redColor(s),
         },
         data: s,
       }
     })
   }
-  const total = () => {
-    return slots().map(s => {
+  const slotsItems = () => {
+    return slots().map(slotItem)
+  }
+  const hourItems = (): SingleData[] => {
+    return hours().map(s => {
       return {
-        value: totalValue(s),
+        value: value(s),
         itemStyle: {
-          color: s.color,
+          color: blueColor(s),
         },
         data: s,
-      }
-    })
-  }
-  const yogs = () => {
-    return slots().map(s => {
-      return {
-        value: yogsValue(s),
-        itemStyle: {
-          color: s.color,
-        },
-        data: s,
-      }
-    })
-  }
-  const fundraiser = () => {
-    return slots().map(s => {
-      return {
-        value: fundraiserValue(s),
-        itemStyle: {
-          color: bars() === DonationType.total2 ? '#ff0000' : s.color,
-        },
-        tooltip: {
-          show: true,
-        },
       }
     })
   }
 
-  const yogsFormatter = params => {
+  const items = () => {
+    if (dataType() === ChartTimeType.hourly) {
+      return hourItems()
+    }
+    return slotsItems()
+  }
+
+  const yogsFormatterPounds = params => {
     const dataIndex = params.dataIndex
     const slot = slots().at(dataIndex)
     const date = DateTime.fromISO(slot.date)
@@ -259,8 +109,26 @@ export const useChartSeries2 = (data: DonationData2) => {
                   ${params.seriesName}
                   <br>${params.marker}${slot.label} ${f} ${date.offsetNameShort}
                   <span style='float: right; margin-left: 20px'><b>${params.value}£</b></span>`
-
-    // return `${params.seriesName}<br/>`
+  }
+  const yogsFormatter = params => {
+    const dataIndex = params.dataIndex
+    const slot = slots().at(dataIndex)
+    const date = DateTime.fromISO(slot.date)
+    const f = date.toFormat('MMM dd, HH:mm')
+    return `
+                  ${params.seriesName}
+                  <br>${params.marker}${slot.label} ${f} ${date.offsetNameShort}
+                  <span style='float: right; margin-left: 20px'><b>${params.value}</b></span>`
+  }
+  const hoursFormatterPounds = params => {
+    const dataIndex = params.dataIndex
+    const slot = hours().at(dataIndex)
+    const date = DateTime.fromISO(slot.date)
+    const f = date.toFormat('MMM dd, HH:mm')
+    return `
+                  ${params.seriesName}
+                  <br>${params.marker} ${f} ${date.offsetNameShort}
+                  <span style='float: right; margin-left: 20px'><b>${params.value}£</b></span>`
   }
   const hoursFormatter = params => {
     const dataIndex = params.dataIndex
@@ -271,108 +139,58 @@ export const useChartSeries2 = (data: DonationData2) => {
                   ${params.seriesName}
                   <br>${params.marker} ${f} ${date.offsetNameShort}
                   <span style='float: right; margin-left: 20px'><b>${params.value}£</b></span>`
+  }
 
-    // return `${params.seriesName}<br/>`
+  const formater = () => {
+    switch (dataType()) {
+      case ChartTimeType.yogsStreams:
+        switch (bars()) {
+          default:
+            return yogsFormatterPounds
+          case ChartDataType.collections:
+          case ChartDataType.donations:
+            return yogsFormatter
+        }
+      case ChartTimeType.hourly:
+        switch (bars()) {
+          default:
+            return hoursFormatterPounds
+          case ChartDataType.collections:
+          case ChartDataType.donations:
+            return hoursFormatter
+        }
+    }
+  }
+
+  const s = (name: string, formatter: (params: any) => string, data: Data): Values<RegisteredSeriesOption> => {
+    return {
+      name: 'Total',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false,
+      },
+      tooltip: {
+        show: true,
+        formatter: formatter,
+      },
+      data: data,
+    }
   }
 
   const series = (): Series => {
     return [
-      {
-        name: 'Total',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: yogsFormatter,
-        },
-        data: total(),
-      },
-      {
-        name: 'Yogs',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: yogsFormatter,
-        },
-        data: yogs(),
-      },
-      {
-        name: 'Fundraiser',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: yogsFormatter,
-        },
-        data: fundraiser(),
-      },
-      {
-        name: 'Total Hourly',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: hoursFormatter,
-        },
-        data: hoursTotal(),
-      },
-      {
-        name: 'Yogs Hourly',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: hoursFormatter,
-        },
-        data: hoursYogs(),
-      },
-      {
-        name: 'Fundraiser Hourly',
-        type: 'bar',
-        stack: 'total',
-        label: {
-          show: false,
-        },
-        emphasis: {
-          // focus: 'series',
-        },
-        tooltip: {
-          show: true,
-          formatter: hoursFormatter,
-        },
-        data: hoursFundraiser(),
-      },
+      s('Total', formater(), items()),
+      /*
+      s('Yogs', yogsFormatter, yogs()),
+      s('Fundraiser', yogsFormatter, fundraiser()),*/
+      /*
+      s('Total Hourly', hoursFormatter, hoursTotal()),
+      s('Yogs Hourly', hoursFormatter, hoursYogs()),
+      s('Fundraiser Hourly', hoursFormatter, hoursFundraiser()),
+      s('Bundles', undefined, bundles()),
+      s('Donations', undefined, donations()),
+      */
     ]
   }
 

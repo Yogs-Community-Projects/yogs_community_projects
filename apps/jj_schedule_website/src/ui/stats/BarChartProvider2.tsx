@@ -2,26 +2,28 @@ import { createContext, ParentComponent, useContext } from 'solid-js'
 import { DonationData2 } from './statsModel'
 import { EChartsOption } from 'echarts'
 import { useChartSeries2 } from './utils/useChartSeries'
-import { useLegend } from './utils/useLegend'
 import { useChartXAxis2 } from './utils/useChartXAxis'
-import { DonationType } from './BarChartEnums'
+import { ChartDataType, ChartTimeType } from './BarChartEnums'
 import { useBarChartFilter } from './BarChartFilterProvider'
 
 const useBarChartHook = (data: DonationData2) => {
-  const { bars } = useBarChartFilter()
+  const { bars, dataType } = useBarChartFilter()
   const series = useChartSeries2(data)
-  const legend = useLegend()
+  // const legend = useLegend()
   const xAxis = useChartXAxis2(data)
 
   const yAxisName = () => {
     switch (bars()) {
-      case DonationType.total:
-      case DonationType.total2:
+      case ChartDataType.total:
         return 'Total'
-      case DonationType.yogs:
+      case ChartDataType.yogs:
         return 'Yogs'
-      case DonationType.fundraiser:
+      case ChartDataType.fundraiser:
         return 'Fundraiser'
+      case ChartDataType.collections:
+        return 'Collections'
+      case ChartDataType.donations:
+        return 'Donations'
     }
   }
 
@@ -29,11 +31,14 @@ const useBarChartHook = (data: DonationData2) => {
     data,
     chartOptions: (): EChartsOption => {
       return {
+        backgroundColor: '#fff',
         tooltip: {
           trigger: 'item',
         },
-        dataZoom: {},
-        legend: legend(),
+        dataZoom: {
+          show: dataType() === ChartTimeType.hourly,
+        },
+        // legend: legend(),
         grid: {
           show: true,
           top: '30px',

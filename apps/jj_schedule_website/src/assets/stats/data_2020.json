@@ -6,8 +6,10 @@
       "date": "2020-12-01T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 12937.65,
-      "fundraiser": 395.56,
-      "total": 17419.58
+      "fundraiser": 0.0,
+      "total": 12937.65,
+      "bundles": 451,
+      "donations": 480
     },
     {
       "label": "Pre Jingle Jangle",
@@ -15,8 +17,10 @@
       "date": "2020-12-01T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 31515.99,
-      "fundraiser": -721.25,
-      "total": 42156.06
+      "fundraiser": 0.0,
+      "total": 31515.99,
+      "bundles": 1088,
+      "donations": 1137
     },
     {
       "label": "Jingle Cats",
@@ -24,8 +28,10 @@
       "date": "2020-12-01T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 442850.97,
-      "fundraiser": 4587.34,
-      "total": 591194.04
+      "fundraiser": 0.0,
+      "total": 442850.97,
+      "bundles": 14449,
+      "donations": 14826
     },
     {
       "label": "OpenTTD",
@@ -33,8 +39,10 @@
       "date": "2020-12-01T21:00:00.000+0000",
       "duration": 10800,
       "yogs": 137850.65,
-      "fundraiser": -956.64,
-      "total": 184438.67
+      "fundraiser": 0.0,
+      "total": 137850.65,
+      "bundles": 4650,
+      "donations": 4791
     },
     {
       "label": "Night 1",
@@ -42,8 +50,10 @@
       "date": "2020-12-02T00:00:00.000000+0000",
       "duration": 39600,
       "yogs": 97686.33,
-      "fundraiser": -1563.5,
-      "total": 129928.77
+      "fundraiser": 0.0,
+      "total": 97686.33,
+      "bundles": 3436,
+      "donations": 3498
     },
     {
       "label": "Christmas Colony",
@@ -51,8 +61,10 @@
       "date": "2020-12-02T11:00:00.000+0000",
       "duration": 32400,
       "yogs": 121071.83,
-      "fundraiser": 774.5,
-      "total": 161266.56
+      "fundraiser": 0.0,
+      "total": 121071.83,
+      "bundles": 3809,
+      "donations": 3903
     },
     {
       "label": "Jackbox",
@@ -60,8 +72,10 @@
       "date": "2020-12-02T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 26509.66,
-      "fundraiser": -1524.5,
-      "total": 35551.85
+      "fundraiser": 0.0,
+      "total": 26509.66,
+      "bundles": 913,
+      "donations": 943
     },
     {
       "label": "Night 2",
@@ -69,8 +83,10 @@
       "date": "2020-12-02T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 39552.95,
-      "fundraiser": -375.0,
-      "total": 52406.46
+      "fundraiser": 0.0,
+      "total": 39552.95,
+      "bundles": 1458,
+      "donations": 1475
     },
     {
       "label": "Stocking Stuffers",
@@ -78,8 +94,10 @@
       "date": "2020-12-03T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 25924.96,
-      "fundraiser": 680.0,
-      "total": 34404.81
+      "fundraiser": 0.0,
+      "total": 25924.96,
+      "bundles": 749,
+      "donations": 775
     },
     {
       "label": "Would you go on a date",
@@ -87,8 +105,10 @@
       "date": "2020-12-03T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 21395.26,
-      "fundraiser": 225.0,
-      "total": 28481.62
+      "fundraiser": 0.0,
+      "total": 21395.26,
+      "bundles": 684,
+      "donations": 698
     },
     {
       "label": "Hat Films Christmas Album",
@@ -96,8 +116,10 @@
       "date": "2020-12-03T17:00:00.000+0000",
       "duration": 21600,
       "yogs": 63767.19,
-      "fundraiser": 468.0,
-      "total": 85681.14
+      "fundraiser": 0.0,
+      "total": 63767.19,
+      "bundles": 1979,
+      "donations": 2259
     },
     {
       "label": "Night 3",
@@ -105,8 +127,10 @@
       "date": "2020-12-03T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 30932.81,
-      "fundraiser": -1453.0,
-      "total": 41150.9
+      "fundraiser": 0.0,
+      "total": 30932.81,
+      "bundles": 1088,
+      "donations": 1204
     },
     {
       "label": "Big Rips Big Fishing",
@@ -114,8 +138,10 @@
       "date": "2020-12-04T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 11941.71,
-      "fundraiser": 206.0,
-      "total": 15932.52
+      "fundraiser": 0.0,
+      "total": 11941.71,
+      "bundles": 430,
+      "donations": 436
     },
     {
       "label": "Jerk Off",
@@ -123,8 +149,10 @@
       "date": "2020-12-04T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 27244.48,
-      "fundraiser": 710.0,
-      "total": 36567.37
+      "fundraiser": 0.0,
+      "total": 27244.48,
+      "bundles": 741,
+      "donations": 768
     },
     {
       "label": "Farming Sim",
@@ -132,8 +160,10 @@
       "date": "2020-12-04T17:00:00.000+0000",
       "duration": 21600,
       "yogs": 39874.06,
-      "fundraiser": -654.0,
-      "total": 53629.38
+      "fundraiser": 0.0,
+      "total": 39874.06,
+      "bundles": 1221,
+      "donations": 1253
     },
     {
       "label": "Night 4",
@@ -141,8 +171,10 @@
       "date": "2020-12-04T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 25250.69,
-      "fundraiser": -362.0,
-      "total": 34001.91
+      "fundraiser": 0.0,
+      "total": 25250.69,
+      "bundles": 934,
+      "donations": 939
     },
     {
       "label": "Stocking Stuffers",
@@ -150,8 +182,10 @@
       "date": "2020-12-05T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 18040.44,
-      "fundraiser": 50.0,
-      "total": 24363.99
+      "fundraiser": 0.0,
+      "total": 18040.44,
+      "bundles": 364,
+      "donations": 409
     },
     {
       "label": "Tom Clark's Wheel of Wonder",
@@ -159,8 +193,10 @@
       "date": "2020-12-05T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 15301.55,
-      "fundraiser": 1280.0,
-      "total": 20608.01
+      "fundraiser": 0.0,
+      "total": 15301.55,
+      "bundles": 454,
+      "donations": 464
     },
     {
       "label": "MCC",
@@ -168,8 +204,10 @@
       "date": "2020-12-05T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 16430.15,
-      "fundraiser": -1105.0,
-      "total": 22128.06
+      "fundraiser": 0.0,
+      "total": 16430.15,
+      "bundles": 530,
+      "donations": 544
     },
     {
       "label": "Armchair Admirals TD",
@@ -177,8 +215,10 @@
       "date": "2020-12-05T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 25079.63,
-      "fundraiser": 35.0,
-      "total": 33878.07
+      "fundraiser": 0.0,
+      "total": 25079.63,
+      "bundles": 729,
+      "donations": 763
     },
     {
       "label": "Night 5",
@@ -186,8 +226,10 @@
       "date": "2020-12-05T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 23714.99,
-      "fundraiser": -210.0,
-      "total": 31972.95
+      "fundraiser": 0.0,
+      "total": 23714.99,
+      "bundles": 887,
+      "donations": 892
     },
     {
       "label": "Stocking Stuffers",
@@ -195,8 +237,10 @@
       "date": "2020-12-06T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 9799.32,
-      "fundraiser": 280.0,
-      "total": 13197.66
+      "fundraiser": 0.0,
+      "total": 9799.32,
+      "bundles": 343,
+      "donations": 348
     },
     {
       "label": "Hades Challange",
@@ -204,8 +248,10 @@
       "date": "2020-12-06T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 12094.16,
-      "fundraiser": 31.0,
-      "total": 16288.32
+      "fundraiser": 0.0,
+      "total": 12094.16,
+      "bundles": 362,
+      "donations": 369
     },
     {
       "label": "Poker Tournament",
@@ -213,8 +259,10 @@
       "date": "2020-12-06T17:00:00.000+0000",
       "duration": 21600,
       "yogs": 26807.51,
-      "fundraiser": -156.0,
-      "total": 36070.84
+      "fundraiser": 0.0,
+      "total": 26807.51,
+      "bundles": 904,
+      "donations": 951
     },
     {
       "label": "Night 6",
@@ -222,8 +270,10 @@
       "date": "2020-12-06T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 16913.99,
-      "fundraiser": -230.0,
-      "total": 22612.74
+      "fundraiser": 0.0,
+      "total": 16913.99,
+      "bundles": 631,
+      "donations": 637
     },
     {
       "label": "Stocking Stuffers",
@@ -231,8 +281,10 @@
       "date": "2020-12-07T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 6569.14,
-      "fundraiser": 51.0,
-      "total": 8625.68
+      "fundraiser": 0.0,
+      "total": 6569.14,
+      "bundles": 222,
+      "donations": 231
     },
     {
       "label": "Stocking Stuffers",
@@ -240,8 +292,10 @@
       "date": "2020-12-07T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 8235.37,
-      "fundraiser": -101.0,
-      "total": 11012.45
+      "fundraiser": 0.0,
+      "total": 8235.37,
+      "bundles": 262,
+      "donations": 275
     },
     {
       "label": "Civ 5",
@@ -249,8 +303,10 @@
       "date": "2020-12-07T17:00:00.000+0000",
       "duration": 21600,
       "yogs": 86152.97,
-      "fundraiser": 463.0,
-      "total": 114585.17
+      "fundraiser": 0.0,
+      "total": 86152.97,
+      "bundles": 1712,
+      "donations": 4671
     },
     {
       "label": "Night 7",
@@ -258,8 +314,10 @@
       "date": "2020-12-07T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 13603.34,
-      "fundraiser": -512.0,
-      "total": 18027.04
+      "fundraiser": 0.0,
+      "total": 13603.34,
+      "bundles": 490,
+      "donations": 500
     },
     {
       "label": "Stocking Stuffers",
@@ -267,8 +325,10 @@
       "date": "2020-12-08T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 6959.43,
-      "fundraiser": 229.0,
-      "total": 9153.29
+      "fundraiser": 0.0,
+      "total": 6959.43,
+      "bundles": 238,
+      "donations": 246
     },
     {
       "label": "Among Us",
@@ -276,8 +336,10 @@
       "date": "2020-12-08T14:00:00.000+0000",
       "duration": 32400,
       "yogs": 36619.52,
-      "fundraiser": 165.69,
-      "total": 48642.56
+      "fundraiser": 0.0,
+      "total": 36619.52,
+      "bundles": 954,
+      "donations": 1295
     },
     {
       "label": "Night 8",
@@ -285,8 +347,10 @@
       "date": "2020-12-08T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 11770.48,
-      "fundraiser": -420.69,
-      "total": 15511.94
+      "fundraiser": 0.0,
+      "total": 11770.48,
+      "bundles": 447,
+      "donations": 450
     },
     {
       "label": "Stocking Stuffers",
@@ -294,8 +358,10 @@
       "date": "2020-12-09T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 3472.79,
-      "fundraiser": 50.0,
-      "total": 4548.61
+      "fundraiser": 0.0,
+      "total": 3472.79,
+      "bundles": 122,
+      "donations": 123
     },
     {
       "label": "Don't Starve",
@@ -303,8 +369,10 @@
       "date": "2020-12-09T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 4942.25,
-      "fundraiser": 430.0,
-      "total": 6639.7
+      "fundraiser": 0.0,
+      "total": 4942.25,
+      "bundles": 168,
+      "donations": 174
     },
     {
       "label": "Slag Sleepover",
@@ -312,8 +380,10 @@
       "date": "2020-12-09T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 9287.78,
-      "fundraiser": -169.0,
-      "total": 12496.82
+      "fundraiser": 0.0,
+      "total": 9287.78,
+      "bundles": 212,
+      "donations": 230
     },
     {
       "label": "Protessional Strem",
@@ -321,8 +391,10 @@
       "date": "2020-12-09T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 32529.27,
-      "fundraiser": 49.69,
-      "total": 43768.74
+      "fundraiser": 0.0,
+      "total": 32529.27,
+      "bundles": 548,
+      "donations": 1910
     },
     {
       "label": "PoxNora",
@@ -330,8 +402,10 @@
       "date": "2020-12-09T23:00:00.000+0000",
       "duration": 10800,
       "yogs": 5750.88,
-      "fundraiser": -235.69,
-      "total": 7738.42
+      "fundraiser": 0.0,
+      "total": 5750.88,
+      "bundles": 161,
+      "donations": 364
     },
     {
       "label": "Night 9",
@@ -339,8 +413,10 @@
       "date": "2020-12-10T02:00:00.000000+0000",
       "duration": 32400,
       "yogs": 6355.66,
-      "fundraiser": -150.0,
-      "total": 8485.44
+      "fundraiser": 0.0,
+      "total": 6355.66,
+      "bundles": 236,
+      "donations": 240
     },
     {
       "label": "Stocking Stuffers",
@@ -348,8 +424,10 @@
       "date": "2020-12-10T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 3198.62,
-      "fundraiser": 50.69,
-      "total": 4237.28
+      "fundraiser": 0.0,
+      "total": 3198.62,
+      "bundles": 112,
+      "donations": 125
     },
     {
       "label": "Hat Films Art Stream",
@@ -357,8 +435,10 @@
       "date": "2020-12-10T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 7077.95,
-      "fundraiser": -25.69,
-      "total": 9465.28
+      "fundraiser": 0.0,
+      "total": 7077.95,
+      "bundles": 190,
+      "donations": 218
     },
     {
       "label": "ISP's Wheel of Sorrow",
@@ -366,8 +446,10 @@
       "date": "2020-12-10T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 6531.64,
-      "fundraiser": 1101.0,
-      "total": 8686.74
+      "fundraiser": 0.0,
+      "total": 6531.64,
+      "bundles": 169,
+      "donations": 182
     },
     {
       "label": "Fizone Christmas Special",
@@ -375,8 +457,10 @@
       "date": "2020-12-10T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 16832.42,
-      "fundraiser": -801.77,
-      "total": 22387.15
+      "fundraiser": 0.0,
+      "total": 16832.42,
+      "bundles": 323,
+      "donations": 493
     },
     {
       "label": "Night 10",
@@ -384,8 +468,10 @@
       "date": "2020-12-10T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 15513.08,
-      "fundraiser": -299.23,
-      "total": 20605.06
+      "fundraiser": 0.0,
+      "total": 15513.08,
+      "bundles": 392,
+      "donations": 555
     },
     {
       "label": "Stocking Stuffers",
@@ -393,8 +479,10 @@
       "date": "2020-12-11T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 5786.31,
-      "fundraiser": 150.56,
-      "total": 7593.42
+      "fundraiser": 0.0,
+      "total": 5786.31,
+      "bundles": 138,
+      "donations": 163
     },
     {
       "label": "Yogs Game Jam Finals",
@@ -402,8 +490,10 @@
       "date": "2020-12-11T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 6937.23,
-      "fundraiser": 97.44,
-      "total": 9220.24
+      "fundraiser": 0.0,
+      "total": 6937.23,
+      "bundles": 197,
+      "donations": 225
     },
     {
       "label": "Simon's Important Videos",
@@ -411,8 +501,10 @@
       "date": "2020-12-11T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 50668.87,
-      "fundraiser": 307.0,
-      "total": 66577.08
+      "fundraiser": 0.0,
+      "total": 50668.87,
+      "bundles": 417,
+      "donations": 455
     },
     {
       "label": "Spiff & PFlax CSGO Scrub Tourny",
@@ -420,8 +512,10 @@
       "date": "2020-12-11T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 10600.97,
-      "fundraiser": -18.0,
-      "total": 13929.61
+      "fundraiser": 0.0,
+      "total": 10600.97,
+      "bundles": 368,
+      "donations": 391
     },
     {
       "label": "Night 11",
@@ -429,8 +523,10 @@
       "date": "2020-12-11T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 20620.47,
-      "fundraiser": -487.0,
-      "total": 27160.89
+      "fundraiser": 0.0,
+      "total": 20620.47,
+      "bundles": 713,
+      "donations": 753
     },
     {
       "label": "Stocking Stuffers",
@@ -438,8 +534,10 @@
       "date": "2020-12-12T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 10943.97,
-      "fundraiser": 390.0,
-      "total": 14380.19
+      "fundraiser": 0.0,
+      "total": 10943.97,
+      "bundles": 277,
+      "donations": 302
     },
     {
       "label": "Minecraft Community Build",
@@ -447,8 +545,10 @@
       "date": "2020-12-12T14:00:00.000+0000",
       "duration": 21600,
       "yogs": 29386.05,
-      "fundraiser": 40.0,
-      "total": 38613.01
+      "fundraiser": 0.0,
+      "total": 29386.05,
+      "bundles": 870,
+      "donations": 890
     },
     {
       "label": "PFlax Rust RP",
@@ -456,8 +556,10 @@
       "date": "2020-12-12T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 10598.31,
-      "fundraiser": -225.0,
-      "total": 13926.14
+      "fundraiser": 0.0,
+      "total": 10598.31,
+      "bundles": 359,
+      "donations": 376
     },
     {
       "label": "Night 12",
@@ -465,8 +567,10 @@
       "date": "2020-12-12T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 21141.16,
-      "fundraiser": -180.0,
-      "total": 27812.28
+      "fundraiser": 0.0,
+      "total": 21141.16,
+      "bundles": 769,
+      "donations": 782
     },
     {
       "label": "Stocking Stuffers",
@@ -474,8 +578,10 @@
       "date": "2020-12-13T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 14337.72,
-      "fundraiser": 662.0,
-      "total": 18806.47
+      "fundraiser": 0.0,
+      "total": 14337.72,
+      "bundles": 445,
+      "donations": 462
     },
     {
       "label": "Stocking Stuffers",
@@ -483,8 +589,10 @@
       "date": "2020-12-13T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 23827.32,
-      "fundraiser": 11.0,
-      "total": 31308.68
+      "fundraiser": 0.0,
+      "total": 23827.32,
+      "bundles": 535,
+      "donations": 679
     },
     {
       "label": "High Rollers Christmas Special",
@@ -492,8 +600,10 @@
       "date": "2020-12-13T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 34621.67,
-      "fundraiser": 1525.0,
-      "total": 45557.88
+      "fundraiser": 0.0,
+      "total": 34621.67,
+      "bundles": 715,
+      "donations": 772
     },
     {
       "label": "Sweaty Shooters",
@@ -501,8 +611,10 @@
       "date": "2020-12-13T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 23614.85,
-      "fundraiser": -1408.0,
-      "total": 31095.42
+      "fundraiser": 0.0,
+      "total": 23614.85,
+      "bundles": 756,
+      "donations": 872
     },
     {
       "label": "Night 13",
@@ -510,8 +622,10 @@
       "date": "2020-12-13T23:00:00.000000+0000",
       "duration": 43200,
       "yogs": 36295.41,
-      "fundraiser": -649.0,
-      "total": 47577.2
+      "fundraiser": 0.0,
+      "total": 36295.41,
+      "bundles": 1353,
+      "donations": 1392
     },
     {
       "label": "Stocking Stuffers",
@@ -519,8 +633,10 @@
       "date": "2020-12-14T11:00:00.000+0000",
       "duration": 10800,
       "yogs": 22680.5,
-      "fundraiser": 1009.69,
-      "total": 29769.14
+      "fundraiser": 0.0,
+      "total": 22680.5,
+      "bundles": 618,
+      "donations": 733
     },
     {
       "label": "Warhammer Painting",
@@ -528,8 +644,10 @@
       "date": "2020-12-14T14:00:00.000+0000",
       "duration": 10800,
       "yogs": 34354.48,
-      "fundraiser": 2800.47,
-      "total": 45320.1
+      "fundraiser": 0.0,
+      "total": 34354.48,
+      "bundles": 814,
+      "donations": 1052
     },
     {
       "label": "Fighting Fantasy",
@@ -537,8 +655,10 @@
       "date": "2020-12-14T17:00:00.000+0000",
       "duration": 10800,
       "yogs": 35940.35,
-      "fundraiser": -2961.16,
-      "total": 48025.29
+      "fundraiser": 0.0,
+      "total": 35940.35,
+      "bundles": 968,
+      "donations": 1159
     },
     {
       "label": "Late Late Show",
@@ -546,8 +666,10 @@
       "date": "2020-12-14T20:00:00.000+0000",
       "duration": 10800,
       "yogs": 31692.91,
-      "fundraiser": -103.0,
-      "total": 42401.72
+      "fundraiser": 0.0,
+      "total": 31692.91,
+      "bundles": 955,
+      "donations": 1331
     }
   ],
   "creator_data": [
@@ -916,2283 +1038,2935 @@
     {
       "date": "2020-12-01T11:00:00+00:00",
       "yogs": 4659.9,
-      "fundraiser": 809.16,
-      "total": 6314.11,
+      "fundraiser": 0.0,
+      "total": 4659.9,
+      "bundles": 160,
+      "donations": 170,
       "duration": 3600
     },
     {
       "date": "2020-12-01T12:00:00+00:00",
       "yogs": 4393.11,
-      "fundraiser": -467.35,
-      "total": 5925.08,
+      "fundraiser": 0.0,
+      "total": 4393.11,
+      "bundles": 157,
+      "donations": 164,
       "duration": 3600
     },
     {
       "date": "2020-12-01T13:00:00+00:00",
       "yogs": 3884.64,
-      "fundraiser": 53.75,
-      "total": 5180.39,
+      "fundraiser": 0.0,
+      "total": 3884.64,
+      "bundles": 134,
+      "donations": 146,
       "duration": 3600
     },
     {
       "date": "2020-12-01T14:00:00+00:00",
       "yogs": 6687.39,
-      "fundraiser": 1479.89,
-      "total": 8951.24,
+      "fundraiser": 0.0,
+      "total": 6687.39,
+      "bundles": 227,
+      "donations": 238,
       "duration": 3600
     },
     {
       "date": "2020-12-01T15:00:00+00:00",
       "yogs": 11559.72,
-      "fundraiser": 301.86,
-      "total": 15515.4,
+      "fundraiser": 0.0,
+      "total": 11559.72,
+      "bundles": 399,
+      "donations": 419,
       "duration": 3600
     },
     {
       "date": "2020-12-01T16:00:00+00:00",
       "yogs": 13268.88,
-      "fundraiser": -2503.0,
-      "total": 17689.42,
+      "fundraiser": 0.0,
+      "total": 13268.88,
+      "bundles": 462,
+      "donations": 480,
       "duration": 3600
     },
     {
       "date": "2020-12-01T17:00:00+00:00",
       "yogs": 293075.84,
-      "fundraiser": 1954.33,
-      "total": 391234.97,
+      "fundraiser": 0.0,
+      "total": 293075.84,
+      "bundles": 9498,
+      "donations": 9750,
       "duration": 3600
     },
     {
       "date": "2020-12-01T18:00:00+00:00",
       "yogs": 103717.78,
-      "fundraiser": -1090.6,
-      "total": 138487.69,
+      "fundraiser": 0.0,
+      "total": 103717.78,
+      "bundles": 3378,
+      "donations": 3461,
       "duration": 3600
     },
     {
       "date": "2020-12-01T19:00:00+00:00",
       "yogs": 46057.35,
-      "fundraiser": 3723.61,
-      "total": 61471.38,
+      "fundraiser": 0.0,
+      "total": 46057.35,
+      "bundles": 1573,
+      "donations": 1615,
       "duration": 3600
     },
     {
       "date": "2020-12-01T20:00:00+00:00",
       "yogs": 63085.94,
-      "fundraiser": -802.2,
-      "total": 84380.2,
+      "fundraiser": 0.0,
+      "total": 63085.94,
+      "bundles": 2137,
+      "donations": 2196,
       "duration": 3600
     },
     {
       "date": "2020-12-01T21:00:00+00:00",
       "yogs": 49450.11,
-      "fundraiser": 9266.67,
-      "total": 67883.11,
+      "fundraiser": 0.0,
+      "total": 49450.11,
+      "bundles": 1633,
+      "donations": 1684,
       "duration": 3600
     },
     {
       "date": "2020-12-01T22:00:00+00:00",
       "yogs": 43631.93,
-      "fundraiser": -6798.12,
-      "total": 56795.15,
+      "fundraiser": 0.0,
+      "total": 43631.93,
+      "bundles": 1495,
+      "donations": 1537,
       "duration": 3600
     },
     {
       "date": "2020-12-01T23:00:00+00:00",
       "yogs": 44768.61,
-      "fundraiser": -3425.19,
-      "total": 59760.41,
+      "fundraiser": 0.0,
+      "total": 44768.61,
+      "bundles": 1522,
+      "donations": 1570,
       "duration": 3600
     },
     {
       "date": "2020-12-02T00:00:00+00:00",
       "yogs": 14547.75,
-      "fundraiser": -1354.43,
-      "total": 19455.74,
+      "fundraiser": 0.0,
+      "total": 14547.75,
+      "bundles": 538,
+      "donations": 541,
       "duration": 3600
     },
     {
       "date": "2020-12-02T01:00:00+00:00",
       "yogs": 13540.96,
-      "fundraiser": 1141.43,
-      "total": 18080.58,
+      "fundraiser": 0.0,
+      "total": 13540.96,
+      "bundles": 449,
+      "donations": 458,
       "duration": 3600
     },
     {
       "date": "2020-12-02T02:00:00+00:00",
       "yogs": 11336.89,
-      "fundraiser": -305.43,
-      "total": 15109.65,
+      "fundraiser": 0.0,
+      "total": 11336.89,
+      "bundles": 350,
+      "donations": 361,
       "duration": 3600
     },
     {
       "date": "2020-12-02T03:00:00+00:00",
       "yogs": 10066.79,
-      "fundraiser": -945.07,
-      "total": 13516.91,
+      "fundraiser": 0.0,
+      "total": 10066.79,
+      "bundles": 358,
+      "donations": 364,
       "duration": 3600
     },
     {
       "date": "2020-12-02T04:00:00+00:00",
       "yogs": 8232.81,
-      "fundraiser": -681.74,
-      "total": 11005.93,
+      "fundraiser": 0.0,
+      "total": 8232.81,
+      "bundles": 291,
+      "donations": 296,
       "duration": 3600
     },
     {
       "date": "2020-12-02T05:00:00+00:00",
       "yogs": 7125.0,
-      "fundraiser": 397.74,
-      "total": 9629.41,
+      "fundraiser": 0.0,
+      "total": 7125.0,
+      "bundles": 265,
+      "donations": 271,
       "duration": 3600
     },
     {
       "date": "2020-12-02T06:00:00+00:00",
       "yogs": 6437.01,
-      "fundraiser": -676.0,
-      "total": 8579.17,
+      "fundraiser": 0.0,
+      "total": 6437.01,
+      "bundles": 219,
+      "donations": 222,
       "duration": 3600
     },
     {
       "date": "2020-12-02T07:00:00+00:00",
       "yogs": 5911.8,
-      "fundraiser": 155.0,
-      "total": 7879.19,
+      "fundraiser": 0.0,
+      "total": 5911.8,
+      "bundles": 217,
+      "donations": 224,
       "duration": 3600
     },
     {
       "date": "2020-12-02T08:00:00+00:00",
       "yogs": 5171.01,
-      "fundraiser": 75.0,
-      "total": 6891.89,
+      "fundraiser": 0.0,
+      "total": 5171.01,
+      "bundles": 195,
+      "donations": 197,
       "duration": 3600
     },
     {
       "date": "2020-12-02T09:00:00+00:00",
       "yogs": 7272.0,
-      "fundraiser": 240.0,
-      "total": 9358.81,
+      "fundraiser": 0.0,
+      "total": 7272.0,
+      "bundles": 263,
+      "donations": 267,
       "duration": 3600
     },
     {
       "date": "2020-12-02T10:00:00+00:00",
       "yogs": 8044.31,
-      "fundraiser": 390.0,
-      "total": 10421.49,
+      "fundraiser": 0.0,
+      "total": 8044.31,
+      "bundles": 291,
+      "donations": 297,
       "duration": 3600
     },
     {
       "date": "2020-12-02T11:00:00+00:00",
       "yogs": 13334.47,
-      "fundraiser": 628.0,
-      "total": 17738.74,
+      "fundraiser": 0.0,
+      "total": 13334.47,
+      "bundles": 474,
+      "donations": 483,
       "duration": 3600
     },
     {
       "date": "2020-12-02T12:00:00+00:00",
       "yogs": 12908.51,
-      "fundraiser": -386.5,
-      "total": 17170.97,
+      "fundraiser": 0.0,
+      "total": 12908.51,
+      "bundles": 446,
+      "donations": 454,
       "duration": 3600
     },
     {
       "date": "2020-12-02T13:00:00+00:00",
       "yogs": 10995.01,
-      "fundraiser": 278.5,
-      "total": 14554.09,
+      "fundraiser": 0.0,
+      "total": 10995.01,
+      "bundles": 360,
+      "donations": 366,
       "duration": 3600
     },
     {
       "date": "2020-12-02T14:00:00+00:00",
       "yogs": 14069.16,
-      "fundraiser": 531.72,
-      "total": 18751.13,
+      "fundraiser": 0.0,
+      "total": 14069.16,
+      "bundles": 401,
+      "donations": 418,
       "duration": 3600
     },
     {
       "date": "2020-12-02T15:00:00+00:00",
       "yogs": 12608.81,
-      "fundraiser": -706.71,
-      "total": 16804.87,
+      "fundraiser": 0.0,
+      "total": 12608.81,
+      "bundles": 442,
+      "donations": 450,
       "duration": 3600
     },
     {
       "date": "2020-12-02T16:00:00+00:00",
       "yogs": 12986.14,
-      "fundraiser": 451.62,
-      "total": 17245.56,
+      "fundraiser": 0.0,
+      "total": 12986.14,
+      "bundles": 404,
+      "donations": 413,
       "duration": 3600
     },
     {
       "date": "2020-12-02T17:00:00+00:00",
       "yogs": 13998.19,
-      "fundraiser": -31.63,
-      "total": 18500.24,
+      "fundraiser": 0.0,
+      "total": 13998.19,
+      "bundles": 425,
+      "donations": 435,
       "duration": 3600
     },
     {
       "date": "2020-12-02T18:00:00+00:00",
       "yogs": 17879.21,
-      "fundraiser": 260.0,
-      "total": 24175.28,
+      "fundraiser": 0.0,
+      "total": 17879.21,
+      "bundles": 447,
+      "donations": 464,
       "duration": 3600
     },
     {
       "date": "2020-12-02T19:00:00+00:00",
       "yogs": 12292.33,
-      "fundraiser": -250.5,
-      "total": 16325.68,
+      "fundraiser": 0.0,
+      "total": 12292.33,
+      "bundles": 410,
+      "donations": 420,
       "duration": 3600
     },
     {
       "date": "2020-12-02T20:00:00+00:00",
       "yogs": 10860.73,
-      "fundraiser": -309.5,
-      "total": 14549.84,
+      "fundraiser": 0.0,
+      "total": 10860.73,
+      "bundles": 359,
+      "donations": 373,
       "duration": 3600
     },
     {
       "date": "2020-12-02T21:00:00+00:00",
       "yogs": 9145.0,
-      "fundraiser": -384.0,
-      "total": 12228.63,
+      "fundraiser": 0.0,
+      "total": 9145.0,
+      "bundles": 319,
+      "donations": 331,
       "duration": 3600
     },
     {
       "date": "2020-12-02T22:00:00+00:00",
       "yogs": 6503.93,
-      "fundraiser": -831.0,
-      "total": 8773.38,
+      "fundraiser": 0.0,
+      "total": 6503.93,
+      "bundles": 235,
+      "donations": 239,
       "duration": 3600
     },
     {
       "date": "2020-12-02T23:00:00+00:00",
       "yogs": 6313.61,
-      "fundraiser": 370.0,
-      "total": 8419.56,
+      "fundraiser": 0.0,
+      "total": 6313.61,
+      "bundles": 220,
+      "donations": 234,
       "duration": 3600
     },
     {
       "date": "2020-12-03T00:00:00+00:00",
       "yogs": 5032.93,
-      "fundraiser": -340.0,
-      "total": 6711.78,
+      "fundraiser": 0.0,
+      "total": 5032.93,
+      "bundles": 190,
+      "donations": 190,
       "duration": 3600
     },
     {
       "date": "2020-12-03T01:00:00+00:00",
       "yogs": 3728.48,
-      "fundraiser": -300.0,
-      "total": 5005.53,
+      "fundraiser": 0.0,
+      "total": 3728.48,
+      "bundles": 140,
+      "donations": 140,
       "duration": 3600
     },
     {
       "date": "2020-12-03T02:00:00+00:00",
       "yogs": 3090.25,
-      "fundraiser": -65.0,
-      "total": 4121.07,
+      "fundraiser": 0.0,
+      "total": 3090.25,
+      "bundles": 117,
+      "donations": 118,
       "duration": 3600
     },
     {
       "date": "2020-12-03T03:00:00+00:00",
       "yogs": 3521.13,
-      "fundraiser": 250.13,
-      "total": 4728.96,
+      "fundraiser": 0.0,
+      "total": 3521.13,
+      "bundles": 131,
+      "donations": 131,
       "duration": 3600
     },
     {
       "date": "2020-12-03T04:00:00+00:00",
       "yogs": 2520.91,
-      "fundraiser": -291.22,
-      "total": 3395.2,
+      "fundraiser": 0.0,
+      "total": 2520.91,
+      "bundles": 99,
+      "donations": 99,
       "duration": 3600
     },
     {
       "date": "2020-12-03T05:00:00+00:00",
       "yogs": 2631.5,
-      "fundraiser": -203.91,
-      "total": 3509.29,
+      "fundraiser": 0.0,
+      "total": 2631.5,
+      "bundles": 100,
+      "donations": 100,
       "duration": 3600
     },
     {
       "date": "2020-12-03T06:00:00+00:00",
       "yogs": 2835.0,
-      "fundraiser": 180.0,
-      "total": 3813.94,
+      "fundraiser": 0.0,
+      "total": 2835.0,
+      "bundles": 96,
+      "donations": 96,
       "duration": 3600
     },
     {
       "date": "2020-12-03T07:00:00+00:00",
       "yogs": 1645.0,
-      "fundraiser": -255.0,
-      "total": 2193.75,
+      "fundraiser": 0.0,
+      "total": 1645.0,
+      "bundles": 64,
+      "donations": 64,
       "duration": 3600
     },
     {
       "date": "2020-12-03T08:00:00+00:00",
       "yogs": 2370.5,
-      "fundraiser": 325.5,
-      "total": 3094.56,
+      "fundraiser": 0.0,
+      "total": 2370.5,
+      "bundles": 89,
+      "donations": 91,
       "duration": 3600
     },
     {
       "date": "2020-12-03T09:00:00+00:00",
       "yogs": 2421.33,
-      "fundraiser": -170.5,
-      "total": 3095.67,
+      "fundraiser": 0.0,
+      "total": 2421.33,
+      "bundles": 91,
+      "donations": 91,
       "duration": 3600
     },
     {
       "date": "2020-12-03T10:00:00+00:00",
       "yogs": 3442.31,
-      "fundraiser": 125.0,
-      "total": 4317.15,
+      "fundraiser": 0.0,
+      "total": 3442.31,
+      "bundles": 121,
+      "donations": 121,
       "duration": 3600
     },
     {
       "date": "2020-12-03T11:00:00+00:00",
       "yogs": 13834.44,
-      "fundraiser": 910.0,
-      "total": 18448.29,
+      "fundraiser": 0.0,
+      "total": 13834.44,
+      "bundles": 340,
+      "donations": 357,
       "duration": 3600
     },
     {
       "date": "2020-12-03T12:00:00+00:00",
       "yogs": 5705.0,
-      "fundraiser": -200.0,
-      "total": 7607.98,
+      "fundraiser": 0.0,
+      "total": 5705.0,
+      "bundles": 208,
+      "donations": 212,
       "duration": 3600
     },
     {
       "date": "2020-12-03T13:00:00+00:00",
       "yogs": 6385.52,
-      "fundraiser": -30.0,
-      "total": 8348.54,
+      "fundraiser": 0.0,
+      "total": 6385.52,
+      "bundles": 201,
+      "donations": 206,
       "duration": 3600
     },
     {
       "date": "2020-12-03T14:00:00+00:00",
       "yogs": 6912.0,
-      "fundraiser": 360.0,
-      "total": 9217.42,
+      "fundraiser": 0.0,
+      "total": 6912.0,
+      "bundles": 210,
+      "donations": 218,
       "duration": 3600
     },
     {
       "date": "2020-12-03T15:00:00+00:00",
       "yogs": 8042.26,
-      "fundraiser": -524.75,
-      "total": 10735.72,
+      "fundraiser": 0.0,
+      "total": 8042.26,
+      "bundles": 236,
+      "donations": 239,
       "duration": 3600
     },
     {
       "date": "2020-12-03T16:00:00+00:00",
       "yogs": 6441.0,
-      "fundraiser": 389.75,
-      "total": 8528.48,
+      "fundraiser": 0.0,
+      "total": 6441.0,
+      "bundles": 238,
+      "donations": 241,
       "duration": 3600
     },
     {
       "date": "2020-12-03T17:00:00+00:00",
       "yogs": 16050.5,
-      "fundraiser": 563.23,
-      "total": 21485.37,
+      "fundraiser": 0.0,
+      "total": 16050.5,
+      "bundles": 477,
+      "donations": 491,
       "duration": 3600
     },
     {
       "date": "2020-12-03T18:00:00+00:00",
       "yogs": 10308.07,
-      "fundraiser": -348.23,
-      "total": 13929.42,
+      "fundraiser": 0.0,
+      "total": 10308.07,
+      "bundles": 325,
+      "donations": 335,
       "duration": 3600
     },
     {
       "date": "2020-12-03T19:00:00+00:00",
       "yogs": 8764.98,
-      "fundraiser": -294.75,
-      "total": 11787.05,
+      "fundraiser": 0.0,
+      "total": 8764.98,
+      "bundles": 280,
+      "donations": 295,
       "duration": 3600
     },
     {
       "date": "2020-12-03T20:00:00+00:00",
       "yogs": 7765.87,
-      "fundraiser": -110.25,
-      "total": 10343.23,
+      "fundraiser": 0.0,
+      "total": 7765.87,
+      "bundles": 285,
+      "donations": 291,
       "duration": 3600
     },
     {
       "date": "2020-12-03T21:00:00+00:00",
       "yogs": 11196.5,
-      "fundraiser": 1602.0,
-      "total": 15090.17,
+      "fundraiser": 0.0,
+      "total": 11196.5,
+      "bundles": 305,
+      "donations": 422,
       "duration": 3600
     },
     {
       "date": "2020-12-03T22:00:00+00:00",
       "yogs": 9681.27,
-      "fundraiser": -944.0,
-      "total": 13045.9,
+      "fundraiser": 0.0,
+      "total": 9681.27,
+      "bundles": 307,
+      "donations": 425,
       "duration": 3600
     },
     {
       "date": "2020-12-03T23:00:00+00:00",
       "yogs": 5331.0,
-      "fundraiser": -728.0,
-      "total": 7202.7,
+      "fundraiser": 0.0,
+      "total": 5331.0,
+      "bundles": 186,
+      "donations": 199,
       "duration": 3600
     },
     {
       "date": "2020-12-04T00:00:00+00:00",
       "yogs": 6645.63,
-      "fundraiser": -675.0,
-      "total": 8936.84,
+      "fundraiser": 0.0,
+      "total": 6645.63,
+      "bundles": 190,
+      "donations": 288,
       "duration": 3600
     },
     {
       "date": "2020-12-04T01:00:00+00:00",
       "yogs": 2822.67,
-      "fundraiser": -112.83,
-      "total": 3795.9,
+      "fundraiser": 0.0,
+      "total": 2822.67,
+      "bundles": 108,
+      "donations": 110,
       "duration": 3600
     },
     {
       "date": "2020-12-04T02:00:00+00:00",
       "yogs": 2449.0,
-      "fundraiser": 12.83,
-      "total": 3327.01,
+      "fundraiser": 0.0,
+      "total": 2449.0,
+      "bundles": 97,
+      "donations": 97,
       "duration": 3600
     },
     {
       "date": "2020-12-04T03:00:00+00:00",
       "yogs": 2406.1,
-      "fundraiser": 105.0,
-      "total": 3235.7,
+      "fundraiser": 0.0,
+      "total": 2406.1,
+      "bundles": 89,
+      "donations": 89,
       "duration": 3600
     },
     {
       "date": "2020-12-04T04:00:00+00:00",
       "yogs": 2239.93,
-      "fundraiser": -228.0,
-      "total": 3012.23,
+      "fundraiser": 0.0,
+      "total": 2239.93,
+      "bundles": 78,
+      "donations": 80,
       "duration": 3600
     },
     {
       "date": "2020-12-04T05:00:00+00:00",
       "yogs": 1520.44,
-      "fundraiser": 129.44,
-      "total": 2044.68,
+      "fundraiser": 0.0,
+      "total": 1520.44,
+      "bundles": 60,
+      "donations": 60,
       "duration": 3600
     },
     {
       "date": "2020-12-04T06:00:00+00:00",
       "yogs": 1220.04,
-      "fundraiser": -166.4,
-      "total": 1640.7,
+      "fundraiser": 0.0,
+      "total": 1220.04,
+      "bundles": 46,
+      "donations": 46,
       "duration": 3600
     },
     {
       "date": "2020-12-04T07:00:00+00:00",
       "yogs": 1180.0,
-      "fundraiser": 64.96,
-      "total": 1586.86,
+      "fundraiser": 0.0,
+      "total": 1180.0,
+      "bundles": 45,
+      "donations": 45,
       "duration": 3600
     },
     {
       "date": "2020-12-04T08:00:00+00:00",
       "yogs": 1300.0,
-      "fundraiser": 120.0,
-      "total": 1614.36,
+      "fundraiser": 0.0,
+      "total": 1300.0,
+      "bundles": 47,
+      "donations": 47,
       "duration": 3600
     },
     {
       "date": "2020-12-04T09:00:00+00:00",
       "yogs": 1715.0,
-      "fundraiser": -150.0,
-      "total": 2159.39,
+      "fundraiser": 0.0,
+      "total": 1715.0,
+      "bundles": 65,
+      "donations": 65,
       "duration": 3600
     },
     {
       "date": "2020-12-04T10:00:00+00:00",
       "yogs": 2103.0,
-      "fundraiser": 175.0,
-      "total": 2594.53,
+      "fundraiser": 0.0,
+      "total": 2103.0,
+      "bundles": 77,
+      "donations": 78,
       "duration": 3600
     },
     {
       "date": "2020-12-04T11:00:00+00:00",
       "yogs": 4616.0,
-      "fundraiser": 215.0,
-      "total": 6247.62,
+      "fundraiser": 0.0,
+      "total": 4616.0,
+      "bundles": 158,
+      "donations": 161,
       "duration": 3600
     },
     {
       "date": "2020-12-04T12:00:00+00:00",
       "yogs": 3602.52,
-      "fundraiser": -160.0,
-      "total": 4811.32,
+      "fundraiser": 0.0,
+      "total": 3602.52,
+      "bundles": 140,
+      "donations": 140,
       "duration": 3600
     },
     {
       "date": "2020-12-04T13:00:00+00:00",
       "yogs": 3723.19,
-      "fundraiser": 151.0,
-      "total": 4873.58,
+      "fundraiser": 0.0,
+      "total": 3723.19,
+      "bundles": 132,
+      "donations": 135,
       "duration": 3600
     },
     {
       "date": "2020-12-04T14:00:00+00:00",
       "yogs": 11773.58,
-      "fundraiser": 1578.64,
-      "total": 15799.6,
+      "fundraiser": 0.0,
+      "total": 11773.58,
+      "bundles": 263,
+      "donations": 273,
       "duration": 3600
     },
     {
       "date": "2020-12-04T15:00:00+00:00",
       "yogs": 7674.77,
-      "fundraiser": -1324.64,
-      "total": 10267.64,
+      "fundraiser": 0.0,
+      "total": 7674.77,
+      "bundles": 233,
+      "donations": 245,
       "duration": 3600
     },
     {
       "date": "2020-12-04T16:00:00+00:00",
       "yogs": 7796.13,
-      "fundraiser": 456.0,
-      "total": 10500.13,
+      "fundraiser": 0.0,
+      "total": 7796.13,
+      "bundles": 245,
+      "donations": 250,
       "duration": 3600
     },
     {
       "date": "2020-12-04T17:00:00+00:00",
       "yogs": 11186.48,
-      "fundraiser": 977.1,
-      "total": 15032.48,
+      "fundraiser": 0.0,
+      "total": 11186.48,
+      "bundles": 257,
+      "donations": 267,
       "duration": 3600
     },
     {
       "date": "2020-12-04T18:00:00+00:00",
       "yogs": 6134.69,
-      "fundraiser": -1243.43,
-      "total": 8262.17,
+      "fundraiser": 0.0,
+      "total": 6134.69,
+      "bundles": 225,
+      "donations": 228,
       "duration": 3600
     },
     {
       "date": "2020-12-04T19:00:00+00:00",
       "yogs": 6092.11,
-      "fundraiser": 41.38,
-      "total": 8238.49,
+      "fundraiser": 0.0,
+      "total": 6092.11,
+      "bundles": 209,
+      "donations": 210,
       "duration": 3600
     },
     {
       "date": "2020-12-04T20:00:00+00:00",
       "yogs": 5248.81,
-      "fundraiser": -179.05,
-      "total": 7069.08,
+      "fundraiser": 0.0,
+      "total": 5248.81,
+      "bundles": 182,
+      "donations": 191,
       "duration": 3600
     },
     {
       "date": "2020-12-04T21:00:00+00:00",
       "yogs": 6275.14,
-      "fundraiser": 160.56,
-      "total": 8411.92,
+      "fundraiser": 0.0,
+      "total": 6275.14,
+      "bundles": 175,
+      "donations": 181,
       "duration": 3600
     },
     {
       "date": "2020-12-04T22:00:00+00:00",
       "yogs": 4936.83,
-      "fundraiser": -410.56,
-      "total": 6615.24,
+      "fundraiser": 0.0,
+      "total": 4936.83,
+      "bundles": 173,
+      "donations": 176,
       "duration": 3600
     },
     {
       "date": "2020-12-04T23:00:00+00:00",
       "yogs": 3725.0,
-      "fundraiser": -7.0,
-      "total": 5050.49,
+      "fundraiser": 0.0,
+      "total": 3725.0,
+      "bundles": 143,
+      "donations": 144,
       "duration": 3600
     },
     {
       "date": "2020-12-05T00:00:00+00:00",
       "yogs": 3113.69,
       "fundraiser": 0.0,
-      "total": 4227.18,
+      "total": 3113.69,
+      "bundles": 117,
+      "donations": 117,
       "duration": 3600
     },
     {
       "date": "2020-12-05T01:00:00+00:00",
       "yogs": 2527.0,
-      "fundraiser": -280.0,
-      "total": 3437.02,
+      "fundraiser": 0.0,
+      "total": 2527.0,
+      "bundles": 94,
+      "donations": 96,
       "duration": 3600
     },
     {
       "date": "2020-12-05T02:00:00+00:00",
       "yogs": 2237.0,
-      "fundraiser": 117.0,
-      "total": 3012.78,
+      "fundraiser": 0.0,
+      "total": 2237.0,
+      "bundles": 86,
+      "donations": 87,
       "duration": 3600
     },
     {
       "date": "2020-12-05T03:00:00+00:00",
       "yogs": 2398.0,
-      "fundraiser": 5.0,
-      "total": 3229.62,
+      "fundraiser": 0.0,
+      "total": 2398.0,
+      "bundles": 85,
+      "donations": 86,
       "duration": 3600
     },
     {
       "date": "2020-12-05T04:00:00+00:00",
       "yogs": 1875.0,
-      "fundraiser": -167.0,
-      "total": 2525.24,
+      "fundraiser": 0.0,
+      "total": 1875.0,
+      "bundles": 74,
+      "donations": 74,
       "duration": 3600
     },
     {
       "date": "2020-12-05T05:00:00+00:00",
       "yogs": 1380.1,
-      "fundraiser": -30.0,
-      "total": 1858.72,
+      "fundraiser": 0.0,
+      "total": 1380.1,
+      "bundles": 55,
+      "donations": 55,
       "duration": 3600
     },
     {
       "date": "2020-12-05T06:00:00+00:00",
       "yogs": 1390.0,
-      "fundraiser": -120.0,
-      "total": 1764.72,
+      "fundraiser": 0.0,
+      "total": 1390.0,
+      "bundles": 52,
+      "donations": 52,
       "duration": 3600
     },
     {
       "date": "2020-12-05T07:00:00+00:00",
       "yogs": 1721.69,
-      "fundraiser": 155.0,
-      "total": 2319.12,
+      "fundraiser": 0.0,
+      "total": 1721.69,
+      "bundles": 47,
+      "donations": 47,
       "duration": 3600
     },
     {
       "date": "2020-12-05T08:00:00+00:00",
       "yogs": 1455.01,
-      "fundraiser": -60.0,
-      "total": 1959.6,
+      "fundraiser": 0.0,
+      "total": 1455.01,
+      "bundles": 55,
+      "donations": 55,
       "duration": 3600
     },
     {
       "date": "2020-12-05T09:00:00+00:00",
       "yogs": 1283.2,
-      "fundraiser": 112.2,
-      "total": 1761.88,
+      "fundraiser": 0.0,
+      "total": 1283.2,
+      "bundles": 46,
+      "donations": 46,
       "duration": 3600
     },
     {
       "date": "2020-12-05T10:00:00+00:00",
       "yogs": 2145.0,
-      "fundraiser": -87.2,
-      "total": 2855.54,
+      "fundraiser": 0.0,
+      "total": 2145.0,
+      "bundles": 80,
+      "donations": 80,
       "duration": 3600
     },
     {
       "date": "2020-12-05T11:00:00+00:00",
       "yogs": 4051.0,
-      "fundraiser": 655.0,
-      "total": 5489.53,
+      "fundraiser": 0.0,
+      "total": 4051.0,
+      "bundles": 115,
+      "donations": 127,
       "duration": 3600
     },
     {
       "date": "2020-12-05T12:00:00+00:00",
       "yogs": 4244.12,
-      "fundraiser": -163.0,
-      "total": 5715.93,
+      "fundraiser": 0.0,
+      "total": 4244.12,
+      "bundles": 109,
+      "donations": 116,
       "duration": 3600
     },
     {
       "date": "2020-12-05T13:00:00+00:00",
       "yogs": 9745.32,
-      "fundraiser": -442.0,
-      "total": 13158.53,
+      "fundraiser": 0.0,
+      "total": 9745.32,
+      "bundles": 140,
+      "donations": 166,
       "duration": 3600
     },
     {
       "date": "2020-12-05T14:00:00+00:00",
       "yogs": 4280.36,
-      "fundraiser": 152.0,
-      "total": 5764.76,
+      "fundraiser": 0.0,
+      "total": 4280.36,
+      "bundles": 132,
+      "donations": 135,
       "duration": 3600
     },
     {
       "date": "2020-12-05T15:00:00+00:00",
       "yogs": 4553.0,
-      "fundraiser": 789.0,
-      "total": 6131.95,
+      "fundraiser": 0.0,
+      "total": 4553.0,
+      "bundles": 162,
+      "donations": 163,
       "duration": 3600
     },
     {
       "date": "2020-12-05T16:00:00+00:00",
       "yogs": 6468.19,
-      "fundraiser": 339.0,
-      "total": 8711.3,
+      "fundraiser": 0.0,
+      "total": 6468.19,
+      "bundles": 160,
+      "donations": 166,
       "duration": 3600
     },
     {
       "date": "2020-12-05T17:00:00+00:00",
       "yogs": 6559.15,
-      "fundraiser": -267.92,
-      "total": 8833.83,
+      "fundraiser": 0.0,
+      "total": 6559.15,
+      "bundles": 201,
+      "donations": 205,
       "duration": 3600
     },
     {
       "date": "2020-12-05T18:00:00+00:00",
       "yogs": 6170.0,
-      "fundraiser": -587.08,
-      "total": 8309.73,
+      "fundraiser": 0.0,
+      "total": 6170.0,
+      "bundles": 192,
+      "donations": 200,
       "duration": 3600
     },
     {
       "date": "2020-12-05T19:00:00+00:00",
       "yogs": 3701.0,
-      "fundraiser": -250.0,
-      "total": 4984.5,
+      "fundraiser": 0.0,
+      "total": 3701.0,
+      "bundles": 137,
+      "donations": 139,
       "duration": 3600
     },
     {
       "date": "2020-12-05T20:00:00+00:00",
       "yogs": 11886.72,
-      "fundraiser": 360.0,
-      "total": 16143.63,
+      "fundraiser": 0.0,
+      "total": 11886.72,
+      "bundles": 345,
+      "donations": 373,
       "duration": 3600
     },
     {
       "date": "2020-12-05T21:00:00+00:00",
       "yogs": 8077.0,
-      "fundraiser": 1346.0,
-      "total": 10844.38,
+      "fundraiser": 0.0,
+      "total": 8077.0,
+      "bundles": 210,
+      "donations": 211,
       "duration": 3600
     },
     {
       "date": "2020-12-05T22:00:00+00:00",
       "yogs": 5115.91,
-      "fundraiser": -1671.0,
-      "total": 6890.06,
+      "fundraiser": 0.0,
+      "total": 5115.91,
+      "bundles": 174,
+      "donations": 179,
       "duration": 3600
     },
     {
       "date": "2020-12-05T23:00:00+00:00",
       "yogs": 4789.23,
-      "fundraiser": 69.0,
-      "total": 6450.12,
+      "fundraiser": 0.0,
+      "total": 4789.23,
+      "bundles": 186,
+      "donations": 188,
       "duration": 3600
     },
     {
       "date": "2020-12-06T00:00:00+00:00",
       "yogs": 2770.0,
-      "fundraiser": 151.0,
-      "total": 3730.62,
+      "fundraiser": 0.0,
+      "total": 2770.0,
+      "bundles": 100,
+      "donations": 100,
       "duration": 3600
     },
     {
       "date": "2020-12-06T01:00:00+00:00",
       "yogs": 1890.0,
-      "fundraiser": -480.0,
-      "total": 2579.12,
+      "fundraiser": 0.0,
+      "total": 1890.0,
+      "bundles": 74,
+      "donations": 74,
       "duration": 3600
     },
     {
       "date": "2020-12-06T02:00:00+00:00",
       "yogs": 2149.0,
-      "fundraiser": 190.0,
-      "total": 2894.26,
+      "fundraiser": 0.0,
+      "total": 2149.0,
+      "bundles": 81,
+      "donations": 81,
       "duration": 3600
     },
     {
       "date": "2020-12-06T03:00:00+00:00",
       "yogs": 1855.0,
-      "fundraiser": -135.0,
-      "total": 2498.31,
+      "fundraiser": 0.0,
+      "total": 1855.0,
+      "bundles": 72,
+      "donations": 72,
       "duration": 3600
     },
     {
       "date": "2020-12-06T04:00:00+00:00",
       "yogs": 1899.1,
-      "fundraiser": -105.0,
-      "total": 2557.7,
+      "fundraiser": 0.0,
+      "total": 1899.1,
+      "bundles": 70,
+      "donations": 70,
       "duration": 3600
     },
     {
       "date": "2020-12-06T05:00:00+00:00",
       "yogs": 1235.15,
-      "fundraiser": -125.0,
-      "total": 1663.5,
+      "fundraiser": 0.0,
+      "total": 1235.15,
+      "bundles": 45,
+      "donations": 45,
       "duration": 3600
     },
     {
       "date": "2020-12-06T06:00:00+00:00",
       "yogs": 1075.01,
-      "fundraiser": 75.0,
-      "total": 1447.82,
+      "fundraiser": 0.0,
+      "total": 1075.01,
+      "bundles": 41,
+      "donations": 42,
       "duration": 3600
     },
     {
       "date": "2020-12-06T07:00:00+00:00",
       "yogs": 1295.0,
-      "fundraiser": -25.0,
-      "total": 1744.11,
+      "fundraiser": 0.0,
+      "total": 1295.0,
+      "bundles": 40,
+      "donations": 40,
       "duration": 3600
     },
     {
       "date": "2020-12-06T08:00:00+00:00",
       "yogs": 855.5,
-      "fundraiser": -75.0,
-      "total": 1152.19,
+      "fundraiser": 0.0,
+      "total": 855.5,
+      "bundles": 32,
+      "donations": 32,
       "duration": 3600
     },
     {
       "date": "2020-12-06T09:00:00+00:00",
       "yogs": 1807.0,
-      "fundraiser": 206.0,
-      "total": 2433.67,
+      "fundraiser": 0.0,
+      "total": 1807.0,
+      "bundles": 69,
+      "donations": 71,
       "duration": 3600
     },
     {
       "date": "2020-12-06T10:00:00+00:00",
       "yogs": 2095.0,
-      "fundraiser": 44.0,
-      "total": 2821.53,
+      "fundraiser": 0.0,
+      "total": 2095.0,
+      "bundles": 77,
+      "donations": 77,
       "duration": 3600
     },
     {
       "date": "2020-12-06T11:00:00+00:00",
       "yogs": 2600.69,
-      "fundraiser": 295.0,
-      "total": 3502.6,
+      "fundraiser": 0.0,
+      "total": 2600.69,
+      "bundles": 91,
+      "donations": 92,
       "duration": 3600
     },
     {
       "date": "2020-12-06T12:00:00+00:00",
       "yogs": 3160.01,
-      "fundraiser": -25.0,
-      "total": 4255.87,
+      "fundraiser": 0.0,
+      "total": 3160.01,
+      "bundles": 108,
+      "donations": 109,
       "duration": 3600
     },
     {
       "date": "2020-12-06T13:00:00+00:00",
       "yogs": 4038.62,
-      "fundraiser": 10.0,
-      "total": 5439.19,
+      "fundraiser": 0.0,
+      "total": 4038.62,
+      "bundles": 144,
+      "donations": 147,
       "duration": 3600
     },
     {
       "date": "2020-12-06T14:00:00+00:00",
       "yogs": 4075.0,
-      "fundraiser": -230.0,
-      "total": 5488.18,
+      "fundraiser": 0.0,
+      "total": 4075.0,
+      "bundles": 111,
+      "donations": 114,
       "duration": 3600
     },
     {
       "date": "2020-12-06T15:00:00+00:00",
       "yogs": 3405.65,
-      "fundraiser": 260.18,
-      "total": 4586.7,
+      "fundraiser": 0.0,
+      "total": 3405.65,
+      "bundles": 119,
+      "donations": 120,
       "duration": 3600
     },
     {
       "date": "2020-12-06T16:00:00+00:00",
       "yogs": 4613.51,
-      "fundraiser": 0.82,
-      "total": 6213.44,
+      "fundraiser": 0.0,
+      "total": 4613.51,
+      "bundles": 132,
+      "donations": 135,
       "duration": 3600
     },
     {
       "date": "2020-12-06T17:00:00+00:00",
       "yogs": 4799.41,
-      "fundraiser": 713.41,
-      "total": 6463.8,
+      "fundraiser": 0.0,
+      "total": 4799.41,
+      "bundles": 153,
+      "donations": 158,
       "duration": 3600
     },
     {
       "date": "2020-12-06T18:00:00+00:00",
       "yogs": 4032.01,
-      "fundraiser": -924.41,
-      "total": 5430.28,
+      "fundraiser": 0.0,
+      "total": 4032.01,
+      "bundles": 133,
+      "donations": 140,
       "duration": 3600
     },
     {
       "date": "2020-12-06T19:00:00+00:00",
       "yogs": 5399.42,
-      "fundraiser": 238.41,
-      "total": 7271.92,
+      "fundraiser": 0.0,
+      "total": 5399.42,
+      "bundles": 181,
+      "donations": 189,
       "duration": 3600
     },
     {
       "date": "2020-12-06T20:00:00+00:00",
       "yogs": 5045.01,
-      "fundraiser": -78.41,
-      "total": 6761.27,
+      "fundraiser": 0.0,
+      "total": 5045.01,
+      "bundles": 171,
+      "donations": 183,
       "duration": 3600
     },
     {
       "date": "2020-12-06T21:00:00+00:00",
       "yogs": 4243.21,
-      "fundraiser": 75.21,
-      "total": 5714.72,
+      "fundraiser": 0.0,
+      "total": 4243.21,
+      "bundles": 153,
+      "donations": 159,
       "duration": 3600
     },
     {
       "date": "2020-12-06T22:00:00+00:00",
       "yogs": 3288.45,
-      "fundraiser": -180.21,
-      "total": 4428.85,
+      "fundraiser": 0.0,
+      "total": 3288.45,
+      "bundles": 113,
+      "donations": 122,
       "duration": 3600
     },
     {
       "date": "2020-12-06T23:00:00+00:00",
       "yogs": 2227.0,
-      "fundraiser": -165.0,
-      "total": 2999.31,
+      "fundraiser": 0.0,
+      "total": 2227.0,
+      "bundles": 83,
+      "donations": 84,
       "duration": 3600
     },
     {
       "date": "2020-12-07T00:00:00+00:00",
       "yogs": 2015.0,
-      "fundraiser": 85.0,
-      "total": 2781.14,
+      "fundraiser": 0.0,
+      "total": 2015.0,
+      "bundles": 77,
+      "donations": 78,
       "duration": 3600
     },
     {
       "date": "2020-12-07T01:00:00+00:00",
       "yogs": 1733.24,
-      "fundraiser": -95.0,
-      "total": 2334.31,
+      "fundraiser": 0.0,
+      "total": 1733.24,
+      "bundles": 65,
+      "donations": 65,
       "duration": 3600
     },
     {
       "date": "2020-12-07T02:00:00+00:00",
       "yogs": 1924.22,
-      "fundraiser": -65.0,
-      "total": 2591.53,
+      "fundraiser": 0.0,
+      "total": 1924.22,
+      "bundles": 65,
+      "donations": 66,
       "duration": 3600
     },
     {
       "date": "2020-12-07T03:00:00+00:00",
       "yogs": 1454.0,
-      "fundraiser": 10.0,
-      "total": 1958.25,
+      "fundraiser": 0.0,
+      "total": 1454.0,
+      "bundles": 55,
+      "donations": 56,
       "duration": 3600
     },
     {
       "date": "2020-12-07T04:00:00+00:00",
       "yogs": 1396.07,
-      "fundraiser": -23.93,
-      "total": 1880.22,
+      "fundraiser": 0.0,
+      "total": 1396.07,
+      "bundles": 52,
+      "donations": 52,
       "duration": 3600
     },
     {
       "date": "2020-12-07T05:00:00+00:00",
       "yogs": 765.0,
-      "fundraiser": -101.07,
-      "total": 1030.3,
+      "fundraiser": 0.0,
+      "total": 765.0,
+      "bundles": 30,
+      "donations": 30,
       "duration": 3600
     },
     {
       "date": "2020-12-07T06:00:00+00:00",
       "yogs": 990.69,
-      "fundraiser": -75.0,
-      "total": 1334.26,
+      "fundraiser": 0.0,
+      "total": 990.69,
+      "bundles": 37,
+      "donations": 37,
       "duration": 3600
     },
     {
       "date": "2020-12-07T07:00:00+00:00",
       "yogs": 727.27,
-      "fundraiser": 55.0,
-      "total": 979.47,
+      "fundraiser": 0.0,
+      "total": 727.27,
+      "bundles": 28,
+      "donations": 28,
       "duration": 3600
     },
     {
       "date": "2020-12-07T08:00:00+00:00",
       "yogs": 1250.0,
-      "fundraiser": 215.0,
-      "total": 1650.13,
+      "fundraiser": 0.0,
+      "total": 1250.0,
+      "bundles": 47,
+      "donations": 47,
       "duration": 3600
     },
     {
       "date": "2020-12-07T09:00:00+00:00",
       "yogs": 1175.0,
-      "fundraiser": -45.0,
-      "total": 1549.17,
+      "fundraiser": 0.0,
+      "total": 1175.0,
+      "bundles": 44,
+      "donations": 44,
       "duration": 3600
     },
     {
       "date": "2020-12-07T10:00:00+00:00",
       "yogs": 1256.5,
-      "fundraiser": -25.0,
-      "total": 1524.65,
+      "fundraiser": 0.0,
+      "total": 1256.5,
+      "bundles": 48,
+      "donations": 50,
       "duration": 3600
     },
     {
       "date": "2020-12-07T11:00:00+00:00",
       "yogs": 2067.0,
-      "fundraiser": 50.0,
-      "total": 2615.52,
+      "fundraiser": 0.0,
+      "total": 2067.0,
+      "bundles": 74,
+      "donations": 74,
       "duration": 3600
     },
     {
       "date": "2020-12-07T12:00:00+00:00",
       "yogs": 2540.82,
       "fundraiser": 0.0,
-      "total": 3335.0,
+      "total": 2540.82,
+      "bundles": 76,
+      "donations": 80,
       "duration": 3600
     },
     {
       "date": "2020-12-07T13:00:00+00:00",
       "yogs": 1961.32,
-      "fundraiser": 1.0,
-      "total": 2675.16,
+      "fundraiser": 0.0,
+      "total": 1961.32,
+      "bundles": 72,
+      "donations": 77,
       "duration": 3600
     },
     {
       "date": "2020-12-07T14:00:00+00:00",
       "yogs": 2752.69,
-      "fundraiser": 74.0,
-      "total": 3673.7,
+      "fundraiser": 0.0,
+      "total": 2752.69,
+      "bundles": 88,
+      "donations": 97,
       "duration": 3600
     },
     {
       "date": "2020-12-07T15:00:00+00:00",
       "yogs": 2849.68,
-      "fundraiser": 294.0,
-      "total": 3837.91,
+      "fundraiser": 0.0,
+      "total": 2849.68,
+      "bundles": 79,
+      "donations": 82,
       "duration": 3600
     },
     {
       "date": "2020-12-07T16:00:00+00:00",
       "yogs": 2633.0,
-      "fundraiser": -469.0,
-      "total": 3500.84,
+      "fundraiser": 0.0,
+      "total": 2633.0,
+      "bundles": 95,
+      "donations": 96,
       "duration": 3600
     },
     {
       "date": "2020-12-07T17:00:00+00:00",
       "yogs": 14615.08,
-      "fundraiser": 2021.69,
-      "total": 19432.28,
+      "fundraiser": 0.0,
+      "total": 14615.08,
+      "bundles": 267,
+      "donations": 280,
       "duration": 3600
     },
     {
       "date": "2020-12-07T18:00:00+00:00",
       "yogs": 9650.24,
-      "fundraiser": -1506.69,
-      "total": 12831.0,
+      "fundraiser": 0.0,
+      "total": 9650.24,
+      "bundles": 199,
+      "donations": 212,
       "duration": 3600
     },
     {
       "date": "2020-12-07T19:00:00+00:00",
       "yogs": 5360.99,
-      "fundraiser": -234.8,
-      "total": 7128.01,
+      "fundraiser": 0.0,
+      "total": 5360.99,
+      "bundles": 150,
+      "donations": 156,
       "duration": 3600
     },
     {
       "date": "2020-12-07T20:00:00+00:00",
       "yogs": 4062.0,
-      "fundraiser": -50.2,
-      "total": 5434.09,
+      "fundraiser": 0.0,
+      "total": 4062.0,
+      "bundles": 139,
+      "donations": 143,
       "duration": 3600
     },
     {
       "date": "2020-12-07T21:00:00+00:00",
       "yogs": 19032.06,
-      "fundraiser": 1037.0,
-      "total": 25372.54,
+      "fundraiser": 0.0,
+      "total": 19032.06,
+      "bundles": 377,
+      "donations": 1353,
       "duration": 3600
     },
     {
       "date": "2020-12-07T22:00:00+00:00",
       "yogs": 33432.6,
-      "fundraiser": -804.0,
-      "total": 44387.25,
+      "fundraiser": 0.0,
+      "total": 33432.6,
+      "bundles": 580,
+      "donations": 2527,
       "duration": 3600
     },
     {
       "date": "2020-12-07T23:00:00+00:00",
       "yogs": 2446.03,
-      "fundraiser": -488.0,
-      "total": 3252.24,
+      "fundraiser": 0.0,
+      "total": 2446.03,
+      "bundles": 74,
+      "donations": 77,
       "duration": 3600
     },
     {
       "date": "2020-12-08T00:00:00+00:00",
       "yogs": 1743.0,
-      "fundraiser": -25.0,
-      "total": 2317.51,
+      "fundraiser": 0.0,
+      "total": 1743.0,
+      "bundles": 65,
+      "donations": 66,
       "duration": 3600
     },
     {
       "date": "2020-12-08T01:00:00+00:00",
       "yogs": 1560.0,
       "fundraiser": 0.0,
-      "total": 2074.18,
+      "total": 1560.0,
+      "bundles": 57,
+      "donations": 57,
       "duration": 3600
     },
     {
       "date": "2020-12-08T02:00:00+00:00",
       "yogs": 1058.45,
-      "fundraiser": 100.0,
-      "total": 1407.31,
+      "fundraiser": 0.0,
+      "total": 1058.45,
+      "bundles": 40,
+      "donations": 43,
       "duration": 3600
     },
     {
       "date": "2020-12-08T03:00:00+00:00",
       "yogs": 775.01,
-      "fundraiser": -150.0,
-      "total": 1030.45,
+      "fundraiser": 0.0,
+      "total": 775.01,
+      "bundles": 31,
+      "donations": 31,
       "duration": 3600
     },
     {
       "date": "2020-12-08T04:00:00+00:00",
       "yogs": 982.0,
-      "fundraiser": 50.0,
-      "total": 1305.67,
+      "fundraiser": 0.0,
+      "total": 982.0,
+      "bundles": 39,
+      "donations": 39,
       "duration": 3600
     },
     {
       "date": "2020-12-08T05:00:00+00:00",
       "yogs": 580.0,
-      "fundraiser": -125.0,
-      "total": 771.17,
+      "fundraiser": 0.0,
+      "total": 580.0,
+      "bundles": 23,
+      "donations": 23,
       "duration": 3600
     },
     {
       "date": "2020-12-08T06:00:00+00:00",
       "yogs": 1001.35,
-      "fundraiser": 126.35,
-      "total": 1304.74,
+      "fundraiser": 0.0,
+      "total": 1001.35,
+      "bundles": 34,
+      "donations": 34,
       "duration": 3600
     },
     {
       "date": "2020-12-08T07:00:00+00:00",
       "yogs": 725.5,
-      "fundraiser": 74.15,
-      "total": 964.62,
+      "fundraiser": 0.0,
+      "total": 725.5,
+      "bundles": 29,
+      "donations": 29,
       "duration": 3600
     },
     {
       "date": "2020-12-08T08:00:00+00:00",
       "yogs": 741.0,
-      "fundraiser": -125.5,
-      "total": 985.24,
+      "fundraiser": 0.0,
+      "total": 741.0,
+      "bundles": 28,
+      "donations": 28,
       "duration": 3600
     },
     {
       "date": "2020-12-08T09:00:00+00:00",
       "yogs": 955.0,
-      "fundraiser": 50.0,
-      "total": 1236.44,
+      "fundraiser": 0.0,
+      "total": 955.0,
+      "bundles": 34,
+      "donations": 34,
       "duration": 3600
     },
     {
       "date": "2020-12-08T10:00:00+00:00",
       "yogs": 1036.0,
-      "fundraiser": 1.0,
-      "total": 1377.47,
+      "fundraiser": 0.0,
+      "total": 1036.0,
+      "bundles": 36,
+      "donations": 39,
       "duration": 3600
     },
     {
       "date": "2020-12-08T11:00:00+00:00",
       "yogs": 2225.0,
-      "fundraiser": 324.0,
-      "total": 2891.7,
+      "fundraiser": 0.0,
+      "total": 2225.0,
+      "bundles": 76,
+      "donations": 79,
       "duration": 3600
     },
     {
       "date": "2020-12-08T12:00:00+00:00",
       "yogs": 2752.43,
-      "fundraiser": -225.0,
-      "total": 3626.31,
+      "fundraiser": 0.0,
+      "total": 2752.43,
+      "bundles": 88,
+      "donations": 89,
       "duration": 3600
     },
     {
       "date": "2020-12-08T13:00:00+00:00",
       "yogs": 1982.0,
-      "fundraiser": 130.0,
-      "total": 2635.28,
+      "fundraiser": 0.0,
+      "total": 1982.0,
+      "bundles": 74,
+      "donations": 78,
       "duration": 3600
     },
     {
       "date": "2020-12-08T14:00:00+00:00",
       "yogs": 3945.0,
-      "fundraiser": 120.0,
-      "total": 5244.78,
+      "fundraiser": 0.0,
+      "total": 3945.0,
+      "bundles": 106,
+      "donations": 110,
       "duration": 3600
     },
     {
       "date": "2020-12-08T15:00:00+00:00",
       "yogs": 3230.56,
-      "fundraiser": 276.14,
-      "total": 4295.4,
+      "fundraiser": 0.0,
+      "total": 3230.56,
+      "bundles": 86,
+      "donations": 139,
       "duration": 3600
     },
     {
       "date": "2020-12-08T16:00:00+00:00",
       "yogs": 6269.23,
-      "fundraiser": -170.14,
-      "total": 8232.73,
+      "fundraiser": 0.0,
+      "total": 6269.23,
+      "bundles": 156,
+      "donations": 274,
       "duration": 3600
     },
     {
       "date": "2020-12-08T17:00:00+00:00",
       "yogs": 5491.23,
-      "fundraiser": 319.0,
-      "total": 7298.64,
+      "fundraiser": 0.0,
+      "total": 5491.23,
+      "bundles": 96,
+      "donations": 105,
       "duration": 3600
     },
     {
       "date": "2020-12-08T18:00:00+00:00",
       "yogs": 2450.0,
-      "fundraiser": -475.0,
-      "total": 3289.72,
+      "fundraiser": 0.0,
+      "total": 2450.0,
+      "bundles": 60,
+      "donations": 76,
       "duration": 3600
     },
     {
       "date": "2020-12-08T19:00:00+00:00",
       "yogs": 4907.0,
-      "fundraiser": 296.0,
-      "total": 6522.24,
+      "fundraiser": 0.0,
+      "total": 4907.0,
+      "bundles": 154,
+      "donations": 163,
       "duration": 3600
     },
     {
       "date": "2020-12-08T20:00:00+00:00",
       "yogs": 4985.61,
-      "fundraiser": -405.77,
-      "total": 6626.79,
+      "fundraiser": 0.0,
+      "total": 4985.61,
+      "bundles": 123,
+      "donations": 220,
       "duration": 3600
     },
     {
       "date": "2020-12-08T21:00:00+00:00",
       "yogs": 2490.14,
-      "fundraiser": 189.77,
-      "total": 3343.06,
+      "fundraiser": 0.0,
+      "total": 2490.14,
+      "bundles": 73,
+      "donations": 88,
       "duration": 3600
     },
     {
       "date": "2020-12-08T22:00:00+00:00",
       "yogs": 2850.75,
-      "fundraiser": 15.69,
-      "total": 3789.2,
+      "fundraiser": 0.0,
+      "total": 2850.75,
+      "bundles": 100,
+      "donations": 120,
       "duration": 3600
     },
     {
       "date": "2020-12-08T23:00:00+00:00",
       "yogs": 1638.69,
-      "fundraiser": -290.69,
-      "total": 2178.13,
+      "fundraiser": 0.0,
+      "total": 1638.69,
+      "bundles": 62,
+      "donations": 62,
       "duration": 3600
     },
     {
       "date": "2020-12-09T00:00:00+00:00",
       "yogs": 1060.0,
-      "fundraiser": -105.0,
-      "total": 1408.94,
+      "fundraiser": 0.0,
+      "total": 1060.0,
+      "bundles": 39,
+      "donations": 39,
       "duration": 3600
     },
     {
       "date": "2020-12-09T01:00:00+00:00",
       "yogs": 1168.03,
-      "fundraiser": 55.0,
-      "total": 1552.51,
+      "fundraiser": 0.0,
+      "total": 1168.03,
+      "bundles": 44,
+      "donations": 44,
       "duration": 3600
     },
     {
       "date": "2020-12-09T02:00:00+00:00",
       "yogs": 1316.18,
-      "fundraiser": -25.0,
-      "total": 1749.44,
+      "fundraiser": 0.0,
+      "total": 1316.18,
+      "bundles": 48,
+      "donations": 48,
       "duration": 3600
     },
     {
       "date": "2020-12-09T03:00:00+00:00",
       "yogs": 1133.0,
-      "fundraiser": 50.0,
-      "total": 1539.21,
+      "fundraiser": 0.0,
+      "total": 1133.0,
+      "bundles": 44,
+      "donations": 45,
       "duration": 3600
     },
     {
       "date": "2020-12-09T04:00:00+00:00",
       "yogs": 982.8,
-      "fundraiser": -105.0,
-      "total": 1306.33,
+      "fundraiser": 0.0,
+      "total": 982.8,
+      "bundles": 38,
+      "donations": 38,
       "duration": 3600
     },
     {
       "date": "2020-12-09T05:00:00+00:00",
       "yogs": 480.0,
-      "fundraiser": -75.0,
-      "total": 638.01,
+      "fundraiser": 0.0,
+      "total": 480.0,
+      "bundles": 19,
+      "donations": 19,
       "duration": 3600
     },
     {
       "date": "2020-12-09T06:00:00+00:00",
       "yogs": 631.0,
-      "fundraiser": 146.0,
-      "total": 838.7,
+      "fundraiser": 0.0,
+      "total": 631.0,
+      "bundles": 24,
+      "donations": 24,
       "duration": 3600
     },
     {
       "date": "2020-12-09T07:00:00+00:00",
       "yogs": 660.0,
-      "fundraiser": -121.0,
-      "total": 877.27,
+      "fundraiser": 0.0,
+      "total": 660.0,
+      "bundles": 25,
+      "donations": 25,
       "duration": 3600
     },
     {
       "date": "2020-12-09T08:00:00+00:00",
       "yogs": 925.78,
-      "fundraiser": 50.0,
-      "total": 1230.54,
+      "fundraiser": 0.0,
+      "total": 925.78,
+      "bundles": 35,
+      "donations": 37,
       "duration": 3600
     },
     {
       "date": "2020-12-09T09:00:00+00:00",
       "yogs": 825.0,
-      "fundraiser": -25.0,
-      "total": 996.8,
+      "fundraiser": 0.0,
+      "total": 825.0,
+      "bundles": 32,
+      "donations": 32,
       "duration": 3600
     },
     {
       "date": "2020-12-09T10:00:00+00:00",
       "yogs": 950.0,
-      "fundraiser": 25.0,
-      "total": 1196.06,
+      "fundraiser": 0.0,
+      "total": 950.0,
+      "bundles": 37,
+      "donations": 37,
       "duration": 3600
     },
     {
       "date": "2020-12-09T11:00:00+00:00",
       "yogs": 1337.79,
-      "fundraiser": 50.0,
-      "total": 1778.15,
+      "fundraiser": 0.0,
+      "total": 1337.79,
+      "bundles": 40,
+      "donations": 41,
       "duration": 3600
     },
     {
       "date": "2020-12-09T12:00:00+00:00",
       "yogs": 1095.0,
-      "fundraiser": -75.0,
-      "total": 1388.11,
+      "fundraiser": 0.0,
+      "total": 1095.0,
+      "bundles": 41,
+      "donations": 41,
       "duration": 3600
     },
     {
       "date": "2020-12-09T13:00:00+00:00",
       "yogs": 1040.0,
-      "fundraiser": 75.0,
-      "total": 1382.35,
+      "fundraiser": 0.0,
+      "total": 1040.0,
+      "bundles": 41,
+      "donations": 41,
       "duration": 3600
     },
     {
       "date": "2020-12-09T14:00:00+00:00",
       "yogs": 1350.0,
-      "fundraiser": 155.0,
-      "total": 1794.43,
+      "fundraiser": 0.0,
+      "total": 1350.0,
+      "bundles": 51,
+      "donations": 55,
       "duration": 3600
     },
     {
       "date": "2020-12-09T15:00:00+00:00",
       "yogs": 1577.25,
-      "fundraiser": -90.0,
-      "total": 2100.36,
+      "fundraiser": 0.0,
+      "total": 1577.25,
+      "bundles": 50,
+      "donations": 52,
       "duration": 3600
     },
     {
       "date": "2020-12-09T16:00:00+00:00",
       "yogs": 2015.0,
-      "fundraiser": 365.0,
-      "total": 2744.91,
+      "fundraiser": 0.0,
+      "total": 2015.0,
+      "bundles": 67,
+      "donations": 67,
       "duration": 3600
     },
     {
       "date": "2020-12-09T17:00:00+00:00",
       "yogs": 2048.35,
-      "fundraiser": -477.0,
-      "total": 2756.09,
+      "fundraiser": 0.0,
+      "total": 2048.35,
+      "bundles": 47,
+      "donations": 52,
       "duration": 3600
     },
     {
       "date": "2020-12-09T18:00:00+00:00",
       "yogs": 5460.54,
-      "fundraiser": 1459.99,
-      "total": 7347.18,
+      "fundraiser": 0.0,
+      "total": 5460.54,
+      "bundles": 112,
+      "donations": 121,
       "duration": 3600
     },
     {
       "date": "2020-12-09T19:00:00+00:00",
       "yogs": 1778.89,
-      "fundraiser": -1151.99,
-      "total": 2393.55,
+      "fundraiser": 0.0,
+      "total": 1778.89,
+      "bundles": 53,
+      "donations": 57,
       "duration": 3600
     },
     {
       "date": "2020-12-09T20:00:00+00:00",
       "yogs": 14944.19,
-      "fundraiser": 2040.99,
-      "total": 20107.36,
+      "fundraiser": 0.0,
+      "total": 14944.19,
+      "bundles": 223,
+      "donations": 461,
       "duration": 3600
     },
     {
       "date": "2020-12-09T21:00:00+00:00",
       "yogs": 12124.73,
-      "fundraiser": -2113.99,
-      "total": 16313.99,
+      "fundraiser": 0.0,
+      "total": 12124.73,
+      "bundles": 209,
+      "donations": 1063,
       "duration": 3600
     },
     {
       "date": "2020-12-09T22:00:00+00:00",
       "yogs": 5460.35,
-      "fundraiser": 122.69,
-      "total": 7347.39,
+      "fundraiser": 0.0,
+      "total": 5460.35,
+      "bundles": 116,
+      "donations": 386,
       "duration": 3600
     },
     {
       "date": "2020-12-09T23:00:00+00:00",
       "yogs": 3599.9,
-      "fundraiser": -305.69,
-      "total": 4844.11,
+      "fundraiser": 0.0,
+      "total": 3599.9,
+      "bundles": 81,
+      "donations": 281,
       "duration": 3600
     },
     {
       "date": "2020-12-10T00:00:00+00:00",
       "yogs": 1172.82,
-      "fundraiser": -5.0,
-      "total": 1578.12,
+      "fundraiser": 0.0,
+      "total": 1172.82,
+      "bundles": 43,
+      "donations": 46,
       "duration": 3600
     },
     {
       "date": "2020-12-10T01:00:00+00:00",
       "yogs": 978.16,
-      "fundraiser": 75.0,
-      "total": 1316.19,
+      "fundraiser": 0.0,
+      "total": 978.16,
+      "bundles": 37,
+      "donations": 37,
       "duration": 3600
     },
     {
       "date": "2020-12-10T02:00:00+00:00",
       "yogs": 737.41,
-      "fundraiser": 12.41,
-      "total": 992.25,
+      "fundraiser": 0.0,
+      "total": 737.41,
+      "bundles": 29,
+      "donations": 29,
       "duration": 3600
     },
     {
       "date": "2020-12-10T03:00:00+00:00",
       "yogs": 955.0,
-      "fundraiser": -162.41,
-      "total": 1285.02,
+      "fundraiser": 0.0,
+      "total": 955.0,
+      "bundles": 35,
+      "donations": 35,
       "duration": 3600
     },
     {
       "date": "2020-12-10T04:00:00+00:00",
       "yogs": 750.0,
-      "fundraiser": 75.0,
-      "total": 1009.2,
+      "fundraiser": 0.0,
+      "total": 750.0,
+      "bundles": 30,
+      "donations": 30,
       "duration": 3600
     },
     {
       "date": "2020-12-10T05:00:00+00:00",
       "yogs": 825.0,
-      "fundraiser": -125.0,
-      "total": 1110.09,
+      "fundraiser": 0.0,
+      "total": 825.0,
+      "bundles": 31,
+      "donations": 31,
       "duration": 3600
     },
     {
       "date": "2020-12-10T06:00:00+00:00",
       "yogs": 452.0,
-      "fundraiser": -25.0,
-      "total": 608.17,
+      "fundraiser": 0.0,
+      "total": 452.0,
+      "bundles": 14,
+      "donations": 15,
       "duration": 3600
     },
     {
       "date": "2020-12-10T07:00:00+00:00",
       "yogs": 731.25,
-      "fundraiser": 50.0,
-      "total": 983.93,
+      "fundraiser": 0.0,
+      "total": 731.25,
+      "bundles": 24,
+      "donations": 25,
       "duration": 3600
     },
     {
       "date": "2020-12-10T08:00:00+00:00",
       "yogs": 330.0,
-      "fundraiser": -50.0,
-      "total": 444.04,
+      "fundraiser": 0.0,
+      "total": 330.0,
+      "bundles": 13,
+      "donations": 13,
       "duration": 3600
     },
     {
       "date": "2020-12-10T09:00:00+00:00",
       "yogs": 800.0,
-      "fundraiser": 105.0,
-      "total": 1009.49,
+      "fundraiser": 0.0,
+      "total": 800.0,
+      "bundles": 29,
+      "donations": 31,
       "duration": 3600
     },
     {
       "date": "2020-12-10T10:00:00+00:00",
       "yogs": 775.0,
-      "fundraiser": -30.0,
-      "total": 1043.25,
+      "fundraiser": 0.0,
+      "total": 775.0,
+      "bundles": 31,
+      "donations": 31,
       "duration": 3600
     },
     {
       "date": "2020-12-10T11:00:00+00:00",
       "yogs": 972.81,
-      "fundraiser": 45.0,
-      "total": 1275.64,
+      "fundraiser": 0.0,
+      "total": 972.81,
+      "bundles": 36,
+      "donations": 37,
       "duration": 3600
     },
     {
       "date": "2020-12-10T12:00:00+00:00",
       "yogs": 1146.0,
-      "fundraiser": 5.0,
-      "total": 1508.68,
+      "fundraiser": 0.0,
+      "total": 1146.0,
+      "bundles": 38,
+      "donations": 39,
       "duration": 3600
     },
     {
       "date": "2020-12-10T13:00:00+00:00",
       "yogs": 1079.81,
-      "fundraiser": 0.69,
-      "total": 1452.96,
+      "fundraiser": 0.0,
+      "total": 1079.81,
+      "bundles": 38,
+      "donations": 49,
       "duration": 3600
     },
     {
       "date": "2020-12-10T14:00:00+00:00",
       "yogs": 2552.15,
-      "fundraiser": 109.31,
-      "total": 3400.67,
+      "fundraiser": 0.0,
+      "total": 2552.15,
+      "bundles": 49,
+      "donations": 60,
       "duration": 3600
     },
     {
       "date": "2020-12-10T15:00:00+00:00",
       "yogs": 2638.3,
-      "fundraiser": 375.3,
-      "total": 3509.97,
+      "fundraiser": 0.0,
+      "total": 2638.3,
+      "bundles": 80,
+      "donations": 93,
       "duration": 3600
     },
     {
       "date": "2020-12-10T16:00:00+00:00",
       "yogs": 1887.5,
-      "fundraiser": -510.3,
-      "total": 2554.64,
+      "fundraiser": 0.0,
+      "total": 1887.5,
+      "bundles": 61,
+      "donations": 65,
       "duration": 3600
     },
     {
       "date": "2020-12-10T17:00:00+00:00",
       "yogs": 2252.14,
-      "fundraiser": 405.0,
-      "total": 2995.23,
+      "fundraiser": 0.0,
+      "total": 2252.14,
+      "bundles": 64,
+      "donations": 70,
       "duration": 3600
     },
     {
       "date": "2020-12-10T18:00:00+00:00",
       "yogs": 1911.5,
-      "fundraiser": -330.0,
-      "total": 2542.23,
+      "fundraiser": 0.0,
+      "total": 1911.5,
+      "bundles": 58,
+      "donations": 61,
       "duration": 3600
     },
     {
       "date": "2020-12-10T19:00:00+00:00",
       "yogs": 2368.0,
-      "fundraiser": 1026.0,
-      "total": 3149.28,
+      "fundraiser": 0.0,
+      "total": 2368.0,
+      "bundles": 47,
+      "donations": 51,
       "duration": 3600
     },
     {
       "date": "2020-12-10T20:00:00+00:00",
       "yogs": 7453.22,
-      "fundraiser": -558.32,
-      "total": 9912.09,
+      "fundraiser": 0.0,
+      "total": 7453.22,
+      "bundles": 140,
+      "donations": 186,
       "duration": 3600
     },
     {
       "date": "2020-12-10T21:00:00+00:00",
       "yogs": 6875.55,
-      "fundraiser": -17.61,
-      "total": 9145.3,
+      "fundraiser": 0.0,
+      "total": 6875.55,
+      "bundles": 123,
+      "donations": 199,
       "duration": 3600
     },
     {
       "date": "2020-12-10T22:00:00+00:00",
       "yogs": 2503.65,
-      "fundraiser": -225.84,
-      "total": 3329.76,
+      "fundraiser": 0.0,
+      "total": 2503.65,
+      "bundles": 60,
+      "donations": 108,
       "duration": 3600
     },
     {
       "date": "2020-12-10T23:00:00+00:00",
       "yogs": 7344.26,
-      "fundraiser": 36.09,
-      "total": 9767.32,
+      "fundraiser": 0.0,
+      "total": 7344.26,
+      "bundles": 108,
+      "donations": 257,
       "duration": 3600
     },
     {
       "date": "2020-12-11T00:00:00+00:00",
       "yogs": 1253.82,
-      "fundraiser": -310.32,
-      "total": 1700.83,
+      "fundraiser": 0.0,
+      "total": 1253.82,
+      "bundles": 46,
+      "donations": 55,
       "duration": 3600
     },
     {
       "date": "2020-12-11T01:00:00+00:00",
       "yogs": 850.0,
-      "fundraiser": 55.0,
-      "total": 1130.49,
+      "fundraiser": 0.0,
+      "total": 850.0,
+      "bundles": 33,
+      "donations": 33,
       "duration": 3600
     },
     {
       "date": "2020-12-11T02:00:00+00:00",
       "yogs": 1105.0,
-      "fundraiser": 45.0,
-      "total": 1469.62,
+      "fundraiser": 0.0,
+      "total": 1105.0,
+      "bundles": 36,
+      "donations": 37,
       "duration": 3600
     },
     {
       "date": "2020-12-11T03:00:00+00:00",
       "yogs": 750.0,
-      "fundraiser": -150.0,
-      "total": 997.5,
+      "fundraiser": 0.0,
+      "total": 750.0,
+      "bundles": 30,
+      "donations": 30,
       "duration": 3600
     },
     {
       "date": "2020-12-11T04:00:00+00:00",
       "yogs": 425.0,
-      "fundraiser": -75.0,
-      "total": 565.25,
+      "fundraiser": 0.0,
+      "total": 425.0,
+      "bundles": 17,
+      "donations": 17,
       "duration": 3600
     },
     {
       "date": "2020-12-11T05:00:00+00:00",
       "yogs": 675.0,
-      "fundraiser": 25.0,
-      "total": 897.71,
+      "fundraiser": 0.0,
+      "total": 675.0,
+      "bundles": 21,
+      "donations": 21,
       "duration": 3600
     },
     {
       "date": "2020-12-11T06:00:00+00:00",
       "yogs": 945.0,
-      "fundraiser": 100.0,
-      "total": 1256.79,
+      "fundraiser": 0.0,
+      "total": 945.0,
+      "bundles": 25,
+      "donations": 27,
       "duration": 3600
     },
     {
       "date": "2020-12-11T07:00:00+00:00",
       "yogs": 430.0,
-      "fundraiser": -125.0,
-      "total": 571.9,
+      "fundraiser": 0.0,
+      "total": 430.0,
+      "bundles": 16,
+      "donations": 17,
       "duration": 3600
     },
     {
       "date": "2020-12-11T08:00:00+00:00",
       "yogs": 535.0,
-      "fundraiser": -25.0,
-      "total": 711.54,
+      "fundraiser": 0.0,
+      "total": 535.0,
+      "bundles": 18,
+      "donations": 19,
       "duration": 3600
     },
     {
       "date": "2020-12-11T09:00:00+00:00",
       "yogs": 470.0,
-      "fundraiser": 155.0,
-      "total": 565.23,
+      "fundraiser": 0.0,
+      "total": 470.0,
+      "bundles": 15,
+      "donations": 15,
       "duration": 3600
     },
     {
       "date": "2020-12-11T10:00:00+00:00",
       "yogs": 730.0,
-      "fundraiser": -30.0,
-      "total": 970.88,
+      "fundraiser": 0.0,
+      "total": 730.0,
+      "bundles": 27,
+      "donations": 27,
       "duration": 3600
     },
     {
       "date": "2020-12-11T11:00:00+00:00",
       "yogs": 2418.19,
-      "fundraiser": 75.0,
-      "total": 3215.98,
+      "fundraiser": 0.0,
+      "total": 2418.19,
+      "bundles": 43,
+      "donations": 49,
       "duration": 3600
     },
     {
       "date": "2020-12-11T12:00:00+00:00",
       "yogs": 1682.0,
-      "fundraiser": 20.0,
-      "total": 2236.98,
+      "fundraiser": 0.0,
+      "total": 1682.0,
+      "bundles": 54,
+      "donations": 57,
       "duration": 3600
     },
     {
       "date": "2020-12-11T13:00:00+00:00",
       "yogs": 1686.12,
-      "fundraiser": 55.56,
-      "total": 2140.46,
+      "fundraiser": 0.0,
+      "total": 1686.12,
+      "bundles": 41,
+      "donations": 57,
       "duration": 3600
     },
     {
       "date": "2020-12-11T14:00:00+00:00",
       "yogs": 2357.23,
-      "fundraiser": -18.33,
-      "total": 3135.0,
+      "fundraiser": 0.0,
+      "total": 2357.23,
+      "bundles": 68,
+      "donations": 70,
       "duration": 3600
     },
     {
       "date": "2020-12-11T15:00:00+00:00",
       "yogs": 2178.0,
-      "fundraiser": 890.77,
-      "total": 2896.62,
+      "fundraiser": 0.0,
+      "total": 2178.0,
+      "bundles": 54,
+      "donations": 58,
       "duration": 3600
     },
     {
       "date": "2020-12-11T16:00:00+00:00",
       "yogs": 2402.0,
-      "fundraiser": -775.0,
-      "total": 3188.62,
+      "fundraiser": 0.0,
+      "total": 2402.0,
+      "bundles": 75,
+      "donations": 97,
       "duration": 3600
     },
     {
       "date": "2020-12-11T17:00:00+00:00",
       "yogs": 40893.67,
-      "fundraiser": 784.01,
-      "total": 53732.5,
+      "fundraiser": 0.0,
+      "total": 40893.67,
+      "bundles": 92,
+      "donations": 96,
       "duration": 3600
     },
     {
       "date": "2020-12-11T18:00:00+00:00",
       "yogs": 4642.2,
-      "fundraiser": -145.53,
-      "total": 6099.83,
+      "fundraiser": 0.0,
+      "total": 4642.2,
+      "bundles": 162,
+      "donations": 186,
       "duration": 3600
     },
     {
       "date": "2020-12-11T19:00:00+00:00",
       "yogs": 5133.0,
-      "fundraiser": -331.48,
-      "total": 6744.75,
+      "fundraiser": 0.0,
+      "total": 5133.0,
+      "bundles": 163,
+      "donations": 173,
       "duration": 3600
     },
     {
       "date": "2020-12-11T20:00:00+00:00",
       "yogs": 4267.34,
-      "fundraiser": -24.0,
-      "total": 5607.28,
+      "fundraiser": 0.0,
+      "total": 4267.34,
+      "bundles": 153,
+      "donations": 156,
       "duration": 3600
     },
     {
       "date": "2020-12-11T21:00:00+00:00",
       "yogs": 2601.63,
-      "fundraiser": -215.0,
-      "total": 3418.53,
+      "fundraiser": 0.0,
+      "total": 2601.63,
+      "bundles": 93,
+      "donations": 95,
       "duration": 3600
     },
     {
       "date": "2020-12-11T22:00:00+00:00",
       "yogs": 3732.0,
-      "fundraiser": 221.0,
-      "total": 4903.8,
+      "fundraiser": 0.0,
+      "total": 3732.0,
+      "bundles": 122,
+      "donations": 140,
       "duration": 3600
     },
     {
       "date": "2020-12-11T23:00:00+00:00",
       "yogs": 4132.67,
-      "fundraiser": -189.97,
-      "total": 5495.99,
+      "fundraiser": 0.0,
+      "total": 4132.67,
+      "bundles": 132,
+      "donations": 167,
       "duration": 3600
     },
     {
       "date": "2020-12-12T00:00:00+00:00",
       "yogs": 2638.21,
-      "fundraiser": -247.03,
-      "total": 3433.75,
+      "fundraiser": 0.0,
+      "total": 2638.21,
+      "bundles": 93,
+      "donations": 94,
       "duration": 3600
     },
     {
       "date": "2020-12-12T01:00:00+00:00",
       "yogs": 1856.0,
-      "fundraiser": 150.0,
-      "total": 2438.78,
+      "fundraiser": 0.0,
+      "total": 1856.0,
+      "bundles": 70,
+      "donations": 70,
       "duration": 3600
     },
     {
       "date": "2020-12-12T02:00:00+00:00",
       "yogs": 1925.0,
-      "fundraiser": -95.0,
-      "total": 2529.45,
+      "fundraiser": 0.0,
+      "total": 1925.0,
+      "bundles": 74,
+      "donations": 74,
       "duration": 3600
     },
     {
       "date": "2020-12-12T03:00:00+00:00",
       "yogs": 1792.46,
-      "fundraiser": -5.0,
-      "total": 2388.14,
+      "fundraiser": 0.0,
+      "total": 1792.46,
+      "bundles": 66,
+      "donations": 66,
       "duration": 3600
     },
     {
       "date": "2020-12-12T04:00:00+00:00",
       "yogs": 1300.0,
-      "fundraiser": -70.0,
-      "total": 1708.2,
+      "fundraiser": 0.0,
+      "total": 1300.0,
+      "bundles": 51,
+      "donations": 51,
       "duration": 3600
     },
     {
       "date": "2020-12-12T05:00:00+00:00",
       "yogs": 1857.0,
-      "fundraiser": -34.0,
-      "total": 2440.06,
+      "fundraiser": 0.0,
+      "total": 1857.0,
+      "bundles": 48,
+      "donations": 49,
       "duration": 3600
     },
     {
       "date": "2020-12-12T06:00:00+00:00",
       "yogs": 1165.0,
-      "fundraiser": -71.0,
-      "total": 1530.81,
+      "fundraiser": 0.0,
+      "total": 1165.0,
+      "bundles": 41,
+      "donations": 41,
       "duration": 3600
     },
     {
       "date": "2020-12-12T07:00:00+00:00",
       "yogs": 1250.0,
-      "fundraiser": 50.0,
-      "total": 1642.49,
+      "fundraiser": 0.0,
+      "total": 1250.0,
+      "bundles": 45,
+      "donations": 46,
       "duration": 3600
     },
     {
       "date": "2020-12-12T08:00:00+00:00",
       "yogs": 700.0,
-      "fundraiser": -50.0,
-      "total": 919.8,
+      "fundraiser": 0.0,
+      "total": 700.0,
+      "bundles": 28,
+      "donations": 28,
       "duration": 3600
     },
     {
       "date": "2020-12-12T09:00:00+00:00",
       "yogs": 1111.34,
-      "fundraiser": 86.34,
-      "total": 1460.29,
+      "fundraiser": 0.0,
+      "total": 1111.34,
+      "bundles": 32,
+      "donations": 33,
       "duration": 3600
     },
     {
       "date": "2020-12-12T10:00:00+00:00",
       "yogs": 892.79,
-      "fundraiser": -11.34,
-      "total": 1173.13,
+      "fundraiser": 0.0,
+      "total": 892.79,
+      "bundles": 33,
+      "donations": 34,
       "duration": 3600
     },
     {
       "date": "2020-12-12T11:00:00+00:00",
       "yogs": 3443.0,
-      "fundraiser": 385.0,
-      "total": 4524.08,
+      "fundraiser": 0.0,
+      "total": 3443.0,
+      "bundles": 108,
+      "donations": 121,
       "duration": 3600
     },
     {
       "date": "2020-12-12T12:00:00+00:00",
       "yogs": 3659.97,
-      "fundraiser": -259.0,
-      "total": 4809.11,
+      "fundraiser": 0.0,
+      "total": 3659.97,
+      "bundles": 80,
+      "donations": 88,
       "duration": 3600
     },
     {
       "date": "2020-12-12T13:00:00+00:00",
       "yogs": 3841.0,
-      "fundraiser": 264.0,
-      "total": 5047.0,
+      "fundraiser": 0.0,
+      "total": 3841.0,
+      "bundles": 89,
+      "donations": 93,
       "duration": 3600
     },
     {
       "date": "2020-12-12T14:00:00+00:00",
       "yogs": 4331.69,
-      "fundraiser": -90.0,
-      "total": 5691.78,
+      "fundraiser": 0.0,
+      "total": 4331.69,
+      "bundles": 116,
+      "donations": 120,
       "duration": 3600
     },
     {
       "date": "2020-12-12T15:00:00+00:00",
       "yogs": 4625.69,
-      "fundraiser": 75.0,
-      "total": 6078.1,
+      "fundraiser": 0.0,
+      "total": 4625.69,
+      "bundles": 113,
+      "donations": 120,
       "duration": 3600
     },
     {
       "date": "2020-12-12T16:00:00+00:00",
       "yogs": 6136.5,
-      "fundraiser": 335.0,
-      "total": 8063.31,
+      "fundraiser": 0.0,
+      "total": 6136.5,
+      "bundles": 183,
+      "donations": 185,
       "duration": 3600
     },
     {
       "date": "2020-12-12T17:00:00+00:00",
       "yogs": 6278.35,
-      "fundraiser": -14.66,
-      "total": 8282.54,
+      "fundraiser": 0.0,
+      "total": 6278.35,
+      "bundles": 179,
+      "donations": 182,
       "duration": 3600
     },
     {
       "date": "2020-12-12T18:00:00+00:00",
       "yogs": 4093.82,
-      "fundraiser": -184.34,
-      "total": 5346.41,
+      "fundraiser": 0.0,
+      "total": 4093.82,
+      "bundles": 148,
+      "donations": 151,
       "duration": 3600
     },
     {
       "date": "2020-12-12T19:00:00+00:00",
       "yogs": 3920.0,
-      "fundraiser": -81.0,
-      "total": 5150.87,
+      "fundraiser": 0.0,
+      "total": 3920.0,
+      "bundles": 131,
+      "donations": 132,
       "duration": 3600
     },
     {
       "date": "2020-12-12T20:00:00+00:00",
       "yogs": 4054.5,
-      "fundraiser": -42.5,
-      "total": 5327.61,
+      "fundraiser": 0.0,
+      "total": 4054.5,
+      "bundles": 140,
+      "donations": 149,
       "duration": 3600
     },
     {
       "date": "2020-12-12T21:00:00+00:00",
       "yogs": 3852.81,
-      "fundraiser": 20.5,
-      "total": 5062.57,
+      "fundraiser": 0.0,
+      "total": 3852.81,
+      "bundles": 120,
+      "donations": 125,
       "duration": 3600
     },
     {
       "date": "2020-12-12T22:00:00+00:00",
       "yogs": 2691.0,
-      "fundraiser": -203.0,
-      "total": 3535.96,
+      "fundraiser": 0.0,
+      "total": 2691.0,
+      "bundles": 99,
+      "donations": 102,
       "duration": 3600
     },
     {
       "date": "2020-12-12T23:00:00+00:00",
       "yogs": 3348.86,
-      "fundraiser": 95.0,
-      "total": 4400.39,
+      "fundraiser": 0.0,
+      "total": 3348.86,
+      "bundles": 116,
+      "donations": 124,
       "duration": 3600
     },
     {
       "date": "2020-12-13T00:00:00+00:00",
       "yogs": 2548.0,
-      "fundraiser": -250.0,
-      "total": 3348.05,
+      "fundraiser": 0.0,
+      "total": 2548.0,
+      "bundles": 82,
+      "donations": 83,
       "duration": 3600
     },
     {
       "date": "2020-12-13T01:00:00+00:00",
       "yogs": 2033.41,
-      "fundraiser": 50.0,
-      "total": 2671.9,
+      "fundraiser": 0.0,
+      "total": 2033.41,
+      "bundles": 80,
+      "donations": 81,
       "duration": 3600
     },
     {
       "date": "2020-12-13T02:00:00+00:00",
       "yogs": 2141.0,
-      "fundraiser": 110.0,
-      "total": 2813.27,
+      "fundraiser": 0.0,
+      "total": 2141.0,
+      "bundles": 77,
+      "donations": 78,
       "duration": 3600
     },
     {
       "date": "2020-12-13T03:00:00+00:00",
       "yogs": 1580.0,
-      "fundraiser": -135.0,
-      "total": 2076.12,
+      "fundraiser": 0.0,
+      "total": 1580.0,
+      "bundles": 59,
+      "donations": 59,
       "duration": 3600
     },
     {
       "date": "2020-12-13T04:00:00+00:00",
       "yogs": 1625.05,
-      "fundraiser": 25.0,
-      "total": 2135.31,
+      "fundraiser": 0.0,
+      "total": 1625.05,
+      "bundles": 64,
+      "donations": 64,
       "duration": 3600
     },
     {
       "date": "2020-12-13T05:00:00+00:00",
       "yogs": 1487.0,
-      "fundraiser": -50.0,
-      "total": 1953.92,
+      "fundraiser": 0.0,
+      "total": 1487.0,
+      "bundles": 57,
+      "donations": 57,
       "duration": 3600
     },
     {
       "date": "2020-12-13T06:00:00+00:00",
       "yogs": 1125.0,
-      "fundraiser": -75.0,
-      "total": 1478.25,
+      "fundraiser": 0.0,
+      "total": 1125.0,
+      "bundles": 42,
+      "donations": 43,
       "duration": 3600
     },
     {
       "date": "2020-12-13T07:00:00+00:00",
       "yogs": 1098.79,
-      "fundraiser": 126.0,
-      "total": 1443.8,
+      "fundraiser": 0.0,
+      "total": 1098.79,
+      "bundles": 40,
+      "donations": 40,
       "duration": 3600
     },
     {
       "date": "2020-12-13T08:00:00+00:00",
       "yogs": 1425.0,
-      "fundraiser": -151.0,
-      "total": 1872.45,
+      "fundraiser": 0.0,
+      "total": 1425.0,
+      "bundles": 52,
+      "donations": 52,
       "duration": 3600
     },
     {
       "date": "2020-12-13T09:00:00+00:00",
       "yogs": 1449.05,
-      "fundraiser": 35.0,
-      "total": 1904.05,
+      "fundraiser": 0.0,
+      "total": 1449.05,
+      "bundles": 53,
+      "donations": 54,
       "duration": 3600
     },
     {
       "date": "2020-12-13T10:00:00+00:00",
       "yogs": 1280.0,
-      "fundraiser": 40.0,
-      "total": 1714.77,
+      "fundraiser": 0.0,
+      "total": 1280.0,
+      "bundles": 47,
+      "donations": 47,
       "duration": 3600
     },
     {
       "date": "2020-12-13T11:00:00+00:00",
       "yogs": 4409.77,
-      "fundraiser": 660.08,
-      "total": 5761.16,
+      "fundraiser": 0.0,
+      "total": 4409.77,
+      "bundles": 128,
+      "donations": 133,
       "duration": 3600
     },
     {
       "date": "2020-12-13T12:00:00+00:00",
       "yogs": 4405.3,
-      "fundraiser": 79.92,
-      "total": 5788.56,
+      "fundraiser": 0.0,
+      "total": 4405.3,
+      "bundles": 138,
+      "donations": 145,
       "duration": 3600
     },
     {
       "date": "2020-12-13T13:00:00+00:00",
       "yogs": 5522.65,
-      "fundraiser": -78.0,
-      "total": 7256.75,
+      "fundraiser": 0.0,
+      "total": 5522.65,
+      "bundles": 179,
+      "donations": 184,
       "duration": 3600
     },
     {
       "date": "2020-12-13T14:00:00+00:00",
       "yogs": 7076.59,
-      "fundraiser": 208.69,
-      "total": 9298.57,
+      "fundraiser": 0.0,
+      "total": 7076.59,
+      "bundles": 194,
+      "donations": 224,
       "duration": 3600
     },
     {
       "date": "2020-12-13T15:00:00+00:00",
       "yogs": 12739.7,
-      "fundraiser": -78.68,
-      "total": 16739.63,
+      "fundraiser": 0.0,
+      "total": 12739.7,
+      "bundles": 199,
+      "donations": 307,
       "duration": 3600
     },
     {
       "date": "2020-12-13T16:00:00+00:00",
       "yogs": 4011.03,
-      "fundraiser": -119.01,
-      "total": 5270.48,
+      "fundraiser": 0.0,
+      "total": 4011.03,
+      "bundles": 142,
+      "donations": 148,
       "duration": 3600
     },
     {
       "date": "2020-12-13T17:00:00+00:00",
       "yogs": 18508.05,
-      "fundraiser": 32.0,
-      "total": 24318.96,
+      "fundraiser": 0.0,
+      "total": 18508.05,
+      "bundles": 179,
+      "donations": 202,
       "duration": 3600
     },
     {
       "date": "2020-12-13T18:00:00+00:00",
       "yogs": 7546.62,
-      "fundraiser": 761.01,
-      "total": 9981.93,
+      "fundraiser": 0.0,
+      "total": 7546.62,
+      "bundles": 260,
+      "donations": 270,
       "duration": 3600
     },
     {
       "date": "2020-12-13T19:00:00+00:00",
       "yogs": 8567.0,
-      "fundraiser": 731.99,
-      "total": 11256.99,
+      "fundraiser": 0.0,
+      "total": 8567.0,
+      "bundles": 276,
+      "donations": 300,
       "duration": 3600
     },
     {
       "date": "2020-12-13T20:00:00+00:00",
       "yogs": 10715.52,
-      "fundraiser": -1383.0,
-      "total": 14178.56,
+      "fundraiser": 0.0,
+      "total": 10715.52,
+      "bundles": 288,
+      "donations": 391,
       "duration": 3600
     },
     {
       "date": "2020-12-13T21:00:00+00:00",
       "yogs": 6698.03,
-      "fundraiser": 365.0,
-      "total": 8768.35,
+      "fundraiser": 0.0,
+      "total": 6698.03,
+      "bundles": 242,
+      "donations": 251,
       "duration": 3600
     },
     {
       "date": "2020-12-13T22:00:00+00:00",
       "yogs": 6201.3,
-      "fundraiser": -390.0,
-      "total": 8148.51,
+      "fundraiser": 0.0,
+      "total": 6201.3,
+      "bundles": 226,
+      "donations": 230,
       "duration": 3600
     },
     {
       "date": "2020-12-13T23:00:00+00:00",
       "yogs": 5830.84,
-      "fundraiser": -435.0,
-      "total": 7694.52,
+      "fundraiser": 0.0,
+      "total": 5830.84,
+      "bundles": 209,
+      "donations": 234,
       "duration": 3600
     },
     {
       "date": "2020-12-14T00:00:00+00:00",
       "yogs": 4382.0,
-      "fundraiser": -25.0,
-      "total": 5757.94,
+      "fundraiser": 0.0,
+      "total": 4382.0,
+      "bundles": 165,
+      "donations": 167,
       "duration": 3600
     },
     {
       "date": "2020-12-14T01:00:00+00:00",
       "yogs": 4137.17,
-      "fundraiser": -29.0,
-      "total": 5436.23,
+      "fundraiser": 0.0,
+      "total": 4137.17,
+      "bundles": 153,
+      "donations": 154,
       "duration": 3600
     },
     {
       "date": "2020-12-14T02:00:00+00:00",
       "yogs": 3550.54,
-      "fundraiser": -21.0,
-      "total": 4665.41,
+      "fundraiser": 0.0,
+      "total": 3550.54,
+      "bundles": 132,
+      "donations": 134,
       "duration": 3600
     },
     {
       "date": "2020-12-14T03:00:00+00:00",
       "yogs": 2965.0,
-      "fundraiser": 160.0,
-      "total": 3896.0,
+      "fundraiser": 0.0,
+      "total": 2965.0,
+      "bundles": 111,
+      "donations": 112,
       "duration": 3600
     },
     {
       "date": "2020-12-14T04:00:00+00:00",
       "yogs": 2910.07,
-      "fundraiser": -49.93,
-      "total": 3823.83,
+      "fundraiser": 0.0,
+      "total": 2910.07,
+      "bundles": 111,
+      "donations": 111,
       "duration": 3600
     },
     {
       "date": "2020-12-14T05:00:00+00:00",
       "yogs": 2085.44,
-      "fundraiser": -340.07,
-      "total": 2740.26,
+      "fundraiser": 0.0,
+      "total": 2085.44,
+      "bundles": 80,
+      "donations": 82,
       "duration": 3600
     },
     {
       "date": "2020-12-14T06:00:00+00:00",
       "yogs": 2091.11,
-      "fundraiser": 5.0,
-      "total": 2606.58,
+      "fundraiser": 0.0,
+      "total": 2091.11,
+      "bundles": 80,
+      "donations": 81,
       "duration": 3600
     },
     {
       "date": "2020-12-14T07:00:00+00:00",
       "yogs": 1874.0,
-      "fundraiser": 180.0,
-      "total": 2462.43,
+      "fundraiser": 0.0,
+      "total": 1874.0,
+      "bundles": 72,
+      "donations": 72,
       "duration": 3600
     },
     {
       "date": "2020-12-14T08:00:00+00:00",
       "yogs": 1892.24,
-      "fundraiser": 65.0,
-      "total": 2486.4,
+      "fundraiser": 0.0,
+      "total": 1892.24,
+      "bundles": 71,
+      "donations": 72,
       "duration": 3600
     },
     {
       "date": "2020-12-14T09:00:00+00:00",
       "yogs": 2025.0,
-      "fundraiser": -145.0,
-      "total": 2654.28,
+      "fundraiser": 0.0,
+      "total": 2025.0,
+      "bundles": 75,
+      "donations": 76,
       "duration": 3600
     },
     {
       "date": "2020-12-14T10:00:00+00:00",
       "yogs": 2552.0,
-      "fundraiser": -14.0,
-      "total": 3353.32,
+      "fundraiser": 0.0,
+      "total": 2552.0,
+      "bundles": 94,
+      "donations": 97,
       "duration": 3600
     },
     {
       "date": "2020-12-14T11:00:00+00:00",
       "yogs": 4888.0,
-      "fundraiser": 1587.0,
-      "total": 6389.93,
+      "fundraiser": 0.0,
+      "total": 4888.0,
+      "bundles": 136,
+      "donations": 149,
       "duration": 3600
     },
     {
       "date": "2020-12-14T12:00:00+00:00",
       "yogs": 5932.45,
-      "fundraiser": -713.47,
-      "total": 7795.23,
+      "fundraiser": 0.0,
+      "total": 5932.45,
+      "bundles": 189,
+      "donations": 210,
       "duration": 3600
     },
     {
       "date": "2020-12-14T13:00:00+00:00",
       "yogs": 11860.05,
-      "fundraiser": 136.16,
-      "total": 15583.98,
+      "fundraiser": 0.0,
+      "total": 11860.05,
+      "bundles": 293,
+      "donations": 374,
       "duration": 3600
     },
     {
       "date": "2020-12-14T14:00:00+00:00",
       "yogs": 12412.08,
-      "fundraiser": 24.75,
-      "total": 16276.38,
+      "fundraiser": 0.0,
+      "total": 12412.08,
+      "bundles": 261,
+      "donations": 274,
       "duration": 3600
     },
     {
       "date": "2020-12-14T15:00:00+00:00",
       "yogs": 8446.42,
-      "fundraiser": 379.56,
-      "total": 11098.53,
+      "fundraiser": 0.0,
+      "total": 8446.42,
+      "bundles": 249,
+      "donations": 269,
       "duration": 3600
     },
     {
       "date": "2020-12-14T16:00:00+00:00",
       "yogs": 13495.98,
-      "fundraiser": 2396.16,
-      "total": 17945.19,
+      "fundraiser": 0.0,
+      "total": 13495.98,
+      "bundles": 304,
+      "donations": 509,
       "duration": 3600
     },
     {
       "date": "2020-12-14T17:00:00+00:00",
       "yogs": 18644.22,
-      "fundraiser": -2660.5,
-      "total": 24834.11,
+      "fundraiser": 0.0,
+      "total": 18644.22,
+      "bundles": 398,
+      "donations": 541,
       "duration": 3600
     },
     {
       "date": "2020-12-14T18:00:00+00:00",
       "yogs": 7603.23,
-      "fundraiser": -175.97,
-      "total": 10194.56,
+      "fundraiser": 0.0,
+      "total": 7603.23,
+      "bundles": 261,
+      "donations": 287,
       "duration": 3600
     },
     {
       "date": "2020-12-14T19:00:00+00:00",
       "yogs": 9692.9,
-      "fundraiser": -124.69,
-      "total": 12996.62,
+      "fundraiser": 0.0,
+      "total": 9692.9,
+      "bundles": 309,
+      "donations": 331,
       "duration": 3600
     },
     {
       "date": "2020-12-14T20:00:00+00:00",
       "yogs": 8934.91,
-      "fundraiser": -324.48,
-      "total": 11920.7,
+      "fundraiser": 0.0,
+      "total": 8934.91,
+      "bundles": 301,
+      "donations": 320,
       "duration": 3600
     },
     {
       "date": "2020-12-14T21:00:00+00:00",
       "yogs": 14074.19,
-      "fundraiser": 492.59,
-      "total": 18837.45,
+      "fundraiser": 0.0,
+      "total": 14074.19,
+      "bundles": 387,
+      "donations": 706,
       "duration": 3600
     },
     {
       "date": "2020-12-14T22:00:00+00:00",
       "yogs": 8683.81,
-      "fundraiser": -271.11,
-      "total": 11643.57,
+      "fundraiser": 0.0,
+      "total": 8683.81,
+      "bundles": 267,
+      "donations": 305,
       "duration": 3600
     },
     {
       "date": "2020-12-14T23:00:00+00:00",
       "yogs": 14487.94,
-      "fundraiser": -734.16,
-      "total": 19425.95,
+      "fundraiser": 0.0,
+      "total": 14487.94,
+      "bundles": 371,
+      "donations": 767,
       "duration": 3600
     }
   ],
   "summary": {
-    "total": 2802830.56,
+    "total": 2103513.95,
     "yogs": 2103513.95,
-    "fundraiser": -287.85,
+    "fundraiser": 0.0,
+    "bundles": 64017,
+    "donations": 72796,
     "duration": 615600,
     "total_number_of_streams": 48
   }

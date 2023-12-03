@@ -38,6 +38,10 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 
 Changelog
 
+0.0.10
+Update 
+  - Fix bug which shows the wrong day on the schedule
+
 0.0.9
 Updates
 - Small bug fixes
