@@ -67,7 +67,7 @@ const ExtensionAd = () => {
   const now = useNow()
   const year = () => DateTime.fromISO(schedule.schedule.weeks.at(0).days.at(0).start).year
   const show = () => {
-    return now().year == year() && jj() && storageValue()
+    return now().year == year() && jj() && storageValue() && now().day >= 2
   }
   const close = () => {
     localStorage?.setItem(`showExtensionAdd_${n.year}`, 'false')
