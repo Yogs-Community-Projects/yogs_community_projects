@@ -96,7 +96,7 @@ const ExtensionAd = () => {
           <p>The Extension also shows a list of many other JJ Fundraiser and if they are live on Twitch.</p>
         </div>
         <div class={'flex flex-row items-center justify-end gap-2 p-2'}>
-          <button class={'rounded-xl p-2'} onClick={close}>
+          <button class={'bg-primary rounded-xl p-2 text-white'} onClick={close}>
             Got it
           </button>
         </div>
