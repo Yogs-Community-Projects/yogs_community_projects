@@ -1,6 +1,8 @@
 import { createContext, createSignal, ParentComponent, useContext } from 'solid-js'
 import { Accessor } from 'solid-js/types/reactive/signal'
-import { useDaysCount } from './ScheduleDataProvider'
+import { useDays, useDaysCount } from './ScheduleDataProvider'
+import { useIsJJ, useNow } from '@ycapp/common'
+import { DayUtils } from '@ycapp/model'
 
 type DayIndexProps = {
   useIndex: Accessor<number>
@@ -9,9 +11,31 @@ type DayIndexProps = {
   numberOfDays: number
 }
 export const DayIndexContext = createContext<DayIndexProps>()
-
+const getTodayIndex = () => {
+  const days = useDays()
+  const jj = useIsJJ()
+  const now = useNow()
+  let index = 0
+  if (jj()) {
+    for (let i = 0; i < days.length; i++) {
+      const day = days[i]
+      if (DayUtils.isToday(day)) {
+        index = i
+        break
+      } else if (i > 0) {
+        const prevDay = days[i - 1]
+        if (now() >= DayUtils.end(prevDay) && now() <= DayUtils.start(day)) {
+          index = i
+          break
+        }
+      }
+    }
+  }
+  return index
+}
 export const DayIndexProvider: ParentComponent = props => {
-  const [useIndex, setIndex] = createSignal(0)
+  const today = getTodayIndex()
+  const [useIndex, setIndex] = createSignal(today)
   const numberOfDays = useDaysCount()
   const prev = () => {
     const current = useIndex()
