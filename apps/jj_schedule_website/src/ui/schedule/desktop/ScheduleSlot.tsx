@@ -2,13 +2,12 @@ import { Component, JSX, Show } from 'solid-js'
 import { Slot, SlotUtils } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import { useScheduleDimensions } from '../providers/ScheduleDimensionsProvider'
-import { contrast, createModalSignal, getTextColor, useNow } from '@ycapp/common'
+import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useCreatorFilter } from '../providers/CreatorFilterProvider'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 import { useAnalytics } from '../../../AnalyticsProvider'
-import { twMerge } from 'tailwind-merge'
 import { LivePulseDot } from '../LivePulseDot'
 
 interface ScheduleSlotProps {
@@ -104,7 +103,7 @@ export const ScheduleSlot: Component<ScheduleSlotProps> = props => {
               modalSignal.toggle()
             }}
           >
-            <div class={'flex h-full w-full flex-col justify-center text-center'}>
+            <div class={'flex h-full w-full flex-col items-center justify-center text-center'}>
               <p class={'text-slot-title line-clamp-2 font-bold tracking-widest'}>{props.slot.title}</p>
               <p class={'text-slot-subtitle tracking-wide'}>{props.slot.subtitle}</p>
               <Show when={showCountdown()}>
