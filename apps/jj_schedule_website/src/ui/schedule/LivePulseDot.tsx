@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge'
 
 export const LivePulseDot = () => {
   return (
-    <div class={'flex flex-row items-center justify-center gap-2'}>
+    <div class={'bg-accent-500 flex flex-row items-center justify-center gap-2 rounded px-1'}>
       <p class={'text-xs font-bold tracking-wide'}>LIVE</p>
       <div class={'h-2 w-2'}>
         <span class="relative flex h-2 w-2">
