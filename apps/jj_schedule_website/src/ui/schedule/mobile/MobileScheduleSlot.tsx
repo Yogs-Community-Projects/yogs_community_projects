@@ -2,12 +2,11 @@ import { Component, JSX, Show } from 'solid-js'
 import { Slot, SlotUtils } from '@ycapp/model'
 import { DateTime, Duration } from 'luxon'
 import { useScheduleMobileDimensions } from '../providers/ScheduleMobileDimensionsProvider'
-import { contrast, createModalSignal, getTextColor, useNow } from '@ycapp/common'
+import { createModalSignal, getTextColor, useNow } from '@ycapp/common'
 import { SlotDialog } from '../../components/schedule/SlotDialog'
 import { BiLogosTwitch, BiLogosYoutube } from 'solid-icons/bi'
 import { BsHeart, BsPeopleFill } from 'solid-icons/bs'
 import { useAnalytics } from '../../../AnalyticsProvider'
-import { twMerge } from 'tailwind-merge'
 import { LivePulseDot } from '../LivePulseDot'
 
 interface MobileScheduleSlotProps {
@@ -79,7 +78,7 @@ export const MobileScheduleSlot: Component<MobileScheduleSlotProps> = props => {
       >
         <div class={'p-schedule h-full transition-all'}>
           <div
-            class={'schedule-card flex flex-col justify-center p-1 text-center transition-all'}
+            class={'schedule-card flex flex-col items-center justify-center p-1 text-center transition-all'}
             style={{
               ...background(),
             }}
