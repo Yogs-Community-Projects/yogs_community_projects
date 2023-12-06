@@ -125,6 +125,9 @@ const Child: Component<ChildProps> = props => {
         return 'text-primary'
     }
   }
+
+  const value = () => props.d.raised.fundraisers // + props.d.raised.yogscast
+
   return (
     <div class={`h-full w-full rounded-2xl ${useBackground()} p-2 shadow-2xl`}>
       <div class={'flex h-full w-full flex-row items-center justify-start'}>
@@ -133,12 +136,7 @@ const Child: Component<ChildProps> = props => {
           <p class={`${useNameTextColor()} font-bold`}>{props.d.name}</p>
           <Show when={props.showRaised}>
             <p class={`${useRaisedTextColor()} font-bold`}>
-              Raised{' '}
-              <Numeric
-                value={props.d.raised.fundraisers + props.d.raised.yogscast}
-                numberStyle="currency"
-                currency={'GBP'}
-              />
+              Raised <Numeric value={value()} numberStyle="currency" currency={'GBP'} />
             </p>
           </Show>
         </div>

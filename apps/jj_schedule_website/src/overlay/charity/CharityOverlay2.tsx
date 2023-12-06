@@ -304,6 +304,7 @@ const CharityItem: Component<{
 
     return base
   }
+  const value = () => props.charity.raised.fundraisers // + props.d.raised.yogscast
 
   return (
     <div class={'h-full p-2'}>
@@ -318,12 +319,7 @@ const CharityItem: Component<{
         <p class={'line-clamp-2 overflow-hidden text-2xl'}>{props.charity.name}</p>
         <Show when={props.showRaised}>
           <p class={twMerge('line-clamp-2 overflow-hidden text-xl', raisedColor())}>
-            Raised{' '}
-            <Numeric
-              value={props.charity.raised.fundraisers + props.charity.raised.yogscast}
-              numberStyle="currency"
-              currency={'GBP'}
-            />
+            Raised <Numeric value={value()} numberStyle="currency" currency={'GBP'} />
           </p>
         </Show>
         <Show when={props.showDesc}>
