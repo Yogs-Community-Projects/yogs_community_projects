@@ -13,6 +13,7 @@ import { CharityOverlay2 } from './overlay/charity/CharityOverlay2'
 import { SimpleScheduleOverlay } from './overlay/schedule_simple/SimpleScheduleOverlay'
 import { useConfig } from './ui/configProvider/ConfigProvider'
 import { useAnalytics } from './AnalyticsProvider'
+import ScheduleJsonPage from './ui/schedule/ScheduleJsonPage'
 
 const HomePage = lazy(() => import('./ui/home/HomePage'))
 const SchedulePage = lazy(() => import('./ui/schedule/SchedulePage'))
@@ -149,6 +150,11 @@ const App: Component = () => {
         <Route path={'/overlay/charities'} component={CharityOverlay} />
         <Route path={'/overlay/charities2'} component={CharityOverlay2} />
         <Route path={'/overlay/customschedule'} component={SimpleScheduleOverlay} />
+        <Route path={'/json/2020'} data={schedule2020RouteDataFunc} component={ScheduleJsonPage}></Route>
+        <Route path={'/json/2021'} data={schedule2021RouteDataFunc} component={ScheduleJsonPage}></Route>
+        <Route path={'/json/2022'} data={schedule2022RouteDataFunc} component={ScheduleJsonPage}></Route>
+        <Route path={'/json'} data={scheduleCurrentRouteDataFunc} component={ScheduleJsonPage}></Route>
+
         <Route path="*" component={Redirect}></Route>
       </Routes>
     </Router>
